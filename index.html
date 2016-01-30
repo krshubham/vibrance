@@ -25,6 +25,13 @@
     <![endif]-->
  
     <script src='js/device.min.js'></script> 
+    <script type="text/javascript">
+        $(window).load(function () {
+            $("#vib").show("slide", {
+                direction: "up"
+            }, 2000);
+        });
+    </script>
 </head>
 
 <body>
@@ -63,7 +70,7 @@
             </div>
 
             <div class="brand wow fadeIn">
-                <h1 class="brand_name">
+                <h1 class="brand_name" id="vib" style="display: none;">
                     Vibrance'16
                 </h1>
             </div>
