@@ -296,11 +296,11 @@ a[href^="tel:"] {
 .toggle-menu-container .sf-menu-toggle {
   position: fixed;
   top: 47px;
-  right: 60px;
-  width: 75px;
-  height: 75px;
-  font-size: 60px;
-  line-height: 75px;
+  left: 60px;
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  line-height: 50px;
   color: #fff;
   background: #adabad;
   text-align: center;
@@ -357,12 +357,12 @@ a[href^="tel:"] {
   padding: 10px 60px;
 }
 .toggle-menu-container .nav.active {
-  right: 0;
+  left: 0;
 }
 .toggle-menu-container .nav.active .sf-menu-toggle {
   margin-left: 0;
   top: 6px;
-  right: 233px;
+  left: 233px;
   height: 30px;
   width: 30px;
   font-size: 18px;
@@ -1017,4 +1017,24 @@ footer .tm {
 }
 .map_locations {
   display: none;
+}
+
+.background-image {
+    height:auto;
+    left:0;
+    min-height:100%;
+    min-width:1024px;
+    position:fixed;
+    top:0;   
+    width:100%;
+    z-index: -1
+}
+
+#dot-matrix {
+    background: url(http://s14.directupload.net/images/111129/44ga9qid.png);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1
 }
