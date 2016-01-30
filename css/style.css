@@ -281,7 +281,7 @@ a[href^="tel:"] {
 .toggle-menu-container .nav {
   margin: 0;
   position: fixed;
-  left: -273px;
+  right: -273px;
   top: 0;
   height: 100%;
   width: 273px;
@@ -296,11 +296,11 @@ a[href^="tel:"] {
 .toggle-menu-container .sf-menu-toggle {
   position: fixed;
   top: 47px;
-  left: 60px;
-  width: 50px;
-  height: 50px;
-  font-size: 40px;
-  line-height: 50px;
+  right: 60px;
+  width: 75px;
+  height: 75px;
+  font-size: 60px;
+  line-height: 75px;
   color: #fff;
   background: #adabad;
   text-align: center;
@@ -357,12 +357,12 @@ a[href^="tel:"] {
   padding: 10px 60px;
 }
 .toggle-menu-container .nav.active {
-  left: 0;
+  right: 0;
 }
 .toggle-menu-container .nav.active .sf-menu-toggle {
   margin-left: 0;
   top: 6px;
-  left: 233px;
+  right: 233px;
   height: 30px;
   width: 30px;
   font-size: 18px;
