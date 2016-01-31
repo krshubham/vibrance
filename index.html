@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/camera.css">
     <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" type="text/css" href="css/glow.css">
 
     <script src="js/jquery.js"></script>
     <script src="js/jquery-migrate-1.2.1.js"></script>
@@ -25,13 +26,7 @@
     <![endif]-->
  
     <script src='js/device.min.js'></script> 
-    <script type="text/javascript">
-        $(window).load(function () {
-            $("#vib").show("slide", {
-                direction: "up"
-            }, 2000);
-        });
-    </script>
+    
 </head>
 
 <body>
@@ -43,35 +38,35 @@
 
         <div class="camera_container">
             <div id="camera" class="camera_wrap">
-                <div data-src="images/1.jpg">
+                <div data-src="images/1.jpg" id="dot-matrix">
                     <div class="camera_caption fadeIn">
                     </div>
                 </div>
-                <div data-src="images/2.jpg">
+                <div data-src="images/2.jpg" id="dot-matrix">
                     <div class="camera_caption fadeIn">
                     </div>
                 </div>
-                <div data-src="images/3.jpg">
+                <div data-src="images/3.jpg" id="dot-matrix">
                     <div class="camera_caption fadeIn">
                     </div>
                 </div>
-                <div data-src="images/4.jpg">
+                <div data-src="images/4.jpg" id="dot-matrix">
                     <div class="camera_caption fadeIn">
                     </div>
                 </div>
-                <div data-src="images/5.jpg">
+                <div data-src="images/5.jpg" id="dot-matrix">
                     <div class="camera_caption fadeIn">
                     </div>
                 </div>
-                <div data-src="images/6.jpg">
+                <div data-src="images/6.jpg" id="dot-matrix">
                     <div class="camera_caption fadeIn">
                     </div>
                 </div>                
             </div>
 
             <div class="brand wow fadeIn">
-                <h1 class="brand_name" id="vib" style="display: none;">
-                    Vibrance'16
+                <h1 class="brand_name" >
+                    <img id="shadowfilter" src="images/vibhead.png" width="50%" height="50%">
                 </h1>
             </div>
         </div>
