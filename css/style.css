@@ -302,12 +302,12 @@ a[href^="tel:"] {
   font-size: 40px;
   line-height: 50px;
   color: #fff;
-  background: #adabad;
+  background: transparent;
   text-align: center;
 }
 .toggle-menu-container .sf-menu-toggle:hover {
   text-decoration: none;
-  background: #fff;
+  background: #1a1a1a;
   color: #000;
 }
 .toggle-menu-container .sf-menu {
