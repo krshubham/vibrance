@@ -307,8 +307,8 @@ a[href^="tel:"] {
 }
 .toggle-menu-container .sf-menu-toggle:hover {
   text-decoration: none;
-  background: #1a1a1a;
-  color: white;
+  background: white;
+  color: black;
 }
 .toggle-menu-container .sf-menu {
   width: 100%;
