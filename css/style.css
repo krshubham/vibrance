@@ -296,7 +296,7 @@ a[href^="tel:"] {
 .toggle-menu-container .sf-menu-toggle {
   position: fixed;
   top: 47px;
-  left: 60px;
+  left: 2%;
   width: 50px;
   height: 50px;
   font-size: 40px;
@@ -1037,4 +1037,7 @@ footer .tm {
     position: fixed;
     top: 0;
     z-index: 1
+}
+.event-heading-p1{
+  padding-top: 3%;
 }

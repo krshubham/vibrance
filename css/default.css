@@ -18,7 +18,7 @@ body, html { font-size: 100%; padding: 0; margin: 0;}
 .clearfix:before, .clearfix:after { content: " "; display: table; }
 .clearfix:after { clear: both; }
 
-body {
+/*body {
     font-family: 'Lato', Calibri, Arial, sans-serif;
     color: #fff;
 }
@@ -31,8 +31,8 @@ a {
 a:hover {
 	color: #000;
 }
-
-.container > header {
+*/
+.container-scroll > header {
 	padding: 2.875em 1.875em 1.875em;
 	position: fixed;
 	z-index: 1000;
@@ -40,7 +40,7 @@ a:hover {
 	left: 20%;
 }
 
-.container > header h1 {
+.container-scroll > header h1 {
 	font-size: 2.125em;
 	line-height: 1.3;
 	margin: 0;
@@ -48,7 +48,7 @@ a:hover {
 	font-weight: 400;
 }
 
-.container > header span {
+.container-scroll > header span {
 	display: block;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -56,11 +56,11 @@ a:hover {
 	padding: 0 0 0.6em 0.1em;
 }
 
-.container > header nav {
+.container-scroll > header nav {
 	float: right;
 }
 
-.container > header nav a {
+.container-scroll > header nav a {
 	display: block;
 	float: left;
 	position: relative;
@@ -74,7 +74,7 @@ a:hover {
 	text-indent: -8000px;
 }
 
-.container > header nav a:after {
+.container-scroll > header nav a:after {
 	content: attr(data-info);
 	color: #fff;
 	position: absolute;
@@ -86,11 +86,11 @@ a:hover {
 	pointer-events: none;
 }
 
-.container > header nav a:hover:after {
+.container-scroll > header nav a:hover:after {
 	opacity: 1;
 }
 
-.container > header nav a:hover {
+.container-scroll > header nav a:hover {
 	background: #47a3da;
 }
 
@@ -112,7 +112,7 @@ a:hover {
 	padding-left: 8px;
 }
 
-.container > header nav a:hover:before {
+.container-scroll > header nav a:hover:before {
 	color: #fff;
 }
 
