@@ -440,7 +440,7 @@ html[xmlns] .slides {
 }
 
 body {
-    padding-top: 101px;
+    padding-top: 0px;
     background: #df5b57;
 }
 
@@ -478,7 +478,8 @@ body {
 body {
     font-family: Arial, sans-serif;
     font-size: 13px;
-    color: #000
+    color: #000;
+    padding: 0px;
 }
 
 @font-face {
@@ -1379,7 +1380,7 @@ body {
 }
 
 .corres-list .corres-list-container {
-    padding: 109px 0 86px;
+    padding: 75px 0 86px;
     margin-bottom: 169px;
     width: 100%;
     height: 455px;
