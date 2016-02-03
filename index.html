@@ -136,7 +136,7 @@
                             <a href="index-1.html">About Us</a>
                         </li>
                         <li>
-                            <a href="index-2.html">Events</a>
+                            <a href="#events">Events</a>
                             <ul>
                                 <li>
                                     <a href="#">Dance</a>
@@ -164,7 +164,7 @@
                             <a href="about-us.html">Meet the Team</a>
                         </li>
                         <li>
-                            <a href="index-4.html">Contacts</a>
+                            <a href="#contacts">Contacts</a>
                         </li>
                     </ul>
                 </nav>
@@ -195,7 +195,7 @@
                     <div class="event-heading-p1"></div>
                 </div>
                 <div class="gallery">
-                    <div class="gallery_col-1">
+                    <div name="events" class="gallery_col-1">
                         <a data-fancybox-group="gallery" href="images/dance_big.jpg" class="gallery_item thumb lazy-img" style="padding-bottom: 93.96551724137931%;">
                             <img data-src="images/dance.jpg" alt="">
                             <div class="gallery_overlay">
@@ -321,7 +321,7 @@
                         </div>
                     </div>
                     <div class="decoration">
-                        <div style="cursor:pointer" class="btn" id="contact_click">Contact Us</div>
+                        <div style="cursor:pointer" name="contacts" class="btn" id="contact_click">Contact Us</div>
                     </div>
                 </div>
             </section>
@@ -352,7 +352,7 @@
                         <a href="#" class="fa fa-facebook"></a>
                     </li>
                     <li>
-                        <a href="#" class="fa fa-tumblr"></a>
+                        <a href="#" class="fa fa-twitter"></a>
                     </li>
                     <li>
                         <a href="#" class="fa fa-google-plus"></a>
@@ -366,6 +366,22 @@
     <script type="text/javascript">
     $('#contact_click').click(function() {
         $('#divcontact').slideDown();
+    });
+    </script>
+    <script>
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
     });
     </script>
 </body>
