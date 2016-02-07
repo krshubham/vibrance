@@ -44,6 +44,7 @@ h2 em {
   h2 em {
     font-size: 72px;
     line-height: 56px;
+    padding-bottom:10%; 
   }
 }
 h3 {
