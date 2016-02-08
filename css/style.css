@@ -27,6 +27,14 @@ h2 {
   font-weight: 300;
   color: #823f3f;
 }
+h6 {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 32px;
+  line-height: 82px;
+  font-weight: 300;
+  color: #823f3f;
+}
 @media (max-width: 767px) {
   h2 {
     font-size: 42px;
@@ -34,6 +42,13 @@ h2 {
   }
 }
 h2 em {
+  display: block;
+  font-family: 'Yesteryear', cursive;
+  font-size: 100px;
+  line-height: 82px;
+  font-weight: 400;
+}
+h6 em {
   display: block;
   font-family: 'Yesteryear', cursive;
   font-size: 100px;
