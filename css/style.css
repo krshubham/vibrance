@@ -1059,45 +1059,35 @@ footer .tm {
 }
 .btn-contacts {
   display: inline-block;
-  border-radius: 4px;
-  background-color: #f4511e;
+  border-radius: 2.5em;
+  background-color: white;
   border: none;
-  color: #FFFFFF;
+  color: #423e3e;
   text-align: center;
   font-size: 1.8em;
   padding: 20px;
   width: 200px;
-  transition: all 0.5s;
+  transition: all 0.1s;
   cursor: pointer;
-  margin: 5px;
+  margin: 10px;
 }
 .btn-contacts:hover{
-  background-color: red;
-}
-.btn-contacts span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
+  background-color:#423e3e ;
+  color:white;
+  transition : all 0.2s;
 }
 
-.btn-contacts span:after {
+
+/*.btn-contacts span:after {
   content: '»';
   position: absolute;
   opacity: 0;
   top: 0;
   right: -20px;
   transition: 0.5s;
-}
+}*/
 
-.btn-contacts:hover span {
-  padding-right: 25px;
-}
 
-.btn-contacts:hover span:after {
-  opacity: 1;
-  right: 0;
-}
 .contact-section{
   position: relative;
 
@@ -1111,17 +1101,15 @@ footer .tm {
     top:65%; 
     left:40%;
     display: inline-block;
-    border-radius: 4px;
     background-color: white;
     border: none;
     color: black;
     text-align: center;
     font-size: 1.8em;
     padding: 20px;
-    width: 200px;
-    transition: all 0.5s;
+    width: 170px;    
     cursor: pointer;
     margin: 5px;
-    border-radius: 3em;
+    border-radius: 2.5em;
 }
 }
