@@ -894,7 +894,7 @@ footer .socials li {
   float: left;
 }
 footer .socials li + li {
-  margin-left: 10px;
+  margin-left: 100px;
 }
 @media (max-width: 767px) {
   footer .socials li + li {
