@@ -633,6 +633,10 @@ a[href^="tel:"] {
     padding: 117px 0 122px;
 }
 
+.parallax3 h2 {
+    color: #ffffff;
+}
+
 .parallax8 {
     color: #ffffff;
     background-color: #FFF;
