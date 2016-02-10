@@ -671,6 +671,17 @@ a[href^="tel:"] {
     color: #ffffff;
 }
 
+.parallax36 {
+    color: #ffffff;
+    background-color: #FFF;
+    background-image: url(../images/nerd_para.png);
+    padding: 142px 0 142px;
+}
+
+.parallax36 h2 {
+    color: #ffffff;
+}
+
 .parallax3 {
     background-color: #FFF;
     background-image: url(../images/parallax03.jpg);
@@ -733,6 +744,18 @@ a[href^="tel:"] {
 }
 
 .parallax33 h2 {
+    color: #ffffff;
+}
+
+
+.parallax37 {
+    color: #ffffff;
+    background-color: #FFF;
+    background-image: url(../images/treasure_para.jpg);
+    padding: 117px 0 122px;
+}
+
+.parallax37 h2 {
     color: #ffffff;
 }
 
@@ -803,6 +826,17 @@ a[href^="tel:"] {
     color: #ffffff;
 }
 
+.parallax38 {
+    color: #ffffff;
+    background-color: #FFF;
+    background-image: url(../images/snake_para.jpg);
+    padding: 97px 0 100px
+}
+
+.parallax38 h2 {
+    color: #ffffff;
+}
+
 .parallax5 {
     color: #ffffff;
     background-color: #FFF;
@@ -859,6 +893,18 @@ a[href^="tel:"] {
 }
 
 .parallax35 h2 {
+    color: #ffffff;
+    position: relative;
+}
+
+.parallax39 {
+    color: #ffffff;
+    background-color: #FFF;
+    background-image: url(../images/aim_para.jpg);
+    padding: 134px 0px 132px;
+}
+
+.parallax39 h2 {
     color: #ffffff;
     position: relative;
 }
