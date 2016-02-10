@@ -682,6 +682,17 @@ a[href^="tel:"] {
     color: #ffffff;
 }
 
+.parallax40 {
+    color: #ffffff;
+    background-color: #FFF;
+    background-image: url(../images/gandhi_para.png);
+    padding: 142px 0 142px;
+}
+
+.parallax40 h2 {
+    color: #ffffff;
+}
+
 .parallax3 {
     background-color: #FFF;
     background-image: url(../images/parallax03.jpg);
@@ -759,6 +770,16 @@ a[href^="tel:"] {
     color: #ffffff;
 }
 
+.parallax41 {
+    color: #ffffff;
+    background-color: #FFF;
+    background-image: url(../images/poster_para.jpg);
+    padding: 117px 0 122px;
+}
+
+.parallax41 h2 {
+    color: #ffffff;
+}
 
 .parallax4 {
     color: #ffffff;
@@ -837,6 +858,17 @@ a[href^="tel:"] {
     color: #ffffff;
 }
 
+.parallax42 {
+    color: #ffffff;
+    background-color: #FFF;
+    background-image: url(../images/brain_para.jpg);
+    padding: 97px 0 100px
+}
+
+.parallax42 h2 {
+    color: #ffffff;
+}
+
 .parallax5 {
     color: #ffffff;
     background-color: #FFF;
@@ -909,6 +941,18 @@ a[href^="tel:"] {
     position: relative;
 }
 
+.parallax43 {
+    color: #ffffff;
+    background-color: #FFF;
+    background-image: url(../images/social_para.jpg);
+    padding: 134px 0px 132px;
+}
+
+.parallax43 h2 {
+    color: #ffffff;
+    position: relative;
+}
+
 .parallax11 {
     color: #ffffff;
     background-color: #FFF;
@@ -953,6 +997,28 @@ a[href^="tel:"] {
 }
 
 .parallax6 h2 {
+    color: #ffffff;
+}
+
+.parallax44 {
+    color: #ffffff;
+    background-color: #FFF;
+    background-image: url(../images/wastecraft_para.jpg);
+    padding: 97px 0 100px;
+}
+
+.parallax44 h2 {
+    color: #ffffff;
+}
+
+.parallax45 {
+    color: #ffffff;
+    background-color: #FFF;
+    background-image: url(../images/enviro_para.jpg);
+    padding: 97px 0 100px;
+}
+
+.parallax45 h2 {
     color: #ffffff;
 }
 
