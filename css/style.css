@@ -649,6 +649,17 @@ a[href^="tel:"] {
     color: #ffffff;
 }
 
+.parallax29 {
+    color: #ffffff;
+    background-color: #FFF;
+    background-image: url(../images/adzap_para.jpg);
+    padding: 142px 0 142px;
+}
+
+.parallax29 h2 {
+    color: #ffffff;
+}
+
 .parallax3 {
     background-color: #FFF;
     background-image: url(../images/parallax03.jpg);
@@ -689,6 +700,17 @@ a[href^="tel:"] {
 }
 
 .parallax18 h2 {
+    color: #ffffff;
+}
+
+.parallax30 {
+    color: #ffffff;
+    background-color: #FFF;
+    background-image: url(../images/switch_para.jpg);
+    padding: 117px 0 122px;
+}
+
+.parallax30 h2 {
     color: #ffffff;
 }
 
@@ -733,6 +755,17 @@ a[href^="tel:"] {
 }
 
 .parallax19 h2 {
+    color: #ffffff;
+}
+
+.parallax31 {
+    color: #ffffff;
+    background-color: #FFF;
+    background-image: url(../images/dare_para.jpg);
+    padding: 97px 0 100px
+}
+
+.parallax31 h2 {
     color: #ffffff;
 }
 
