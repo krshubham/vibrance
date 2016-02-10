@@ -627,10 +627,25 @@ a[href^="tel:"] {
     color: #ffffff;
 }
 
+.parallax12 {
+    color: #ffffff;
+    background-color: #FFF;
+    background-image: url(../images/picaso_para.jpg);
+    padding: 142px 0 142px;
+}
+
+.parallax12 h2 {
+    color:#ffffff;
+}
+
 .parallax3 {
     background-color: #FFF;
     background-image: url(../images/parallax03.jpg);
     padding: 117px 0 122px;
+}
+
+.parallax3 h2 {
+    color: #ffffff;
 }
 
 .parallax8 {
@@ -640,6 +655,16 @@ a[href^="tel:"] {
     padding: 117px 0 122px;
 }
 .parallax8 h2 {
+    color: #ffffff;
+}
+
+.parallax13 {
+    color: #ffffff;
+    background-color: #FFF;
+    background-image: url(../images/waste_para.jpg);
+    padding: 117px 0 122px;
+}
+.parallax13 h2 {
     color: #ffffff;
 }
 
@@ -665,6 +690,17 @@ a[href^="tel:"] {
     color: #ffffff;
 }
 
+.parallax14 {
+    color: #ffffff;
+    background-color: #FFF;
+    background-image: url(../images/doodle_para.jpg);
+    padding: 97px 0 100px;
+}
+
+.parallax14 h2 {
+    color: #ffffff;
+}
+
 .parallax5 {
     color: #ffffff;
     background-color: #FFF;
@@ -685,6 +721,40 @@ a[href^="tel:"] {
 }
 
 .parallax10 h2 {
+    color: #ffffff;
+    position: relative;
+}
+.parallax15 {
+    color: #ffffff;
+    background-color: #FFF;
+    background-image: url(../images/mehandi_para.jpg);
+    padding: 134px 0px 132px;
+}
+
+.parallax15 h2 {
+    color: #ffffff;
+    position: relative;
+}
+.parallax11 {
+    color: #ffffff;
+    background-color: #FFF;
+    background-image: url(../images/solo_para.jpg);
+    padding: 134px 0px 132px;
+}
+
+.parallax11 h2 {
+    color: #ffffff;
+    position: relative;
+}
+
+.parallax16 {
+    color: #ffffff;
+    background-color: #FFF;
+    background-image: url(../images/brushless_para.jpg);
+    padding: 134px 0px 132px;
+}
+
+.parallax16 h2 {
     color: #ffffff;
     position: relative;
 }
