@@ -635,7 +635,18 @@ a[href^="tel:"] {
 }
 
 .parallax12 h2 {
-    color:#ffffff;
+    color: #ffffff;
+}
+
+.parallax17 {
+    color: #ffffff;
+    background-color: #FFF;
+    background-image: url(../images/genquiz_para.jpg);
+    padding: 142px 0 142px;
+}
+
+.parallax17 h2 {
+    color: #ffffff;
 }
 
 .parallax3 {
@@ -654,6 +665,7 @@ a[href^="tel:"] {
     background-image: url(../images/soundhunt_para.jpg);
     padding: 117px 0 122px;
 }
+
 .parallax8 h2 {
     color: #ffffff;
 }
@@ -664,7 +676,19 @@ a[href^="tel:"] {
     background-image: url(../images/waste_para.jpg);
     padding: 117px 0 122px;
 }
+
 .parallax13 h2 {
+    color: #ffffff;
+}
+
+.parallax18 {
+    color: #ffffff;
+    background-color: #FFF;
+    background-image: url(../images/evsquiz_para.jpg);
+    padding: 117px 0 122px;
+}
+
+.parallax18 h2 {
     color: #ffffff;
 }
 
@@ -701,6 +725,17 @@ a[href^="tel:"] {
     color: #ffffff;
 }
 
+.parallax19 {
+    color: #ffffff;
+    background-color: #FFF;
+    background-image: url(../images/karlpopper_para.jpg);
+    padding: 97px 0 100px
+}
+
+.parallax19 h2 {
+    color: #ffffff;
+}
+
 .parallax5 {
     color: #ffffff;
     background-color: #FFF;
@@ -724,6 +759,7 @@ a[href^="tel:"] {
     color: #ffffff;
     position: relative;
 }
+
 .parallax15 {
     color: #ffffff;
     background-color: #FFF;
@@ -735,6 +771,19 @@ a[href^="tel:"] {
     color: #ffffff;
     position: relative;
 }
+
+.parallax20 {
+    color: #ffffff;
+    background-color: #FFF;
+    background-image: url(../images/classicdeb_para.jpg);
+    padding: 134px 0px 132px;
+}
+
+.parallax20 h2 {
+    color: #ffffff;
+    position: relative;
+}
+
 .parallax11 {
     color: #ffffff;
     background-color: #FFF;
@@ -758,13 +807,104 @@ a[href^="tel:"] {
     color: #ffffff;
     position: relative;
 }
+
+.parallax21 {
+    color: #ffffff;
+    background-color: #FFF;
+    background-image: url(../images/split_para.jpg);
+    padding: 134px 0px 132px;
+}
+
+.parallax21 h2 {
+    color: #ffffff;
+    position: relative;
+}
+
 .parallax6 {
     color: #ffffff;
     background-color: #FFF;
     background-image: url(../images/parallax06.jpg);
     padding: 97px 0 100px;
 }
+
 .parallax6 h2 {
+    color: #ffffff;
+}
+
+.parallax22 {
+    color: #ffffff;
+    background-color: #FFF;
+    background-image: url(../images/centerstage_para.jpg);
+    padding: 97px 0 100px;
+}
+
+.parallax22 h2 {
+    color: #ffffff;
+}
+
+.parallax23 {
+    color: #ffffff;
+    background-color: #FFF;
+    background-image: url(../images/aircrash_para.jpg);
+    padding: 97px 0 100px;
+}
+
+.parallax23 h2 {
+    color: #ffffff;
+}
+
+.parallax24 {
+    color: #ffffff;
+    background-color: #FFF;
+    background-image: url(../images/persona_para.jpg);
+    padding: 97px 0 100px;
+}
+
+.parallax24 h2 {
+    color: #ffffff;
+}
+
+.parallax25 {
+    color: #ffffff;
+    background-color: #FFF;
+    background-image: url(../images/potpuri_para.jpg);
+    padding: 97px 0 100px;
+}
+
+.parallax25 h2 {
+    color: #ffffff;
+}
+
+.parallax26 {
+    color: #ffffff;
+    background-color: #FFF;
+    background-image: url(../images/litquiz_para.jpg);
+    padding: 97px 0 100px;
+}
+
+.parallax26 h2 {
+    color: #ffffff;
+}
+
+.parallax27 {
+    color: #ffffff;
+    background-color: #FFF;
+    background-image: url(../images/court_para.jpg);
+    padding: 97px 0 100px;
+}
+
+.parallax27 h2 {
+    color: #ffffff;
+}
+
+.parallax28 {
+    color: #ffffff;
+    background-color: #FFF;
+    background-image: url(../images/scrabble_para.jpg);
+    padding: 97px 0 100px;
+}
+
+.parallax28 h2 {
     color: #ffffff;
 }
 
