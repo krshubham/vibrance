@@ -692,6 +692,18 @@ a[href^="tel:"] {
     color: #ffffff;
     position: relative;
 }
+
+.parallax11 {
+    color: #ffffff;
+    background-color: #FFF;
+    background-image: url(../images/solo_para.jpg);
+    padding: 134px 0px 132px;
+}
+
+.parallax11 h2 {
+    color: #ffffff;
+    position: relative;
+}
 .parallax6 {
     color: #ffffff;
     background-color: #FFF;
