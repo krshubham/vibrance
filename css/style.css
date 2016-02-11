@@ -693,6 +693,28 @@ a[href^="tel:"] {
     color: #ffffff;
 }
 
+.parallax46 {
+    color: #ffffff;
+    background-color: #FFF;
+    background-image: url(../images/cs_para.jpg);
+    padding: 142px 0 142px;
+}
+
+.parallax46 h2 {
+    color: #ffffff;
+}
+
+.parallax48 {
+    color: #ffffff;
+    background-color: #FFF;
+    background-image: url(../images/cricket_para.jpg);
+    padding: 142px 0 142px;
+}
+
+.parallax48 h2 {
+    color: #ffffff;
+}
+
 .parallax3 {
     background-color: #FFF;
     background-image: url(../images/parallax03.jpg);
@@ -778,6 +800,28 @@ a[href^="tel:"] {
 }
 
 .parallax41 h2 {
+    color: #ffffff;
+}
+
+.parallax47 {
+    color: #ffffff;
+    background-color: #FFF;
+    background-image: url(../images/dota_para.jpg);
+    padding: 117px 0 122px;
+}
+
+.parallax47 h2 {
+    color: #ffffff;
+}
+
+.parallax49 {
+    color: #ffffff;
+    background-color: #FFF;
+    background-image: url(../images/football_para.jpg);
+    padding: 117px 0 122px;
+}
+
+.parallax49 h2 {
     color: #ffffff;
 }
 
@@ -869,6 +913,17 @@ a[href^="tel:"] {
     color: #ffffff;
 }
 
+.parallax50 {
+    color: #ffffff;
+    background-color: #FFF;
+    background-image: url(../images/throw_para.jpg);
+    padding: 97px 0 100px
+}
+
+.parallax50 h2 {
+    color: #ffffff;
+}
+
 .parallax5 {
     color: #ffffff;
     background-color: #FFF;
@@ -953,6 +1008,18 @@ a[href^="tel:"] {
     position: relative;
 }
 
+.parallax51 {
+    color: #ffffff;
+    background-color: #FFF;
+    background-image: url(../images/badminton_para.jpg);
+    padding: 134px 0px 132px;
+}
+
+.parallax51 h2 {
+    color: #ffffff;
+    position: relative;
+}
+
 .parallax11 {
     color: #ffffff;
     background-color: #FFF;
@@ -989,6 +1056,18 @@ a[href^="tel:"] {
     position: relative;
 }
 
+.parallax52 {
+    color: #ffffff;
+    background-color: #FFF;
+    background-image: url(../images/basketball_para.jpg);
+    padding: 134px 0px 132px;
+}
+
+.parallax52 h2 {
+    color: #ffffff;
+    position: relative;
+}
+
 .parallax6 {
     color: #ffffff;
     background-color: #FFF;
@@ -1011,6 +1090,17 @@ a[href^="tel:"] {
     color: #ffffff;
 }
 
+.parallax53 {
+    color: #ffffff;
+    background-color: #FFF;
+    background-image: url(../images/table_para.jpg);
+    padding: 97px 0 100px;
+}
+
+.parallax53 h2 {
+    color: #ffffff;
+}
+
 .parallax45 {
     color: #ffffff;
     background-color: #FFF;
@@ -1019,6 +1109,17 @@ a[href^="tel:"] {
 }
 
 .parallax45 h2 {
+    color: #ffffff;
+}
+
+.parallax54 {
+    color: #ffffff;
+    background-color: #FFF;
+    background-image: url(../images/chess_para.jpg);
+    padding: 97px 0 100px;
+}
+
+.parallax54 h2 {
     color: #ffffff;
 }
 
