@@ -15,6 +15,8 @@
     <link rel="stylesheet" type="text/css" href="css/style-slider.css" />
     <link rel="stylesheet" type="text/css" href="css/component-slider.css" />
     <script src="js/modernizr.custom-slider.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/backtotop.css">
+    <script type="text/javascript" src="js/backtotop.js"></script>
     <!--[if lt IE 9]>
     <html class="lt-ie9">
     <div style=' clear: both; text-align:center; position: relative;'>
@@ -34,7 +36,8 @@
 </head>
 
 <body>
-    <div class="page">
+    <div class="page" id="0">
+    <a href="#0" id="fixed-back" style="display: none;"><img src="images/uparrow.png" title="Back to Top"></a>
         <!--========================================================
                               HEADER
     =========================================================-->
@@ -48,13 +51,13 @@
                     </div>
                     <nav class="nav">
                         <ul class="sf-menu">
-                            <li class="active">
+                            <li >
                                 <a href="./">Home</a>
                             </li>
                             <li>
                                 <a href="aboutus.html">About Us</a>
                             </li>
-                            <li>
+                            <li class="active">
                                 <a href="#events">Events</a>
                                 <ul>
                                     <li>
@@ -72,7 +75,7 @@
                                     <li>
                                         <a href="fineartsclub.html">Fine Arts</a>
                                     </li>
-                                    <li>
+                                    <li >
                                         <a href="informals.html">Informals</a>
                                     </li>
                                     <li>

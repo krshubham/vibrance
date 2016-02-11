@@ -13,8 +13,11 @@
     <link rel="stylesheet" type="text/css" href="css/glow.css">
     <link rel="stylesheet" type="text/css" href="css/slideOnload.css">
     <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="js/jquery.js"></script>
     <script src="js/jquery-migrate-1.2.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/backtotop.css">
+    <script type="text/javascript" src="js/backtotop.js"></script>
     <!--[if lt IE 9]>
     <html class="lt-ie9">
     <div style=' clear: both; text-align:center; position: relative;'>
@@ -67,10 +70,11 @@
     }
     </style>
     <div class="page">
+        <a href="#0" id="fixed-back" style="display: none;"><img src="images/uparrow.png" title="Back to Top"></a>
         <!--========================================================
                               HEADER
     =========================================================-->
-        <header>
+        <header id="0">
             <div id="content"></div>
             <div class="camera_container">
                 <div id="camera" class="camera_wrap">
@@ -101,7 +105,7 @@
                 </div>
                 <div class="brand wow fadeIn">
                     <h1 class="brand_name">
-                    <img id="shadowfilter" class="slide-up-fade-in" src="images/vib_banner.png" width="50%" height="50%">
+                    <img id="shadowfilter" class="slide-up-fade-in" src="images/vib_banner.png">
                 </h1>
                 </div>
             </div>
