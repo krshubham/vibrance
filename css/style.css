@@ -813,7 +813,6 @@ a[href^="tel:"] {
 .parallax47 h2 {
     color: #ffffff;
 }
-
 .parallax49 {
     color: #ffffff;
     background-color: #FFF;
@@ -916,7 +915,8 @@ a[href^="tel:"] {
 .parallax50 {
     color: #ffffff;
     background-color: #FFF;
-    background-image: url(../images/throw_para.jpg);
+    background-image: url(../images/fifa.jpg);
+    background-size: 100%;
     padding: 97px 0 100px
 }
 
