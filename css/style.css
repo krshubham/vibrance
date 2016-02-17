@@ -1897,3 +1897,7 @@ footer .tm {
         border-radius: 2.5em;
     }
 }
+
+#sf-events-menu{
+    overflow: scroll
+}
