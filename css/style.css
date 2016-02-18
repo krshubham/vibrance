@@ -8,7 +8,7 @@
 =========================================================*/
 
 body {
-    background: #a95858;
+    background: #E85657;
     color: #333;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
@@ -29,7 +29,7 @@ h2 {
     font-size: 62px;
     line-height: 82px;
     font-weight: 300;
-    color: #823f3f;
+    color: #E85657;
 }
 
 h6 {
@@ -38,7 +38,7 @@ h6 {
     font-size: 32px;
     line-height: 82px;
     font-weight: 300;
-    color: #823f3f;
+    color: #E85657;
 }
 
 @media (max-width: 767px) {
@@ -317,7 +317,7 @@ a[href^="tel:"] {
 .sf-menu ul > li.sfHover > a,
 .sf-menu ul > li > a:hover {
     color: #ffffff;
-    background: #884646;
+    background: #E85657;
 }
 
 .sf-menu ul ul {
@@ -337,7 +337,7 @@ a[href^="tel:"] {
 .sf-menu ul ul > li.sfHover > a,
 .sf-menu ul ul > li > a:hover {
     color: #ffffff;
-    background: #884646;
+    background: #E85657;
 }
 
 .sf-menu > li > .sf-with-ul {
@@ -408,14 +408,14 @@ a[href^="tel:"] {
 }
 
 .toggle-menu-container .sf-menu > li a {
-    color: #823f3f;
+    color: #E85657;
     background: none;
     padding: 10px 40px;
 }
 
 .toggle-menu-container .sf-menu > li.active > a {
     color: #ffffff;
-    background: #a95858;
+    background: #E85640;
 }
 
 .toggle-menu-container .sf-menu > li.sfHover > a,
@@ -432,20 +432,20 @@ a[href^="tel:"] {
 }
 
 .toggle-menu-container .sf-menu ul li a {
-    color: #823f3f;
+    color: #E85657;
     background: none;
     padding: 10px 50px;
 }
 
 .toggle-menu-container .sf-menu ul li.active > a {
     color: #ffffff;
-    background: #a95858;
+    background: #E85640;
 }
 
 .toggle-menu-container .sf-menu ul li.sfHover > a,
 .toggle-menu-container .sf-menu ul li a:hover {
     color: #ffffff;
-    background: #ba7a7a;
+    background: #E85660;
 }
 
 .toggle-menu-container .sf-menu ul ul a {
@@ -531,7 +531,7 @@ a[href^="tel:"] {
 /*==================  Stuck menu  ======================*/
 
 .isStuck {
-    background: #994f4f;
+    background: #E85657;
     z-index: 999;
     border-bottom: 1px solid #333333;
 }
@@ -573,7 +573,7 @@ a[href^="tel:"] {
 
 .toTop:hover {
     color: #fff;
-    background: #663535;
+    background: #E85645;
     text-decoration: none;
 }
 
@@ -1217,7 +1217,7 @@ a[href^="tel:"] {
 =========================================================*/
 
 header {
-    background: #a95858;
+    background: #E85657;
 }
 
 header .brand {
@@ -1723,7 +1723,7 @@ footer .tm {
 }
 
 .bg-1 {
-    background: #a95858;
+    background: #E85657;
     color: #ffffff;
 }
 
