@@ -104,7 +104,7 @@
                             <?php
                                 if (isset($_POST['submit'])) {
                                     $event = $_POST['event'];
-                                    $query = "SELECT * FROM '{$event}' ";
+                                    $query = "SELECT * FROM adaptune ";
                                     $result = mysqli_query($conn, $query);
                                     confirm_query($result);
                                     while ($list = mysqli_fetch_assoc($result)) { ?>
