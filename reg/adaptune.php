@@ -28,7 +28,7 @@
 
 	    if ($result) {
 	      	echo"You have succesfully registered for adaptune. Please check your email for registraion slip. Your registraion will only be confirmed after you make the payment at our registration desk.";	 
-	      	$message = "Thank You for registering in adaptune for Vibrance'16. Kindly confirm your registeration by paying at our payment desks in the academic block portico, VIT Chennai Campus. Regards, Team Vibrance."
+	      	$message = "Thank You for registering in adaptune for Vibrance'16. Kindly confirm your registeration by paying at our payment desks in the academic block portico, VIT Chennai Campus. Regards, Team Vibrance.";
 	      	mail($email, "Registration for adaptune", $message, "From: cambuzz.vitcc@gmail.com");      	
 	    } else {
 		   	echo"Registration failed.";
