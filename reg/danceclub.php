@@ -11,7 +11,7 @@
         $name_title = mysqli_fetch_assoc($name_result);
         $first_name = explode(" ", $name_title['name']);            
         $view = "<a href='logout.php'>Logout, ".$first_name[0]."</a>"; 
-        $event_view = "<input type='button id='adaptune' value='register'>";       
+        $event_view = "<input type='button' id='adaptune' value='register'>";       
     } else {
         $current_user = "";  
         $first_name = "";
