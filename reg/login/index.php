@@ -20,7 +20,7 @@ if (isset($_POST['submit'])) {
 
       $_SESSION["user_id"] = $found_user["id"];
       $_SESSION["username"] = $found_user["username"];
-      redirect_to("../index.html");
+      redirect_to("../index.php");
     } else {
       $_SESSION["message"] = "Hub ID/password not found.";
     }

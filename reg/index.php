@@ -1,3 +1,24 @@
+<?php require_once("includes/session.php"); ?>
+<?php require_once("includes/db_connection.php"); ?>
+<?php require_once("includes/functions.php"); ?>
+
+<?php
+    if (isset($_SESSION["username"])) {
+        $current_user = $_SESSION["username"];
+        $name_query = "SELECT * FROM users WHERE username = '{$current_user}' LIMIT 1";
+        $name_result = mysqli_query($conn, $name_query);
+        confirm_query($name_result);
+        $name_title = mysqli_fetch_assoc($name_result);
+        $first_name = explode(" ", $name_title['sname']);        
+        $view = "<a href='logout.php'>Logout, ".$first_name."</a>";        
+    } else {
+        $current_user = "";  
+        $first_name = "";
+        $name_title = "";
+        $view = "<a href='login/index.php'>Login</a>";        
+    }  
+?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html lang="en">
 
@@ -116,6 +137,9 @@
                     <div class="nav_title"></div>
                     <a class="sf-menu-toggle fa fa-bars" href="#"></a>
                     <ul class="sf-menu">
+                        <li>
+                            <?php echo $view; ?>
+                        </li>
                         <li class="active">
                             <a href="index.html">Home</a>
                         </li>
@@ -427,3 +451,8 @@
 </body>
 
 </html>
+<?php
+    if (isset ($conn)){
+      mysqli_close($conn);
+    }
+?>
