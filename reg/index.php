@@ -150,7 +150,7 @@
                             <a href="#events">Events</a>
                              <ul id="sf-events-menu">
                                     <li>
-                                        <a href="danceclub.html">Dance</a>
+                                        <a href="danceclub.php">Dance</a>
                                     </li>
                                     <li>
                                         <a href="games.html">Games</a>

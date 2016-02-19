@@ -1,3 +1,24 @@
+<?php require_once("includes/session.php"); ?>
+<?php require_once("includes/db_connection.php"); ?>
+<?php require_once("includes/functions.php"); ?>
+
+<?php
+    if (isset($_SESSION["username"])) {
+        $current_user = $_SESSION["username"];
+        $name_query = "SELECT * FROM users WHERE username = '{$current_user}' LIMIT 1";
+        $name_result = mysqli_query($conn, $name_query);
+        confirm_query($name_result);
+        $name_title = mysqli_fetch_assoc($name_result);
+        $first_name = explode(" ", $name_title['name']);            
+        $view = "<a href='logout.php'>Logout, ".$first_name[0]."</a>";        
+    } else {
+        $current_user = "";  
+        $first_name = "";
+        $name_title = "";
+        $view = "<a href='login/index.php'>Login</a>";        
+    }  
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -50,8 +71,8 @@
                 <div class="container">
                     <div class="brand">
                         <h1 class="brand_name">
-                                                <a href="index.html">Vibrance'16</a>
-                                            </h1>
+                            <a href="index.html">Vibrance'16</a>
+                        </h1>
                     </div>
                     <nav class="nav">
                         <ul class="sf-menu">
@@ -65,7 +86,7 @@
                                 <a href="#events">Events</a>
                                 <ul>
                                     <li>
-                                        <a href="danceclub.html">Dance</a>
+                                        <a href="danceclub.php">Dance</a>
                                     </li>
                                     <li>
                                         <a href="games.html">Games</a>
@@ -108,6 +129,9 @@
                             </li>
                             <li>
                                 <a href="#">Meet the Team</a>
+                            </li>
+                            <li>
+                                <?php echo $view; ?>
                             </li>
                         </ul>
                     </nav>
@@ -407,3 +431,8 @@
 </body>
 
 </html>
+<?php
+    if (isset ($conn)){
+      mysqli_close($conn);
+    }
+?>

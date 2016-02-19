@@ -31,8 +31,7 @@
 	    } else {
 		   	echo"Registration failed.";
 	    }    
-	}
-		
+	}		
 ?>      	
   
 <?php
