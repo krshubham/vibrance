@@ -3,7 +3,7 @@
 <?php require_once("includes/functions.php"); ?>
 <?php
 	if (isset($_POST['submit'])) {
-		$email = $_SESSION["username"];
+		$email = "pkpbhardwaj729@gmail.com";
 		$message = "hello friend.";
 		mail($email, "Confirm your email", $message, "From: cambuzz.vitcc@gmail.com");
 		echo "Mail sent to ".$email;
