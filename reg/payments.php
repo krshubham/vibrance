@@ -129,7 +129,7 @@ th {
                                                 <th>Status</th>
                                             </tr><?php
                                         while ($list = mysqli_fetch_assoc($result)) { ?>
-                                        
+                                            <tr>
                                                 <td><?php echo $list['name']; ?></td>
                                                 <td><?php echo $list['email']; ?></td>
                                                 <td><?php echo $list['college']; ?></td>
@@ -142,7 +142,6 @@ th {
                                     }
                                 }    
                             ?>
-
                         </center>
                     </div>
                 </div>
