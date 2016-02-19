@@ -116,7 +116,7 @@ th {
                             <?php
                                 if (isset($_POST['submit'])) {
                                     $event = $_POST['event'];
-                                    $query = "SELECT * FROM adaptune ";
+                                    $query = "SELECT * FROM {$event} ";
                                     $result = mysqli_query($conn, $query);
                                     confirm_query($result); ?>
                                     <p>
