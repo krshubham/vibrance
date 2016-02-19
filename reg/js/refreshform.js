@@ -7,7 +7,7 @@ $("#adaptune").click(function(){
 $.post("adaptune.php",{ },
 			function(data) {
 			alert(data);
-			$('#form')[0].reset(); //To reset form fields
+			 //To reset form fields
 			});
     
     
