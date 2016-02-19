@@ -15,23 +15,23 @@
 	$regno = $name_title['regno'];
 	$phno = $name_title['phno'];
 
-	$check_query = "SELECT email FROM adaptune ";
+	$check_query = "SELECT * FROM adaptune WHERE email = '{$current_user}' ";
 	$check_result = mysqli_query($conn, $check_query);
 	confirm_query($check_result);
-	while ($check_title = mysqli_fetch_assoc($check_result)) {
-		if ($check_title['email']==$email) {
-			echo "You have already registered for adaptune.";
-		}		 
-	}
-	$query =$check_title['email']==$email "INSERT INTO adaptune (name, email, college, regno, phno)";
-	$query .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}')";
-	$result = mysqli_query($conn, $query);
+	if ($check_result) {
+		echo "You have already registered for this event. ";
+	} else {
+		$query =$check_title['email']==$email "INSERT INTO adaptune (name, email, college, regno, phno)";
+		$query .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}')";
+		$result = mysqli_query($conn, $query);
 
-    if ($result) {
-      	echo"You have succesfully registered for adaptune. Please check your email for registraion slip. Your registraion will only be confirmed after you make the payment at our registration desk.";	       	
-    } else {
-	   	echo"Registration failed.";
-    }    	
+	    if ($result) {
+	      	echo"You have succesfully registered for adaptune. Please check your email for registraion slip. Your registraion will only be confirmed after you make the payment at our registration desk.";	       	
+	    } else {
+		   	echo"Registration failed.";
+	    }    
+	}
+		
 ?>      	
   
 <?php
