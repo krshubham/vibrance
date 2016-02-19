@@ -9,8 +9,9 @@
         $name_result = mysqli_query($conn, $name_query);
         confirm_query($name_result);
         $name_title = mysqli_fetch_assoc($name_result);
-        $first_name = explode(" ", $name_title['sname']);        
-        $view = "<a href='logout.php'>Logout, ".$first_name[0]."</a>";        
+        $first_name = explode(" ", $name_title['sname']);   
+        $one = $first_name[0];     
+        $view = "<a href='logout.php'>Logout, ".$one."</a>";        
     } else {
         $current_user = "";  
         $first_name = "";
