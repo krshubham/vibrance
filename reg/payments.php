@@ -119,7 +119,8 @@ th {
                                     $query = "SELECT * FROM adaptune ";
                                     $result = mysqli_query($conn, $query);
                                     confirm_query($result); ?>
-                                    <p><table>
+                                    <p>
+                                        <table>
                                             <tr>
                                                 <th>Name</th>
                                                 <th>Email</th>
@@ -136,10 +137,10 @@ th {
                                                 <td><?php echo $list['regno']; ?></td>
                                                 <td><?php echo $list['phno']; ?></td>
                                                 <td><?php echo $list['paid']; ?></td>
-                                            </tr>
-                                        </table>
+                                            </tr><?php
+                                        } ?>
+                                        </table>    
                                     </p> <?php
-                                    }
                                 }    
                             ?>
                         </center>
