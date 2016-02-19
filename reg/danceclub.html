@@ -19,10 +19,8 @@
     <script src="js/modernizr.custom-slider.js"></script>
     <link rel="stylesheet" type="text/css" href="css/backtotop.css">
     <script type="text/javascript" src="js/backtotop.js"></script>
-
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        
-        <script src="js/refreshform.js"></script>
+    <script src="js/refreshform.js"></script>
     <!--[if lt IE 9]>
     <html class="lt-ie9">
     <div style=' clear: both; text-align:center; position: relative;'>
@@ -384,29 +382,28 @@
             </div>
             <br>
         </footer>
-    <script src="js/script.js"></script>
-    <script>
-    $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
+        <script src="js/script.js"></script>
+        <script>
+        $(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
                 }
-            }
+            });
         });
-    });
-    </script>
-    <script src="js/classie-slider.js"></script>
-    <script src="js/cbpScroller.js"></script>
-    <script>
-    new cbpScroller(document.getElementById('cbp-so-scroller'));
-    </script>
+        </script>
+        <script src="js/classie-slider.js"></script>
+        <script src="js/cbpScroller.js"></script>
+        <script>
+        new cbpScroller(document.getElementById('cbp-so-scroller'));
+        </script>
 </body>
 
 </html>
-
