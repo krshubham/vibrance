@@ -209,7 +209,7 @@
                                 </li>
                             </ul>
                             <form>
-                                
+                                <?php echo $event_view; ?>
                             </form>
                         </div>
                         <div class="grid_6">
