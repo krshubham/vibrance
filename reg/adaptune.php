@@ -14,6 +14,7 @@
 	$college = $name_title['college'];
 	$regno = $name_title['regno'];
 	$phno = $name_title['phno'];
+	$message = "Thank You for registering in adaptune for Vibrance16.. Kindly confirm your registeration by paying at our payment desks in the academic block portico, VIT Chennai Campus.. Regards, Team Vibrance.";
 
 	$check_query = "SELECT * FROM adaptune WHERE email = '{$current_user}' ";
 	$check_result = mysqli_query($conn, $check_query);
@@ -27,9 +28,8 @@
 		$result = mysqli_query($conn, $query);
 
 	    if ($result) {
-	      	echo"You have succesfully registered for adaptune. Please check your email for registraion slip. Your registraion will only be confirmed after you make the payment at our registration desk.";	 
-	      	$message = "Thank You for registering in adaptune for Vibrance'16. Kindly confirm your registeration by paying at our payment desks in the academic block portico, VIT Chennai Campus. Regards, Team Vibrance.";
-	      	mail($email, "Registration for adaptune", $message, "From: cambuzz.vitcc@gmail.com");      	
+	      	echo"You have succesfully registered for adaptune. Please check your email for registraion slip. Your registraion will only be confirmed after you make the payment at our registration desk.";		      	
+	      	mail ($email, "Registration for adaptune", $message, "From: vibrance2016@gmail.com");      	
 	    } else {
 		   	echo"Registration failed.";
 	    }    
