@@ -5,7 +5,7 @@
 	if (isset($_POST['submit'])) {
 		$email = $_SESSION["username"];
 		$message = "hello friend.";
-		mail($email, 'check', $message);
+		mail($email, 'check', $message, "From: prashant.bhardwaj2014@vit.ac.in");
 		echo "Mail sent to ".$email;
 	}
 ?>
