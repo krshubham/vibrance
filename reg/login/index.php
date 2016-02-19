@@ -4,7 +4,7 @@
 <?php require_once("../includes/validation_functions.php"); ?>
 
 <?php
-$username = "";
+$username = ""; 
 if (isset($_POST['submit'])) {
 
   $required_fields = array("username", "password");
