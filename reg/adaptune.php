@@ -18,10 +18,11 @@
 	$check_query = "SELECT * FROM adaptune WHERE email = '{$current_user}' ";
 	$check_result = mysqli_query($conn, $check_query);
 	confirm_query($check_result);
-	if ($check_result) {
+	$check = mysqli_fetch_assoc($check_result);
+	if ($check['email']== $email) {
 		echo "You have already registered for this event. ";
 	} else {
-		$query =$check_title['email']==$email "INSERT INTO adaptune (name, email, college, regno, phno)";
+		$query = "INSERT INTO adaptune (name, email, college, regno, phno)";
 		$query .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}')";
 		$result = mysqli_query($conn, $query);
 
