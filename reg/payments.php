@@ -28,6 +28,18 @@
 </head>
 
 <body>
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+}
+th {
+    text-align: left;
+}
+</style>
     <div class="page">
         <!--========================================================
                               HEADER
@@ -106,9 +118,8 @@
                                     $event = $_POST['event'];
                                     $query = "SELECT * FROM adaptune ";
                                     $result = mysqli_query($conn, $query);
-                                    confirm_query($result);
-                                    while ($list = mysqli_fetch_assoc($result)) { ?>
-                                        <p><table>
+                                    confirm_query($result); ?>
+                                    <p><table>
                                             <tr>
                                                 <th>Name</th>
                                                 <th>Email</th>
@@ -116,8 +127,9 @@
                                                 <th>Reg. No.</th>
                                                 <th>Ph. No.</th>
                                                 <th>Status</th>
-                                            </tr>
-                                            <tr>
+                                            </tr><?php
+                                        while ($list = mysqli_fetch_assoc($result)) { ?>
+                                        
                                                 <td><?php echo $list['name']; ?></td>
                                                 <td><?php echo $list['email']; ?></td>
                                                 <td><?php echo $list['college']; ?></td>
@@ -125,7 +137,8 @@
                                                 <td><?php echo $list['phno']; ?></td>
                                                 <td><?php echo $list['paid']; ?></td>
                                             </tr>
-                                        </table></p> <?php
+                                        </table>
+                                    </p> <?php
                                     }
                                 }    
                             ?>
