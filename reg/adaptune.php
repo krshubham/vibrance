@@ -23,11 +23,12 @@
 	if ($check['email']== $email) {
 		echo "You have already registered for this event. ";
 	} else {
+
+		$message = "Thank You for registering in adaptune for Vibrance16.. Kindly confirm your registeration by paying at our payment desks in the academic block portico, VIT Chennai Campus.. Regards, Team Vibrance.";
+		mail ($email, "Registration for adaptune", $message, "From: vibrance2016@gmail.com"); 
 		$query = "INSERT INTO adaptune (name, email, college, regno, phno)";
 		$query .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}')";
-		$result = mysqli_query($conn, $query);
-		$message = "Thank You for registering in adaptune for Vibrance16.. Kindly confirm your registeration by paying at our payment desks in the academic block portico, VIT Chennai Campus.. Regards, Team Vibrance.";
-		mail ("prashant.bhardwaj2014@vit.ac.in", "Registration for adaptune", $message, "From: vibrance2016@gmail.com"); 
+		$result = mysqli_query($conn, $query);	
 
 	    if ($result) {
 	      	echo"You have succesfully registered for adaptune. Please check your email for registraion slip. Your registraion will only be confirmed after you make the payment at our registration desk.";		
