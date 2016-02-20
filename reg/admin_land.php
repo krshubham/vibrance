@@ -14,11 +14,14 @@
     if ($name_title['type']=="event_admin") {
         $link1 = "event_admin.php";
         $linkup = "";
+        $page = "Participants"
     } elseif ($name_title['type']=="payment_admin") {
         $link1 = "payments.php";
         $linkup = "";
+        $page = "Payments";
     } elseif ($name_title['type']=="super_admin") {
         $link1 = "payments.php";
+        $page = "Payments";
         $linkup = "<a href='admin_signup.php'>Make new Admin</a>";
     }
 ?> 
@@ -67,7 +70,7 @@
                                 <a href="admin_land.php">Admin Home</a>                               
                             </li>
                             <li>
-                                <a href="payments.php">Payments</a>
+                                <a href="<?php echo $link1; ?>"><?php echo $page; ?></a>
                             </li>
                             <li>
                                 <a href="spotreg.php">On Spot Registration</a>
@@ -86,7 +89,7 @@
         <main>
             <section class="well well__offset-3">
                 <div class="container">
-                    <h2><em>Admin</em>Payments</h2>
+                    <h2><em>Admin</em><?php echo $page; ?></h2>
                     <div class="row row__offset-2">
                         <div class="grid_6">
                             <div class="img">
