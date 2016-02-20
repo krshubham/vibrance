@@ -11,13 +11,15 @@
         $name_title = mysqli_fetch_assoc($name_result);
         $first_name = explode(" ", $name_title['name']);            
         $view = "<a href='logout.php'>Logout, ".$first_name[0]."</a>"; 
-        $event_view = "<input type='button' id='adaptune' value='register'>";       
+        $event_view = ""; 
+        $login_view = "";      
     } else {
         $current_user = "";  
         $first_name = "";
         $name_title = "";
         $view = "<a href='login/index.php'>Login</a>";  
-        $event_view = "<a href='login/index.php'>Login to register</a>";      
+        $login_view = "<a href='login/index.php' class='gobutton'>Login to register</a>"; 
+        $event_view = "style='display: none;'";     
     }  
 ?>
 
@@ -207,11 +209,7 @@
                                 <li>Description of Event:
                                     <p>It is an impromptu dance where the participants have to come up with steps on the spot adapting to the beats of the songs being played, showcasing their beat sense and creativity.</p>
                                 </li>
-                            </ul>
-                            <form>
-                                <input type="text" id="event" value="adaptune" style="display: none;">
-                                <?php echo $event_view; ?>
-                            </form>
+                            </ul>                            
                         </div>
                         <div class="grid_6">
                             <p class="indents-3">Rules:
@@ -225,6 +223,13 @@
                             </p>
                         </div>
                     </div>
+                    <form>
+                        <input type="text" id="event" value="adaptune" style="display: none;">
+                        <div style="text-align: center; ">
+                            <input id="adaptune" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <?php echo $login_view; ?>
+                        </div>
+                    </form>                  
                 </div>
             </section>
             <section name="second" class="parallax parallax5" data-parallax-speed="-0.4">
