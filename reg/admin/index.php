@@ -38,6 +38,7 @@ if (isset($_POST['submit'])) {
 <html>
 
 <head>
+<link rel="stylesheet" type="text/css" href="resetcss.css">
     <meta charset="UTF-8">
     <title>Admin Login</title>
     <style>
