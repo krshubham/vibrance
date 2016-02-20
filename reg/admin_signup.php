@@ -12,13 +12,6 @@
     $name_title = mysqli_fetch_assoc($name_result);    
 ?>
 
-
-<?php
-if (admin_logged_in()) {
-    redirect_to ("admin_land.php");
-}
-?>
-
 <?php 
 	if ($name_title['type']=="super_admin") {
 		$view_whole = "";
