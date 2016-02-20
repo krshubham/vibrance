@@ -81,7 +81,7 @@ th {
                                 <a href="event_admin.php">Participants</a>
                             </li>
                             <li>
-                                <a href="spotreg.php">On Spot Registration</a>
+                                <a href="onspote/index.php">On Spot Registration</a>
                             </li>
                             <li>
                                 <?php echo "<a href='logout_admin.php'>Logout, ".$current_user."</a>"; ?>

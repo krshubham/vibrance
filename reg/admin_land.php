@@ -13,14 +13,17 @@
 <?php
     if ($name_title['type']=="event_admin") {
         $link1 = "event_admin.php";
+        $link2 = "onspote/index.php";
         $linkup = "";
         $page = "Participants";
     } elseif ($name_title['type']=="payment_admin") {
         $link1 = "payments.php";
+        $link2 = "onspot/index.php";
         $linkup = "";
         $page = "Payments";
     } elseif ($name_title['type']=="super_admin") {
         $link1 = "payments.php";
+        $link2 = "onspot/index.php";
         $page = "Payments";
         $linkup = "<a href='admin_signup.php'>Make new Admin</a>";
     }
@@ -73,7 +76,7 @@
                                 <a href="<?php echo $link1; ?>"><?php echo $page; ?></a>
                             </li>
                             <li>
-                                <a href="spotreg.php">On Spot Registration</a>
+                                <a href="<?php echo $link2; ?>">On Spot Registration</a>
                             </li>
                             <li>
                                 <?php echo "<a href='logout_admin.php'>Logout, ".$current_user."</a>"; ?>
@@ -100,7 +103,7 @@
                         </div>
                         <div class="grid_6">
                             <div class="img">
-                                <a href="spotreg.php">
+                                <a href="<?php echo $link2; ?>">
                                     <div class="lazy-img" style="padding-bottom: 45.6140350877193%;"><img data-src="images/onspot.jpg" alt=""></div>
                                 </a>
                             </div>

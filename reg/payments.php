@@ -79,7 +79,7 @@ th {
                                 <a href="payments.php">Payments</a>
                             </li>
                             <li>
-                                <a href="spotreg.php">On Spot Registration</a>
+                                <a href="onspot/index.php">On Spot Registration</a>
                             </li>
                             <li>
                                 <?php echo "<a href='logout_admin.php'>Logout, ".$current_user."</a>"; ?>

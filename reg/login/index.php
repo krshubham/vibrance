@@ -127,7 +127,7 @@ if(isset($_POST['signup'])){
                     <div class="bar"></div>
                 </div>
                 <div class="input-container">
-                    <input type="text" name="regno" id="regno" required="required" />
+                    <input type="text" name="regno" id="regno" />
                     <label for="Registration No.">Reg. No. (for VIT students)</label>
                     <div class="bar"></div>
                 </div>
