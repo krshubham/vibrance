@@ -2,10 +2,14 @@
 <?php require_once("../includes/db_connection.php");?>
 <?php require_once("../includes/functions.php");?>
 <?php require_once("../includes/validation_functions.php"); ?>
-
+<?php
+if (logged_in()) {
+    redirect_to ("../index.php");
+}
+?>
 <?php
 $username = ""; 
-if (isset($_POST['submit'])) {
+if (isset($_POST['submit'])) { 
 
   $required_fields = array("username", "password");
   validate_presence($required_fields);
@@ -97,7 +101,7 @@ if(isset($_POST['signup'])){
                     <div class="bar"></div>
                 </div>
                 <div class="button-container">
-                    <button><span><input type="submit" name="submit" value="GO"></span></button>
+                    <span><input type="button" name="submit" value="GO"></span>
                 </div>
             </form>
         </div>
@@ -144,7 +148,7 @@ if(isset($_POST['signup'])){
                     <div class="bar"></div>
                 </div>
                 <div class="button-container">
-                    <button><span><input type="submit" name="signup" value="SUBMIT"></span></button>
+                    <span><input type="button" name="signup" value="SUBMIT"></span>
                 </div>
             </form>
         </div>
