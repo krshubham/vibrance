@@ -2,6 +2,24 @@
 <?php require_once("includes/db_connection.php"); ?>
 <?php require_once("includes/functions.php"); ?>
 
+<?php confirm_admin_logged_in(); ?>
+
+<?php
+    $current_user = $_SESSION["username"];
+    $name_query = "SELECT * FROM admins WHERE username = '{$current_user}' LIMIT 1";
+    $name_result = mysqli_query($conn, $name_query);
+    confirm_query($name_result);
+    $name_title = mysqli_fetch_assoc($name_result);    
+?>
+
+<?php
+    if (($name_title['type']=="payment_admin") | ($name_title['type']=="super_admin")) {
+        $view_whole = "";         
+    } else {
+        $view_whole = "style='display: none;'";        
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -55,41 +73,16 @@ th {
                     <nav class="nav">
                         <ul class="sf-menu">
                             <li>
-                                <a href="./">Home</a>
+                                <a href="admin_land.php">Admin Home</a>                                
                             </li>
                             <li class="active">
-                                <a href="index-1.html">About</a>
-                                <ul>
-                                    <li>
-                                        <a href="#">Quisque nulla</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Vestibulum libero</a>
-                                        <ul>
-                                            <li>
-                                                <a href="#">Lorem</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Dolor</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Sit amet</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#">Vivamus eget nibh</a>
-                                    </li>
-                                </ul>
+                                <a href="payments.php">Payments</a>
                             </li>
                             <li>
-                                <a href="index-2.html">What We Do</a>
+                                <a href="spotreg.php">On Spot Registration</a>
                             </li>
                             <li>
-                                <a href="index-3.html">Menu</a>
-                            </li>
-                            <li>
-                                <a href="index-4.html">Contacts</a>
+                                <?php echo "<a href='logout_admin.php'>Logout, ".$current_user."</a>"; ?>
                             </li>
                         </ul>
                     </nav>
@@ -99,7 +92,7 @@ th {
         <!--========================================================
                               CONTENT
     =========================================================-->
-        <main>
+        <main <?php echo $view_whole; ?> >
             <section class="well well__offset-3">
                 <div class="container">
                     <h2><em>Payments</em>Section</h2>
