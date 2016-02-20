@@ -14,7 +14,7 @@
     if ($name_title['type']=="event_admin") {
         $link1 = "event_admin.php";
         $linkup = "";
-        $page = "Participants"
+        $page = "Participants";
     } elseif ($name_title['type']=="payment_admin") {
         $link1 = "payments.php";
         $linkup = "";
