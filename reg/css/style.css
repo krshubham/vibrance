@@ -18,6 +18,29 @@ body {
     color: #5f5e4e;
 }
 
+.gobutton {
+    cursor: pointer;
+    padding: 5px 25px;
+    background: #35b128;
+    border: 1px solid #33842a;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .75);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, .75);
+    box-shadow: 0 0 4px rgba(0, 0, 0, .75);
+    color: #f3f3f3;
+    font-size: 1.1em;
+}
+
+.gobutton:hover,
+.gobutton:focus {
+    background-color: #399630;
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+    box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -780,7 +803,6 @@ a[href^="tel:"] {
     color: #ffffff;
 }
 
-
 .parallax37 {
     color: #ffffff;
     background-color: #FFF;
@@ -813,6 +835,7 @@ a[href^="tel:"] {
 .parallax47 h2 {
     color: #ffffff;
 }
+
 .parallax49 {
     color: #ffffff;
     background-color: #FFF;
@@ -1898,6 +1921,6 @@ footer .tm {
     }
 }
 
-#sf-events-menu{
+#sf-events-menu {
     overflow: scroll
 }
