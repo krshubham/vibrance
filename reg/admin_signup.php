@@ -2,6 +2,16 @@
 <?php require_once("includes/db_connection.php"); ?>
 <?php require_once("includes/functions.php"); ?>
 <?php require_once("includes/validation_functions.php"); ?>
+<?php confirm_admin_logged_in(); ?>
+
+<?php
+    $current_user = $_SESSION["username"];
+    $name_query = "SELECT * FROM admins WHERE username = '{$current_user}' LIMIT 1";
+    $name_result = mysqli_query($conn, $name_query);
+    confirm_query($name_result);
+    $name_title = mysqli_fetch_assoc($name_result);    
+?>
+
 
 <?php
 if (admin_logged_in()) {
@@ -9,7 +19,13 @@ if (admin_logged_in()) {
 }
 ?>
 
-
+<?php 
+	if ($name_title['type']=="super_admin") {
+		$view_whole = "";
+	} else {
+		$view_whole = "style='display: none;'";
+	}
+?>
 
 <?php
 if(isset($_POST['submit'])){
@@ -49,51 +65,48 @@ if(isset($_POST['submit'])){
 <div id="header">
 <h1>Vibrance Super Admin</h1>
 </div>
-<div id="main">
-<div id="navigation">
-	&nbsp;
-</div>
-<div id="page">
-<?php echo message(); ?>
-<?php echo form_errors($errors); ?>
-<h2>Sign Up for Admins</h2>
-	<p>Please enter your details.</p>
-	<p>
-	   	<form action="admin_signup.php" method="post">
-	   		<table>	   			
-	   			<tr>
-	   				<td>Username</td>
-	   				<td><input type="text" name="username" value="" required /></td>
-	   			</tr>
-	   			<tr>
-	   				<td>Event Admin</td>
-	   				<td><input type="radio" name="type" value="event_admin" checked></td>
-	   			</tr>
-	   			<tr>
-	   				<td>Payment Admin</td>
-	   				<td><input type="radio" name="type" value="payment_admin" ></td>
-	   			</tr>
-	   			<tr>
-	   				<td>Super Admin</td>
-	   				<td><input type="radio" name="type" value="super_admin" ></td>
-	   			</tr>
-	   			<tr>
-	   				<td>Password</td>
-	   				<td><input type="password" name="password" id="txtNewPassword" value="" required /></td>
-	   			</tr>
-	   			<tr>
-	   				<td>Repeat Password</td>
-	   				<td><input type="password" id="txtConfirmPassword" required /></td>
-	   				<td><div class="registrationFormAlert" id="divCheckPasswordMatch" style="margin-left: 160px;"></div></td>
-	   			</tr>	   				   			
-	   			<tr>
-	   				<td><input name="submit" type="submit" value="Submit"></td>
-	   			</tr>
-	   		</table>			
-		</form>
+<div id="main" <?php echo $view_whole; ?> >	
+	<div id="page">
+	<?php echo message(); ?>
+	<?php echo form_errors($errors); ?>
+	<h2>Sign Up for Admins</h2>
+		<p>Please enter your details.</p>
+		<p>
+		   	<form action="admin_signup.php" method="post">
+		   		<table>	   			
+		   			<tr>
+		   				<td>Username</td>
+		   				<td><input type="text" name="username" value="" required /></td>
+		   			</tr>
+		   			<tr>
+		   				<td>Event Admin</td>
+		   				<td><input type="radio" name="type" value="event_admin" checked></td>
+		   			</tr>
+		   			<tr>
+		   				<td>Payment Admin</td>
+		   				<td><input type="radio" name="type" value="payment_admin" ></td>
+		   			</tr>
+		   			<tr>
+		   				<td>Super Admin</td>
+		   				<td><input type="radio" name="type" value="super_admin" ></td>
+		   			</tr>
+		   			<tr>
+		   				<td>Password</td>
+		   				<td><input type="password" name="password" id="txtNewPassword" value="" required /></td>
+		   			</tr>
+		   			<tr>
+		   				<td>Repeat Password</td>
+		   				<td><input type="password" id="txtConfirmPassword" required /></td>
+		   				<td><div class="registrationFormAlert" id="divCheckPasswordMatch" style="margin-left: 160px;"></div></td>
+		   			</tr>	   				   			
+		   			<tr>
+		   				<td><input name="submit" type="submit" value="Submit"></td>
+		   			</tr>
+		   		</table>			
+			</form>
+		</p>
 	</p>
-</p>
-</div>
+	</div>
 </div>
 <script type="text/javascript">
 $(function() {

@@ -94,6 +94,7 @@ th {
         <!--========================================================
                               CONTENT
     =========================================================-->
+    <h1><?php echo $view_message; ?></h1>
         <main <?php echo $view_whole; ?> >
             <section class="well well__offset-3">
                 <div class="container">
