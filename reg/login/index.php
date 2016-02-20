@@ -101,7 +101,7 @@ if(isset($_POST['signup'])){
                     <div class="bar"></div>
                 </div>
                 <div class="button-container">
-                    <button><span><input type="submit" name="submit" value="GO"></span></button>
+                    <span><input type="submit" name="submit" value="GO"></span>
                 </div>
             </form>
         </div>
@@ -148,7 +148,7 @@ if(isset($_POST['signup'])){
                     <div class="bar"></div>
                 </div>
                 <div class="button-container">
-                    <button><span><input type="submit" name="signup" value="SUBMIT"></span></button>
+                    <span><input type="submit" name="signup" value="SUBMIT"></span>
                 </div>
             </form>
         </div>
