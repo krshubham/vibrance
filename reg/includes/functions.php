@@ -175,7 +175,7 @@ function confirm_logged_in() {
 }
 function confirm_admin_logged_in() {
 	if (!admin_logged_in()) {
-		redirect_to("admin_login.php");
+		redirect_to("admin/index.php");
 	}
 }
 ?>
