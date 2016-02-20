@@ -141,9 +141,9 @@ th {
                                                 <td>                                                   
                                                     <a href="payconfirm.php?id=<?php echo urlencode($list["id"]); ?>&event=<?php echo urlencode($event); ?>" onclick="return confirm('Are you sure?');"><?php
                                                     if ($list['paid']==0) {
-                                                        echo "Pay";
+                                                        echo "<font color='red'>"."Pay"."</font>";
                                                     } else {
-                                                        echo "Paid";
+                                                        echo "<font color='green'>"."Paid"."</font>";
                                                     } ?>
                                                     </a>                                                    
                                                 </td>
