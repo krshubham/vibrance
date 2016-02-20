@@ -209,6 +209,7 @@
                                 </li>
                             </ul>
                             <form>
+                                <input type="text" id="event" value="adaptune" style="display: none;">
                                 <?php echo $event_view; ?>
                             </form>
                         </div>

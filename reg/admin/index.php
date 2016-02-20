@@ -1,3 +1,39 @@
+<?php require_once("../includes/session.php");?>
+<?php require_once("../includes/db_connection.php");?>
+<?php require_once("../includes/functions.php");?>
+<?php require_once("../includes/validation_functions.php"); ?>
+<?php
+if (admin_logged_in()) {
+    redirect_to ("../admin_land.php");
+}
+?>
+<?php
+$username = "";
+if (isset($_POST['submit'])) {
+
+    $required_fields = array("username", "password");
+    validate_presence($required_fields);
+    
+    if (empty($errors)) {
+
+        $username = $_POST['username'];     
+        $password = $_POST['password'];
+        $found_admin = attempt_admin_login($username, $password);
+
+        if ($found_admin) {
+
+            $_SESSION["admin_id"] = $found_admin["id"];
+            $_SESSION["username"] = $found_admin["username"];
+            redirect_to("../admin_land.php");
+        } else {
+            $_SESSION["message"] = "Username/password not found.";
+        }
+    }
+} else {
+
+}
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -158,13 +194,20 @@
     </div>
     <br>
     <div class="login">
-        <input type="text" placeholder="username" name="user">
-        <br>
-        <input type="password" placeholder="password" name="password">
-        <br>
-        <input type="button" value="Login">
+        <form method="post" action="index.php">
+            <input type="text" placeholder="username" name="username" required>
+            <br>
+            <input type="password" placeholder="password" name="password" required>
+            <br>
+            <input type="button" name="submit" value="Login">
+        </form>
     </div>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 </body>
 
 </html>
+<?php
+if (isset ($conn)){
+  mysqli_close($conn);
+}
+?>
