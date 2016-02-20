@@ -128,6 +128,7 @@ th {
                                                 <th>Reg. No.</th>
                                                 <th>Ph. No.</th>
                                                 <th>Status</th>
+                                                <th>Action</th>
                                             </tr><?php
                                         while ($list = mysqli_fetch_assoc($result)) { ?>
                                             <tr>
@@ -137,8 +138,18 @@ th {
                                                 <td><?php echo $list['regno']; ?></td>
                                                 <td><?php echo $list['phno']; ?></td>
                                                 <td><?php echo $list['paid']; ?></td>
-                                                <td><form><input type="button" id="button" value="Pay"></form></td>
+                                                <td>
+                                                    <form method="post" action="payments.php"> 
+                                                        <input type="submit" name="<?php echo $list['id'];?>" value="<?php if ($list['paid']==0) {
+                                                            echo "Pay";
+                                                        }else {echo "Paid";}  ?>">
+                                                    </form>
+                                                </td>
                                             </tr><?php
+                                            if (isset($_POST['$list["id"]'])) {
+                                                $update_query = "UPDATE {event} SET paid = 1 WHERE id = {$list['id']} LIMIT 1";
+                                                $update_result = mysqli_query($conn, $update_query);
+                                            }    
                                         } ?>
                                         </table>    
                                     </p> <?php
