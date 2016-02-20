@@ -137,6 +137,7 @@ th {
                                                 <td><?php echo $list['regno']; ?></td>
                                                 <td><?php echo $list['phno']; ?></td>
                                                 <td><?php echo $list['paid']; ?></td>
+                                                <td><form><input type="button" id="button" value="Pay"></form></td>
                                             </tr><?php
                                         } ?>
                                         </table>    
