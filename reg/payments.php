@@ -138,18 +138,16 @@ th {
                                                 <td><?php echo $list['regno']; ?></td>
                                                 <td><?php echo $list['phno']; ?></td>
                                                 <td><?php echo $list['paid']; ?></td>
-                                                <td>
-                                                    <form method="post" action="payments.php"> 
-                                                        <input type="submit" name="<?php echo $list['id'];?>" value="<?php if ($list['paid']==0) {
-                                                            echo "Pay";
-                                                        }else {echo "Paid";}  ?>">
-                                                    </form>
+                                                <td>                                                   
+                                                    <a href="payconfirm.php?id=<?php echo urlencode($list["id"]); ?>&event=<?php echo urlencode($event); ?>" onclick="return confirm('Are you sure?');"><?php
+                                                    if ($list['paid']==0) {
+                                                        echo "Pay";
+                                                    } else {
+                                                        echo "Paid";
+                                                    } ?>
+                                                    </a>                                                    
                                                 </td>
-                                            </tr><?php
-                                            if (isset($_POST['$list["id"]'])) {
-                                                $update_query = "UPDATE {event} SET paid = 1 WHERE id = {$list['id']} LIMIT 1";
-                                                $update_result = mysqli_query($conn, $update_query);
-                                            }    
+                                            </tr><?php                                             
                                         } ?>
                                         </table>    
                                     </p> <?php
