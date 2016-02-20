@@ -6,7 +6,7 @@
 <html lang="en">
 
 <head>
-    <title>Admin Payments</title>
+    <title>Admin Events</title>
     <meta charset="utf-8">
     <meta name="format-detection" content="telephone=no" />
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -102,7 +102,7 @@ th {
         <main>
             <section class="well well__offset-3">
                 <div class="container">
-                    <h2><em>Payments</em>Section</h2>
+                    <h2><em>Event</em>Participants</h2>
                     <div class="row row__offset-2">
                         <center>
                             <h3>Adaptune</h3>
