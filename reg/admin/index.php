@@ -199,7 +199,7 @@ if (isset($_POST['submit'])) {
             <br>
             <input type="password" placeholder="password" name="password" required>
             <br>
-            <input type="button" name="submit" value="Login">
+            <input type="submit" name="submit" value="Login">
         </form>
     </div>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
