@@ -1,4 +1,29 @@
-﻿<!DOCTYPE html>
+<?php require_once("includes/session.php");?>
+<?php require_once("includes/db_connection.php");?>
+<?php require_once("includes/functions.php");?>
+<?php confirm_admin_logged_in(); ?>
+<?php
+    $current_user = $_SESSION["username"];
+    $name_query = "SELECT * FROM admins WHERE username = '{$current_user}' LIMIT 1";
+    $name_result = mysqli_query($conn, $name_query);
+    confirm_query($name_result);
+    $name_title = mysqli_fetch_assoc($name_result);    
+?>
+
+<?php
+    if ($name_title['type']=="event_admin") {
+        $link1 = "event_admin.php";
+        $linkup = "";
+    } elseif ($name_title['type']=="payment_admin") {
+        $link1 = "payments.php";
+        $linkup = "";
+    } elseif ($name_title['type']=="super_admin") {
+        $link1 = "payments.php";
+        $linkup = "<a href='admin_signup.php'>Make new Admin</a>";
+    }
+?> 
+
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -37,43 +62,18 @@
                     </h1>
                     </div>
                     <nav class="nav">
-                        <ul class="sf-menu">
-                            <li>
-                                <a href="./">Home</a>
-                            </li>
+                        <ul class="sf-menu">                            
                             <li class="active">
-                                <a href="index-1.html">About</a>
-                                <ul>
-                                    <li>
-                                        <a href="#">Quisque nulla</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Vestibulum libero</a>
-                                        <ul>
-                                            <li>
-                                                <a href="#">Lorem</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Dolor</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Sit amet</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#">Vivamus eget nibh</a>
-                                    </li>
-                                </ul>
+                                <a href="admin_land.php">Admin Home</a>                               
                             </li>
                             <li>
-                                <a href="index-2.html">What We Do</a>
+                                <a href="payments.php">Payments</a>
                             </li>
                             <li>
-                                <a href="index-3.html">Menu</a>
+                                <a href="spotreg.php">On Spot Registration</a>
                             </li>
                             <li>
-                                <a href="index-4.html">Contacts</a>
+                                <?php echo "<a href='logout_admin.php'>Logout, ".$current_user."</a>"; ?>
                             </li>
                         </ul>
                     </nav>
@@ -90,7 +90,7 @@
                     <div class="row row__offset-2">
                         <div class="grid_6">
                             <div class="img">
-                                <a href="payments.php">
+                                <a href="<?php echo $link1; ?>">
                                     <div class="lazy-img" style="padding-bottom: 45.6140350877193%;"><img data-src="images/payment.jpg" alt=""></div>
                                 </a>
                             </div>
@@ -102,6 +102,7 @@
                                 </a>
                             </div>
                         </div>
+                        <center><?php echo $linkup; ?></center>
                     </div>
                 </div>
             </section>
@@ -116,3 +117,8 @@
 </body>
 
 </html>
+<?php
+    if (isset ($conn)){
+      mysqli_close($conn);
+    }
+?>
