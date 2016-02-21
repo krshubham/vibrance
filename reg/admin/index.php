@@ -38,6 +38,7 @@ if (isset($_POST['submit'])) {
 <html>
 
 <head>
+<link rel="stylesheet" type="text/css" href="normalize.css">
     <meta charset="UTF-8">
     <title>Admin Login</title>
     <style>
@@ -84,8 +85,8 @@ if (isset($_POST['submit'])) {
     
     .header {
         position: absolute;
-        top: calc(50% - 35px);
-        left: calc(50% - 255px);
+        top: calc(30% - 35px);
+        left: calc(30% - 255px);
         z-index: 2;
     }
     
