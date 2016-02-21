@@ -47,8 +47,8 @@ if (isset($_POST['submit'])) {
     @import url(http://fonts.googleapis.com/css?family=Exo:100,200,400);
     @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
     body {
-        margin: 0;
-        padding: 0;
+        margin: -10%;
+        padding: -10%;
         background: #fff;
         color: #fff;
         font-family: Arial;
