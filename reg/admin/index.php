@@ -57,10 +57,10 @@ if (isset($_POST['submit'])) {
     
     .body {
         position: absolute;
-        top: -20px;
-        left: -20px;
-        right: -40px;
-        bottom: -40px;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
         width: auto;
         height: auto;
         background-image: url(../images/1.jpg);
@@ -85,8 +85,8 @@ if (isset($_POST['submit'])) {
     
     .header {
         position: absolute;
-        top: calc(30% - 35px);
-        left: calc(30% - 255px);
+        top: calc(50% - 35px);
+        left: calc(50% - 255px);
         z-index: 2;
     }
     
