@@ -19,6 +19,11 @@
         $view_whole = "style='display: none;'";        
     }
 ?>
+<?php
+    if (isset($_POST['parti'])) {
+        $parti = $_POST['parti'];
+    }
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -121,6 +126,7 @@ th {
                                                 <th>Reg. No.</th>
                                                 <th>Ph. No.</th>
                                                 <th>Status</th>
+                                                <th>Participants</th>
                                                 <th>Action</th>
                                             </tr><?php
                                         while ($list = mysqli_fetch_assoc($result)) { ?>
@@ -131,8 +137,17 @@ th {
                                                 <td><?php echo $list['regno']; ?></td>
                                                 <td><?php echo $list['phno']; ?></td>
                                                 <td><?php echo $list['paid']; ?></td>
+                                                <td>
+                                                    <form method="post" action="payments.php">
+                                                        <select name="parti">
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                        </select>
+                                                    </form>
+                                                </td>
                                                 <td>                                                   
-                                                    <a href="payconfirm.php?id=<?php echo urlencode($list["id"]); ?>&event=<?php echo urlencode($event); ?>" onclick="return confirm('Are you sure?');"><?php
+                                                    <a href="payconfirm.php?id=<?php echo urlencode($list["id"]); ?>&event=<?php echo urlencode($event); ?>&parti=<?php echo urlencode($parti); ?>" onclick="return confirm('Are you sure?');"><?php
                                                     if ($list['paid']==0) {
                                                         echo "<font color='red'>"."Pay"."</font>";
                                                     } else {
