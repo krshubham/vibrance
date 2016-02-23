@@ -225,6 +225,11 @@
                     </div>
                     <form>
                         <input type="text" id="event" value="adaptune" style="display: none;">
+                        <select id="parti" <?php echo $event_view; ?> >
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
                         <div style="text-align: center; ">
                             <input id="adaptune" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
                             <?php echo $login_view; ?>

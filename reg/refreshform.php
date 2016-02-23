@@ -16,6 +16,7 @@
 	$regno = $name_title['regno'];
 	$phno = $name_title['phno'];
 	$event = $_POST['event1'];
+	$pati = $_POST['parti'];
 
 	$check_query = "SELECT * FROM {$event} WHERE email = '{$current_user}' ";
 	$check_result = mysqli_query($conn, $check_query);
@@ -27,8 +28,8 @@
 
 		$message = "Thank You for registering in Vibrance16.. Kindly confirm your registeration by paying at our payment desks in the academic block portico, VIT Chennai Campus.. Regards, Team Vibrance.";
 		mail ($email, "Registration for Vibrance16", $message, "From: vibrance2016@gmail.com"); 
-		$query = "INSERT INTO {$event} (name, email, college, regno, phno)";
-		$query .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}')";
+		$query = "INSERT INTO {$event} (name, email, college, regno, phno, parti)";
+		$query .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', {$parti})";
 		$result = mysqli_query($conn, $query);	
 
 	    if ($result) {
