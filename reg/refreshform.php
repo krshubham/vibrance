@@ -16,7 +16,7 @@
 	$regno = $name_title['regno'];
 	$phno = $name_title['phno'];
 	$event = $_POST['event1'];
-	$pati = $_POST['parti'];
+	$parti = $_POST['parti1'];
 
 	$check_query = "SELECT * FROM {$event} WHERE email = '{$current_user}' ";
 	$check_result = mysqli_query($conn, $check_query);
