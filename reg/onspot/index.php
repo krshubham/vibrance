@@ -49,8 +49,8 @@
 
             $message = "Thank You for registering in Vibrance16.. Kindly confirm your registeration by paying at our payment desks in the academic block portico, VIT Chennai Campus.. Regards, Team Vibrance.";
             mail ($email, "Registration for Vibrance16", $message, "From: vibrance2016@gmail.com"); 
-            $query = "INSERT INTO {$event} (name, email, college, regno, phno, paid, parti)";
-            $query .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', 1, {$parti})";
+            $query = "INSERT INTO {$event} (name, email, college, regno, phno, paid, parti, cnfby)";
+            $query .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', 1, {$parti}, '{$current_user}')";
             $result = mysqli_query($conn, $query);  
 
             if ($result) {
@@ -285,8 +285,7 @@
             if (event=="adaptune_alone_100") {
                 document.getElementById("demo").innerHTML = "Individual Event";
                 document.getElementsByTagName("INPUT")[5].style.display = "none";
-            } else if (event=="bollywoodbattle_team_200") {
-                document.getElementsByTagName("INPUT")[5].setAttribute("placeholder", "Team Size");
+            } else if (event=="bollywoodbattle_team_200") {                
                 document.getElementsByTagName("INPUT")[5].setAttribute("min", "3"); 
                 document.getElementsByTagName("INPUT")[5].setAttribute("max", "4");
                 document.getElementsByTagName("INPUT")[5].style.display = "initial";

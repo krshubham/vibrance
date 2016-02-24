@@ -5,8 +5,9 @@
 <?php 
 $id = $_GET["id"];
 $event = $_GET['event'];
+$current_user = $_SESSION['username'];
 
-$update_query = "UPDATE {$event} SET paid = 1 WHERE id = {$id} LIMIT 1";
+$update_query = "UPDATE {$event} SET paid = 1, cnfby = '{$current_user}' WHERE id = {$id} LIMIT 1";
 $update_result = mysqli_query($conn, $update_query);
 
 if ($result && mysqli_affected_rows($conn) == 1) {

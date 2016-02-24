@@ -18,6 +18,11 @@
     } else {
         $view_whole = "style='display: none;'";        
     }
+    if ($name_title['type']=="super_admin") {
+        $view_cnf = "";
+    } else {
+        $view_cnf = "style='display: none;'";
+    }
 ?>
 
 <!DOCTYPE html>
@@ -127,6 +132,7 @@ th {
                                                 <th>Participants</th>
                                                 <th>Fees</th>
                                                 <th>Action</th>
+                                                <th <?php echo $view_cnf; ?>>Confirmed By</th>
                                             </tr><?php
                                         while ($list = mysqli_fetch_assoc($result)) { ?>
                                             <tr>
@@ -147,6 +153,7 @@ th {
                                                     } ?>
                                                     </a>                                                    
                                                 </td>
+                                                <td <?php echo $view_cnf; ?>><?php echo $list['cnfby']; ?></td>
                                             </tr><?php                                             
                                         } ?>
                                         </table>    

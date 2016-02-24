@@ -54,8 +54,8 @@
 
             $message = "Thank You for registering in Vibrance16.. Regards, Team Vibrance.";
             mail ($email, "Registration for Vibrance16", $message, "From: vibrance2016@gmail.com"); 
-            $query = "INSERT INTO {$event_name} (name, email, college, regno, phno, paid, parti)";
-            $query .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', 1, {$parti})";
+            $query = "INSERT INTO {$event_name} (name, email, college, regno, phno, paid, parti, cnfby)";
+            $query .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', 1, {$parti}, '{$current_user}')";
             $result = mysqli_query($conn, $query);  
 
             if ($result) {
