@@ -289,6 +289,7 @@
                 document.getElementsByTagName("INPUT")[5].setAttribute("value", "3");
                 document.getElementsByTagName("INPUT")[5].setAttribute("min", "3"); 
                 document.getElementsByTagName("INPUT")[5].setAttribute("max", "4");
+                document.getElementsByTagName("INPUT")[5].style.display = "initial";
                 document.getElementById("demo").innerHTML = "Dynamic";
             }            
         }
