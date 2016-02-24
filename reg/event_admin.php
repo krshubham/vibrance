@@ -15,10 +15,12 @@
     if ($name_title['type']=="event_admin") {
         $view_whole = "";
         $last_name = explode("_", $current_user);
-        $view_message = $last_name[1];  
+        $event_name = $last_name[1];
+        $event_table = $last_name[1]."_".$last_name[2]."_".$last_name[3];          
     } else {
         $view_whole = "style='display: none;'";
-        $view_message = "Your account is not allowed to access this page.";
+        $event_name = "";
+        $event_table = "";
     }
 ?>
 
@@ -100,10 +102,10 @@ th {
                     <h2><em>Event</em>Participants</h2>
                     <div class="row row__offset-2">
                         <center>
-                            <h3><?php echo ucfirst($view_message); ?></h3>
+                            <h3><?php echo ucfirst($event_name); ?></h3>
                             <?php
                                 
-                                $query = "SELECT * FROM {$view_message} WHERE paid = 1";
+                                $query = "SELECT * FROM {$event_table} WHERE paid = 1";
                                 $result = mysqli_query($conn, $query);
                                 confirm_query($result); ?>
                                 <p>
@@ -114,7 +116,7 @@ th {
                                             <th>College</th>
                                             <th>Reg. No.</th>
                                             <th>Ph. No.</th>
-                                                                                          
+                                            <th>Participants</th>                                             
                                         </tr><?php
                                     while ($list = mysqli_fetch_assoc($result)) { ?>
                                         <tr>
@@ -122,7 +124,8 @@ th {
                                             <td><?php echo $list['email']; ?></td>
                                             <td><?php echo $list['college']; ?></td>
                                             <td><?php echo $list['regno']; ?></td>
-                                            <td><?php echo $list['phno']; ?></td>                                                                                          
+                                            <td><?php echo $list['phno']; ?></td>  
+                                            <td><?php echo $list['parti']; ?></td>                                                                                        
                                         </tr><?php                                             
                                     } ?>
                                     </table>    
