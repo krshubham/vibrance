@@ -6,11 +6,14 @@
 </head>
 
 <body>
-    <select id="mySelect" onchange="myFunction()" name="event" required>
-        <option value="">Select Event</option>
-        <option value="adaptune_alone_100">Adaptune</option>
-        <option value="bollywoodbattle_team_200">Group Dance</option>
-    </select>
+    <form>
+    	<select id="mySelect" onchange="myFunction()" name="event" required>
+	        <option value="">Select Event</option>
+	        <option value="adaptune_alone_100">Adaptune</option>
+	        <option value="bollywoodbattle_team_200">Group Dance</option>
+	    </select>
+	    <input type="submit" name="submit" value="submit">
+    </form>
     <div id="demo"></div>
     <script type="text/javascript">
     	function myFunction() {
@@ -20,9 +23,12 @@
             } else if (event=="bollywoodbattle_team_200") {
                 var x = document.createElement("INPUT");
                 x.setAttribute("type", "number");
-                x.setAttribute("value", "1");
+                x.setAttribute("value", "3");
+                x.setAttribute("name", "parti");
+                x.setAttribute("min", "3");
+                x.setAttribute("max", "4");
                 document.body.appendChild(x);
-                //document.getElementById("demo").innerHTML = x;
+                document.getElementById("demo").innerHTML = "Dynamic";
             }            
         }
     </script>

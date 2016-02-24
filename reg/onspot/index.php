@@ -32,7 +32,12 @@
         }
         $phno = $_POST['phno'];        
         $event = $_POST['event'];
-
+        $type = explode("_", $event);
+        if ($type[1]=="alone") {
+            $parti = 1;
+        } else {
+            $parti = $_POST['parti'];
+        }
 
         $check_query = "SELECT * FROM {$event} WHERE email = '{$email}' ";
         $check_result = mysqli_query($conn, $check_query);
@@ -44,8 +49,8 @@
 
             $message = "Thank You for registering in Vibrance16.. Kindly confirm your registeration by paying at our payment desks in the academic block portico, VIT Chennai Campus.. Regards, Team Vibrance.";
             mail ($email, "Registration for Vibrance16", $message, "From: vibrance2016@gmail.com"); 
-            $query = "INSERT INTO {$event} (name, email, college, regno, phno, paid)";
-            $query .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', 1)";
+            $query = "INSERT INTO {$event} (name, email, college, regno, phno, paid, parti)";
+            $query .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', 1, {$parti})";
             $result = mysqli_query($conn, $query);  
 
             if ($result) {
@@ -265,7 +270,7 @@
                     <option value="bollywoodbattle_team_200">Group Dance</option>
                 </select>
             </div>
-            <div id="demo"></div>
+            <div id="demo" class="field name-box"></div>
             <input class="button" type="submit" value="Submit" name="submit" />
         </form>
     </section>
@@ -279,9 +284,12 @@
             } else if (event=="bollywoodbattle_team_200") {
                 var x = document.createElement("INPUT");
                 x.setAttribute("type", "number");
-                x.setAttribute("value", "1");
+                x.setAttribute("value", "3");
+                x.setAttribute("name", "parti");
+                x.setAttribute("min", "3");
+                x.setAttribute("max", "4");
                 document.body.appendChild(x);
-                document.getElementById("demo").innerHTML = x;
+                document.getElementById("demo").innerHTML = "Dynamic";
             }            
         }
     </script>
