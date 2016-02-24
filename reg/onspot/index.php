@@ -286,7 +286,7 @@
                 document.getElementById("demo").innerHTML = "Individual Event";
                 document.getElementsByTagName("INPUT")[5].style.display = "none";
             } else if (event=="bollywoodbattle_team_200") {
-                document.getElementsByTagName("INPUT")[5].setAttribute("value", "3");
+                document.getElementsByTagName("INPUT")[5].setAttribute("placeholder", "Team Size");
                 document.getElementsByTagName("INPUT")[5].setAttribute("min", "3"); 
                 document.getElementsByTagName("INPUT")[5].setAttribute("max", "4");
                 document.getElementsByTagName("INPUT")[5].style.display = "initial";

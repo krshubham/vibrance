@@ -34,6 +34,14 @@
             $regno = "";
         }
         $phno = $_POST['phno'];
+        $type = explode("_", $event_name);
+        if ($type[2]=="alone") {
+            $parti = 1;
+            $view_parti = "style='display: none;'";
+        } else {
+            $parti = $_POST['parti'];
+            $view_parti = "";
+        }
         
 
         $check_query = "SELECT * FROM {$event_name} WHERE email = '{$email}' ";
@@ -44,10 +52,10 @@
             $check_view = "You have already registered for this event. ";
         } else {
 
-            $message = "Thank You for registering in Vibrance16.. Kindly confirm your registeration by paying at our payment desks in the academic block portico, VIT Chennai Campus.. Regards, Team Vibrance.";
+            $message = "Thank You for registering in Vibrance16.. Regards, Team Vibrance.";
             mail ($email, "Registration for Vibrance16", $message, "From: vibrance2016@gmail.com"); 
-            $query = "INSERT INTO {$event_name} (name, email, college, regno, phno, paid)";
-            $query .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', 1)";
+            $query = "INSERT INTO {$event_name} (name, email, college, regno, phno, paid, parti)";
+            $query .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', 1, {$parti})";
             $result = mysqli_query($conn, $query);  
 
             if ($result) {
@@ -259,7 +267,10 @@
             <div class="field name-box">
                 <input type="text" id="phno" name="phno" placeholder="What should I dial?" required />
                 <label for="phno">Phone No.</label>
-            </div>            
+            </div>   
+            <div class="field name-box">
+            <input type="number" placeholder="Team Size" min="2" name="parti" <?php echo $view_parti; ?> >
+            </div>         
             
             <input class="button" type="submit" value="Submit" name="submit" />
         </form>
