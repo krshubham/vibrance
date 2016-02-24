@@ -30,8 +30,9 @@
         } else {
             $regno = "";
         }
-        $phno = $_POST['phno'];
+        $phno = $_POST['phno'];        
         $event = $_POST['event'];
+
 
         $check_query = "SELECT * FROM {$event} WHERE email = '{$email}' ";
         $check_result = mysqli_query($conn, $check_query);
@@ -258,17 +259,32 @@
                 <label for="phno">Phone No.</label>
             </div>
             <div class="field name-box">
-                <select name="event" required>
+                <select id="mySelect" onchange="myFunction()" name="event" required>
                     <option value="">Select Event</option>
                     <option value="adaptune_alone_100">Adaptune</option>
                     <option value="bollywoodbattle_team_200">Group Dance</option>
                 </select>
             </div>
+            <div id="demo"></div>
             <input class="button" type="submit" value="Submit" name="submit" />
         </form>
     </section>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src="js/index.js"></script>
+    <script type="text/javascript">
+        function myFunction() {
+            var event = document.getElementById("mySelect").value;
+            if (event=="adaptune_alone_100") {
+                document.getElementById("demo").innerHTML = "Individual Event";
+            } else if (event=="bollywoodbattle_team_200") {
+                var x = document.createElement("INPUT");
+                x.setAttribute("type", "number");
+                x.setAttribute("value", "1");
+                document.body.appendChild(x);
+                document.getElementById("demo").innerHTML = x;
+            }            
+        }
+    </script>
 </body>
 
 </html>

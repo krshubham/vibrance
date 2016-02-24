@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <select id="mySelect" onchange="myFunction()" name="event" required>
+        <option value="">Select Event</option>
+        <option value="adaptune_alone_100">Adaptune</option>
+        <option value="bollywoodbattle_team_200">Group Dance</option>
+    </select>
+    <div id="demo"></div>
+    <script type="text/javascript">
+    	function myFunction() {
+            var event = document.getElementById("mySelect").value;
+            if (event=="adaptune_alone_100") {
+                document.getElementById("demo").innerHTML = "Individual Event";
+            } else if (event=="bollywoodbattle_team_200") {
+                var x = document.createElement("INPUT");
+                x.setAttribute("type", "number");
+                x.setAttribute("value", "1");
+                document.body.appendChild(x);
+                document.getElementById("demo").innerHTML = x;
+            }            
+        }
+    </script>
+</body>
+
+</html>
