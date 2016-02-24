@@ -224,12 +224,7 @@
                         </div>
                     </div>
                     <form>
-                        <input type="text" id="event" value="adaptune" style="display: none;">
-                        <select id="parti" <?php echo $event_view; ?> >
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                        </select>
+                        <input type="text" id="event_adaptune" value="adaptune_alone_100" style="display: none;">                    
                         <div style="text-align: center; ">
                             <input id="adaptune" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
                             <?php echo $login_view; ?>
@@ -279,6 +274,20 @@
                             </p>
                         </div>
                     </div>
+                    <form>
+                        <input type="text" id="event_bollywoodbattle" value="bollywoodbattle_team_200" style="display: none;">
+                        <center>
+                            <select id="parti_bollywoodbattle" <?php echo $event_view; ?> >
+                                <option value="0">Select the number of participants in your team</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </center>
+                        <div style="text-align: center; ">
+                            <input id="bollywoodbattle" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <?php echo $login_view; ?>
+                        </div>
+                    </form>    
                 </div>
             </section>
             <section name="third" class="parallax parallax3" data-parallax-speed="-0.4">

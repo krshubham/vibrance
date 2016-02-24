@@ -101,17 +101,20 @@ th {
                             <form action="payments.php" method="post">
                                 <select name="event">
                                     <option value="">Select an event</option>
-                                    <option value="adaptune">Adaptune</option>
-                                    <option value="groupdance">Group Dance</option>
+                                    <option value="adaptune_alone_100">Adaptune</option>
+                                    <option value="bollywoodbattle_team_200">Bollywood Battle</option>
                                 </select>
                                 <input type="submit" name="submit" value="Go">
                             </form>
                             <?php
                                 if (isset($_POST['submit'])) {
                                     $event = $_POST['event'];
+                                    $event_name = explode("_", $event);
                                     $query = "SELECT * FROM {$event} ";
                                     $result = mysqli_query($conn, $query);
                                     confirm_query($result); ?>
+                                    <h3><?php echo $event_name[0]; ?></h3>
+                                    <h4><?php echo $event_name[1]; ?></h4>
                                     <p>
                                         <table>
                                             <tr>
@@ -122,6 +125,7 @@ th {
                                                 <th>Ph. No.</th>
                                                 <th>Status</th>
                                                 <th>Participants</th>
+                                                <th>Fees</th>
                                                 <th>Action</th>
                                             </tr><?php
                                         while ($list = mysqli_fetch_assoc($result)) { ?>
@@ -133,6 +137,7 @@ th {
                                                 <td><?php echo $list['phno']; ?></td>
                                                 <td><?php echo $list['paid']; ?></td>
                                                 <td><?php echo $list['parti']; ?></td>
+                                                <td><?php $fees = $list['parti']*$event_name[2]; echo $fees; ?></td>
                                                 <td>                                                   
                                                     <a href="payconfirm.php?id=<?php echo urlencode($list["id"]); ?>&event=<?php echo urlencode($event); ?>" onclick="return confirm('Are you sure?');"><?php
                                                     if ($list['paid']==0) {
