@@ -267,10 +267,13 @@
                 <select id="mySelect" onchange="myFunction()" name="event" required>
                     <option value="">Select Event</option>
                     <option value="adaptune_alone_100">Adaptune</option>
-                    <option value="bollywoodbattle_team_200">Group Dance</option>
+                    <option value="bollywoodbattle_team_200">Bollywood Battle</option>
                 </select>
             </div>
             <div id="demo" class="field name-box"></div>
+            <div class="field name-box">
+                <input type="number" placeholder="Team Size" name="parti">
+            </div>
             <input class="button" type="submit" value="Submit" name="submit" />
         </form>
     </section>
@@ -281,14 +284,11 @@
             var event = document.getElementById("mySelect").value;
             if (event=="adaptune_alone_100") {
                 document.getElementById("demo").innerHTML = "Individual Event";
+                document.getElementsByTagName("INPUT")[5].style.display = "none";
             } else if (event=="bollywoodbattle_team_200") {
-                var x = document.createElement("INPUT");
-                x.setAttribute("type", "number");
-                x.setAttribute("value", "3");
-                x.setAttribute("name", "parti");
-                x.setAttribute("min", "3");
-                x.setAttribute("max", "4");
-                document.body.appendChild(x);
+                document.getElementsByTagName("INPUT")[5].setAttribute("value", "3");
+                document.getElementsByTagName("INPUT")[5].setAttribute("min", "3"); 
+                document.getElementsByTagName("INPUT")[5].setAttribute("max", "4");
                 document.getElementById("demo").innerHTML = "Dynamic";
             }            
         }

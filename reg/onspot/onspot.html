@@ -12,6 +12,7 @@
 	        <option value="adaptune_alone_100">Adaptune</option>
 	        <option value="bollywoodbattle_team_200">Group Dance</option>
 	    </select>
+	    <input type="number" placeholder="Team Size">
 	    <input type="submit" name="submit" value="submit">
     </form>
     <div id="demo"></div>
@@ -20,14 +21,11 @@
             var event = document.getElementById("mySelect").value;
             if (event=="adaptune_alone_100") {
                 document.getElementById("demo").innerHTML = "Individual Event";
+                document.getElementsByTagName("INPUT")[0].style.display = "none";
             } else if (event=="bollywoodbattle_team_200") {
-                var x = document.createElement("INPUT");
-                x.setAttribute("type", "number");
-                x.setAttribute("value", "3");
-                x.setAttribute("name", "parti");
-                x.setAttribute("min", "3");
-                x.setAttribute("max", "4");
-                document.body.appendChild(x);
+                document.getElementsByTagName("INPUT")[0].setAttribute("value", "3");
+                document.getElementsByTagName("INPUT")[0].setAttribute("min", "3"); 
+                document.getElementsByTagName("INPUT")[0].setAttribute("max", "4");
                 document.getElementById("demo").innerHTML = "Dynamic";
             }            
         }
