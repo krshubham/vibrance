@@ -260,8 +260,8 @@
             <div class="field name-box">
                 <select name="event" required>
                     <option value="">Select Event</option>
-                    <option value="adaptune">Adaptune</option>
-                    <option value="groupdance">Group Dance</option>
+                    <option value="adaptune_alone_100">Adaptune</option>
+                    <option value="bollywoodbattle_team_200">Group Dance</option>
                 </select>
             </div>
             <input class="button" type="submit" value="Submit" name="submit" />

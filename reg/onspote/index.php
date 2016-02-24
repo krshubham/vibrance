@@ -16,7 +16,7 @@
     if ($name_title['type']=="event_admin") {
         $view_whole = "";  
         $last_name = explode("_", $current_user);
-        $event_name = $last_name[1];         
+        $event_name = $last_name[1]."_".$last_name[2]."_".$last_name[3];         
     } else {
         $view_whole = "style='display: none;'";  
         $event_name = "";      
@@ -237,7 +237,7 @@
 <body>
 
     <section id="hire" <?php echo $view_whole; ?> >
-        <h1>On Spot Registration &nbsp;<?php echo ucfirst($event_name); ?></h1>
+        <h1>On Spot Registration &nbsp;<?php echo ucfirst($last_name[1]); ?></h1>
         <p><?php echo $check_view; ?></p>
         <form method="post" action="index.php">
             <div class="field name-box">
