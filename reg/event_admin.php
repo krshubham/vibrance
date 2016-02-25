@@ -36,6 +36,8 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery.js"></script>
     <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script type='text/javascript' src='http://code.jquery.com/jquery-git2.js'></script>
+    <script type='text/javascript' src="http://codeinnovators.meximas.com/pdfexport/jspdf.debug.js"></script>
     <!--[if lt IE 9]>
     <html class="lt-ie9">
     <div style=' clear: both; text-align:center; position: relative;'>
@@ -108,7 +110,7 @@ th {
                                 $query = "SELECT * FROM {$event_table} WHERE paid = 1";
                                 $result = mysqli_query($conn, $query);
                                 confirm_query($result); ?>
-                                <p>
+                                <p id="htmlexportPDF">
                                     <table id="countit">
                                         <tr>
                                             <th>Name</th>
@@ -135,6 +137,7 @@ th {
                             <p>
                                 <h3>Total Income = Rs. <span id="total"></span> </h3>
                             </p>
+                            <button onclick="javascript:htmltopdf();">Export PDF</button>
                         </center>
                     </div>
                 </div>
@@ -156,6 +159,34 @@ th {
         }
     }
     document.getElementById('total').innerHTML += sum;
+    </script>
+    <script type='text/javascript'>
+    function htmltopdf() {
+        var pdf = new jsPDF('p', 'pt', 'letter');
+        source = $('#htmlexportPDF')[0];
+        specialElementHandlers = {
+            '#bypassme': function(element, renderer) {
+                return true
+            }
+        };
+        margins = {
+            top: 80,
+            bottom: 60,
+            left: 40,
+            width: 522
+        };
+        pdf.fromHTML(
+            source,
+            margins.left,
+            margins.top, {
+                'width': margins.width,
+                'elementHandlers': specialElementHandlers
+            },
+
+            function(dispose) {
+                pdf.save('Download.pdf');
+            }, margins);
+    }
     </script>
 </body>
 
