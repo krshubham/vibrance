@@ -9,10 +9,10 @@ $mail->SMTPAuth = true;     // turn on SMTP authentication
 $mail->Username = "hiddenshopping@gmail.com";  // SMTP username
 $mail->Password = "25nov1992"; // SMTP password
 
-$mail->From = "from@example.com";
+$mail->From = "hiddenshopping@gmail.com";
 $mail->FromName = "SuperUser";
 
-$mail->AddAddress("prashant.bhardwaj2014@vit.ac.in");                  // name is optional
+$mail->AddAddress("pkpbhardwaj729@gmail.com");                  // name is optional
 
 
 $mail->WordWrap = 50;                                 // set word wrap to 50 characters
