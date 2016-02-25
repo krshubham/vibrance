@@ -16,13 +16,13 @@
         $link2 = "onspote/index.php";
         $linkup = "";
         $page = "Participants";
-        $view_whole = "style='dispaly: none;'";
+        $view_whole = "";
     } elseif ($name_title['type']=="payment_admin") {
         $link1 = "payments.php";
         $link2 = "onspot/index.php";
         $linkup = "";
         $page = "Payments";
-        $view_whole = "style='dispaly: none;'";
+        $view_whole = "";
     } elseif ($name_title['type']=="super_admin") {
         $link1 = "payments.php";
         $link2 = "onspot/index.php";
@@ -34,7 +34,7 @@
         $link2 = "#";
         $page = "";
         $linkup = "";
-        $view_whole = "";
+        $view_whole = "style='dispaly: none;'";
     }
 ?> 
 
