@@ -1,25 +1,31 @@
 <?php
 require_once ("class.phpmailer.php");
-  $Correo = new PHPMailer();
-  $Correo->IsSMTP();
-  $Correo->SMTPAuth = true;
-  $Correo->SMTPSecure = "tls";
-  $Correo->Host = "smtp.yahoo.com";
-  $Correo->Port = 587;
-  $Correo->Username = "vitvibrance@yahoo.com";
-  $Correo->Password = "25nov1992";
-  $Correo->SetFrom('vitvibrance@yahoo.com','De Yo');
-  $Correo->FromName = "From";
-  $Correo->AddAddress("pkpbhardwaj729@gmail.com");
-  $Correo->Subject = "Prueba con PHPMailer";
-  $Correo->Body = "<H3>Bienvenido! Esto Funciona!</H3>";
-  $Correo->IsHTML (true);
-  if (!$Correo->Send())
-  {
-    echo "Error: $Correo->ErrorInfo";
-  }
-  else
-  {
-    echo "Message Sent!";
-  }
+  $to['email'] = "pkpbhardwaj729@gmail.com";      
+$to['name'] = "Prashant";   
+$subject = "test subject";
+$str = "<p>Hello, World</p>";
+$mail = new PHPMailer;
+$mail->IsSMTP();                                     
+$mail->SMTPAuth = true;
+$mail->Host = 'smtp.gmail.com';
+$mail->Port = 465;
+$mail->Username = 'hiddenshopping@gmail.com';
+$mail->Password = '25nov1992';
+$mail->SMTPSecure = 'ssl';
+$mail->From = 'hiddenshopping@gmail.com';
+$mail->FromName = "Vibrance";
+$mail->AddReplyTo('hiddenshopping@gmail.com', 'any name'); 
+$mail->AddAddress($to['email'],$to['name']);
+$mail->Priority = 1;
+$mail->AddCustomHeader("X-MSMail-Priority: High");
+$mail->WordWrap = 50;    
+$mail->IsHTML(true);  
+$mail->Subject = $subject;
+$mail->Body    = $str;
+if(!$mail->Send()) {
+$err = 'Message could not be sent.';
+$err .= 'Mailer Error: ' . $mail->ErrorInfo;                        
+}
+
+$mail->ClearAddresses();
 ?>
