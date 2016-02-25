@@ -75,7 +75,7 @@ if(isset($_POST['signup'])){
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 
-	<title>Material Design Log In &amp; Sign Up</title>
+	<title>Vibrance</title>
 	<link rel="stylesheet" href="style.css" type="text/css" media="all">
 	<link rel="stylesheet" href="normalize.css" type="text/css" media="all">
 	<link href='http://fonts.googleapis.com/css?family=Roboto:900,900italic,500,400italic,100,700italic,300,700,500italic,100italic,300italic,400' rel='stylesheet' type='text/css'>
@@ -100,30 +100,32 @@ if(isset($_POST['signup'])){
 			<div class="left">
 				<div id="ic">
 					<h2>Sign Up</h2>
-					<p>Synth polaroid bitters chillwave pickled. Vegan disrupt tousled.</p>
-					<form id="girisyap" name="signup_form" id="signup_form" method="post" enctype="multipart/form-data" onsubmit="return false;">
-
-						<div class="yarim form-group">
-							<label class="control-label" for="inputNormal">Username</label>
-							<input type="text" name="signup_username" id="signup_username" class="bp-suggestions form-control" cols="50" rows="10" ></input>
-						</div>
+					<form id="girisyap" method="post" action="index.php">
 						<div class="yarim sn form-group">
-							<label class="control-label" for="inputNormal">Full Name</label>
-							<input type="text" name="field_1" id="field_1" value="" class="bp-suggestions form-control" cols="50" rows="10"></input>
+							<label class="control-label" for="inputNormal">Name</label>
+							<input type="text" name="name" id="field_1" value="" class="bp-suggestions form-control" cols="50" rows="10" required></input>
 						</div>
 						<div class="form-group">
 							<label class="control-label" for="inputNormal">Email</label>
-							<input type="text" name="signup_email" id="signup_email" class="bp-suggestions form-control" cols="50" rows="10"></input>
+							<input type="text" name="username" id="signup_email" class="bp-suggestions form-control" cols="50" rows="10" required></input>
+						</div>
+						<div class="yarim form-group">
+							<label class="control-label" for="inputNormal">College</label>
+							<input type="text" name="college" id="signup_username" class="bp-suggestions form-control" cols="50" rows="10" required></input>
 						</div>
 						<div class="form-group">
-							<label class="control-label" for="inputNormal">Password</label>
-							<input type="password" name="signup_password" id="signup_password" value="" class="bp-suggestions form-control" cols="50" rows="10" ></input>
+							<label class="control-label" for="inputNormal">Reg. No(only for VIT students)</label>
+							<input type="text" name="regno" id="signup_password" value="" class="bp-suggestions form-control" cols="50" rows="10"></input>
+						</div>
+						<div class="form-group">
+							<label class="control-label" for="inputNormal">Contact Number</label>
+							<input type="number" name="phno" id="signup_password" value="" class="bp-suggestions form-control" cols="50" rows="10" required></input>
 						</div>
 						<div class="form-group soninpt">
-							<label class="control-label" for="inputNormal">About</label>
-							<input type="text" name="field_2" id="field_2" class="bp-suggestions form-control" cols="50" rows="10"></input>
+							<label class="control-label" for="inputNormal" required>Password</label>
+							<input type="password" name="password" id="field_2" class="bp-suggestions form-control" cols="50" rows="10"></input>
 						</div>
-						<input type="submit" name="signup_submit" id="signup_submit" value="Sign Up" class="girisbtn"  />
+						<input type="submit" name="signup" id="signup_submit" value="Sign Up" class="girisbtn"  />
 					</form>
 
 					<button id="moveright">Login</button>
@@ -133,18 +135,17 @@ if(isset($_POST['signup'])){
 			<div class="right">
 				<div id="ic">
 					<h2>Login</h2>
-					<p>Synth polaroid bitters chillwave pickled. Vegan disrupt tousled.</p>
-					<form name="login-form" id="girisyap" id="sidebar-user-login" method="post" onsubmit="return false;">
+					<form id="girisyap" method="post" action="index.php">
 
 						<div class="form-group">
 							<label class="control-label" for="inputNormal">Username</label>
-							<input type="text" name="log" class="bp-suggestions form-control" cols="50" rows="10" ></input>
+							<input type="text" name="username" class="bp-suggestions form-control" cols="50" rows="10" required></input>
 						</div>
 						<div class="form-group soninpt">
 							<label class="control-label" for="inputNormal">Password</label>
-							<input type="password" name="pwd" class="bp-suggestions form-control" cols="50" rows="10"></input>
+							<input type="password" name="password" class="bp-suggestions form-control" cols="50" rows="10" required></input>
 						</div>
-						<input type="submit" value="Login" class="girisbtn" tabindex="100" />
+						<input type="submit" value="Login" class="girisbtn" tabindex="100" name="submit" />
 					</form>
 
 					<button id="moveleft">Sign Up</button>
