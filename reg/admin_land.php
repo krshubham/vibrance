@@ -34,7 +34,7 @@
         $link2 = "#";
         $page = "";
         $linkup = "";
-        $view_whole = "style='dispaly: none;'";
+        $view_whole = "style='display: none;'";
     }
 ?> 
 
