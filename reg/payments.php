@@ -121,7 +121,7 @@ th {
                                     <h3><?php echo $event_name[0]; ?></h3>
                                     <h4><?php echo $event_name[1]; ?></h4>
                                     <p>
-                                        <table>
+                                        <table id="countit">
                                             <tr>
                                                 <th>Name</th>
                                                 <th>Email</th>
@@ -143,7 +143,7 @@ th {
                                                 <td><?php echo $list['phno']; ?></td>
                                                 <td><?php echo $list['paid']; ?></td>
                                                 <td><?php echo $list['parti']; ?></td>
-                                                <td><?php $fees = $list['parti']*$event_name[2]; echo $fees; ?></td>
+                                                <td class="count-me"><?php $fees = $list['parti']*$event_name[2]; echo $fees; ?></td>
                                                 <td>                                                   
                                                     <a href="payconfirm.php?id=<?php echo urlencode($list["id"]); ?>&event=<?php echo urlencode($event); ?>" onclick="return confirm('Are you sure?');"><?php
                                                     if ($list['paid']==0) {
@@ -160,6 +160,9 @@ th {
                                     </p> <?php
                                 }    
                             ?>
+                            <p>
+                                <h3>Total Income = Rs. <span id="total"></span> </h3>
+                            </p>
                         </center>
                     </div>
                 </div>
@@ -172,6 +175,16 @@ th {
         </footer>
     </div>
     <script src="js/script.js"></script>
+    <script language="javascript" type="text/javascript">
+    var tds = document.getElementById('countit').getElementsByTagName('td');
+    var sum = 0;
+    for (var i = 0; i < tds.length; i++) {
+        if (tds[i].className == 'count-me') {
+            sum += isNaN(tds[i].innerHTML) ? 0 : parseInt(tds[i].innerHTML);
+        }
+    }
+    document.getElementById('total').innerHTML += sum;
+    </script>
 </body>
 
 </html>
