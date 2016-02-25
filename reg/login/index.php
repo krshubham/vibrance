@@ -100,7 +100,7 @@ if(isset($_POST['signup'])){
 			<div class="left">
 				<div id="ic">
 					<h2>Sign Up</h2>
-					<form id="girisyap" name="signup_form" id="signup_form" method="post" enctype="multipart/form-data" onsubmit="return false;">
+					<form id="girisyap" name="signup_form" id="signup_form" method="post" enctype="multipart/form-data" action="index.php">
 						<div class="yarim sn form-group">
 							<label class="control-label" for="inputNormal">Name</label>
 							<input type="text" name="name" id="field_1" value="" class="bp-suggestions form-control" cols="50" rows="10" required></input>
