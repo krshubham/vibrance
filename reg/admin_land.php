@@ -29,7 +29,7 @@
         $page = "Payments";
         $linkup = "<a href='admin_signup.php'>Make new Admin</a>";
         $view_whole = "";
-    } elseif ($name_title['type']=="super_admin") {
+    } elseif ($name_title['type']=="viewer_admin") {
         $link1 = "viewers.php";
         $link2 = "#";
         $page = "";

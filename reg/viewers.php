@@ -92,7 +92,7 @@ th {
                     <h2><em>Payments</em>Section</h2>
                     <div class="row row__offset-2">
                         <center>
-                            <form action="payments.php" method="post">
+                            <form action="viewers.php" method="post">
                                 <select name="event">
                                     <option value="">Select an event</option>
                                     <option value="adaptune_alone_100">Adaptune</option>
