@@ -110,29 +110,31 @@ th {
                                 $query = "SELECT * FROM {$event_table} WHERE paid = 1";
                                 $result = mysqli_query($conn, $query);
                                 confirm_query($result); ?>
-                                <p id="htmlexportPDF">
-                                    <table id="countit">
-                                        <tr>
-                                            <th>Name</th>
-                                            <th>Email</th>
-                                            <th>College</th>
-                                            <th>Reg. No.</th>
-                                            <th>Ph. No.</th>
-                                            <th>Participants</th> 
-                                            <th>Fees</th>                                            
-                                        </tr><?php
-                                    while ($list = mysqli_fetch_assoc($result)) { ?>
-                                        <tr>
-                                            <td><?php echo $list['name']; ?></td>
-                                            <td><?php echo $list['email']; ?></td>
-                                            <td><?php echo $list['college']; ?></td>
-                                            <td><?php echo $list['regno']; ?></td>
-                                            <td><?php echo $list['phno']; ?></td>  
-                                            <td><?php echo $list['parti']; ?></td>                                          <td class="count-me"><?php $fees = $list['parti']*$last_name[3]; echo $fees; ?></td>                                             
-                                        </tr><?php                                             
-                                    } ?>
-                                    </table>    
-                                </p> <?php                                    
+                                <div id="htmlexportPDF">
+                                    <p>
+                                        <table id="exportPDF">
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Email</th>
+                                                <th>College</th>
+                                                <th>Reg. No.</th>
+                                                <th>Ph. No.</th>
+                                                <th>Participants</th> 
+                                                <th>Fees</th>                                            
+                                            </tr><?php
+                                        while ($list = mysqli_fetch_assoc($result)) { ?>
+                                            <tr>
+                                                <td><?php echo $list['name']; ?></td>
+                                                <td><?php echo $list['email']; ?></td>
+                                                <td><?php echo $list['college']; ?></td>
+                                                <td><?php echo $list['regno']; ?></td>
+                                                <td><?php echo $list['phno']; ?></td>  
+                                                <td><?php echo $list['parti']; ?></td>                                          <td class="count-me"><?php $fees = $list['parti']*$last_name[3]; echo $fees; ?></td>                                             
+                                            </tr><?php                                             
+                                        } ?>
+                                        </table> 
+                                    </p>   
+                                </div> <?php                                    
                             ?>
                             <p>
                                 <h3>Total Income = Rs. <span id="total"></span> </h3>
@@ -151,7 +153,7 @@ th {
     </div>
     <script src="js/script.js"></script>
     <script language="javascript" type="text/javascript">
-    var tds = document.getElementById('countit').getElementsByTagName('td');
+    var tds = document.getElementById('exportPDF').getElementsByTagName('td');
     var sum = 0;
     for (var i = 0; i < tds.length; i++) {
         if (tds[i].className == 'count-me') {
