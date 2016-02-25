@@ -1,12 +1,11 @@
 <?php
 require_once ("class.phpmailer.php");
-include("class.smtp.php");
   $Correo = new PHPMailer();
   $Correo->IsSMTP();
   $Correo->SMTPAuth = true;
-  $Correo->SMTPSecure = "tls";
+  $Correo->SMTPSecure = "ssl";
   $Correo->Host = "smtp.gmail.com";
-  $Correo->Port = 587;
+  $Correo->Port = 465;
   $Correo->Username = "hiddenshopping@gmail.com";
   $Correo->Password = "25nov1992";
   $Correo->SetFrom('hiddenshopping@gmail.com','De Yo');
