@@ -1,36 +1,25 @@
 <?php
-require("class.phpmailer.php");
-
-$mail = new PHPMailer();
-
-$mail->IsSMTP();                                      // set mailer to use SMTP
-$mail->Host = "smtp.gmail.com";  // specify main and backup server
-$mail->SMTPAuth = true;     // turn on SMTP authentication
-$mail->Username = "hiddenshopping@gmail.com";  // SMTP username
-$mail->Password = "25nov1992"; // SMTP password
-
-$mail->Mailer = "smtp"; 
-
-$mail->From = "hiddenshopping@gmail.com";
-$mail->FromName = "SuperUser";
-
-$mail->AddAddress("pkpbhardwaj729@gmail.com");                  // name is optional
-
-
-$mail->WordWrap = 50;                                 // set word wrap to 50 characters
-    // optional name
-$mail->IsHTML(true);                                  // set email format to HTML
-
-$mail->Subject = "Here is the subject";
-$mail->Body    = "This is the HTML message body <b>in bold!</b>";
-$mail->AltBody = "This is the body in plain text for non-HTML mail clients";
-
-if(!$mail->Send())
-{
-   echo "Message could not be sent. <p>";
-   echo "Mailer Error: " . $mail->ErrorInfo;
-   exit;
-}
-
-echo "Message has been sent";
+require_once ("class.phpmailer.php");
+  $Correo = new PHPMailer();
+  $Correo->IsSMTP();
+  $Correo->SMTPAuth = true;
+  $Correo->SMTPSecure = "tls";
+  $Correo->Host = "smtp.gmail.com";
+  $Correo->Port = 587;
+  $Correo->Username = "hiddenshopping@gmail.com";
+  $Correo->Password = "25nov1992";
+  $Correo->SetFrom('hiddenshopping@gmail.com','De Yo');
+  $Correo->FromName = "From";
+  $Correo->AddAddress("pkpbhardwaj729@gmail.com");
+  $Correo->Subject = "Prueba con PHPMailer";
+  $Correo->Body = "<H3>Bienvenido! Esto Funciona!</H3>";
+  $Correo->IsHTML (true);
+  if (!$Correo->Send())
+  {
+    echo "Error: $Correo->ErrorInfo";
+  }
+  else
+  {
+    echo "Message Sent!";
+  }
 ?>
