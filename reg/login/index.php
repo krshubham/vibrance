@@ -155,7 +155,7 @@ if(isset($_POST['signup'])){
 		</div>
 	</div>
 
-	<script src="kayitgiris.js"></script>
+	<script src="script.js"></script>
 
 </body>
 </html>
