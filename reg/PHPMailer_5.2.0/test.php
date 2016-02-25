@@ -6,8 +6,8 @@ $mail = new PHPMailer();
 $mail->IsSMTP();                                      // set mailer to use SMTP
 $mail->Host = "localhost";  // specify main and backup server
 $mail->SMTPAuth = true;     // turn on SMTP authentication
-$mail->Username = "pkpbhardwaj729@gmail.com";  // SMTP username
-$mail->Password = "NewOne11"; // SMTP password
+$mail->Username = "hiddenshopping@gmail.com";  // SMTP username
+$mail->Password = "25nov1992"; // SMTP password
 
 $mail->From = "from@example.com";
 $mail->FromName = "SuperUser";
