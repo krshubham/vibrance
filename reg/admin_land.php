@@ -16,16 +16,25 @@
         $link2 = "onspote/index.php";
         $linkup = "";
         $page = "Participants";
+        $view_whole = "style='dispaly: none;'";
     } elseif ($name_title['type']=="payment_admin") {
         $link1 = "payments.php";
         $link2 = "onspot/index.php";
         $linkup = "";
         $page = "Payments";
+        $view_whole = "style='dispaly: none;'";
     } elseif ($name_title['type']=="super_admin") {
         $link1 = "payments.php";
         $link2 = "onspot/index.php";
         $page = "Payments";
         $linkup = "<a href='admin_signup.php'>Make new Admin</a>";
+        $view_whole = "";
+    } elseif ($name_title['type']=="super_admin") {
+        $link1 = "viewers.php";
+        $link2 = "#";
+        $page = "";
+        $linkup = "";
+        $view_whole = "";
     }
 ?> 
 
@@ -69,13 +78,13 @@
                     </div>
                     <nav class="nav">
                         <ul class="sf-menu">                            
-                            <li class="active">
+                            <li class="active" <?php echo $view_whole; ?> >
                                 <a href="admin_land.php">Admin Home</a>                               
                             </li>
-                            <li>
+                            <li <?php echo $view_whole; ?> >
                                 <a href="<?php echo $link1; ?>"><?php echo $page; ?></a>
                             </li>
-                            <li>
+                            <li <?php echo $view_whole; ?> >
                                 <a href="<?php echo $link2; ?>">On Spot Registration</a>
                             </li>
                             <li>
@@ -101,7 +110,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="grid_6">
+                        <div class="grid_6" <?php echo $view_whole; ?> >
                             <div class="img">
                                 <a href="<?php echo $link2; ?>">
                                     <div class="lazy-img" style="padding-bottom: 45.6140350877193%;"><img data-src="images/onspot.jpg" alt=""></div>

@@ -80,6 +80,10 @@ if(isset($_POST['submit'])){
 		   				<td><input type="radio" name="type" value="payment_admin" ></td>
 		   			</tr>
 		   			<tr>
+		   				<td>Viewer Admin</td>
+		   				<td><input type="radio" name="type" value="viewer_admin" ></td>
+		   			</tr>
+		   			<tr>
 		   				<td>Super Admin</td>
 		   				<td><input type="radio" name="type" value="super_admin" ></td>
 		   			</tr>
