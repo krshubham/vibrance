@@ -9,6 +9,8 @@ $mail->SMTPAuth = true;     // turn on SMTP authentication
 $mail->Username = "hiddenshopping@gmail.com";  // SMTP username
 $mail->Password = "25nov1992"; // SMTP password
 
+$mail->Mailer = "smtp"; 
+
 $mail->From = "hiddenshopping@gmail.com";
 $mail->FromName = "SuperUser";
 
