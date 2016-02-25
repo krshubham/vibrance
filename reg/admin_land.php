@@ -73,8 +73,8 @@
                 <div class="container">
                     <div class="brand">
                         <h1 class="brand_name">
-                        <a href="./">Vibrance'16</a>
-                    </h1>
+                            <a href="./">Vibrance'16</a>
+                        </h1>
                     </div>
                     <nav class="nav">
                         <ul class="sf-menu">                            
