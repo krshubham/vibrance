@@ -100,7 +100,7 @@ if(isset($_POST['signup'])){
 			<div class="left">
 				<div id="ic">
 					<h2>Sign Up</h2>
-					<form id="girisyap" name="signup_form" id="signup_form" method="post" enctype="multipart/form-data" action="index.php">
+					<form id="girisyap" method="post" action="index.php">
 						<div class="yarim sn form-group">
 							<label class="control-label" for="inputNormal">Name</label>
 							<input type="text" name="name" id="field_1" value="" class="bp-suggestions form-control" cols="50" rows="10" required></input>
@@ -135,7 +135,7 @@ if(isset($_POST['signup'])){
 			<div class="right">
 				<div id="ic">
 					<h2>Login</h2>
-					<form name="login-form" id="girisyap" id="sidebar-user-login" method="post" action="index.php">
+					<form id="girisyap" method="post" action="index.php">
 
 						<div class="form-group">
 							<label class="control-label" for="inputNormal">Username</label>
