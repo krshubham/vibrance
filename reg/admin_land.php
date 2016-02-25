@@ -110,8 +110,8 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="grid_6" <?php echo $view_whole; ?> >
-                            <div class="img">
+                        <div class="grid_6">
+                            <div class="img" <?php echo $view_whole; ?> >
                                 <a href="<?php echo $link2; ?>">
                                     <div class="lazy-img" style="padding-bottom: 45.6140350877193%;"><img data-src="images/onspot.jpg" alt=""></div>
                                 </a>
