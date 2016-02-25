@@ -1,3 +1,4 @@
+
 <?php require_once("../includes/session.php");?>
 <?php require_once("../includes/db_connection.php");?>
 <?php require_once("../includes/functions.php");?>
@@ -33,7 +34,6 @@ if (isset($_POST['submit'])) {
 
 }
 ?>
-
 <!DOCTYPE html>
 <html>
 
@@ -53,6 +53,7 @@ if (isset($_POST['submit'])) {
         color: #fff;
         font-family: Arial;
         font-size: 12px;
+        overflow: none;
     }
     
     .body {
@@ -205,7 +206,19 @@ if (isset($_POST['submit'])) {
     </div>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 </body>
+<script type="text/javascript">
+    // lock scroll position, but retain settings for later
+      var scrollPosition = [
+        self.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft,
+        self.pageYOffset || document.documentElement.scrollTop  || document.body.scrollTop
+      ];
+      var html = jQuery('html'); // it would make more sense to apply this to body, but IE7 won't have that
+      html.data('scroll-position', scrollPosition);
+      html.data('previous-overflow', html.css('overflow'));
+      html.css('overflow', 'hidden');
+      window.scrollTo(scrollPosition[0], scrollPosition[1]);
 
+</script>
 </html>
 <?php
 if (isset ($conn)){
