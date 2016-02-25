@@ -125,7 +125,7 @@ if(isset($_POST['signup'])){
 							<label class="control-label" for="inputNormal" required>Password</label>
 							<input type="password" name="password" id="field_2" class="bp-suggestions form-control" cols="50" rows="10"></input>
 						</div>
-						<input type="submit" name="signup_submit" id="signup_submit" value="Sign Up" class="girisbtn"  />
+						<input type="submit" name="signup" id="signup_submit" value="Sign Up" class="girisbtn"  />
 					</form>
 
 					<button id="moveright">Login</button>
@@ -145,7 +145,7 @@ if(isset($_POST['signup'])){
 							<label class="control-label" for="inputNormal">Password</label>
 							<input type="password" name="password" class="bp-suggestions form-control" cols="50" rows="10" required></input>
 						</div>
-						<input type="submit" value="Login" class="girisbtn" tabindex="100" />
+						<input type="submit" value="Login" class="girisbtn" tabindex="100" name="submit" />
 					</form>
 
 					<button id="moveleft">Sign Up</button>
