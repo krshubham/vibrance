@@ -7,7 +7,7 @@ $str = "<p>Hello, World</p>";
 $mail = new PHPMailer;
 $mail->IsSMTP();                                     
 $mail->SMTPAuth = true;
-$mail->Host = 'smtp.gmail.com';
+$mail->Host = 'localhost';
 $mail->Port = 465;
 $mail->Username = 'hiddenshopping@gmail.com';
 $mail->Password = '25nov1992';
