@@ -4,7 +4,7 @@ require("class.phpmailer.php");
 $mail = new PHPMailer();
 
 $mail->IsSMTP();                                      // set mailer to use SMTP
-$mail->Host = "localhost";  // specify main and backup server
+$mail->Host = "smtp.gmail.com";  // specify main and backup server
 $mail->SMTPAuth = true;     // turn on SMTP authentication
 $mail->Username = "hiddenshopping@gmail.com";  // SMTP username
 $mail->Password = "25nov1992"; // SMTP password
