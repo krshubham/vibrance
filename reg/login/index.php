@@ -115,11 +115,11 @@ if(isset($_POST['signup'])){
 						</div>
 						<div class="form-group">
 							<label class="control-label" for="inputNormal">Reg. No(only for VIT students)</label>
-							<input type="text" name="signup_password" id="signup_password" value="" class="bp-suggestions form-control" cols="50" rows="10"></input>
+							<input type="text" name="rgno" id="signup_password" value="" class="bp-suggestions form-control" cols="50" rows="10"></input>
 						</div>
 						<div class="form-group">
 							<label class="control-label" for="inputNormal">Contact Number</label>
-							<input type="number" name="signup_password" id="signup_password" value="" class="bp-suggestions form-control" cols="50" rows="10" required></input>
+							<input type="number" name="phno" id="signup_password" value="" class="bp-suggestions form-control" cols="50" rows="10" required></input>
 						</div>
 						<div class="form-group soninpt">
 							<label class="control-label" for="inputNormal" required>Password</label>
