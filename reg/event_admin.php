@@ -109,14 +109,15 @@ th {
                                 $result = mysqli_query($conn, $query);
                                 confirm_query($result); ?>
                                 <p>
-                                    <table>
+                                    <table id="countit">
                                         <tr>
                                             <th>Name</th>
                                             <th>Email</th>
                                             <th>College</th>
                                             <th>Reg. No.</th>
                                             <th>Ph. No.</th>
-                                            <th>Participants</th>                                             
+                                            <th>Participants</th> 
+                                            <th>Fees</th>                                            
                                         </tr><?php
                                     while ($list = mysqli_fetch_assoc($result)) { ?>
                                         <tr>
@@ -125,13 +126,15 @@ th {
                                             <td><?php echo $list['college']; ?></td>
                                             <td><?php echo $list['regno']; ?></td>
                                             <td><?php echo $list['phno']; ?></td>  
-                                            <td><?php echo $list['parti']; ?></td>                                                                                        
+                                            <td><?php echo $list['parti']; ?></td>                                          <td class="count-me"><?php $fees = $list['parti']*$last_name[3]; echo $fees; ?></td>                                             
                                         </tr><?php                                             
                                     } ?>
                                     </table>    
-                                </p> <?php
-                                    
+                                </p> <?php                                    
                             ?>
+                            <p>
+                                <h3>Total Income = Rs. <span id="total"></span> </h3>
+                            </p>
                         </center>
                     </div>
                 </div>
@@ -144,6 +147,16 @@ th {
         </footer>
     </div>
     <script src="js/script.js"></script>
+    <script language="javascript" type="text/javascript">
+    var tds = document.getElementById('countit').getElementsByTagName('td');
+    var sum = 0;
+    for (var i = 0; i < tds.length; i++) {
+        if (tds[i].className == 'count-me') {
+            sum += isNaN(tds[i].innerHTML) ? 0 : parseInt(tds[i].innerHTML);
+        }
+    }
+    document.getElementById('total').innerHTML += sum;
+    </script>
 </body>
 
 </html>
