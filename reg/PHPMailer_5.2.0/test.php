@@ -1,5 +1,6 @@
 <?php
 require_once ("class.phpmailer.php");
+include("class.smtp.php");
   $Correo = new PHPMailer();
   $Correo->IsSMTP();
   $Correo->SMTPAuth = true;
