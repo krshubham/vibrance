@@ -2,7 +2,7 @@
 require_once ("class.phpmailer.php");
   $Correo = new PHPMailer();
   $Correo->IsSMTP();
-  $Correo->SMTPAuth = true;
+  
   $Correo->SMTPSecure = "ssl";
   $Correo->Host = "smtp.gmail.com";
   $Correo->Port = 465;
