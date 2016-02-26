@@ -56,7 +56,11 @@
 		//convert HTML into a basic plain-text alternative body
 		$mail->msgHTML(file_get_contents('PHPMailer-master/contents.html'), dirname(__FILE__)); 
 		
-
+		if(!$mail->send()) {
+		   echo 'Message could not be sent.';
+		   echo 'Mailer Error: ' . $mail->ErrorInfo;
+		   exit;
+		}
 
 		$query = "INSERT INTO {$event} (name, email, college, regno, phno, parti)";
 		$query .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', {$parti})";
