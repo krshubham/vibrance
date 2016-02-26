@@ -6,8 +6,7 @@
 	$content = "<!DOCTYPE html> ";
 	$content .= "<html> ";
 	$content .= "<head> ";
-	$content .= "<title>Bill</title> ";
-	//$content .= "<link rel='stylesheet' type='text/css' href='http://vitchennaivibrance.com/reg/css/bill-style.css'> ";
+	$content .= "<title>Bill</title> ";	
 	$content .= "</head> ";
 	$content .= "<style type='text/css'> ";
 	$content .= "@import url(http://fonts.googleapis.com/css?family=Yesteryear); ";
@@ -87,7 +86,7 @@
 	$content .= "#spacer{ ";
 	$content .= "height: 0.1em; ";
 	$content .= "} ";
-	$content .= "</style> "
+	$content .= "</style> ";
 	$content .= "<body> ";	
 	$content .= "<div class='wrapper'> ";
 	$content .= "<header> ";
