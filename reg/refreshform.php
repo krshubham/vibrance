@@ -2,6 +2,59 @@
 <?php require_once("includes/db_connection.php"); ?>
 <?php require_once("includes/functions.php"); ?>
 <?php confirm_logged_in(); ?>
+<?php
+	$content = "<!DOCTYPE html> ";
+	$content .= "<html> ";
+	$content .= "<head> ";
+	$content .= "<title>Bill</title> ";
+	$content .= "<link rel='stylesheet' type='text/css' href='css/bill-style.css'> ";
+	$content .= "</head> ";
+	$content .= "<body> ";
+	$content .= "<div class='wrapper'> ";
+	$content .= "<header> ";
+	$content .= "<img src='images/vib_banner_small.png' class='vib_logo'> ";
+	$content .= "<img src='images/vit_logo.png' class='vit_logo'> ";
+	$content .= "</header> ";
+	$content .= "<h3 class='bill_heading'>Vibrance'16</h3><br><br><br> ";
+	$content .= "<h3 class='bill_heading2'>Bill No: <span>4361</span></h3><h3 class='bill_heading1'>Electronic registration slip</h3> ";
+	$content .= "<br> ";
+	$content .= "<div class='form'> ";
+	$content .= "<div class='container'> ";
+	$content .= "<form> ";
+	$content .= "<table> ";
+	$content .= "<tr> ";
+	$content .= "<td> ";
+	$content .= "Event Name: ";
+	$content .= "</td> ";
+	$content .= "<td class='data'> ";
+	$content .= "<span>Adaptune</span> ";
+	$content .= "</td> ";
+	$content .= "</tr> ";
+	$content .= "<tr> ";
+	$content .= "<td>Name of the Participant(s): </td> ";
+	$content .= "<td class='data'><span>Pragya</span></td> ";
+	$content .= "</tr> ";
+	$content .= "<tr> ";
+	$content .= "<td>Number of Participants: </td> ";
+	$content .= "<td class='data'><span>4</span></td> ";
+	$content .= "</tr> ";
+	$content .= "<tr> ";
+	$content .= "<td>Event Type: </td> ";
+	$content .= "<td class='data'><span>Individual</span></td> ";
+	$content .= "</tr> ";
+	$content .= "<tr> ";
+	$content .= "<td class='data'>Event Registration Fee: </td> ";
+	$content .= "<td>Rs. 200</td> ";
+	$content .= "</tr> ";
+	$content .= "</table> ";
+	$content .= "</div> ";
+	$content .= "</form> ";
+	$content .= "<div id='spacer'></div> ";
+	$content .= "</div> ";
+	$content .= "</div> ";
+	$content .= "</body> ";
+	$content .= "</html>";
+?>
 
 <?php
 	$current_user = $_SESSION["username"];
@@ -43,7 +96,7 @@
 		$mail->isHTML(true);                                  
 		 
 		$mail->Subject = 'Vibrance event registration.';
-		$mail->Body    = 'This is the HTML message body <b>in bold!</b>';
+		$mail->Body    = $content;
 		$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';		 
 		
 		//$mail->msgHTML(file_get_contents('PHPMailer-master/contents.html'), dirname(__FILE__)); 
