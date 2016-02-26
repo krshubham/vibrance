@@ -40,7 +40,7 @@
 		$mail->setFrom('vibrancechennai@gmail.com', 'Vibrance Registrations Team');     //Set who the message is to be sent from
 		//$mail->addReplyTo('labnol@gmail.com', 'First Last');  //Set an alternative reply-to address
 		//$mail->addAddress('prashant.bhardwaj2014@vit.ac.in', 'Josh Adams');  // Add a recipient
-		$mail->addAddress('$email');               // Name is optional
+		$mail->addAddress("$email");               // Name is optional
 		//$mail->addCC('cc@example.com');
 		//$mail->addBCC('bcc@example.com');
 		$mail->WordWrap = 50;                                 // Set word wrap to 50 characters
