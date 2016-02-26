@@ -17,11 +17,16 @@ body{
 	margin-bottom: -1em;
 }
 .bill_heading1{
-	margin-left: 18em;
+	margin-left: 15em;
 	font-size: 1em;
-	font-weight: 200;
+	font-weight: 200
 	margin-top: -0.5em;
-	margin-bottom: -1em;
+	margin-bottom: -1em
+}
+.bill_heading2{
+	margin-bottom: 0;
+	margin-top: 0;
+	margin-left: 1em;
 }
 
 .vib_logo{
@@ -33,18 +38,22 @@ form{
 	font-size: 1.2em;
 	margin-bottom: 2em;
 	padding-bottom: 2em;
+	margin-left: 1em;
 	
 }
 table {
-    border-collapse: collapse;
-    margin-top: 2em;
+	border-collapse: collapse;
+	margin-top: 2em;
 }
 .data{
 	padding-right: 2em;
 }
-td {
-    padding-top: .5em;
-    padding-bottom: .5em;
+tbody{
+	padding-top: 0.5em;
+}
+td{
+	padding-top: .5em;
+	padding-bottom: .5em;
 }
 table tr{
 	margin-top: 2em;
