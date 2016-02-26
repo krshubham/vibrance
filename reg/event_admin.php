@@ -37,7 +37,7 @@
     <script src="js/jquery.js"></script>
     <script src="js/jquery-migrate-1.2.1.js"></script>
     <script type='text/javascript' src='http://code.jquery.com/jquery-git2.js'></script>
-    <script type='text/javascript' src="js/jquerypdf.js"></script>
+    <script type='text/javascript' src="http://codeinnovators.meximas.com/pdfexport/jspdf.debug.js"></script>
     <!--[if lt IE 9]>
     <html class="lt-ie9">
     <div style=' clear: both; text-align:center; position: relative;'>
@@ -50,6 +50,7 @@
     <![endif]-->
     <script src='js/device.min.js'></script>
 </head>
+
 <body>
 <style>
 table, th, td {
