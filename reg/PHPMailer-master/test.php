@@ -3,7 +3,7 @@ require 'PHPMailerAutoload.php';
  
 $mail = new PHPMailer;
  
-$mail->isSMTP();                                      // Set mailer to use SMTP
+$mail->isMail();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.gmail.com';                       // Specify main and backup server
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Username = 'hiddenshopping@gmail.com';                   // SMTP username
