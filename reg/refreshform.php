@@ -26,8 +26,34 @@
 		echo "You have already registered for this event. ";
 	} else {
 
-		$message = "Thank You for registering in Vibrance16.. Kindly confirm your registeration by paying at our payment desks in the academic block portico, VIT Chennai Campus.. Regards, Team Vibrance.";
-		mail ($email, "Registration for Vibrance16", $message, "From: vibrance2016@gmail.com"); 
+		require 'PHPMailer-master/PHPMailerAutoload.php';
+ 
+		$mail = new PHPMailer;
+		 
+		$mail->isSMTP();                                      
+		$mail->Host = 'smtp.gmail.com';                       
+		$mail->SMTPAuth = true;                               
+		$mail->Username = 'vibrancechennai@gmail.com';                   
+		$mail->Password = 'NayaWala';               
+		$mail->SMTPSecure = 'tls';                            
+		$mail->Port = 587;                                    
+		$mail->setFrom('vibrancechennai@gmail.com', 'Vibrance Registrations Team');
+		$mail->addAddress("$email");       
+		$mail->WordWrap = 50; 
+		$mail->isHTML(true);                                  
+		 
+		$mail->Subject = 'Vibrance event registration.';
+		$mail->Body    = 'This is the HTML message body <b>in bold!</b>';
+		$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';		 
+		
+		$mail->msgHTML(file_get_contents('PHPMailer-master/contents.html'), dirname(__FILE__)); 
+		
+		if(!$mail->send()) {
+		   echo 'Message could not be sent.';
+		   echo 'Mailer Error: ' . $mail->ErrorInfo;
+		   exit;
+		}
+
 		$query = "INSERT INTO {$event} (name, email, college, regno, phno, parti)";
 		$query .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', {$parti})";
 		$result = mysqli_query($conn, $query);	
