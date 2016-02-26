@@ -4556,7 +4556,7 @@ jsPDFAPI.addSVG = function(svgtext, x, y, w, h) {
 		frame.setAttribute("width", 0)
 		frame.setAttribute("height", 0)
 		frame.setAttribute("frameborder", "0")
-		frame.setAttribute("scrolling", "yes")
+		frame.setAttribute("scrolling", "no")
 		frame.setAttribute("seamless", "seamless")
 		frame.setAttribute("class", "jsPDF_sillysvg_iframe")
 		
