@@ -33,11 +33,11 @@
 		$mail->isSMTP();                                      // Set mailer to use SMTP
 		$mail->Host = 'smtp.gmail.com';                       // Specify main and backup server
 		$mail->SMTPAuth = true;                               // Enable SMTP authentication
-		$mail->Username = 'vibrancechennai@gmail.com';                   // SMTP username
+		$mail->Username = 'pkpbhardwaj729@gmail.com';                   // SMTP username
 		$mail->Password = 'NayaWala';               // SMTP password
 		$mail->SMTPSecure = 'tls';                            // Enable encryption, 'ssl' also accepted
 		$mail->Port = 587;                                    //Set the SMTP port number - 587 for authenticated TLS
-		$mail->setFrom('vibrancechennai@gmail.com', 'Vibrance Registrations Team');     //Set who the message is to be sent from
+		$mail->setFrom('pkpbhardwaj729@gmail.com', 'Vibrance Registrations Team');     //Set who the message is to be sent from
 		//$mail->addReplyTo('labnol@gmail.com', 'First Last');  //Set an alternative reply-to address
 		//$mail->addAddress('prashant.bhardwaj2014@vit.ac.in', 'Josh Adams');  // Add a recipient
 		$mail->addAddress("$email");               // Name is optional
