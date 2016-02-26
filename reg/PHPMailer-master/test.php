@@ -21,7 +21,7 @@ $mail->addAttachment('/usr/labnol/file.doc');         // Add attachments
 $mail->addAttachment('/images/image.jpg', 'new.jpg'); // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
  
-$mail->Subject = 'Here is the subject';
+$mail->Subject = 'Vibrance event registration.';
 $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
 $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
  
