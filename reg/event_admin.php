@@ -50,7 +50,15 @@
     <![endif]-->
     <script src='js/device.min.js'></script>
 </head>
+<script type="text/javascript">
+     // un-lock scroll position
+      var html = jQuery('html');
+      var scrollPosition = html.data('scroll-position');
+      html.css('overflow', html.data('previous-overflow'));
+      window.scrollTo(scrollPosition[0], scrollPosition[1])
 
+      //requires jquery to function
+</script>
 <body>
 <style>
 table, th, td {
