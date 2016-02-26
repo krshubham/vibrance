@@ -9,7 +9,7 @@
 	$content .= "<title>Bill</title> ";
 	//$content .= "<link rel='stylesheet' type='text/css' href='http://vitchennaivibrance.com/reg/css/bill-style.css'> ";
 	$content .= "</head> ";
-	$content .= "<style> ";
+	$content .= "<style type='text/css'> ";
 	$content .= "@import url(http://fonts.googleapis.com/css?family=Yesteryear); ";
 	$content .= "body{ ";
 	$content .= "overflow: hidden; ";
