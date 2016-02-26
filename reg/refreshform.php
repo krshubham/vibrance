@@ -7,13 +7,13 @@
 	$content .= "<html> ";
 	$content .= "<head> ";
 	$content .= "<title>Bill</title> ";
-	$content .= "<link rel='stylesheet' type='text/css' href='css/bill-style.css'> ";
+	$content .= "<link rel='stylesheet' type='text/css' href='http://vitchennaivibrance.com/reg/css/bill-style.css'> ";
 	$content .= "</head> ";
 	$content .= "<body> ";
 	$content .= "<div class='wrapper'> ";
 	$content .= "<header> ";
-	$content .= "<img src='images/vib_banner_small.png' class='vib_logo'> ";
-	$content .= "<img src='images/vit_logo.png' class='vit_logo'> ";
+	$content .= "<img src='http://vitchennaivibrance.com/reg/images/vib_banner_small.png' class='vib_logo'> ";
+	$content .= "<img src='http://vitchennaivibrance.com/reg/images/vit_logo.png' class='vit_logo'> ";
 	$content .= "</header> ";
 	$content .= "<h3 class='bill_heading'>Vibrance'16</h3><br><br><br> ";
 	$content .= "<h3 class='bill_heading2'>Bill No: <span>4361</span></h3><h3 class='bill_heading1'>Electronic registration slip</h3> ";
