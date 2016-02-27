@@ -1,6 +1,6 @@
 // Input Lock
 
-$('#hire .field:first-child input').blur(function () {
+/*$('#hire .field:first-child input').blur(function () {
     $('#hire .field:first-child input').each(function () {
         $this = $(this);
         if ( this.value != '' ) {
@@ -12,10 +12,10 @@ $('#hire .field:first-child input').blur(function () {
           $('.field:first-child input + label + span').css({'opacity': 0});
         }
     });
-});
+});*/
 
-$('#hire .field:nth-child(2) input').blur(function () {
-    $('#hire .field:nth-child(2) input').each(function () {
+$('#hire .field input').blur(function () {
+    $('#hire .field input').each(function () {
         $this = $(this);
         if ( this.value != '' ) {
           $this.addClass('focused');
