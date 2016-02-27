@@ -388,9 +388,11 @@ function confirm_admin_logged_in_here() {
                 document.getElementById("demo").innerHTML = "Dynamic";
             }            
         }
-        if($("#college").val() != ''){
+        $(document).ready(function(){
+            if($("#college").val() != ''){
             alert("Hello");
         }
+        });
     </script>
 </body>
 
