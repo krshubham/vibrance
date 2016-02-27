@@ -18,7 +18,7 @@
     } else {
         $view_whole = "style='display: none;'";        
     }    
-?>
+?>  
 
 <!DOCTYPE html>
 <html lang="en">
@@ -140,7 +140,8 @@ th {
                             ?>
                             <p>
                                 <h3>Total Income = Rs. <span id="total"></span> </h3>
-                            </p></div>                            
+                            </p>
+                            <p><button onclick="javascript:htmltopdf();">Export PDF</button></p></div>                            
                         </center>
                     </div>
                 </div>
