@@ -95,6 +95,12 @@ $mail->Subject = 'Vibrance event registration.';
 $mail->Body    = $content;
 $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
+if(!$mail->send()) {
+   echo 'Message could not be sent.';
+   echo 'Mailer Error: ' . $mail->ErrorInfo;
+   exit;
+}   
+
 
 $update_query = "UPDATE {$event} SET paid = 1, cnfby = '{$current_user}' WHERE id = {$id} LIMIT 1";
 $update_result = mysqli_query($conn, $update_query);
