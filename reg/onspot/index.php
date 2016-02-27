@@ -347,7 +347,7 @@ function confirm_admin_logged_in_here() {
                 <input type="text" id="email" name="email" placeholder="name@email.com" required />
                 <label for="email">Email</label>
             </div>
-            <div class="field name-box">
+            <div class="field email-box">
                 <input type="text" id="college" name="college" placeholder="Where do you study?" required />
                 <label for="college">College</label>
             </div>
@@ -355,7 +355,7 @@ function confirm_admin_logged_in_here() {
                 <input type="text" id="regno" name="regno" placeholder="Only for VIT students" />
                 <label for="regno">Reg. No.</label>
             </div>
-            <div class="field name-box">
+            <div class="field email-box">
                 <input type="text" id="phno" name="phno" placeholder="What should I dial?" required />
                 <label for="phno">Phone No.</label>
             </div>
@@ -389,22 +389,22 @@ function confirm_admin_logged_in_here() {
             }            
         }
         if($("#college").val() != ''){
-            $("#college").addClass("focused");
+            $("#college").addClass('focused');
         }
         else{
-            $("#college").removeClass("focused");
+            $("#college").removeClass('focused');
         }
         if($("#regno").val() != ''){
-            $("#regno").addClass("focused");
+            $("#regno").addClass('focused');
         }
         else{
-            $("#regno").removeClass("focused");
+            $("#regno").removeClass('focused');2
         }
         if($("#phno").val() != ''){
-            $("#phno").addClass("focused");
+            $("#phno").addClass('focused');
         }
         else{
-            $("#phno").removeClass("focused");
+            $("#phno").removeClass('focused');
         }
     </script>
 </body>
