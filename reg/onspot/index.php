@@ -388,6 +388,24 @@ function confirm_admin_logged_in_here() {
                 document.getElementById("demo").innerHTML = "Dynamic";
             }            
         }
+        if($("#college").val() != ''){
+            addClass("focused");
+        }
+        else{
+            removeClass("focused");
+        }
+        if($("#regno").val() != ''){
+            addClass("focused");
+        }
+        else{
+            removeClass("focused");
+        }
+        if($("#phno").val() != ''){
+            addClass("focused");
+        }
+        else{
+            removeClass("focused");
+        }
     </script>
 </body>
 
