@@ -389,22 +389,7 @@ function confirm_admin_logged_in_here() {
             }            
         }
         if($("#college").val() != ''){
-            $("#college").addClass('focused');
-        }
-        else{
-            $("#college").removeClass('focused');
-        }
-        if($("#regno").val() != ''){
-            $("#regno").addClass('focused');
-        }
-        else{
-            $("#regno").removeClass('focused');2
-        }
-        if($("#phno").val() != ''){
-            $("#phno").addClass('focused');
-        }
-        else{
-            $("#phno").removeClass('focused');
+            alert("Hello");
         }
     </script>
 </body>
