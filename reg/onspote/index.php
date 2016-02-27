@@ -41,7 +41,7 @@ function confirm_admin_logged_in_here() {
         }
         $phno = $_POST['phno'];
         $type = explode("_", $event_name);
-        if ($type[2]=="alone") {
+        if ($last_name[2]=="alone") {
             $parti = 1;
             $view_parti = "style='display: none;'";
         } else {
