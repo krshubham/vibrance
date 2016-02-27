@@ -19,6 +19,7 @@ $name_query = "SELECT * FROM users WHERE id = {$id} LIMIT 1";
 $name_result = mysqli_query($conn, $name_query);
 confirm_query($name_result);
 $name_title = mysqli_fetch_assoc($name_result);
+$email = $name_title['username'];
 
 // registration bill html code starts
 
@@ -87,7 +88,7 @@ $mail->Password = 'NayaWala';
 $mail->SMTPSecure = 'tls';                            
 $mail->Port = 587;                                    
 $mail->setFrom('vibrancechennai@gmail.com', 'Vibrance Registrations Team');
-$mail->addAddress("$name_title['email']");       
+$mail->addAddress("$email");       
 $mail->WordWrap = 50; 
 $mail->isHTML(true);                                  
  
@@ -108,7 +109,6 @@ $update_result = mysqli_query($conn, $update_query);
 if ($result && mysqli_affected_rows($conn) == 1) {
 
 	redirect_to("payments.php");
-	$_SESSION["message"] = "Payment Confirmed";
 } else {
 
 	redirect_to("payments.php");
