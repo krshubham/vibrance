@@ -145,7 +145,7 @@ th {
                                                 <td><?php echo $list['parti']; ?></td>
                                                 <td><?php $fees = $list['parti']*$event_name[2]; echo $fees; ?></td>
                                                 <td>                                                   
-                                                    <a href="payconfirm.php?id=<?php echo urlencode($list["id"]); ?>&event=<?php echo urlencode($event); ?>" onclick="return confirm('Are you sure?');"><?php
+                                                    <a href="payconfirm.php?id=<?php echo urlencode($list["id"]); ?>&event=<?php echo urlencode($event); ?>&parti=<?php echo urlencode($list['parti']); ?>" onclick="return confirm('Are you sure?');"><?php
                                                     if ($list['paid']==0) {
                                                         echo "<font color='red'>"."Pay"."</font>";
                                                     } else {
