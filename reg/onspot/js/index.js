@@ -13,8 +13,8 @@ $('textarea').blur(function () {
     });
 });
 
-$('#hire .field:nth-child(odd) input').blur(function () {
-    $('#hire .field:nth-child input').each(function () {
+$('#hire .field:first-child input').blur(function () {
+    $('#hire .field:first-child input').each(function () {
         $this = $(this);
         if ( this.value != '' ) {
           $this.addClass('focused');
@@ -27,8 +27,8 @@ $('#hire .field:nth-child(odd) input').blur(function () {
     });
 });
 
-$('#hire .field:nth-child(even) input').blur(function () {
-    $('#hire .field:nth-child(even) input').each(function () {
+$('#hire .field:nth-child(2) input').blur(function () {
+    $('#hire .field:nth-child(2) input').each(function () {
         $this = $(this);
         if ( this.value != '' ) {
           $this.addClass('focused');

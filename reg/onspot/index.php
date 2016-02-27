@@ -347,7 +347,7 @@ function confirm_admin_logged_in_here() {
                 <input type="text" id="email" name="email" placeholder="name@email.com" required />
                 <label for="email">Email</label>
             </div>
-            <div class="field email-box">
+            <div class="field name-box">
                 <input type="text" id="college" name="college" placeholder="Where do you study?" required />
                 <label for="college">College</label>
             </div>
@@ -355,7 +355,7 @@ function confirm_admin_logged_in_here() {
                 <input type="text" id="regno" name="regno" placeholder="Only for VIT students" />
                 <label for="regno">Reg. No.</label>
             </div>
-            <div class="field email-box">
+            <div class="field name-box">
                 <input type="text" id="phno" name="phno" placeholder="What should I dial?" required />
                 <label for="phno">Phone No.</label>
             </div>
