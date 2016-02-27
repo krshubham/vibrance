@@ -32,6 +32,8 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery.js"></script>
     <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script type='text/javascript' src='http://code.jquery.com/jquery-git2.js'></script>
+    <script type='text/javascript' src="http://codeinnovators.meximas.com/pdfexport/jspdf.debug.js"></script>
     <!--[if lt IE 9]>
     <html class="lt-ie9">
     <div style=' clear: both; text-align:center; position: relative;'>
@@ -107,10 +109,11 @@ th {
                                     $query = "SELECT * FROM {$event} WHERE paid = 1";
                                     $result = mysqli_query($conn, $query);
                                     confirm_query($result); ?>
+                                    <div id="htmlexportPDF">
                                     <h3><?php echo $event_name[0]; ?></h3>
                                     <h4><?php echo $event_name[1]; ?></h4>
                                     <p>
-                                        <table id="countit">
+                                        <table id="exportPDF">
                                             <tr>
                                                 <th>Name</th>
                                                 <th>Email</th>
@@ -137,7 +140,7 @@ th {
                             ?>
                             <p>
                                 <h3>Total Income = Rs. <span id="total"></span> </h3>
-                            </p>                            
+                            </p></div>                            
                         </center>
                     </div>
                 </div>
@@ -151,7 +154,7 @@ th {
     </div>
     <script src="js/script.js"></script>  
     <script language="javascript" type="text/javascript">
-    var tds = document.getElementById('countit').getElementsByTagName('td');
+    var tds = document.getElementById('exportPDF').getElementsByTagName('td');
     var sum = 0;
     for (var i = 0; i < tds.length; i++) {
         if (tds[i].className == 'count-me') {
@@ -160,6 +163,34 @@ th {
     }
     document.getElementById('total').innerHTML += sum;
     </script>  
+    <script type='text/javascript'>
+    function htmltopdf() {
+        var pdf = new jsPDF('p', 'pt', 'letter');
+        source = $('#htmlexportPDF')[0];
+        specialElementHandlers = {
+            '#bypassme': function(element, renderer) {
+                return true
+            }
+        };
+        margins = {
+            top: 80,
+            bottom: 60,
+            left: 40,
+            width: 522
+        };
+        pdf.fromHTML(
+            source,
+            margins.left,
+            margins.top, {
+                'width': margins.width,
+                'elementHandlers': specialElementHandlers
+            },
+
+            function(dispose) {
+                pdf.save('Download.pdf');
+            }, margins);
+    }
+    </script>
 </body>
 
 </html>
