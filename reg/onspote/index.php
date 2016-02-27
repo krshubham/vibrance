@@ -27,6 +27,11 @@ function confirm_admin_logged_in_here() {
         $view_whole = "style='display: none;'";  
         $event_name = "";      
     }
+    if ($last_name[2]=="alone") {        
+        $view_parti = "style='display: none;'";
+    } else {        
+        $view_parti = "";
+    }  
 ?>
 
 <?php
@@ -39,14 +44,11 @@ function confirm_admin_logged_in_here() {
         } else {
             $regno = "";
         }
-        $phno = $_POST['phno'];
-        $type = explode("_", $event_name);
+        $phno = $_POST['phno'];        
         if ($last_name[2]=="alone") {
-            $parti = 1;
-            $view_parti = "style='display: none;'";
+            $parti = 1;            
         } else {
-            $parti = $_POST['parti'];
-            $view_parti = "";
+            $parti = $_POST['parti'];            
         }        
         if ($parti==1) {
             $event_type = "Individual";
