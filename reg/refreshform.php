@@ -46,7 +46,13 @@
 		 
 		$mail->Subject = 'Vibrance event registration.';
 		$mail->Body    = 'You have succesfully registered for <b>'.ucfirst($event_part[0]).'</b> in Vibrance16. Your E registration slip will be mailed and your participation will only be confirmed when you pay <b>Rs.'.$price.'</b> at our payment desks in VIT. Regards, Team Vibrance. ';
-		$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';		
+		$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';	
+
+		if(!$mail->send()) {
+   echo 'Message could not be sent.';
+   echo 'Mailer Error: ' . $mail->ErrorInfo;
+   exit;
+}	
 		
 		
 		$query = "INSERT INTO {$event} (name, email, college, regno, phno, parti)";
