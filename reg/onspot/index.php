@@ -331,9 +331,89 @@ function confirm_admin_logged_in_here() {
     }
     </style>
     <script src="js/prefixfree.min.js"></script>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/grid.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arvo">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/jquery.js"></script>
+    <script src="../js/jquery-migrate-1.2.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style-slider.css" />
+    <link rel="stylesheet" type="text/css" href="../css/component-slider.css" />
+    <script src="../js/modernizr.custom-slider.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/backtotop.css">
+    <script type="text/javascript" src="../js/backtotop.js"></script>
 </head>
 
-<body>
+<body><header>
+            <div id="stuck_container" class="stuck_container">
+                <div class="container">
+                    <div class="brand">
+                        <h1 class="brand_name">
+                                                <a href="index.html">Vibrance'16</a>
+                                            </h1>
+                    </div>
+                    <nav class="nav">
+                        <ul class="sf-menu">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="aboutus.html">About Us</a>
+                            </li>
+                            <li class="active">
+                                <a href="#events">Events</a>
+                                <ul>
+                                    <li>
+                                        <a href="danceclub.html">Dance</a>
+                                    </li>
+                                    <li>
+                                        <a href="games.html">Games</a>
+                                    </li>
+                                    <li>
+                                        <a href="musicclub.html">Music</a>
+                                    </li>
+                                    <li>
+                                        <a href="dramaclub.html">Drama</a>
+                                    </li>
+                                    <li>
+                                        <a href="fineartsclub.html">Fine Arts</a>
+                                    </li>
+                                    <li>
+                                        <a href="informals.html">Informals</a>
+                                    </li>
+                                    <li>
+                                        <a href="formals.html">Formals</a>
+                                    </li>
+                                    <li>
+                                        <a href="tech.html">Tech Events</a>
+                                    </li>
+                                    <li>
+                                        <a href="debnquiz.html">Debates and Quiz</a>
+                                    </li>
+                                    <li>
+                                        <a href="sports.html">Sports</a>
+                                    </li>
+                                    <li>
+                                        <a href="tamil.html">Tamil Events</a>
+                                    </li>
+                                    <li>
+                                        <a href="viteach.html">Viteach Events</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="rules.html">Rules</a>
+                            </li>
+                            <li>
+                                <a href="#">Meet the Team</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
 
     <section id="hire" <?php echo $view_whole; ?> >
         <h1>On Spot Registration</h1>
@@ -393,6 +473,28 @@ function confirm_admin_logged_in_here() {
             alert("Hello");
         }
         });
+    </script>
+    <script src="js/script.js"></script>
+    <script>
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+    <script src="../js/classie-slider.js"></script>
+    <script src="../js/cbpScroller.js"></script>
+    <script>
+    new cbpScroller(document.getElementById('cbp-so-scroller'));
     </script>
 </body>
 
