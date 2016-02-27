@@ -66,6 +66,7 @@ function confirm_admin_logged_in_here() {
             $check_view = "You have already registered for this event. ";
         } else {
 
+            $query = "INSERT INTO {$event_name} (name, email, college, regno, phno, paid, parti, cnfby)";
             $query .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', 1, {$parti}, '{$current_user}')";
             $result = mysqli_query($conn, $query);  
 
