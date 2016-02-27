@@ -104,41 +104,42 @@ th {
                     <h2><em>Event</em>Participants</h2>
                     <div class="row row__offset-2">
                         <center>
-                            <h3><?php echo ucfirst($event_name); ?></h3>
-                            <?php
-                                
-                                $query = "SELECT * FROM {$event_table} WHERE paid = 1";
-                                $result = mysqli_query($conn, $query);
-                                confirm_query($result); ?>
-                                <div id="htmlexportPDF">
-                                    <p>
-                                        <table id="exportPDF">
-                                            <tr>
-                                                <th>Name</th>
-                                                <th>Email</th>
-                                                <th>College</th>
-                                                <th>Reg. No.</th>
-                                                <th>Ph. No.</th>
-                                                <th>Participants</th> 
-                                                <th>Fees</th>                                            
-                                            </tr><?php
-                                        while ($list = mysqli_fetch_assoc($result)) { ?>
-                                            <tr>
-                                                <td><?php echo $list['name']; ?></td>
-                                                <td><?php echo $list['email']; ?></td>
-                                                <td><?php echo $list['college']; ?></td>
-                                                <td><?php echo $list['regno']; ?></td>
-                                                <td><?php echo $list['phno']; ?></td>  
-                                                <td><?php echo $list['parti']; ?></td>                                          <td class="count-me"><?php $fees = $list['parti']*$last_name[3]; echo $fees; ?></td>                                             
-                                            </tr><?php                                             
-                                        } ?>
-                                        </table> 
-                                    </p>   
-                                </div> <?php                                    
-                            ?>
-                            <p>
-                                <h3>Total Income = Rs. <span id="total"></span> </h3>
-                            </p>
+                            <div id="htmlexportPDF">
+                                <h3><?php echo ucfirst($event_name); ?></h3>
+                                <?php
+                                    
+                                    $query = "SELECT * FROM {$event_table} WHERE paid = 1";
+                                    $result = mysqli_query($conn, $query);
+                                    confirm_query($result); ?>                                
+                                        <p>
+                                            <table id="exportPDF">
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <th>Email</th>
+                                                    <th>College</th>
+                                                    <th>Reg. No.</th>
+                                                    <th>Ph. No.</th>
+                                                    <th>Participants</th> 
+                                                    <th>Fees</th>                                            
+                                                </tr><?php
+                                            while ($list = mysqli_fetch_assoc($result)) { ?>
+                                                <tr>
+                                                    <td><?php echo $list['name']; ?></td>
+                                                    <td><?php echo $list['email']; ?></td>
+                                                    <td><?php echo $list['college']; ?></td>
+                                                    <td><?php echo $list['regno']; ?></td>
+                                                    <td><?php echo $list['phno']; ?></td>  
+                                                    <td><?php echo $list['parti']; ?></td>                                          <td class="count-me"><?php $fees = $list['parti']*$last_name[3]; echo $fees; ?></td>                                             
+                                                </tr><?php                                             
+                                            } ?>
+                                            </table> 
+                                        </p>   
+                                    <?php                                    
+                                ?>
+                                <p>
+                                    <h3>Total Income = Rs. <span id="total"></span> </h3>
+                                </p>
+                            </div>    
                             <button onclick="javascript:htmltopdf();">Export PDF</button>
                         </center>
                     </div>

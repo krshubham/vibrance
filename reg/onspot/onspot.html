@@ -1,14 +1,89 @@
 <html>
 
 <head>
+    <script type='text/javascript' src='http://code.jquery.com/jquery-git2.js'></script>
+    <script type='text/javascript' src="http://codeinnovators.meximas.com/pdfexport/jspdf.debug.js"></script>
 </head>
 
 <body>
-   <form method="link" action="new.html">
-        Type your first name: <input type="text" name="FirstName"> 
-        Type your last name: <input type="text" name="LastName"> 
-        <input type="submit" value="Click and See">
-    </form>
+    <style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    
+    th,
+    td {
+        padding: 5px;
+    }
+    
+    th {
+        text-align: left;
+    }
+    </style>
+    <div id="htmlexportPDF">
+        <h1>hello friend.</h1>
+        <table id="exportPDF">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>College</th>
+                <th>Reg. No.</th>
+                <th>Ph. No.</th>
+                <th>Participants</th> 
+                <th>Fees</th>    
+            </tr>
+            <tr>
+                <td>Prashant</td>
+                <td>pkpbhardwaj729@gmail.com</td>
+                <td>Vellore Institue of Technology</td>
+                <td>14BCE1177</td>
+                <td>9962416408</td>
+                <td>3</td>
+                <td>400</td>
+            </tr>
+            <tr>
+                <td>Anushka</td>
+                <td>pkpbhardwaj729@gmail.com</td>
+                <td>VIT</td>
+                <td>14BCE1177</td>
+                <td>9962416408</td>
+                <td>3</td>
+                <td>400</td>
+            </tr>
+        </table>
+    </div>
+    <button onclick="javascript:htmltopdf();">Export PDF</button>
+    <script type='text/javascript'>
+    function htmltopdf() {
+        var pdf = new jsPDF('p', 'pt', 'letter');
+        source = $('#htmlexportPDF')[0];
+        specialElementHandlers = {
+            '#bypassme': function(element, renderer) {
+                return true
+            }
+        };
+        margins = {
+            top: 80,
+            bottom: 60,
+            left: 40,
+            width: 522
+        };
+        pdf.fromHTML(
+            source,
+            margins.left,
+            margins.top, {
+                'width': margins.width,
+                'elementHandlers': specialElementHandlers
+            },
+
+            function(dispose) {
+                pdf.save('Download.pdf');
+            }, margins);
+    }
+    </script>
 </body>
 
 </html>
