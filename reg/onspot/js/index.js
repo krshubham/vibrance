@@ -1,6 +1,6 @@
 // Input Lock
 
-/*$('#hire .field:first-child input').blur(function () {
+$('#hire .field:first-child input').blur(function () {
     $('#hire .field:first-child input').each(function () {
         $this = $(this);
         if ( this.value != '' ) {
@@ -12,7 +12,7 @@
           $('.field:first-child input + label + span').css({'opacity': 0});
         }
     });
-});*/
+});
 
 $('#hire .field input').blur(function () {
     $('#hire .field input').each(function () {
