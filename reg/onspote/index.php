@@ -1,8 +1,14 @@
 <?php require_once("../includes/session.php"); ?>
 <?php require_once("../includes/db_connection.php"); ?>
 <?php require_once("../includes/functions.php"); ?>
-
-<?php confirm_admin_logged_in(); ?>
+<?php
+function confirm_admin_logged_in_here() {
+    if (!admin_logged_in()) {
+        redirect_to("../admin/index.php");
+    }
+}
+?>
+<?php confirm_admin_logged_in_here(); ?>
 
 <?php
     $current_user = $_SESSION["username"];
@@ -41,16 +47,14 @@
         } else {
             $parti = $_POST['parti'];
             $view_parti = "";
-        }
-        }
+        }        
         if ($parti==1) {
             $event_type = "Individual";
         } else {
             $event_type = "Team";
         }
         $price = $parti*$last_name[3];
-        $billno = "A".rand();
-        
+        $billno = "A".rand();        
 
         $check_query = "SELECT * FROM {$event_name} WHERE email = '{$email}' ";
         $check_result = mysqli_query($conn, $check_query);
@@ -98,7 +102,7 @@
             $content .= "</tr> ";
             $content .= "<tr style='margin-top: 12px;'> ";
             $content .= "<td style='padding-top: 5px;padding-bottom: 5px; color: #ffffff;'>Event Type: </td> ";
-            $content .= "<td style='padding-right: 12px; color: #ffffff;'> ".$event_type."</span></td> ";
+            $content .= "<td style='padding-right: 12px; color: #ffffff;'> ".$event_type."</td> ";
             $content .= "</tr> ";
             $content .= "<tr style='margin-top: 12px;'> ";
             $content .= "<td style='padding-top: 5px;padding-bottom: 5px; color: #ffffff;'>Event Registration Fee: </td> ";

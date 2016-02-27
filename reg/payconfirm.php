@@ -59,7 +59,7 @@ $content .= "<td style='padding-right: 12px; color: #ffffff;'> ".$parti."</td> "
 $content .= "</tr> ";
 $content .= "<tr style='margin-top: 12px;'> ";
 $content .= "<td style='padding-top: 5px;padding-bottom: 5px; color: #ffffff;'>Event Type: </td> ";
-$content .= "<td style='padding-right: 12px; color: #ffffff;'> ".$type."</span></td> ";
+$content .= "<td style='padding-right: 12px; color: #ffffff;'> ".$type."</td> ";
 $content .= "</tr> ";
 $content .= "<tr style='margin-top: 12px;'> ";
 $content .= "<td style='padding-top: 5px;padding-bottom: 5px; color: #ffffff;'>Event Registration Fee: </td> ";

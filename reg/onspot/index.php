@@ -2,7 +2,15 @@
 <?php require_once("../includes/db_connection.php"); ?>
 <?php require_once("../includes/functions.php"); ?>
 
-<?php confirm_admin_logged_in(); ?>
+<?php
+function confirm_admin_logged_in_here() {
+    if (!admin_logged_in()) {
+        redirect_to("../admin/index.php");
+    }
+}
+?>
+<?php confirm_admin_logged_in_here(); ?>
+
 
 <?php
     $current_user = $_SESSION["username"];
@@ -92,7 +100,7 @@
             $content .= "</tr> ";
             $content .= "<tr style='margin-top: 12px;'> ";
             $content .= "<td style='padding-top: 5px;padding-bottom: 5px; color: #ffffff;'>Event Type: </td> ";
-            $content .= "<td style='padding-right: 12px; color: #ffffff;'> ".$event_type."</span></td> ";
+            $content .= "<td style='padding-right: 12px; color: #ffffff;'> ".$event_type."</td> ";
             $content .= "</tr> ";
             $content .= "<tr style='margin-top: 12px;'> ";
             $content .= "<td style='padding-top: 5px;padding-bottom: 5px; color: #ffffff;'>Event Registration Fee: </td> ";
