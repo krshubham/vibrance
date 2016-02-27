@@ -140,8 +140,8 @@ th {
                             ?>
                             <p>
                                 <h3>Total Income = Rs. <span id="total"></span> </h3>
-                            </p>
-                            <p><button onclick="javascript:htmltopdf();">Export PDF</button></p></div>                            
+                            </p></div>
+                            <p><button onclick="javascript:htmltopdf();">Export PDF</button></p>                            
                         </center>
                     </div>
                 </div>
