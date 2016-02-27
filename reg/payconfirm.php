@@ -87,7 +87,7 @@ $mail->Password = 'NayaWala';
 $mail->SMTPSecure = 'tls';                            
 $mail->Port = 587;                                    
 $mail->setFrom('vibrancechennai@gmail.com', 'Vibrance Registrations Team');
-$mail->addAddress("$email");       
+$mail->addAddress("$name_title['email']");       
 $mail->WordWrap = 50; 
 $mail->isHTML(true);                                  
  
@@ -108,6 +108,7 @@ $update_result = mysqli_query($conn, $update_query);
 if ($result && mysqli_affected_rows($conn) == 1) {
 
 	redirect_to("payments.php");
+	$_SESSION["message"] = "Payment Confirmed";
 } else {
 
 	redirect_to("payments.php");
