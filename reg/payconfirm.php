@@ -15,11 +15,11 @@ if ($parti==1) {
 }
 $price = $parti*$event_part[2];
 $billno = "A".rand();
-$name_query = "SELECT * FROM users WHERE id = {$id} LIMIT 1";
+$name_query = "SELECT * FROM {$event} WHERE id = {$id} LIMIT 1";
 $name_result = mysqli_query($conn, $name_query);
 confirm_query($name_result);
 $name_title = mysqli_fetch_assoc($name_result);
-$email = $name_title['username'];
+$email = $name_title['email'];
 
 // registration bill html code starts
 
