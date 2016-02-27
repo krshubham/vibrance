@@ -2,58 +2,6 @@
 <?php require_once("includes/db_connection.php"); ?>
 <?php require_once("includes/functions.php"); ?>
 <?php confirm_logged_in(); ?>
-<?php
-	$content = "<!DOCTYPE html> ";
-	$content .= "<html> ";
-	$content .= "<head> ";
-	$content .= "<title>Bill</title> ";	
-	$content .= "</head> ";
-	$content .= "<body style='overflow: hidden;'> ";	
-	$content .= "<div style='background-color: #20202F; margin-right: 230px;'> ";
-	$content .= "<header> ";
-	$content .= "<img src='http://vitchennaivibrance.com/reg/images/vib_banner_small.png' style='width: 180px;height: 60px;margin-right: 190px;'> ";
-	$content .= "<img src='http://vitchennaivibrance.com/reg/images/vit_logo.png' style='width: 150px;height: 60px;'> ";
-	$content .= "</header> ";
-	$content .= "<h1 style='margin-left: 100px;	font-size: 40px; font-weight: 200px; margin-top: -0.5px; margin-bottom: -50px; color: #E85657;' >Vibrance 2016</h1><br> ";
-	$content .= "<h3 style='margin-bottom: 0;margin-top: 0;	margin-left: 10px; color: #E85657;'>Bill No: <span>4361</span></h3><h3 style='margin-left: 160px;font-size: 18px;font-weight: 40px;margin-top: -2.5px;margin-bottom: 15px; color: #E85657;'>Electronic registration slip</h3> ";
-	$content .= "<br> ";
-	$content .= "<div style='font-size: 18px;margin-bottom: 12px;padding-bottom: 12px;margin-left: 12px;'> ";
-	$content .= "<div style='margin-top: -12px;display: block;margin-right: 10px;margin-left: 10px;margin-bottom: -1px;background-color: #2292A4;'> ";
-	$content .= "<form style='font-size: 18px;margin-bottom: 12px;padding-bottom: 12px;margin-left: 12px;'> ";
-	$content .= "<table style='border-collapse: collapse;margin-top: 2px;'> ";
-	$content .= "<tr style='margin-top: 12px;'> ";
-	$content .= "<td style='padding-top: 5px;padding-bottom: 5px; color: #ffffff;'> ";
-	$content .= "Event Name: ";
-	$content .= "</td> ";
-	$content .= "<td style='padding-right: 12px; color: #ffffff;'> ";
-	$content .= "<span>Adaptune</span> ";
-	$content .= "</td> ";
-	$content .= "</tr> ";
-	$content .= "<tr style='margin-top: 12px;'> ";
-	$content .= "<td style='padding-top: 5px;padding-bottom: 5px; color: #ffffff;'>Name of the Participant(s): </td> ";
-	$content .= "<td style='padding-right: 12px; color: #ffffff;'><span>Pragya</span></td> ";
-	$content .= "</tr> ";
-	$content .= "<tr style='margin-top: 12px;'> ";
-	$content .= "<td style='padding-top: 5px;padding-bottom: 5px; color: #ffffff;'>Number of Participants: </td> ";
-	$content .= "<td style='padding-right: 12px; color: #ffffff;'><span>4</span></td> ";
-	$content .= "</tr> ";
-	$content .= "<tr style='margin-top: 12px;'> ";
-	$content .= "<td style='padding-top: 5px;padding-bottom: 5px; color: #ffffff;'>Event Type: </td> ";
-	$content .= "<td style='padding-right: 12px; color: #ffffff;'><span>Individual</span></td> ";
-	$content .= "</tr> ";
-	$content .= "<tr style='margin-top: 12px;'> ";
-	$content .= "<td style='padding-top: 5px;padding-bottom: 5px; color: #ffffff;'>Event Registration Fee: </td> ";
-	$content .= "<td style='padding-right: 12px; color: #ffffff;'>Rs. 200</td> ";
-	$content .= "</tr> ";
-	$content .= "</table> ";
-	$content .= "</div> ";
-	$content .= "</form> ";
-	$content .= "<div style='height: 10px;'></div> ";
-	$content .= "</div> ";
-	$content .= "</div> ";
-	$content .= "</body> ";
-	$content .= "</html>";
-?>
 
 <?php
 	$current_user = $_SESSION["username"];
@@ -68,7 +16,14 @@
 	$regno = $name_title['regno'];
 	$phno = $name_title['phno'];
 	$event = $_POST['event1'];
+	$event_part = explode("_", $event);
 	$parti = $_POST['parti1'];
+	if ($parti==1) {
+		$type = "Individual";
+	} else {
+		$type = "Type";
+	}
+	$billno = "A".rand();
 
 	$check_query = "SELECT * FROM {$event} WHERE email = '{$current_user}' ";
 	$check_result = mysqli_query($conn, $check_query);
@@ -77,6 +32,61 @@
 	if ($check['email']== $email) {
 		echo "You have already registered for this event. ";
 	} else {
+
+		// registration bill html code starts
+
+		$content = "<!DOCTYPE html> ";
+		$content .= "<html> ";
+		$content .= "<head> ";
+		$content .= "<title>Bill</title> ";	
+		$content .= "</head> ";
+		$content .= "<body style='overflow: hidden;'> ";	
+		$content .= "<div style='background-color: #20202F; margin-right: 230px;'> ";
+		$content .= "<header> ";
+		$content .= "<img src='http://vitchennaivibrance.com/reg/images/vib_banner_small.png' style='width: 180px;height: 60px;margin-right: 190px;'> ";
+		$content .= "<img src='http://vitchennaivibrance.com/reg/images/vit_logo.png' style='width: 150px;height: 60px;'> ";
+		$content .= "</header> ";
+		$content .= "<h1 style='margin-left: 120px;	font-size: 40px; font-weight: 200px; margin-top: -0.5px; margin-bottom: -50px; color: #E85657;' >Vibrance 2016</h1><br> ";
+		$content .= "<h3 style='margin-bottom: 0;margin-top: 0;	margin-left: 10px; color: #E85657;'>Bill No: <span>".$billno."</span></h3><h3 style='margin-left: 160px;font-size: 18px;font-weight: 40px;margin-top: -2.5px;margin-bottom: 15px; color: #E85657;'>Electronic registration slip</h3> ";
+		$content .= "<br> ";
+		$content .= "<div style='font-size: 18px;margin-bottom: 12px;padding-bottom: 12px;margin-left: 12px;'> ";
+		$content .= "<div style='margin-top: -12px;display: block;margin-right: 10px;margin-left: 10px;margin-bottom: -1px;background-color: #2292A4;'> ";
+		$content .= "<form style='font-size: 18px;margin-bottom: 12px;padding-bottom: 12px;margin-left: 12px;'> ";
+		$content .= "<table style='border-collapse: collapse;margin-top: 2px;'> ";
+		$content .= "<tr style='margin-top: 12px;'> ";
+		$content .= "<td style='padding-top: 5px;padding-bottom: 5px; color: #ffffff;'> ";
+		$content .= "Event Name: ";
+		$content .= "</td> ";
+		$content .= "<td style='padding-right: 12px; color: #ffffff;'> ";
+		$content .= "<span>".$event_part[0]."</span> ";
+		$content .= "</td> ";
+		$content .= "</tr> ";
+		$content .= "<tr style='margin-top: 12px;'> ";
+		$content .= "<td style='padding-top: 5px;padding-bottom: 5px; color: #ffffff;'>Name of the Participant(s): </td> ";
+		$content .= "<td style='padding-right: 12px; color: #ffffff;'> ".$name."</td> ";
+		$content .= "</tr> ";
+		$content .= "<tr style='margin-top: 12px;'> ";
+		$content .= "<td style='padding-top: 5px;padding-bottom: 5px; color: #ffffff;'>Number of Participants: </td> ";
+		$content .= "<td style='padding-right: 12px; color: #ffffff;'> ".$parti."</td> ";
+		$content .= "</tr> ";
+		$content .= "<tr style='margin-top: 12px;'> ";
+		$content .= "<td style='padding-top: 5px;padding-bottom: 5px; color: #ffffff;'>Event Type: </td> ";
+		$content .= "<td style='padding-right: 12px; color: #ffffff;'> ".$type."</span></td> ";
+		$content .= "</tr> ";
+		$content .= "<tr style='margin-top: 12px;'> ";
+		$content .= "<td style='padding-top: 5px;padding-bottom: 5px; color: #ffffff;'>Event Registration Fee: </td> ";
+		$content .= "<td style='padding-right: 12px; color: #ffffff;'> ".$event_part[2]."</td> ";
+		$content .= "</tr> ";
+		$content .= "</table> ";
+		$content .= "</div> ";
+		$content .= "</form> ";
+		$content .= "<div style='height: 10px;'></div> ";
+		$content .= "</div> ";
+		$content .= "</div> ";
+		$content .= "</body> ";
+		$content .= "</html>";
+
+		// registration bill html ends
 
 		require 'PHPMailer-master/PHPMailerAutoload.php';
  
@@ -96,9 +106,8 @@
 		 
 		$mail->Subject = 'Vibrance event registration.';
 		$mail->Body    = $content;
-		$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';		 
+		$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 		
-		//$mail->msgHTML(file_get_contents('PHPMailer-master/contents.html'), dirname(__FILE__)); 
 		
 		if(!$mail->send()) {
 		   echo 'Message could not be sent.';
