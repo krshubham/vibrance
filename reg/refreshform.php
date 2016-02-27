@@ -14,7 +14,7 @@
 	$content .= "<img src='http://vitchennaivibrance.com/reg/images/vib_banner_small.png' style='width: 180px;height: 60px;margin-right: 370px;'> ";
 	$content .= "<img src='http://vitchennaivibrance.com/reg/images/vit_logo.png' style='width: 150px;height: 60px;'> ";
 	$content .= "</header> ";
-	$content .= "<h3 style='margin-left: 252px;	font-family: 'Calibri';	font-size: 40px;font-weight: 200; margin-top: -0.5px; margin-bottom: -50px; color: #E85657;'>Vibrance 2016</h3><br><br><br> ";
+	$content .= "<h1 style='margin-left: 252px;	font-family: 'Calibri';	font-size: 40px; font-weight: 200px; margin-top: -0.5px; margin-bottom: -50px; color: #E85657;' >Vibrance 2016</h1><br><br> ";
 	$content .= "<h3 style='margin-bottom: 0;margin-top: 0;	margin-left: 10px; color: #E85657;'>Bill No: <span>4361</span></h3><h3 style='margin-left: 255px;font-size: 18px;font-weight: 200;margin-top: -2.5px;margin-bottom: 15px; color: #E85657;'>Electronic registration slip</h3> ";
 	$content .= "<br> ";
 	$content .= "<div style='font-size: 18px;margin-bottom: 12px;padding-bottom: 12px;margin-left: 12px;'> ";
