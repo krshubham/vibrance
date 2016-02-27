@@ -1,7 +1,7 @@
 // Input Lock
 
-$('#hire .field:first-child input').blur(function () {
-    $('#hire .field:first-child input').each(function () {
+$('#hire .field: input').blur(function () {
+    $('#hire .field: input').each(function () {
         $this = $(this);
         if ( this.value != '' ) {
           $this.addClass('focused');
