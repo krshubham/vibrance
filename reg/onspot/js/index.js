@@ -13,8 +13,8 @@ $('textarea').blur(function () {
     });
 });
 
-$('#hire .field:first-child input').blur(function () {
-    $('#hire .field:first-child input').each(function () {
+$('#hire .field:nth-child(odd) input').blur(function () {
+    $('#hire .field:nth-child input').each(function () {
         $this = $(this);
         if ( this.value != '' ) {
           $this.addClass('focused');
