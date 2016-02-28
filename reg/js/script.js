@@ -24,7 +24,7 @@ include('jquery.easing.1.3.js');
         include('tmstickup.js');
 
         $(document).ready(function () {
-            $('#stuck_container').TMStickUp({})
+            $('#stuck_container').TMStickUp({});
         });
     }
 })(jQuery);
