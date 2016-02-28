@@ -127,7 +127,7 @@ th {
                                                 </tr><?php
                                             while ($list = mysqli_fetch_assoc($result)) { ?>
                                                 <tr>
-                                                    <td><?php echo $list['event']; ?></td>
+                                                    <td><?php $event_name = explode("_", $list['event']); echo ucfirst($event_name[0]); ?></td>
                                                     <td><?php echo $list['parti']; ?></td>
                                                     <td class="count-me"><?php echo $list['income']; ?></td>             
                                                 </tr><?php                                             
