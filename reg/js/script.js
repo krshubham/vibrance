@@ -9,11 +9,11 @@ function isIE() {
 
 /* cookie.JS
  ========================================================*/
-include('jquery.cookie.js');
+include('js/jquery.cookie.js');
 
 /* Easing library
  ========================================================*/
-include('jquery.easing.1.3.js');
+include('js/jquery.easing.1.3.js');
 
 /* Stick up menus
  ========================================================*/
@@ -21,10 +21,10 @@ include('jquery.easing.1.3.js');
 (function ($) {
     var o = $('html');
     if (o.hasClass('desktop')) {
-        include('tmstickup.js');
+        include('js/tmstickup.js');
 
         $(document).ready(function () {
-            $('#stuck_container').TMStickUp({});
+            $('#stuck_container').TMStickUp({})
         });
     }
 })(jQuery);
@@ -35,7 +35,7 @@ include('jquery.easing.1.3.js');
 (function ($) {
     var o = $('html');
     if (o.hasClass('desktop')) {
-        include('jquery.ui.totop.js');
+        include('js/jquery.ui.totop.js');
 
         $(document).ready(function () {
             $().UItoTop({easingType: 'easeOutQuart'});
@@ -49,7 +49,7 @@ include('jquery.easing.1.3.js');
 (function ($) {
     var o = $('[data-equal-group]');
     if (o.length > 0) {
-        include('jquery.equalheights.js');
+        include('js/jquery.equalheights.js');
     }
 })(jQuery);
 
@@ -59,8 +59,8 @@ include('jquery.easing.1.3.js');
 (function ($) {
     var o = $('html');
     if (o.hasClass('desktop')) {
-        include('jquery.mousewheel.min.js');
-        include('jquery.simplr.smoothscroll.min.js');
+        include('js/jquery.mousewheel.min.js');
+        include('js/jquery.simplr.smoothscroll.min.js');
 
         $(document).ready(function () {
             $.srSmoothscroll({
@@ -83,7 +83,7 @@ $(document).ready(function () {
  ========================================================*/
 ;
 (function ($) {
-    include('superfish.js');
+    include('js/superfish.js');
 
     var o = $('.sf-menu-toggle');
     if (o.length > 0) {
@@ -104,7 +104,7 @@ $(document).ready(function () {
             });
         });
     } else {
-        include('jquery.mobilemenu.js');
+        include('js/jquery.mobilemenu.js');
     }
 })(jQuery);
 
@@ -116,7 +116,7 @@ $(document).ready(function () {
 
     if ((navigator.userAgent.toLowerCase().indexOf('msie') == -1 ) || (isIE() && isIE() > 9)) {
         if (o.hasClass('desktop')) {
-            include('wow.js');
+            include('js/wow.js');
 
             $(document).ready(function () {
                 new WOW().init();
@@ -131,8 +131,8 @@ $(document).ready(function () {
 (function ($) {
     var o = $('#contact-form');
     if (o.length > 0) {
-        include('modal.js');
-        include('TMForm.js');
+        include('js/modal.js');
+        include('js/TMForm.js');
     }
 })(jQuery);
 
@@ -191,10 +191,10 @@ document.write('<meta name="viewport" content="width=device-width,initial-scale=
 var o = $('#camera');
     if (o.length > 0) {
         if (!(isIE() && (isIE() > 9))) {
-            include('jquery.mobile.customized.min.js');
+            include('js/jquery.mobile.customized.min.js');
         }
 
-        include('camera.js');
+        include('js/camera.js');
 
         $(document).ready(function () {
             o.camera({
@@ -220,9 +220,9 @@ var o = $('#camera');
 ;(function ($) {
     var o = $('.thumb');
     if (o.length > 0) {
-        include('jquery.fancybox.js');
-        include('jquery.fancybox-media.js');
-        include('jquery.fancybox-buttons.js');
+        include('js/jquery.fancybox.js');
+        include('js/jquery.fancybox-media.js');
+        include('js/jquery.fancybox-buttons.js');
         $(document).ready(function () {
             o.fancybox();
         });
@@ -236,7 +236,7 @@ var o = $('#camera');
     var o = $('.lazy-img img');
 
     if (o.length > 0) {
-        include('jquery.unveil.js');
+        include('js/jquery.unveil.js');
 
         $(document).ready(function () {
             $(o).unveil(0, function () {
@@ -262,7 +262,7 @@ var o = $('#camera');
 ;(function ($) {
     var o = $('.parallax');
     if (o.length > 0 && $('html').hasClass('desktop')) {
-        include('jquery.rd-parallax.js');
+        include('js/jquery.rd-parallax.js');
     }
 })(jQuery);
 
@@ -273,7 +273,7 @@ var o = $('#camera');
     var o = document.getElementById("google-map");
     if (o) {
         include('//maps.google.com/maps/api/js?sensor=false');
-        include('jquery.rd-google-map.js');
+        include('js/jquery.rd-google-map.js');
 
         $(document).ready(function () {
             var o = $('#google-map');
