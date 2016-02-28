@@ -275,7 +275,7 @@
                         </div>
                     </div>
                     <form>
-                        <input type="text" id="event_bollywoodbattle" value="bollywoodbattle_team_200" style="display: none;">
+                        <input type="text" id="event_bollywoodbattle" value="bollywoodbattle_team_100" style="display: none;">
                         <center>
                             <select id="parti_bollywoodbattle" <?php echo $event_view; ?> >
                                 <option value="0">Select the number of participants in your team</option>
@@ -313,6 +313,16 @@
                             </ul>
                         </div>
                     </div>
+                     <form>
+                        <input type="text" id="event_dancingduo" value="dancingduo_team_200" style="display: none;">
+                        <center>
+                            <input type="number" value="2" id="parti_dancingduo" style="display: none;" >                     
+                        </center>
+                        <div style="text-align: center; ">
+                            <input id="dancingduo" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <?php echo $login_view; ?>
+                        </div>
+                    </form>   
                 </div>
             </section>
             <section name="fourth" class="parallax parallax6" data-parallax-speed="-0.4">
@@ -365,11 +375,38 @@
                             </p>
                         </div>
                     </div>
+                    <form>
+                        <input type="text" id="event_groupdance" value="groupdance_team_200" style="display: none;">
+                        <center>
+                            <select id="parti_groupdance" <?php echo $event_view; ?> >
+                                <option value="0">Select the number of participants in your team</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>                                
+                            </select>
+                        </center>
+                        <div style="text-align: center; ">
+                            <input id="groupdance" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <?php echo $login_view; ?>
+                        </div>
+                    </form>    
                 </div>
             </section>
             <section name="fifth" class="parallax parallax11" data-parallax-speed="-0.4">
                 <div class="container">
-                    <h2><em>Solo Dance</em>Type</h2>
+                    <h2><em>Solo Dance</em>Individual</h2>
                     <br>
                     <br>
                     <h4 style="text-align: left;font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Name &nbsp;&nbsp;&nbsp;Phone No.</h4>
@@ -401,6 +438,13 @@
                             </p>
                         </div>
                     </div>
+                    <form>
+                        <input type="text" id="event_solodance" value="solodance_alone_100" style="display: none;">                    
+                        <div style="text-align: center; ">
+                            <input id="solodance" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <?php echo $login_view; ?>
+                        </div>
+                    </form>   
                 </div>
             </section>
         </main>
