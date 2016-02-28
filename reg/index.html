@@ -381,7 +381,7 @@
 </head>
 
 <body>
-    <div class="container ">
+    <div class="container" style="display: none;">
     <audio autoplay>
         <source src="song.mp3" type="audio/mpeg">
     </audio>
@@ -414,9 +414,8 @@ else{
     alert("No Hello");
 }
 */
-var myAudio = $('audio')[0];
-
-var readyState = myAudio.readyState;
-alert(readyState);
+$(function() {
+  $(".container").delay(12000).slideDown();
+});
 </script>
 </html>
