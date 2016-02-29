@@ -199,6 +199,7 @@ function confirm_admin_logged_in_here() {
         text-transform: uppercase;
         font-family: 'Lato', sans-serif;
         font-weight: 100;
+        margin-left: 0;
     }
     
     form {
