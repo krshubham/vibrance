@@ -313,7 +313,7 @@
                         </div>
                     </div>
                      <form>
-                        <input type="text" id="event_dancingduo" value="dancingduo_team_200" style="display: none;">
+                        <input type="text" id="event_dancingduo" value="dancingduo_team_100" style="display: none;">
                         <center>
                             <input type="number" value="2" id="parti_dancingduo" style="display: none;" >                     
                         </center>
