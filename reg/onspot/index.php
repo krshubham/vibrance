@@ -420,7 +420,7 @@ function confirm_admin_logged_in_here() {
         </header>
 
     <section id="hire" <?php echo $view_whole; ?> >
-        <h1>On Spot Registration</h1>
+        <h1 style="color: #313A3D">On Spot Registration</h1>
         <p><?php echo $check_view; ?></p>
         <form method="post" action="index.php">
             <div class="field name-box">
