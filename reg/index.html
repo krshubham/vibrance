@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>CSS3 Text Animation Effect</title>
+    <title>Vibrance'16</title>
     <link rel="stylesheet" href="intro/css/reset.css">
     <style>
     /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
@@ -381,7 +381,7 @@
 </head>
 
 <body>
-<img src="ajax-loader.gif" style="display: none;">
+<img src="ajax-loader.gif" style="visibility: hidden;">
     <div class="container" style="display: none;">
     <audio autoplay>
         <source src="song.mp3" type="audio/mpeg">
@@ -392,12 +392,12 @@
         <div class="sp-container">
             <div class="sp-content">
                 <div class="sp-globe"></div>
-                <h2 class="frame-1">It's destroying the planet</h2>
-                <h2 class="frame-2">It's mass, mechanized murder</h2>
-                <h2 class="frame-3">You can stop it</h2>
-                <h2 class="frame-4">Now!</h2>
-                <h2 class="frame-5"><span>Save the planet.</span> <span>Love life.</span> <span>Go vegan.</span></h2>
-                <a class="sp-circle-link" href="index.php">Join us!</a>
+                <h2 class="frame-1">It's Vibrant</h2>
+                <h2 class="frame-2">It's more vibrant</h2>
+                <h2 class="frame-3">It's unforgettable experience</h2>
+                <h2 class="frame-4">Vibrance'16</h2>
+                <h2 class="frame-5"><span>Let's Experience</span> <span>The Extravaganza</span> <span>NOW!</span></h2>
+                <a class="sp-circle-link" href="index.php">Go!</a>
             </div>
         </div>
     </div>
@@ -405,10 +405,13 @@
 </body>
 <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
 <script type="text/javascript">
+$(document).ready(function(){
+    $('img').slideDown();
+});
 $('img').slideDown();
 $(window).load(function(){
      $(".container").slideDown();
-     s('img').css('display','none');
+     s('img').css('visibility','hidden');
 });
 </script>
 </html>
