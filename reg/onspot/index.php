@@ -183,7 +183,7 @@ function confirm_admin_logged_in_here() {
         background: white;
         /*margin: 60px auto 120px auto;*/
         margin-left: 20em;
-        margin-top: -1em;
+        margin-top: 1em;
         margin-bottom: 5em;
         border-top: 15px solid #313A3D;
         text-align: center;
@@ -201,7 +201,7 @@ function confirm_admin_logged_in_here() {
     }
     
     form {
-        width: 70%;
+        width: 58.33333%;
     }
     
     form .field {
@@ -349,7 +349,7 @@ function confirm_admin_logged_in_here() {
 </head>
 
 <body><header>
-            <div id="stuck_container" class="stuck_container" style="z-index: 999;">
+            <div id="stuck_container" class="stuck_container">
                 <div class="container">
                     <div class="brand">
                         <h1 class="brand_name">
