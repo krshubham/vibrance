@@ -14,4 +14,28 @@ $(document).ready(function() {
             alert(data);                
         });
     });
+
+    $("#dancingduo").click(function() { 
+    var event = $("#event_dancingduo").val();
+    var parti = 2;       
+        $.post("refreshform.php", {event1: event, parti1: parti}, function(data) {
+            alert(data);                
+        });
+    });
+
+    $("#choreonight").click(function() { 
+    var event = $("#event_choreonight").val();
+    var parti = 1;       
+        $.post("refreshform.php", {event1: event, parti1: parti}, function(data) {
+            alert(data);                
+        });
+    });
+
+    $("#footloose").click(function() { 
+    var event = $("#event_footloose").val();
+    var parti = 1;       
+        $.post("refreshform.php", {event1: event, parti1: parti}, function(data) {
+            alert(data);                
+        });
+    });
 });

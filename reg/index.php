@@ -141,7 +141,7 @@
                             <?php echo $view; ?>
                         </li>
                         <li class="active">
-                            <a href="index.html">Home</a>
+                            <a href="index.php">Home</a>
                         </li>
                         <li>
                             <a href="aboutus.html">About Us</a>
@@ -153,37 +153,37 @@
                                         <a href="danceclub.php">Dance</a>
                                     </li>
                                     <li>
-                                        <a href="games.html">Games</a>
+                                        <a href="games.php">Games</a>
                                     </li>
                                     <li>
-                                        <a href="musicclub.html">Music</a>
+                                        <a href="musicclub.php">Music</a>
                                     </li>
                                     <li>
-                                        <a href="dramaclub.html">Drama</a>
+                                        <a href="dramaclub.php">Drama</a>
                                     </li>
                                     <li>
-                                        <a href="fineartsclub.html">Fine Arts</a>
+                                        <a href="fineartsclub.php">Fine Arts</a>
                                     </li>
                                     <li>
-                                        <a href="informals.html">Informals</a>
+                                        <a href="informals.php">Informals</a>
                                     </li>
                                     <li>
-                                        <a href="formals.html">Formals</a>
+                                        <a href="formals.php">Formals</a>
                                     </li>
                                     <li>
-                                        <a href="tech.html">Tech Events</a>
+                                        <a href="tech.php">Tech Events</a>
                                     </li>
                                     <li>
-                                        <a href="debnquiz.html">Debates and Quiz</a>
+                                        <a href="debnquiz.php">Debates and Quiz</a>
                                     </li>
                                     <li>
-                                        <a href="sports.html">Sports</a>
+                                        <a href="sports.php">Sports</a>
                                     </li>
                                     <li>
-                                        <a href="tamil.html">Tamil Events</a>
+                                        <a href="tamil.php">Tamil Events</a>
                                     </li>
                                     <li>
-                                        <a href="viteach.html">Viteach Events</a>
+                                        <a href="viteach.php">Viteach Events</a>
                                     </li>
                                 </ul>
                         </li>

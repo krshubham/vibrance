@@ -75,13 +75,13 @@
                 <div class="container">
                     <div class="brand">
                         <h1 class="brand_name">
-                            <a href="index.html">Vibrance'16</a>
+                            <a href="index.php">Vibrance'16</a>
                         </h1>
                     </div>
                     <nav class="nav">
                         <ul class="sf-menu">
                             <li>
-                                <a href="index.html">Home</a>
+                                <a href="index.php">Home</a>
                             </li>
                             <li>
                                 <a href="aboutus.html">About Us</a>
@@ -93,37 +93,37 @@
                                         <a href="danceclub.php">Dance</a>
                                     </li>
                                     <li>
-                                        <a href="games.html">Games</a>
+                                        <a href="games.php">Games</a>
                                     </li>
                                     <li>
-                                        <a href="musicclub.html">Music</a>
+                                        <a href="musicclub.php">Music</a>
                                     </li>
                                     <li>
-                                        <a href="dramaclub.html">Drama</a>
+                                        <a href="dramaclub.php">Drama</a>
                                     </li>
                                     <li>
-                                        <a href="fineartsclub.html">Fine Arts</a>
+                                        <a href="fineartsclub.php">Fine Arts</a>
                                     </li>
                                     <li>
-                                        <a href="informals.html">Informals</a>
+                                        <a href="informals.php">Informals</a>
                                     </li>
                                     <li>
-                                        <a href="formals.html">Formals</a>
+                                        <a href="formals.php">Formals</a>
                                     </li>
                                     <li>
-                                        <a href="tech.html">Tech Events</a>
+                                        <a href="tech.php">Tech Events</a>
                                     </li>
                                     <li>
-                                        <a href="debnquiz.html">Debates and Quiz</a>
+                                        <a href="debnquiz.php">Debates and Quiz</a>
                                     </li>
                                     <li>
-                                        <a href="sports.html">Sports</a>
+                                        <a href="sports.php">Sports</a>
                                     </li>
                                     <li>
-                                        <a href="tamil.html">Tamil Events</a>
+                                        <a href="tamil.php">Tamil Events</a>
                                     </li>
                                     <li>
-                                        <a href="viteach.html">Viteach Events</a>
+                                        <a href="viteach.php">Viteach Events</a>
                                     </li>
                                 </ul>
                             </li>
@@ -168,7 +168,7 @@
                         </section>
                         <section class="cbp-so-section">
                             <article class="cbp-so-side cbp-so-side-left">
-                                <h2 style="padding-top:20%;">18th March 2016</h2>
+                                <h2 style="padding-top:20%;">19th March 2016</h2>
                             </article>
                             <figure class="cbp-so-side cbp-so-side-right">
                                 <a href="#third"><img src="images/duet.jpg" alt="img01"></a>
@@ -179,12 +179,12 @@
                                 <a href="#fourth"><img src="images/group.jpg" alt="img01"></a>
                             </figure>
                             <article class="cbp-so-side cbp-so-side-right">
-                                <h2 style="padding-top:20%;">19th March 2016</h2>
+                                <h2 style="padding-top:20%;">18th March 2016</h2>
                             </article>
                         </section>
                         <section class="cbp-so-section">
                             <article class="cbp-so-side cbp-so-side-left">
-                                <h2 style="padding-top:20%;">18th March 2016</h2>
+                                <h2 style="padding-top:20%;">19th March 2016</h2>
                             </article>
                             <figure class="cbp-so-side cbp-so-side-right">
                                 <a href="#fifth"><img src="images/solo.jpg" alt="img01"></a>
@@ -198,17 +198,21 @@
                     <h2><em>Adaptune</em>Individual</h2>
                     <br>
                     <br>
-                    <h4 style="text-align: left;font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Pragya Gupta &nbsp;&nbsp;&nbsp;9952040969<br><br>Shreya Krishnan &nbsp;&nbsp;&nbsp;9176438911</h4>
+                    <h4 style="text-align: left;font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Piyush Gupta &nbsp;&nbsp;&nbsp;9362229525<br><br>Pragya Gupta &nbsp;&nbsp;&nbsp;9952040969<br><br>Shreya Krishna &nbsp;&nbsp;&nbsp;9176438911</h4>
                     <div class="row">
                         <div class="grid_6">
                             <ul class="indents-3">
-                                <li>Duration of Event&nbsp;(expected):&nbsp;2.5&nbsp;hours</li>
+                                
                                 <li>
                                     <br>
                                 </li>
                                 <li>Description of Event:
                                     <p>It is an impromptu dance where the participants have to come up with steps on the spot adapting to the beats of the songs being played, showcasing their beat sense and creativity.</p>
                                 </li>
+                                <li>
+                                    <br>
+                                </li>
+                                <li>Registration Fees: Rs. 50/-</li>
                             </ul>                            
                         </div>
                         <div class="grid_6">
@@ -224,7 +228,7 @@
                         </div>
                     </div>
                     <form>
-                        <input type="text" id="event_adaptune" value="adaptune_alone_100" style="display: none;">                    
+                        <input type="text" id="event_adaptune" value="adaptune_alone_50" style="display: none;">                    
                         <div style="text-align: center; ">
                             <input id="adaptune" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
                             <?php echo $login_view; ?>
@@ -237,14 +241,10 @@
                     <h2><em>Bollywood Battle</em>Group</h2>
                     <br>
                     <br>
-                    <h4 style="text-align: left;font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Anvesh C. &nbsp;&nbsp;&nbsp;8885999805<br><br>Aishwarya &nbsp;&nbsp;&nbsp;8056517270</h4>
+                    <h4 style="text-align: left;font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Karan Seth &nbsp;&nbsp;&nbsp;9962044719<br><br>Karan &nbsp;&nbsp;&nbsp;9176858992<br><br>Aishwarya &nbsp;&nbsp;&nbsp;8056517270</h4>
                     <div class="row">
                         <div class="grid_6">
                             <ul class="indents-3">
-                                <li>Duration of Event&nbsp;(expected):&nbsp;3 to 4&nbsp;hours</li>
-                                <li>
-                                    <br>
-                                </li>
                                 <li>Description of Event:
                                     <p>Gather your friends and challenge them in this face off to prove who adapts to the tune better. no need for preparation as teams will have to dance to on spot music...
                                         <br> Gather your force and challenge them to dance.</p>
@@ -252,7 +252,7 @@
                                 <li>
                                     <br>
                                 </li>
-                                <li>Registration fees: Rs. 100/-</li>
+                                <li>Registration fees: Rs. 100/- per head</li>
                             </ul>
                         </div>
                         <div class="grid_6">
@@ -275,7 +275,7 @@
                         </div>
                     </div>
                     <form>
-                        <input type="text" id="event_bollywoodbattle" value="bollywoodbattle_team_200" style="display: none;">
+                        <input type="text" id="event_bollywoodbattle" value="bollywoodbattle_team_100" style="display: none;">
                         <center>
                             <select id="parti_bollywoodbattle" <?php echo $event_view; ?> >
                                 <option value="0">Select the number of participants in your team</option>
@@ -295,14 +295,10 @@
                     <h2><em>Dancing Duo</em>Group</h2>
                     <br>
                     <br>
-                    <h4 style="text-align: left; font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Divi Mendonca &nbsp;&nbsp;&nbsp;9987087816</h4>
+                    <h4 style="text-align: left; font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Divi Mendonca &nbsp;&nbsp;&nbsp;9987087816<br><br>Shivi Gitey&nbsp;&nbsp;&nbsp;9092691207<br><br>Shreesh S. &nbsp;&nbsp;&nbsp;8124092109</h4>
                     <div class="row">
                         <div class="grid_6">
                             <ul class="indents-3">
-                                <li>Duration of Event&nbsp;(expected):&nbsp;1 to 1.5&nbsp;hours</li>
-                                <li>
-                                    <br>
-                                </li>
                                 <li>Description of Event:
                                     <p>Be it a couple or a pair of crazy dancers - showcase your co-ordinated moves to the best 'Dancing Duo'. Competitive Dance event with several groups of 2 people competiting with each other:
                                         <li>&#8226;&nbsp;The duet category will have 2 rounds: prelims and finals.</li>
@@ -310,50 +306,58 @@
                                         <li>&#8226;&nbsp;Duration: 2-3 min</li>
                                     </p>
                                 </li>
+                                <li>
+                                <br> </li>
+                                <li>Registration Fees: 100/- per head.</li>
                             </ul>
                         </div>
                     </div>
+                     <form>
+                        <input type="text" id="event_dancingduo" value="dancingduo_team_200" style="display: none;">
+                        <center>
+                            <input type="number" value="2" id="parti_dancingduo" style="display: none;" >                     
+                        </center>
+                        <div style="text-align: center; ">
+                            <input id="dancingduo" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <?php echo $login_view; ?>
+                        </div>
+                    </form>   
                 </div>
             </section>
             <section name="fourth" class="parallax parallax6" data-parallax-speed="-0.4">
                 <div class="container">
-                    <h2><em>Group Dance</em>Group</h2>
+                    <h2><em>Choreo Night</em>Group</h2>
                     <br>
                     <br>
-                    <h4 style="text-align: left; font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Anvesh C. &nbsp;&nbsp;&nbsp;8885999805<br><br>Aishwarya &nbsp;&nbsp;&nbsp;8056517270</h4>
+                    <h4 style="text-align: left; font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Ansh &nbsp;&nbsp;&nbsp;9176857902<br><br>Shreesh S. &nbsp;&nbsp;&nbsp;8124092109<br><br>Anvesh C. &nbsp;&nbsp;&nbsp;8885999805<br><br>Kavita &nbsp;&nbsp;&nbsp;9941173445</h4>
                     <div class="row">
                         <div class="grid_6">
                             <ul class="indents-3">
-                                <li>Duration of Event&nbsp;(expected):&nbsp;2 to 3&nbsp;hours</li>
-                                <li>
-                                    <br>
-                                </li>
                                 <li>Description of Event: Mobs of dancers or a flare of graceful performers - All forms welcome to excite the stage and the crowd.
-                                    <p>Registration fees: Rs 200/-
-                                        <li>
-                                            <br>
-                                        </li>
-                                        Prize Money:
-                                        <li>&#8226;&nbsp;First prize: Rs 15000/-</li>
-                                        <li>&#8226;&nbsp;Second prize: Rs 7500/-</li>
-                                    </p>
                                 </li>
+                                <li>
+                                <br>
+                                </li>
+                                <li>Registration fees: Rs 3500/- per team </li>
                             </ul>
                         </div>
                         <div class="grid_6">
                             <p class="indents-3">Rules:
                                 <br>
-                                <li>Use of inflammable substances, water, sharp objects, etc. as props, will not be entertained.</li>
-                                <li>EXPOSURE AND OBSCENE gestures will not be entertained.</li>
+                                <li>Two rounds (prelims and finals).</li>
+                                <li>Members per team: 6 - 20.</li>
+                                <li>Time limit: 8 minutes.</li>
+                                <li>Prelims will take place on 18th Morning.</li>
+                                <li>Selected teams will qualify for the finals.</li>
+                                <li>Finals will take place on 18th evening at main stage.</li>
+                                <li>All the teams should report one hour prior to the event.</li>
+                                <li>The track should be submitted in a CD or a Pendrive.</li>
+                                <li>Use of fire, water and sharp objects are not allowed.</li>
+                                <li>Dance teams should not use vulgarity in any form.</li>
                                 <br>
                             </p>
                             <p class="indents-3">Judging criteria:
                                 <br>
-                                <li>One round.</li>
-                                <li>Members per team: 5 - 10.</li>
-                                <li>Time limit: 3 - 5 minutes.</li>
-                                <li>Use of fire, water and sharp objects are not allowed.</li>
-                                <li>Dance teams should not use vulgarity in any form.</li>
                                 <li>Dance teams will be judged on the criteria of:
                                     <br> &nbsp;&nbsp;&nbsp;&nbsp;i) Coordination
                                     <br> &nbsp;&nbsp;&nbsp;&nbsp;ii) Innovation
@@ -361,46 +365,62 @@
                                     <br> &nbsp;&nbsp;&nbsp;&nbsp;iv) Choreography
                                     <br>
                                 </li>
-                                <li>MIN 10 MEMBERS MAX 15</li>
                             </p>
                         </div>
                     </div>
+                    <form>
+                        <input type="text" id="event_choreonight" value="choreonight_alone_3500" style="display: none;">                   
+                        <div style="text-align: center; ">
+                            <input id="choreonight" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <?php echo $login_view; ?>
+                        </div>
+                    </form>    
                 </div>
             </section>
             <section name="fifth" class="parallax parallax11" data-parallax-speed="-0.4">
                 <div class="container">
-                    <h2><em>Solo Dance</em>Type</h2>
+                    <h2><em>Footloose</em>Individual</h2>
                     <br>
                     <br>
-                    <h4 style="text-align: left;font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Name &nbsp;&nbsp;&nbsp;Phone No.</h4>
+                    <h4 style="text-align: left;font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Ansh Shah &nbsp;&nbsp;&nbsp;9176857902<br><br>Akshita Arora &nbsp;&nbsp;&nbsp;9893124662<br><br>Rishabh Puri &nbsp;&nbsp;&nbsp;9952038818</h4>
                     <div class="row">
                         <div class="grid_6">
                             <ul class="indents-3">
-                                <li>Duration of Event&nbsp;(expected):&nbsp;0&nbsp;hours</li>
-                                <li>
-                                    <br>
-                                </li>
                                 <li>Description of Event:
-                                    <p>Dance and showcase your talent. One person at a time.</p>
+                                    <p>It's an opportunity where an individual can compete with other participants by showcasing a prepared dance performance which will be judged in accordance with predefined criteria and within the given time limit.</p>
                                 </li>
                                 <li>
                                     <br>
                                 </li>
-                                <li>Registration fees: Rs. /-</li>
+                                <li>Registration fees: Rs. 100/-</li>
                             </ul>
                         </div>
                         <div class="grid_6">
                             <p class="indents-3">Rules:
                                 <br>
-                                <li>Coming Soon. :P</li>
+                                <li>The song should be of 2.5 to 3 minutes.</li>
+                                <li>Proper dress code should be followed.</li>
+                                <li>Costumes have to be approved by coordinators prior to the performance. participants will be informed as to when and how this needs to be done.</li>
+                                <li>Indecent, vulgar dance moves will be penalized by the disqualification of the participant.</li>
+                                <li>Participants need to inform the coordinators about any props they wish to use, at the time of their registration.</li>
+                                <li>Sound tracks need to be submitted an hour before the performances.</li>
                                 <br>
                             </p>
                             <p class="indents-3">Judging criteria:
                                 <br>
-                                <li>Coming Soon :P</li>
+                                <li>Repetitive steps and repetitive creativity will not be appreciated.</li>
+                                <li>Extra marks for costumes.</li>
+                                <li>Beat sense will be checked.</li>
                             </p>
                         </div>
                     </div>
+                    <form>
+                        <input type="text" id="event_footloose" value="footloose_alone_100" style="display: none;">                    
+                        <div style="text-align: center; ">
+                            <input id="footloose" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <?php echo $login_view; ?>
+                        </div>
+                    </form>   
                 </div>
             </section>
         </main>
