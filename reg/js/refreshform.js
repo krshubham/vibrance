@@ -38,4 +38,44 @@ $(document).ready(function() {
             alert(data);                
         });
     });
+
+    $("#dumbcharades").click(function() { 
+    var event = $("#event_dumbcharades").val();
+    var parti = 1;       
+        $.post("refreshform.php", {event1: event, parti1: parti}, function(data) {
+            alert(data);                
+        });
+    });
+
+    $("#soundhunt").click(function() { 
+    var event = $("#event_soundhunt").val();
+    var parti = 1;       
+        $.post("refreshform.php", {event1: event, parti1: parti}, function(data) {
+            alert(data);                
+        });
+    });
+
+    $("#supersinger").click(function() { 
+    var event = $("#event_supersinger").val();
+    var parti = 1;       
+        $.post("refreshform.php", {event1: event, parti1: parti}, function(data) {
+            alert(data);                
+        });
+    });
+
+    $("#battleofbands").click(function() { 
+    var event = $("#event_battleofbands").val();
+    var parti = 1;       
+        $.post("refreshform.php", {event1: event, parti1: parti}, function(data) {
+            alert(data);                
+        });
+    });
+
+    $("#artiste").click(function() { 
+    var event = $("#event_artiste").val();
+    var parti = 1;       
+        $.post("refreshform.php", {event1: event, parti1: parti}, function(data) {
+            alert(data);                
+        });
+    });
 });
