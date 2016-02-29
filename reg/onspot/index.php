@@ -199,7 +199,7 @@ function confirm_admin_logged_in_here() {
     
     form {
         width: 58.33333%;
-        margin: 0 auto;
+        margin: 0;
     }
     
     form .field {
