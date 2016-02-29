@@ -212,15 +212,13 @@
                         <div class="grid_6">
                             <p class="indents-3">Rules:
                                 <br>
-<<<<<<< HEAD:reg/musicclub.html
                                 <li>4 to 5 rounds (depending on number of registrations; first 2 or 3 rounds will be elimination rounds)</li>
                                 <li>One participant per team will be allowed to act at a time.</li>
                                 <li>The participant acting, cannot talk or mumur. Lip sync is not allowed. It will lead to deduction in points.</li>
                                 <li>The participants will have to act out the name by using different gestures, facial expressions, and body language.</li>
                                 <li>Breaking words into parts is allowed but the word/s  cannot be broken down into single letters; will lead to points deduction (e.g. if the word is “ear” the word cannot be broken like “e” , “a”, “r”) . Also gestures signifying alphabets will lead to deduction in points.</li>
-=======
                                 <li>3-4 rounds are being planned and different rounds have different rules.</li>                         
->>>>>>> 4bb0085f8f34a05a64dfc4bee2ba28d2ee3b019b:reg/musicclub.php
+
                             </p>
                         </div>
                     </div>
@@ -348,11 +346,8 @@
                     <h2><em>The Artist&eacute;</em>Individual</h2>
                     <br>
                     <br>
-<<<<<<< HEAD:reg/musicclub.html
                     <h4 style="text-align: left; font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Sagorika Nandi &nbsp;&nbsp;&nbsp;8220189964<br><br>Parthivi Gupta &nbsp;&nbsp;&nbsp;Number</h4>
-=======
                     <h4 style="text-align: left; font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Pranesh &nbsp;&nbsp;&nbsp;8754563804</h4>
->>>>>>> 4bb0085f8f34a05a64dfc4bee2ba28d2ee3b019b:reg/musicclub.php
                     <div class="row">
                         <div class="grid_6">
                             <ul class="indents-3">
