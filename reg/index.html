@@ -414,6 +414,7 @@ $(window).load(function(){
 var aud = document.getElementById("song");
 aud.oncanplaythrough = function() {
     alert("Can play through video without stopping");
+    $("#loader").slideUp();
 };
 
 </script>
