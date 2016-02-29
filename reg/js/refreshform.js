@@ -25,7 +25,7 @@ $(document).ready(function() {
 
     $("#groupdance").click(function() { 
     var event = $("#event_groupdance").val();
-    var parti = $("#parti_groupdance").val();       
+    var parti = 1;       
         $.post("refreshform.php", {event1: event, parti1: parti}, function(data) {
             alert(data);                
         });
