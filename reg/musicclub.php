@@ -1,3 +1,29 @@
+<?php require_once("includes/session.php"); ?>
+<?php require_once("includes/db_connection.php"); ?>
+<?php require_once("includes/functions.php"); ?>
+
+<?php
+    if (isset($_SESSION["username"])) {
+        $current_user = $_SESSION["username"];
+        $name_query = "SELECT * FROM users WHERE username = '{$current_user}' LIMIT 1";
+        $name_result = mysqli_query($conn, $name_query);
+        confirm_query($name_result);
+        $name_title = mysqli_fetch_assoc($name_result);
+        $first_name = explode(" ", $name_title['name']);            
+        $view = "<a href='logout.php'>Logout, ".$first_name[0]."</a>"; 
+        $event_view = ""; 
+        $login_view = "";      
+    } else {
+        $current_user = "";  
+        $first_name = "";
+        $name_title = "";
+        $view = "<a href='login/index.php'>Login</a>";  
+        $login_view = "<a href='login/index.php' class='gobutton'>Login to register</a>"; 
+        $event_view = "style='display: none;'";     
+    }  
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,6 +44,8 @@
     <script src="js/modernizr.custom-slider.js"></script>
     <link rel="stylesheet" type="text/css" href="css/backtotop.css">
     <script type="text/javascript" src="js/backtotop.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/refreshform.js"></script>
     <!--[if lt IE 9]>
     <html class="lt-ie9">
     <div style=' clear: both; text-align:center; position: relative;'>
@@ -105,6 +133,9 @@
                             <li>
                                 <a href="#">Meet the Team</a>
                             </li>
+                            <li>
+                                <?php echo $view; ?>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -181,14 +212,25 @@
                         <div class="grid_6">
                             <p class="indents-3">Rules:
                                 <br>
+<<<<<<< HEAD:reg/musicclub.html
                                 <li>4 to 5 rounds (depending on number of registrations; first 2 or 3 rounds will be elimination rounds)</li>
                                 <li>One participant per team will be allowed to act at a time.</li>
                                 <li>The participant acting, cannot talk or mumur. Lip sync is not allowed. It will lead to deduction in points.</li>
                                 <li>The participants will have to act out the name by using different gestures, facial expressions, and body language.</li>
                                 <li>Breaking words into parts is allowed but the word/s  cannot be broken down into single letters; will lead to points deduction (e.g. if the word is “ear” the word cannot be broken like “e” , “a”, “r”) . Also gestures signifying alphabets will lead to deduction in points.</li>
+=======
+                                <li>3-4 rounds are being planned and different rounds have different rules.</li>                         
+>>>>>>> 4bb0085f8f34a05a64dfc4bee2ba28d2ee3b019b:reg/musicclub.php
                             </p>
                         </div>
                     </div>
+                    <form>
+                        <input type="text" id="event_dumbcharades" value="dumbcharades_alone_50" style="display: none;">                    
+                        <div style="text-align: center; ">
+                            <input id="dumbcharades" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <?php echo $login_view; ?>
+                        </div>
+                    </form>  
                 </div>
             </section>
             <section name="second" class="parallax parallax8" data-parallax-speed="-0.4">
@@ -219,6 +261,13 @@
                             
                         </div>
                     </div>
+                    <form>
+                        <input type="text" id="event_soundhunt" value="soundhunt_alone_150" style="display: none;">                    
+                        <div style="text-align: center; ">
+                            <input id="soundhunt" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <?php echo $login_view; ?>
+                        </div>
+                    </form>  
                 </div>
             </section>
             <section name="third" class="parallax parallax9" data-parallax-speed="-0.4">
@@ -244,10 +293,16 @@
                                 <br>
                                 <li> All further rules will be given on-spot.</li>
                                 <br>
-                            </p>
-                            
+                            </p>                            
                         </div>
                     </div>
+                    <form>
+                        <input type="text" id="event_supersinger" value="supersinger_alone_50" style="display: none;">                    
+                        <div style="text-align: center; ">
+                            <input id="supersinger" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <?php echo $login_view; ?>
+                        </div>
+                    </form>  
                 </div>
             </section>
             <section name="fourth" class="parallax parallax10" data-parallax-speed="-0.4">
@@ -279,6 +334,13 @@
                             </p>
                         </div>
                     </div>
+                    <form>
+                        <input type="text" id="event_battleofbands" value="battleofbands_alone_1000" style="display: none;">                    
+                        <div style="text-align: center; ">
+                            <input id="battleofbands" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <?php echo $login_view; ?>
+                        </div>
+                    </form>  
                 </div>
             </section>
             <section name="fifth" class="parallax parallax10" data-parallax-speed="-0.4">
@@ -286,12 +348,16 @@
                     <h2><em>The Artist&eacute;</em>Individual</h2>
                     <br>
                     <br>
+<<<<<<< HEAD:reg/musicclub.html
                     <h4 style="text-align: left; font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Sagorika Nandi &nbsp;&nbsp;&nbsp;8220189964<br><br>Parthivi Gupta &nbsp;&nbsp;&nbsp;Number</h4>
+=======
+                    <h4 style="text-align: left; font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Pranesh &nbsp;&nbsp;&nbsp;8754563804</h4>
+>>>>>>> 4bb0085f8f34a05a64dfc4bee2ba28d2ee3b019b:reg/musicclub.php
                     <div class="row">
                         <div class="grid_6">
                             <ul class="indents-3">
                                 <li>Description of Event: <p>Mesmerize the judges and crowd with the magical sound of instruments. If you know how to play any instrument and wish to embezzle people " Artist&eacute; " is the right event to choose. In this event participants have to showcase their talent in their own choice of instrument. Again the time limit is 3 minutes. If the number of participants is more, then a screening round would be held which would be decided later</p></li>
-                                
+                                <li>Registration Fee Rs. 100</li>                                
                             </ul>
                         </div>
                         <div class="grid_6">
@@ -305,6 +371,13 @@
                             </p>
                         </div>
                     </div>
+                    <form>
+                        <input type="text" id="event_artiste" value="artiste_alone_100" style="display: none;">                    
+                        <div style="text-align: center; ">
+                            <input id="artiste" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <?php echo $login_view; ?>
+                        </div>
+                    </form>  
                 </div>
             </section>
         </main>
@@ -357,3 +430,8 @@
 </body>
 
 </html>
+<?php
+    if (isset ($conn)){
+      mysqli_close($conn);
+    }
+?>

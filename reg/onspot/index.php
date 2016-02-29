@@ -176,12 +176,16 @@ function confirm_admin_logged_in_here() {
         font-size: 62.5%;
         font-family: 'Lato', sans-serif;
         font-weight: 300;
-        color: #B6B6B6;
+        color: black;
+        overflow-x: hidden; 
     }
     
     body section {
         background: white;
-        margin: 60px auto 120px;
+        /*margin: 60px auto 120px auto;*/
+        margin-left: 20em;
+        margin-top: 1em;
+        margin-bottom: 5em;
         border-top: 15px solid #313A3D;
         text-align: center;
         padding: 50px 0 110px;
@@ -190,17 +194,17 @@ function confirm_admin_logged_in_here() {
     }
     
     body section h1 {
+        margin-left: 0;
         margin-bottom: 40px;
         font-size: 4em;
         text-transform: uppercase;
         font-family: 'Lato', sans-serif;
         font-weight: 100;
+        margin-left: 0;
     }
     
     form {
         width: 58.33333%;
-        margin: 0 auto;
-        margin-left: 5em;
     }
     
     form .field {
@@ -417,7 +421,7 @@ function confirm_admin_logged_in_here() {
         </header>
 
     <section id="hire" <?php echo $view_whole; ?> >
-        <h1>On Spot Registration</h1>
+        <h1 style="color: #313A3D">On Spot Registration</h1>
         <p><?php echo $check_view; ?></p>
         <form method="post" action="index.php">
             <div class="field name-box">
@@ -447,7 +451,7 @@ function confirm_admin_logged_in_here() {
                     <option value="bollywoodbattle_team_200">Bollywood Battle</option>
                 </select>
             </div>
-            <div id="demo" class="field name-box"></div>
+            <div id="demo" class="field name-box" style="color: black;"></div>
             <div class="field name-box">
                 <input type="number" placeholder="Team Size" name="parti">
             </div>
@@ -465,7 +469,7 @@ function confirm_admin_logged_in_here() {
             } else if (event=="bollywoodbattle_team_200") {                
                 document.getElementsByTagName("INPUT")[5].setAttribute("min", "3"); 
                 document.getElementsByTagName("INPUT")[5].setAttribute("max", "4");
-                document.getElementsByTagName("INPUT")[5].style.display = "initial";
+                document.getElementsByTagName("INPUT")[5].style.display = "visible";
                 document.getElementById("demo").innerHTML = "Dynamic";
             }            
         }
