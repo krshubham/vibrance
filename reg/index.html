@@ -378,8 +378,10 @@
     }
     #loader{
         width: 100%;
-        margin-top: 17em;
-        
+        margin-top: 15em;
+    }
+    #loader img{
+        margin-left: 50%;
     }
     </style>
     <script src="intro/js/prefixfree.min.js"></script>
@@ -388,7 +390,7 @@
 <body>
 <div class="loading"  id="loader" style="display: none;">
 <img src="ajax-loader.gif"><br />
-<span style="font-size: 5em;">Please wait while the website is being loaded</span>
+<span style="font-size: 4em; color: #fff;">Please wait while the website is being loaded</span>
 </div>
     <div class="container" style="display: none;">
     <audio autoplay oncanplaythrough="func()" id="song">
