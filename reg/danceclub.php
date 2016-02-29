@@ -198,7 +198,7 @@
                     <h2><em>Adaptune</em>Individual</h2>
                     <br>
                     <br>
-                    <h4 style="text-align: left;font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Ansh Shah &nbsp;&nbsp;&nbsp;9176857902<br><br>Pragya Gupta &nbsp;&nbsp;&nbsp;9952040969<br><br>Shreya Krishna &nbsp;&nbsp;&nbsp;9176438911</h4>
+                    <h4 style="text-align: left;font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Piyush Gupta &nbsp;&nbsp;&nbsp;9362229525<br><br>Pragya Gupta &nbsp;&nbsp;&nbsp;9952040969<br><br>Shreya Krishna &nbsp;&nbsp;&nbsp;9176438911</h4>
                     <div class="row">
                         <div class="grid_6">
                             <ul class="indents-3">
@@ -326,10 +326,10 @@
             </section>
             <section name="fourth" class="parallax parallax6" data-parallax-speed="-0.4">
                 <div class="container">
-                    <h2><em>Group Dance</em>Group</h2>
+                    <h2><em>Choreo Night</em>Group</h2>
                     <br>
                     <br>
-                    <h4 style="text-align: left; font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Piyush Gupta &nbsp;&nbsp;&nbsp;9362229525<br><br>Shreesh S. &nbsp;&nbsp;&nbsp;8124092109<br><br>Anvesh C. &nbsp;&nbsp;&nbsp;8885999805<br><br>Aishwarya &nbsp;&nbsp;&nbsp;8056517270</h4>
+                    <h4 style="text-align: left; font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Ansh &nbsp;&nbsp;&nbsp;9176857902<br><br>Shreesh S. &nbsp;&nbsp;&nbsp;8124092109<br><br>Anvesh C. &nbsp;&nbsp;&nbsp;8885999805<br><br>Kavita &nbsp;&nbsp;&nbsp;9941173445</h4>
                     <div class="row">
                         <div class="grid_6">
                             <ul class="indents-3">
@@ -369,9 +369,9 @@
                         </div>
                     </div>
                     <form>
-                        <input type="text" id="event_groupdance" value="groupdance_alone_3500" style="display: none;">                   
+                        <input type="text" id="event_choreonight" value="choreonight_alone_3500" style="display: none;">                   
                         <div style="text-align: center; ">
-                            <input id="groupdance" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <input id="choreonight" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
                             <?php echo $login_view; ?>
                         </div>
                     </form>    
@@ -379,7 +379,7 @@
             </section>
             <section name="fifth" class="parallax parallax11" data-parallax-speed="-0.4">
                 <div class="container">
-                    <h2><em>Solo Dance</em>Individual</h2>
+                    <h2><em>Footloose</em>Individual</h2>
                     <br>
                     <br>
                     <h4 style="text-align: left;font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Ansh Shah &nbsp;&nbsp;&nbsp;9176857902<br><br>Akshita Arora &nbsp;&nbsp;&nbsp;9893124662<br><br>Rishabh Puri &nbsp;&nbsp;&nbsp;9952038818</h4>
@@ -415,9 +415,9 @@
                         </div>
                     </div>
                     <form>
-                        <input type="text" id="event_solodance" value="solodance_alone_100" style="display: none;">                    
+                        <input type="text" id="event_footloose" value="footloose_alone_100" style="display: none;">                    
                         <div style="text-align: center; ">
-                            <input id="solodance" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <input id="footloose" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
                             <?php echo $login_view; ?>
                         </div>
                     </form>   

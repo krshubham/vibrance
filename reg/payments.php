@@ -106,8 +106,8 @@ th {
                             <form action="payments.php" method="post">
                                 <select name="event">
                                     <option value="">Select an event</option>
-                                    <option value="adaptune_alone_100">Adaptune</option>
-                                    <option value="bollywoodbattle_team_200">Bollywood Battle</option>
+                                    <option value="adaptune_alone_50">Adaptune</option>
+                                    <option value="bollywoodbattle_team_100">Bollywood Battle</option>
                                 </select>
                                 <input type="submit" name="submit" value="Go">
                             </form>
