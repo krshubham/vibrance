@@ -456,6 +456,8 @@
                     <h2 class="frame-4">Vibrance'16</h2>
                     <h2 class="frame-5"><span>Let's Experience</span> <span>The Extravaganza</span> <span>NOW!</span></h2>
                     <a class="sp-circle-link" href="index.php">Go!</a>
+                    <a href="index.php"><button class="btn-skip">SKIP</button></a>
+                    
                 </div>
             </div>
         </div>    
@@ -466,8 +468,8 @@
             $("#loader").slideDown();
         });
         $(window).load(function(){
-           $(".container").slideDown();
-       });
+         $(".container").slideDown();
+     });
         var aud = document.getElementById("song");
         aud.oncanplaythrough = function() {
             $("#loader").slideUp();
