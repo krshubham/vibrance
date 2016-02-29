@@ -349,7 +349,7 @@ function confirm_admin_logged_in_here() {
 </head>
 
 <body><header>
-            <div id="stuck_container" class="stuck_container">
+            <div id="stuck_container" class="stuck_container" style="z-index: 999;">
                 <div class="container">
                     <div class="brand">
                         <h1 class="brand_name">
