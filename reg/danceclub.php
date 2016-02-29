@@ -228,7 +228,7 @@
                         </div>
                     </div>
                     <form>
-                        <input type="text" id="event_adaptune" value="adaptune_alone_50" style="display: none;">                    
+                        <input type="text" id="event_adaptune" value="adaptune_alone_100" style="display: none;">                    
                         <div style="text-align: center; ">
                             <input id="adaptune" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
                             <?php echo $login_view; ?>
