@@ -326,7 +326,7 @@
             </section>
             <section name="fourth" class="parallax parallax6" data-parallax-speed="-0.4">
                 <div class="container">
-                    <h2><em>Group Dance</em>Group</h2>
+                    <h2><em>Choreo Night</em>Group</h2>
                     <br>
                     <br>
                     <h4 style="text-align: left; font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Ansh &nbsp;&nbsp;&nbsp;9176857902<br><br>Shreesh S. &nbsp;&nbsp;&nbsp;8124092109<br><br>Anvesh C. &nbsp;&nbsp;&nbsp;8885999805<br><br>Kavita &nbsp;&nbsp;&nbsp;9941173445</h4>
@@ -369,9 +369,9 @@
                         </div>
                     </div>
                     <form>
-                        <input type="text" id="event_groupdance" value="groupdance_alone_3500" style="display: none;">                   
+                        <input type="text" id="event_choreonight" value="choreonight_alone_3500" style="display: none;">                   
                         <div style="text-align: center; ">
-                            <input id="groupdance" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <input id="choreonight" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
                             <?php echo $login_view; ?>
                         </div>
                     </form>    
