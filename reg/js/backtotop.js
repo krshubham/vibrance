@@ -3,7 +3,7 @@ $(document).ready(function(){
     if ($(document).scrollTop() > 250) {
       $("#fixed-back").slideDown();
     } else {
-      $("#fixed-back").slideUp();
+      $("#fixed-back").fadeOut();
     }
   });
 });
