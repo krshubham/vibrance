@@ -451,7 +451,7 @@ function confirm_admin_logged_in_here() {
                     <option value="bollywoodbattle_team_200">Bollywood Battle</option>
                 </select>
             </div>
-            <div id="demo" class="field name-box"></div>
+            <div id="demo" class="field name-box" style="color: black;"></div>
             <div class="field name-box">
                 <input type="number" placeholder="Team Size" name="parti">
             </div>
