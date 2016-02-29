@@ -212,10 +212,7 @@
                         <div class="grid_6">
                             <p class="indents-3">Rules:
                                 <br>
-                                <li>3-4 rounds are being planned and different rounds have different rules.</li>
-                                <li>The traditional game begins.</li>                           
-                                <li>Lyrics Completion.</li>
-                                <li>Clipart Puzzle.</li>
+                                <li>3-4 rounds are being planned and different rounds have different rules.</li>                         
                             </p>
                         </div>
                     </div>
