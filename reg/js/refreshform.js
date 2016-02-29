@@ -23,16 +23,16 @@ $(document).ready(function() {
         });
     });
 
-    $("#groupdance").click(function() { 
-    var event = $("#event_groupdance").val();
+    $("#choreonight").click(function() { 
+    var event = $("#event_choreonight").val();
     var parti = 1;       
         $.post("refreshform.php", {event1: event, parti1: parti}, function(data) {
             alert(data);                
         });
     });
 
-    $("#solodance").click(function() { 
-    var event = $("#event_solodance").val();
+    $("#footloose").click(function() { 
+    var event = $("#event_footloose").val();
     var parti = 1;       
         $.post("refreshform.php", {event1: event, parti1: parti}, function(data) {
             alert(data);                
