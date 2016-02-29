@@ -182,7 +182,7 @@ function confirm_admin_logged_in_here() {
     body section {
         background: white;
         /*margin: 60px auto 120px auto;*/
-        margin-left: 10em;
+        margin-left: 20em;
         margin-top: 1em;
         margin-bottom: 5em;
         border-top: 15px solid #313A3D;
