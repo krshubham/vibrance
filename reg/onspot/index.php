@@ -182,6 +182,8 @@ function confirm_admin_logged_in_here() {
     body section {
         background: white;
         /*margin: 60px auto 120px auto;*/
+        margin-left: 5em;
+        margin-top: 5em;
         border-top: 15px solid #313A3D;
         text-align: center;
         padding: 50px 0 110px;
