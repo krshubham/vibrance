@@ -123,7 +123,7 @@ form#girisyap input {
 
 form#girisyap .girisbtn{   width: auto;
   float: right;
-  background: #03A9F4;
+  background: #E85657;
   padding: 10px 16px;
   cursor: pointer;
   font-size: 14px;
@@ -148,7 +148,7 @@ form#girisyap .girisbtn{   width: auto;
   transition-property: background-color,box-shadow;
   border: 0; }
 
-form#girisyap .girisbtn:hover{ background: #0288D1;  -webkit-box-shadow: 0 4px 7px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1); -moz-box-shadow: 0 4px 7px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1); box-shadow: 0 4px 7px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1);}
+form#girisyap .girisbtn:hover{ background: #03A954;  -webkit-box-shadow: 0 4px 7px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1); -moz-box-shadow: 0 4px 7px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1); box-shadow: 0 4px 7px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1);}
 
 #moveleft, #moveright{ width: auto;
   float: right;

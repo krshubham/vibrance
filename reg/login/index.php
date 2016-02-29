@@ -128,7 +128,7 @@ if(isset($_POST['signup'])){
 						<input type="submit" name="signup" id="signup_submit" value="Sign Up" class="girisbtn"  />
 					</form>
 
-					<button id="moveright">Login</button>
+					<button id="moveright" style="color: #E85657;">Login</button>
 				</div>
 			</div>
 
