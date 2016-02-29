@@ -194,6 +194,7 @@ function confirm_admin_logged_in_here() {
     }
     
     body section h1 {
+        margin-left: 0;
         margin-bottom: 40px;
         font-size: 4em;
         text-transform: uppercase;
