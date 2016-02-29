@@ -176,7 +176,7 @@ function confirm_admin_logged_in_here() {
         font-size: 62.5%;
         font-family: 'Lato', sans-serif;
         font-weight: 300;
-        color: #B6B6B6;
+        color: black;
         overflow-x: hidden; 
     }
     
