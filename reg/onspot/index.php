@@ -201,9 +201,7 @@ function confirm_admin_logged_in_here() {
     }
     
     form {
-        width: 58.33333%;
-        margin: 0 auto;
-        margin-left: 10em;
+        width: 70%;
     }
     
     form .field {
