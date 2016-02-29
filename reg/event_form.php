@@ -1,6 +1,7 @@
 <?php require_once("includes/session.php"); ?>
 <?php require_once("includes/db_connection.php"); ?>
 <?php require_once("includes/functions.php"); ?>
+
 <?php confirm_admin_logged_in(); ?>
 
 <?php
@@ -23,14 +24,16 @@
 	if (isset($_POST['submit'])) {
 		$event = $_POST['event'];
 
+
 		$query = "INSERT INTO spend (event) VALUES ('{$event}')";
 		$result = mysqli_query($conn, $query);	
 
 	    if ($result) {
 	      	echo"Done";		
 	    } else {
-		   	echo"Not Done";
-	    }    
+
+		   	echo"Not done";
+	    }
 	}
 ?>
 
@@ -39,6 +42,7 @@
 <head>
 	<title>Event Form</title>
 </head>
+
 <body <?php echo $view_whole; ?> >
 <form action="event_form.php" method="post">
 	<input type="text" name="event">
@@ -48,6 +52,7 @@
 </html>
 
 <?php
+
 	if (isset ($conn)){
 	  mysqli_close($conn);
 	}
