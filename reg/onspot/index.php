@@ -469,7 +469,7 @@ function confirm_admin_logged_in_here() {
             } else if (event=="bollywoodbattle_team_200") {                
                 document.getElementsByTagName("INPUT")[5].setAttribute("min", "3"); 
                 document.getElementsByTagName("INPUT")[5].setAttribute("max", "4");
-                document.getElementsByTagName("INPUT")[5].style.display = "initial";
+                document.getElementsByTagName("INPUT")[5].style.display = "visible";
                 document.getElementById("demo").innerHTML = "Dynamic";
             }            
         }
