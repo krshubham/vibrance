@@ -226,7 +226,7 @@
                 </div>
                 <div class="gallery">
                     <div name="events" class="gallery_col-1">
-                        <a data-fancybox-group="gallery" href="danceclub.html" class="gallery_item thumb lazy-img" style="padding-bottom: 93.96551724137931%;">
+                        <a data-fancybox-group="gallery" href="danceclub.php" class="gallery_item thumb lazy-img" style="padding-bottom: 93.96551724137931%;">
                             <img data-src="images/dance.jpg" alt="">
                             <div class="gallery_overlay">
                                 <div class="gallery_caption">
@@ -235,7 +235,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a data-fancybox-group="gallery" href="informals.html" class="gallery_item thumb lazy-img" style="padding-bottom: 74.13793103448276%;">
+                        <a data-fancybox-group="gallery" href="informals.php" class="gallery_item thumb lazy-img" style="padding-bottom: 74.13793103448276%;">
                             <img data-src="images/informals.jpg" alt="">
                             <div class="gallery_overlay">
                                 <div class="gallery_caption">
@@ -244,7 +244,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a data-fancybox-group="gallery" href="tamil.html" class="gallery_item thumb lazy-img" style="padding-bottom: 94.6551724137931%;">
+                        <a data-fancybox-group="gallery" href="tamil.php" class="gallery_item thumb lazy-img" style="padding-bottom: 94.6551724137931%;">
                             <img data-src="images/tamil.png" alt="">
                             <div class="gallery_overlay">
                                 <div class="gallery_caption">
@@ -253,7 +253,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a data-fancybox-group="gallery" href="sports.html" class="gallery_item thumb lazy-img" style="padding-bottom: 94.6551724137931%;">
+                        <a data-fancybox-group="gallery" href="sports.php" class="gallery_item thumb lazy-img" style="padding-bottom: 94.6551724137931%;">
                             <img data-src="images/sports.jpg" alt="">
                             <div class="gallery_overlay">
                                 <div class="gallery_caption">
@@ -264,7 +264,7 @@
                         </a>
                     </div>
                     <div class="gallery_col-2">
-                        <a data-fancybox-group="gallery" href="games.html" class="gallery_item thumb lazy-img" style="padding-bottom: 52.48322147651007%;">
+                        <a data-fancybox-group="gallery" href="games.php" class="gallery_item thumb lazy-img" style="padding-bottom: 52.48322147651007%;">
                             <img data-src="images/games.jpg" alt="">
                             <div class="gallery_overlay">
                                 <div class="gallery_caption">
@@ -273,7 +273,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a data-fancybox-group="gallery" href="dramaclub.html" class="gallery_item thumb lazy-img" style="padding-bottom: 60.97315436241611%;">
+                        <a data-fancybox-group="gallery" href="dramaclub.php" class="gallery_item thumb lazy-img" style="padding-bottom: 60.97315436241611%;">
                             <img data-src="images/drama.jpg" alt="">
                             <div class="gallery_overlay">
                                 <div class="gallery_caption">
@@ -282,7 +282,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a data-fancybox-group="gallery" href="tech.html" class="gallery_item thumb lazy-img" style="padding-bottom: 65.10738255033557%;">
+                        <a data-fancybox-group="gallery" href="tech.php" class="gallery_item thumb lazy-img" style="padding-bottom: 65.10738255033557%;">
                             <img data-src="images/tech.jpg" alt="">
                             <div class="gallery_overlay">
                                 <div class="gallery_caption">
@@ -291,7 +291,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a data-fancybox-group="gallery" href="debnquiz.html" class="gallery_item thumb lazy-img" style="padding-bottom: 65.10738255033557%;">
+                        <a data-fancybox-group="gallery" href="debnquiz.php" class="gallery_item thumb lazy-img" style="padding-bottom: 65.10738255033557%;">
                             <img data-src="images/debnquiz.jpg" alt="">
                             <div class="gallery_overlay">
                                 <div class="gallery_caption">
@@ -307,7 +307,7 @@
                         <h6><em style="font-size: 3em;">Events</em></h6>
                     </div>
                     <div class="gallery_col-3">
-                        <a data-fancybox-group="gallery" href="musicclub.html" class="gallery_item thumb lazy-img" style="padding-bottom: 93.69676320272572%;">
+                        <a data-fancybox-group="gallery" href="musicclub.php" class="gallery_item thumb lazy-img" style="padding-bottom: 93.69676320272572%;">
                             <img data-src="images/sing.jpg" alt="">
                             <div class="gallery_overlay">
                                 <div class="gallery_caption">
@@ -316,7 +316,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a data-fancybox-group="gallery" href="formals.html" class="gallery_item thumb lazy-img" style="padding-bottom: 72.23168654173765%;">
+                        <a data-fancybox-group="gallery" href="formals.php" class="gallery_item thumb lazy-img" style="padding-bottom: 72.23168654173765%;">
                             <img data-src="images/workshop.jpg" alt="">
                             <div class="gallery_overlay">
                                 <div class="gallery_caption">
@@ -325,7 +325,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a data-fancybox-group="gallery" href="fineartsclub.html" class="gallery_item thumb lazy-img" style="padding-bottom: 93.69676320272572%;">
+                        <a data-fancybox-group="gallery" href="fineartsclub.php" class="gallery_item thumb lazy-img" style="padding-bottom: 93.69676320272572%;">
                             <img data-src="images/finearts.jpg" alt="">
                             <div class="gallery_overlay">
                                 <div class="gallery_caption">
@@ -334,7 +334,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a data-fancybox-group="gallery" href="fineartsclub.html" class="gallery_item thumb lazy-img" style="padding-bottom: 93.69676320272572%;">
+                        <a data-fancybox-group="gallery" href="fineartsclub.php" class="gallery_item thumb lazy-img" style="padding-bottom: 93.69676320272572%;">
                             <img data-src="images/viteach.jpg" alt="">
                             <div class="gallery_overlay">
                                 <div class="gallery_caption">
