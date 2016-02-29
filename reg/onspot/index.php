@@ -177,6 +177,7 @@ function confirm_admin_logged_in_here() {
         font-family: 'Lato', sans-serif;
         font-weight: 300;
         color: #B6B6B6;
+        overflow-x: hidden; 
     }
     
     body section {
