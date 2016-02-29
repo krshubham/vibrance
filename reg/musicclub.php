@@ -273,7 +273,7 @@
                     <h2><em>Super Singer</em>Individual</h2>
                     <br>
                     <br>
-                    <h4 style="text-align: left; font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Aarushi Shonik &nbsp;&nbsp;&nbsp;9552039297<br><br>Gyanu Gautam &nbsp;&nbsp;&nbsp;07033584042</h4>
+                    <h4 style="text-align: left; font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Sagorika Nandi &nbsp;&nbsp;&nbsp;8220189964<br><br>Parthivi Gupta &nbsp;&nbsp;&nbsp;Number</h4>
                     <div class="row">
                         <div class="grid_6">
                             <ul class="indents-3">
@@ -346,8 +346,7 @@
                     <h2><em>The Artist&eacute;</em>Individual</h2>
                     <br>
                     <br>
-                    <h4 style="text-align: left; font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Sagorika Nandi &nbsp;&nbsp;&nbsp;8220189964<br><br>Parthivi Gupta &nbsp;&nbsp;&nbsp;Number</h4>
-                    <h4 style="text-align: left; font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Pranesh &nbsp;&nbsp;&nbsp;8754563804</h4>
+                    <h4 style="text-align: left; font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Pranesh &nbsp;&nbsp;&nbsp;8754563804<br><br>Aarushi Shonik &nbsp;&nbsp;&nbsp;9552039297<br><br>Gyanu Gautam &nbsp;&nbsp;&nbsp;07033584042</h4>
                     <div class="row">
                         <div class="grid_6">
                             <ul class="indents-3">
