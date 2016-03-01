@@ -81,9 +81,9 @@ if (isset($_SESSION["username"])) {
 
     <main>
         <section class="well well__offset-3">
-            <div class="container" style="display: none;">
+            <div class="container">
                 <h2><em>Combo</em>Offers</h2>
-                <div id="divthree">
+                <div id="divthree" style="display: none;">
                     <form name="form">
                         <input type="checkbox" name="event[0]" value="some" onclick="return KeepCount()">event1
                         <input type="checkbox" name="event[1]" value="some" onclick="return KeepCount()">event2
