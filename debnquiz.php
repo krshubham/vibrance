@@ -256,12 +256,13 @@
                         <div class="grid_6">
                             <ul class="indents-3">
                                 <li>Description of Event:
-                                    <p>All you know quiz featuring questions from any and all walks of life.</p>
+                                    <p>All you know quiz featuring questions from any and all walks of life.<br>Bonafide to be produced for external participants.</p>
                                 </li>
                                 <li>
                                     <br>
                                 </li>
-                                <li>Registration fees: Rs. 100/- per team.</li>
+                                <li>Registration fees: Rs. 50/- per member. [Internal]</li>
+                                <li>Registration fees: Rs. 100/- per member. [External]</li>
                             </ul>
                         </div>
                         <div class="grid_6">
@@ -293,12 +294,13 @@
                         <div class="grid_6">
                             <ul class="indents-3">
                                 <li>Description of Event:
-                                    <p>Quiz with questions from Music, Entertainment, Literature, Arts and Sports World.</p>
+                                    <p>Quiz with questions from Music, Entertainment, Literature, Arts and Sports World.<br>Bonafide to be produced for external participants.</p>
                                 </li>
                                 <li>
                                     <br>
                                 </li>
-                                <li>Registration fees: Rs.50/- per member</li>
+                                <li>Registration fees: Rs. 50/- per team. [Internal]</li>
+                                <li>Registration fees: Rs. 100/- per team. [External]</li>
                             </ul>
                         </div>
                         <div class="grid_6">
@@ -338,10 +340,11 @@
                         <div class="grid_6">
                             <ul class="indents-3">
                                 <li>Description of Event:
-                                    <p>Karl Popper debate focuses on relevent and often deeply divisive propositions, emphasizing on development of critical thinking skills and tolerancefor differing view-points.Two teams participate in each debate. One team follows role of affirmative party while other team that of negative party. Debators work together in teams and must research both sides of the issue. Each team is given opportunity yo offer arguments and direct questions to opposing team. Distinguishing feature of this format of debate are cross-examination, where four out of six debators ask their opponents questions and preparing time when the debators can prepare before their speeches</p>
+                                    <p>Karl Popper debate focuses on relevent and often deeply divisive propositions, emphasizing on development of critical thinking skills and tolerancefor differing view-points.Two teams participate in each debate. One team follows role of affirmative party while other team that of negative party. Debators work together in teams and must research both sides of the issue. Each team is given opportunity yo offer arguments and direct questions to opposing team. Distinguishing feature of this format of debate are cross-examination, where four out of six debators ask their opponents questions and preparing time when the debators can prepare before their speeches.<br>Bonafide to be produced for external participants.</p>
                                 </li>
                                 <li><br></li>
-                                <li>Registration Fees: Rs. 50</li>
+                                <li>Registration fees: Rs. 50/- per team. [Internal]</li>
+                                <li>Registration fees: Rs. 100/- per team. [External]</li>
                             </ul>
                         </div>
                         <div class="grid_6">
@@ -391,10 +394,11 @@
                         <div class="grid_6">
                             <ul class="indents-3">
                                 <li>Description of Event:
-                                    <p>This vintage debate format has 2 speakers pitted against each other where one speaker speaks in favor of the motion while the second speaker speaks against the motion. After receiving the motion each speaker gets a total of 10 minutes of preparation time. Each speaker shall get a total of 5 minutes to present their case in favor or against the motion.</p>
+                                    <p>This vintage debate format has 2 speakers pitted against each other where one speaker speaks in favor of the motion while the second speaker speaks against the motion. After receiving the motion each speaker gets a total of 10 minutes of preparation time. Each speaker shall get a total of 5 minutes to present their case in favor or against the motion.<br>Bonafide to be produced for external participants.</p>
                                 </li>
                                 <li><br></li>
-                                <li>Registration fees: Rs. /-</li>
+                                <li>Registration fees: Rs. 50/- per team. [Internal]</li>
+                                <li>Registration fees: Rs. 100/- per team. [External]</li>
                             </ul>
                         </div>
                         <div class="grid_6">
@@ -432,10 +436,11 @@
                                 <li>Description of Event:
                                     <p>We have all been in debates against each other, but haven't thought of debating ourselves , have we?Well that's not true at all; we are in constant conversation with ourselves and most of that is argument because we have to make a decision fly. The converstaion heard out loud, would be something to behold, wouldn't it?May be, or may be not.
                                         <br>
-                                        <br>Why don't you all come and find out?</p>
+                                        <br>Why don't you all come and find out?<br>Bonafide to be produced for external participants.</p>
                                 </li>
                                 <li><br></li>
-                                <li>Registration fees: Rs. /-</li>
+                                <li>Registration fees: Rs. 50/- per team. [Internal]</li>
+                                <li>Registration fees: Rs. 100/- per team. [External]</li>
                             </ul>
                         </div>
                         <div class="grid_6">
@@ -462,10 +467,11 @@
                         <div class="grid_6">
                             <ul class="indents-3">
                                 <li>Description of Event:
-                                    <p>Welcome to the ultimate speech contest with almost zero preparation. You have to defend your speech right after you came up with it. The Audience will question you about everything you say. And that is only if you yourself dont question yourself first! If you love talking a lot, and think logically sound as well, come give this event a shot! Atleast you will have a great time ripping off other speakers while you hear them ruining their chance of winning!</p>
+                                    <p>Welcome to the ultimate speech contest with almost zero preparation. You have to defend your speech right after you came up with it. The Audience will question you about everything you say. And that is only if you yourself dont question yourself first! If you love talking a lot, and think logically sound as well, come give this event a shot! Atleast you will have a great time ripping off other speakers while you hear them ruining their chance of winning!<br>Bonafide to be produced for external participants.</p>
                                 </li>
                                 <li><br></li>
-                                <li>Registration fees: Rs. /-</li>
+                                <li>Registration fees: Rs. 50/- per team. [Internal]</li>
+                                <li>Registration fees: Rs. 100/- per team. [External]</li>
                             </ul>
                         </div>
                         <div class="grid_6">
@@ -497,21 +503,27 @@
                         <div class="grid_6">
                             <ul class="indents-3">
                                 <li>Description of Event:
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non lacus dui. Curabitur pharetra sem et felis venenatis, quis porta urna dictum. Nullam tincidunt quis enim vitae imperdiet.</p>
+                                    <p>You are sitting in a plane and something goes wrong. The engine fails- every frequent flier's nightmare. The plane is falling and the pilot says there are two parachutes, one for the pilot and one for the person who manages to convince the pilot that they deserve to live the most. Do you think you have what it takes to convince the pilot to give the parachute and not to others?<br>Bonafide to be produced for external participants.</p>
                                 </li>
                                 <li><br></li>
-                                <li>Registration fees: Rs. /-</li>
+                                <li>Registration fees: Rs. 50/- per team. [Internal]</li>
+                                <li>Registration fees: Rs. 100/- per team. [External]</li>
                             </ul>
                         </div>
                         <div class="grid_6">
                             <p class="indents-3">Rules:
                                 <br>
-                                <li>Coming Soon. :P</li>
+                                <li>Only individual registrations are allowed.</li>
+                                <li>Participants shall be alloted personalities.</li>
+                                <li>Each participant shall be given 3 minutes to convince the judge that they deserve the parachute.</li>
+                                <li>The event shall be held over four rounds.</li>
+                                <li>All speakers speak in the first round getting three minutes of speech.</li>
+                                <li>The top 8 participants from the first round shall qualify to the next round.</li>
+                                <li>The 8 participants shall be grouped in  teans of two and their job is to convince the judge that their team deserves the parachute instead of the others.</li>
+                                <li>The 2 highest scoring teams shall proceed to the penultimate round.</li>
+                                <li>The participants of the respective teams shall be interchanged according to their scores and each team shall again try and convince the judge that their team deserves the parachute.</li>
+                                <li>The final round shall invlove participants of the final team pitted against each other. But be warned! There shall be an element of surprise!</li>
                                 <br>
-                            </p>
-                            <p class="indents-3">Judging criteria:
-                                <br>
-                                <li>Coming Soon. :P</li>
                             </p>
                         </div>
                     </div>
@@ -522,13 +534,16 @@
                     <h2><em>La Persona</em>Individual</h2>
                     <br>
                     <br>
-                    <h4 style="text-align: left; font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Gokul Nair &nbsp;&nbsp;&nbsp;7358663364<br><br>Hriday Agarwal &nbsp;&nbsp;&nbsp;Number<br><br>Kanishka Nambiar &nbsp;&nbsp;&nbsp;Number</h4>
+                    <h4 style="text-align: left; font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Gokul Nair &nbsp;&nbsp;&nbsp;7358663364<br><br>Hriday Agarwal &nbsp;&nbsp;&nbsp;Number<br><br>Kanishka Nambiar &nbsp;&nbsp;&nbsp;9600006442</h4>
                     <div class="row">
                         <div class="grid_6">
                             <ul class="indents-3">
                                 <li>Description of Event:
-                                    <p>Series of questions to test creativity, spontaneity and wit.</p>
+                                    <p>Series of questions to test creativity, spontaneity and wit.<br>Bonafide to be produced for external participants.</p>
                                 </li>
+                                <li><br></li>
+                                <li>Registration fees: Rs. 50/- per team. [Internal]</li>
+                                <li>Registration fees: Rs. 100/- per team. [External]</li>
                             </ul>
                         </div>
                         <div class="grid_6">
@@ -546,13 +561,16 @@
                     <h2><em>Potpourri</em>Team</h2>
                     <br>
                     <br>
-                    <h4 style="text-align: left; font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Parth Jawale &nbsp;&nbsp;&nbsp;8681878995<br><br>Rahul Hazarika &nbsp;&nbsp;&nbsp;Number<br><br>Ramya P. &nbsp;&nbsp;&nbsp;Number</h4>
+                    <h4 style="text-align: left; font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Parth Jawale &nbsp;&nbsp;&nbsp;8681878995<br><br>Rahul Hazarika &nbsp;&nbsp;&nbsp;9840819956<br><br>Ramya P. &nbsp;&nbsp;&nbsp;Number</h4>
                     <div class="row">
                         <div class="grid_6">
                             <ul class="indents-3">
                                 <li>Description of Event:
-                                    <p>The word 'potpourri' indicates a mixture. The event is a mix of many different events.</p>
+                                    <p>The word 'potpourri' indicates a mixture. The event is a mix of many different events.<br>Bonafide to be produced for external participants.</p>
                                 </li>
+                                <li><br></li>
+                                <li>Registration fees: Rs. 50/- per team. [Internal]</li>
+                                <li>Registration fees: Rs. 100/- per team. [External]</li>
                             </ul>
                         </div>
                         <div class="grid_6">
@@ -575,8 +593,11 @@
                         <div class="grid_6">
                             <ul class="indents-3">
                                 <li>Description of Event:
-                                    <p>How well do you know your literature? Come test your mettle.</p>
+                                    <p>How well do you know your literature? Come test your mettle.<br>Bonafide to be produced for external participants.</p>
                                 </li>
+                                <li><br></li>
+                                <li>Registration fees: Rs. 50/- per team. [Internal]</li>
+                                <li>Registration fees: Rs. 100/- per team. [External]</li>
                             </ul>
                         </div>
                         <div class="grid_6">
@@ -604,9 +625,12 @@
                                     <p>Ola Mates!
                                         <br>One particular Topic will be given to the team.Each team have to speak on the topic(For).Moment we say "TURN" the team have to go against the topic and speak and so on.
                                         <br> Proper Coordination and Team work is key to win.
-                                        <br>Gather around And Speak up!
+                                        <br>Gather around And Speak up!<br>Bonafide to be produced for external participants.
                                     </p>
                                 </li>
+                                <li><br></li>
+                                <li>Registration fees: Rs. 50/- per team. [Internal]</li>
+                                <li>Registration fees: Rs. 100/- per team. [External]</li>
                             </ul>
                         </div>
                         <div class="grid_6">
@@ -641,8 +665,11 @@
                         <div class="grid_6">
                             <ul class="indents-3">
                                 <li>Description of Event:
-                                    <p>Put your vocabulary up for a test with this popular word game, except that this time, your childhood game has gotten itself a makeover.</p>
+                                    <p>Put your vocabulary up for a test with this popular word game, except that this time, your childhood game has gotten itself a makeover.<br>Bonafide to be produced for external participants.</p>
                                 </li>
+                                <li><br></li>
+                                <li>Registration fees: Rs. 50/- per team. [Internal]</li>
+                                <li>Registration fees: Rs. 100/- per team. [External]</li>
                             </ul>
                         </div>
                         <div class="grid_6">
