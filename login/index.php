@@ -88,7 +88,6 @@ if(isset($_POST['signup'])){
 		}).trigger('blur');
 });//]]>  
 </script>
-
 </head>  
 <body style="height: 100%; overflow: hidden; width: 100% !important;">
 
@@ -111,7 +110,8 @@ if(isset($_POST['signup'])){
 						</div>
 						<div class="yarim form-group">
 							<label class="control-label" for="inputNormal">College</label>
-							<input type="text" name="college" id="signup_username" class="bp-suggestions form-control" cols="50" rows="10" required></input>
+								<input type="radio" name="VIT" value="VIT">VIT</input>
+								<input type="radio" name="Other" value="Other">Other</input>
 						</div>
 						<div class="form-group">
 							<label class="control-label" for="inputNormal">Reg. No(only for VIT students)</label>
