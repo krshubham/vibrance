@@ -73,7 +73,7 @@ th {
                 <div class="container">
                     <div class="brand">
                         <h1 class="brand_name">
-                        <a href="#"><img src="images/vib_banner_small.png" style="width: 50%;height: 50%"></a>
+                        <a href="#"><img src="images/vib_banner_small.png" style="width: 50%;height: 50%">w</a>
                     </h1>
                     </div>
                     <nav class="nav">
