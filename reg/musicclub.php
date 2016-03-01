@@ -75,13 +75,13 @@
                 <div class="container">
                     <div class="brand">
                         <h1 class="brand_name">
-                        <a href="index.html">Vibrance'16</a>
+                        <a href="index.php">Vibrance'16</a>
                     </h1>
                     </div>
                     <nav class="nav">
                         <ul class="sf-menu">
                             <li>
-                                <a href="index.html">Home</a>
+                                <a href="index.php">Home</a>
                             </li>
                             <li>
                                 <a href="aboutus.html">About Us</a>
@@ -90,40 +90,40 @@
                                 <a href="#events">Events</a>
                                  <ul>
                                     <li>
-                                        <a href="danceclub.html">Dance</a>
+                                        <a href="danceclub.php">Dance</a>
                                     </li>
                                     <li>
-                                        <a href="games.html">Games</a>
+                                        <a href="games.php">Games</a>
                                     </li>
                                     <li>
-                                        <a href="musicclub.html">Music</a>
+                                        <a href="musicclub.php">Music</a>
                                     </li>
                                     <li>
-                                        <a href="dramaclub.html">Drama</a>
+                                        <a href="dramaclub.php">Drama</a>
                                     </li>
                                     <li>
-                                        <a href="fineartsclub.html">Fine Arts</a>
+                                        <a href="fineartsclub.php">Fine Arts</a>
                                     </li>
                                     <li>
-                                        <a href="informals.html">Informals</a>
+                                        <a href="informals.php">Informals</a>
                                     </li>
                                     <li>
-                                        <a href="formals.html">Formals</a>
+                                        <a href="formals.php">Formals</a>
                                     </li>
                                     <li>
-                                        <a href="tech.html">Tech Events</a>
+                                        <a href="tech.php">Tech Events</a>
                                     </li>
                                     <li>
-                                        <a href="debnquiz.html">Debates and Quiz</a>
+                                        <a href="debnquiz.php">Debates and Quiz</a>
                                     </li>
                                     <li>
-                                        <a href="sports.html">Sports</a>
+                                        <a href="sports.php">Sports</a>
                                     </li>
                                     <li>
-                                        <a href="tamil.html">Tamil Events</a>
+                                        <a href="tamil.php">Tamil Events</a>
                                     </li>
                                     <li>
-                                        <a href="viteach.html">Viteach Events</a>
+                                        <a href="viteach.php">Viteach Events</a>
                                     </li>
                                 </ul>
                             </li>
@@ -217,8 +217,7 @@
                                 <li>The participant acting, cannot talk or mumur. Lip sync is not allowed. It will lead to deduction in points.</li>
                                 <li>The participants will have to act out the name by using different gestures, facial expressions, and body language.</li>
                                 <li>Breaking words into parts is allowed but the word/s  cannot be broken down into single letters; will lead to points deduction (e.g. if the word is “ear” the word cannot be broken like “e” , “a”, “r”) . Also gestures signifying alphabets will lead to deduction in points.</li>
-                                <li>3-4 rounds are being planned and different rounds have different rules.</li>                         
-
+                                <li>3-4 rounds are being planned and different rounds have different rules.</li>
                             </p>
                         </div>
                     </div>
@@ -273,7 +272,7 @@
                     <h2><em>Super Singer</em>Individual</h2>
                     <br>
                     <br>
-                    <h4 style="text-align: left; font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Sagorika Nandi &nbsp;&nbsp;&nbsp;8220189964<br><br>Parthivi Gupta &nbsp;&nbsp;&nbsp;Number</h4>
+                    <h4 style="text-align: left; font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Sagorika Nandi &nbsp;&nbsp;&nbsp;8220189964<br><br>Parthivi Gupta &nbsp;&nbsp;&nbsp;9472921021</h4>
                     <div class="row">
                         <div class="grid_6">
                             <ul class="indents-3">
@@ -295,7 +294,7 @@
                         </div>
                     </div>
                     <form>
-                        <input type="text" id="event_supersinger" value="supersinger_alone_50" style="display: none;">                    
+                        <input type="text" id="event_supersinger" value="supersinger_alone_100" style="display: none;">                    
                         <div style="text-align: center; ">
                             <input id="supersinger" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
                             <?php echo $login_view; ?>
