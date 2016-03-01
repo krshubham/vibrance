@@ -167,7 +167,7 @@
                         </section>
                         <section class="cbp-so-section">
                             <article class="cbp-so-side cbp-so-side-left">
-                                <h2 style="padding-top:20%;">18th March 2016</h2>
+                                <h2 style="padding-top:20%;">19th March 2016</h2>
                             </article>
                             <figure class="cbp-so-side cbp-so-side-right">
                                 <a href="#third"><img src="images/rap.jpg" alt="img01"></a>
@@ -178,16 +178,16 @@
                                 <a href="#fourth"><img src="images/lyric.jpg" alt="img01"></a>
                             </figure>
                             <article class="cbp-so-side cbp-so-side-right">
-                                <h2 style="padding-top:20%;">19th March 2016</h2>
+                                <h2 style="padding-top:20%;">18th March 2016</h2>
                             </article>
                         </section>
                         <section class="cbp-so-section">
-                            <figure class="cbp-so-side cbp-so-side-left">
-                                <a href="#fifth"><img src="images/lyric.jpg" alt="img01"></a>
-                            </figure>
-                            <article class="cbp-so-side cbp-so-side-right">
+                            <article class="cbp-so-side cbp-so-side-left">
                                 <h2 style="padding-top:20%;">19th March 2016</h2>
                             </article>
+                            <figure class="cbp-so-side cbp-so-side-right">
+                                <a href="#fifth"><img src="images/artiste.jpg" alt="img01"></a>
+                            </figure>
                         </section>
                     </div>
                 </div>
@@ -278,14 +278,14 @@
                     <div class="row">
                         <div class="grid_6">
                             <ul class="indents-3">
-                                <li>Description of Event:<p> A singing competition where each singer is judged on the basis of their singing ability. Each singer will have a limit of 3 minutes. They can either bring their own karaoke track or they can be accompanied with an instrumentalist.<br>Bonafide to be produced for external participants. </p>
+                                <li>Description of Event:<p>Showcase your talent by mesmerising all, by hitting the correct notes in an awe inspiring melody.<br>Bonafide to be produced for external participants. </p>
                                 </li>
                                 
                                 <li>
                                     <br>
                                 </li>
-                                <li>Registration fees: Rs. 50/- per participant. [Internal]</li>
-                                <li>Registration fees: Rs. 50/- per participant. [External]</li>
+                                <li>Registration fees: Rs. 100/- per participant. [Internal]</li>
+                                <li>Registration fees: Rs. 100/- per participant. [External]</li>
                             </ul>
                         </div>
                         <div class="grid_6">
@@ -347,7 +347,7 @@
                     </form>  
                 </div>
             </section>
-            <section name="fifth" class="parallax parallax10" data-parallax-speed="-0.4">
+            <section name="fifth" class="parallax parallax85" data-parallax-speed="-0.4">
                 <div class="container">
                     <h2><em>The Artist&eacute;</em>Individual</h2>
                     <br>
