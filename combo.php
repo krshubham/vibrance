@@ -81,17 +81,18 @@ if (isset($_SESSION["username"])) {
 
     <main>
         <section class="well well__offset-3">
-            <div class="container">
+            <div class="container" style="display: none;">
                 <h2><em>Combo</em>Offers</h2>
                 <div id="divthree">
-                    <form>
-                        <input type="checkbox" name="event[]" value="some" onclick="return KeepCount()">event1
-                        <input type="checkbox" name="event[]" value="some" onclick="return KeepCount()">event2
-                        <input type="checkbox" name="event[]" value="some" onclick="return KeepCount()">event3
-                        <input type="checkbox" name="event[]" value="some" onclick="return KeepCount()">event4
+                    <form name="form">
+                        <input type="checkbox" name="event[0]" value="some" onclick="return KeepCount()">event1
+                        <input type="checkbox" name="event[1]" value="some" onclick="return KeepCount()">event2
+                        <input type="checkbox" name="event[2]" value="some" onclick="return KeepCount()">event3
+                        <input type="checkbox" name="event[3]" value="some" onclick="return KeepCount()">event4
+                        <input type="checkbox" name="event[4]" value="some" onclick="return KeepCount()">event5
                     </form>
                 </div>
-                <div id="divall"> 
+                <div id="divall" style="display: none;"> 
                     Some text for all
                 </div>
                 <div class="row row__offset-2">
@@ -134,25 +135,25 @@ if (isset($_SESSION["username"])) {
 
         var NewCount = 0
 
-        if (document.joe.dog.checked)
+        if (document.form.event[0].checked)
             {NewCount = NewCount + 1}
 
-        if (document.joe.cat.checked)
+        if (document.form.event[1].checked)
             {NewCount = NewCount + 1}
 
-        if (document.joe.pig.checked)
+        if (document.form.event[2].checked)
             {NewCount = NewCount + 1}
 
-        if (document.joe.ferret.checked)
+        if (document.form.event[3].checked)
             {NewCount = NewCount + 1}
 
-        if (document.joe.hampster.checked)
+        if (document.form.event[4].checked)
             {NewCount = NewCount + 1}
 
         if (NewCount == 3)
         {
             alert('Pick Just Two Please')
-            document.joe; return false;
+            document.form; return false;
         }
     } 
 </script>
