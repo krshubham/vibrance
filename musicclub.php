@@ -218,7 +218,9 @@
                                 <li>The participant acting, cannot talk or mumur. Lip sync is not allowed. It will lead to deduction in points.</li>
                                 <li>The participants will have to act out the name by using different gestures, facial expressions, and body language.</li>
                                 <li>Breaking words into parts is allowed but the word/s  cannot be broken down into single letters; will lead to points deduction (e.g. if the word is “ear” the word cannot be broken like “e” , “a”, “r”) . Also gestures signifying alphabets will lead to deduction in points.</li>
-                                <li>3-4 rounds are being planned and different rounds have different rules.</li>
+                                <li>Total 90 seconds will be given to the teams to guess the phrase/movie/song (depending upon the round).</li>
+                                <li>Any kind of unruly or vulgar gestures will lead to disqualification of the team.</li>
+
                             </p>
                         </div>
                     </div>
