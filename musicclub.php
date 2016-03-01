@@ -288,7 +288,11 @@
                         <div class="grid_6">
                             <p class="indents-3">Rules:
                                 <br>
-                                <li> All further rules will be given on-spot.</li>
+                                <li>A maximum time limit of 3 minutes must be adhered to, which otherwise may lead to disqualification.</li>
+                                <li>Song of any genre is permitted.</li>
+                                <li>Singers may be accompanied by any one instrumentalist, sing with a karaoke, or not avail any of those.</li>
+                                <li>A screening round may be held depending upon the number of registrations.</li>
+                                <li>A second round may be held based on the number of registrations where the singers would be asked to sing a song belonging to any genre by the judges.</li>
                                 <br>
                             </p>                            
                         </div>
@@ -350,6 +354,7 @@
                         <div class="grid_6">
                             <ul class="indents-3">
                                 <li>Description of Event: <p>Mesmerize the judges and crowd with the magical sound of instruments. If you know how to play any instrument and wish to embezzle people " Artist&eacute; " is the right event to choose. In this event participants have to showcase their talent in their own choice of instrument. Again the time limit is 3 minutes. If the number of participants is more, then a screening round would be held which would be decided later</p></li>
+                                <Li><br></Li>
                                 <li>Registration Fee Rs. 100</li>                                
                             </ul>
                         </div>
