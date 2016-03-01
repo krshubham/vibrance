@@ -397,8 +397,8 @@
                                     <p>This vintage debate format has 2 speakers pitted against each other where one speaker speaks in favor of the motion while the second speaker speaks against the motion. After receiving the motion each speaker gets a total of 5 minutes of preparation time. Each speaker shall get a total of 4 minutes to present their case in favor or against the motion.<br>Bonafide to be produced for external participants.</p>
                                 </li>
                                 <li><br></li>
-                                <li>Registration fees: Rs. 150/- per team. [Internal]</li>
-                                <li>Registration fees: Rs. 200/- per team. [External]</li>
+                                <li>Registration fee: Rs. 50/- per team. [Internal]</li>
+                                <li>Registration fee: Rs. 100/- per team. [External]</li>
                             </ul>
                         </div>
                         <div class="grid_6">
