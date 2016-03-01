@@ -278,14 +278,14 @@
                     <div class="row">
                         <div class="grid_6">
                             <ul class="indents-3">
-                                <li>Description of Event:<p> A singing competition where each singer is judged on the basis of their singing ability. Each singer will have a limit of 3 minutes. They can either bring their own karaoke track or they can be accompanied with an instrumentalist.<br>Bonafide to be produced for external participants. </p>
+                                <li>Description of Event:<p>Showcase your talent by mesmerising all, by hitting the correct notes in an awe inspiring melody.<br>Bonafide to be produced for external participants. </p>
                                 </li>
                                 
                                 <li>
                                     <br>
                                 </li>
-                                <li>Registration fees: Rs. 50/- per participant. [Internal]</li>
-                                <li>Registration fees: Rs. 50/- per participant. [External]</li>
+                                <li>Registration fees: Rs. 100/- per participant. [Internal]</li>
+                                <li>Registration fees: Rs. 100/- per participant. [External]</li>
                             </ul>
                         </div>
                         <div class="grid_6">

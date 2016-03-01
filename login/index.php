@@ -98,7 +98,11 @@ if(isset($_POST['signup'])){
 		background-color: black;
 	}
 	.form-group{
-		margin: 0.5em;
+		margin: 1em;
+		color: #E85657;
+	}
+	.form-group input{
+		
 	}
 	form{
 		margin-top: -2em;
@@ -126,16 +130,16 @@ if(isset($_POST['signup'])){
 						</div>
 						<div class="yarim form-group">
 							<label class="control-label" for="inputNormal">College</label><br>
-							<select id="college-select" name="college" required>
-								<option value="VIT">Vellore Institute of technology</option>
-								<option id="other" value="other">Other</option>
-							</select>  
+							<select id="college-select">
+								<option>Vellore Institute of technology</option>
+								<option id="other">Other</option>
+							</select>
 						</div>
 						<div class="form-group" style="display: none;" id="col-name">
 							<label class="control-label" for="inputNormal">Name of the college</label>
 							<input type="text" name="regno" id="signup_password" value="" class="bp-suggestions form-control" cols="50" rows="10"></input>
 						</div>
-						<div class="form-group">
+						<div class="form-group" id="rgno">
 							<label class="control-label" for="inputNormal">Reg. No(only for VIT students)</label>
 							<input type="text" name="regno" id="signup_password" value="" class="bp-suggestions form-control" cols="50" rows="10"></input>
 						</div>
@@ -180,9 +184,11 @@ if(isset($_POST['signup'])){
 		$("#college-select").click(function(){
 			if($("#college-select")[0].selectedIndex==1){
 				$("#col-name").fadeIn();
+				$("#rgno").slideUp();
 			}
 			else{
 				$("#col-name").fadeOut();
+				$("#rgno").slideDown();
 			}
 		});
 	</script>
