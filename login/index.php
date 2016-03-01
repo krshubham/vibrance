@@ -99,6 +99,7 @@ if(isset($_POST['signup'])){
 	}
 	.form-group{
 		margin: 1em;
+		color: #E85657;
 	}
 	form{
 		margin-top: -2em;
@@ -135,7 +136,7 @@ if(isset($_POST['signup'])){
 							<label class="control-label" for="inputNormal">Name of the college</label>
 							<input type="text" name="regno" id="signup_password" value="" class="bp-suggestions form-control" cols="50" rows="10"></input>
 						</div>
-						<div class="form-group">
+						<div class="form-group" id="rgno">
 							<label class="control-label" for="inputNormal">Reg. No(only for VIT students)</label>
 							<input type="text" name="regno" id="signup_password" value="" class="bp-suggestions form-control" cols="50" rows="10"></input>
 						</div>
@@ -180,9 +181,11 @@ if(isset($_POST['signup'])){
 		$("#college-select").click(function(){
 			if($("#college-select")[0].selectedIndex==1){
 				$("#col-name").fadeIn();
+				$("#rgno").slideUp();
 			}
 			else{
 				$("#col-name").fadeOut();
+				$("#rgno").slideDown();
 			}
 		});
 	</script>
