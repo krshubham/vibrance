@@ -75,7 +75,7 @@
                 <div class="container">
                     <div class="brand">
                         <h1 class="brand_name">
-                            <a href="index.php">Vibrance'16</a>
+                            <a href="index.php"><img src="images/vib_banner_small.png" style="width: 50%;height: 50%"></a>
                         </h1>
                     </div>
                     <nav class="nav">
