@@ -498,7 +498,7 @@
                     <h2><em>Air Crash</em>Individual</h2>
                     <br>
                     <br>
-                    <h4 style="text-align: left; font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Krishna Dayanidhi &nbsp;&nbsp;&nbsp;9962233150<br><br>Kunal Malik &nbsp;&nbsp;&nbsp;9941408779</h4>
+                    <h4 style="text-align: left; font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Dattatreya Datta &nbsp;&nbsp;&nbsp;8106568272<br><br>Kunal Malik &nbsp;&nbsp;&nbsp;9941408779</h4>
                     <div class="row">
                         <div class="grid_6">
                             <ul class="indents-3">
