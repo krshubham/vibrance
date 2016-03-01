@@ -106,8 +106,16 @@ th {
                             <form action="payments.php" method="post">
                                 <select name="event">
                                     <option value="">Select an event</option>
-                                    <option value="adaptune_alone_50">Adaptune</option>
+                                    <option value="adaptune_alone_100">Adaptune</option>
                                     <option value="bollywoodbattle_team_100">Bollywood Battle</option>
+                                    <option value="dancingduo_team_100">Dancing Duo</option>
+                                    <option value="choreonight_alone_3500">Choreo Night</option>
+                                    <option value="footloose_alone_100">Footloose</option>
+                                    <option value="dumbcharades_alone_50">Dumb Charades</option>
+                                    <option value="soundhunt_alone_150">Sound Hunt</option>
+                                    <option value="supersinger_alone_100">Super Singer</option>
+                                    <option value="battleofbands_alone_1000">Battle of bands</option>
+                                    <option value="artiste_alone_100">Artiste</option>
                                 </select>
                                 <input type="submit" name="submit" value="Go">
                             </form>
