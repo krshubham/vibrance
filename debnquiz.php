@@ -181,7 +181,7 @@
                         </section>
                         <section class="cbp-so-section">
                             <article class="cbp-so-side cbp-so-side-left">
-                                <h2 style="padding-top:20%;">18th March 2016</h2>
+                                <h2 style="padding-top:20%;">19th March 2016</h2>
                             </article>
                             <figure class="cbp-so-side cbp-so-side-right">
                                 <a href="#fifth"><img src="images/split.jpg" alt="img01"></a>
@@ -197,7 +197,7 @@
                         </section>
                         <section class="cbp-so-section">
                             <article class="cbp-so-side cbp-so-side-left">
-                                <h2 style="padding-top:20%;">18th March 2016</h2>
+                                <h2 style="padding-top:20%;">19th March 2016</h2>
                             </article>
                             <figure class="cbp-so-side cbp-so-side-right">
                                 <a href="#seventh"><img src="images/aircrash.jpg" alt="img01"></a>
@@ -224,7 +224,7 @@
                                 <a href="#tenth"><img src="images/litquiz.jpg" alt="img01"></a>
                             </figure>
                             <article class="cbp-so-side cbp-so-side-right">
-                                <h2 style="padding-top:20%;">19th March 2016</h2>
+                                <h2 style="padding-top:20%;">18th March 2016</h2>
                             </article>
                         </section>
                         <section class="cbp-so-section">
