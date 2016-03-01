@@ -1,8 +1,33 @@
+<?php require_once("includes/session.php"); ?>
+<?php require_once("includes/db_connection.php"); ?>
+<?php require_once("includes/functions.php"); ?>
+
+<?php 
+if (isset($_SESSION["username"])) {
+    $current_user = $_SESSION["username"];
+    $name_query = "SELECT * FROM users WHERE username = '{$current_user}' LIMIT 1";
+    $name_result = mysqli_query($conn, $name_query);
+    confirm_query($name_result);
+    $name_title = mysqli_fetch_assoc($name_result);
+    $first_name = explode(" ", $name_title['name']);            
+    $view = "<a href='logout.php'>Logout, ".$first_name[0]."</a>"; 
+    $event_view = ""; 
+    $login_view = "";      
+} else {
+    $current_user = "";  
+    $first_name = "";
+    $name_title = "";
+    $view = "<a href='login/index.php'>Login</a>";  
+    $login_view = "<a href='login/index.php' class='gobutton'>Login to register</a>"; 
+    $event_view = "style='display: none;'";     
+}  
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Admin Payments</title>
+    <title>Combo Offers</title>
     <meta charset="utf-8">
     <meta name="format-detection" content="telephone=no" />
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -25,70 +50,117 @@
 
 <body>
     <div class="page">
-        <!--========================================================
-                              HEADER
-    =========================================================-->
-        <header>
-            <div id="stuck_container" class="stuck_container">
-                <div class="container">
-                    <div class="brand">
-                        <h1 class="brand_name">
-                            <a href="#"><img src="images/vib_banner_small.png"></a>
-                        </h1>
+
+      <header>
+        <div id="stuck_container" class="stuck_container">
+            <div class="container">
+                <div class="brand">
+                    <h1 class="brand_name">
+                        <a href="#"><img src="images/vib_banner_small.png"></a>
+                    </h1>
+                </div>
+                <nav class="nav">
+                    <ul class="sf-menu">                            
+                        <li class="active">
+                            <a href="admin_land.php">Admin Home</a>                               
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            <a href="#">On Spot Registration</a>
+                        </li>
+                        <li>
+                            <?php echo "<a href='logout.php'>Logout, ".$current_user."</a>"; ?>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="well well__offset-3">
+            <div class="container">
+                <h2><em>Combo</em>Offers</h2>
+                <div id="divthree" style="display: none;">
+                    <form name="form">
+                        <input type="checkbox" name="event1" value="some" onclick="return KeepCount()">event1
+                        <input type="checkbox" name="event2" value="some" onclick="return KeepCount()">event2
+                        <input type="checkbox" name="event3" value="some" onclick="return KeepCount()">event3
+                        <input type="checkbox" name="event4" value="some" onclick="return KeepCount()">event4
+                        <input type="checkbox" name="event5" value="some" onclick="return KeepCount()">event5
+                    </form>
+                </div>
+                <div id="divall" style="display: none;"> 
+                    Some text for all
+                </div>
+                <div class="row row__offset-2">
+                    <div class="grid_6">
+                        <div class="img">
+                            <a href="#">
+                                <div id="three_click" class="lazy-img" style="padding-bottom: 45.6140350877193%;"><img data-src="images/payment.jpg" alt=""></div>
+                            </a>
+                        </div>
                     </div>
-                    <nav class="nav">
-                        <ul class="sf-menu">                            
-                            <li class="active" <?php echo $view_whole; ?> >
-                                <a href="admin_land.php">Admin Home</a>                               
-                            </li>
-                            <li><?php echo $view_whole; ?>
-                                <a href="<?php echo $link1; ?>"><?php echo $page; ?></a>
-                            </li>
-                            <li><?php echo $view_whole; ?>
-                                <a href="<?php echo $link2; ?>">On Spot Registration</a>
-                            </li>
-                            <li>
-                                <?php echo "<a href='logout_admin.php'>Logout, ".$current_user."</a>"; ?>
-                            </li>
-                        </ul>
-                    </nav>
+
+                    <div class="grid_6">
+                        <div class="img">
+                            <a href="#">
+                                <div id="all_click" class="lazy-img" style="padding-bottom: 45.6140350877193%;"><img data-src="images/onspot.jpg" alt=""></div>
+                            </a>
+                        </div>
+                    </div>                                            
                 </div>
             </div>
-        </header>
-        <!--========================================================
-                              CONTENT
-    =========================================================-->
-        <main>
-            <section class="well well__offset-3">
-                <div class="container">
-                    <h2><em>Admin</em><?php echo $page; ?></h2>
-                    <div class="row row__offset-2">
-                        <div class="grid_4">
-                            <div class="img">
-                                <a href="<?php echo $link1; ?>">
-                                    <div class="lazy-img" style="padding-bottom: 45.6140350877193%;"><img data-src="images/payment.jpg" alt=""></div>
-                                </a>
-                            </div>
-                        </div>
-                        
-                        <div class="grid_4" <?php echo $view_whole; ?> >
-                            <div class="img">
-                                <a href="<?php echo $link2; ?>">
-                                    <div class="lazy-img" style="padding-bottom: 45.6140350877193%;"><img data-src="images/onspot.jpg" alt=""></div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <!--========================================================
-                              FOOTER
-    =========================================================-->
-        <footer>
-        </footer>
-    </div>
-    <script src="js/script.js"></script>
-</body>
+        </section>
+    </main>
 
+    <footer>
+    </footer>
+</div>
+<script src="js/script.js"></script>
+<script src="js/script.js"></script>
+<script type="text/javascript">
+    $('#three_click').click(function() {
+        $('#divthree').slideDown();
+    });
+    $('#all_click').click(function() {
+        $('#divall').slideDown();
+    });
+</script>
+<script language="javascript">
+
+    function KeepCount() {
+
+        var NewCount = 0
+
+        if (document.form.event1.checked)
+            {NewCount = NewCount + 1}
+
+        if (document.form.event2.checked)
+            {NewCount = NewCount + 1}
+
+        if (document.form.event3.checked)
+            {NewCount = NewCount + 1}
+
+        if (document.form.event4.checked)
+            {NewCount = NewCount + 1}
+
+        if (document.form.event5.checked)
+            {NewCount = NewCount + 1}
+
+        if (NewCount == 3)
+        {
+            alert('Pick Just Two Please')
+            document.form; return false;
+        }
+    } 
+</script>
+</body>
 </html>
+<?php
+if (isset ($conn)){
+  mysqli_close($conn);
+}
+?>

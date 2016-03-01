@@ -68,9 +68,6 @@ if(isset($_POST['signup'])){
 } 
 ?>
 
-
-
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -79,7 +76,7 @@ if(isset($_POST['signup'])){
 	<link rel="stylesheet" href="style.css" type="text/css" media="all">
 	<link rel="stylesheet" href="normalize.css" type="text/css" media="all">
 	<link href='http://fonts.googleapis.com/css?family=Roboto:900,900italic,500,400italic,100,700italic,300,700,500italic,100italic,300italic,400' rel='stylesheet' type='text/css'>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
 
 <script type="text/javascript">//<![CDATA[ 
 	$(window).load(function(){
@@ -88,6 +85,25 @@ if(isset($_POST['signup'])){
 		}).trigger('blur');
 });//]]>  
 </script>
+<style type="text/css">
+	body{
+		overflow: visible;
+	}
+	.form-group select{
+		margin-bottom: -3em;
+		margin-top: 4em;
+	}
+	.form-group select:hover{
+		color: white;
+		background-color: black;
+	}
+	.form-group{
+		margin: 0.5em;
+	}
+	form{
+		margin-top: -2em;
+	}
+</style>
 </head>  
 <body style="height: 100%; overflow: hidden; width: 100% !important;">
 
@@ -98,7 +114,7 @@ if(isset($_POST['signup'])){
 
 			<div class="left">
 				<div id="ic">
-					<h2 style="color: #E85657;">Sign Up</h2>
+					<h2 style="color: #E85657; margin-top: -2.5em;">Sign Up</h2>
 					<form id="girisyap" method="post" action="index.php">
 						<div class="yarim sn form-group">
 							<label class="control-label" for="inputNormal">Name</label>
@@ -109,10 +125,15 @@ if(isset($_POST['signup'])){
 							<input type="text" name="username" id="signup_email" class="bp-suggestions form-control" cols="50" rows="10" required></input>
 						</div>
 						<div class="yarim form-group">
-							<label class="control-label" for="inputNormal">College</label>
-							<br>
-								<input type="radio" name="VIT" value="VIT">VIT</input>
-								<input type="radio" name="Other" value="Other">Other</input>
+							<label class="control-label" for="inputNormal">College</label><br>
+							<select id="college-select" name="college" required>
+								<option value="VIT">Vellore Institute of technology</option>
+								<option id="other" value="other">Other</option>
+							</select>  
+						</div>
+						<div class="form-group" style="display: none;" id="col-name">
+							<label class="control-label" for="inputNormal">Name of the college</label>
+							<input type="text" name="regno" id="signup_password" value="" class="bp-suggestions form-control" cols="50" rows="10"></input>
 						</div>
 						<div class="form-group">
 							<label class="control-label" for="inputNormal">Reg. No(only for VIT students)</label>
@@ -122,7 +143,7 @@ if(isset($_POST['signup'])){
 							<label class="control-label" for="inputNormal">Contact Number</label>
 							<input type="number" name="phno" id="signup_password" value="" class="bp-suggestions form-control" cols="50" rows="10" required></input>
 						</div>
-						<div class="form-group soninpt">
+						<div class="form-group soninpt" style="margin-bottom: 0.5em;"> 
 							<label class="control-label" for="inputNormal" required>Password</label>
 							<input type="password" name="password" id="field_2" class="bp-suggestions form-control" cols="50" rows="10"></input>
 						</div>
@@ -155,7 +176,16 @@ if(isset($_POST['signup'])){
 
 		</div>
 	</div>
-
+	<script type="text/javascript">
+		$("#college-select").click(function(){
+			if($("#college-select")[0].selectedIndex==1){
+				$("#col-name").fadeIn();
+			}
+			else{
+				$("#col-name").fadeOut();
+			}
+		});
+	</script>
 	<script src="script.js"></script>
 
 </body>
