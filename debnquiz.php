@@ -394,7 +394,7 @@
                         <div class="grid_6">
                             <ul class="indents-3">
                                 <li>Description of Event:
-                                    <p>This vintage debate format has 2 speakers pitted against each other where one speaker speaks in favor of the motion while the second speaker speaks against the motion. After receiving the motion each speaker gets a total of 10 minutes of preparation time. Each speaker shall get a total of 5 minutes to present their case in favor or against the motion.<br>Bonafide to be produced for external participants.</p>
+                                    <p>This vintage debate format has 2 speakers pitted against each other where one speaker speaks in favor of the motion while the second speaker speaks against the motion. After receiving the motion each speaker gets a total of 5 minutes of preparation time. Each speaker shall get a total of 4 minutes to present their case in favor or against the motion.<br>Bonafide to be produced for external participants.</p>
                                 </li>
                                 <li><br></li>
                                 <li>Registration fees: Rs. 50/- per team. [Internal]</li>
@@ -407,8 +407,8 @@
                                 <li>Only individual registrations are allowed.</li>
                                 <li>Speakers are pitted against each other and the competition shall proceed on a knock-out basis.</li>
                                 <li>The topic for each debate is given on the spot.</li>
-                                <li>10 minutes of preparation time is given.</li>
-                                <li>Each speaker gets 5 minutes to make his/her speech.</li>
+                                <li>5 minutes of preparation time is given.</li>
+                                <li>Each speaker gets 4 minutes to make his/her speech.</li>
                                 <li>On the completion of both speakers’ speeches, each speaker further gets 3 minutes for rebuttal and to summarize facts.</li>
                                 <li>Any changes in the rules and procedures will be intimated before the debate.</li>
                                 <br>
@@ -675,7 +675,9 @@
                         <div class="grid_6">
                             <p class="indents-3">Rules:
                                 <br>
-                                <li> There aren't any rules that you must keep in mind, except the one that matters the most - all the words used must be present in the Scrabble dictionary. </li>
+                                <li>All words that will be made must be a part of the Scrabble Dictionary.</li>
+                                <li>All words labeled as a part of speech (including those listed of foreign origin, and as archaic, obsolete, colloquial, slang, etc.) are permitted with the exception of the following: words always capitalized, abbreviations, prefixes, suffixes standing alone, words requiring a hyphen or an apostrophe.</li> 
+                                <li>The final decision rests with the judges.</li>
                                 <br>
                             </p>
                         </div>

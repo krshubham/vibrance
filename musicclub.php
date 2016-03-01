@@ -334,6 +334,7 @@
                                 <li>No use of foul language.</li> 
                                 <li>Screening of external participants will take place through online video submission through email and auditions for internal participants.</li> 
                                 <li>Two winners in each individual genre will be selected.</li>
+                                <li>Kindly submit your videos on vibrance16.battleofbands@gmail.com </li>
                                 <br>
                             </p>
                         </div>
