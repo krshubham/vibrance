@@ -207,12 +207,13 @@
                                     <br>
                                 </li>
                                 <li>Description of Event:
-                                    <p>It is an impromptu dance where the participants have to come up with steps on the spot adapting to the beats of the songs being played, showcasing their beat sense and creativity.</p>
+                                    <p>It is an impromptu dance where the participants have to come up with steps on the spot adapting to the beats of the songs being played, showcasing their beat sense and creativity.<br>Bonafide to be produced for external participants.</p>
                                 </li>
                                 <li>
                                     <br>
                                 </li>
-                                <li>Registration Fees: Rs. 100/-</li>
+                                <li>Registration Fees: Rs. 100/- [Internal]</li>
+                                <li>Registration Fees: Rs. 100/- [External]</li>
                             </ul>                            
                         </div>
                         <div class="grid_6">
@@ -247,12 +248,13 @@
                             <ul class="indents-3">
                                 <li>Description of Event:
                                     <p>Gather your friends and challenge them in this face off to prove who adapts to the tune better. no need for preparation as teams will have to dance to on spot music...
-                                        <br> Gather your force and challenge them to dance.</p>
+                                        <br> Gather your force and challenge them to dance.<br>Bonafide to be produced for external participants.</p>
                                 </li>
                                 <li>
                                     <br>
                                 </li>
-                                <li>Registration fees: Rs. 100/- per head</li>
+                                <li>Registration fees: Rs. 100/- per head. [Internal]</li>
+                                <li>Registration fees: Rs. 100/- per head. [External]</li>
                             </ul>
                         </div>
                         <div class="grid_6">
@@ -304,11 +306,12 @@
                                         <li>&#8226;&nbsp;The duet category will have 2 rounds: prelims and finals.</li>
                                         <li>&#8226;&nbsp;The prelims will have a barrier between teammmates to ensure zero interaction and test co-ordination.</li>
                                         <li>&#8226;&nbsp;Duration: 2-3 min</li>
-                                    </p>
+                                    <br>Bonafide to be produced for external participants.</p>
                                 </li>
                                 <li>
                                 <br> </li>
-                                <li>Registration Fees: 100/- per head.</li>
+                                <li>Registration Fees: 100/- per head. [Internal]</li>
+                                <li>Registration Fees: 100/- per head. [Internal]</li>
                             </ul>
                         </div>
                     </div>
@@ -333,12 +336,14 @@
                     <div class="row">
                         <div class="grid_6">
                             <ul class="indents-3">
-                                <li>Description of Event: Mobs of dancers or a flare of graceful performers - All forms welcome to excite the stage and the crowd.
+                                <li>Description of Event:<p>Mobs of dancers or a flare of graceful performers - All forms welcome to excite the stage and the crowd.<br>Bonafide to be produced for external participants.</p>
                                 </li>
                                 <li>
                                 <br>
                                 </li>
-                                <li>Registration fees: Rs 3500/- per team </li>
+                                <li>Registration fees: Rs 3500/- per team. [Internal]</li>
+                                <li>Registration fees: Rs 3500/- per team. [External]</li>
+                                
                             </ul>
                         </div>
                         <div class="grid_6">
@@ -387,12 +392,13 @@
                         <div class="grid_6">
                             <ul class="indents-3">
                                 <li>Description of Event:
-                                    <p>It's an opportunity where an individual can compete with other participants by showcasing a prepared dance performance which will be judged in accordance with predefined criteria and within the given time limit.</p>
+                                    <p>It's an opportunity where an individual can compete with other participants by showcasing a prepared dance performance which will be judged in accordance with predefined criteria and within the given time limit.<br>Bonafide to be produced for external participants.</p>
                                 </li>
                                 <li>
                                     <br>
                                 </li>
-                                <li>Registration fees: Rs. 100/-</li>
+                                <li>Registration fees: Rs. 100/- [Internal]</li>
+                                <li>Registration fees: Rs. 100/- [Internal]</li>
                             </ul>
                         </div>
                         <div class="grid_6">

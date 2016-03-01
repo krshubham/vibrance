@@ -73,8 +73,8 @@
                 <div class="container">
                     <div class="brand">
                         <h1 class="brand_name">
-                                                <a href="index.php"><img src="images/vib_banner_small.png" style="width: 50%;height: 50%"></a>
-                                            </h1>
+                            <a href="index.php"><img src="images/vib_banner_small.png" style="width: 50%;height: 50%"></a>
+                        </h1>
                     </div>
                     <nav class="nav">
                         <ul class="sf-menu">
@@ -340,6 +340,7 @@
                                 <li>Description of Event:
                                     <p>Karl Popper debate focuses on relevent and often deeply divisive propositions, emphasizing on development of critical thinking skills and tolerancefor differing view-points.Two teams participate in each debate. One team follows role of affirmative party while other team that of negative party. Debators work together in teams and must research both sides of the issue. Each team is given opportunity yo offer arguments and direct questions to opposing team. Distinguishing feature of this format of debate are cross-examination, where four out of six debators ask their opponents questions and preparing time when the debators can prepare before their speeches</p>
                                 </li>
+                                <li><br></li>
                                 <li>Registration Fees: Rs. 50</li>
                             </ul>
                         </div>
@@ -392,6 +393,8 @@
                                 <li>Description of Event:
                                     <p>This vintage debate format has 2 speakers pitted against each other where one speaker speaks in favor of the motion while the second speaker speaks against the motion. After receiving the motion each speaker gets a total of 10 minutes of preparation time. Each speaker shall get a total of 5 minutes to present their case in favor or against the motion.</p>
                                 </li>
+                                <li><br></li>
+                                <li>Registration fees: Rs. /-</li>
                             </ul>
                         </div>
                         <div class="grid_6">
@@ -431,6 +434,8 @@
                                         <br>
                                         <br>Why don't you all come and find out?</p>
                                 </li>
+                                <li><br></li>
+                                <li>Registration fees: Rs. /-</li>
                             </ul>
                         </div>
                         <div class="grid_6">
@@ -459,6 +464,8 @@
                                 <li>Description of Event:
                                     <p>Welcome to the ultimate speech contest with almost zero preparation. You have to defend your speech right after you came up with it. The Audience will question you about everything you say. And that is only if you yourself dont question yourself first! If you love talking a lot, and think logically sound as well, come give this event a shot! Atleast you will have a great time ripping off other speakers while you hear them ruining their chance of winning!</p>
                                 </li>
+                                <li><br></li>
+                                <li>Registration fees: Rs. /-</li>
                             </ul>
                         </div>
                         <div class="grid_6">
@@ -492,6 +499,8 @@
                                 <li>Description of Event:
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non lacus dui. Curabitur pharetra sem et felis venenatis, quis porta urna dictum. Nullam tincidunt quis enim vitae imperdiet.</p>
                                 </li>
+                                <li><br></li>
+                                <li>Registration fees: Rs. /-</li>
                             </ul>
                         </div>
                         <div class="grid_6">
