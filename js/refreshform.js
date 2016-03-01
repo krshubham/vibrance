@@ -78,4 +78,28 @@ $(document).ready(function() {
             alert(data);
         });
     });
+
+    $("#generalquiz").click(function() {
+        var event = $("#event_generalquiz").val();
+        var parti = 1;
+        $.post("refreshform.php", { event1: event, parti1: parti }, function(data) {
+            alert(data);
+        });
+    });
+
+    $("#entertainmentquiz").click(function() {
+        var event = $("#event_entertainmentquiz").val();
+        var parti = $("#parti_entertainmentquiz").val();
+        $.post("refreshform.php", { event1: event, parti1: parti }, function(data) {
+            alert(data);
+        });
+    });
+
+    $("#karlpopperdebate").click(function() {
+        var event = $("#event_karlpopperdebate").val();
+        var parti = 1;
+        $.post("refreshform.php", { event1: event, parti1: parti }, function(data) {
+            alert(data);
+        });
+    });
 });

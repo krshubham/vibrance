@@ -2,7 +2,7 @@
 <?php require_once("includes/db_connection.php"); ?>
 <?php require_once("includes/functions.php"); ?>
 
-<?php
+<?php 
     if (isset($_SESSION["username"])) {
         $current_user = $_SESSION["username"];
         $name_query = "SELECT * FROM users WHERE username = '{$current_user}' LIMIT 1";

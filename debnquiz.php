@@ -1,3 +1,29 @@
+<?php require_once("includes/session.php"); ?>
+<?php require_once("includes/db_connection.php"); ?>
+<?php require_once("includes/functions.php"); ?>
+
+<?php 
+    if (isset($_SESSION["username"])) {
+        $current_user = $_SESSION["username"];
+        $name_query = "SELECT * FROM users WHERE username = '{$current_user}' LIMIT 1";
+        $name_result = mysqli_query($conn, $name_query);
+        confirm_query($name_result);
+        $name_title = mysqli_fetch_assoc($name_result);
+        $first_name = explode(" ", $name_title['name']);            
+        $view = "<a href='logout.php'>Logout, ".$first_name[0]."</a>"; 
+        $event_view = ""; 
+        $login_view = "";      
+    } else {
+        $current_user = "";  
+        $first_name = "";
+        $name_title = "";
+        $view = "<a href='login/index.php'>Login</a>";  
+        $login_view = "<a href='login/index.php' class='gobutton'>Login to register</a>"; 
+        $event_view = "style='display: none;'";     
+    }  
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -104,6 +130,9 @@
                             </li>
                             <li>
                                 <a href="#">Meet the Team</a>
+                            </li>
+                            <li>
+                                <?php echo $view; ?>
                             </li>
                         </ul>
                     </nav>
@@ -245,6 +274,13 @@
                             </p>
                         </div>
                     </div>
+                    <form>
+                        <input type="text" id="event_generalquiz" value="generalquiz_alone_100" style="display: none;">                    
+                        <div style="text-align: center; ">
+                            <input id="generalquiz" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <?php echo $login_view; ?>
+                        </div>
+                    </form>    
                 </div>
             </section>
             <section name="second" class="parallax parallax18" data-parallax-speed="-0.4">
@@ -276,6 +312,20 @@
                             </p>
                         </div>
                     </div>
+                    <form>
+                        <input type="text" id="event_entertainmentquiz" value="entertainmentquiz_team_50" style="display: none;">
+                        <center>
+                            <select id="parti_entertainmentquiz" <?php echo $event_view; ?> >
+                                <option value="0">Select the number of participants in your team</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </center>
+                        <div style="text-align: center; ">
+                            <input id="entertainmentquiz" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <?php echo $login_view; ?>
+                        </div>
+                    </form>  
                 </div>
             </section>
             <section name="third" class="parallax parallax19" data-parallax-speed="-0.4">
@@ -290,6 +340,7 @@
                                 <li>Description of Event:
                                     <p>Karl Popper debate focuses on relevent and often deeply divisive propositions, emphasizing on development of critical thinking skills and tolerancefor differing view-points.Two teams participate in each debate. One team follows role of affirmative party while other team that of negative party. Debators work together in teams and must research both sides of the issue. Each team is given opportunity yo offer arguments and direct questions to opposing team. Distinguishing feature of this format of debate are cross-examination, where four out of six debators ask their opponents questions and preparing time when the debators can prepare before their speeches</p>
                                 </li>
+                                <li>Registration Fees: Rs. 50</li>
                             </ul>
                         </div>
                         <div class="grid_6">
@@ -320,6 +371,13 @@
                             </p>
                         </div>
                     </div>
+                     <form>
+                        <input type="text" id="event_karlpopperdebate" value="karlpopperdebate_alone_100" style="display: none;">                    
+                        <div style="text-align: center; ">
+                            <input id="karlpopperdebate" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <?php echo $login_view; ?>
+                        </div>
+                    </form>   
                 </div>
             </section>
             <section name="fourth" class="parallax parallax20" data-parallax-speed="-0.4">
@@ -350,6 +408,13 @@
                             </p>
                         </div>
                     </div>
+                   <form>
+                        <input type="text" id="event_classicdebate" value="classicdebate_alone_50" style="display: none;">                    
+                        <div style="text-align: center; ">
+                            <input id="classicdebate" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <?php echo $login_view; ?>
+                        </div>
+                    </form>    
                 </div>
             </section>
             <section name="fifth" class="parallax parallax21" data-parallax-speed="-0.4">
@@ -631,3 +696,8 @@
 </body>
 
 </html>
+<?php
+    if (isset ($conn)){
+      mysqli_close($conn);
+    }
+?>
