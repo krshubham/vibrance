@@ -134,7 +134,7 @@ if(isset($_POST['signup'])){
 
 			<div class="right">
 				<div id="ic">
-					<h2>Login</h2>
+					<h2 style="color: #E85657;">Login</h2>
 					<form id="girisyap" method="post" action="index.php">
 
 						<div class="form-group">
@@ -148,7 +148,7 @@ if(isset($_POST['signup'])){
 						<input type="submit" value="Login" class="girisbtn" tabindex="100" name="submit" />
 					</form>
 
-					<button id="moveleft">Sign Up</button>
+					<button id="moveleft" style="background-color: #E85657;">Sign Up</button>
 				</div>
 			</div>
 
