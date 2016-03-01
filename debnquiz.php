@@ -289,7 +289,7 @@
                     <h2><em>Entertainment Quiz</em>Team</h2>
                     <br>
                     <br>
-                    <h4 style="text-align: left;font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Nikhil Nambiar &nbsp;&nbsp;&nbsp;9757290426</h4>
+                    <h4 style="text-align: left;font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Nikhil Nambiar &nbsp;&nbsp;&nbsp;8681913935</h4>
                     <div class="row">
                         <div class="grid_6">
                             <ul class="indents-3">
@@ -397,8 +397,8 @@
                                     <p>This vintage debate format has 2 speakers pitted against each other where one speaker speaks in favor of the motion while the second speaker speaks against the motion. After receiving the motion each speaker gets a total of 5 minutes of preparation time. Each speaker shall get a total of 4 minutes to present their case in favor or against the motion.<br>Bonafide to be produced for external participants.</p>
                                 </li>
                                 <li><br></li>
-                                <li>Registration fee: Rs. 50/- per team. [Internal]</li>
-                                <li>Registration fee: Rs. 100/- per team. [External]</li>
+                                <li>Registration fee: Rs. 50/- per participant. [Internal]</li>
+                                <li>Registration fee: Rs. 100/- per participant. [External]</li>
                             </ul>
                         </div>
                         <div class="grid_6">
@@ -409,7 +409,7 @@
                                 <li>The topic for each debate is given on the spot.</li>
                                 <li>5 minutes of preparation time is given.</li>
                                 <li>Each speaker gets 4 minutes to make his/her speech.</li>
-                                <li>On the completion of both speakers’ speeches, each speaker further gets 3 minutes for rebuttal and to summarize facts.</li>
+                                <li>On the completion of both speakers’ speeches, each speaker further gets 2 minutes for rebuttal and to summarize facts.</li>
                                 <li>Any changes in the rules and procedures will be intimated before the debate.</li>
                                 <br>
                             </p>
@@ -519,7 +519,7 @@
                                 <li>The event shall be held over four rounds.</li>
                                 <li>All speakers speak in the first round getting three minutes of speech.</li>
                                 <li>The top 8 participants from the first round shall qualify to the next round.</li>
-                                <li>The 8 participants shall be grouped in  teans of two and their job is to convince the judge that their team deserves the parachute instead of the others.</li>
+                                <li>The 8 participants shall be grouped in  teams of two and their job is to convince the judge that their team deserves the parachute instead of the others.</li>
                                 <li>The 2 highest scoring teams shall proceed to the penultimate round.</li>
                                 <li>The participants of the respective teams shall be interchanged according to their scores and each team shall again try and convince the judge that their team deserves the parachute.</li>
                                 <li>The final round shall invlove participants of the final team pitted against each other. But be warned! There shall be an element of surprise!</li>
