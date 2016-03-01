@@ -470,8 +470,8 @@
                                     <p>Welcome to the ultimate speech contest with almost zero preparation. You have to defend your speech right after you came up with it. The Audience will question you about everything you say. And that is only if you yourself dont question yourself first! If you love talking a lot, and think logically sound as well, come give this event a shot! Atleast you will have a great time ripping off other speakers while you hear them ruining their chance of winning!<br>Bonafide to be produced for external participants.</p>
                                 </li>
                                 <li><br></li>
-                                <li>Registration fees: Rs. 50/- per team. [Internal]</li>
-                                <li>Registration fees: Rs. 100/- per team. [External]</li>
+                                <li>Registration fees: Rs. 50/- per head. [Internal]</li>
+                                <li>Registration fees: Rs. 100/- per head. [External]</li>
                             </ul>
                         </div>
                         <div class="grid_6">
