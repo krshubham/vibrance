@@ -194,7 +194,7 @@
             </section>
             <section name="first" class="parallax parallax7" data-parallax-speed="-0.4">
                 <div class="container">
-                    <h2><em>Dumb Charades</em>Individual</h2>
+                    <h2><em>Dumb Charades</em>Team</h2>
                     <br>
                     <br>
                     <h4 style="text-align: left;font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Sarvansh Prasher &nbsp;&nbsp;&nbsp;9952038260<br><br>A. Sangeetha &nbsp;&nbsp;&nbsp;8754178466<br><br>Rishabh Yadav&nbsp;&nbsp;&nbsp;9453033738<br><br>Poornima Kapoor &nbsp;&nbsp;&nbsp;9092972209</h4>
