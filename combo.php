@@ -85,11 +85,11 @@ if (isset($_SESSION["username"])) {
                 <h2><em>Combo</em>Offers</h2>
                 <div id="divthree" style="display: none;">
                     <form name="form">
-                        <input type="checkbox" name="event[0]" value="some" onclick="return KeepCount()">event1
-                        <input type="checkbox" name="event[1]" value="some" onclick="return KeepCount()">event2
-                        <input type="checkbox" name="event[2]" value="some" onclick="return KeepCount()">event3
-                        <input type="checkbox" name="event[3]" value="some" onclick="return KeepCount()">event4
-                        <input type="checkbox" name="event[4]" value="some" onclick="return KeepCount()">event5
+                        <input type="checkbox" name="event1" value="some" onclick="return KeepCount()">event1
+                        <input type="checkbox" name="event2" value="some" onclick="return KeepCount()">event2
+                        <input type="checkbox" name="event3" value="some" onclick="return KeepCount()">event3
+                        <input type="checkbox" name="event4" value="some" onclick="return KeepCount()">event4
+                        <input type="checkbox" name="event5" value="some" onclick="return KeepCount()">event5
                     </form>
                 </div>
                 <div id="divall" style="display: none;"> 
@@ -135,19 +135,19 @@ if (isset($_SESSION["username"])) {
 
         var NewCount = 0
 
-        if (document.form.event[0].checked)
+        if (document.form.event1.checked)
             {NewCount = NewCount + 1}
 
-        if (document.form.event[1].checked)
+        if (document.form.event2.checked)
             {NewCount = NewCount + 1}
 
-        if (document.form.event[2].checked)
+        if (document.form.event3.checked)
             {NewCount = NewCount + 1}
 
-        if (document.form.event[3].checked)
+        if (document.form.event4.checked)
             {NewCount = NewCount + 1}
 
-        if (document.form.event[4].checked)
+        if (document.form.event5.checked)
             {NewCount = NewCount + 1}
 
         if (NewCount == 3)
