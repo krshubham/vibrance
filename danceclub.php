@@ -212,7 +212,7 @@
                                 <li>
                                     <br>
                                 </li>
-                                <li>Registration Fees: Rs. 50/-</li>
+                                <li>Registration Fees: Rs. 100/-</li>
                             </ul>                            
                         </div>
                         <div class="grid_6">
