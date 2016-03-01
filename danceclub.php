@@ -398,7 +398,7 @@
                                     <br>
                                 </li>
                                 <li>Registration fees: Rs. 100/- [Internal]</li>
-                                <li>Registration fees: Rs. 100/- [Internal]</li>
+                                <li>Registration fees: Rs. 100/- [External]</li>
                             </ul>
                         </div>
                         <div class="grid_6">
