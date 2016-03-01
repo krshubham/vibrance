@@ -161,7 +161,7 @@
                             <figure class="cbp-so-side cbp-so-side-left">
                                 <a href="#second"><img src="images/soundhunt.jpg" alt="img01"></a>
                             </figure>
-                         8             <article class="cbp-so-side cbp-so-side-right">
+                            <article class="cbp-so-side cbp-so-side-right">
                                 <h2 style="padding-top:20%;">19th March 2016</h2>
                             </article>
                         </section>
@@ -201,12 +201,13 @@
                     <div class="row">
                         <div class="grid_6">
                             <ul class="indents-3">
-                                <li>Description of Event:<p>The traditional Dumb Charades is a Movie Guessing game, which involves different teams. In the form most played, it is an acting game in which one player acts out a word or phrase by miming similar sounding words, and the other players guess the word or phrase. The 2.0 version includes few more surprises in the event.</p>
+                                <li>Description of Event:<p>The traditional Dumb Charades is a Movie Guessing game, which involves different teams. In the form most played, it is an acting game in which one player acts out a word or phrase by miming similar sounding words, and the other players guess the word or phrase. The 2.0 version includes few more surprises in the event.<br>Bonafide to be produced for external participants.</p>
                                 </li>
                                 <li>
                                     <br>
                                 </li>
-                                <li>Registration fees: Rs. 50/- per participant.</li>
+                                <li>Registration fees: Rs. 50/- per participant. [Internal]</li>
+                                <li>Registration fees: Rs. 50/- per participant. [External]</li>
                             </ul>
                         </div>
                         <div class="grid_6">
@@ -239,12 +240,13 @@
                     <div class="row">
                         <div class="grid_6">
                             <ul class="indents-3">
-                                <li>Description of Event:<p>In this event, a list of 30-40 sounds will be given to a team, and in a time period of 1 hour or one and half hour (depending on the registration), they have to record a video of the sound, along with their faces in the video, so that the participants don’t cheat.</p>
+                                <li>Description of Event:<p>In this event, a list of 30-40 sounds will be given to a team, and in a time period of 1 hour or one and half hour (depending on the registration), they have to record a video of the sound, along with their faces in the video, so that the participants don’t cheat.<br>Bonafide to be produced for external participants.</p>
                                 </li>
                                 <li>
                                     <br>
                                 </li>
-                                <li>Registration fees: Rs.150/- per team of 3 members.</li>
+                                <li>Registration fees: Rs. 50/- per participant. [Internal]</li>
+                                <li>Registration fees: Rs. 50/- per participant. [External]</li>
                             </ul>
                         </div>
                         <div class="grid_6">
@@ -276,13 +278,14 @@
                     <div class="row">
                         <div class="grid_6">
                             <ul class="indents-3">
-                                <li>Description of Event:<p> A singing competition where each singer is judged on the basis of their singing ability. Each singer will have a limit of 3 minutes. They can either bring their own karaoke track or they can be accompanied with an instrumentalist. </p>
+                                <li>Description of Event:<p> A singing competition where each singer is judged on the basis of their singing ability. Each singer will have a limit of 3 minutes. They can either bring their own karaoke track or they can be accompanied with an instrumentalist.<br>Bonafide to be produced for external participants. </p>
                                 </li>
                                 
                                 <li>
                                     <br>
                                 </li>
-                                <li>Registration fees: Rs.100/- per member</li>
+                                <li>Registration fees: Rs. 50/- per participant. [Internal]</li>
+                                <li>Registration fees: Rs. 50/- per participant. [External]</li>
                             </ul>
                         </div>
                         <div class="grid_6">
@@ -315,7 +318,7 @@
                     <div class="row">
                         <div class="grid_6">
                             <ul class="indents-3">
-                                <li>Description of Event:<p> The event will be divided into two main categories: Western Music Bands and Indian Music Bands.</p></li>
+                                <li>Description of Event:<p> The event will be divided into two main categories: Western Music Bands and Indian Music Bands.<br>Bonafide to be produced for external participants.</p></li>
                                 
                                 <li>
                                     <br>
@@ -353,9 +356,11 @@
                     <div class="row">
                         <div class="grid_6">
                             <ul class="indents-3">
-                                <li>Description of Event: <p>Mesmerize the judges and crowd with the magical sound of instruments. If you know how to play any instrument and wish to embezzle people " Artist&eacute; " is the right event to choose. In this event participants have to showcase their talent in their own choice of instrument. Again the time limit is 3 minutes. If the number of participants is more, then a screening round would be held which would be decided later</p></li>
-                                <Li><br></Li>
-                                <li>Registration Fee Rs. 100</li>                                
+                                <li>Description of Event: <p>Mesmerize the judges and crowd with the magical sound of instruments. If you know how to play any instrument and wish to embezzle people " Artist&eacute; " is the right event to choose. In this event participants have to showcase their talent in their own choice of instrument. Again the time limit is 3 minutes. If the number of participants is more, then a screening round would be held which would be decided later.<br>Bonafide to be produced for external participants.</p></li>
+                                <li><br></li>
+                                <li>Registration fees: Rs. 100/- per participant. [Internal]</li>
+                                <li>Registration fees: Rs. 100/- per participant. [External]</li>
+                                                            
                             </ul>
                         </div>
                         <div class="grid_6">
