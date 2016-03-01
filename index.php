@@ -15,7 +15,7 @@
         $current_user = "";  
         $first_name = "";
         $name_title = "";
-        $view = "<a href='login/index.php'>Login</a>";        
+        $view = "<a href='login/index.php'>Login/Signup</a>";        
     }  
 ?>
 
