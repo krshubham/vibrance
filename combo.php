@@ -33,6 +33,7 @@ if (isset($_SESSION["username"])) {
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/modal.css">
     <script src="js/jquery.js"></script>
     <script src="js/jquery-migrate-1.2.1.js"></script>
     <!--[if lt IE 9]>
@@ -56,7 +57,8 @@ if (isset($_SESSION["username"])) {
             <div class="container">
                 <div class="brand">
                     <h1 class="brand_name">
-                        <a href="#"><img src="images/vib_banner_small.png"></a>
+                        <a href="#"><img src="images/vib_banner_small.png" style="width: 80%; height: 80%;
+                        margin-left: -2em;margin-bottom: -1em;margin-right: -2em;"></a>
                     </h1>
                 </div>
                 <nav class="nav">
@@ -83,32 +85,27 @@ if (isset($_SESSION["username"])) {
         <section class="well well__offset-3">
             <div class="container">
                 <h2><em>Combo</em>Offers</h2>
-                <div id="divthree" style="display: none;">
-                    <form name="form">
-                        <input type="checkbox" name="event1" value="some" onclick="return KeepCount()">event1
-                        <input type="checkbox" name="event2" value="some" onclick="return KeepCount()">event2
-                        <input type="checkbox" name="event3" value="some" onclick="return KeepCount()">event3
-                        <input type="checkbox" name="event4" value="some" onclick="return KeepCount()">event4
-                        <input type="checkbox" name="event5" value="some" onclick="return KeepCount()">event5
-                    </form>
-                </div>
                 <div id="divall" style="display: none;"> 
                     Some text for all
                 </div>
                 <div class="row row__offset-2">
                     <div class="grid_6">
                         <div class="img">
-                            <a href="#">
+                            <div id="wrapper">
+                            <p><a href="#popup1">
                                 <div id="three_click" class="lazy-img" style="padding-bottom: 45.6140350877193%;"><img data-src="images/payment.jpg" alt=""></div>
-                            </a>
+                            </a></p>
+                            </div>
                         </div>
                     </div>
 
                     <div class="grid_6">
                         <div class="img">
-                            <a href="#">
+                        <div id="wrapper">
+                            <a href="#popup2">
                                 <div id="all_click" class="lazy-img" style="padding-bottom: 45.6140350877193%;"><img data-src="images/onspot.jpg" alt=""></div>
                             </a>
+                        </div>
                         </div>
                     </div>                                            
                 </div>
@@ -119,6 +116,47 @@ if (isset($_SESSION["username"])) {
     <footer>
     </footer>
 </div>
+<div id="popup1" class="overlay">
+    <div class="popup">
+        <h2>Info box</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+        <div class="col1">
+            <div id="divthree" style="display: none;">
+                    <form name="form">
+                        <input type="checkbox" name="event1" value="some" onclick="return KeepCount()">event1<br />
+                        <input type="checkbox" name="event2" value="some" onclick="return KeepCount()">event2<br />
+                        <input type="checkbox" name="event3" value="some" onclick="return KeepCount()">event3<br />
+                        <input type="checkbox" name="event4" value="some" onclick="return KeepCount()">event4<br />
+                        <input type="checkbox" name="event5" value="some" onclick="return KeepCount()">event5<br />
+                    </form>
+            </div>
+            <div class="col2">
+                <div id="divthree"></div>
+                    <form name="form">
+                        <div class="grid_3">
+                        <input type="checkbox" name="event1" value="some" onclick="return KeepCount()">event1<br />
+                        <input type="checkbox" name="event2" value="some" onclick="return KeepCount()">event2<br />
+                        <input type="checkbox" name="event3" value="some" onclick="return KeepCount()">event3<br />
+                        <input type="checkbox" name="event4" value="some" onclick="return KeepCount()">event4<br />
+                        <input type="checkbox" name="event5" value="some" onclick="return KeepCount()">event5<br />
+                        </div>
+                    </form>
+            </div>
+                </div>
+        </div>
+    </div>
+</div>
+<div id="popup2" class="overlay light">
+    <a class="cancel" href="#"></a>
+    <div class="popup">
+        <h2>What the what?</h2>
+        <div class="content">
+      <p>Click outside the popup to close.</p>
+        </div>
+    </div>
+</div>
+
 <script src="js/script.js"></script>
 <script src="js/script.js"></script>
 <script type="text/javascript">
@@ -159,6 +197,7 @@ if (isset($_SESSION["username"])) {
 </script>
 </body>
 </html>
+
 <?php
 if (isset ($conn)){
   mysqli_close($conn);
