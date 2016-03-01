@@ -167,7 +167,7 @@
                         </section>
                         <section class="cbp-so-section">
                             <article class="cbp-so-side cbp-so-side-left">
-                                <h2 style="padding-top:20%;">18th March 2016</h2>
+                                <h2 style="padding-top:20%;">19th March 2016</h2>
                             </article>
                             <figure class="cbp-so-side cbp-so-side-right">
                                 <a href="#third"><img src="images/rap.jpg" alt="img01"></a>
@@ -178,16 +178,16 @@
                                 <a href="#fourth"><img src="images/lyric.jpg" alt="img01"></a>
                             </figure>
                             <article class="cbp-so-side cbp-so-side-right">
-                                <h2 style="padding-top:20%;">19th March 2016</h2>
+                                <h2 style="padding-top:20%;">18th March 2016</h2>
                             </article>
                         </section>
                         <section class="cbp-so-section">
-                            <figure class="cbp-so-side cbp-so-side-left">
-                                <a href="#fifth"><img src="images/lyric.jpg" alt="img01"></a>
-                            </figure>
-                            <article class="cbp-so-side cbp-so-side-right">
+                            <article class="cbp-so-side cbp-so-side-left">
                                 <h2 style="padding-top:20%;">19th March 2016</h2>
                             </article>
+                            <figure class="cbp-so-side cbp-so-side-right">
+                                <a href="#fifth"><img src="images/artiste.jpg" alt="img01"></a>
+                            </figure>
                         </section>
                     </div>
                 </div>
@@ -347,7 +347,7 @@
                     </form>  
                 </div>
             </section>
-            <section name="fifth" class="parallax parallax10" data-parallax-speed="-0.4">
+            <section name="fifth" class="parallax parallax85" data-parallax-speed="-0.4">
                 <div class="container">
                     <h2><em>The Artist&eacute;</em>Individual</h2>
                     <br>
