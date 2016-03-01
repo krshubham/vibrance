@@ -311,7 +311,7 @@
                                 <li>
                                 <br> </li>
                                 <li>Registration Fees: 100/- per head. [Internal]</li>
-                                <li>Registration Fees: 100/- per head. [Internal]</li>
+                                <li>Registration Fees: 100/- per head. [External]</li>
                             </ul>
                         </div>
                     </div>
