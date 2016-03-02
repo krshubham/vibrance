@@ -108,3 +108,8 @@ h1 {
 .popup p:last-child {
   margin: 0;
 }
+
+.btn-reg{
+  border-radius: 1em;
+  padding: 0.8em;
+}
