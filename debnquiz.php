@@ -623,8 +623,7 @@
                             <ul class="indents-3">
                                 <li>Description of Event:
                                     <p>Summon Your Mates!
-                                        <br>OOne particular Topic will be given to the team.Each team have to speak on the topic(For).Moment we say "TURN" the team have to go against the topic and speak and so on.
-                                        <br> Proper Coordination and Team work is key to win.
+                                        <br>One particular Topic will be given to the team.Each team have to speak on the topic(For).Moment we say "TURN" the team have to go against the topic and speak and so on.
                                         <br>Gather around And Speak up!<br>Bonafide to be produced for external participants.
                                     </p>
                                 </li>
@@ -636,9 +635,6 @@
                         <div class="grid_6">
                             <p class="indents-3">Rules:
                                 <br>
-                                <li>Each team should have 3 speakers.</li>
-                                <li>Each speaker have to speak on the topic.</li>
-                                <li>Time Given to speak - 5 mins.</li>
                                 <li>Unparliamentary words wont be entertained.And Hence can affect Your score.</li>
                                 <li>Formal Language is only permitted.</li>
                                 <br>
@@ -649,7 +645,6 @@
                                 <li>Fluency in Speaking</li>
                                 <li>Confidence Level</li>
                                 <li>Convincing Statements</li>
-                                <li>Proper co-ordination in each team</li>
                             </p>
                         </div>
                     </div>
