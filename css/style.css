@@ -1036,6 +1036,21 @@ a[href^="tel:"] {
 .parallax89 h2 {
     color: #ffffff;
 }
+
+
+
+.parallax90 {
+    color: #ffffff;
+    background-color: #FFF;
+    background-image: url(../images/tamil_para.jpg);
+    padding: 142px 0 142px;
+}
+
+.parallax90 h2 {
+    color: #ffffff;
+}
+
+
 .parallax12 {
     color: #ffffff;
     background-color: #FFF;
