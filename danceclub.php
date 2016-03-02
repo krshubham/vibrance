@@ -198,7 +198,7 @@
                     <h2><em>Adaptune</em>Individual</h2>
                     <br>
                     <br>
-                    <h4 style="text-align: left;font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Piyush Gupta &nbsp;&nbsp;&nbsp;9362229525<br><br>Pragya Gupta &nbsp;&nbsp;&nbsp;9952040969<br><br>Shreya Krishna &nbsp;&nbsp;&nbsp;9176438911</h4>
+                    <h4 style="text-align: left;font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Anwesh C. &nbsp;&nbsp;&nbsp;8885999805<br><br>Pragya Gupta &nbsp;&nbsp;&nbsp;9952040969<br><br>Shreya Krishna &nbsp;&nbsp;&nbsp;9176438911</h4>
                     <div class="row">
                         <div class="grid_6">
                             <ul class="indents-3">
@@ -334,7 +334,7 @@
                     <h2><em>Choreo Night</em>Group</h2>
                     <br>
                     <br>
-                    <h4 style="text-align: left; font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Ansh &nbsp;&nbsp;&nbsp;9176857902<br><br>Shreesh S. &nbsp;&nbsp;&nbsp;8124092109<br><br>Anvesh C. &nbsp;&nbsp;&nbsp;8885999805<br><br>Kavita &nbsp;&nbsp;&nbsp;9941173445</h4>
+                    <h4 style="text-align: left; font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Ansh &nbsp;&nbsp;&nbsp;9176857902<br><br>Piyush Gupta &nbsp;&nbsp;&nbsp;9362229525<br><br>Shreesh S. &nbsp;&nbsp;&nbsp;8124092109<br><br>Kavita &nbsp;&nbsp;&nbsp;9941173445</h4>
                     <div class="row">
                         <div class="grid_6">
                             <ul class="indents-3">
