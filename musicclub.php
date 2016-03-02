@@ -3,24 +3,24 @@
 <?php require_once("includes/functions.php"); ?>
 
 <?php
-    if (isset($_SESSION["username"])) {
-        $current_user = $_SESSION["username"];
-        $name_query = "SELECT * FROM users WHERE username = '{$current_user}' LIMIT 1";
-        $name_result = mysqli_query($conn, $name_query);
-        confirm_query($name_result);
-        $name_title = mysqli_fetch_assoc($name_result);
-        $first_name = explode(" ", $name_title['name']);            
-        $view = "<a href='logout.php'>Logout, ".$first_name[0]."</a>"; 
-        $event_view = ""; 
-        $login_view = "";      
-    } else {
-        $current_user = "";  
-        $first_name = "";
-        $name_title = "";
-        $view = "<a href='login/index.php'>Login</a>";  
-        $login_view = "<a href='login/index.php' class='gobutton'>Login to register</a>"; 
-        $event_view = "style='display: none;'";     
-    }  
+if (isset($_SESSION["username"])) {
+    $current_user = $_SESSION["username"];
+    $name_query = "SELECT * FROM users WHERE username = '{$current_user}' LIMIT 1";
+    $name_result = mysqli_query($conn, $name_query);
+    confirm_query($name_result);
+    $name_title = mysqli_fetch_assoc($name_result);
+    $first_name = explode(" ", $name_title['name']);            
+    $view = "<a href='logout.php'>Logout, ".$first_name[0]."</a>"; 
+    $event_view = ""; 
+    $login_view = "";      
+} else {
+    $current_user = "";  
+    $first_name = "";
+    $name_title = "";
+    $view = "<a href='login/index.php'>Login</a>";  
+    $login_view = "<a href='login/index.php' class='gobutton'>Login to register</a>"; 
+    $event_view = "style='display: none;'";     
+}  
 ?>
 
 
@@ -58,25 +58,23 @@
     <![endif]-->
     <script src='js/device.min.js'></script>
     <script type="text/javascript">
-    $(document).ready(function() {
-        $(".first-header").slideDown("slow");
-    });
+        $(document).ready(function() {
+            $(".first-header").slideDown("slow");
+        });
     </script>
 </head>
 
 <body>
     <div class="page" id="0">
         <a href="#0" id="fixed-back" style="display: none;"><img src="images/uparrow.png" title="Back to Top"></a>
-        <!--========================================================
-                              HEADER
-    =========================================================-->
+
         <header>
             <div id="stuck_container" class="stuck_container">
                 <div class="container">
                     <div class="brand">
                         <h1 class="brand_name">
-                        <a href="index.php"><img src="images/vib_banner_small.png" style="width: 50%;height: 50%"></a>
-                    </h1>
+                            <a href="index.php"><img src="images/vib_banner_small.png" style="width: 50%;height: 50%"></a>
+                        </h1>
                     </div>
                     <nav class="nav">
                         <ul class="sf-menu">
@@ -88,7 +86,7 @@
                             </li>
                             <li class="active">
                                 <a href="#events">Events</a>
-                                 <ul>
+                                <ul>
                                     <li>
                                         <a href="danceclub.php">Dance</a>
                                     </li>
@@ -141,9 +139,7 @@
                 </div>
             </div>
         </header>
-        <!--========================================================
-                              CONTENT
-    =========================================================-->
+
         <main>
             <section class="well well__offset-3">
                 <div class="container">
@@ -259,7 +255,7 @@
                                 <li>After the time gets over, people have to assemble back and submit all the recordings. The coordinators will be present along with their laptops.</li>
                                 <br>
                             </p>
-                            
+
                         </div>
                     </div>
                     <form>
@@ -282,7 +278,7 @@
                             <ul class="indents-3">
                                 <li>Description of Event:<p>Showcase your talent by mesmerising all, by hitting the correct notes in an awe inspiring melody.<br>Bonafide to be produced for external participants. </p>
                                 </li>
-                                
+
                                 <li>
                                     <br>
                                 </li>
@@ -321,7 +317,7 @@
                         <div class="grid_6">
                             <ul class="indents-3">
                                 <li>Description of Event:<p> The event will be divided into two main categories: Western Music Bands and Indian Music Bands.<br>Bonafide to be produced for external participants.</p></li>
-                                
+
                                 <li>
                                     <br>
                                 </li>
@@ -363,15 +359,17 @@
                                 <li><br></li>
                                 <li>Registration fees: Rs. 100/- per participant. [Internal]</li>
                                 <li>Registration fees: Rs. 100/- per participant. [External]</li>
-                                                            
+
                             </ul>
                         </div>
                         <div class="grid_6">
                             <p class="indents-3">Rules:
                                 <br>
                                 <li>Any instrument can be played.</li>
-                                <li>Maximum time limit is 3 minutes.</li>
+                                <li>A screening round may be held depending on number of registrations.</li>
+                                <li>A maximum time limit of 4 minutes must be adhered to. Otherwise may lead to disqualification.</li>
                                 <li>Any genre of music can be played.</li>
+                                <li>Accompaniying Karoke track is allowed.</li>
                                 <li>Prelims will be conducted.</li>
                                 <br>
                             </p>
@@ -387,9 +385,7 @@
                 </div>
             </section>
         </main>
-        <!--========================================================
-                              FOOTER
-    =========================================================-->
+
         <footer style="background-color: #a95858;">
             <br>
             <div class="container-fluid" style="padding-bottom: 2%">
@@ -413,31 +409,31 @@
     </div>
     <script src="js/script.js"></script>
     <script>
-    $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
+        $(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
                 }
-            }
+            });
         });
-    });
     </script>
     <script src="js/classie-slider.js"></script>
     <script src="js/cbpScroller.js"></script>
     <script>
-    new cbpScroller(document.getElementById('cbp-so-scroller'));
+        new cbpScroller(document.getElementById('cbp-so-scroller'));
     </script>
 </body>
 
 </html>
 <?php
-    if (isset ($conn)){
-      mysqli_close($conn);
-    }
+if (isset ($conn)){
+  mysqli_close($conn);
+}
 ?>

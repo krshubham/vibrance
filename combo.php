@@ -86,7 +86,6 @@ if (isset($_SESSION["username"])) {
             <div class="container">
                 <h2><em>Combo</em>Offers</h2>
                 <div id="divall" style="display: none;"> 
-                    Some text for all
                 </div>
                 <div class="row row__offset-2">
                     <div class="grid_6">
@@ -102,7 +101,7 @@ if (isset($_SESSION["username"])) {
                     <div class="grid_6">
                         <div class="img">
                         <div id="wrapper">
-                            <a href="#popup2">
+                            <a href="#popup1">
                                 <div id="all_click" class="lazy-img" style="padding-bottom: 45.6140350877193%;"><img data-src="images/onspot.jpg" alt=""></div>
                             </a>
                         </div>
@@ -141,7 +140,8 @@ if (isset($_SESSION["username"])) {
                         <input type="checkbox" name="event4" value="some" onclick="return KeepCount()">event4<br />
                         <input type="checkbox" name="event5" value="some" onclick="return KeepCount()">event5<br />
                         </div>
-                    </form>
+                    </form><br />
+                    <a href="combo.php"> <button type="submit"class="btn-reg">Register</button></a>
             </div>
                 </div>
         </div>
