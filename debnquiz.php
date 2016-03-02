@@ -28,7 +28,7 @@
 <html lang="en">
 
 <head>
-    <title>Quiz Club</title>
+    <title>Quiz, Debate and Literary Club</title>
     <meta charset="utf-8">
     <meta name="format-detection" content="telephone=no" />
     <meta name="theme-color" content="#A81C23">
@@ -145,7 +145,7 @@
         <main>
             <section class="well well__offset-3">
                 <div class="container">
-                    <h2><em>Quiz Club</em>EVENTS</h2>
+                    <h2><em>Quiz, Debate and Literary Club</em>EVENTS</h2>
                     <div id="cbp-so-scroller" class="cbp-so-scroller ">
                         <section class="cbp-so-section first-header" style="display:none;">
                             <article class="cbp-so-side cbp-so-side-right">
@@ -261,8 +261,8 @@
                                 <li>
                                     <br>
                                 </li>
-                                <li>Registration fees: Rs. 50/- per member. [Internal]</li>
-                                <li>Registration fees: Rs. 100/- per member. [External]</li>
+                                <li>Registration fees: Rs. 50/- per head. [Internal]</li>
+                                <li>Registration fees: Rs. 100/- per head. [External]</li>
                             </ul>
                         </div>
                         <div class="grid_6">
@@ -299,8 +299,8 @@
                                 <li>
                                     <br>
                                 </li>
-                                <li>Registration fees: Rs. 50/- per team. [Internal]</li>
-                                <li>Registration fees: Rs. 100/- per team. [External]</li>
+                                <li>Registration fees: Rs. 50/- per head. [Internal]</li>
+                                <li>Registration fees: Rs. 100/- per head. [External]</li>
                             </ul>
                         </div>
                         <div class="grid_6">
@@ -343,8 +343,8 @@
                                     <p>Karl Popper debate focuses on relevent and often deeply divisive propositions, emphasizing on development of critical thinking skills and tolerancefor differing view-points.Two teams participate in each debate. One team follows role of affirmative party while other team that of negative party. Debators work together in teams and must research both sides of the issue. Each team is given opportunity yo offer arguments and direct questions to opposing team. Distinguishing feature of this format of debate are cross-examination, where four out of six debators ask their opponents questions and preparing time when the debators can prepare before their speeches.<br>Bonafide to be produced for external participants.</p>
                                 </li>
                                 <li><br></li>
-                                <li>Registration fees: Rs. 50/- per team. [Internal]</li>
-                                <li>Registration fees: Rs. 100/- per team. [External]</li>
+                                <li>Registration fees: Rs. 50/- per head. [Internal]</li>
+                                <li>Registration fees: Rs. 100/- per head. [External]</li>
                             </ul>
                         </div>
                         <div class="grid_6">
@@ -439,8 +439,8 @@
                                         <br>Why don't you all come and find out?<br>Bonafide to be produced for external participants.</p>
                                 </li>
                                 <li><br></li>
-                                <li>Registration fees: Rs. 50/- per team. [Internal]</li>
-                                <li>Registration fees: Rs. 100/- per team. [External]</li>
+                                <li>Registration fees: Rs. 50/- per head. [Internal]</li>
+                                <li>Registration fees: Rs. 100/- per head. [External]</li>
                             </ul>
                         </div>
                         <div class="grid_6">
@@ -498,7 +498,7 @@
                     <h2><em>Air Crash</em>Individual</h2>
                     <br>
                     <br>
-                    <h4 style="text-align: left; font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Dattatreya Datta &nbsp;&nbsp;&nbsp;8106568272<br><br>Kunal Malik &nbsp;&nbsp;&nbsp;9941408779</h4>
+                    <h4 style="text-align: left; font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Dattatreya Datta &nbsp;&nbsp;&nbsp;8106578272<br><br>Kunal Malik &nbsp;&nbsp;&nbsp;9941408779</h4>
                     <div class="row">
                         <div class="grid_6">
                             <ul class="indents-3">
@@ -506,8 +506,8 @@
                                     <p>You are sitting in a plane and something goes wrong. The engine fails- every frequent flier's nightmare. The plane is falling and the pilot says there are two parachutes, one for the pilot and one for the person who manages to convince the pilot that they deserve to live the most. Do you think you have what it takes to convince the pilot to give the parachute and not to others?<br>Bonafide to be produced for external participants.</p>
                                 </li>
                                 <li><br></li>
-                                <li>Registration fees: Rs. 50/- per team. [Internal]</li>
-                                <li>Registration fees: Rs. 100/- per team. [External]</li>
+                                <li>Registration fees: Rs. 50/- per head. [Internal]</li>
+                                <li>Registration fees: Rs. 100/- per head. [External]</li>
                             </ul>
                         </div>
                         <div class="grid_6">
@@ -542,8 +542,8 @@
                                     <p>Series of questions to test creativity, spontaneity and wit.<br>Bonafide to be produced for external participants.</p>
                                 </li>
                                 <li><br></li>
-                                <li>Registration fees: Rs. 50/- per team. [Internal]</li>
-                                <li>Registration fees: Rs. 100/- per team. [External]</li>
+                                <li>Registration fees: Rs. 50/- per head. [Internal]</li>
+                                <li>Registration fees: Rs. 100/- per head. [External]</li>
                             </ul>
                         </div>
                         <div class="grid_6">
@@ -569,8 +569,8 @@
                                     <p>The word 'potpourri' indicates a mixture. The event is a mix of many different events.<br>Bonafide to be produced for external participants.</p>
                                 </li>
                                 <li><br></li>
-                                <li>Registration fees: Rs. 50/- per team. [Internal]</li>
-                                <li>Registration fees: Rs. 100/- per team. [External]</li>
+                                <li>Registration fees: Rs. 50/- per head. [Internal]</li>
+                                <li>Registration fees: Rs. 100/- per head. [External]</li>
                             </ul>
                         </div>
                         <div class="grid_6">
@@ -596,8 +596,8 @@
                                     <p>How well do you know your literature? Come test your mettle.<br>Bonafide to be produced for external participants.</p>
                                 </li>
                                 <li><br></li>
-                                <li>Registration fees: Rs. 50/- per team. [Internal]</li>
-                                <li>Registration fees: Rs. 100/- per team. [External]</li>
+                                <li>Registration fees: Rs. 50/- per head. [Internal]</li>
+                                <li>Registration fees: Rs. 100/- per head. [External]</li>
                             </ul>
                         </div>
                         <div class="grid_6">
@@ -629,8 +629,8 @@
                                     </p>
                                 </li>
                                 <li><br></li>
-                                <li>Registration fees: Rs. 50/- per team. [Internal]</li>
-                                <li>Registration fees: Rs. 100/- per team. [External]</li>
+                                <li>Registration fees: Rs. 50/- per head. [Internal]</li>
+                                <li>Registration fees: Rs. 100/- per head. [External]</li>
                             </ul>
                         </div>
                         <div class="grid_6">
@@ -668,8 +668,8 @@
                                     <p>Put your vocabulary up for a test with this popular word game, except that this time, your childhood game has gotten itself a makeover.<br>Bonafide to be produced for external participants.</p>
                                 </li>
                                 <li><br></li>
-                                <li>Registration fees: Rs. 50/- per team. [Internal]</li>
-                                <li>Registration fees: Rs. 100/- per team. [External]</li>
+                                <li>Registration fees: Rs. 50/- per head. [Internal]</li>
+                                <li>Registration fees: Rs. 100/- per head. [External]</li>
                             </ul>
                         </div>
                         <div class="grid_6">
