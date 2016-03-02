@@ -991,6 +991,51 @@ a[href^="tel:"] {
     color: #ffffff;
 }
 
+.parallax86 {
+    color: #ffffff;
+    background-color: #FFF;
+    background-image: url(../images/ballon_para.jpg);
+    padding: 142px 0 142px;
+}
+
+.parallax86 h2 {
+    color: #ffffff;
+}
+
+
+.parallax87 {
+    color: #ffffff;
+    background-color: #FFF;
+    background-image: url(../images/dressup_para.jpg);
+    padding: 142px 0 142px;
+}
+
+.parallax87 h2 {
+    color: #ffffff;
+}
+
+
+.parallax88 {
+    color: #ffffff;
+    background-color: #FFF;
+    background-image: url(../images/blind_para.jpg);
+    padding: 142px 0 142px;
+}
+
+.parallax88 h2 {
+    color: #ffffff;
+}
+
+.parallax89 {
+    color: #ffffff;
+    background-color: #FFF;
+    background-image: url(../images/virtual_para.jpg);
+    padding: 142px 0 142px;
+}
+
+.parallax89 h2 {
+    color: #ffffff;
+}
 .parallax12 {
     color: #ffffff;
     background-color: #FFF;
