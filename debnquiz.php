@@ -561,7 +561,7 @@
                     <h2><em>Potpourri</em>Team</h2>
                     <br>
                     <br>
-                    <h4 style="text-align: left; font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Parth Jawale &nbsp;&nbsp;&nbsp;8681878995<br><br>Rahul Hazarika &nbsp;&nbsp;&nbsp;9840819956<br><br>Ramya P. &nbsp;&nbsp;&nbsp;Number</h4>
+                    <h4 style="text-align: left; font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Parth Jawale &nbsp;&nbsp;&nbsp;8681878995<br><br>Ramya P. &nbsp;&nbsp;&nbsp;Number</h4>
                     <div class="row">
                         <div class="grid_6">
                             <ul class="indents-3">
@@ -614,7 +614,7 @@
             </section>
             <section name="eleventh" class="parallax parallax27" data-parallax-speed="-0.4">
                 <div class="container">
-                    <h2><em>Turn Court</em>Team</h2>
+                    <h2><em>Turn Court</em>Individual</h2>
                     <br>
                     <br>
                     <h4 style="text-align: left; font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Shereen Hessa &nbsp;&nbsp;&nbsp;9092847062<br><br>Rahul Hazarika &nbsp;&nbsp;&nbsp;9840819956</h4>
@@ -622,8 +622,8 @@
                         <div class="grid_6">
                             <ul class="indents-3">
                                 <li>Description of Event:
-                                    <p>Ola Mates!
-                                        <br>One particular Topic will be given to the team.Each team have to speak on the topic(For).Moment we say "TURN" the team have to go against the topic and speak and so on.
+                                    <p>Summon Your Mates!
+                                        <br>OOne particular Topic will be given to the team.Each team have to speak on the topic(For).Moment we say "TURN" the team have to go against the topic and speak and so on.
                                         <br> Proper Coordination and Team work is key to win.
                                         <br>Gather around And Speak up!<br>Bonafide to be produced for external participants.
                                     </p>
