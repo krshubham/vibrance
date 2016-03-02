@@ -63,7 +63,7 @@
 		<!--========================================================
 							  HEADER
 							  =========================================================-->
-		<header style="background-color: #E85657;">
+		<header>
 			<div id="stuck_container" class="stuck_container">
 				<div class="container">
 					<div class="brand">
@@ -1250,4 +1250,5 @@
 	new cbpScroller(document.getElementById('cbp-so-scroller'));
 	</script>
 </body>
+
 </html>

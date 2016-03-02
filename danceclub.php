@@ -198,7 +198,7 @@
                     <h2><em>Adaptune</em>Individual</h2>
                     <br>
                     <br>
-                    <h4 style="text-align: left;font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Piyush Gupta &nbsp;&nbsp;&nbsp;9362229525<br><br>Pragya Gupta &nbsp;&nbsp;&nbsp;9952040969<br><br>Shreya Krishna &nbsp;&nbsp;&nbsp;9176438911</h4>
+                    <h4 style="text-align: left;font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Anwesh C. &nbsp;&nbsp;&nbsp;8885999805<br><br>Pragya Gupta &nbsp;&nbsp;&nbsp;9952040969<br><br>Shreya Krishna &nbsp;&nbsp;&nbsp;9176438911</h4>
                     <div class="row">
                         <div class="grid_6">
                             <ul class="indents-3">
@@ -283,7 +283,7 @@
                                 <option value="0">Select the number of participants in your team</option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
-                            </select>
+                            </select>                            
                         </center>
                         <div style="text-align: center; ">
                             <input id="bollywoodbattle" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
@@ -307,7 +307,7 @@
                                         <li>No use of any substance that can spoil the stage</li>
                                         <li>Also indecent clothes and indecent or vulgar dance is also prohibited. </li>
                                         <li>Judges decision will be the final decision. "</li>
-                                        <li>&#8226;&nbsp;Duration: 2-3 min</li>
+                                        <li>&#8226;&nbsp;Duration: 3-4 min</li>
                                     <br>Bonafide to be produced for external participants.</p>
                                 </li>
                                 <li>
@@ -334,7 +334,7 @@
                     <h2><em>Choreo Night</em>Group</h2>
                     <br>
                     <br>
-                    <h4 style="text-align: left; font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Ansh &nbsp;&nbsp;&nbsp;9176857902<br><br>Shreesh S. &nbsp;&nbsp;&nbsp;8124092109<br><br>Anvesh C. &nbsp;&nbsp;&nbsp;8885999805<br><br>Kavita &nbsp;&nbsp;&nbsp;9941173445</h4>
+                    <h4 style="text-align: left; font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Ansh &nbsp;&nbsp;&nbsp;9176857902<br><br>Piyush Gupta &nbsp;&nbsp;&nbsp;9362229525<br><br>Shreesh S. &nbsp;&nbsp;&nbsp;8124092109<br><br>Kavita &nbsp;&nbsp;&nbsp;9941173445</h4>
                     <div class="row">
                         <div class="grid_6">
                             <ul class="indents-3">
