@@ -302,9 +302,11 @@
                         <div class="grid_6">
                             <ul class="indents-3">
                                 <li>Description of Event:
-                                    <p>Be it a couple or a pair of crazy dancers - showcase your co-ordinated moves to the best 'Dancing Duo'. Competitive Dance event with several groups of 2 people competiting with each other:
-                                        <li>&#8226;&nbsp;The duet category will have 2 rounds: prelims and finals.</li>
-                                        <li>&#8226;&nbsp;The prelims will have a barrier between teammmates to ensure zero interaction and test co-ordination.</li>
+                                    <p>Be it a couple or a pair of crazy dancers - showcase your co-ordinated moves to the best 'Dancing Duo'. Competitive Dance event with several groups of 2 people competiting with each other:                                        
+                                        <li>Use of inflammable substance and sharp objects are strictly prohibited. </li>
+                                        <li>No use of any substance that can spoil the stage</li>
+                                        <li>Also indecent clothes and indecent or vulgar dance is also prohibited. </li>
+                                        <li>Judges decision will be the final decision. "</li>
                                         <li>&#8226;&nbsp;Duration: 2-3 min</li>
                                     <br>Bonafide to be produced for external participants.</p>
                                 </li>
