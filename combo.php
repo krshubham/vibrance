@@ -141,7 +141,7 @@ if (isset($_SESSION["username"])) {
                         <input type="checkbox" name="event5" value="some" onclick="return KeepCount()">event5<br />
                         </div>
                     </form><br />
-                    <button type="submit" target="combo.php" class="btn-reg">Register</button>
+                    <a href="combo.php"> <button type="submit"class="btn-reg">Register</button></a>
             </div>
                 </div>
         </div>
