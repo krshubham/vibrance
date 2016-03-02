@@ -283,7 +283,7 @@
                                 <option value="0">Select the number of participants in your team</option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
-                            </select>
+                            </select>                            
                         </center>
                         <div style="text-align: center; ">
                             <input id="bollywoodbattle" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
@@ -307,7 +307,7 @@
                                         <li>No use of any substance that can spoil the stage</li>
                                         <li>Also indecent clothes and indecent or vulgar dance is also prohibited. </li>
                                         <li>Judges decision will be the final decision. "</li>
-                                        <li>&#8226;&nbsp;Duration: 2-3 min</li>
+                                        <li>&#8226;&nbsp;Duration: 3-4 min</li>
                                     <br>Bonafide to be produced for external participants.</p>
                                 </li>
                                 <li>
