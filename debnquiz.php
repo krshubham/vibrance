@@ -668,8 +668,8 @@
                                     <p>Put your vocabulary up for a test with this popular word game, except that this time, your childhood game has gotten itself a makeover.<br>Bonafide to be produced for external participants.</p>
                                 </li>
                                 <li><br></li>
-                                <li>Registration fees: Rs. 50/- per head. [Internal]</li>
-                                <li>Registration fees: Rs. 100/- per head. [External]</li>
+                                <li>Registration fees: Rs. 50/- per team. [Internal]</li>
+                                <li>Registration fees: Rs. 100/- per team. [External]</li>
                             </ul>
                         </div>
                         <div class="grid_6">
