@@ -17,7 +17,7 @@ if (isset($_SESSION["username"])) {
     $current_user = "";  
     $first_name = "";
     $name_title = "";
-    $view = "<a href='login/index.php'>Login</a>";1  
+    $view = "<a href='login/index.php'>Login</a>";  
     $login_view = "<a href='login/index.php' class='gobutton'>Login to register</a>"; 
     $event_view = "style='display: none;'";     
 }  
