@@ -92,7 +92,7 @@ if (isset($_SESSION["username"])) {
                         <div class="img">
                             <div id="wrapper">
                             <p><a href="#popup1">
-                                <div id="three_click" class="lazy-img" style="padding-bottom: 45.6140350877193%;"><img data-src="images/payment.jpg" alt=""></div>
+                                <div id="three_click" class="lazy-img" style="padding-bottom: 45.6140350877193%;"><img data-src="images/three_int.jpg" alt=""></div>
                             </a></p>
                             </div>
                         </div>
@@ -102,7 +102,7 @@ if (isset($_SESSION["username"])) {
                         <div class="img">
                         <div id="wrapper">
                             <a href="#popup1">
-                                <div id="all_click" class="lazy-img" style="padding-bottom: 45.6140350877193%;"><img data-src="images/onspot.jpg" alt=""></div>
+                                <div id="all_click" class="lazy-img" style="padding-bottom: 45.6140350877193%;"><img data-src="images/all_int.jpg" alt=""></div>
                             </a>
                         </div>
                         </div>
