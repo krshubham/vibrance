@@ -223,8 +223,8 @@ if (isset($_SESSION["username"])) {
                     <form>
                         <input type="text" id="event_dumbcharades" value="dumbcharades_team_50_s" style="display: none;">   
                         <center>
-                            <select id="parti_bollywoodbattle" <?php echo $event_view; ?> >
-                                <option value="0">Select the number of participants in your team</option>
+                            <select id="parti_dumbcharades" <?php echo $event_view; ?> >
+                                <option value="1">Select the number of participants in your team</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                             </select>                            
