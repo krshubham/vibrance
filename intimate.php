@@ -9,7 +9,7 @@
 	$email2 = $_GET['email2'];
 	$email = $email1."@".$email2;	
 	$event = $_GET['event'];	
-	$fees = $_GET['fees'];
+	$fees = $_GET['price'];
 
 	require 'PHPMailer-master/PHPMailerAutoload.php';
  
@@ -28,7 +28,7 @@
 	$mail->isHTML(true);                                  
 	 
 	$mail->Subject = 'Vibrance event registration.';
-	$mail->Body    = 'You have still not paid for <b>'.ucfirst($event_part[0]).'</b> in Vibrance16. Your E registration slip will be mailed and your participation will only be confirmed when you pay <b>Rs.'.$fees.'</b> at our payment desks in VIT.'.'<br>'.' Regards, Team Vibrance. ';
+	$mail->Body    = 'You have still not paid for <b>'.ucfirst($event).'</b> in Vibrance16. Your E registration slip will be mailed and your participation will only be confirmed when you pay <b>Rs.'.$fees.'</b> at our payment desks in VIT.'.'<br>'.' Regards, Team Vibrance. ';
 	$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';	
 
 	if(!$mail->send()) {
