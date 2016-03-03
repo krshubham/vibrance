@@ -53,6 +53,7 @@ if(isset($_POST['signup'])){
 			$regno = "";
 		}
 		$phno = $_POST['phno'];
+		$altphno = $_POST['altphno'];
 		$hashed_password = password_encrypt($_POST['password']);         
 
 		$query = "INSERT INTO users (name, username, college, regno, phno, hashed_password)";
@@ -146,6 +147,10 @@ if(isset($_POST['signup'])){
 						<div class="form-group">
 							<label class="control-label" for="inputNormal">Contact Number</label>
 							<input type="number" name="phno" id="signup_password" value="" class="bp-suggestions form-control" cols="50" rows="10" required></input>
+						</div>
+						<div class="form-group">
+							<label class="control-label" for="inputNormal">Alternate Number</label>
+							<input type="number" name="altphno" id="signup_password" value="" class="bp-suggestions form-control" cols="50" rows="10" required></input>
 						</div>
 						<div class="form-group soninpt" style="margin-bottom: 0.5em;"> 
 							<label class="control-label" for="inputNormal" required>Password</label>

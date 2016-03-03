@@ -1,3 +1,28 @@
+<?php require_once("includes/session.php"); ?>
+<?php require_once("includes/db_connection.php"); ?>
+<?php require_once("includes/functions.php"); ?>
+
+<?php 
+    if (isset($_SESSION["username"])) {
+        $current_user = $_SESSION["username"];
+        $name_query = "SELECT * FROM users WHERE username = '{$current_user}' LIMIT 1";
+        $name_result = mysqli_query($conn, $name_query);
+        confirm_query($name_result);
+        $name_title = mysqli_fetch_assoc($name_result);
+        $first_name = explode(" ", $name_title['name']);            
+        $view = "<a href='logout.php'>Logout, ".$first_name[0]."</a>"; 
+        $event_view = ""; 
+        $login_view = "";      
+    } else {
+        $current_user = "";  
+        $first_name = "";
+        $name_title = "";
+        $view = "<a href='login/index.php'>Login</a>";  
+        $login_view = "<a href='login/index.php' class='gobutton'>Login to register</a>"; 
+        $event_view = "style='display: none;'";     
+    }   
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,6 +41,10 @@
     <link rel="stylesheet" type="text/css" href="css/style-slider.css" />
     <link rel="stylesheet" type="text/css" href="css/component-slider.css" />
     <script src="js/modernizr.custom-slider.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/backtotop.css">
+    <script type="text/javascript" src="js/backtotop.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/refreshform.js"></script>
     <!--[if lt IE 9]>
     <html class="lt-ie9">
     <div style=' clear: both; text-align:center; position: relative;'>
@@ -105,6 +134,9 @@
                             <li>
                                 <a href="#">Meet the Team</a>
                             </li>
+                            <li>
+                                <?php echo $view; ?>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -187,6 +219,20 @@
                             </p>
                         </div>
                     </div>
+                    <form>
+                        <input type="text" id="event_hellothamizha" value="hellothamizha_team_50_d" style="display: none;">
+                        <center>
+                            <select id="parti_hellothamizha" <?php echo $event_view; ?> >
+                                <option value="0">Select the number of participants in your team</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>                            
+                        </center>
+                        <div style="text-align: center; ">
+                            <input id="hellothamizha" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <?php echo $login_view; ?>
+                        </div>
+                    </form>    
                 </div>
             </section>
             <section name="second" class="parallax parallax33" data-parallax-speed="-0.4">
@@ -216,6 +262,13 @@
                             </p>
                         </div>
                     </div>
+                    <form>
+                        <input type="text" id="event_maathipesavum" value="maathipesavum_alone_50_d" style="display: none;">                    
+                        <div style="text-align: center; ">
+                            <input id="maathipesavum" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <?php echo $login_view; ?>
+                        </div>
+                    </form>  
                 </div>
             </section>
             <section name="third" class="parallax parallax34" data-parallax-speed="-0.4">
@@ -244,10 +297,24 @@
                                 <li>ROUND 4: Pictorial Representation The teams will be given with the tamil word. They should draw some related pictures to identity the given tamil word.</li> 
                                 <li>ROUND 5: BUZZER ROUND * Movie Dialogue * BGM/Karaoke.<br> The team should find the Movie name, Director name, Actor.</li>
                                 <br>
-                            </p>
-                            
+                            </p>                            
                         </div>
                     </div>
+                    <form>
+                        <input type="text" id="event_merasalaaitan" value="merasalaaitan_team_50_d" style="display: none;">
+                        <center>
+                            <select id="parti_merasalaaitan" <?php echo $event_view; ?> >
+                                <option value="0">Select the number of participants in your team</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>                            
+                        </center>
+                        <div style="text-align: center; ">
+                            <input id="merasalaaitan" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <?php echo $login_view; ?>
+                        </div>
+                    </form>    
                 </div>
             </section>
             <section name="fourth" class="parallax parallax35" data-parallax-speed="-0.4">
@@ -273,10 +340,23 @@
                                 <li>Time constraint for each round is applicable.</li> 
                                 <li>Rounds: <br>1. Konjam Nadinga Boss: This round is similar to dumb charades to find the cine songs (No elimination). <br>2.Adrasaka: Find the movie name by giving clue of 3 words (only tamil words, Elimination based on scores). <br>3. Mathi Yosi: Find the song from the given shuffled lyrics of the cine song (Elimination based on scores). <br>4.Connection Killadi:(Final Round) Find the similarity from the list of videos, Winner based on top score.</li>
                                 <br>
-                            </p>
-                            
+                            </p>                            
                         </div>
                     </div>
+                    <form>
+                        <input type="text" id="event_therikkavidalama" value="therikkavidalama_team_50_d" style="display: none;">
+                        <center>
+                            <select id="parti_therikkavidalama" <?php echo $event_view; ?> >
+                                <option value="0">Select the number of participants in your team</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>                                
+                            </select>                            
+                        </center>
+                        <div style="text-align: center; ">
+                            <input id="therikkavidalama" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <?php echo $login_view; ?>
+                        </div>
+                    </form>   
                 </div>
             </section>
         </main>
@@ -329,3 +409,8 @@
 </body>
 
 </html>
+<?php
+    if (isset ($conn)){
+      mysqli_close($conn);
+    }
+?>

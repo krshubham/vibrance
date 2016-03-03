@@ -528,4 +528,36 @@ $(document).ready(function() {
             alert(data);
         });
     });
+
+    $("#hellothamizha").click(function() {
+        var event = $("#event_hellothamizha").val();
+        var parti = $("#parti_hellothamizha").val();
+        $.post("refreshform.php", { event1: event, parti1: parti }, function(data) {
+            alert(data);
+        });
+    });
+
+    $("#maathipesavum").click(function() {
+        var event = $("#event_maathipesavum").val();
+        var parti = 1;
+        $.post("refreshform.php", { event1: event, parti1: parti }, function(data) {
+            alert(data);
+        });
+    });
+
+    $("#merasalaaitan").click(function() {
+        var event = $("#event_merasalaaitan").val();
+        var parti = $("#parti_merasalaaitan").val();
+        $.post("refreshform.php", { event1: event, parti1: parti }, function(data) {
+            alert(data);
+        });
+    });
+
+    $("#therikkavidalama").click(function() {
+        var event = $("#event_therikkavidalama").val();
+        var parti = $("#parti_therikkavidalama").val();
+        $.post("refreshform.php", { event1: event, parti1: parti }, function(data) {
+            alert(data);
+        });
+    });
 });
