@@ -101,7 +101,7 @@ if (isset($_SESSION["username"])) {
                     <div class="grid_6">
                         <div class="img">
                         <div id="wrapper">
-                            <a href="#popup1">
+                            <a href="#popup2">
                                 <div id="all_click" class="lazy-img" style="padding-bottom: 45.6140350877193%;"><img data-src="images/all_int.jpg" alt=""></div>
                             </a>
                         </div>
@@ -150,6 +150,7 @@ if (isset($_SESSION["username"])) {
 <div id="popup2" class="overlay light">
     <a class="cancel" href="#"></a>
     <div class="popup">
+        <a class="close" href="#">&times;</a>
         <h2>What the what?</h2>
         <div class="content">
       <p>Click outside the popup to close.</p>
