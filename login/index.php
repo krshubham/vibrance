@@ -170,8 +170,7 @@ if(isset($_POST['signup'])){
 			<div class="right">
 				<div id="ic">
 					<h2 style="color: #E85657;">Login</h2>
-					<form id="girisyap" method="post" action="index.php">
-
+					<form id="girisyap" method="post" action="index.php" onsubmit="email_check()">
 						<div class="form-group">
 							<label class="control-label" for="inputNormal">Username</label>
 							<input type="text" name="username" class="bp-suggestions form-control" cols="50" rows="10" required></input>
@@ -216,11 +215,10 @@ if(isset($_POST['signup'])){
 			var inputString = document.getElementById('signup_email').value;
 			var findme = "@vit.ac.in";
 			if ( inputString.indexOf(findme) > -1 ) {
-		  	alert( "found it" );
-		  	return 0;
+		  	return true;
 			} 
 			else {
-		  		window.alert("Enter VIT email");
+		  		return false;
 		}
 	</script>
 	<script src="script.js"></script>
