@@ -124,7 +124,7 @@ if (isset($_SESSION["username"])) {
             <a class="close" href="#">&times;</a>
             <div class="content">
                 <div class="col1">
-                    <div id="divthree" style="display: none;">
+                    <div id="divthree" >
                         <form name="form">
                             <div class="pure-g">
                                 <div class="pure-u-1-3">

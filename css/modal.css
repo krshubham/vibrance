@@ -113,6 +113,8 @@ h1 {
 .btn-reg{
   border-radius: 1em;
   padding: 0.8em;
+  position: absolute;
+  left: 42%;
 }
 .btn-reg:hover{
   cursor: pointer;
