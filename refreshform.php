@@ -15,6 +15,7 @@
 	$college = $name_title['college'];
 	$regno = $name_title['regno'];
 	$phno = $name_title['phno'];
+	$altphno = $name_title['altphno'];
 	$event = $_POST['event1'];
 	$event_part = explode("_", $event);
 	$parti = $_POST['parti1'];
@@ -58,8 +59,8 @@
 		}	
 		
 		
-		$query = "INSERT INTO {$event} (name, email, college, regno, phno, parti)";
-		$query .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', {$parti})";
+		$query = "INSERT INTO {$event} (name, email, college, regno, phno, altphno, parti)";
+		$query .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', '{$altphno}', {$parti})";
 		$result = mysqli_query($conn, $query);	
 
 	    if ($result) {
