@@ -350,6 +350,23 @@ if (isset($_SESSION["username"])) {
       </div>
   </div>
 
+  <script type="text/javascript">
+  $(".btn-reg").click(function(){
+            if(($("#first_event")[0].selectedIndex==0)||($("#second_event")[0].selectedIndex==0)||($("#third_event")[0].selectedIndex==0)){
+                return false;
+            }
+            else{
+                regevent();
+            }
+  });
+
+        function regevent(){
+        $(".btn-reg").attr("value","Registered!");
+        $(".btn-reg").css("background-color","green");
+        $(".btn-reg").css("color","black");
+      }
+  </script>
+
   <script src="js/script.js"></script>
 </body>
 </html>
