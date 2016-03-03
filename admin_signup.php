@@ -26,7 +26,7 @@ if(isset($_POST['submit'])){
 	$required_fields = array("username", "password");
 	validate_presence($required_fields);
 	
-	$fields_with_max_lengths = array("username" => 30);
+	$fields_with_max_lengths = array("username" => 200);
 	validate_max_lengths($fields_with_max_lengths);
 
 	if (empty($errors)) {

@@ -39,7 +39,7 @@ if(isset($_POST['signup'])){
 	$required_fields = array("username", "password");
 	validate_presence($required_fields);
 
-	$fields_with_max_lengths = array("username" => 30);
+	$fields_with_max_lengths = array("username" => 60);
 	validate_max_lengths($fields_with_max_lengths);
 
 	if (empty($errors)) {
