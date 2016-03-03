@@ -1,3 +1,28 @@
+<?php require_once("includes/session.php"); ?>
+<?php require_once("includes/db_connection.php"); ?>
+<?php require_once("includes/functions.php"); ?>
+
+<?php 
+    if (isset($_SESSION["username"])) {
+        $current_user = $_SESSION["username"];
+        $name_query = "SELECT * FROM users WHERE username = '{$current_user}' LIMIT 1";
+        $name_result = mysqli_query($conn, $name_query);
+        confirm_query($name_result);
+        $name_title = mysqli_fetch_assoc($name_result);
+        $first_name = explode(" ", $name_title['name']);            
+        $view = "<a href='logout.php'>Logout, ".$first_name[0]."</a>"; 
+        $event_view = ""; 
+        $login_view = "";      
+    } else {
+        $current_user = "";  
+        $first_name = "";
+        $name_title = "";
+        $view = "<a href='login/index.php'>Login</a>";  
+        $login_view = "<a href='login/index.php' class='gobutton'>Login to register</a>"; 
+        $event_view = "style='display: none;'";     
+    }   
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,6 +43,8 @@
     <script src="js/modernizr.custom-slider.js"></script>
     <link rel="stylesheet" type="text/css" href="css/backtotop.css">
     <script type="text/javascript" src="js/backtotop.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/refreshform.js"></script>
     <!--[if lt IE 9]>
     <html class="lt-ie9">
     <div style=' clear: both; text-align:center; position: relative;'>
@@ -93,6 +120,9 @@
                             <li>
                                 <a href="#">Meet the Team</a>
                             </li>
+                            <li>
+                                <?php echo $view; ?>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -131,6 +161,13 @@
                             </ul>
                         </div>
                     </div>
+                    <form>
+                        <input type="text" id="event_tamilworkshop" value="tamilworkshop_alone_50_d" style="display: none;">                    
+                        <div style="text-align: center; ">
+                            <input id="tamilworkshop" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <?php echo $login_view; ?>
+                        </div>
+                    </form>     
                 </div>
             </section>
             <!--<section name="second" class="parallax parallax8" data-parallax-speed="-0.4">
@@ -251,3 +288,8 @@
 </body>
 
 </html>
+<?php
+    if (isset ($conn)){
+      mysqli_close($conn);
+    }
+?>
