@@ -44,20 +44,16 @@ if(isset($_POST['signup'])){
 
 	if (empty($errors)) {
 
-		$name = $_POST['name'];    
+		$name = mysqli_real_escape_string($conn, htmlspecialchars($_POST['name']));   
 		$username = mysql_prep($_POST['username']);  
-		if (isset($_POST['college'])) {
-			$college = $_POST['college'];
-		} else {
-			$college = "VIT";
-		}
+		$college = mysqli_real_escape_string($conn, htmlspecialchars($_POST['college']));
 		if (isset($_POST['regno'])) {
-			$regno = $_POST['regno'];
+			$regno = mysqli_real_escape_string($conn, htmlspecialchars($_POST['regno']));
 		} else {
 			$regno = "";
 		}
-		$phno = $_POST['phno'];
-		$altphno = $_POST['altphno'];
+		$phno = mysqli_real_escape_string($conn, htmlspecialchars($_POST['phno']));
+		$altphno = mysqli_real_escape_string($conn, htmlspecialchars($_POST['altphno']));
 		$hashed_password = password_encrypt($_POST['password']);         
 
 		$query = "INSERT INTO users (name, username, college, regno, phno, altphno, hashed_password)";
@@ -142,7 +138,7 @@ if(isset($_POST['signup'])){
 						</div>
 						<div class="form-group" style="display: none;" id="col-name">
 							<label class="control-label" for="inputNormal">Name of the college</label>
-							<input type="text" name="college" id="signup_password" value="" class="bp-suggestions form-control" cols="50" rows="10"></input>
+							<input type="text" name="college" id="signup_password" class="bp-suggestions form-control" cols="50" rows="10"></input>
 						</div>
 						<div class="form-group" id="rgno">
 							<label class="control-label" for="inputNormal">Reg. No(only for VIT students)</label>
