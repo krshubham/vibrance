@@ -101,7 +101,7 @@ if (isset($_SESSION["username"])) {
                     <div class="grid_6">
                         <div class="img">
                         <div id="wrapper">
-                            <a href="#popup1">
+                            <a href="#popup2">
                                 <div id="all_click" class="lazy-img" style="padding-bottom: 45.6140350877193%;"><img data-src="images/all_int.jpg" alt=""></div>
                             </a>
                         </div>
@@ -117,7 +117,7 @@ if (isset($_SESSION["username"])) {
 </div>
 <div id="popup1" class="overlay">
     <div class="popup">
-        <h2>Info box</h2>
+        <h2>Choose events</h2>
         <a class="close" href="#">&times;</a>
         <div class="content">
         <div class="col1">
@@ -128,28 +128,17 @@ if (isset($_SESSION["username"])) {
                         <input type="checkbox" name="event3" value="some" onclick="return KeepCount()">event3<br />
                         <input type="checkbox" name="event4" value="some" onclick="return KeepCount()">event4<br />
                         <input type="checkbox" name="event5" value="some" onclick="return KeepCount()">event5<br />
+                        <input type="submit" class="btn-reg" value="Register"></input>
                     </form>
             </div>
-            <div class="col2">
-                <div id="divthree"></div>
-                    <form name="form">
-                        <div class="grid_3">
-                        <input type="checkbox" name="event1" value="some" onclick="return KeepCount()">event1<br />
-                        <input type="checkbox" name="event2" value="some" onclick="return KeepCount()">event2<br />
-                        <input type="checkbox" name="event3" value="some" onclick="return KeepCount()">event3<br />
-                        <input type="checkbox" name="event4" value="some" onclick="return KeepCount()">event4<br />
-                        <input type="checkbox" name="event5" value="some" onclick="return KeepCount()">event5<br />
-                        </div>
-                    </form><br />
-                    <a href="combo.php"> <button type="submit"class="btn-reg">Register</button></a>
             </div>
-                </div>
         </div>
     </div>
 </div>
 <div id="popup2" class="overlay light">
     <a class="cancel" href="#"></a>
     <div class="popup">
+        <a class="close" href="#">&times;</a>
         <h2>What the what?</h2>
         <div class="content">
       <p>Click outside the popup to close.</p>
@@ -188,7 +177,7 @@ if (isset($_SESSION["username"])) {
         if (document.form.event5.checked)
             {NewCount = NewCount + 1}
 
-        if (NewCount == 3)
+        if (NewCount == 4)
         {
             alert('Pick Just Two Please')
             document.form; return false;

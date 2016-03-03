@@ -3,24 +3,24 @@
 <?php require_once("includes/functions.php"); ?>
 
 <?php 
-    if (isset($_SESSION["username"])) {
-        $current_user = $_SESSION["username"];
-        $name_query = "SELECT * FROM users WHERE username = '{$current_user}' LIMIT 1";
-        $name_result = mysqli_query($conn, $name_query);
-        confirm_query($name_result);
-        $name_title = mysqli_fetch_assoc($name_result);
-        $first_name = explode(" ", $name_title['name']);            
-        $view = "<a href='logout.php'>Logout, ".$first_name[0]."</a>"; 
-        $event_view = ""; 
-        $login_view = "";      
-    } else {
-        $current_user = "";  
-        $first_name = "";
-        $name_title = "";
-        $view = "<a href='login/index.php'>Login</a>";  
-        $login_view = "<a href='login/index.php' class='gobutton'>Login to register</a>"; 
-        $event_view = "style='display: none;'";     
-    }   
+	if (isset($_SESSION["username"])) {
+		$current_user = $_SESSION["username"];
+		$name_query = "SELECT * FROM users WHERE username = '{$current_user}' LIMIT 1";
+		$name_result = mysqli_query($conn, $name_query);
+		confirm_query($name_result);
+		$name_title = mysqli_fetch_assoc($name_result);
+		$first_name = explode(" ", $name_title['name']);            
+		$view = "<a href='logout.php'>Logout, ".$first_name[0]."</a>"; 
+		$event_view = ""; 
+		$login_view = "";      
+	} else {
+		$current_user = "";  
+		$first_name = "";
+		$name_title = "";
+		$view = "<a href='login/index.php'>Login</a>";  
+		$login_view = "<a href='login/index.php' class='gobutton'>Login to register</a>"; 
+		$event_view = "style='display: none;'";     
+	}   
 ?>
 
 <!DOCTYPE html>
@@ -45,8 +45,8 @@
 	<link rel="stylesheet" type="text/css" href="css/checkout-sidebar.css">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<script type="text/javascript" src="js/backtotop.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/refreshform.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="js/refreshform.js"></script>
 	<!--[if lt IE 9]>
 	<html class="lt-ie9">
 	<div style=' clear: both; text-align:center; position: relative;'>
@@ -154,9 +154,9 @@
 							<li>
 								<a href="#">Meet the Team</a>
 							</li>
-                            <li>
-                                <?php echo $view; ?>
-                            </li>
+							<li>
+								<?php echo $view; ?>
+							</li>
 						</ul>
 					</nav>
 				</div>
@@ -277,13 +277,13 @@
 							</p>
 						</div>
 					</div>
-                    <form>
-                        <input type="text" id="event_irrelevance" value="irrelevance_alone_50_d" style="display: none;">                    
-                        <div style="text-align: center; ">
-                            <input id="irrelevance" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
-                            <?php echo $login_view; ?>
-                        </div>
-                    </form>    
+					<form>
+						<input type="text" id="event_irrelevance" value="irrelevance_alone_50_d" style="display: none;">                    
+						<div style="text-align: center; ">
+							<input id="irrelevance" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+							<?php echo $login_view; ?>
+						</div>
+					</form>    
 				</div>
 			</section>
 			<section name="second" class="parallax parallax56" data-parallax-speed="-0.4" id="vmtw">
@@ -322,13 +322,13 @@
 							</p>
 						</div>
 					</div>
-                    <form>
-                        <input type="text" id="event_minutetowin" value="minutetowin_team_50_d" style="display: none;">                    
-                        <div style="text-align: center; ">
-                            <input id="minutetowin" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
-                            <?php echo $login_view; ?>
-                        </div>
-                    </form>    
+					<form>
+						<input type="text" id="event_minutetowin" value="minutetowin_team_50_d" style="display: none;">                    
+						<div style="text-align: center; ">
+							<input id="minutetowin" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+							<?php echo $login_view; ?>
+						</div>
+					</form>    
 				</div>
 			</section>
 			<section name="third" class="parallax parallax57" data-parallax-speed="-0.4" id="runfbucks">
@@ -371,13 +371,13 @@
 							</p>
 						</div>
 					</div>
-                    <form>
-                        <input type="text" id="event_runforbucks" value="runforbucks_team_50_d" style="display: none;">                    
-                        <div style="text-align: center; ">
-                            <input id="runforbucks" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
-                            <?php echo $login_view; ?>
-                        </div>
-                    </form>    
+					<form>
+						<input type="text" id="event_runforbucks" value="runforbucks_team_50_d" style="display: none;">                    
+						<div style="text-align: center; ">
+							<input id="runforbucks" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+							<?php echo $login_view; ?>
+						</div>
+					</form>    
 				</div>
 			</section>
 			<section name="fifth" class="parallax parallax59" data-parallax-speed="-0.4" id="ijokers">
@@ -407,13 +407,13 @@
 							</p>
 						</div>
 					</div>
-                    <form>
-                        <input type="text" id="event_impracticaljokers" value="impracticaljokers_alone_50_d" style="display: none;">                    
-                        <div style="text-align: center; ">
-                            <input id="impracticaljokers" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
-                            <?php echo $login_view; ?>
-                        </div>
-                    </form>   
+					<form>
+						<input type="text" id="event_impracticaljokers" value="impracticaljokers_alone_50_d" style="display: none;">                    
+						<div style="text-align: center; ">
+							<input id="impracticaljokers" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+							<?php echo $login_view; ?>
+						</div>
+					</form>   
 				</div>
 			</section>
 			<section name="sixth" class="parallax parallax60" data-parallax-speed="-0.4" id="moriarty">
@@ -459,21 +459,21 @@
 							</p>
 						</div>
 					</div>
-                    <form>
-                        <input type="text" id="event_moriarty" value="moriarty_team_50_d" style="display: none;">
-                        <center>
-                            <select id="parti_moriarty" <?php echo $event_view; ?> >
-                                <option value="0">Select the number of participants in your team</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                            </select>                            
-                        </center>
-                        <div style="text-align: center; ">
-                            <input id="moriarty" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
-                            <?php echo $login_view; ?>
-                        </div>
-                    </form>    
+					<form>
+						<input type="text" id="event_moriarty" value="moriarty_team_50_d" style="display: none;">
+						<center>
+							<select id="parti_moriarty" <?php echo $event_view; ?> >
+								<option value="0">Select the number of participants in your team</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+							</select>                            
+						</center>
+						<div style="text-align: center; ">
+							<input id="moriarty" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+							<?php echo $login_view; ?>
+						</div>
+					</form>    
 				</div>
 			</section>
 			<section name="seventh" class="parallax parallax61" data-parallax-speed="-0.4" id="5fb">
@@ -522,13 +522,13 @@
 							</p>
 						</div>
 					</div>
-                    <form>
-                        <input type="text" id="event_fivefootball" value="fivefootball_team_50_d" style="display: none;">                    
-                        <div style="text-align: center; ">
-                            <input id="fivefootball" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
-                            <?php echo $login_view; ?>
-                        </div>
-                    </form> 
+					<form>
+						<input type="text" id="event_fivefootball" value="fivefootball_team_50_d" style="display: none;">                    
+						<div style="text-align: center; ">
+							<input id="fivefootball" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+							<?php echo $login_view; ?>
+						</div>
+					</form> 
 				</div>
 			</section>
 			<section name="eighth" class="parallax parallax62" data-parallax-speed="-0.4" id="b2d">
@@ -570,13 +570,13 @@
 							</p>
 						</div>
 					</div>
-                    <form>
-                        <input type="text" id="event_buildtodestroy" value="buildtodestroy_team_50_d" style="display: none;">                    
-                        <div style="text-align: center; ">
-                            <input id="buildtodestroy" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
-                            <?php echo $login_view; ?>
-                        </div>
-                    </form> 
+					<form>
+						<input type="text" id="event_buildtodestroy" value="buildtodestroy_team_50_d" style="display: none;">                    
+						<div style="text-align: center; ">
+							<input id="buildtodestroy" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+							<?php echo $login_view; ?>
+						</div>
+					</form> 
 				</div>
 			</section>
 			<section name="ninth" class="parallax parallax63" data-parallax-speed="-0.4" id="tugofwar">
@@ -612,13 +612,13 @@
 							</p>
 						</div>
 					</div>
-                    <form>
-                        <input type="text" id="event_tugofwar" value="tugofwar_team_50_d" style="display: none;">                    
-                        <div style="text-align: center; ">
-                            <input id="tugofwar" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
-                            <?php echo $login_view; ?>
-                        </div>
-                    </form> 
+					<form>
+						<input type="text" id="event_tugofwar" value="tugofwar_team_50_d" style="display: none;">                    
+						<div style="text-align: center; ">
+							<input id="tugofwar" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+							<?php echo $login_view; ?>
+						</div>
+					</form> 
 				</div>
 			</section>
 			<section name="tenth" class="parallax parallax64" data-parallax-speed="-0.4" id="vishwaroopam">
@@ -652,13 +652,13 @@
 							</p>
 						</div>
 					</div>
-                    <form>
-                        <input type="text" id="event_vishwaroopam" value="vishwaroopam_team_50_d" style="display: none;">                    
-                        <div style="text-align: center; ">
-                            <input id="vishwaroopam" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
-                            <?php echo $login_view; ?>
-                        </div>
-                    </form> 
+					<form>
+						<input type="text" id="event_vishwaroopam" value="vishwaroopam_team_50_d" style="display: none;">                    
+						<div style="text-align: center; ">
+							<input id="vishwaroopam" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+							<?php echo $login_view; ?>
+						</div>
+					</form> 
 				</div>
 			</section>
 			<section name="eleventh" class="parallax parallax65" data-parallax-speed="-0.4" id="veta">
@@ -692,13 +692,13 @@
 							</p>
 						</div>
 					</div>
-                    <form>
-                        <input type="text" id="event_veta" value="veta_team_50_d" style="display: none;">                    
-                        <div style="text-align: center; ">
-                            <input id="veta" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
-                            <?php echo $login_view; ?>
-                        </div>
-                    </form> 
+					<form>
+						<input type="text" id="event_veta" value="veta_team_50_d" style="display: none;">                    
+						<div style="text-align: center; ">
+							<input id="veta" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+							<?php echo $login_view; ?>
+						</div>
+					</form> 
 				</div>
 			</section>
 			<section name="twelvth" class="parallax parallax66" data-parallax-speed="-0.4" id="chitram">
@@ -732,13 +732,13 @@
 							</p>
 						</div>
 					</div>
-                    <form>
-                        <input type="text" id="event_chitram" value="chitram_team_50_d" style="display: none;">                    
-                        <div style="text-align: center; ">
-                            <input id="chitram" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
-                            <?php echo $login_view; ?>
-                        </div>
-                    </form> 
+					<form>
+						<input type="text" id="event_chitram" value="chitram_team_50_d" style="display: none;">                    
+						<div style="text-align: center; ">
+							<input id="chitram" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+							<?php echo $login_view; ?>
+						</div>
+					</form> 
 				</div>
 			</section>
 			<section name="thirteenth" class="parallax parallax67" data-parallax-speed="-0.4" id="atelugu">
@@ -772,13 +772,13 @@
 							</p>
 						</div>
 					</div>
-                    <form>
-                        <input type="text" id="event_antaksharitelugu" value="antaksharitelugu_team_50_d" style="display: none;">                    
-                        <div style="text-align: center; ">
-                            <input id="antaksharitelugu" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
-                            <?php echo $login_view; ?>
-                        </div>
-                    </form> 
+					<form>
+						<input type="text" id="event_antaksharitelugu" value="antaksharitelugu_team_50_d" style="display: none;">                    
+						<div style="text-align: center; ">
+							<input id="antaksharitelugu" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+							<?php echo $login_view; ?>
+						</div>
+					</form> 
 				</div>
 			</section>
 			<section name="fourteenth" class="parallax parallax68" data-parallax-speed="-0.4" id="dhammu">
@@ -808,13 +808,13 @@
 							</p>
 						</div>
 					</div>
-                    <form>
-                        <input type="text" id="event_dhammu" value="dhammu_team_50_d" style="display: none;">                    
-                        <div style="text-align: center; ">
-                            <input id="dhammu" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
-                            <?php echo $login_view; ?>
-                        </div>
-                    </form> 
+					<form>
+						<input type="text" id="event_dhammu" value="dhammu_team_50_d" style="display: none;">                    
+						<div style="text-align: center; ">
+							<input id="dhammu" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+							<?php echo $login_view; ?>
+						</div>
+					</form> 
 				</div>
 			</section>
 			<section name="fifteenth" class="parallax parallax69" data-parallax-speed="-0.4" id="rangam">
@@ -844,13 +844,13 @@
 							</p>
 						</div>
 					</div>
-                    <form>
-                        <input type="text" id="event_rangam" value="rangam_team_50_d" style="display: none;">                    
-                        <div style="text-align: center; ">
-                            <input id="rangam" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
-                            <?php echo $login_view; ?>
-                        </div>
-                    </form> 
+					<form>
+						<input type="text" id="event_rangam" value="rangam_team_50_d" style="display: none;">                    
+						<div style="text-align: center; ">
+							<input id="rangam" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+							<?php echo $login_view; ?>
+						</div>
+					</form> 
 				</div>
 			</section>
 			<section name="sixteenth" class="parallax parallax70" data-parallax-speed="-0.4" id="bbs">
@@ -880,13 +880,13 @@
 							</p>
 						</div>
 					</div>
-                    <form>
-                        <input type="text" id="event_begborrowsteal" value="begborrowsteal_team_50_d" style="display: none;">                    
-                        <div style="text-align: center; ">
-                            <input id="begborrowsteal" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
-                            <?php echo $login_view; ?>
-                        </div>
-                    </form> 
+					<form>
+						<input type="text" id="event_begborrowsteal" value="begborrowsteal_team_50_d" style="display: none;">                    
+						<div style="text-align: center; ">
+							<input id="begborrowsteal" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+							<?php echo $login_view; ?>
+						</div>
+					</form> 
 				</div>
 			</section>
 			<section name="seventeenth" class="parallax parallax71" data-parallax-speed="-0.4" id="cstrip">
@@ -916,13 +916,13 @@
 							</p>
 						</div>
 					</div>
-                    <form>
-                        <input type="text" id="event_comicstrip" value="comicstrip_alone_50_d" style="display: none;">                    
-                        <div style="text-align: center; ">
-                            <input id="comicstrip" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
-                            <?php echo $login_view; ?>
-                        </div>
-                    </form> 
+					<form>
+						<input type="text" id="event_comicstrip" value="comicstrip_alone_50_d" style="display: none;">                    
+						<div style="text-align: center; ">
+							<input id="comicstrip" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+							<?php echo $login_view; ?>
+						</div>
+					</form> 
 				</div>
 			</section>
 			<section name="eighteenth" class="parallax parallax72" data-parallax-speed="-0.4" id="cwriting">
@@ -952,13 +952,13 @@
 							</p>
 						</div>                         
 					</div>
-                    <form>
-                        <input type="text" id="event_creativewriting" value="creativewriting_alone_50_d" style="display: none;">                    
-                        <div style="text-align: center; ">
-                            <input id="creativewriting" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
-                            <?php echo $login_view; ?>
-                        </div>
-                    </form> 
+					<form>
+						<input type="text" id="event_creativewriting" value="creativewriting_alone_50_d" style="display: none;">                    
+						<div style="text-align: center; ">
+							<input id="creativewriting" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+							<?php echo $login_view; ?>
+						</div>
+					</form> 
 				</div>
 			</section>
 			<section name="ninteenth" class="parallax parallax73" data-parallax-speed="-0.4" id="poetry"> 
@@ -988,13 +988,13 @@
 							</p>
 						</div>
 					</div>
-                    <form>
-                        <input type="text" id="event_poetry" value="poetry_alone_50_d" style="display: none;">                    
-                        <div style="text-align: center; ">
-                            <input id="poetry" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
-                            <?php echo $login_view; ?>
-                        </div>
-                    </form> 
+					<form>
+						<input type="text" id="event_poetry" value="poetry_alone_50_d" style="display: none;">                    
+						<div style="text-align: center; ">
+							<input id="poetry" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+							<?php echo $login_view; ?>
+						</div>
+					</form> 
 				</div>
 			</section>
 			<section name="twentieth" class="parallax parallax74" data-parallax-speed="-0.4" id="jam">
@@ -1034,13 +1034,13 @@
 							</p>
 						</div>
 					</div>
-                    <form>
-                        <input type="text" id="event_jam" value="jam_alone_50_d" style="display: none;">                    
-                        <div style="text-align: center; ">
-                            <input id="jam" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
-                            <?php echo $login_view; ?>
-                        </div>
-                    </form> 
+					<form>
+						<input type="text" id="event_jam" value="jam_alone_50_d" style="display: none;">                    
+						<div style="text-align: center; ">
+							<input id="jam" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+							<?php echo $login_view; ?>
+						</div>
+					</form> 
 				</div>
 			</section>
 			<section name="twe_first" class="parallax parallax75" data-parallax-speed="-0.4" id="expexp">
@@ -1070,13 +1070,13 @@
 							</p>
 						</div>
 					</div>
-                    <form>
-                        <input type="text" id="event_expressionexpress" value="expressionexpress_alone_50_d" style="display: none;">                    
-                        <div style="text-align: center; ">
-                            <input id="expressionexpress" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
-                            <?php echo $login_view; ?>
-                        </div>
-                    </form> 
+					<form>
+						<input type="text" id="event_expressionexpress" value="expressionexpress_alone_50_d" style="display: none;">                    
+						<div style="text-align: center; ">
+							<input id="expressionexpress" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+							<?php echo $login_view; ?>
+						</div>
+					</form> 
 				</div>
 			</section>
 			<section name="twe_second" class="parallax parallax76" data-parallax-speed="-0.4" id="ahindi">
@@ -1106,13 +1106,13 @@
 							</p>
 						</div>
 					</div>
-                    <form>
-                        <input type="text" id="event_antaksharihindi" value="antaksharihindi_team_50_d" style="display: none;">                    
-                        <div style="text-align: center; ">
-                            <input id="antaksharihindi" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
-                            <?php echo $login_view; ?>
-                        </div>
-                    </form> 
+					<form>
+						<input type="text" id="event_antaksharihindi" value="antaksharihindi_team_50_d" style="display: none;">                    
+						<div style="text-align: center; ">
+							<input id="antaksharihindi" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+							<?php echo $login_view; ?>
+						</div>
+					</form> 
 				</div>
 			</section>
 			<section name="twe_third" class="parallax parallax77" data-parallax-speed="-0.4" id="tvwarp">
@@ -1146,13 +1146,13 @@
 							</p>
 						</div>
 					</div>
-                    <form>
-                        <input type="text" id="event_televisionwarping" value="televisionwarping_team_50_d" style="display: none;">                    
-                        <div style="text-align: center; ">
-                            <input id="televisionwarping" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
-                            <?php echo $login_view; ?>
-                        </div>
-                    </form> 
+					<form>
+						<input type="text" id="event_televisionwarping" value="televisionwarping_team_50_d" style="display: none;">                    
+						<div style="text-align: center; ">
+							<input id="televisionwarping" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+							<?php echo $login_view; ?>
+						</div>
+					</form> 
 				</div>
 			</section>
 			<section name="twe_fourth" class="parallax parallax78" data-parallax-speed="-0.4" id="tambola">
@@ -1184,13 +1184,13 @@
 							</p>
 						</div>
 					</div>
-                    <form>
-                        <input type="text" id="event_tambola" value="tambola_alone_50_d" style="display: none;">                    
-                        <div style="text-align: center; ">
-                            <input id="tambola" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
-                            <?php echo $login_view; ?>
-                        </div>
-                    </form> 
+					<form>
+						<input type="text" id="event_tambola" value="tambola_alone_50_d" style="display: none;">                    
+						<div style="text-align: center; ">
+							<input id="tambola" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+							<?php echo $login_view; ?>
+						</div>
+					</form> 
 				</div>
 			</section>
 			<section name="twe_fifth" class="parallax parallax79" data-parallax-speed="-0.4" id="fbc">
@@ -1220,13 +1220,13 @@
 							</p>
 						</div>
 					</div>
-                    <form>
-                        <input type="text" id="event_filmbuffchallenge" value="filmbuffchallenge_team_50_d" style="display: none;">                    
-                        <div style="text-align: center; ">
-                            <input id="filmbuffchallenge" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
-                            <?php echo $login_view; ?>
-                        </div>
-                    </form> 
+					<form>
+						<input type="text" id="event_filmbuffchallenge" value="filmbuffchallenge_team_50_d" style="display: none;">                    
+						<div style="text-align: center; ">
+							<input id="filmbuffchallenge" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+							<?php echo $login_view; ?>
+						</div>
+					</form> 
 				</div>
 			</section>
 			<section name="thir_one" class="parallax parallax80" data-parallax-speed="-0.4" id="ftuw">
@@ -1259,20 +1259,20 @@
 							</p>
 						</div>
 					</div>
-                    <form>
-                        <input type="text" id="event_floattilluwin" value="floattilluwin_team_50_d" style="display: none;">
-                        <center>
-                            <select id="parti_floattilluwin" <?php echo $event_view; ?> >
-                                <option value="0">Select the number of participants in your team</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select>                            
-                        </center>
-                        <div style="text-align: center; ">
-                            <input id="floattilluwin" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
-                            <?php echo $login_view; ?>
-                        </div>
-                    </form>  
+					<form>
+						<input type="text" id="event_floattilluwin" value="floattilluwin_team_50_d" style="display: none;">
+						<center>
+							<select id="parti_floattilluwin" <?php echo $event_view; ?> >
+								<option value="0">Select the number of participants in your team</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+							</select>                            
+						</center>
+						<div style="text-align: center; ">
+							<input id="floattilluwin" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+							<?php echo $login_view; ?>
+						</div>
+					</form>  
 				</div>
 			</section>
 			<!--<section name="twe_sixth" class="parallax parallax80" data-parallax-speed="-0.4">
