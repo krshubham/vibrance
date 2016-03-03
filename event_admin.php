@@ -16,7 +16,7 @@
         $view_whole = "";
         $last_name = explode("_", $current_user);
         $event_name = $last_name[1];
-        $event_table = $last_name[1]."_".$last_name[2]."_".$last_name[3];          
+        $event_table = $last_name[1]."_".$last_name[2]."_".$last_name[3]."_".$last_name[4];          
     } else {
         $view_whole = "style='display: none;'";
         $event_name = "";
@@ -106,6 +106,7 @@ th {
                         <center>
                             <div id="htmlexportPDF">
                                 <h3><?php echo ucfirst($event_name); ?></h3>
+                                <h4>Confirmed List</h4>
                                 <?php
                                     
                                     $query = "SELECT * FROM {$event_table} WHERE paid = 1";
@@ -119,6 +120,7 @@ th {
                                                     <th>College</th>
                                                     <th>Reg. No.</th>
                                                     <th>Ph. No.</th>
+                                                    <th>Alternate No.</th>
                                                     <th>Participants</th> 
                                                     <th>Fees</th>                                            
                                                 </tr><?php
@@ -129,7 +131,17 @@ th {
                                                     <td><?php echo $list['college']; ?></td>
                                                     <td><?php echo $list['regno']; ?></td>
                                                     <td><?php echo $list['phno']; ?></td>  
-                                                    <td><?php echo $list['parti']; ?></td>                                          <td class="count-me"><?php $fees = $list['parti']*$last_name[3]; echo $fees; ?></td>                                             
+                                                    <td><?php echo $list['altphno']; ?></td> 
+                                                    <td><?php echo $list['parti']; ?></td>                                          
+                                                    <td class="count-me">
+                                                        <?php
+                                                            if (($list['college']!="VIT")&&($last_name[4]=="d")) {
+                                                                $fees = $list['parti']*100; echo $fees;
+                                                            } else { 
+                                                                $fees = $list['parti']*$last_name[3]; echo $fees;
+                                                            }                                                             
+                                                        ?>
+                                                    </td>                                             
                                                 </tr><?php                                             
                                             } ?>
                                             </table> 
@@ -141,6 +153,53 @@ th {
                                 </p>
                             </div>    
                             <button onclick="javascript:htmltopdf();">Export PDF</button>
+                            <p>
+                                <?php
+                                    
+                                    $query = "SELECT * FROM {$event_table} WHERE paid = 0";
+                                    $result = mysqli_query($conn, $query);
+                                    confirm_query($result); ?>                                
+                                        <p>
+                                            <table>
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <th>Email</th>
+                                                    <th>College</th>
+                                                    <th>Reg. No.</th>
+                                                    <th>Ph. No.</th>
+                                                    <th>Alternate No.</th>
+                                                    <th>Participants</th> 
+                                                    <th>Fees</th>   
+                                                    <th>Action</th>                                         
+                                                </tr><?php
+                                            while ($list = mysqli_fetch_assoc($result)) { ?>
+                                                <tr>
+                                                    <td><?php echo $list['name']; ?></td>
+                                                    <td><?php echo $list['email']; ?></td>
+                                                    <td><?php echo $list['college']; ?></td>
+                                                    <td><?php echo $list['regno']; ?></td>
+                                                    <td><?php echo $list['phno']; ?></td> 
+                                                    <td><?php echo $list['altphno']; ?></td>  
+                                                    <td><?php echo $list['parti']; ?></td>                                          
+                                                    <td>
+                                                        <?php
+                                                            if (($list['college']!="VIT")&&($last_name[4]=="d")) {
+                                                                $fees = $list['parti']*100; echo $fees;
+                                                            } else { 
+                                                                $fees = $list['parti']*$last_name[3]; echo $fees;
+                                                            }                                                             
+                                                        ?>
+                                                    </td> 
+                                                    <td>
+                                                        <a href="intimate.php?email=<?php echo urlencode($list["email"]); ?>&event=<?php echo urlencode($event_table); ?>&price=<?php echo urlencode($fees); ?>" onclick="return confirm('Send an intimation mail?');">Intimate</a>
+                                                    </td>
+                                                </tr><?php                                             
+                                            } ?>
+                                            </table> 
+                                        </p>   
+                                    <?php                                    
+                                ?>
+                            </p>
                         </center>
                     </div>
                 </div>
