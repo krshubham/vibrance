@@ -37,8 +37,6 @@
 	   echo 'Message could not be sent.';
 	   echo 'Mailer Error: ' . $mail->ErrorInfo;
 	   exit;
-	} else {
-		redirect_to('event_admin.php');
-	}	
+	} 
 		
 ?>
