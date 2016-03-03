@@ -85,7 +85,7 @@ $(document).ready(function() {
         $.post("refreshform.php", { event1: event, parti1: parti }, function(data) {
             alert(data);
         });
-    });    
+    });
 
     $("#dota2").click(function() {
         var event = $("#event_dota2").val();
@@ -93,7 +93,7 @@ $(document).ready(function() {
         $.post("refreshform.php", { event1: event, parti1: parti }, function(data) {
             alert(data);
         });
-    }); 
+    });
 
     $("#fifa15").click(function() {
         var event = $("#event_fifa15").val();
@@ -101,7 +101,7 @@ $(document).ready(function() {
         $.post("refreshform.php", { event1: event, parti1: parti }, function(data) {
             alert(data);
         });
-    }); 
+    });
 
     $("#generalquiz").click(function() {
         var event = $("#event_generalquiz").val();
@@ -322,6 +322,208 @@ $(document).ready(function() {
     $("#dressupyourpartner").click(function() {
         var event = $("#event_dressupyourpartner").val();
         var parti = 2;
+        $.post("refreshform.php", { event1: event, parti1: parti }, function(data) {
+            alert(data);
+        });
+    });
+
+    $("#irrelevance").click(function() {
+        var event = $("#event_irrelevance").val();
+        var parti = 1;
+        $.post("refreshform.php", { event1: event, parti1: parti }, function(data) {
+            alert(data);
+        });
+    });
+
+    $("#minutetowin").click(function() {
+        var event = $("#event_minutetowin").val();
+        var parti = 2;
+        $.post("refreshform.php", { event1: event, parti1: parti }, function(data) {
+            alert(data);
+        });
+    });
+
+
+    $("#runforbucks").click(function() {
+        var event = $("#event_runforbucks").val();
+        var parti = 2;
+        $.post("refreshform.php", { event1: event, parti1: parti }, function(data) {
+            alert(data);
+        });
+    });
+
+    $("#impracticaljokers").click(function() {
+        var event = $("#event_impracticaljokers").val();
+        var parti = 1;
+        $.post("refreshform.php", { event1: event, parti1: parti }, function(data) {
+            alert(data);
+        });
+    });
+
+    $("#moriarty").click(function() {
+        var event = $("#event_moriarty").val();
+        var parti = $("#parti_moriarty").val();
+        $.post("refreshform.php", { event1: event, parti1: parti }, function(data) {
+            alert(data);
+        });
+    });
+
+    $("#fivefootball").click(function() {
+        var event = $("#event_fivefootball").val();
+        var parti = 8;
+        $.post("refreshform.php", { event1: event, parti1: parti }, function(data) {
+            alert(data);
+        });
+    });
+
+    $("#buildtodestroy").click(function() {
+        var event = $("#event_buildtodestroy").val();
+        var parti = 2;
+        $.post("refreshform.php", { event1: event, parti1: parti }, function(data) {
+            alert(data);
+        });
+    });
+
+    $("#tugofwar").click(function() {
+        var event = $("#event_tugofwar").val();
+        var parti = 5;
+        $.post("refreshform.php", { event1: event, parti1: parti }, function(data) {
+            alert(data);
+        });
+    });
+
+    $("#vishwaroopam").click(function() {
+        var event = $("#event_vishwaroopam").val();
+        var parti = 3;
+        $.post("refreshform.php", { event1: event, parti1: parti }, function(data) {
+            alert(data);
+        });
+    });
+
+    $("#veta").click(function() {
+        var event = $("#event_veta").val();
+        var parti = 2;
+        $.post("refreshform.php", { event1: event, parti1: parti }, function(data) {
+            alert(data);
+        });
+    });
+
+    $("#chitram").click(function() {
+        var event = $("#event_chitram").val();
+        var parti = 3;
+        $.post("refreshform.php", { event1: event, parti1: parti }, function(data) {
+            alert(data);
+        });
+    });
+
+    $("#antaksharitelugu").click(function() {
+        var event = $("#event_antaksharitelugu").val();
+        var parti = 3;
+        $.post("refreshform.php", { event1: event, parti1: parti }, function(data) {
+            alert(data);
+        });
+    });
+
+    $("#dhammu").click(function() {
+        var event = $("#event_dhammu").val();
+        var parti = 3;
+        $.post("refreshform.php", { event1: event, parti1: parti }, function(data) {
+            alert(data);
+        });
+    });
+
+    $("#rangam").click(function() {
+        var event = $("#event_rangam").val();
+        var parti = 3;
+        $.post("refreshform.php", { event1: event, parti1: parti }, function(data) {
+            alert(data);
+        });
+    });
+
+    $("#begborrowsteal").click(function() {
+        var event = $("#event_begborrowsteal").val();
+        var parti = 2;
+        $.post("refreshform.php", { event1: event, parti1: parti }, function(data) {
+            alert(data);
+        });
+    });
+
+    $("#comicstrip").click(function() {
+        var event = $("#event_comicstrip").val();
+        var parti = 1;
+        $.post("refreshform.php", { event1: event, parti1: parti }, function(data) {
+            alert(data);
+        });
+    });
+
+    $("#creativewriting").click(function() {
+        var event = $("#event_creativewriting").val();
+        var parti = 1;
+        $.post("refreshform.php", { event1: event, parti1: parti }, function(data) {
+            alert(data);
+        });
+    });
+
+    $("#poetry").click(function() {
+        var event = $("#event_poetry").val();
+        var parti = 1;
+        $.post("refreshform.php", { event1: event, parti1: parti }, function(data) {
+            alert(data);
+        });
+    });
+
+
+    $("#jam").click(function() {
+        var event = $("#event_jam").val();
+        var parti = 1;
+        $.post("refreshform.php", { event1: event, parti1: parti }, function(data) {
+            alert(data);
+        });
+    });
+
+    $("#expressionexpress").click(function() {
+        var event = $("#event_expressionexpress").val();
+        var parti = 1;
+        $.post("refreshform.php", { event1: event, parti1: parti }, function(data) {
+            alert(data);
+        });
+    });
+
+    $("#antaksharihindi").click(function() {
+        var event = $("#event_antaksharihindi").val();
+        var parti = 3;
+        $.post("refreshform.php", { event1: event, parti1: parti }, function(data) {
+            alert(data);
+        });
+    });
+
+    $("#televisionwarping").click(function() {
+        var event = $("#event_televisionwarping").val();
+        var parti = 4;
+        $.post("refreshform.php", { event1: event, parti1: parti }, function(data) {
+            alert(data);
+        });
+    });
+
+    $("#tambola").click(function() {
+        var event = $("#event_tambola").val();
+        var parti = 1;
+        $.post("refreshform.php", { event1: event, parti1: parti }, function(data) {
+            alert(data);
+        });
+    });
+
+    $("#filmbuffchallenge").click(function() {
+        var event = $("#event_filmbuffchallenge").val();
+        var parti = 2;
+        $.post("refreshform.php", { event1: event, parti1: parti }, function(data) {
+            alert(data);
+        });
+    });
+
+    $("#floattilluwin").click(function() {
+        var event = $("#event_floattilluwin").val();
+        var parti = $("#parti_floattilluwin").val();
         $.post("refreshform.php", { event1: event, parti1: parti }, function(data) {
             alert(data);
         });
