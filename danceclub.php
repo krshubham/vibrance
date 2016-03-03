@@ -20,7 +20,7 @@
         $view = "<a href='login/index.php'>Login</a>";  
         $login_view = "<a href='login/index.php' class='gobutton'>Login to register</a>"; 
         $event_view = "style='display: none;'";     
-    }  
+    }   
 ?>
 
 <!DOCTYPE html>
@@ -229,7 +229,7 @@
                         </div>
                     </div>
                     <form>
-                        <input type="text" id="event_adaptune" value="adaptune_alone_100" style="display: none;">                    
+                        <input type="text" id="event_adaptune" value="adaptune_alone_100_s" style="display: none;">                    
                         <div style="text-align: center; ">
                             <input id="adaptune" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
                             <?php echo $login_view; ?>
@@ -277,7 +277,7 @@
                         </div>
                     </div>
                     <form>
-                        <input type="text" id="event_bollywoodbattle" value="bollywoodbattle_team_100" style="display: none;">
+                        <input type="text" id="event_bollywoodbattle" value="bollywoodbattle_team_100_s" style="display: none;">
                         <center>
                             <select id="parti_bollywoodbattle" <?php echo $event_view; ?> >
                                 <option value="0">Select the number of participants in your team</option>
@@ -318,7 +318,7 @@
                         </div>
                     </div>
                      <form>
-                        <input type="text" id="event_dancingduo" value="dancingduo_team_100" style="display: none;">
+                        <input type="text" id="event_dancingduo" value="dancingduo_team_100_s" style="display: none;">
                         <center>
                             <input type="number" value="2" id="parti_dancingduo" style="display: none;" >                     
                         </center>
@@ -376,7 +376,7 @@
                         </div>
                     </div>
                     <form>
-                        <input type="text" id="event_choreonight" value="choreonight_alone_3500" style="display: none;">                   
+                        <input type="text" id="event_choreonight" value="choreonight_team_3500_s" style="display: none;">                   
                         <div style="text-align: center; ">
                             <input id="choreonight" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
                             <?php echo $login_view; ?>
@@ -423,7 +423,7 @@
                         </div>
                     </div>
                     <form>
-                        <input type="text" id="event_footloose" value="footloose_alone_100" style="display: none;">                    
+                        <input type="text" id="event_footloose" value="footloose_alone_100_s" style="display: none;">                    
                         <div style="text-align: center; ">
                             <input id="footloose" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
                             <?php echo $login_view; ?>

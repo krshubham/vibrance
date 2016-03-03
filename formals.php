@@ -1,3 +1,28 @@
+<?php require_once("includes/session.php"); ?>
+<?php require_once("includes/db_connection.php"); ?>
+<?php require_once("includes/functions.php"); ?>
+
+<?php 
+    if (isset($_SESSION["username"])) {
+        $current_user = $_SESSION["username"];
+        $name_query = "SELECT * FROM users WHERE username = '{$current_user}' LIMIT 1";
+        $name_result = mysqli_query($conn, $name_query);
+        confirm_query($name_result);
+        $name_title = mysqli_fetch_assoc($name_result);
+        $first_name = explode(" ", $name_title['name']);            
+        $view = "<a href='logout.php'>Logout, ".$first_name[0]."</a>"; 
+        $event_view = ""; 
+        $login_view = "";      
+    } else {
+        $current_user = "";  
+        $first_name = "";
+        $name_title = "";
+        $view = "<a href='login/index.php'>Login</a>";  
+        $login_view = "<a href='login/index.php' class='gobutton'>Login to register</a>"; 
+        $event_view = "style='display: none;'";     
+    }   
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,6 +43,8 @@
     <script src="js/modernizr.custom-slider.js"></script>
     <link rel="stylesheet" type="text/css" href="css/backtotop.css">
     <script type="text/javascript" src="js/backtotop.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/refreshform.js"></script>
     <!--[if lt IE 9]>
     <html class="lt-ie9">
     <div style=' clear: both; text-align:center; position: relative;'>
@@ -104,6 +131,10 @@
                             </li>
                             <li>
                                 <a href="#">Meet the Team</a>
+                            </li>
+                            <li>
+                                <?php echo $view; ?>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -230,6 +261,13 @@
                             </p>
                         </div>
                     </div>
+                     <form>
+                        <input type="text" id="event_gandhi" value="gandhi_team_50_d" style="display: none;">                    
+                        <div style="text-align: center; ">
+                            <input id="gandhi" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <?php echo $login_view; ?>
+                        </div>
+                    </form>  
                 </div>
             </section>
             <section name="second" class="parallax parallax41" data-parallax-speed="-0.4">
@@ -259,6 +297,13 @@
                             </p>
                         </div>
                     </div>
+                    <form>
+                        <input type="text" id="event_postermaking" value="postermaking_alone_50_d" style="display: none;">                    
+                        <div style="text-align: center; ">
+                            <input id="postermaking" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <?php echo $login_view; ?>
+                        </div>
+                    </form>  
                 </div>
             </section>
             <section name="third" class="parallax parallax42" data-parallax-speed="-0.4">
@@ -290,6 +335,13 @@
                             </p>
                         </div>
                     </div>
+                    <form>
+                        <input type="text" id="event_brain" value="brain_team_50_d" style="display: none;">                    
+                        <div style="text-align: center; ">
+                            <input id="brain" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <?php echo $login_view; ?>
+                        </div>
+                    </form>  
                 </div>
             </section>
             <section name="fourth" class="parallax parallax43" data-parallax-speed="-0.4">
@@ -320,6 +372,21 @@
                             </p>
                         </div>
                     </div>
+                    <form>
+                        <input type="text" id="event_socialinnovators" value="socialinnovators_team_150_s" style="display: none;">
+                        <center>
+                            <select id="parti_socialinnovators" <?php echo $event_view; ?> >
+                                <option value="0">Select the number of participants in your team</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>                            
+                        </center>
+                        <div style="text-align: center; ">
+                            <input id="socialinnovators" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <?php echo $login_view; ?>
+                        </div>
+                    </form>
                 </div>
             </section>
             <section name="seventh" class="parallax parallax89" data-parallax-speed="-0.4">
@@ -342,6 +409,13 @@
                             </ul>
                         </div>
                     </div>
+                    <form>
+                        <input type="text" id="event_virtualreality" value="virtualreality_alone_50_d" style="display: none;">                    
+                        <div style="text-align: center; ">
+                            <input id="virtualreality" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <?php echo $login_view; ?>
+                        </div>
+                    </form>  
                 </div>
             </section>
             <section name="fifth" class="parallax parallax44" data-parallax-speed="-0.4">
@@ -369,6 +443,13 @@
                             </p>
                         </div>
                     </div>
+                    <form>
+                        <input type="text" id="event_wastecraft" value="wastecraft_team_50_d" style="display: none;">                    
+                        <div style="text-align: center; ">
+                            <input id="wastecraft" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <?php echo $login_view; ?>
+                        </div>
+                    </form>  
                 </div>
             </section>
             <section name="sixth" class="parallax parallax45" data-parallax-speed="-0.4">
@@ -405,6 +486,14 @@
                             </p>
                         </div>
                     </div>
+                    </div>
+                    <form>
+                        <input type="text" id="event_enviroquiz" value="enviroquiz_team_50_d" style="display: none;">                    
+                        <div style="text-align: center; ">
+                            <input id="enviroquiz" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <?php echo $login_view; ?>
+                        </div>
+                    </form>  
                 </div>
             </section>
             <section name="eighth" class="parallax parallax86" data-parallax-speed="-0.4">
@@ -433,6 +522,13 @@
                             </p>
                         </div>
                     </div>
+                    <form>
+                        <input type="text" id="event_balloonsplash" value="balloonsplash_team_50_d" style="display: none;">                    
+                        <div style="text-align: center; ">
+                            <input id="balloonsplash" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <?php echo $login_view; ?>
+                        </div>
+                    </form>  
                 </div>
             </section>
             <section name="ninth" class="parallax parallax88" data-parallax-speed="-0.4">
@@ -460,6 +556,13 @@
                             </p>
                         </div>
                     </div>
+                    <form>
+                        <input type="text" id="event_blindfolddrawing" value="blindfolddrawing_alone_50_d" style="display: none;">                    
+                        <div style="text-align: center; ">
+                            <input id="blindfolddrawing" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <?php echo $login_view; ?>
+                        </div>
+                    </form>  
                 </div>
             </section>
             <section name="tenth" class="parallax parallax87" data-parallax-speed="-0.4">
@@ -487,6 +590,13 @@
                             </p>
                         </div>
                     </div>
+                    <form>
+                        <input type="text" id="event_dressupyourpartner" value="dressupyourpartner_team_50_d" style="display: none;">                    
+                        <div style="text-align: center; ">
+                            <input id="dressupyourpartner" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <?php echo $login_view; ?>
+                        </div>
+                    </form>  
                 </div>
             </section>
             
@@ -540,3 +650,8 @@
 </body>
 
 </html>
+<?php
+    if (isset ($conn)){
+      mysqli_close($conn);
+    }
+?>

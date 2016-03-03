@@ -211,7 +211,7 @@ if (isset($_SESSION["username"])) {
                                 <br>
                                 <li>4 to 5 rounds (depending on number of registrations; first 2 or 3 rounds will be elimination rounds)</li>
                                 <li>One participant per team will be allowed to act at a time.</li>
-                                <li>The participant acting, cannot talk or mumur. Lip sync is not allowed. It will lead to deduction in points.</li>
+                                <li>The participant acting, cannot talk or murmur. Lip sync is not allowed. It will lead to deduction in points.</li>
                                 <li>The participants will have to act out the name by using different gestures, facial expressions, and body language.</li>
                                 <li>Breaking words into parts is allowed but the word/s  cannot be broken down into single letters; will lead to points deduction (e.g. if the word is “ear” the word cannot be broken like “e” , “a”, “r”) . Also gestures signifying alphabets will lead to deduction in points.</li>
                                 <li>Total 90 seconds will be given to the teams to guess the phrase/movie/song (depending upon the round).</li>
@@ -221,7 +221,14 @@ if (isset($_SESSION["username"])) {
                         </div>
                     </div>
                     <form>
-                        <input type="text" id="event_dumbcharades" value="dumbcharades_alone_50" style="display: none;">                    
+                        <input type="text" id="event_dumbcharades" value="dumbcharades_team_50_s" style="display: none;">   
+                        <center>
+                            <select id="parti_bollywoodbattle" <?php echo $event_view; ?> >
+                                <option value="0">Select the number of participants in your team</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>                            
+                        </center>                   
                         <div style="text-align: center; ">
                             <input id="dumbcharades" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
                             <?php echo $login_view; ?>
@@ -243,6 +250,10 @@ if (isset($_SESSION["username"])) {
                                 <li>
                                     <br>
                                 </li>
+                                <li>Team of 3.</li>
+                                <li>
+                                    <br>
+                                </li>
                                 <li>Registration fees: Rs. 50/- per participant. [Internal]</li>
                                 <li>Registration fees: Rs. 50/- per participant. [External]</li>
                             </ul>
@@ -259,7 +270,7 @@ if (isset($_SESSION["username"])) {
                         </div>
                     </div>
                     <form>
-                        <input type="text" id="event_soundhunt" value="soundhunt_alone_150" style="display: none;">                    
+                        <input type="text" id="event_soundhunt" value="soundhunt_team_50_s" style="display: none;">                    
                         <div style="text-align: center; ">
                             <input id="soundhunt" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
                             <?php echo $login_view; ?>
@@ -299,7 +310,7 @@ if (isset($_SESSION["username"])) {
                         </div>
                     </div>
                     <form>
-                        <input type="text" id="event_supersinger" value="supersinger_alone_100" style="display: none;">                    
+                        <input type="text" id="event_supersinger" value="supersinger_alone_100_s" style="display: none;">                    
                         <div style="text-align: center; ">
                             <input id="supersinger" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
                             <?php echo $login_view; ?>
@@ -338,7 +349,7 @@ if (isset($_SESSION["username"])) {
                         </div>
                     </div>
                     <form>
-                        <input type="text" id="event_battleofbands" value="battleofbands_alone_1000" style="display: none;">                    
+                    <input type="text" id="event_battleofbands" value="battleofbands_team_1000_s" style="display: none;">                    
                         <div style="text-align: center; ">
                             <input id="battleofbands" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
                             <?php echo $login_view; ?>
@@ -376,7 +387,7 @@ if (isset($_SESSION["username"])) {
                         </div>
                     </div>
                     <form>
-                        <input type="text" id="event_artiste" value="artiste_alone_100" style="display: none;">                    
+                        <input type="text" id="event_artiste" value="artiste_alone_100_s" style="display: none;">                    
                         <div style="text-align: center; ">
                             <input id="artiste" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
                             <?php echo $login_view; ?>

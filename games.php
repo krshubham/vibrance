@@ -1,13 +1,38 @@
+<?php require_once("includes/session.php"); ?>
+<?php require_once("includes/db_connection.php"); ?>
+<?php require_once("includes/functions.php"); ?>
+
+<?php 
+    if (isset($_SESSION["username"])) {
+        $current_user = $_SESSION["username"];
+        $name_query = "SELECT * FROM users WHERE username = '{$current_user}' LIMIT 1";
+        $name_result = mysqli_query($conn, $name_query);
+        confirm_query($name_result);
+        $name_title = mysqli_fetch_assoc($name_result);
+        $first_name = explode(" ", $name_title['name']);            
+        $view = "<a href='logout.php'>Logout, ".$first_name[0]."</a>"; 
+        $event_view = ""; 
+        $login_view = "";      
+    } else {
+        $current_user = "";  
+        $first_name = "";
+        $name_title = "";
+        $view = "<a href='login/index.php'>Login</a>";  
+        $login_view = "<a href='login/index.php' class='gobutton'>Login to register</a>"; 
+        $event_view = "style='display: none;'";     
+    }  
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Fine Arts Club</title>
+    <title>Games</title>
     <meta charset="utf-8">
     <meta name="format-detection" content="telephone=no" />
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <meta name="theme-color" content="#A81C23">
     <link rel="stylesheet" href="css/grid.css">
+    <meta name="theme-color" content="#A81C23">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arvo">
     <link rel="stylesheet" href="css/style.css">
@@ -18,6 +43,8 @@
     <script src="js/modernizr.custom-slider.js"></script>
     <link rel="stylesheet" type="text/css" href="css/backtotop.css">
     <script type="text/javascript" src="js/backtotop.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/refreshform.js"></script>
     <!--[if lt IE 9]>
     <html class="lt-ie9">
     <div style=' clear: both; text-align:center; position: relative;'>
@@ -37,18 +64,14 @@
 </head>
 
 <body>
-    <div class="page" id="0">
-        <a href="#0" id="fixed-back" style="display: none;"><img src="images/uparrow.png" title="Back to Top"></a>
-        <!--========================================================
-                              HEADER
-    =========================================================-->
+    <div class="page">
         <header>
             <div id="stuck_container" class="stuck_container">
                 <div class="container">
                     <div class="brand">
                         <h1 class="brand_name">
-                        <a href="index.php"><img src="images/vib_banner_small.png" style="width: 50%;height: 50%"></a>
-                    </h1>
+                            <a href="./"><img src="images/vib_banner_small.png" style="width: 50%;height: 50%"></a>
+                        </h1>
                     </div>
                     <nav class="nav">
                         <ul class="sf-menu">
@@ -56,7 +79,7 @@
                                 <a href="index.php">Home</a>
                             </li>
                             <li>
-                                <a href="aboutus.html">About Us</a>
+                                <a href="aboutus.php">About Us</a>
                             </li>
                             <li class="active">
                                 <a href="#events">Events</a>
@@ -105,161 +128,104 @@
                             <li>
                                 <a href="#">Meet the Team</a>
                             </li>
+                             <li>
+                                <?php echo $view; ?>
+                            </li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </header>
-        <!--========================================================
-                              CONTENT
-    =========================================================-->
         <main>
             <section class="well well__offset-3">
                 <div class="container">
-                    <h2><em>Fine Arts Club</em>EVENTS</h2>
+                    <h2><em>Games</em>EVENTS</h2>
                     <div id="cbp-so-scroller" class="cbp-so-scroller ">
                         <section class="cbp-so-section first-header" style="display:none;">
                             <article class="cbp-so-side cbp-so-side-right">
-                                <h2 style="padding-top:20%;">18th March 2016</h2>
+                                <h2 style="padding-top:20%;">19th March 2016</h2>
                             </article>
                             <figure class="cbp-so-side cbp-so-side-left">
-                                <a href="#first"><img src="images/picaso.jpg" alt="img01"></a>
+                                <a href="#first"><img src="images/cs.jpg" alt="img01"></a>
                             </figure>
                         </section>
                         <section class="cbp-so-section">
                             <figure class="cbp-so-side cbp-so-side-left">
-                                <a href="#second"><img src="images/doodle.jpg" alt="img01"></a>
+                                <a href="#second"><img src="images/dota.jpg" alt="img01"></a>
                             </figure>
                             <article class="cbp-so-side cbp-so-side-right">
-                                <h2 style="padding-top:20%;">18th March 2016</h2>
+                                <h2 style="padding-top:20%;">19th March 2016</h2>
                             </article>
                         </section>
                         <section class="cbp-so-section">
-                            <article class="cbp-so-side cbp-so-side-left">
-                                <h2 style="padding-top:20%;">18th March 2016</h2>
-                            </article>
                             <figure class="cbp-so-side cbp-so-side-right">
-                                <a href="#third"><img src="images/mehandi.jpg" alt="img01"></a>
+                                <h2 style="padding-top:20%;">18th and 19th March 2016</h2>
                             </figure>
-                        </section>
-                        <section class="cbp-so-section">
-                            <figure class="cbp-so-side cbp-so-side-left">
-                                <a href="#fourth"><img src="images/brushless.jpg" alt="img01"></a>
-                            </figure>
-                            <article class="cbp-so-side cbp-so-side-right">
-                                <h2 style="padding-top:20%;">18th March 2016</h2>
+                            <article class="cbp-so-side cbp-so-side-left">
+                                <a href="#third"><img src="images/fifa-intro.jpg" alt="img01" style="height: 50%;"></a>
                             </article>
                         </section>
                     </div>
                 </div>
             </section>
-            <section name="first" class="parallax parallax12" data-parallax-speed="-0.4">
+            <section name="first" class="parallax parallax46" data-parallax-speed="-0.4">
                 <div class="container">
-                    <h2><em>Be a Picasso</em>Individual</h2>
+                    <h2><em>Counter Strike 1.6</em>Team of 5</h2>
                     <br>
                     <br>
-                    <h4 style="text-align: left;font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Swetha Bodagala &nbsp;&nbsp;&nbsp;9551658404<br><br>Sounak Chakraborty &nbsp;&nbsp;&nbsp;9952041167<br><br>Vishnu Priya &nbsp;&nbsp;&nbsp;9440272106</h4>
+                    <h4 style="text-align: left;font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>C. Aashrith &nbsp;&nbsp;&nbsp;9176727660<br><br>Hari A. &nbsp;&nbsp;&nbsp;9840148083</h4>
                     <div class="row">
                         <div class="grid_6">
                             <ul class="indents-3">
                                 <li>Description of Event:
-                                    <p>"Everything you can imagine is real " . If you are creative and passionate about art, here is an interesting event to showcase your talent. Participants have to sketch based on the given theme. </p>
+                                    <p>A Classic game of 5 men trying to blow up Sites into Smithereens and another set of 5 trying to stop this from happening.
+                                    </p>
                                 </li>
                                 <li>
                                     <br>
-                                    <li>
-                                        <li>Registration fees: Rs. 50/- per head. [Internal]</li>
-                                        <li>Registration fees: Rs. 100/- per head. [External]</li>
+                                </li>
+                                <li>Registration fees: Rs. 500/- for a team of 5.</li>
                             </ul>
                         </div>
                         <div class="grid_6">
                             <p class="indents-3">Rules:
                                 <br>
-                                <li>Theme will be given on the spot.</li>
-                                <li>Participants should use only sketch pens and markers.</li>
-                                <li>Materials will be provided.</li>
-                                <li>Participants are not allowed to use their smartphones for reference pictures.</li>
+                                <li>5 on 5 Team game .</li>
+                                <li>Bo1 Elimination .</li>
+                                <li>Round to 11 (First to 11 Wins)</li>
+                                <li>Fade to Black 1</li>
+                                <li>No Hops/Scripts .</li>
+                                <li>Finals : Best of 3 </li>
+                                <li>Maps : Dust 2, Inferno, Train, Mirage(If chosen)</li>
+                                <li>Judging : Teams will be drawn randomly and no Support to any Individual/team will take place and any team to Flout any rule will be Disqualified immediately.</li>
                             </p>
                         </div>
                     </div>
+                    <form>
+                        <input type="text" id="event_counterstrike" value="counterstrike_team_500_s" style="display: none;">                    
+                        <div style="text-align: center; ">
+                            <input id="counterstrike" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <?php echo $login_view; ?>
+                        </div>
+                    </form> 
                 </div>
             </section>
-            <section name="second" class="parallax parallax14" data-parallax-speed="-0.4">
+            <section name="second" class="parallax parallax47" data-parallax-speed="-0.4">
                 <div class="container">
-                    <h2><em>Cup O' Doodle</em>Individual</h2>
+                    <h2><em>Dota&nbsp; 2</em>Team of 5</h2>
                     <br>
                     <br>
-                    <h4 style="text-align: left; font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Harshitha P. &nbsp;&nbsp;&nbsp;9003128180<br><br>Shashwat Awasthi &nbsp;&nbsp;&nbsp;9092882053<br><br>Subhasree &nbsp;&nbsp;&nbsp;9865690666</h4>
+                    <h4 style="text-align: left;font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Daniel Benniah. J. &nbsp;&nbsp;&nbsp;9952973606<br><br>John Silvan Churchill &nbsp;&nbsp;&nbsp;9444884724</h4>
                     <div class="row">
                         <div class="grid_6">
                             <ul class="indents-3">
                                 <li>Description of Event:
-                                    <p>A random sketch or scribble on the cup with black ink which should finally make some sense and look attractive. No theme in particular.
-                                        <br>A theme will be provided on the spot.</p>
+                                    <p>The computer game DOTA 2</p>
                                 </li>
                                 <li>
                                     <br>
-                                    <li>
-                                        <li>Registration fees: Rs. 50/- per head. [Internal]</li>
-                                        <li>Registration fees: Rs. 100/- per head. [External]</li>
-                            </ul>
-                        </div>
-                        <div class="grid_6">
-                            <p class="indents-3">Rules:
-                                <br>
-                                <li>Only permanent markers allowed, no phone and all accessories will be provided.</li>
-                                <br>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section name="third" class="parallax parallax15" data-parallax-speed="-0.4">
-                <div class="container">
-                    <h2><em>Mehendi</em>Team of 2</h2>
-                    <br>
-                    <br>
-                    <h4 style="text-align: left; font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Archa &nbsp;&nbsp;&nbsp;9789094320<br><br>Madhuri L. &nbsp;&nbsp;&nbsp;8124548839<br><br>Tishya Garg &nbsp;&nbsp;&nbsp;9677262987</h4>
-                    <div class="row">
-                        <div class="grid_6">
-                            <ul class="indents-3">
-                                <li>Description of Event:
-                                    <p>Come show off your skills to make henna tattoos.</p>
                                 </li>
-                                <li>
-                                    <br>
-                                    <li>
-                                        <li>Registration fees: Rs. 50/- per head. [Internal]</li>
-                                        <li>Registration fees: Rs. 100/- per head. [External]</li>
-                            </ul>
-                        </div>
-                        <div class="grid_6">
-                            <p class="indents-3">Rules:
-                                <br>
-                                <li>Team of 2. (One person to design and one to show case.) All further rules will be given on-spot.</li>
-                                <br>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section name="fourth" class="parallax parallax16" data-parallax-speed="-0.4">
-                <div class="container">
-                    <h2><em>Paint without a brush</em>Team of 2</h2>
-                    <br>
-                    <br>
-                    <h4 style="text-align: left; font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Sai Sowmya &nbsp;&nbsp;&nbsp;9176858428<br><br>T.R.N. Sowmya &nbsp;&nbsp;&nbsp;9491889489<br><br>Kaustub &nbsp;&nbsp;&nbsp;9491091116</h4>
-                    <div class="row">
-                        <div class="grid_6">
-                            <ul class="indents-3">
-                                <li>Description of Event:
-                                    <p>Artists can make art from eveything. Having a brush is not necessary. Showcase your artistic capabilities.</p>
-                                </li>
-                                <li>
-                                    <br>
-                                    <li>
-                                        <li>Registration fees: Rs. 50/- per head. [Internal]</li>
-                                        <li>Registration fees: Rs. 100/- per head. [External]</li>
+                                <li>Registration fees: Rs. 500/- for a team of 5.</li>
                             </ul>
                         </div>
                         <div class="grid_6">
@@ -270,12 +236,59 @@
                             </p>
                         </div>
                     </div>
+                    <form>
+                        <input type="text" id="event_dota2" value="dota2_team_500_s" style="display: none;">                    
+                        <div style="text-align: center; ">
+                            <input id="dota2" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <?php echo $login_view; ?>
+                        </div>
+                    </form> 
+                </div>
+            </section>
+            <section name="third" class="parallax parallax50" data-parallax-speed="-0.4">
+                <div class="container">
+                    <h2><em>Fifa 15</em>Individual</h2>
+                    <br>
+                    <br>
+                    <h4 style="text-align: left;font-family: 'Tangerine', serif; font-size:300%;">Coordinators:<br><br>Aman Saha : &nbsp;&nbsp;&nbsp;9790714125<br><br>Aaditya Rana : &nbsp;&nbsp;8939591893</h4>
+                    <div class="row">
+                        <div class="grid_6">
+                            <ul class="indents-3">
+                                <li>
+                                    <br>
+                                </li>
+                                <li>Description of Event:
+                                    <p>There are 4 rounds in the game. The game is a
+                                        <br> 2 day event.Round 1 and 2 will finish on Day 1
+                                        <br> and Round 3 and 4 will finish on day 2.
+                                    </p>
+                                </li>
+                                <li>Registration fees: Rs. 150 per head. </li>
+                            </ul>
+                        </div>
+                        <div class="grid_6">
+                            <p class="indents-3">Rules:
+                                <br>
+                                <li>This round is a team round where a two player team plays against Round 1: another team.</li>
+                                <li>The teams which win are automatically qualified for round 2.</li>
+                                <li>The teams which lose get a second chance to face other teams who lost in the first chance.</li>
+                                <li>Out of these the winning teams qualify for round 2.</li>
+                                <li>Round 2: This round is a singles event.</li>
+                                <li>Round 3: QUATERFINAL KNOCKOUT SINGLES</li>
+                                <li>ROUND 4: SEMI FINAL FINAL</li>
+                            </p>
+                        </div>
+                    </div>
+                    <form>
+                        <input type="text" id="event_fifa15" value="fifa15_alone_150_s" style="display: none;">                    
+                        <div style="text-align: center; ">
+                            <input id="fifa15" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <?php echo $login_view; ?>
+                        </div>
+                    </form> 
                 </div>
             </section>
         </main>
-        <!--========================================================
-                              FOOTER
-    =========================================================-->
         <footer style="background-color: #a95858;">
             <br>
             <div class="container-fluid" style="padding-bottom: 2%">
@@ -322,3 +335,8 @@
 </body>
 
 </html>
+<?php
+    if (isset ($conn)){
+      mysqli_close($conn);
+    }
+?>

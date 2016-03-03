@@ -130,9 +130,9 @@ if(isset($_POST['signup'])){
 						</div>
 						<div class="yarim form-group">
 							<label class="control-label" for="inputNormal">College</label><br>
-							<select id="college-select">
-								<option>Vellore Institute of technology</option>
-								<option id="other">Other</option>
+							<select id="college-select" required>
+								<option value="VIT">Vellore Institute of technology</option>
+								<option value="other" id="other">Other</option>
 							</select>
 						</div>
 						<div class="form-group" style="display: none;" id="col-name">

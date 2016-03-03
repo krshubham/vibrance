@@ -12,7 +12,7 @@
         $first_name = explode(" ", $name_title['name']);            
         $view = "<a href='logout.php'>Logout, ".$first_name[0]."</a>"; 
         $event_view = ""; 
-        $login_view = "";      
+        $login_view = "";   
     } else {
         $current_user = "";  
         $first_name = "";
@@ -44,6 +44,8 @@
     <script src="js/modernizr.custom-slider.js"></script>
     <link rel="stylesheet" type="text/css" href="css/backtotop.css">
     <script type="text/javascript" src="js/backtotop.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/refreshform.js"></script>
     <!--[if lt IE 9]>
     <html class="lt-ie9">
     <div style=' clear: both; text-align:center; position: relative;'>
@@ -276,7 +278,14 @@
                         </div>
                     </div>
                     <form>
-                        <input type="text" id="event_generalquiz" value="generalquiz_alone_100" style="display: none;">                    
+                        <input type="text" id="event_generalquiz" value="generalquiz_team_50_d" style="display: none;">
+                        <center>
+                            <select id="parti_generalquiz" <?php echo $event_view; ?> >
+                                <option value="0">Select the number of participants in your team</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>                            
+                        </center>                    
                         <div style="text-align: center; ">
                             <input id="generalquiz" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
                             <?php echo $login_view; ?>
@@ -315,7 +324,7 @@
                         </div>
                     </div>
                     <form>
-                        <input type="text" id="event_entertainmentquiz" value="entertainmentquiz_team_50" style="display: none;">
+                        <input type="text" id="event_entertainmentquiz" value="entertainmentquiz_team_50_d" style="display: none;">
                         <center>
                             <select id="parti_entertainmentquiz" <?php echo $event_view; ?> >
                                 <option value="0">Select the number of participants in your team</option>
@@ -342,6 +351,8 @@
                                 <li>Description of Event:
                                     <p>Karl Popper debate focuses on relevent and often deeply divisive propositions, emphasizing on development of critical thinking skills and tolerancefor differing view-points.Two teams participate in each debate. One team follows role of affirmative party while other team that of negative party. Debators work together in teams and must research both sides of the issue. Each team is given opportunity yo offer arguments and direct questions to opposing team. Distinguishing feature of this format of debate are cross-examination, where four out of six debators ask their opponents questions and preparing time when the debators can prepare before their speeches.<br>Bonafide to be produced for external participants.</p>
                                 </li>
+                                <li><br></li>
+                                <li>2 in each team.</li>
                                 <li><br></li>
                                 <li>Registration fees: Rs. 50/- per head. [Internal]</li>
                                 <li>Registration fees: Rs. 100/- per head. [External]</li>
@@ -376,7 +387,7 @@
                         </div>
                     </div>
                      <form>
-                        <input type="text" id="event_karlpopperdebate" value="karlpopperdebate_alone_100" style="display: none;">                    
+                        <input type="text" id="event_karlpopperdebate" value="karlpopperdebate_team_50_d" style="display: none;">                    
                         <div style="text-align: center; ">
                             <input id="karlpopperdebate" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
                             <?php echo $login_view; ?>
@@ -416,7 +427,7 @@
                         </div>
                     </div>
                    <form>
-                        <input type="text" id="event_classicdebate" value="classicdebate_alone_50" style="display: none;">                    
+                        <input type="text" id="event_classicdebate" value="classicdebate_alone_50_d" style="display: none;">                    
                         <div style="text-align: center; ">
                             <input id="classicdebate" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
                             <?php echo $login_view; ?>
@@ -455,6 +466,13 @@
                             </p>
                         </div>
                     </div>
+                    <form>
+                        <input type="text" id="event_splitpersonality" value="splitpersonality_alone_50_d" style="display: none;">                    
+                        <div style="text-align: center; ">
+                            <input id="splitpersonality" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <?php echo $login_view; ?>
+                        </div>
+                    </form>  
                 </div>
             </section>
             <section name="sixth" class="parallax parallax22" data-parallax-speed="-0.4">
@@ -491,6 +509,13 @@
                             </p>
                         </div>
                     </div>
+                    <form>
+                        <input type="text" id="event_centrestage" value="centrestage_alone_50_d" style="display: none;">                    
+                        <div style="text-align: center; ">
+                            <input id="centrestage" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <?php echo $login_view; ?>
+                        </div>
+                    </form> 
                 </div>
             </section>
             <section name="seventh" class="parallax parallax23" data-parallax-speed="-0.4">
@@ -527,6 +552,13 @@
                             </p>
                         </div>
                     </div>
+                    <form>
+                        <input type="text" id="event_aircrash" value="aircrash_alone_50_d" style="display: none;">                    
+                        <div style="text-align: center; ">
+                            <input id="aircrash" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <?php echo $login_view; ?>
+                        </div>
+                    </form> 
                 </div>
             </section>
             <section name="eighth" class="parallax parallax24" data-parallax-speed="-0.4">
@@ -554,6 +586,14 @@
                             </p>
                         </div>
                     </div>
+                    <form>
+                        <input type="text" id="event_lapersona" value="lapersona_alone_50_d" style="display: none;">                    
+                        <div style="text-align: center; ">
+                            <input id="lapersona" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <?php echo $login_view; ?>
+                        </div>
+                    </form> 
+                </div>
                 </div>
             </section>
             <section name="ninth" class="parallax parallax25" data-parallax-speed="-0.4">
@@ -569,6 +609,8 @@
                                     <p>The word 'potpourri' indicates a mixture. The event is a mix of many different events.<br>Bonafide to be produced for external participants.</p>
                                 </li>
                                 <li><br></li>
+                                <li>2 in a team.</li>
+                                <li><br></li>
                                 <li>Registration fees: Rs. 50/- per head. [Internal]</li>
                                 <li>Registration fees: Rs. 100/- per head. [External]</li>
                             </ul>
@@ -581,6 +623,13 @@
                             </p>
                         </div>
                     </div>
+                    <form>
+                        <input type="text" id="event_potpourri" value="potpourri_team_50_d" style="display: none;">                    
+                        <div style="text-align: center; ">
+                            <input id="potpourri" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <?php echo $login_view; ?>
+                        </div>
+                    </form> 
                 </div>
             </section>
             <section name="tenth" class="parallax parallax26" data-parallax-speed="-0.4">
@@ -610,6 +659,13 @@
                             </p>
                         </div>
                     </div>
+                     <form>
+                        <input type="text" id="event_litquiz" value="litquiz_alone_50_d" style="display: none;">                    
+                        <div style="text-align: center; ">
+                            <input id="litquiz" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <?php echo $login_view; ?>
+                        </div>
+                    </form> 
                 </div>
             </section>
             <section name="eleventh" class="parallax parallax27" data-parallax-speed="-0.4">
@@ -648,6 +704,13 @@
                             </p>
                         </div>
                     </div>
+                    <form>
+                        <input type="text" id="event_turncourt" value="turncourt_alone_50_d" style="display: none;">                    
+                        <div style="text-align: center; ">
+                            <input id="turncourt" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <?php echo $login_view; ?>
+                        </div>
+                    </form> 
                 </div>
             </section>
             <section name="twelvth" class="parallax parallax28" data-parallax-speed="-0.4">
@@ -663,6 +726,8 @@
                                     <p>Put your vocabulary up for a test with this popular word game, except that this time, your childhood game has gotten itself a makeover.<br>Bonafide to be produced for external participants.</p>
                                 </li>
                                 <li><br></li>
+                                <li>2 in a team.</li>
+                                <li><br></li>
                                 <li>Registration fees: Rs. 50/- per team. [Internal]</li>
                                 <li>Registration fees: Rs. 100/- per team. [External]</li>
                             </ul>
@@ -677,6 +742,13 @@
                             </p>
                         </div>
                     </div>
+                    <form>
+                        <input type="text" id="event_scrabble" value="scrabble_team_50_d" style="display: none;">                    
+                        <div style="text-align: center; ">
+                            <input id="scrabble" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <?php echo $login_view; ?>
+                        </div>
+                    </form> 
                 </div>
             </section>
         </main>

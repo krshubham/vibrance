@@ -18,8 +18,11 @@
 	$event = $_POST['event1'];
 	$event_part = explode("_", $event);
 	$parti = $_POST['parti1'];
-	$price = $parti*$event_part[2];
-
+	if (($name_title['college']=="other")&&($event_part[3]=="d")) {
+		$price = $parti*100;
+	} else {
+		$price = $parti*$event_part[2];
+	}
 	$check_query = "SELECT * FROM {$event} WHERE email = '{$current_user}' ";
 	$check_result = mysqli_query($conn, $check_query);
 	confirm_query($check_result);
