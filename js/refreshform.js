@@ -560,4 +560,36 @@ $(document).ready(function() {
             alert(data);
         });
     });
+
+    $("#nerdornewbie").click(function() {
+        var event = $("#event_nerdornewbie").val();
+        var parti = 2;
+        $.post("refreshform.php", { event1: event, parti1: parti }, function(data) {
+            alert(data);
+        });
+    });
+
+    $("#treasurehunt").click(function() {
+        var event = $("#event_treasurehunt").val();
+        var parti = 3;
+        $.post("refreshform.php", { event1: event, parti1: parti }, function(data) {
+            alert(data);
+        });
+    });
+
+    $("#snakeandladder").click(function() {
+        var event = $("#event_snakeandladder").val();
+        var parti = 1;
+        $.post("refreshform.php", { event1: event, parti1: parti }, function(data) {
+            alert(data);
+        });
+    });
+
+    $("#aimandact").click(function() {
+        var event = $("#event_aimandact").val();
+        var parti = 3;
+        $.post("refreshform.php", { event1: event, parti1: parti }, function(data) {
+            alert(data);
+        });
+    });
 });

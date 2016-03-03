@@ -132,6 +132,9 @@
                             <li>
                                 <a href="#">Meet the Team</a>
                             </li>
+                            <li>
+                                <?php echo $view; ?>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -207,6 +210,13 @@
                             </p>
                         </div>
                     </div>
+                    <form>
+                        <input type="text" id="event_nerdornewbie" value="nerdornewbie_team_50_d" style="display: none;">                    
+                        <div style="text-align: center; ">
+                            <input id="nerdornewbie" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <?php echo $login_view; ?>
+                        </div>
+                    </form>    
                 </div>
             </section>
             <section name="second" class="parallax parallax37" data-parallax-speed="-0.4">
@@ -234,6 +244,13 @@
                             </p>
                         </div>
                     </div>
+                    <form>
+                        <input type="text" id="event_treasurehunt" value="treasurehunt_team_50_d" style="display: none;">                    
+                        <div style="text-align: center; ">
+                            <input id="treasurehunt" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <?php echo $login_view; ?>
+                        </div>
+                    </form>  
                 </div>
             </section>
             <section name="third" class="parallax parallax38" data-parallax-speed="-0.4">
@@ -261,6 +278,13 @@
                             </p>
                         </div>
                     </div>
+                    <form>
+                        <input type="text" id="event_snakeandladder" value="snakeandladder_alone_50_d" style="display: none;">                    
+                        <div style="text-align: center; ">
+                            <input id="snakeandladder" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <?php echo $login_view; ?>
+                        </div>
+                    </form> 
                 </div>
             </section>
             <section name="fourth" class="parallax parallax39" data-parallax-speed="-0.4">
@@ -292,6 +316,13 @@
                             </p>
                         </div>
                     </div>
+                    <form>
+                        <input type="text" id="event_aimandact" value="aimandact_team_50_d" style="display: none;">                    
+                        <div style="text-align: center; ">
+                            <input id="aimandact" class="gobutton" <?php echo $event_view; ?> type="button" value="Register!" onclick="this.value='Registered!'" />
+                            <?php echo $login_view; ?>
+                        </div>
+                    </form> 
                 </div>
             </section>
         </main>
