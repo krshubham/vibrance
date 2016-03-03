@@ -192,7 +192,7 @@ th {
                                                     </td> 
                                                     <td>
                                                         <?php $email_part = explode("@", $list['email']); ?>
-                                                        <a href="intimate.php?email1=<?php echo urlencode($email_part[0]); ?>&email2=<?php echo urlencode($email_part[1]); ?>&event=<?php echo urlencode($event_table); ?>&price=<?php echo urlencode($fees); ?>" onclick="return confirm('Send an intimation mail?');">Intimate</a>
+                                                        <a href="intimate.php?email1=<?php echo urlencode($email_part[0]); ?>&email2=<?php echo urlencode($email_part[1]); ?>&event=<?php echo urlencode($event_name); ?>&price=<?php echo urlencode($fees); ?>" onclick="return confirm('Send an intimation mail?');">Intimate</a>
                                                     </td>
                                                 </tr><?php                                             
                                             } ?>

@@ -7,13 +7,9 @@
 	
 	$email1 = $_GET['email1'];
 	$email2 = $_GET['email2'];
-	$email = $email1."@".$email2;
-	//$email_part = explode("%40", $email_raw);
-	//$email = $email_part[0]."@".$email_part[1];
-	//echo $email."\n".;
-	$event = mysqli_real_escape_string($conn, htmlspecialchars($_GET['event']));
-	$event_part = explode("_", $event);
-	$fees = mysqli_real_escape_string($conn, htmlspecialchars($_GET['fees']));
+	$email = $email1."@".$email2;	
+	$event = $_GET['event'];	
+	$fees = $_GET['fees'];
 
 	require 'PHPMailer-master/PHPMailerAutoload.php';
  
@@ -39,6 +35,8 @@
 	   echo 'Message could not be sent.';
 	   echo 'Mailer Error: ' . $mail->ErrorInfo;
 	   exit;
-	} 
+	} else {
+		redirect_to("event_admin.php");
+	}
 		
 ?>
