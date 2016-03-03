@@ -1,9 +1,9 @@
 <?php
 	
-	$email = mysqli_real_escape_string($conn, htmlspecialchars($_POST['email']));
-	$event = mysqli_real_escape_string($conn, htmlspecialchars($_POST['event']));
+	$email = mysqli_real_escape_string($conn, htmlspecialchars($_GET['email']));
+	$event = mysqli_real_escape_string($conn, htmlspecialchars($_GET['event']));
 	$event_part = explode("_", $event);
-	$fees = mysqli_real_escape_string($conn, htmlspecialchars($_POST['fees']));
+	$fees = mysqli_real_escape_string($conn, htmlspecialchars($_GET['fees']));
 
 	require 'PHPMailer-master/PHPMailerAutoload.php';
  
