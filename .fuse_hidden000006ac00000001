@@ -1,28 +1,3 @@
-<?php require_once("includes/session.php"); ?>
-<?php require_once("includes/db_connection.php"); ?>
-<?php require_once("includes/functions.php"); ?>
-
-<?php 
-    if (isset($_SESSION["username"])) {
-        $current_user = $_SESSION["username"];
-        $name_query = "SELECT * FROM users WHERE username = '{$current_user}' LIMIT 1";
-        $name_result = mysqli_query($conn, $name_query);
-        confirm_query($name_result);
-        $name_title = mysqli_fetch_assoc($name_result);
-        $first_name = explode(" ", $name_title['name']);            
-        $view = "<a href='logout.php'>Logout, ".$first_name[0]."</a>"; 
-        $event_view = ""; 
-        $login_view = "";      
-    } else {
-        $current_user = "";  
-        $first_name = "";
-        $name_title = "";
-        $view = "<a href='login/index.php'>Login</a>";  
-        $login_view = "<a href='login/index.php' class='gobutton'>Login to register</a>"; 
-        $event_view = "style='display: none;'";     
-    }   
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,7 +18,6 @@
 	<script src="js/modernizr.custom-slider.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/backtotop.css">
 	<link rel="stylesheet" type="text/css" href="css/checkout-sidebar.css">
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<script type="text/javascript" src="js/backtotop.js"></script>
 	<!--[if lt IE 9]>
 	<html class="lt-ie9">
@@ -89,7 +63,7 @@
 		<!--========================================================
 							  HEADER
 							  =========================================================-->
-		<header style="background-color: #E85657;">
+		<header>
 			<div id="stuck_container" class="stuck_container">
 				<div class="container">
 					<div class="brand">
@@ -170,7 +144,7 @@
 					<div class="dummy-grid dummy-grid--filled dummy-grid--sidebar">
 						<div class="dummy-sidebar">
 							<div class="checkout">
-								<a class="checkout__button" href="#">Informal Events<br><br><i class="fa fa-arrow-circle-o-down"></i></a>
+								<a class="checkout__button" href="#">List of all informal Events</a>
 								<div class="checkout__order">
 									<div class="checkout__order-inner">
 										<button class="checkout__option checkout__option--silent checkout__cancel"><h2>Back</h2></button>
@@ -860,7 +834,7 @@
 			</section>
 			<section name="twentieth" class="parallax parallax74" data-parallax-speed="-0.4" id="jam">
 				<div class="container">
-					<h2><em>Just-A-Minute</em>Individual</h2>
+					<h2><em>JAM</em>Individual</h2>
 					<br>
 					<br>
 					<h4 style="text-align: left; font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Harry Richard &nbsp;&nbsp;&nbsp;9790715854<br><br>Gregory S Mathew&nbsp;&nbsp;&nbsp;8428058428<br><br>Aditya Sathe&nbsp;&nbsp;&nbsp;9962411069</h4>
@@ -1276,4 +1250,5 @@
 	new cbpScroller(document.getElementById('cbp-so-scroller'));
 	</script>
 </body>
+
 </html>
