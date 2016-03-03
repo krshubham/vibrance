@@ -138,7 +138,7 @@ if(isset($_POST['signup'])){
 						</div>
 						<div class="form-group">
 							<label class="control-label" for="inputNormal" id="email-label">VIT Email</label>
-							<input type="text" name="username" id="signup_email" class="bp-suggestions form-control" cols="50" rows="10" required value="@vit.ac.in"></input>
+							<input type="email" name="username" id="signup_email" class="bp-suggestions form-control" cols="50" rows="10" required value="@vit.ac.in"></input>
 						</div>
 						<div class="form-group" value style="display: none;" id="col-name">
 							<label class="control-label" for="inputNormal">Name of the college</label>
