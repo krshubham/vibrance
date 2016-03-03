@@ -137,16 +137,16 @@ if(isset($_POST['signup'])){
 							</select>
 						</div>
 						<div class="form-group">
-							<label class="control-label" for="inputNormal" id="email-label">Email</label>
-							<input type="text" name="username" id="signup_email" class="bp-suggestions form-control" cols="50" rows="10" required></input>
+							<label class="control-label" for="inputNormal" id="email-label">VIT Email</label>
+							<input type="text" name="username" id="signup_email" class="bp-suggestions form-control" cols="50" rows="10" required value="@vit.ac.in"></input>
 						</div>
-						<div class="form-group" style="display: none;" id="col-name">
+						<div class="form-group" value style="display: none;" id="col-name">
 							<label class="control-label" for="inputNormal">Name of the college</label>
 							<input type="text" name="college" id="signup_password" class="bp-suggestions form-control" cols="50" rows="10"></input>
 						</div>
 						<div class="form-group" id="rgno">
 							<label class="control-label" for="inputNormal">Reg. No.(only for VIT students)</label>
-							<input type="text" name="regno" id="signup_password" value="" class="bp-suggestions form-control" cols="50" rows="10"></input>
+							<input type="text" name="regno" id="rgno" value="" class="bp-suggestions form-control" cols="50" rows="10" onfocus="email_check()"></input>
 						</div>
 						<div class="form-group">
 							<label class="control-label" for="inputNormal">Contact Number</label>
@@ -202,13 +202,26 @@ if(isset($_POST['signup'])){
 			if($("#college-select")[0].selectedIndex==0){
 				//alert("Enter your VIT email only.");
 				$("#email-label").html("VIT Email");
-				$("#signup_email").attr("placeholder","@vit.ac.in");
+				$("#signup_email").attr("value","@vit.ac.in");
 			}
 			else{
 				$("#email-label").html("Email");
+				$("#signup_email").removeAttr("value");
 			}
 
 		});
+	</script>
+	<script type="text/javascript">
+	function email_check(){
+			var inputString = document.getElementById('signup_email').value;
+			var findme = "@vit.ac.in";
+			if ( inputString.indexOf(findme) > -1 ) {
+		  	alert( "found it" );
+		  	return 0;
+			} 
+			else {
+		  		window.alert("Enter VIT email");
+		}
 	</script>
 	<script src="script.js"></script>
 
