@@ -1,6 +1,13 @@
 <?php
 	
-	$email = $_GET['email'];
+	function redirect_to($new_location) {
+		header("Location: " . $new_location);
+		exit; 
+	}
+	
+	$email_raw = mysqli_real_escape_string($conn, htmlspecialchars($_GET['email']));
+	$email_part = explode("%40", $email_raw);
+	$email = $email_part[0]."@".$email_part[1];
 	$event = mysqli_real_escape_string($conn, htmlspecialchars($_GET['event']));
 	$event_part = explode("_", $event);
 	$fees = mysqli_real_escape_string($conn, htmlspecialchars($_GET['fees']));
@@ -29,6 +36,8 @@
 	   echo 'Message could not be sent.';
 	   echo 'Mailer Error: ' . $mail->ErrorInfo;
 	   exit;
+	} else {
+		redirect_to('event_admin.php');
 	}	
 		
 ?>
