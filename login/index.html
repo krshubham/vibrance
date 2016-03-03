@@ -81,9 +81,9 @@ if(isset($_POST['signup'])){
 	<link rel="stylesheet" href="style.css" type="text/css" media="all">
 	<link rel="stylesheet" href="normalize.css" type="text/css" media="all">
 	<link href='http://fonts.googleapis.com/css?family=Roboto:900,900italic,500,400italic,100,700italic,300,700,500italic,100italic,300italic,400' rel='stylesheet' type='text/css'>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
-
-<script type="text/javascript">//<![CDATA[ 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=0.5">
+	<script type="text/javascript">//<![CDATA[ 
 	$(window).load(function(){
 		$('.form-control').on('focus blur', function (e) {
 			$(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
@@ -129,16 +129,16 @@ if(isset($_POST['signup'])){
 							<label class="control-label" for="inputNormal">Name</label>
 							<input type="text" name="name" id="field_1" value="" class="bp-suggestions form-control" cols="50" rows="10" required></input>
 						</div>
-						<div class="form-group">
-							<label class="control-label" for="inputNormal">Email</label>
-							<input type="text" name="username" id="signup_email" class="bp-suggestions form-control" cols="50" rows="10" required></input>
-						</div>
 						<div class="yarim form-group">
 							<label class="control-label" for="inputNormal">College</label><br>
 							<select id="college-select" required>
 								<option value="VIT">Vellore Institute of technology</option>
 								<option id="other">Other</option>
 							</select>
+						</div>
+						<div class="form-group">
+							<label class="control-label" for="inputNormal" id="email-label">Email</label>
+							<input type="text" name="username" id="signup_email" class="bp-suggestions form-control" cols="50" rows="10" required></input>
 						</div>
 						<div class="form-group" style="display: none;" id="col-name">
 							<label class="control-label" for="inputNormal">Name of the college</label>
@@ -199,6 +199,15 @@ if(isset($_POST['signup'])){
 				$("#col-name").fadeOut();
 				$("#rgno").slideDown();
 			}
+			if($("#college-select")[0].selectedIndex==0){
+				//alert("Enter your VIT email only.");
+				$("#email-label").html("VIT Email");
+				$("#signup_email").attr("placeholder","@vit.ac.in");
+			}
+			else{
+				$("#email-label").html("Email");
+			}
+
 		});
 	</script>
 	<script src="script.js"></script>
