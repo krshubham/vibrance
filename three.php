@@ -29,7 +29,7 @@
 		$price = 100;
 	}
 	$combo = "three";
-	
+
 	$check_query = "SELECT * FROM {$first_event} WHERE email = '{$current_user}' ";
 	$check_result = mysqli_query($conn, $check_query);
 	confirm_query($check_result);
@@ -73,11 +73,19 @@
 		}	
 		
 		
-		$query = "INSERT INTO {$event} (name, email, college, regno, phno, altphno, parti, combo)";
-		$query .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', '{$altphno}', {$parti}, '{$combo}')";
-		$result = mysqli_query($conn, $query);	
+		$query1 = "INSERT INTO {$first_event} (name, email, college, regno, phno, altphno, parti, combo)";
+		$query1 .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', '{$altphno}', {$parti}, '{$combo}')";
+		$result1 = mysqli_query($conn, $query1);	
 
-	    if ($result) {
+		$query2 = "INSERT INTO {$second_event} (name, email, college, regno, phno, altphno, parti, combo)";
+		$query2.= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', '{$altphno}', {$parti}, '{$combo}')";
+		$result2 = mysqli_query($conn, $query2);	
+
+		$query3 = "INSERT INTO {$third_event} (name, email, college, regno, phno, altphno, parti, combo)";
+		$query3 .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', '{$altphno}', {$parti}, '{$combo}')";
+		$result3 = mysqli_query($conn, $query3);	
+
+	    if ($result1&&$result2&&$result3) {
 	      	echo"You have succesfully registered for Vibrance16. Please check your email for the details. Your registraion will only be confirmed after you make the payment at our registration desk in VIT.";		
 	    } else {
 		   	echo"Registration failed.";

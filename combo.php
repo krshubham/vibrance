@@ -332,7 +332,7 @@ if (isset($_SESSION["username"])) {
                             <br><br>
                             <div class="pure-g">
                                 <div class="pure-u-24-24">
-                                    <input type="button" class="btn-reg" value="Register"></input>
+                                    <input type="button" class="btn-reg" id="three_pass" value="Register"></input>
                                 </div>
                             </div>
                         </form>

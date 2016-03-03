@@ -201,6 +201,7 @@ th {
                                                 <th>Ph. No.</th>
                                                 <th>Status</th>
                                                 <th>Participants</th>
+                                                <th>Combo</th>
                                                 <th>Fees</th>
                                                 <th>Action</th>
                                                 <th <?php echo $view_cnf; ?>>Confirmed By</th>
@@ -214,7 +215,37 @@ th {
                                                 <td><?php echo $list['phno']; ?></td>
                                                 <td><?php echo $list['paid']; ?></td>
                                                 <td><?php echo $list['parti']; ?></td>
-                                                <td><?php $fees = $list['parti']*$event_name[2]; echo $fees; ?></td>
+                                                <td><?php echo $list['combo']; ?></td>
+                                                <td>
+                                                    <?php
+                                                       if (($list['college']!="VIT")&&($event_name[3]=="d")) {
+                                                            if ($list['combo']=="three") {
+                                                                $fee = 50;
+                                                                echo $fees;
+                                                            } elseif ($list['combo']=="all") {
+                                                                $fee = 8;
+                                                                echo $fees;
+                                                            } else {
+                                                                $fees = $list['parti']*100;
+                                                                echo $fees;
+                                                            }
+                                                        } elseif (($list['college']=="VIT")&&($event_name[3]=="d")) {
+                                                            if ($list['combo']=="three") {
+                                                                $fee = 33;
+                                                                echo $fees;
+                                                            } elseif ($list['combo']=="all") {
+                                                                $fee = 4;
+                                                                echo $fees;
+                                                            } else {
+                                                                $fees = $list['parti']*50;
+                                                                echo $fees;
+                                                            }
+                                                        } else {
+                                                            $fees = $list['parti']*$event_name[2];
+                                                            echo $fees; 
+                                                        }                                                        
+                                                    ?>
+                                                </td>
                                                 <td>                                                   
                                                     <a href="payconfirm.php?id=<?php echo urlencode($list["id"]); ?>&event=<?php echo urlencode($event); ?>&parti=<?php echo urlencode($list['parti']); ?>" onclick="return confirm('Are you sure?');"><?php
                                                     if ($list['paid']==0) {

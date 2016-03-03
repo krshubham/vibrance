@@ -33,6 +33,7 @@
 			$price = 300;
 		}
 	}
+	$combo = "NO";
 	$check_query = "SELECT * FROM {$event} WHERE email = '{$current_user}' ";
 	$check_result = mysqli_query($conn, $check_query);
 	confirm_query($check_result);
@@ -68,8 +69,8 @@
 		}	
 		
 		
-		$query = "INSERT INTO {$event} (name, email, college, regno, phno, altphno, parti)";
-		$query .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', '{$altphno}', {$parti})";
+		$query = "INSERT INTO {$event} (name, email, college, regno, phno, altphno, parti, combo)";
+		$query .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', '{$altphno}', {$parti}, '{$combo}')";
 		$result = mysqli_query($conn, $query);	
 
 	    if ($result) {
