@@ -576,36 +576,6 @@ a[href^="tel:"] {
 
 /*==================     ToTop     ======================*/
 
-.toTop {
-    width: 115px;
-    height: 115px;
-    font-size: 88px;
-    line-height: 115px;
-    color: #fff;
-    background: #b6b2b3;
-    position: fixed;
-    right: 66px;
-    bottom: 180px;
-    display: none;
-    overflow: hidden;
-    text-align: center;
-    text-decoration: none;
-    z-index: 20;
-    border-radius: 50%;
-}
-
-.toTop:hover {
-    color: #fff;
-    background: #E85645;
-    text-decoration: none;
-}
-
-@media only screen and (max-width: 1399px) {
-    .toTop {
-        display: none !important;
-    }
-}
-
 
 /*==================   Parallax    ======================*/
 
