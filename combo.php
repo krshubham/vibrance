@@ -264,9 +264,156 @@ if (isset($_SESSION["username"])) {
         if (document.form.event5.checked)
             {NewCount = NewCount + 1;}
 
+        if (document.form.event6.checked)
+            {NewCount = NewCount + 1;}
+
+        if (document.form.event7.checked)
+            {NewCount = NewCount + 1;}
+
+        if (document.form.event8.checked)
+            {NewCount = NewCount + 1;}
+
+        if (document.form.event9.checked)
+            {NewCount = NewCount +1;}
+
+        if (document.form.event10.checked)
+            {NewCount = NewCount + 1;}
+
+        if (document.form.event11.checked)
+            {NewCount = NewCount + 1;}
+
+        if (document.form.event12.checked)
+            {NewCount = NewCount + 1;}
+
+        if (document.form.event13.checked)
+            {NewCount = NewCount + 1;}
+
+        if (document.form.event14.checked)
+            {NewCount = NewCount + 1;}
+
+        if (document.form.event15.checked)
+            {NewCount = NewCount + 1;}
+
+        if (document.form.event16.checked)
+            {NewCount = NewCount + 1;}
+
+        if (document.form.event17.checked)
+            {NewCount = NewCount + 1;}
+
+        if (document.form.event18.checked)
+            {NewCount = NewCount + 1;}
+
+        if (document.form.event19.checked)
+            {NewCount = NewCount +1;}
+
+        if (document.form.event20.checked)
+            {NewCount = NewCount + 1;}
+
+        if (document.form.event21.checked)
+            {NewCount = NewCount + 1;}
+
+        if (document.form.event22.checked)
+            {NewCount = NewCount + 1;}
+
+        if (document.form.event23.checked)
+            {NewCount = NewCount + 1;}
+
+        if (document.form.event24.checked)
+            {NewCount = NewCount + 1;}
+
+        if (document.form.event25.checked)
+            {NewCount = NewCount + 1;}
+
+        if (document.form.event26.checked)
+            {NewCount = NewCount + 1;}
+
+        if (document.form.event27.checked)
+            {NewCount = NewCount + 1;}
+
+        if (document.form.event28.checked)
+            {NewCount = NewCount + 1;}
+
+        if (document.form.event29.checked)
+            {NewCount = NewCount +1;}
+
+        if (document.form.event30.checked)
+            {NewCount = NewCount + 1;}
+
+        if (document.form.event31.checked)
+            {NewCount = NewCount + 1;}
+
+        if (document.form.event32.checked)
+            {NewCount = NewCount + 1;}
+
+        if (document.form.event33.checked)
+            {NewCount = NewCount + 1;}
+
+        if (document.form.event34.checked)
+            {NewCount = NewCount + 1;}
+
+        if (document.form.event35.checked)
+            {NewCount = NewCount + 1;}
+
+        if (document.form.event36.checked)
+            {NewCount = NewCount + 1;}
+
+        if (document.form.event37.checked)
+            {NewCount = NewCount + 1;}
+
+        if (document.form.event38.checked)
+            {NewCount = NewCount + 1;}
+
+        if (document.form.event39.checked)
+            {NewCount = NewCount +1;}
+
+        if (document.form.event40.checked)
+            {NewCount = NewCount + 1;}
+
+        if (document.form.event41.checked)
+            {NewCount = NewCount + 1;}
+
+        if (document.form.event42.checked)
+            {NewCount = NewCount + 1;}
+
+        if (document.form.event43.checked)
+            {NewCount = NewCount + 1;}
+
+        if (document.form.event44.checked)
+            {NewCount = NewCount + 1;}
+
+        if (document.form.event45.checked)
+            {NewCount = NewCount + 1;}
+
+        if (document.form.event46.checked)
+            {NewCount = NewCount + 1;}
+
+        if (document.form.event47.checked)
+            {NewCount = NewCount + 1;}
+
+        if (document.form.event48.checked)
+            {NewCount = NewCount + 1;}
+
+        if (document.form.event49.checked)
+            {NewCount = NewCount +1;}
+
+        if (document.form.event50.checked)
+            {NewCount = NewCount + 1;}
+
+        if (document.form.event61.checked)
+            {NewCount = NewCount + 1;}
+
+        if (document.form.event62.checked)
+            {NewCount = NewCount + 1;}
+
+        if (document.form.event63.checked)
+            {NewCount = NewCount + 1;}
+
+        if (document.form.event64.checked)
+            {NewCount = NewCount + 1;}       
+
         if (NewCount == 4)
         {
-            alert('Pick Just Two Please')
+            alert('Pick Just Three Please')
             document.form; return false;
         }
     } 
