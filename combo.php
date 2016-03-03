@@ -126,88 +126,88 @@ if (isset($_SESSION["username"])) {
                         <form name="form">
                             <div class="pure-g">
                                 <div class="pure-u-1-8">
-                                    <input type="checkbox" name="event1" value="some" onclick="return KeepCount()">event1<br />
-                                    <input type="checkbox" name="event2" value="some" onclick="return KeepCount()">event2<br />
-                                    <input type="checkbox" name="event3" value="some" onclick="return KeepCount()">event3<br />
-                                    <input type="checkbox" name="event4" value="some" onclick="return KeepCount()">event4<br />
-                                    <input type="checkbox" name="event5" value="some" onclick="return KeepCount()">event5<br />
-                                    <input type="checkbox" name="event6" value="some" onclick="return KeepCount()">event1<br />
-                                    <input type="checkbox" name="event7" value="some" onclick="return KeepCount()">event2<br />
-                                    <input type="checkbox" name="event8" value="some" onclick="return KeepCount()">event3<br />
+                                    <input type="checkbox" name="event1" value="generalquiz_team_50_d" onclick="return KeepCount()">General Quiz<br />
+                                    <input type="checkbox" name="event2" value="entertainmentquiz_team_50_d" onclick="return KeepCount()">Entertainment Quiz<br />
+                                    <input type="checkbox" name="event3" value="karlpopperdebate_team_50_d" onclick="return KeepCount()">Karl Popper Debate<br />
+                                    <input type="checkbox" name="event4" value="classicdebate_alone_50_d" onclick="return KeepCount()">Classic Debate<br />
+                                    <input type="checkbox" name="event5" value="splitpersonality_alone_50_d" onclick="return KeepCount()">Split Personality<br />
+                                    <input type="checkbox" name="event6" value="centrestage_alone_50_d" onclick="return KeepCount()">Centre Stage<br />
+                                    <input type="checkbox" name="event7" value="aircrash_alone_50_d" onclick="return KeepCount()">Air Crash<br />
+                                    <input type="checkbox" name="event8" value="lapersona_alone_50_d" onclick="return KeepCount()">La Persona<br />
                                 </div>
                                 <div class="pure-u-1-8">
 
-                                    <input type="checkbox" name="event9" value="some" onclick="return KeepCount()">event4<br />
-                                    <input type="checkbox" name="event10" value="some" onclick="return KeepCount()">event5<br />
-                                    <input type="checkbox" name="event11" value="some" onclick="return KeepCount()">event1<br />
-                                    <input type="checkbox" name="event12" value="some" onclick="return KeepCount()">event2<br />
-                                    <input type="checkbox" name="event13" value="some" onclick="return KeepCount()">event3<br />
-                                    <input type="checkbox" name="event14" value="some" onclick="return KeepCount()">event1<br />
-                                    <input type="checkbox" name="event15" value="some" onclick="return KeepCount()">event2<br />
-                                    <input type="checkbox" name="event16" value="some" onclick="return KeepCount()">event3<br />
+                                    <input type="checkbox" name="event9" value="potpourri_team_50_d" onclick="return KeepCount()">Potpourri<br />
+                                    <input type="checkbox" name="event10" value="litquiz_alone_50_d" onclick="return KeepCount()">Lit Quiz<br />
+                                    <input type="checkbox" name="event11" value="turncourt_alone_50_d" onclick="return KeepCount()">Turn Court<br />
+                                    <input type="checkbox" name="event12" value="scrabble_team_50_d" onclick="return KeepCount()">Dabble in Scrabble<br />
+                                    <input type="checkbox" name="event13" value="adzap_team_50_d" onclick="return KeepCount()">Adzap<br />
+                                    <input type="checkbox" name="event14" value="switch_team_50_d" onclick="return KeepCount()">Switch<br />
+                                    <input type="checkbox" name="event15" value="daretodrama_team_50_d" onclick="return KeepCount()">Dare to Drama<br />
+                                    <input type="checkbox" name="event16" value="beapicasso_alone_50_d" onclick="return KeepCount()">Be a Picasso<br />
                                 </div>
                                 <div class="pure-u-1-8">
 
-                                    <input type="checkbox" name="event17" value="some" onclick="return KeepCount()">event4<br />
-                                    <input type="checkbox" name="event18" value="some" onclick="return KeepCount()">event5<br />
-                                    <input type="checkbox" name="event19" value="some" onclick="return KeepCount()">event1<br />
-                                    <input type="checkbox" name="event20" value="some" onclick="return KeepCount()">event2<br />
-                                    <input type="checkbox" name="event21" value="some" onclick="return KeepCount()">event3<br />
-                                    <input type="checkbox" name="event22" value="some" onclick="return KeepCount()">event1<br />
-                                    <input type="checkbox" name="event23" vlue="some" onclick="return KeepCount()">event2<br />
-                                    <input type="checkbox" name="event24" vaue="some" onclick="return KeepCount()">event3<br />                                  
+                                    <input type="checkbox" name="event17" value="cupodoodle_alone_50_d" onclick="return KeepCount()">Cup O' Doodle<br />
+                                    <input type="checkbox" name="event18" value="mehendi_team_50_d" onclick="return KeepCount()">Mehendi<br />
+                                    <input type="checkbox" name="event19" value="paintwithoutbrush_team_50_d" onclick="return KeepCount()">Paint Without a Brush<br />
+                                    <input type="checkbox" name="event20" value="gandhi_team_50_d" onclick="return KeepCount()">Gandhi: How far do you know him?<br />
+                                    <input type="checkbox" name="event21" value="postermaking_alone_50_d" onclick="return KeepCount()">Poster Making<br />
+                                    <input type="checkbox" name="event22" value="brain_team_50_d" onclick="return KeepCount()">Brain 0.0<br />
+                                    <input type="checkbox" name="event23" vlue="virtualreality_alone_50_d" onclick="return KeepCount()">Virtual Reality<br />
+                                    <input type="checkbox" name="event24" vaue="wastecraft_team_50_d" onclick="return KeepCount()">Wastecraft<br />                                  
                                 </div>
                                 <div class="pure-u-1-8">
 
-                                    <input type="checkbox" name="event25" value="some" onclick="return KeepCount()">event4<br />
-                                    <input type="checkbox" name="event26" value="some" onclick="return KeepCount()">event5<br />
-                                    <input type="checkbox" name="event27" value="some" onclick="return KeepCount()">event1<br />
-                                    <input type="checkbox" name="event28" value="some" onclick="return KeepCount()">event2<br />
-                                    <input type="checkbox" name="event29" value="some" onclick="return KeepCount()">event3<br />
-                                    <input type="checkbox" name="event30" value="some" onclick="return KeepCount()">event1<br />
-                                    <input type="checkbox" name="event31" value="some" onclick="return KeepCount()">event2<br />
-                                    <input type="checkbox" name="event32" value="some" onclick="return KeepCount()">event3<br />                                  
+                                    <input type="checkbox" name="event25" value="enviroquiz_team_50_d" onclick="return KeepCount()">Enviro Quiz<br />
+                                    <input type="checkbox" name="event26" value="balloonsplash_team_50_d" onclick="return KeepCount()">Balloon Splash<br />
+                                    <input type="checkbox" name="event27" value="blindfolddrawing_alone_50_d" onclick="return KeepCount()">Blind Fold Drawing<br />
+                                    <input type="checkbox" name="event28" value="dressupyourpartner_team_50_d" onclick="return KeepCount()">Dress Up Your Partner<br />
+                                    <input type="checkbox" name="event29" value="irrelevance_alone_50_d" onclick="return KeepCount()">Irrelevance<br />
+                                    <input type="checkbox" name="event30" value="minutetowin_team_50_d" onclick="return KeepCount()">VIT's Minute to Win it<br />
+                                    <input type="checkbox" name="event31" value="runforbucks_team_50_d" onclick="return KeepCount()">Run for Bucks<br />
+                                    <input type="checkbox" name="event32" value="impracticaljokers_alone_50_d" onclick="return KeepCount()">Impractical Jokers<br />                                  
                                 </div>
                                 <div class="pure-u-1-8">
 
-                                    <input type="checkbox" name="event33" value="some" onclick="return KeepCount()">event4<br />
-                                    <input type="checkbox" name="event34" value="some" onclick="return KeepCount()">event5<br />
-                                    <input type="checkbox" name="event35" value="some" onclick="return KeepCount()">event1<br />
-                                    <input type="checkbox" name="event36" value="some" onclick="return KeepCount()">event2<br />
-                                    <input type="checkbox" name="event37" value="some" onclick="return KeepCount()">event3<br />
-                                    <input type="checkbox" name="event38" value="some" onclick="return KeepCount()">event1<br />
-                                    <input type="checkbox" name="event39" value="some" onclick="return KeepCount()">event2<br />
-                                    <input type="checkbox" name="event40" value="some" onclick="return KeepCount()">event3<br />                                  
+                                    <input type="checkbox" name="event33" value="moriarty_team_50_d" onclick="return KeepCount()">Moriarty<br />
+                                    <input type="checkbox" name="event34" value="fivefootball_team_50_d" onclick="return KeepCount()">5's Football<br />
+                                    <input type="checkbox" name="event35" value="buildtodestroy_team_50_d" onclick="return KeepCount()">Build to Destroy<br />
+                                    <input type="checkbox" name="event36" value="tugofwar_team_50_d" onclick="return KeepCount()">Tug of War<br />
+                                    <input type="checkbox" name="event37" value="vishwaroopam_team_50_d" onclick="return KeepCount()">Vishwaroopam<br />
+                                    <input type="checkbox" name="event38" value="veta_team_50_d" onclick="return KeepCount()">Veta<br />
+                                    <input type="checkbox" name="event39" value="chitram_team_50_d" onclick="return KeepCount()">Chitram<br />
+                                    <input type="checkbox" name="event40" value="antaksharitelugu_team_50_d" onclick="return KeepCount()">Antakshari TELUGU<br />                                  
                                 </div>
                                 <div class="pure-u-1-8">
 
-                                    <input type="checkbox" name="event41" value="some" onclick="return KeepCount()">event4<br />
-                                    <input type="checkbox" name="event42" value="some" onclick="return KeepCount()">event5<br />
-                                    <input type="checkbox" name="event43" value="some" onclick="return KeepCount()">event1<br />
-                                    <input type="checkbox" name="event44" value="some" onclick="return KeepCount()">event2<br />
-                                    <input type="checkbox" name="event45" value="some" onclick="return KeepCount()">event3<br />
-                                    <input type="checkbox" name="event46" value="some" onclick="return KeepCount()">event1<br />
-                                    <input type="checkbox" name="event47" value="some" onclick="return KeepCount()">event2<br />
-                                    <input type="checkbox" name="event48" value="some" onclick="return KeepCount()">event3<br />
+                                    <input type="checkbox" name="event41" value="dhammu_team_50_d" onclick="return KeepCount()">Dhammu<br />
+                                    <input type="checkbox" name="event42" value="rangam_team_50_d" onclick="return KeepCount()">Rangam<br />
+                                    <input type="checkbox" name="event43" value="begborrowsteal_team_50_d" onclick="return KeepCount()">Beg, Borrow, Steal<br />
+                                    <input type="checkbox" name="event44" value="comicstrip_alone_50_d" onclick="return KeepCount()">Comic Strip<br />
+                                    <input type="checkbox" name="event45" value="creativewriting_alone_50_d" onclick="return KeepCount()">Creative Writing<br />
+                                    <input type="checkbox" name="event46" value="poetry_alone_50_d" onclick="return KeepCount()">Poetry<br />
+                                    <input type="checkbox" name="event47" value="jam_alone_50_d" onclick="return KeepCount()">JAM<br />
+                                    <input type="checkbox" name="event48" value="expressionexpress_alone_50_d" onclick="return KeepCount()">Expression Express<br />
                                 </div>
                                 <div class="pure-u-1-8">
 
-                                    <input type="checkbox" name="event49" value="some" onclick="return KeepCount()">event4<br />
-                                    <input type="checkbox" name="event50" value="some" onclick="return KeepCount()">event5<br />
-                                    <input type="checkbox" name="event51" value="some" onclick="return KeepCount()">event1<br />
-                                    <input type="checkbox" name="event52" value="some" onclick="return KeepCount()">event2<br />
-                                    <input type="checkbox" name="event53" value="some" onclick="return KeepCount()">event3<br />
-                                    <input type="checkbox" name="event54" value="some" onclick="return KeepCount()">event1<br />
-                                    <input type="checkbox" name="event55" value="some" onclick="return KeepCount()">event2<br />
-                                    <input type="checkbox" name="event56" value="some" onclick="return KeepCount()">event3<br />                                  
+                                    <input type="checkbox" name="event49" value="antaksharihindi_team_50_d" onclick="return KeepCount()">Antakshari HINDI<br />
+                                    <input type="checkbox" name="event50" value="televisionwarping_team_50_d" onclick="return KeepCount()">Television Warping<br />
+                                    <input type="checkbox" name="event51" value="tambola_alone_50_d" onclick="return KeepCount()">Tambola<br />
+                                    <input type="checkbox" name="event52" value="filmbuffchallenge_team_50_d" onclick="return KeepCount()">Film Buff Challenge<br />
+                                    <input type="checkbox" name="event53" value="floattilluwin_team_50_d" onclick="return KeepCount()">Float till you Win<br />
+                                    <input type="checkbox" name="event54" value="hellothamizha_team_50_d" onclick="return KeepCount()">Hello Thamizha<br />
+                                    <input type="checkbox" name="event55" value="maathipesavum_alone_50_d" onclick="return KeepCount()">Maathi Pesavum<br />
+                                    <input type="checkbox" name="event56" value="merasalaaitan_team_50_d" onclick="return KeepCount()">Merasalaaitan<br />                                  
                                 </div>
                                 <div class="pure-u-1-8">
-                                    <input type="checkbox" name="event57" value="some" onclick="return KeepCount()">event4<br />
-                                    <input type="checkbox" name="event58" value="some" onclick="return KeepCount()">event5<br />
-                                    <input type="checkbox" name="event59" value="some" onclick="return KeepCount()">event1<br />
-                                    <input type="checkbox" name="event60" value="some" onclick="return KeepCount()">event2<br />
-                                    <input type="checkbox" name="event61" value="some" onclick="return KeepCount()">event3<br /> 
-                                    <input type="checkbox" name="event62" value="some" onclick="return KeepCount()">event3<br /> 
+                                    <input type="checkbox" name="event57" value="therikkavidalama_team_50_d" onclick="return KeepCount()">Therikka Vidalama<br />
+                                    <input type="checkbox" name="event58" value="nerdornewbie_team_50_d" onclick="return KeepCount()">Nerd or Newbie<br />
+                                    <input type="checkbox" name="event59" value="treasurehunt_team_50_d" onclick="return KeepCount()">Treasure Hunt [App Based]<br />
+                                    <input type="checkbox" name="event60" value="snakeandladder_alone_50_d" onclick="return KeepCount()">Snake and Ladder with Quiz<br />
+                                    <input type="checkbox" name="event61" value="aimandact_team_50_d" onclick="return KeepCount()">Aim and Act<br /> 
+                                    <input type="checkbox" name="event62" value="tamilworkshop_alone_50_d" onclick="return KeepCount()">Tamil Speaking Workshop<br /> 
                                     <input type="checkbox" name="event63" value="some" onclick="return KeepCount()">event3<br /> 
                                     <input type="checkbox" name="event64" value="some" onclick="return KeepCount()">event3<br /> 
                                 </div>
