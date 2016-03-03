@@ -16,13 +16,22 @@
 	$regno = $name_title['regno'];
 	$phno = $name_title['phno'];
 	$altphno = $name_title['altphno'];
-	$event = $_POST['event1'];
+	$event = mysqli_real_escape_string($conn, htmlspecialchars($_POST['event1']));   
 	$event_part = explode("_", $event);
-	$parti = $_POST['parti1'];
+	$parti = mysqli_real_escape_string($conn, htmlspecialchars($_POST['parti1']));   
 	if (($name_title['college']!="VIT")&&($event_part[3]=="d")) {
 		$price = $parti*100;
 	} else {
 		$price = $parti*$event_part[2];
+	}
+	if ($event=="socialinnovators_team_150_s") {
+		if ($parti==1) {
+			$price = 150;
+		} elseif ($parti==2) {
+			$price = 250;
+		} elseif ($parti==3) {
+			$price = 300;
+		}
 	}
 	$check_query = "SELECT * FROM {$event} WHERE email = '{$current_user}' ";
 	$check_result = mysqli_query($conn, $check_query);
@@ -64,7 +73,7 @@
 		$result = mysqli_query($conn, $query);	
 
 	    if ($result) {
-	      	echo"You have succesfully registered for Vibrance16. Please check your email for registraion slip. Your registraion will only be confirmed after you make the payment at our registration desk.";		
+	      	echo"You have succesfully registered for Vibrance16. Please check your email for the details. Your registraion will only be confirmed after you make the payment at our registration desk in VIT.";		
 	    } else {
 		   	echo"Registration failed.";
 	    }    

@@ -592,4 +592,12 @@ $(document).ready(function() {
             alert(data);
         });
     });
+
+    $("#tamilworkshop").click(function() {
+        var event = $("#event_tamilworkshop").val();
+        var parti = 1;
+        $.post("refreshform.php", { event1: event, parti1: parti }, function(data) {
+            alert(data);
+        });
+    });
 });
