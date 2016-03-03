@@ -56,8 +56,8 @@ if(isset($_POST['signup'])){
 		$altphno = $_POST['altphno'];
 		$hashed_password = password_encrypt($_POST['password']);         
 
-		$query = "INSERT INTO users (name, username, college, regno, phno, hashed_password)";
-		$query .= " VALUES ('{$name}', '{$username}', '{$college}', '{$regno}', '{$phno}', '{$hashed_password}')";
+		$query = "INSERT INTO users (name, username, college, regno, phno, altphno, hashed_password)";
+		$query .= " VALUES ('{$name}', '{$username}', '{$college}', '{$regno}', '{$phno}', '{$altphno}', '{$hashed_password}')";
 		$result = mysqli_query($conn, $query);
 
 		if ($result) {
