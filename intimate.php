@@ -5,7 +5,9 @@
 		exit; 
 	}
 	
-	$email = $_GET['email'];
+	$email1 = $_GET['email1'];
+	$email2 = $_GET['email2'];
+	$email = $email1."@".$email2;
 	//$email_part = explode("%40", $email_raw);
 	//$email = $email_part[0]."@".$email_part[1];
 	//echo $email."\n".;
