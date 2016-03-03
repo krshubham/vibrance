@@ -1,6 +1,6 @@
 <?php
 	
-	$email = mysqli_real_escape_string($conn, htmlspecialchars($_GET['email']));
+	$email = $_GET['email'];
 	$event = mysqli_real_escape_string($conn, htmlspecialchars($_GET['event']));
 	$event_part = explode("_", $event);
 	$fees = mysqli_real_escape_string($conn, htmlspecialchars($_GET['fees']));
