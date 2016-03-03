@@ -1,5 +1,5 @@
 
-	body {
+body {
   font-family: Arial, sans-serif;
 }
 
@@ -72,6 +72,7 @@ h1 {
   padding: 5em;
   background: #fff;
   position: relative;
+  overflow-x: visible; 
 }
 .light .popup {
   border-color: #aaa;
