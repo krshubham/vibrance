@@ -125,97 +125,212 @@ if (isset($_SESSION["username"])) {
                     <div id="divthree" style="display: none;">
                         <form name="form">
                             <div class="pure-g">
-                                <div class="pure-u-1-8">
-                                    <input type="checkbox" name="event1" value="generalquiz_team_50_d" onclick="return KeepCount()">General Quiz<br />
-                                    <input type="checkbox" name="event2" value="entertainmentquiz_team_50_d" onclick="return KeepCount()">Entertainment Quiz<br />
-                                    <input type="checkbox" name="event3" value="karlpopperdebate_team_50_d" onclick="return KeepCount()">Karl Popper Debate<br />
-                                    <input type="checkbox" name="event4" value="classicdebate_alone_50_d" onclick="return KeepCount()">Classic Debate<br />
-                                    <input type="checkbox" name="event5" value="splitpersonality_alone_50_d" onclick="return KeepCount()">Split Personality<br />
-                                    <input type="checkbox" name="event6" value="centrestage_alone_50_d" onclick="return KeepCount()">Centre Stage<br />
-                                    <input type="checkbox" name="event7" value="aircrash_alone_50_d" onclick="return KeepCount()">Air Crash<br />
-                                    <input type="checkbox" name="event8" value="lapersona_alone_50_d" onclick="return KeepCount()">La Persona<br />
+                                <div class="pure-u-1-3">
+                                    <select required id="first_event">
+                                        <option value="">Select your first event</option>
+                                        <option value="generalquiz_team_50_d">General Quiz</option>
+                                        <option value="entertainmentquiz_team_50_d">Entertainment Quiz</option>
+                                        <option value="karlpopperdebate_team_50_d">Karl Popper Debate</option>
+                                        <option value="classicdebate_alone_50_d">Classic Debate</option>
+                                        <option value="splitpersonality_alone_50_d">Split Personality</option>
+                                        <option value="centrestage_alone_50_d">Centre Stage</option>
+                                        <option value="aircrash_alone_50_d">Air Crash</option>
+                                        <option value="lapersona_alone_50_d">La Persona</option>
+                                        <option value="potpourri_team_50_d">Potpourri</option>
+                                        <option value="litquiz_alone_50_d">Lit Quiz</option>
+                                        <option value="turncourt_alone_50_d">Turn Court</option>
+                                        <option value="scrabble_team_50_d">Dabble in Scrabble</option>
+                                        <option value="adzap_team_50_d">Adzap</option>
+                                        <option value="switch_team_50_d">Switch</option>
+                                        <option value="daretodrama_team_50_d">Dare to Drama</option>
+                                        <option value="beapicasso_alone_50_d">Be a Picasso</option>
+                                        <option value="cupodoodle_alone_50_d">Cup O' Doodle</option>
+                                        <option value="mehendi_team_50_d">Mehendi</option>
+                                        <option value="paintwithoutbrush_team_50_d">Paint Without a Brush</option>
+                                        <option value="gandhi_team_50_d">Gandhi: How far do you know him?</option>
+                                        <option value="postermaking_alone_50_d">Poster Making</option>
+                                        <option value="brain_team_50_d">Brain 0.0</option>
+                                        <option value="virtualreality_alone_50_d">Virtual Reality</option>
+                                        <option value="wastecraft_team_50_d">Wastecraft</option>
+                                        <option value="enviroquiz_team_50_d">Enviro Quiz</option>
+                                        <option value="balloonsplash_team_50_d">Balloon Splash</option>
+                                        <option value="blindfolddrawing_alone_50_d">Blind Fold Drawing</option>
+                                        <option value="dressupyourpartner_team_50_d">Dress Up Your Partner</option>
+                                        <option value="irrelevance_alone_50_d">Irrelevance</option>
+                                        <option value="minutetowin_team_50_d">VIT's Minute to Win it</option>
+                                        <option value="runforbucks_team_50_d">Run for Bucks</option>
+                                        <option value="impracticaljokers_alone_50_d">Impractical Jokers</option>
+                                        <option value="moriarty_team_50_d">Moriarty</option>
+                                        <option value="fivefootball_team_50_d">5's Football</option>
+                                        <option value="buildtodestroy_team_50_d">Build to Destroy</option>
+                                        <option value="tugofwar_team_50_d">Tug of War</option>
+                                        <option value="vishwaroopam_team_50_d">Vishwaroopam</option>
+                                        <option value="veta_team_50_d">Veta</option>
+                                        <option value="chitram_team_50_d">Chitram</option>
+                                        <option value="antaksharitelugu_team_50_d">Antakshari TELUGU</option>
+                                        <option value="dhammu_team_50_d">Dhammu</option>
+                                        <option value="rangam_team_50_d">Rangam</option>
+                                        <option value="begborrowsteal_team_50_d">Beg, Borrow, Steal</option>
+                                        <option value="comicstrip_alone_50_d">Comic Strip</option>
+                                        <option value="creativewriting_alone_50_d">Creative Writing</option>
+                                        <option value="poetry_alone_50_d">Poetry</option>
+                                        <option value="jam_alone_50_d">JAM</option>
+                                        <option value="expressionexpress_alone_50_d">Expression Express</option>
+                                        <option value="antaksharihindi_team_50_d">Antakshari HINDI</option>
+                                        <option value="televisionwarping_team_50_d">Television Warping</option>
+                                        <option value="tambola_alone_50_d">Tambola</option>
+                                        <option value="filmbuffchallenge_team_50_d">Film Buff Challenge</option>
+                                        <option value="floattilluwin_team_50_d">Float till you Win</option>
+                                        <option value="hellothamizha_team_50_d">Hello Thamizha</option>
+                                        <option value="maathipesavum_alone_50_d">Maathi Pesavum</option>
+                                        <option value="merasalaaitan_team_50_d">Merasalaaitan</option>
+                                        <option value="therikkavidalama_team_50_d">Therikka Vidalama</option>
+                                        <option value="nerdornewbie_team_50_d">Nerd or Newbie</option>
+                                        <option value="treasurehunt_team_50_d">Treasure Hunt [App Based]</option>
+                                        <option value="snakeandladder_alone_50_d">Snake and Ladder with Quiz</option>
+                                        <option value="aimandact_team_50_d">Aim and Act</option>
+                                        <option value="tamilworkshop_alone_50_d">Tamil Speaking Workshop</option>
+                                    </select>
                                 </div>
-                                <div class="pure-u-1-8">
-
-                                    <input type="checkbox" name="event9" value="potpourri_team_50_d" onclick="return KeepCount()">Potpourri<br />
-                                    <input type="checkbox" name="event10" value="litquiz_alone_50_d" onclick="return KeepCount()">Lit Quiz<br />
-                                    <input type="checkbox" name="event11" value="turncourt_alone_50_d" onclick="return KeepCount()">Turn Court<br />
-                                    <input type="checkbox" name="event12" value="scrabble_team_50_d" onclick="return KeepCount()">Dabble in Scrabble<br />
-                                    <input type="checkbox" name="event13" value="adzap_team_50_d" onclick="return KeepCount()">Adzap<br />
-                                    <input type="checkbox" name="event14" value="switch_team_50_d" onclick="return KeepCount()">Switch<br />
-                                    <input type="checkbox" name="event15" value="daretodrama_team_50_d" onclick="return KeepCount()">Dare to Drama<br />
-                                    <input type="checkbox" name="event16" value="beapicasso_alone_50_d" onclick="return KeepCount()">Be a Picasso<br />
+                                <div class="pure-u-1-3">
+                                    <select required id="second_event">
+                                        <option value="">Select your second event</option>
+                                        <option value="generalquiz_team_50_d">General Quiz</option>
+                                        <option value="entertainmentquiz_team_50_d">Entertainment Quiz</option>
+                                        <option value="karlpopperdebate_team_50_d">Karl Popper Debate</option>
+                                        <option value="classicdebate_alone_50_d">Classic Debate</option>
+                                        <option value="splitpersonality_alone_50_d">Split Personality</option>
+                                        <option value="centrestage_alone_50_d">Centre Stage</option>
+                                        <option value="aircrash_alone_50_d">Air Crash</option>
+                                        <option value="lapersona_alone_50_d">La Persona</option>
+                                        <option value="potpourri_team_50_d">Potpourri</option>
+                                        <option value="litquiz_alone_50_d">Lit Quiz</option>
+                                        <option value="turncourt_alone_50_d">Turn Court</option>
+                                        <option value="scrabble_team_50_d">Dabble in Scrabble</option>
+                                        <option value="adzap_team_50_d">Adzap</option>
+                                        <option value="switch_team_50_d">Switch</option>
+                                        <option value="daretodrama_team_50_d">Dare to Drama</option>
+                                        <option value="beapicasso_alone_50_d">Be a Picasso</option>
+                                        <option value="cupodoodle_alone_50_d">Cup O' Doodle</option>
+                                        <option value="mehendi_team_50_d">Mehendi</option>
+                                        <option value="paintwithoutbrush_team_50_d">Paint Without a Brush</option>
+                                        <option value="gandhi_team_50_d">Gandhi: How far do you know him?</option>
+                                        <option value="postermaking_alone_50_d">Poster Making</option>
+                                        <option value="brain_team_50_d">Brain 0.0</option>
+                                        <option value="virtualreality_alone_50_d">Virtual Reality</option>
+                                        <option value="wastecraft_team_50_d">Wastecraft</option>
+                                        <option value="enviroquiz_team_50_d">Enviro Quiz</option>
+                                        <option value="balloonsplash_team_50_d">Balloon Splash</option>
+                                        <option value="blindfolddrawing_alone_50_d">Blind Fold Drawing</option>
+                                        <option value="dressupyourpartner_team_50_d">Dress Up Your Partner</option>
+                                        <option value="irrelevance_alone_50_d">Irrelevance</option>
+                                        <option value="minutetowin_team_50_d">VIT's Minute to Win it</option>
+                                        <option value="runforbucks_team_50_d">Run for Bucks</option>
+                                        <option value="impracticaljokers_alone_50_d">Impractical Jokers</option>
+                                        <option value="moriarty_team_50_d">Moriarty</option>
+                                        <option value="fivefootball_team_50_d">5's Football</option>
+                                        <option value="buildtodestroy_team_50_d">Build to Destroy</option>
+                                        <option value="tugofwar_team_50_d">Tug of War</option>
+                                        <option value="vishwaroopam_team_50_d">Vishwaroopam</option>
+                                        <option value="veta_team_50_d">Veta</option>
+                                        <option value="chitram_team_50_d">Chitram</option>
+                                        <option value="antaksharitelugu_team_50_d">Antakshari TELUGU</option>
+                                        <option value="dhammu_team_50_d">Dhammu</option>
+                                        <option value="rangam_team_50_d">Rangam</option>
+                                        <option value="begborrowsteal_team_50_d">Beg, Borrow, Steal</option>
+                                        <option value="comicstrip_alone_50_d">Comic Strip</option>
+                                        <option value="creativewriting_alone_50_d">Creative Writing</option>
+                                        <option value="poetry_alone_50_d">Poetry</option>
+                                        <option value="jam_alone_50_d">JAM</option>
+                                        <option value="expressionexpress_alone_50_d">Expression Express</option>
+                                        <option value="antaksharihindi_team_50_d">Antakshari HINDI</option>
+                                        <option value="televisionwarping_team_50_d">Television Warping</option>
+                                        <option value="tambola_alone_50_d">Tambola</option>
+                                        <option value="filmbuffchallenge_team_50_d">Film Buff Challenge</option>
+                                        <option value="floattilluwin_team_50_d">Float till you Win</option>
+                                        <option value="hellothamizha_team_50_d">Hello Thamizha</option>
+                                        <option value="maathipesavum_alone_50_d">Maathi Pesavum</option>
+                                        <option value="merasalaaitan_team_50_d">Merasalaaitan</option>
+                                        <option value="therikkavidalama_team_50_d">Therikka Vidalama</option>
+                                        <option value="nerdornewbie_team_50_d">Nerd or Newbie</option>
+                                        <option value="treasurehunt_team_50_d">Treasure Hunt [App Based]</option>
+                                        <option value="snakeandladder_alone_50_d">Snake and Ladder with Quiz</option>
+                                        <option value="aimandact_team_50_d">Aim and Act</option>
+                                        <option value="tamilworkshop_alone_50_d">Tamil Speaking Workshop</option>
+                                    </select>
                                 </div>
-                                <div class="pure-u-1-8">
-
-                                    <input type="checkbox" name="event17" value="cupodoodle_alone_50_d" onclick="return KeepCount()">Cup O' Doodle<br />
-                                    <input type="checkbox" name="event18" value="mehendi_team_50_d" onclick="return KeepCount()">Mehendi<br />
-                                    <input type="checkbox" name="event19" value="paintwithoutbrush_team_50_d" onclick="return KeepCount()">Paint Without a Brush<br />
-                                    <input type="checkbox" name="event20" value="gandhi_team_50_d" onclick="return KeepCount()">Gandhi: How far do you know him?<br />
-                                    <input type="checkbox" name="event21" value="postermaking_alone_50_d" onclick="return KeepCount()">Poster Making<br />
-                                    <input type="checkbox" name="event22" value="brain_team_50_d" onclick="return KeepCount()">Brain 0.0<br />
-                                    <input type="checkbox" name="event23" vlue="virtualreality_alone_50_d" onclick="return KeepCount()">Virtual Reality<br />
-                                    <input type="checkbox" name="event24" vaue="wastecraft_team_50_d" onclick="return KeepCount()">Wastecraft<br />                                  
-                                </div>
-                                <div class="pure-u-1-8">
-
-                                    <input type="checkbox" name="event25" value="enviroquiz_team_50_d" onclick="return KeepCount()">Enviro Quiz<br />
-                                    <input type="checkbox" name="event26" value="balloonsplash_team_50_d" onclick="return KeepCount()">Balloon Splash<br />
-                                    <input type="checkbox" name="event27" value="blindfolddrawing_alone_50_d" onclick="return KeepCount()">Blind Fold Drawing<br />
-                                    <input type="checkbox" name="event28" value="dressupyourpartner_team_50_d" onclick="return KeepCount()">Dress Up Your Partner<br />
-                                    <input type="checkbox" name="event29" value="irrelevance_alone_50_d" onclick="return KeepCount()">Irrelevance<br />
-                                    <input type="checkbox" name="event30" value="minutetowin_team_50_d" onclick="return KeepCount()">VIT's Minute to Win it<br />
-                                    <input type="checkbox" name="event31" value="runforbucks_team_50_d" onclick="return KeepCount()">Run for Bucks<br />
-                                    <input type="checkbox" name="event32" value="impracticaljokers_alone_50_d" onclick="return KeepCount()">Impractical Jokers<br />                                  
-                                </div>
-                                <div class="pure-u-1-8">
-
-                                    <input type="checkbox" name="event33" value="moriarty_team_50_d" onclick="return KeepCount()">Moriarty<br />
-                                    <input type="checkbox" name="event34" value="fivefootball_team_50_d" onclick="return KeepCount()">5's Football<br />
-                                    <input type="checkbox" name="event35" value="buildtodestroy_team_50_d" onclick="return KeepCount()">Build to Destroy<br />
-                                    <input type="checkbox" name="event36" value="tugofwar_team_50_d" onclick="return KeepCount()">Tug of War<br />
-                                    <input type="checkbox" name="event37" value="vishwaroopam_team_50_d" onclick="return KeepCount()">Vishwaroopam<br />
-                                    <input type="checkbox" name="event38" value="veta_team_50_d" onclick="return KeepCount()">Veta<br />
-                                    <input type="checkbox" name="event39" value="chitram_team_50_d" onclick="return KeepCount()">Chitram<br />
-                                    <input type="checkbox" name="event40" value="antaksharitelugu_team_50_d" onclick="return KeepCount()">Antakshari TELUGU<br />                                  
-                                </div>
-                                <div class="pure-u-1-8">
-
-                                    <input type="checkbox" name="event41" value="dhammu_team_50_d" onclick="return KeepCount()">Dhammu<br />
-                                    <input type="checkbox" name="event42" value="rangam_team_50_d" onclick="return KeepCount()">Rangam<br />
-                                    <input type="checkbox" name="event43" value="begborrowsteal_team_50_d" onclick="return KeepCount()">Beg, Borrow, Steal<br />
-                                    <input type="checkbox" name="event44" value="comicstrip_alone_50_d" onclick="return KeepCount()">Comic Strip<br />
-                                    <input type="checkbox" name="event45" value="creativewriting_alone_50_d" onclick="return KeepCount()">Creative Writing<br />
-                                    <input type="checkbox" name="event46" value="poetry_alone_50_d" onclick="return KeepCount()">Poetry<br />
-                                    <input type="checkbox" name="event47" value="jam_alone_50_d" onclick="return KeepCount()">JAM<br />
-                                    <input type="checkbox" name="event48" value="expressionexpress_alone_50_d" onclick="return KeepCount()">Expression Express<br />
-                                </div>
-                                <div class="pure-u-1-8">
-
-                                    <input type="checkbox" name="event49" value="antaksharihindi_team_50_d" onclick="return KeepCount()">Antakshari HINDI<br />
-                                    <input type="checkbox" name="event50" value="televisionwarping_team_50_d" onclick="return KeepCount()">Television Warping<br />
-                                    <input type="checkbox" name="event51" value="tambola_alone_50_d" onclick="return KeepCount()">Tambola<br />
-                                    <input type="checkbox" name="event52" value="filmbuffchallenge_team_50_d" onclick="return KeepCount()">Film Buff Challenge<br />
-                                    <input type="checkbox" name="event53" value="floattilluwin_team_50_d" onclick="return KeepCount()">Float till you Win<br />
-                                    <input type="checkbox" name="event54" value="hellothamizha_team_50_d" onclick="return KeepCount()">Hello Thamizha<br />
-                                    <input type="checkbox" name="event55" value="maathipesavum_alone_50_d" onclick="return KeepCount()">Maathi Pesavum<br />
-                                    <input type="checkbox" name="event56" value="merasalaaitan_team_50_d" onclick="return KeepCount()">Merasalaaitan<br />                                  
-                                </div>
-                                <div class="pure-u-1-8">
-                                    <input type="checkbox" name="event57" value="therikkavidalama_team_50_d" onclick="return KeepCount()">Therikka Vidalama<br />
-                                    <input type="checkbox" name="event58" value="nerdornewbie_team_50_d" onclick="return KeepCount()">Nerd or Newbie<br />
-                                    <input type="checkbox" name="event59" value="treasurehunt_team_50_d" onclick="return KeepCount()">Treasure Hunt [App Based]<br />
-                                    <input type="checkbox" name="event60" value="snakeandladder_alone_50_d" onclick="return KeepCount()">Snake and Ladder with Quiz<br />
-                                    <input type="checkbox" name="event61" value="aimandact_team_50_d" onclick="return KeepCount()">Aim and Act<br /> 
-                                    <input type="checkbox" name="event62" value="tamilworkshop_alone_50_d" onclick="return KeepCount()">Tamil Speaking Workshop<br /> 
-                                    <input type="checkbox" name="event63" value="some" onclick="return KeepCount()">event3<br /> 
-                                    <input type="checkbox" name="event64" value="some" onclick="return KeepCount()">event3<br /> 
-                                </div>
+                                <div class="pure-u-1-3">
+                                    <select required id="third_event">
+                                        <option value="">Select your third event</option>
+                                        <option value="generalquiz_team_50_d">General Quiz</option>
+                                        <option value="entertainmentquiz_team_50_d">Entertainment Quiz</option>
+                                        <option value="karlpopperdebate_team_50_d">Karl Popper Debate</option>
+                                        <option value="classicdebate_alone_50_d">Classic Debate</option>
+                                        <option value="splitpersonality_alone_50_d">Split Personality</option>
+                                        <option value="centrestage_alone_50_d">Centre Stage</option>
+                                        <option value="aircrash_alone_50_d">Air Crash</option>
+                                        <option value="lapersona_alone_50_d">La Persona</option>
+                                        <option value="potpourri_team_50_d">Potpourri</option>
+                                        <option value="litquiz_alone_50_d">Lit Quiz</option>
+                                        <option value="turncourt_alone_50_d">Turn Court</option>
+                                        <option value="scrabble_team_50_d">Dabble in Scrabble</option>
+                                        <option value="adzap_team_50_d">Adzap</option>
+                                        <option value="switch_team_50_d">Switch</option>
+                                        <option value="daretodrama_team_50_d">Dare to Drama</option>
+                                        <option value="beapicasso_alone_50_d">Be a Picasso</option>
+                                        <option value="cupodoodle_alone_50_d">Cup O' Doodle</option>
+                                        <option value="mehendi_team_50_d">Mehendi</option>
+                                        <option value="paintwithoutbrush_team_50_d">Paint Without a Brush</option>
+                                        <option value="gandhi_team_50_d">Gandhi: How far do you know him?</option>
+                                        <option value="postermaking_alone_50_d">Poster Making</option>
+                                        <option value="brain_team_50_d">Brain 0.0</option>
+                                        <option value="virtualreality_alone_50_d">Virtual Reality</option>
+                                        <option value="wastecraft_team_50_d">Wastecraft</option>
+                                        <option value="enviroquiz_team_50_d">Enviro Quiz</option>
+                                        <option value="balloonsplash_team_50_d">Balloon Splash</option>
+                                        <option value="blindfolddrawing_alone_50_d">Blind Fold Drawing</option>
+                                        <option value="dressupyourpartner_team_50_d">Dress Up Your Partner</option>
+                                        <option value="irrelevance_alone_50_d">Irrelevance</option>
+                                        <option value="minutetowin_team_50_d">VIT's Minute to Win it</option>
+                                        <option value="runforbucks_team_50_d">Run for Bucks</option>
+                                        <option value="impracticaljokers_alone_50_d">Impractical Jokers</option>
+                                        <option value="moriarty_team_50_d">Moriarty</option>
+                                        <option value="fivefootball_team_50_d">5's Football</option>
+                                        <option value="buildtodestroy_team_50_d">Build to Destroy</option>
+                                        <option value="tugofwar_team_50_d">Tug of War</option>
+                                        <option value="vishwaroopam_team_50_d">Vishwaroopam</option>
+                                        <option value="veta_team_50_d">Veta</option>
+                                        <option value="chitram_team_50_d">Chitram</option>
+                                        <option value="antaksharitelugu_team_50_d">Antakshari TELUGU</option>
+                                        <option value="dhammu_team_50_d">Dhammu</option>
+                                        <option value="rangam_team_50_d">Rangam</option>
+                                        <option value="begborrowsteal_team_50_d">Beg, Borrow, Steal</option>
+                                        <option value="comicstrip_alone_50_d">Comic Strip</option>
+                                        <option value="creativewriting_alone_50_d">Creative Writing</option>
+                                        <option value="poetry_alone_50_d">Poetry</option>
+                                        <option value="jam_alone_50_d">JAM</option>
+                                        <option value="expressionexpress_alone_50_d">Expression Express</option>
+                                        <option value="antaksharihindi_team_50_d">Antakshari HINDI</option>
+                                        <option value="televisionwarping_team_50_d">Television Warping</option>
+                                        <option value="tambola_alone_50_d">Tambola</option>
+                                        <option value="filmbuffchallenge_team_50_d">Film Buff Challenge</option>
+                                        <option value="floattilluwin_team_50_d">Float till you Win</option>
+                                        <option value="hellothamizha_team_50_d">Hello Thamizha</option>
+                                        <option value="maathipesavum_alone_50_d">Maathi Pesavum</option>
+                                        <option value="merasalaaitan_team_50_d">Merasalaaitan</option>
+                                        <option value="therikkavidalama_team_50_d">Therikka Vidalama</option>
+                                        <option value="nerdornewbie_team_50_d">Nerd or Newbie</option>
+                                        <option value="treasurehunt_team_50_d">Treasure Hunt [App Based]</option>
+                                        <option value="snakeandladder_alone_50_d">Snake and Ladder with Quiz</option>
+                                        <option value="aimandact_team_50_d">Aim and Act</option>
+                                        <option value="tamilworkshop_alone_50_d">Tamil Speaking Workshop</option>
+                                    </select>
+                                </div>                                
                             </div>
                             <br><br>
                             <div class="pure-g">
                                 <div class="pure-u-24-24">
-                                    <input type="submit" class="btn-reg" value="Register"></input>
+                                    <input type="button" class="btn-reg" value="Register"></input>
                                 </div>
                             </div>
                         </form>
@@ -236,190 +351,6 @@ if (isset($_SESSION["username"])) {
   </div>
 
   <script src="js/script.js"></script>
-  <script src="js/script.js"></script>
-  <script type="text/javascript">
-    $('#three_click').click(function() {
-        $('#divthree').slideDown();
-    });
-    $('#all_click').click(function() {
-        $('#divall').slideDown();
-    });
-</script>
-<script language="javascript">
-
-    function KeepCount() {
-
-        var NewCount = 0;
-
-        if (document.form.event1.checked)
-            {NewCount = NewCount + 1;}
-
-        if (document.form.event2.checked)
-            {NewCount = NewCount + 1;}
-
-        if (document.form.event3.checked)
-            {NewCount = NewCount + 1;}
-
-        if (document.form.event4.checked)
-            {NewCount = NewCount + 1;}
-
-        if (document.form.event5.checked)
-            {NewCount = NewCount + 1;}
-
-        if (document.form.event6.checked)
-            {NewCount = NewCount + 1;}
-
-        if (document.form.event7.checked)
-            {NewCount = NewCount + 1;}
-
-        if (document.form.event8.checked)
-            {NewCount = NewCount + 1;}
-
-        if (document.form.event9.checked)
-            {NewCount = NewCount +1;}
-
-        if (document.form.event10.checked)
-            {NewCount = NewCount + 1;}
-
-        if (document.form.event11.checked)
-            {NewCount = NewCount + 1;}
-
-        if (document.form.event12.checked)
-            {NewCount = NewCount + 1;}
-
-        if (document.form.event13.checked)
-            {NewCount = NewCount + 1;}
-
-        if (document.form.event14.checked)
-            {NewCount = NewCount + 1;}
-
-        if (document.form.event15.checked)
-            {NewCount = NewCount + 1;}
-
-        if (document.form.event16.checked)
-            {NewCount = NewCount + 1;}
-
-        if (document.form.event17.checked)
-            {NewCount = NewCount + 1;}
-
-        if (document.form.event18.checked)
-            {NewCount = NewCount + 1;}
-
-        if (document.form.event19.checked)
-            {NewCount = NewCount +1;}
-
-        if (document.form.event20.checked)
-            {NewCount = NewCount + 1;}
-
-        if (document.form.event21.checked)
-            {NewCount = NewCount + 1;}
-
-        if (document.form.event22.checked)
-            {NewCount = NewCount + 1;}
-
-        if (document.form.event23.checked)
-            {NewCount = NewCount + 1;}
-
-        if (document.form.event24.checked)
-            {NewCount = NewCount + 1;}
-
-        if (document.form.event25.checked)
-            {NewCount = NewCount + 1;}
-
-        if (document.form.event26.checked)
-            {NewCount = NewCount + 1;}
-
-        if (document.form.event27.checked)
-            {NewCount = NewCount + 1;}
-
-        if (document.form.event28.checked)
-            {NewCount = NewCount + 1;}
-
-        if (document.form.event29.checked)
-            {NewCount = NewCount +1;}
-
-        if (document.form.event30.checked)
-            {NewCount = NewCount + 1;}
-
-        if (document.form.event31.checked)
-            {NewCount = NewCount + 1;}
-
-        if (document.form.event32.checked)
-            {NewCount = NewCount + 1;}
-
-        if (document.form.event33.checked)
-            {NewCount = NewCount + 1;}
-
-        if (document.form.event34.checked)
-            {NewCount = NewCount + 1;}
-
-        if (document.form.event35.checked)
-            {NewCount = NewCount + 1;}
-
-        if (document.form.event36.checked)
-            {NewCount = NewCount + 1;}
-
-        if (document.form.event37.checked)
-            {NewCount = NewCount + 1;}
-
-        if (document.form.event38.checked)
-            {NewCount = NewCount + 1;}
-
-        if (document.form.event39.checked)
-            {NewCount = NewCount +1;}
-
-        if (document.form.event40.checked)
-            {NewCount = NewCount + 1;}
-
-        if (document.form.event41.checked)
-            {NewCount = NewCount + 1;}
-
-        if (document.form.event42.checked)
-            {NewCount = NewCount + 1;}
-
-        if (document.form.event43.checked)
-            {NewCount = NewCount + 1;}
-
-        if (document.form.event44.checked)
-            {NewCount = NewCount + 1;}
-
-        if (document.form.event45.checked)
-            {NewCount = NewCount + 1;}
-
-        if (document.form.event46.checked)
-            {NewCount = NewCount + 1;}
-
-        if (document.form.event47.checked)
-            {NewCount = NewCount + 1;}
-
-        if (document.form.event48.checked)
-            {NewCount = NewCount + 1;}
-
-        if (document.form.event49.checked)
-            {NewCount = NewCount +1;}
-
-        if (document.form.event50.checked)
-            {NewCount = NewCount + 1;}
-
-        if (document.form.event61.checked)
-            {NewCount = NewCount + 1;}
-
-        if (document.form.event62.checked)
-            {NewCount = NewCount + 1;}
-
-        if (document.form.event63.checked)
-            {NewCount = NewCount + 1;}
-
-        if (document.form.event64.checked)
-            {NewCount = NewCount + 1;}       
-
-        if (NewCount == 4)
-        {
-            alert('Pick Just Three Please')
-            document.form; return false;
-        }
-    } 
-</script>
 </body>
 </html>
 <?php
