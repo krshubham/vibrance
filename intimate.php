@@ -5,7 +5,7 @@
 		exit; 
 	}
 	
-	$email_raw = mysqli_real_escape_string($conn, htmlspecialchars($_GET['email']));
+	$email_raw = $_GET['email'];
 	$email_part = explode("%40", $email_raw);
 	$email = $email_part[0]."@".$email_part[1];
 	$event = mysqli_real_escape_string($conn, htmlspecialchars($_GET['event']));
