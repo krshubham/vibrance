@@ -600,4 +600,13 @@ $(document).ready(function() {
             alert(data);
         });
     });
+
+    $("#three_pass").click(function() {
+        var first_event = $("#first_event").val();
+        var second_event = $("#second_event").val();
+        var third_event = $("#third_event").val();
+        $.post("three.php", { first_event1: first_event, second_event1: second_event, third_event1: third_event }, function(data) {
+            alert(data);
+        });
+    });
 });

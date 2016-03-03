@@ -394,7 +394,7 @@
                     <h2><em>Virtual Reality</em>Individual</h2>
                     <br>
                     <br>
-                    <h4 style="text-align: left; font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Sukesh Kumar &nbsp;&nbsp;&nbsp;9962407126</h4>
+                    <h4 style="text-align: left; font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Atit S Gaonkar &nbsp;&nbsp;&nbsp;9952042455<br><br>Abhyuday Bharat &nbsp;&nbsp;&nbsp;9952042256<br><br>Gutha Sai Sameer &nbsp;&nbsp;&nbsp;8754404599</h4>
                     <div class="row">
                         <div class="grid_6">
                             <ul class="indents-3">
