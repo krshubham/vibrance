@@ -19,7 +19,7 @@
 	$event = $_POST['event1'];
 	$event_part = explode("_", $event);
 	$parti = $_POST['parti1'];
-	if (($name_title['college']=="other")&&($event_part[3]=="d")) {
+	if (($name_title['college']!="VIT")&&($event_part[3]=="d")) {
 		$price = $parti*100;
 	} else {
 		$price = $parti*$event_part[2];

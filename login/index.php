@@ -46,7 +46,11 @@ if(isset($_POST['signup'])){
 
 		$name = $_POST['name'];    
 		$username = mysql_prep($_POST['username']);  
-		$college = $_POST['college'];
+		if (isset($_POST['college'])) {
+			$college = $_POST['college'];
+		} else {
+			$college = "VIT";
+		}
 		if (isset($_POST['regno'])) {
 			$regno = $_POST['regno'];
 		} else {
@@ -133,12 +137,12 @@ if(isset($_POST['signup'])){
 							<label class="control-label" for="inputNormal">College</label><br>
 							<select id="college-select" required>
 								<option value="VIT">Vellore Institute of technology</option>
-								<option value="other" id="other">Other</option>
+								<option id="other">Other</option>
 							</select>
 						</div>
 						<div class="form-group" style="display: none;" id="col-name">
 							<label class="control-label" for="inputNormal">Name of the college</label>
-							<input type="text" name="regno" id="signup_password" value="" class="bp-suggestions form-control" cols="50" rows="10"></input>
+							<input type="text" name="college" id="signup_password" value="" class="bp-suggestions form-control" cols="50" rows="10"></input>
 						</div>
 						<div class="form-group" id="rgno">
 							<label class="control-label" for="inputNormal">Reg. No(only for VIT students)</label>
