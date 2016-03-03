@@ -136,7 +136,7 @@ if (isset($_SESSION["username"])) {
                                     <input type="checkbox" name="event8" value="some" onclick="return KeepCount()">event3<br />
                                 </div>
                                 <div class="pure-u-1-8">
-                                    
+
                                     <input type="checkbox" name="event9" value="some" onclick="return KeepCount()">event4<br />
                                     <input type="checkbox" name="event10" value="some" onclick="return KeepCount()">event5<br />
                                     <input type="checkbox" name="event11" value="some" onclick="return KeepCount()">event1<br />
@@ -147,7 +147,7 @@ if (isset($_SESSION["username"])) {
                                     <input type="checkbox" name="event16" value="some" onclick="return KeepCount()">event3<br />
                                 </div>
                                 <div class="pure-u-1-8">
-                                    
+
                                     <input type="checkbox" name="event17" value="some" onclick="return KeepCount()">event4<br />
                                     <input type="checkbox" name="event18" value="some" onclick="return KeepCount()">event5<br />
                                     <input type="checkbox" name="event19" value="some" onclick="return KeepCount()">event1<br />
@@ -159,9 +159,6 @@ if (isset($_SESSION["username"])) {
                                 </div>
                                 <div class="pure-u-1-8">
 
-                                    <input type="checkbox" name="event22" value="some" onclick="return KeepCount()">event1<br />
-                                    <input type="checkbox" name="event23" vlue="some"  onclick="return KeepCount()">event2<br />
-                                    <input type="checkbox" name="event24" vaue="some"  onclick="return KeepCount()">event3<br />
                                     <input type="checkbox" name="event25" value="some" onclick="return KeepCount()">event4<br />
                                     <input type="checkbox" name="event26" value="some" onclick="return KeepCount()">event5<br />
                                     <input type="checkbox" name="event27" value="some" onclick="return KeepCount()">event1<br />
@@ -172,7 +169,7 @@ if (isset($_SESSION["username"])) {
                                     <input type="checkbox" name="event32" value="some" onclick="return KeepCount()">event3<br />                                  
                                 </div>
                                 <div class="pure-u-1-8">
-                                    
+
                                     <input type="checkbox" name="event33" value="some" onclick="return KeepCount()">event4<br />
                                     <input type="checkbox" name="event34" value="some" onclick="return KeepCount()">event5<br />
                                     <input type="checkbox" name="event35" value="some" onclick="return KeepCount()">event1<br />
@@ -183,7 +180,7 @@ if (isset($_SESSION["username"])) {
                                     <input type="checkbox" name="event40" value="some" onclick="return KeepCount()">event3<br />                                  
                                 </div>
                                 <div class="pure-u-1-8">
-                                    
+
                                     <input type="checkbox" name="event41" value="some" onclick="return KeepCount()">event4<br />
                                     <input type="checkbox" name="event42" value="some" onclick="return KeepCount()">event5<br />
                                     <input type="checkbox" name="event43" value="some" onclick="return KeepCount()">event1<br />
@@ -194,7 +191,7 @@ if (isset($_SESSION["username"])) {
                                     <input type="checkbox" name="event48" value="some" onclick="return KeepCount()">event3<br />
                                 </div>
                                 <div class="pure-u-1-8">
-                                    
+
                                     <input type="checkbox" name="event49" value="some" onclick="return KeepCount()">event4<br />
                                     <input type="checkbox" name="event50" value="some" onclick="return KeepCount()">event5<br />
                                     <input type="checkbox" name="event51" value="some" onclick="return KeepCount()">event1<br />
