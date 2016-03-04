@@ -49,7 +49,7 @@ $content .= "<td style='padding-top: 5px;padding-bottom: 5px; color: #ffffff;'> 
 $content .= "Event Name: ";
 $content .= "</td> ";
 $content .= "<td style='padding-right: 12px; color: #ffffff;'> ";
-$content .= "<span>".if ($type=="three") {ucfirst($first_event[0]).', '.ucfirst($second_event[0]).', '.ucfirst($third_event[0])} else {.' All '.}."</span> ";
+$content .= "<span>".if ($type=='three') {ucfirst($first_event[0]).', '.ucfirst($second_event[0]).', '.ucfirst($third_event[0])} else {.' All '.}."</span> ";
 $content .= "</td> ";
 $content .= "</tr> ";
 $content .= "<tr style='margin-top: 12px;'> ";
