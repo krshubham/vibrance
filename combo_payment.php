@@ -11,7 +11,11 @@
     confirm_query($name_result);
     $name_title = mysqli_fetch_assoc($name_result);    
 ?>
-
+<?php
+    $query = "SELECT * FROM combo ";
+    $result = mysqli_query($conn, $query);
+    confirm_query($result);
+?>
 <?php
     if (($name_title['type']=="payment_admin") | ($name_title['type']=="super_admin")) {
         $view_whole = "";         
@@ -105,9 +109,39 @@ th {
                         <center>
                             <table>
                                 <tr>
-                                    <td><a href="all_pay.php">All events Pass</a></td>
-                                    <td><a href="three_pay.php">Three events Pass</a></td>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>College</th>
+                                    <th>Reg No.</th>
+                                    <th>Ph. No.</th>
+                                    <th>Status</th>
+                                    <th>Type</th>
+                                    <th>Price</th>
+                                    <th>Action</th>
                                 </tr>
+                                <?php
+                                    while ($list = mysqli_fetch_assoc($result)) { ?>
+                                       <tr>
+                                           <td><?php echo $list['name']; ?></td>
+                                           <td><?php echo $list['email']; ?></td>
+                                           <td><?php echo $list['college']; ?></td>
+                                           <td><?php echo $list['regno']; ?></td>
+                                           <td><?php echo $list['phno']; ?></td>
+                                           <td><?php echo $list['paid']; ?></td>
+                                           <td><?php echo $list['type']; ?></td>
+                                           <td><?php echo $list['price']; ?></td>
+                                           <td>
+                                               <a href="comboconfirm.php?id=<?php echo urlencode($list["id"]); ?>&events=<?php echo urlencode($list['events']); ?>&price=<?php echo urlencode($list['price']); ?>&type=<?php echo urlencode($list['type']); ?>" onclick="return confirm('Are you sure?');"><?php
+                                                    if ($list['paid']==0) {
+                                                        echo "<font color='red'>"."Pay"."</font>";
+                                                    } else {
+                                                        echo "<font color='green'>"."Paid"."</font>";
+                                                    } ?>
+                                                </a>
+                                           </td>
+                                       </tr> 
+                                   <?php }
+                                ?>
                             </table>
                         </center>
                     </div>

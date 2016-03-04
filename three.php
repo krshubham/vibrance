@@ -22,6 +22,7 @@
 	$event_part1 = explode("_", $first_event);
 	$event_part2 = explode("_", $second_event);
 	$event_part3= explode("_", $third_event);
+	$events = $first_event.",".$second_event.",".$third_event;
 	$parti = 1;   
 	if ($name_title['college']!="VIT") {
 		$price = 250;
@@ -83,9 +84,13 @@
 
 		$query3 = "INSERT INTO {$third_event} (name, email, college, regno, phno, altphno, parti, combo)";
 		$query3 .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', '{$altphno}', {$parti}, '{$combo}')";
-		$result3 = mysqli_query($conn, $query3);	
+		$result3 = mysqli_query($conn, $query3);
 
-	    if ($result1&&$result2&&$result3) {
+		$query = "INSERT INTO combo (name, email, college, regno, phno, altphno, parti, type, price, events)";
+		$query .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', '{$altphno}', {$parti}, 'three', '{$price}', '{$events}')";
+		$result = mysqli_query($conn, $query);		
+
+	    if ($result1&&$result2&&$result3&&$result) {
 	      	echo"You have succesfully registered for Vibrance16. Please check your email for the details. Your registraion will only be confirmed after you make the payment at our registration desk in VIT.";		
 	    } else {
 		   	echo"Registration failed.";
