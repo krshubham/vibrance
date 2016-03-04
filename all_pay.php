@@ -24,7 +24,11 @@
         $view_cnf = "style='display: none;'";
     }
 ?>
-
+<?php
+    $spend_query = "SELECT * FROM spend ";
+    $spend_result = mysqli_query($conn, $spend_query);
+    confirm_query($spend_result);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -105,9 +109,42 @@ th {
                         <center>
                             <table>
                                 <tr>
-                                    <td><a href="all_pay.php">All events Pass</a></td>
-                                    <td><a href="three_pay.php">Three events Pass</a></td>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>College</th>
+                                    <th>Reg. No.</th>
+                                    <th>Ph. No.</th>
+                                    <th>Status</th>
+                                    <th>Participants</th>
+                                    <th>Combo</th>
+                                    <th>Fees</th>
+                                    <th>Action</th>
                                 </tr>
+                                <?php
+                                    while ($spend_list = mysqli_fetch_assoc($spend_result)) {
+                                        $event_part = explode("_", $spend_list['event']);
+                                        $event_type = $event_part[3];
+                                        if ($event_type == "d") {
+                                            $check_query = "SELECT * FROM {$spend_list['event']} WHERE combo = 'all' ";
+                                            $check_result = mysqli_query($conn, $check_query);
+                                            confirm_query($check_result);
+                                            while ($list = mysqli_fetch_assoc($check_result)) { ?>
+                                                <tr>
+                                                    <td><?php echo $list['name']; ?></td>
+                                                    <td><?php echo $list['email']; ?></td>
+                                                    <td><?php echo $list['college']; ?></td>
+                                                    <td><?php echo $list['rgno']; ?></td>
+                                                    <td><?php echo $list['phno']; ?></td>
+                                                    <td><?php echo $list['paid']; ?></td>
+                                                    <td><?php echo $list['parti']; ?></td>
+                                                    <td><?php echo $list['combo']; ?></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            <?php}
+                                        }
+                                    }
+                                ?>
                             </table>
                         </center>
                     </div>

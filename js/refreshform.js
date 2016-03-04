@@ -609,4 +609,11 @@ $(document).ready(function() {
             alert(data);
         });
     });
+
+    $("#all_pass").click(function() {        
+        
+        $.post("all.php", { }, function(data) {
+            alert(data);
+        });
+    });
 });

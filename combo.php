@@ -349,10 +349,10 @@ if (isset($_SESSION["username"])) {
 			<div class="content">
 			  <p style="text-align: center;">With this pass you can take part in any of the events excluding the events of Musicclub, danceclub, social innov ators.</p>
 			  <div class="pure-g">
-								<div class="pure-u-24-24">
-									<input type="button" class="btn-reg2" id="three_pass1" value="Register"></input>
-								</div>
-							</div>
+				<div class="pure-u-24-24">
+					<input type="button" class="btn-reg2" id="all_pass" value="Register"></input>
+				</div>
+			</div>
 		  </div>
 	  </div>
   </div>
