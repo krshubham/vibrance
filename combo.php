@@ -1,26 +1,21 @@
 <?php require_once("includes/session.php"); ?>
 <?php require_once("includes/db_connection.php"); ?>
 <?php require_once("includes/functions.php"); ?>
-
+ <?php confirm_logged_in(); ?>
 <?php 
-if (isset($_SESSION["username"])) {
 	$current_user = $_SESSION["username"];
 	$name_query = "SELECT * FROM users WHERE username = '{$current_user}' LIMIT 1";
 	$name_result = mysqli_query($conn, $name_query);
 	confirm_query($name_result);
 	$name_title = mysqli_fetch_assoc($name_result);
-	$first_name = explode(" ", $name_title['name']);            
-	$view = "<a href='logout.php'>Logout, ".$first_name[0]."</a>"; 
-	$event_view = ""; 
-	$login_view = "";      
-} else {
-	$current_user = "";  
-	$first_name = "";
-	$name_title = "";
-	$view = "<a href='login/index.php'>Login</a>";  
-	$login_view = "<a href='login/index.php' class='gobutton'>Login to register</a>"; 
-	$event_view = "style='display: none;'";     
-}  
+	$first_name = explode(" ", $name_title['name']);  
+	if ($name_title['college']=="VIT") {
+		$image1 = "three_int.jpg";
+		$image2 = "all_int.jpg";
+	} else {
+		$image1 = "three_ext.jpg";
+		$image2 = "all_ext.jpg";
+	}
 ?>
 
 <!DOCTYPE html>
@@ -66,17 +61,61 @@ if (isset($_SESSION["username"])) {
 					</div>
 					<nav class="nav">
 						<ul class="sf-menu">                            
-							<li class="active">
-								<a href="admin_land.php">Admin Home</a>                               
-							</li>
 							<li>
-								<a href="#"></a>
-							</li>
+                                <a href="index.php">Home</a>
+                            </li>
+                            <li>
+                                <a href="aboutus.html">About Us</a>
+                            </li>
+                            <li class="active">
+                                <a href="#events">Events</a>
+                                <ul>
+                                    <li>
+                                        <a href="danceclub.php">Dance</a>
+                                    </li>
+                                    <li>
+                                        <a href="games.php">Games</a>
+                                    </li>
+                                    <li>
+                                        <a href="musicclub.php">Music</a>
+                                    </li>
+                                    <li>
+                                        <a href="dramaclub.php">Drama</a>
+                                    </li>
+                                    <li>
+                                        <a href="fineartsclub.php">Fine Arts</a>
+                                    </li>
+                                    <li>
+                                        <a href="informals.php">Informals</a>
+                                    </li>
+                                    <li>
+                                        <a href="formals.php">Formals</a>
+                                    </li>
+                                    <li>
+                                        <a href="tech.php">Tech Events</a>
+                                    </li>
+                                    <li>
+                                        <a href="debnquiz.php">Debates and Quiz</a>
+                                    </li>
+                                    <li>
+                                        <a href="sports.php">Sports</a>
+                                    </li>
+                                    <li>
+                                        <a href="tamil.php">Tamil Events</a>
+                                    </li>
+                                    <li>
+                                        <a href="viteach.php">Viteach Events</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="rules.html">Rules</a>
+                            </li>
+                            <li>
+                                <a href="#">Meet the Team</a>
+                            </li>
 							<li>
-								<a href="#">On Spot Registration</a>
-							</li>
-							<li>
-								<?php echo "<a href='logout.php'>Logout, ".$current_user."</a>"; ?>
+								<?php echo "<a href='logout.php'>Logout, ".$first_name[0]."</a>"; ?>
 							</li>
 						</ul>
 					</nav>
@@ -95,7 +134,7 @@ if (isset($_SESSION["username"])) {
 							<div class="img">
 								<div id="wrapper">
 									<p><a href="#popup1">
-										<div id="three_click" class="lazy-img" style="padding-bottom: 45.6140350877193%;"><img data-src="images/three_int.jpg" alt=""></div>
+										<div id="three_click" class="lazy-img" style="padding-bottom: 45.6140350877193%;"><img data-src="images/<?php echo $image1; ?>" alt=""></div>
 									</a></p>
 								</div>
 							</div>
@@ -105,7 +144,7 @@ if (isset($_SESSION["username"])) {
 							<div class="img">
 								<div id="wrapper">
 									<a href="#popup2">
-										<div id="all_click" class="lazy-img" style="padding-bottom: 45.6140350877193%;"><img data-src="images/all_int.jpg" alt=""></div>
+										<div id="all_click" class="lazy-img" style="padding-bottom: 45.6140350877193%;"><img data-src="images/<?php echo $image2; ?>" alt=""></div>
 									</a>
 								</div>
 							</div>

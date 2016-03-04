@@ -6,7 +6,7 @@
 $id = $_GET["id"];
 $events = $_GET['events'];
 $current_user = $_SESSION['username'];
-$events_part = explode(",", $events);
+$events_part = explode("+", $events);
 $first_event = explode("_", $events_part[0]);
 $second_event = explode("_", $events_part[1]);
 $third_event = explode("_", $events_part[2]);
@@ -34,8 +34,8 @@ $content .= "</head> ";
 $content .= "<body style='overflow: hidden;'> ";	
 $content .= "<div style='background-color: #20202F; margin-right: 230px;'> ";
 $content .= "<header> ";
-$content .= "<img src='http://vitchennaivibrance.com/reg/images/vib_banner_small.png' style='width: 180px;height: 60px;margin-right: 190px;'> ";
-$content .= "<img src='http://vitchennaivibrance.com/reg/images/vit_logo.png' style='width: 150px;height: 60px;'> ";
+$content .= "<img src='http://vitchennaivibrance.com/images/vib_banner_small.png' style='width: 180px;height: 60px;margin-right: 190px;'> ";
+$content .= "<img src='http://vitchennaivibrance.com/images/vit_logo.png' style='width: 150px;height: 60px;'> ";
 $content .= "</header> ";
 $content .= "<h1 style='margin-left: 120px;	font-size: 40px; font-weight: 200px; margin-top: -0.5px; margin-bottom: -50px; color: #E85657;' >Vibrance 2016</h1><br> ";
 $content .= "<h3 style='margin-bottom: 0;margin-top: 0;	margin-left: 10px; color: #E85657;'>Bill No: <span>".$billno."</span></h3><h3 style='margin-left: 160px;font-size: 18px;font-weight: 40px;margin-top: -2.5px;margin-bottom: 15px; color: #E85657;'>Electronic registration slip</h3> ";
@@ -49,7 +49,7 @@ $content .= "<td style='padding-top: 5px;padding-bottom: 5px; color: #ffffff;'> 
 $content .= "Event Name: ";
 $content .= "</td> ";
 $content .= "<td style='padding-right: 12px; color: #ffffff;'> ";
-$content .= "<span>".if ($type=='three') {ucfirst($first_event[0]).', '.ucfirst($second_event[0]).', '.ucfirst($third_event[0])} else {.' All '.}."</span> ";
+$content .= "<span>Pass</span> ";
 $content .= "</td> ";
 $content .= "</tr> ";
 $content .= "<tr style='margin-top: 12px;'> ";
@@ -122,6 +122,6 @@ if ($type=="three") {
 	$update_result = mysqli_query($conn, $update_query);
 }
 
-	redirect_to("payments.php");
+	redirect_to("combo_payment.php");
 
 ?>
