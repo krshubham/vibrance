@@ -213,13 +213,13 @@
                             <div class="img img__border">
                                 <div class="lazy-img" style="padding-bottom: 63.0282%;"><img data-src="images/proshow2.jpg" alt=""></div>
                             </div>
-                            <p class="center indents-1">Pro-Shows are a huge part of any cultural festival. We at the University promises its audience an atmosphere of immense pleasure and satisfaction leaving them wanting for more. Professionals who are popular within their communities will be present to entertain the crowd.</p>
+                            <p class="center indents-1">Pro-Shows are a huge part of any cultural festival. We at the University promise our audience, an atmosphere of immense pleasure and satisfaction leaving them wanting for more. Professionals who are popular within their communities will be present to entertain the crowd.</p>
                         </div>
                         <div class="grid_6">
                             <div class="img img__border">
                                 <div class="lazy-img" style="padding-bottom: 63.0282%;"><img data-src="images/proshow1.png" alt=""></div>
                             </div>
-                            <p class="center indents-1">Pro-Shows are a huge part of any cultural festival. We at the University promises its audience an atmosphere of immense pleasure and satisfaction leaving them wanting for more. Professionals who are popular within their communities will be present to entertain the crowd.</p>
+                            <p class="center indents-1">Pro-Shows are a huge part of any cultural festival. We at the University promise our audience, an atmosphere of immense pleasure and satisfaction leaving them wanting for more. Professionals who are popular within their communities will be present to entertain the crowd.</p>
                         </div>
                     </div>
                     <div class="event-heading-p1"></div>
@@ -240,7 +240,7 @@
                             <div class="gallery_overlay">
                                 <div class="gallery_caption">
                                     <p><em>Informals</em></p>
-                                    <p>Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl</p>
+                                    <p>No one looks stupid when they're having fun. So, come be a part of these awesome events.</p>
                                 </div>
                             </div>
                         </a>
@@ -249,7 +249,7 @@
                             <div class="gallery_overlay">
                                 <div class="gallery_caption">
                                     <p><em>Tamil Events</em></p>
-                                    <p>Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl</p>
+                                    <p>Do you think you have a good knowldege of Tamil? Come test your mettle here.</p>
                                 </div>
                             </div>
                         </a>
@@ -258,7 +258,7 @@
                             <div class="gallery_overlay">
                                 <div class="gallery_caption">
                                     <p><em>Sports Events</em></p>
-                                    <p>Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl</p>
+                                    <p>Do you have what it takes to be the champion of the University? If yes, then come showcase your talent here.</p>
                                 </div>
                             </div>
                         </a>
@@ -287,7 +287,7 @@
                             <div class="gallery_overlay">
                                 <div class="gallery_caption">
                                     <p><em>Tech Events</em></p>
-                                    <p>Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl</p>
+                                    <p>If your also feel that no place can be better than 127.0.0.1 Then come, this is the section for you.</p>
                                 </div>
                             </div>
                         </a>
@@ -296,7 +296,7 @@
                             <div class="gallery_overlay">
                                 <div class="gallery_caption">
                                     <p><em>Debates and Quiz Events</em></p>
-                                    <p>Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl</p>
+                                    <p>Be Curious Always! for knowledge will not acquire you, you must acquire it and this is the section where you can get all of it.</p>
                                 </div>
                             </div>
                         </a>
@@ -321,7 +321,7 @@
                             <div class="gallery_overlay">
                                 <div class="gallery_caption">
                                     <p><em>Formals</em></p>
-                                    <p>Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl</p>
+                                    <p>Most people are buried in suits, so a Zombie Apocalypse would be a formal event. Come take part in these awesome formal events and don't worry, we don't have zombies.</p>
                                 </div>
                             </div>
                         </a>
@@ -330,7 +330,7 @@
                             <div class="gallery_overlay">
                                 <div class="gallery_caption">
                                     <p><em>Fine Arts</em></p>
-                                    <p>Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl</p>
+                                    <p>The job of an Artist is to offer a sanctuary of beauty to an ugly world. Up for it? then this is the section for you.</p>
                                 </div>
                             </div>
                         </a>
@@ -339,7 +339,7 @@
                             <div class="gallery_overlay">
                                 <div class="gallery_caption">
                                     <p><em>VITeach Events</em></p>
-                                    <p>Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl</p>
+                                    <p>Learning is a treasure that will follow it's owner everywhere. Come let's share some knowledge.</p>
                                 </div>
                             </div>
                         </a>
