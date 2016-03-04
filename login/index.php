@@ -82,7 +82,7 @@ if(isset($_POST['signup'])){
 	<link rel="stylesheet" href="normalize.css" type="text/css" media="all">
 	<link href='http://fonts.googleapis.com/css?family=Roboto:900,900italic,500,400italic,100,700italic,300,700,500italic,100italic,300italic,400' rel='stylesheet' type='text/css'>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=0.5">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=0.5"> -->
 	<script type="text/javascript">//<![CDATA[ 
 	$(window).load(function(){
 		$('.form-control').on('focus blur', function (e) {
@@ -114,7 +114,7 @@ if(isset($_POST['signup'])){
 	}
 </style>
 </head>  
-<body style="height: 100%; overflow: hidden; width: 100% !important;">
+<body style="height: 100%; overflow: hidden; width: 100% !important;zoom: 98%;">
 
 	<div id="fback"><div class="girisback"></div><div class="kayitback"></div></div>
 
