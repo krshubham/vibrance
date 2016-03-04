@@ -114,7 +114,7 @@ if(isset($_POST['signup'])){
 	}
 </style>
 </head>  
-<body style="height: 100%; overflow: hidden; width: 100% !important;zoom: 90% !important;">
+<body style="height: 100%; width: 100% !important;zoom: 90% !important;">
 
 	<div id="fback"><div class="girisback"></div><div class="kayitback"></div></div>
 
