@@ -172,7 +172,7 @@ if(isset($_POST['signup'])){
 					<h2 style="color: #E85657;">Login</h2>
 					<form id="girisyap" method="post" action="index.php" onsubmit="email_check()">
 						<div class="form-group">
-							<label class="control-label" for="inputNormal">Username</label>
+							<label class="control-label" for="inputNormal">Email</label>
 							<input type="text" name="username" class="bp-suggestions form-control" cols="50" rows="10" required></input>
 						</div>
 						<div class="form-group soninpt">
