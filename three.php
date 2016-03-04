@@ -22,7 +22,7 @@
 	$event_part1 = explode("_", $first_event);
 	$event_part2 = explode("_", $second_event);
 	$event_part3= explode("_", $third_event);
-	$events = $first_event.",".$second_event.",".$third_event;
+	$events = $first_event."+".$second_event."+".$third_event;
 	$parti = 1;   
 	if ($name_title['college']!="VIT") {
 		$price = 250;

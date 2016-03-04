@@ -6,7 +6,7 @@
 $id = $_GET["id"];
 $events = $_GET['events'];
 $current_user = $_SESSION['username'];
-$events_part = explode(",", $events);
+$events_part = explode("+", $events);
 $first_event = explode("_", $events_part[0]);
 $second_event = explode("_", $events_part[1]);
 $third_event = explode("_", $events_part[2]);
@@ -49,7 +49,7 @@ $content .= "<td style='padding-top: 5px;padding-bottom: 5px; color: #ffffff;'> 
 $content .= "Event Name: ";
 $content .= "</td> ";
 $content .= "<td style='padding-right: 12px; color: #ffffff;'> ";
-$content .= "<span>".if ($type=='three') {ucfirst($first_event[0]).', '.ucfirst($second_event[0]).', '.ucfirst($third_event[0])} else {.' All '.}."</span> ";
+$content .= "<span>Pass</span> ";
 $content .= "</td> ";
 $content .= "</tr> ";
 $content .= "<tr style='margin-top: 12px;'> ";
