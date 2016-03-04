@@ -347,7 +347,7 @@ if (isset($_SESSION["username"])) {
 			<a class="close" href="#">&times;</a>
 			<h2>All event Pass</h2>
 			<div class="content">
-			  <p style="text-align: center;">With this pass you can take part in any of the events excluding the events of Musicclub, danceclub, social innov ators.</p>
+			  <p style="text-align: center;">With this pass you can take part in any of the events excluding the events of Musicclub, danceclub, social innovators.</p>
 			  <div class="pure-g">
 				<div class="pure-u-24-24">
 					<input type="button" class="btn-reg2" id="all_pass" value="Register"></input>
@@ -372,6 +372,11 @@ if (isset($_SESSION["username"])) {
 		$(".btn-reg").css("background-color","green");
 		$(".btn-reg").css("color","black");
 	  }
+	 $(".btn-reg2").click(function(){
+	 	$(".btn-reg2").attr("value","Registered!");
+		$(".btn-reg2").css("background-color","green");
+		$(".btn-reg2").css("color","black");
+	 });
   </script>
 
   <script src="js/script.js"></script>
