@@ -104,7 +104,7 @@ th {
         <main <?php echo $view_whole; ?> >
             <section class="well well__offset-3">
                 <div class="container">
-                    <h2><em>Payments</em>Section</h2>
+                    <h2><em>Combo</em>Section</h2>
                     <div class="row row__offset-2">
                         <center>
                             <table>
