@@ -192,6 +192,7 @@ if(isset($_POST['signup'])){
 		$("#college-select").click(function(){
 			if($("#college-select")[0].selectedIndex==1){
 				$("#col-name").fadeIn();
+				$("#signup_email").removeAttr("value");
 				$("#rgno").slideUp();
 			}
 			else{
