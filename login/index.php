@@ -82,7 +82,7 @@ if(isset($_POST['signup'])){
 	<link rel="stylesheet" href="normalize.css" type="text/css" media="all">
 	<link href='http://fonts.googleapis.com/css?family=Roboto:900,900italic,500,400italic,100,700italic,300,700,500italic,100italic,300italic,400' rel='stylesheet' type='text/css'>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=0.5">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=0.5"> -->
 	<script type="text/javascript">//<![CDATA[ 
 	$(window).load(function(){
 		$('.form-control').on('focus blur', function (e) {
@@ -114,7 +114,7 @@ if(isset($_POST['signup'])){
 	}
 </style>
 </head>  
-<body style="height: 100%; overflow: hidden; width: 100% !important;">
+<body style="height: 100%; width: 100% !important;zoom: 90% !important;">
 
 	<div id="fback"><div class="girisback"></div><div class="kayitback"></div></div>
 
@@ -172,7 +172,7 @@ if(isset($_POST['signup'])){
 					<h2 style="color: #E85657;">Login</h2>
 					<form id="girisyap" method="post" action="index.php" onsubmit="email_check()">
 						<div class="form-group">
-							<label class="control-label" for="inputNormal">Username</label>
+							<label class="control-label" for="inputNormal">Email</label>
 							<input type="text" name="username" class="bp-suggestions form-control" cols="50" rows="10" required></input>
 						</div>
 						<div class="form-group soninpt">
@@ -192,6 +192,7 @@ if(isset($_POST['signup'])){
 		$("#college-select").click(function(){
 			if($("#college-select")[0].selectedIndex==1){
 				$("#col-name").fadeIn();
+				$("#signup_email").removeAttr("value");
 				$("#rgno").slideUp();
 			}
 			else{

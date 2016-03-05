@@ -106,7 +106,7 @@
                         <div class="grid_6">
                             <div class="img">
                                 <a href="<?php echo $link1; ?>">
-                                    <div class="lazy-img" style="padding-bottom: 45.6140350877193%;"><img data-src="images/payment.jpg" alt=""></div>
+                                    <div class="lazy-img" style="padding-bottom: 45.6140350877193%;"><img data-src="images/payconf.jpg" alt=""></div>
                                 </a>
                             </div>
                         </div>

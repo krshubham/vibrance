@@ -116,6 +116,10 @@ th {
                                     <option value="supersinger_alone_100_s">Super Singer</option>
                                     <option value="battleofbands_team_1000_s">Battle of bands</option>
                                     <option value="artiste_alone_100_s">Artiste</option>
+                                    <option value="fifa15_alone_150_s">FIFA 15</option>
+                                    <option value="dota2_team_500_s">Dota 2</option>
+                                    <option value="counterstrike_team_500_s">Counter Strike</option>
+                                    <option value="socialinnovators_team_150_s">Social Innovators</option>
 
                                     <option value="generalquiz_team_50_d">General Quiz</option>
                                     <option value="entertainmentquiz_team_50_d">Entertainment Quiz</option>

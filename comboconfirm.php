@@ -4,18 +4,21 @@
 <?php confirm_admin_logged_in(); ?>
 <?php 
 $id = $_GET["id"];
-$event = $_GET['event'];
+$events = $_GET['events'];
 $current_user = $_SESSION['username'];
-$event_part = explode("_", $event);
-$parti = $_GET['parti'];
-if ($parti==1) {
-	$type = "Individual";
+$events_part = explode("+", $events);
+$first_event = explode("_", $events_part[0]);
+$second_event = explode("_", $events_part[1]);
+$third_event = explode("_", $events_part[2]);
+$price = $_GET['price'];
+$type = $_GET['type'];
+if ($type=="three") {
+	$type = "Three Events Pass";
 } else {
-	$type = "Team";
+	$type = "All Events Pass";
 }
-$price = $parti*$event_part[2];
 $billno = "A".rand();
-$name_query = "SELECT * FROM {$event} WHERE id = {$id} LIMIT 1";
+$name_query = "SELECT * FROM combo WHERE id = {$id} LIMIT 1";
 $name_result = mysqli_query($conn, $name_query);
 confirm_query($name_result);
 $name_title = mysqli_fetch_assoc($name_result);
@@ -46,7 +49,7 @@ $content .= "<td style='padding-top: 5px;padding-bottom: 5px; color: #ffffff;'> 
 $content .= "Event Name: ";
 $content .= "</td> ";
 $content .= "<td style='padding-right: 12px; color: #ffffff;'> ";
-$content .= "<span>".ucfirst($event_part[0])."</span> ";
+$content .= "<span>Pass</span> ";
 $content .= "</td> ";
 $content .= "</tr> ";
 $content .= "<tr style='margin-top: 12px;'> ";
@@ -55,7 +58,7 @@ $content .= "<td style='padding-right: 12px; color: #ffffff;'> ".ucfirst($name_t
 $content .= "</tr> ";
 $content .= "<tr style='margin-top: 12px;'> ";
 $content .= "<td style='padding-top: 5px;padding-bottom: 5px; color: #ffffff;'>Number of Participant(s): </td> ";
-$content .= "<td style='padding-right: 12px; color: #ffffff;'> ".$parti."</td> ";
+$content .= "<td style='padding-right: 12px; color: #ffffff;'> 1 </td> ";
 $content .= "</tr> ";
 $content .= "<tr style='margin-top: 12px;'> ";
 $content .= "<td style='padding-top: 5px;padding-bottom: 5px; color: #ffffff;'>Event Type: </td> ";
@@ -102,15 +105,23 @@ if(!$mail->send()) {
    exit;
 } 
 
-$update_query = "UPDATE {$event} SET paid = 1, cnfby = '{$current_user}' WHERE id = {$id} LIMIT 1";
-$update_result = mysqli_query($conn, $update_query);
+if ($type=="three") {
+	$update_query1 = "UPDATE {$events_part[0]} SET paid = 1, cnfby = '{$current_user}' WHERE id = {$id} LIMIT 1";
+	$update_result1 = mysqli_query($conn, $update_query1);
 
-if ($result && mysqli_affected_rows($conn) == 1) {
+	$update_query2 = "UPDATE {$events_part[1]} SET paid = 1, cnfby = '{$current_user}' WHERE id = {$id} LIMIT 1";
+	$update_result2 = mysqli_query($conn, $update_query2);
 
-	redirect_to("payments.php");
-} else {
+	$update_query3 = "UPDATE {$events_part[2]} SET paid = 1, cnfby = '{$current_user}' WHERE id = {$id} LIMIT 1";
+	$update_result3 = mysqli_query($conn, $update_query3);
 
-	redirect_to("payments.php");
+	$update_query = "UPDATE combo SET paid = 1, cnfby = '{$current_user}' WHERE id = {$id} LIMIT 1";
+	$update_result = mysqli_query($conn, $update_query);
+} else{
+	$update_query = "UPDATE combo SET paid = 1, cnfby = '{$current_user}' WHERE id = {$id} LIMIT 1";
+	$update_result = mysqli_query($conn, $update_query);
 }
+
+	redirect_to("combo_payment.php");
 
 ?>
