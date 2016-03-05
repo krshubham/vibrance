@@ -794,8 +794,8 @@ aside.widget .rss-date {display:block !important; width:100%; clear:both;margin-
 /* 33. Control Arrows 
 =================================================================*/
 .fp-controlArrow, .qw-itemscarousel-control {margin-top:-40px;display:block;border:none;font-size:40px;	width:40px !important;height:40px !important;position:absolute;top:50%;right:20px !important;}
-.fp-controlArrow:before {content: "\e020";position: relative;top: 1px;display: inline-block;font-family: 'qticons';font-style: normal;font-weight: normal;line-height: 1;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
-.fp-controlArrow.fp-next:before {content: "d";}
+.fp-controlArrow:before {content: "\e02B";position: relative;top: 1px;display: inline-block;font-family: 'qticons';font-style: normal;font-weight: normal;line-height: 1;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+.fp-controlArrow.fp-next:before {content: "\e02D";}
 .fp-controlArrow.fp-prev {left:auto;right:20px;}
 .fp-controlArrow.fp-next, .qw-itemscarousel-control.right {margin-top:20px;}
 .fp-slidesNav, .fp-slidesNav.bottom, .carousel-indicators {margin-left: 0;position: relative;height: 40px;left: 0;bottom: auto;width: 100% !important;top: 0;display: block;margin-left: 0 !important;text-align: center;}
