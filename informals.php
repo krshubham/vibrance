@@ -481,7 +481,7 @@
 					<h2><em>5's Football</em>Team of 8</h2>
 					<br>
 					<br>
-					<h4 style="text-align: left; font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>S. Balasubramanium &nbsp;&nbsp;&nbsp;9940551465</h4>
+					<h4 style="text-align: left; font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>S. Balasubramanian &nbsp;&nbsp;&nbsp;9940551465</h4>
 					<div class="row">
 						<div class="grid_6">
 							<ul class="indents-3">
@@ -935,7 +935,7 @@
 						<div class="grid_6">
 							<ul class="indents-3">
 								<li>Description of Event:
-									<p>Poetry, Writing (Short Story), Picture Composition, Slogan Writing, Story Character Building</p>
+									<p>In this event, the participants will be given a topic on spots and will be expected to write an article/story/essay on it. The word limit will range from 1000-1500 words. The participants will be provided with the required stationary, but are encouraged to carry their own sets of pens etc as presentation would also carry marks.</p>
 								</li>
 								<li>
 									<br>
@@ -947,7 +947,12 @@
 						<div class="grid_6">
 							<p class="indents-3">Rules:
 								<br>
-								<li>They can choose any one and if they wish, they can also opt for 3 different things and after that there would be an average score to mark them. Everybody will be getting half an hour to write.</li>
+								<li>Single Prticipation.</li>
+								<li>Topics will be provided on spot.</li>
+								<li>Word limit 1000-1500 words.</li>
+								<li>Plagiarism would lead to disqualification.</li>
+								<li>Judgement criterias would be - grammar, creativity, vocabulary and presentation.</li>
+								<li>Judges' decision would be indisputable.</li>								
 								<br>
 							</p>
 						</div>                         
