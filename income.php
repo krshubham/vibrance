@@ -17,7 +17,7 @@
             $income = $event_part[2]*$partino;
             $update_query = "UPDATE spend SET parti = {$partino}, income = {$income} WHERE event = '{$event_table}' ";
             $update_result = mysqli_query($conn, $update_query);
-            confirm_query($update_result);          
+            //confirm_query($update_result);          
         }
     }
 ?>
