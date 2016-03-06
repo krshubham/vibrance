@@ -1020,6 +1020,17 @@ a[href^="tel:"] {
     color: #ffffff;
 }
 
+.parallax91 {
+    color: #ffffff;
+    background-color: #FFF;
+    background-image: url(../images/vib_pic.jpg);
+    padding: 142px 0 142px;
+}
+
+.parallax91 h2 {
+    color: #ffffff;
+}
+
 
 .parallax12 {
     color: #ffffff;

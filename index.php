@@ -208,20 +208,15 @@
             <section class="well">
                 <div class="container" style="padding-top:-100px;">
                     <h2><em style="line-height:0px;">Pro Shows</em></h2>
-                    <div class="row">
-                        <div class="grid_6">
-                            <div class="img img__border">
-                                <div class="lazy-img" style="padding-bottom: 63.0282%;"><img data-src="images/proshow2.jpg" alt=""></div>
-                            </div>
-                            <p class="center indents-1">Pro-Shows are a huge part of any cultural festival. We at the University promise our audience, an atmosphere of immense pleasure and satisfaction leaving them wanting for more. Professionals who are popular within their communities will be present to entertain the crowd.</p>
-                        </div>
-                        <div class="grid_6">
-                            <div class="img img__border">
-                                <div class="lazy-img" style="padding-bottom: 63.0282%;"><img data-src="images/proshow1.png" alt=""></div>
-                            </div>
-                            <p class="center indents-1">Pro-Shows are a huge part of any cultural festival. We at the University promise our audience, an atmosphere of immense pleasure and satisfaction leaving them wanting for more. Professionals who are popular within their communities will be present to entertain the crowd.</p>
-                        </div>
-                    </div>
+                        <a href="proshows.html">
+                            <section class="parallax parallax91" data-parallax-speed="-0.4">
+                                <div class="container">
+                                    <h2><em>Vibrant </em>Experience</h2>
+                                    <p class="indents-2">Pro-Shows are a huge part of any cultural festival. We at the University promise our audience, an atmosphere of immense pleasure and satisfaction leaving them wanting for more. Professionals who are popular within their communities will be present to entertain the crowd. </p>
+                                    <a href="#" class="btn">Abhishek  9003394747   Merin   9750055022</a>
+                                </div>
+                            </section>
+                        </a>
                     <div class="event-heading-p1"></div>
                 </div>
                 <div class="gallery">
