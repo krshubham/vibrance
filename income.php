@@ -18,7 +18,7 @@
             }            
 			$event_table = $spend_title['event'];
 			$event_part = explode("_", $event_table);
-			$update_query = "UPDATE spend SET parti = {$partino}, income = {$price_total} WHERE event = '{$event_table}' ";
+			$update_query = "UPDATE spend SET income = {$price_total} WHERE event = '{$event_table}' ";
             $update_result = mysqli_query($conn, $update_query);
             confirm_query($update_result);  	
 		}
