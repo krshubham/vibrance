@@ -3,20 +3,20 @@
 <?php require_once("includes/functions.php"); ?>
 
 <?php
-    if (isset($_SESSION["username"])) {
-        $current_user = $_SESSION["username"];
-        $name_query = "SELECT * FROM users WHERE username = '{$current_user}' LIMIT 1";
-        $name_result = mysqli_query($conn, $name_query);
-        confirm_query($name_result);
-        $name_title = mysqli_fetch_assoc($name_result);
-        $first_name = explode(" ", $name_title['name']);            
-        $view = "<a href='logout.php'>Logout, ".$first_name[0]."</a>";        
-    } else {
-        $current_user = "";  
-        $first_name = "";
-        $name_title = "";
-        $view = "<a href='login/index.php'>Login/Signup</a>";        
-    }  
+if (isset($_SESSION["username"])) {
+    $current_user = $_SESSION["username"];
+    $name_query = "SELECT * FROM users WHERE username = '{$current_user}' LIMIT 1";
+    $name_result = mysqli_query($conn, $name_query);
+    confirm_query($name_result);
+    $name_title = mysqli_fetch_assoc($name_result);
+    $first_name = explode(" ", $name_title['name']);            
+    $view = "<a href='logout.php'>Logout, ".$first_name[0]."</a>";        
+} else {
+    $current_user = "";  
+    $first_name = "";
+    $name_title = "";
+    $view = "<a href='login/index.php'>Login/Signup</a>";        
+}  
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -54,49 +54,47 @@
     <script src='js/device.min.js'></script>
     <!--*******************************Google analytics*****************************-->
     <script>
-    (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
             m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-    ga('create', 'UA-73543324-1', 'auto');
-    ga('send', 'pageview');
+        ga('create', 'UA-73543324-1', 'auto');
+        ga('send', 'pageview');
     </script>
     <!--******************google analytics end*******************************-->
 </head>
 
 <body>
     <style>
-    .brand {
-        z-index: 3;
-        position: relative;
-    }
-    
-    #dot-matrix {
-        background: url(http://s14.directupload.net/images/111129/44ga9qid.png);
-        height: 103%;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        z-index: 1;
-    }
-    
-    .slide-up-fade-in {
-        padding-top: 0%;
-    }
+        .brand {
+            z-index: 3;
+            position: relative;
+        }
+
+        #dot-matrix {
+            background: url(http://s14.directupload.net/images/111129/44ga9qid.png);
+            height: 103%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            z-index: 1;
+        }
+
+        .slide-up-fade-in {
+            padding-top: 0%;
+        }
     </style>
     <div class="page">
         <a href="#0" id="fixed-back" style="display: none;"><img src="images/uparrow.png" title="Back to Top"></a>
-        <!--========================================================
-                              HEADER
-    =========================================================-->
+
         <header id="0">
             <div id="content"></div>
             <div class="camera_container">
@@ -128,8 +126,8 @@
                 </div>
                 <div class="brand wow fadeIn">
                     <h1 class="brand_name">
-                    <img id="shadowfilter" class="slide-up-fade-in" src="images/vib_banner.png">
-                </h1>
+                        <img id="shadowfilter" class="slide-up-fade-in" src="images/vib_banner.png">
+                    </h1>
                 </div>
             </div>
             <div class="toggle-menu-container">
@@ -148,44 +146,44 @@
                         </li>
                         <li>
                             <a href="#events">Events</a>
-                             <ul id="sf-events-menu">
-                                    <li>
-                                        <a href="danceclub.php">Dance</a>
-                                    </li>
-                                    <li>
-                                        <a href="games.php">Games</a>
-                                    </li>
-                                    <li>
-                                        <a href="musicclub.php">Music</a>
-                                    </li>
-                                    <li>
-                                        <a href="dramaclub.php">Drama</a>
-                                    </li>
-                                    <li>
-                                        <a href="fineartsclub.php">Fine Arts</a>
-                                    </li>
-                                    <li>
-                                        <a href="informals.php">Informals</a>
-                                    </li>
-                                    <li>
-                                        <a href="formals.php">Formals</a>
-                                    </li>
-                                    <li>
-                                        <a href="tech.php">Tech Events</a>
-                                    </li>
-                                    <li>
-                                        <a href="debnquiz.php">Debates and Quiz</a>
-                                    </li>
-                                    <li>
-                                        <a href="sports.php">Sports</a>
-                                    </li>
-                                    <li>
-                                        <a href="tamil.php">Tamil Events</a>
-                                    </li>
-                                    <li>
-                                        <a href="viteach.php">Viteach Events</a>
-                                    </li>
-                                </ul>
+                            <ul id="sf-events-menu">
+                                <li>
+                                    <a href="danceclub.php">Dance</a>
+                                </li>
+                                <li>
+                                    <a href="games.php">Games</a>
+                                </li>
+                                <li>
+                                    <a href="musicclub.php">Music</a>
+                                </li>
+                                <li>
+                                    <a href="dramaclub.php">Drama</a>
+                                </li>
+                                <li>
+                                    <a href="fineartsclub.php">Fine Arts</a>
+                                </li>
+                                <li>
+                                    <a href="informals.php">Informals</a>
+                                </li>
+                                <li>
+                                    <a href="formals.php">Formals</a>
+                                </li>
+                                <li>
+                                    <a href="tech.php">Tech Events</a>
+                                </li>
+                                <li>
+                                    <a href="debnquiz.php">Debates and Quiz</a>
+                                </li>
+                                <li>
+                                    <a href="sports.php">Sports</a>
+                                </li>
+                                <li>
+                                    <a href="tamil.php">Tamil Events</a>
+                                </li>
+                                <li>
+                                    <a href="viteach.php">Viteach Events</a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <a href="rules.html">Rules</a>
@@ -201,22 +199,22 @@
             </div>
             <div id="dot-matrix"></div>
         </header>
-        <!--========================================================
-                              CONTENT
-    =========================================================-->
+
         <main>
             <section class="well">
                 <div class="container" style="padding-top:-100px;">
-                    <h2><em style="line-height:0px;">Pro Shows</em></h2>
-                        <a href="proshows.html">
-                            <section class="parallax parallax91" data-parallax-speed="-0.4">
-                                <div class="container">
-                                    <h2><em>Vibrant </em>Experience</h2>
-                                    <p class="indents-2">Pro-Shows are a huge part of any cultural festival. We at the University promise our audience, an atmosphere of immense pleasure and satisfaction leaving them wanting for more. Professionals who are popular within their communities will be present to entertain the crowd. </p>
-                                    <a href="#" class="btn">Abhishek  9003394747   Merin   9750055022</a>
-                                </div>
-                            </section>
-                        </a>
+
+                    <a href="proshows.html">
+                        <section class="parallax parallax91" data-parallax-speed="-0.4">
+                            <div class="container">
+                                <h2><em>Pro Shows </em></h2>
+                                <p class="indents-2">Pro-Shows are a huge part of any cultural festival. We at the University promise our audience, an atmosphere of immense pleasure and satisfaction leaving them wanting for more. Professionals who are popular within their communities will be present to entertain the crowd. </p>
+                                <p>
+                                    Abhishek&nbsp;&nbsp;&nbsp;&nbsp;9003394747&nbsp;&nbsp;&nbsp;&nbsp;Merin&nbsp;&nbsp;&nbsp;&nbsp;9750055022
+                                </p>
+                            </div>
+                        </section>
+                    </a>
                     <div class="event-heading-p1"></div>
                 </div>
                 <div class="gallery">
@@ -395,59 +393,57 @@
                             </dl>
                             <p><em>+91 44 3993 1555</em></p>
                         </address>
+                    </div>
+                </section>
+            </main>
+
+            <footer>
+                <div class="container-fluid" style="padding-bottom: 2%">
+                    <ul class="socials">
+                        <li>
+                            <a href="https://www.facebook.com/Vibrance-2k16-949547601794846/" class="fa fa-facebook"></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/@Vibrance2k16" class="fa fa-twitter"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/vibrancevituniversity/" class="fa fa-instagram"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="fa fa-youtube"></a>
+                        </li>
+                    </ul>
                 </div>
-            </section>
-        </main>
-        <!--========================================================
-                              FOOTER
-    =========================================================-->
-        <footer>
-            <div class="container-fluid" style="padding-bottom: 2%">
-                <ul class="socials">
-                    <li>
-                        <a href="https://www.facebook.com/Vibrance-2k16-949547601794846/" class="fa fa-facebook"></a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/@Vibrance2k16" class="fa fa-twitter"></a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/vibrancevituniversity/" class="fa fa-instagram"></a>
-                    </li>
-                    <li>
-                        <a href="#" class="fa fa-youtube"></a>
-                    </li>
-                </ul>
             </div>
-    </div>
-    </footer>
+        </footer>
     </div>
     <script src="js/script.js"></script>
     <script type="text/javascript">
-    $('#contact_click').click(function() {
-        $('#divcontact').slideDown();
-    });
+        $('#contact_click').click(function() {
+            $('#divcontact').slideDown();
+        });
     </script>
     <script>
-    $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
+        $(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
                 }
-            }
+            });
         });
-    });
     </script>
 </body>
 
 </html>
 <?php
-    if (isset ($conn)){
-      mysqli_close($conn);
-    }
+if (isset ($conn)){
+  mysqli_close($conn);
+}
 ?>
