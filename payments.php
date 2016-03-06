@@ -103,6 +103,7 @@ th {
                     <h2><em>Payments</em>Section</h2>
                     <div class="row row__offset-2">
                         <center>
+                            <a href="combo_payment.php"><h3>Combo Payments</h3></a>
                             <form action="payments.php" method="post">
                                 <select name="event">
                                     <option value="">Select an event</option>
@@ -224,10 +225,7 @@ th {
                                                     <?php
                                                        if (($list['college']!="VIT")&&($event_name[3]=="d")) {
                                                             if ($list['combo']=="three") {
-                                                                $fee = 50;
-                                                                echo $fees;
-                                                            } elseif ($list['combo']=="all") {
-                                                                $fee = 8;
+                                                                $fee = 0;
                                                                 echo $fees;
                                                             } else {
                                                                 $fees = $list['parti']*100;
@@ -235,10 +233,7 @@ th {
                                                             }
                                                         } elseif (($list['college']=="VIT")&&($event_name[3]=="d")) {
                                                             if ($list['combo']=="three") {
-                                                                $fee = 33;
-                                                                echo $fees;
-                                                            } elseif ($list['combo']=="all") {
-                                                                $fee = 4;
+                                                                $fee = 0;
                                                                 echo $fees;
                                                             } else {
                                                                 $fees = $list['parti']*50;

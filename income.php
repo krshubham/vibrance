@@ -21,6 +21,10 @@
             //confirm_query($update_result);  	
 		}
 	}
+
+    $combo_query = "SELECT SUM(price) AS total_combo_price FROM combo WHERE paid = 1 ";
+    $combo_result = mysqli_query($conn, $combo_query);
+    $combo_list = mysqli_fetch_assoc($combo_result);
 ?>
 
 <?php
@@ -96,7 +100,7 @@ th {
                                 <a href="onspote/index.php">On Spot Registration</a>
                             </li>
                             <li>
-                                <?php echo "<a href='logout_admin.php'>Logout, ".$name_title['usename']."</a>"; ?>
+                                <?php echo "<a href='logout_admin.php'>Logout, ".$name_title['username']."</a>"; ?>
                             </li>
                         </ul>
                     </nav>
@@ -138,8 +142,9 @@ th {
                                     <?php                                    
                                 ?>
                                 <p>
-                                    <h3>Total Income = Rs. <span id="total"></span> </h3>
+                                    <h3>Total income from events = Rs. <span id="total"></span> </h3>
                                 </p>
+                                <p>Total income from combos = Rs. <?php echo $combo_list['total_combo_price']; ?></p>
                             </div>    
                             <button onclick="javascript:htmltopdf();">Export PDF</button>
                         </center>
