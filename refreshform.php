@@ -69,8 +69,8 @@
 		}	
 		
 		
-		$query = "INSERT INTO {$event} (name, email, college, regno, phno, altphno, parti, combo)";
-		$query .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', '{$altphno}', {$parti}, '{$combo}')";
+		$query = "INSERT INTO {$event} (name, email, college, regno, phno, altphno, parti, combo, price)";
+		$query .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', '{$altphno}', {$parti}, '{$combo}', {$price})";
 		$result = mysqli_query($conn, $query);	
 
 	    if ($result) {
