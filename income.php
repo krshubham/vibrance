@@ -15,8 +15,7 @@
 			$partino = $event_list['total_parti'];
             if ($partino=" ") {
                 $partino = 0;
-            }
-            echo $partino."<br>";
+            }            
 			$event_table = $spend_title['event'];
 			$event_part = explode("_", $event_table);
 			$income = $event_part[2]*$partino;
