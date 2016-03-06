@@ -13,7 +13,7 @@
 		confirm_query($event_result);
 		while($event_list = mysqli_fetch_assoc($event_result)){
 			$partino = $event_list['total_parti'];
-            if ($partino="") {
+            if ($partino=" ") {
                 $partino = 0;
             }
             echo $partino."<br>";
