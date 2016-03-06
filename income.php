@@ -13,10 +13,12 @@
 		confirm_query($event_result);
 		while($event_list = mysqli_fetch_assoc($event_result)){
 			$partino = $event_list['total_parti'];
+            echo $partino."<br>";
 			$event_table = $spend_title['event'];
+            echo $event_table."<br>";
 			$event_part = explode("_", $event_table);
 			$income = $event_part[2]*$partino;
-			echo $income;		
+			echo $income."<br>";		
 		}
 	}
 ?>
