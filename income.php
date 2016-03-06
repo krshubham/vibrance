@@ -7,7 +7,8 @@
 	$spend_result = mysqli_query($conn, $spend_query);
 	confirm_query($spend_result);
 	while ($spend_title = mysqli_fetch_assoc($spend_result)) {
-		$event_query = "SELECT SUM(parti) AS total_parti FROM {$spend_title['event']} WHERE paid = 1 ";
+        $table = $spend_title['event'];
+		$event_query = "SELECT SUM(parti) AS total_parti FROM {$table} WHERE paid = 1 ";
 		$event_result = mysqli_query($conn, $event_query);
 		confirm_query($event_result);
 		while($event_list = mysqli_fetch_assoc($event_result)){

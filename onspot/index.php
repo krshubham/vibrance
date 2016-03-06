@@ -533,7 +533,7 @@ function confirm_admin_logged_in_here() {
             </div>
             <div id="demo" class="field name-box" style="color: black;"></div>
             <div class="field name-box">
-                <input type="number" placeholder="Team Size" name="parti">
+                <input type="number" style="display: none;" placeholder="Team Size" name="parti">
             </div>
             <input class="button" type="submit" value="Submit" name="submit" />
         </form>
