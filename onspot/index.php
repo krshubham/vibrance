@@ -545,11 +545,11 @@ function confirm_admin_logged_in_here() {
             var event = document.getElementById("mySelect").value;
             if (event=="adaptune_alone_100_s") {
                 document.getElementById("demo").innerHTML = "Individual Event";
-                document.getElementsByTagName("INPUT")[5].style.display = "none";
+                document.getElementsByTagName("INPUT")[6].style.display = "none";
             } else if (event=="bollywoodbattle_team_100_s") {                
-                document.getElementsByTagName("INPUT")[5].setAttribute("min", "3"); 
-                document.getElementsByTagName("INPUT")[5].setAttribute("max", "4");
-                document.getElementsByTagName("INPUT")[5].style.display = "initial";
+                document.getElementsByTagName("INPUT")[6].setAttribute("min", "3"); 
+                document.getElementsByTagName("INPUT")[6].setAttribute("max", "4");
+                document.getElementsByTagName("INPUT")[6].style.display = "initial";
                 document.getElementById("demo").innerHTML = "Dynamic";
             } else if (event=="dancingduo_team_100_s") {
 

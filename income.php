@@ -8,18 +8,7 @@
 	confirm_query($spend_result);
 	while ($spend_title = mysqli_fetch_assoc($spend_result)) {
         $table = $spend_title['event'];
-		$event_query = "SELECT SUM(parti) AS total_parti FROM {$table} WHERE paid = 1 ";
-		$event_result = mysqli_query($conn, $event_query);
-		confirm_query($event_result);
-		while($event_list = mysqli_fetch_assoc($event_result)){
-			$partino = $event_list['total_parti'];
-			$event_table = $spend_title['event'];
-			$event_part = explode("_", $event_table);
-			$income = $event_part[2]*$partino;
-			$update_query = "UPDATE spend SET parti = {$partino}, income = {$income} WHERE event = '{$event_table}' ";
-			$update_result = mysqli_query($conn, $update_query);
-			confirm_query($update_result);			
-		}
+		echo $table;
 	}
 ?>
 
