@@ -3,23 +3,24 @@
 <?php require_once("includes/functions.php"); ?>
 <?php confirm_admin_logged_in(); ?>
 <?php
-    $spend_query = "SELECT * FROM spend ";
-    $spend_result = mysqli_query($conn, $spend_query);
-    confirm_query($spend_result);
-    while ($spend_title = mysqli_fetch_assoc($spend_result)) {
-        $event_query = "SELECT SUM(parti) AS total_parti FROM {$spend_title['event']} WHERE paid = 1 ";
-        $event_result = mysqli_query($conn, $event_query);
-        //confirm_query($event_result);
-        while($event_list = mysqli_fetch_assoc($event_result)){
-            $partino = $event_list['total_parti'];
-            $event_table = $spend_title['event'];
-            $event_part = explode("_", $event_table);
-            $income = $event_part[2]*$partino;
-            $update_query = "UPDATE spend SET parti = {$partino}, income = {$income} WHERE event = '{$event_table}' ";
+	$spend_query = "SELECT * FROM spend ";
+	$spend_result = mysqli_query($conn, $spend_query);
+	confirm_query($spend_result);
+	while ($spend_title = mysqli_fetch_assoc($spend_result)) {
+        $table = $spend_title['event'];
+		$event_query = "SELECT SUM(price) AS total_price FROM {$table} WHERE paid = 1 ";
+		$event_result = mysqli_query($conn, $event_query);
+		//confirm_query($event_result);
+		while($event_list = mysqli_fetch_assoc($event_result)){
+			$price_total = $event_list['total_price'];
+                    
+			$event_table = $spend_title['event'];
+			$event_part = explode("_", $event_table);
+			$update_query = "UPDATE spend SET income = {$price_total} WHERE event = '{$event_table}' ";
             $update_result = mysqli_query($conn, $update_query);
-            //confirm_query($update_result);          
-        }
-    }
+            //confirm_query($update_result);  	
+		}
+	}
 ?>
 
 <?php
@@ -95,7 +96,7 @@ th {
                                 <a href="onspote/index.php">On Spot Registration</a>
                             </li>
                             <li>
-                                <?php echo "<a href='logout_admin.php'>Logout, ".$name_title['username']."</a>"; ?>
+                                <?php echo "<a href='logout_admin.php'>Logout, ".$name_title['usename']."</a>"; ?>
                             </li>
                         </ul>
                     </nav>
