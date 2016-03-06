@@ -208,12 +208,7 @@ if (isset($_SESSION["username"])) {
                         <section class="parallax parallax91" data-parallax-speed="-0.4">
                             <div class="container">
                                 <h2><em>Pro Shows </em></h2>
-                                <p class="indents-2">Pro-Shows are a huge part of any cultural festival. We at the University promise our audience, an atmosphere of immense pleasure and satisfaction leaving them wanting for more. Professionals who are popular within their communities will be present to entertain the crowd. </p>
-                                <center>
-                                    <p>
-                                        Abhishek&nbsp;&nbsp;&nbsp;&nbsp;9003394747&nbsp;&nbsp;&nbsp;&nbsp;Merin&nbsp;&nbsp;&nbsp;&nbsp;9750055022
-                                    </p>
-                                </center>
+                                <p class="indents-2">Pro-Shows are a huge part of any cultural festival. We at VIT University promise our audience an atmosphere of immense pleasure and satisfaction; leaving them wanting for more. Professionals who are popular within their respective communities will be present to entertain the crowd.</p>                                
                             </div>
                         </section>
                     </a>

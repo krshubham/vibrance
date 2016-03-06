@@ -38,7 +38,8 @@ function confirm_admin_logged_in_here() {
         } else {
             $regno = "";
         }
-        $phno = $_POST['phno'];        
+        $phno = $_POST['phno'];  
+        $altphno = $_POST['altphno'];      
         $event = $_POST['event'];
         $type = explode("_", $event);
         if ($type[1]=="alone") {
@@ -62,8 +63,8 @@ function confirm_admin_logged_in_here() {
             $check_view = "You have already registered for this event. ";
         } else {
 
-            $query = "INSERT INTO {$event} (name, email, college, regno, phno, paid, parti, cnfby)";
-            $query .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', 1, {$parti}, '{$current_user}')";
+            $query = "INSERT INTO {$event} (name, email, college, regno, phno, altphno, paid, parti, cnfby)";
+            $query .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', '{$altphno}', 1, {$parti}, '{$current_user}')";
             $result = mysqli_query($conn, $query);  
 
             if ($result) {
@@ -443,6 +444,10 @@ function confirm_admin_logged_in_here() {
             <div class="field name-box">
                 <input type="text" id="phno" name="phno" placeholder="What should I dial?" required />
                 <label for="phno">Phone No.</label>
+            </div>
+            <div class="field name-box">
+                <input type="text" id="altphno" name="altphno" placeholder="What if we can't connect?" required />
+                <label for="phno">Alternate Phone No.</label>
             </div>
             <div class="field email-box">
                 <select id="mySelect" onchange="myFunction()" name="event" required>
