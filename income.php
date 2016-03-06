@@ -3,7 +3,7 @@
 <?php require_once("includes/functions.php"); ?>
 <?php confirm_admin_logged_in(); ?>
 <?php
-	$spend_query = "SELECT * FROM spend ";
+    $spend_query = "SELECT * FROM spend ";
     $spend_result = mysqli_query($conn, $spend_query);
     confirm_query($spend_result);
     while ($spend_title = mysqli_fetch_assoc($spend_result)) {
@@ -95,7 +95,7 @@ th {
                                 <a href="onspote/index.php">On Spot Registration</a>
                             </li>
                             <li>
-                                <?php echo "<a href='logout_admin.php'>Logout, ".$name_title['usename']."</a>"; ?>
+                                <?php echo "<a href='logout_admin.php'>Logout, ".$name_title['username']."</a>"; ?>
                             </li>
                         </ul>
                     </nav>
