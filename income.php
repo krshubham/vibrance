@@ -13,9 +13,7 @@
 		confirm_query($event_result);
 		while($event_list = mysqli_fetch_assoc($event_result)){
 			$price_total = $event_list['total_price'];
-            if ($price_total=" ") {
-                $price_total = 0;
-            }            
+                    
 			$event_table = $spend_title['event'];
 			$event_part = explode("_", $event_table);
 			$update_query = "UPDATE spend SET income = {$price_total} WHERE event = '{$event_table}' ";
