@@ -10,7 +10,7 @@
         $table = $spend_title['event'];
 		$event_query = "SELECT SUM(price) AS total_price FROM {$table} WHERE paid = 1 ";
 		$event_result = mysqli_query($conn, $event_query);
-		confirm_query($event_result);
+		//confirm_query($event_result);
 		while($event_list = mysqli_fetch_assoc($event_result)){
 			$price_total = $event_list['total_price'];
                     
