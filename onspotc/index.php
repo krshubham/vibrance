@@ -800,10 +800,10 @@ if (isset($_POST['submit'])) {
 <script src="js/script.js"></script>
 <script type="text/javascript">
     if(document.getElementById('tevents').checked){
-        $("#events").fadeIn();
+        $("#events").slideDown();
     }
     else{
-        $("#events").fadeOut()
+        $("#events").slideUp();
     }
 </script>
 <script>
