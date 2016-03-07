@@ -22,6 +22,11 @@
         $event_name = "";
         $event_table = "";
     }
+    if ($last_name[4]=="s") {
+        $view_combo = "style='display: none;'";
+    } else {
+        $view_combo = "";
+    }
 ?>
 
 <!DOCTYPE html>
@@ -121,8 +126,8 @@ th {
                                                     <th>Reg. No.</th>
                                                     <th>Ph. No.</th>
                                                     <th>Alternate No.</th>
-                                                    <th>Participants</th> 
-                                                    <th>Fees</th>                                            
+                                                    <th>Participants</th>   
+                                                    <th>Combo</th>     
                                                 </tr><?php
                                             while ($list = mysqli_fetch_assoc($result)) { ?>
                                                 <tr>
@@ -132,28 +137,50 @@ th {
                                                     <td><?php echo $list['regno']; ?></td>
                                                     <td><?php echo $list['phno']; ?></td>  
                                                     <td><?php echo $list['altphno']; ?></td> 
-                                                    <td><?php echo $list['parti']; ?></td>                                          
-                                                    <td class="count-me">
-                                                        <?php
-                                                            if (($list['college']!="VIT")&&($last_name[4]=="d")) {
-                                                                $fees = $list['parti']*100; echo $fees;
-                                                            } else { 
-                                                                $fees = $list['parti']*$last_name[3]; echo $fees;
-                                                            }                                                             
-                                                        ?>
-                                                    </td>                                             
+                                                    <td><?php echo $list['parti']; ?></td>  
+                                                    <td><?php echo $list['combo']; ?></td>
                                                 </tr><?php                                             
                                             } ?>
                                             </table> 
                                         </p>   
                                     <?php                                    
                                 ?>
-                                <p>
-                                    <h3>Total Income = Rs. <span id="total"></span> </h3>
+                                <p <?php echo $view_combo; ?> >
+                                    <h4>Combo confirmed list</h4>
+                                    <?php
+                                    $combo_query = "SELECT * FROM combo WHERE paid = 1 AND WHERE type = 'all' ";
+                                    $combo_result = mysqli_query($conn, $combo_query);
+                                    confirm_query($combo_result); ?>
+                                    <table>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Email</th>
+                                            <th>College</th>
+                                            <th>Reg. No.</th>
+                                            <th>Ph. No.</th>
+                                            <th>Alternate No.</th>
+                                            <th>Participants</th>   
+                                            <th>Type</th> 
+                                        </tr><?php
+                                    while ($combo_list = mysqli_fetch_assoc($combo_result)) { ?>
+                                        <tr>
+                                            <td><?php echo $combo_list['name']; ?></td>
+                                            <td><?php echo $combo_list['email']; ?></td>
+                                            <td><?php echo $combo_list['college']; ?></td>
+                                            <td><?php echo $combo_list['regno']; ?></td>
+                                            <td><?php echo $combo_list['phno']; ?></td>  
+                                            <td><?php echo $combo_list['altphno']; ?></td> 
+                                            <td><?php echo $combo_list['parti']; ?></td>  
+                                            <td><?php echo $combo_list['type']; ?></td>
+                                        </tr><?php
+                                    }
+                                    ?>
+                                    </table>
                                 </p>
                             </div>    
                             <button onclick="javascript:htmltopdf();">Export PDF</button>
                             <p>
+                                <h4>Unconfirmed list</h4>
                                 <?php
                                     
                                     $query = "SELECT * FROM {$event_table} WHERE paid = 0";
@@ -168,8 +195,7 @@ th {
                                                     <th>Reg. No.</th>
                                                     <th>Ph. No.</th>
                                                     <th>Alternate No.</th>
-                                                    <th>Participants</th> 
-                                                    <th>Fees</th>   
+                                                    <th>Participants</th>                                                      
                                                     <th>Action</th>                                         
                                                 </tr><?php
                                             while ($list = mysqli_fetch_assoc($result)) { ?>
@@ -180,16 +206,14 @@ th {
                                                     <td><?php echo $list['regno']; ?></td>
                                                     <td><?php echo $list['phno']; ?></td> 
                                                     <td><?php echo $list['altphno']; ?></td>  
-                                                    <td><?php echo $list['parti']; ?></td>                                          
-                                                    <td>
-                                                        <?php
-                                                            if (($list['college']!="VIT")&&($last_name[4]=="d")) {
-                                                                $fees = $list['parti']*100; echo $fees;
-                                                            } else { 
-                                                                $fees = $list['parti']*$last_name[3]; echo $fees;
-                                                            }                                                             
-                                                        ?>
-                                                    </td> 
+                                                    <td><?php echo $list['parti']; ?></td>
+                                                    <?php
+                                                        if (($list['college']!="VIT")&&($last_name[4]=="d")) {
+                                                            $fees = $list['parti']*100;
+                                                        } else { 
+                                                            $fees = $list['parti']*$last_name[3]; 
+                                                        }                                                             
+                                                    ?>                                                    
                                                     <td>
                                                         <?php $email_part = explode("@", $list['email']); ?>
                                                         <a href="intimate.php?email1=<?php echo urlencode($email_part[0]); ?>&email2=<?php echo urlencode($email_part[1]); ?>&event=<?php echo urlencode($event_name); ?>&price=<?php echo urlencode($fees); ?>" onclick="return confirm('Send an intimation mail?');">Intimate</a>
@@ -198,7 +222,38 @@ th {
                                             } ?>
                                             </table> 
                                         </p>  
-                                         
+                                        <p <?php echo $view_combo; ?> >
+                                            <h4>Combo unconfirmed list</h4>
+                                            <?php
+                                            $combo_query = "SELECT * FROM combo WHERE paid = 0 AND WHERE type = 'all' ";
+                                            $combo_result = mysqli_query($conn, $combo_query);
+                                            confirm_query($combo_result); ?>
+                                            <table>
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <th>Email</th>
+                                                    <th>College</th>
+                                                    <th>Reg. No.</th>
+                                                    <th>Ph. No.</th>
+                                                    <th>Alternate No.</th>
+                                                    <th>Participants</th>   
+                                                    <th>Type</th> 
+                                                </tr><?php
+                                            while ($combo_list = mysqli_fetch_assoc($combo_result)) { ?>
+                                                <tr>
+                                                    <td><?php echo $combo_list['name']; ?></td>
+                                                    <td><?php echo $combo_list['email']; ?></td>
+                                                    <td><?php echo $combo_list['college']; ?></td>
+                                                    <td><?php echo $combo_list['regno']; ?></td>
+                                                    <td><?php echo $combo_list['phno']; ?></td>  
+                                                    <td><?php echo $combo_list['altphno']; ?></td> 
+                                                    <td><?php echo $combo_list['parti']; ?></td>  
+                                                    <td><?php echo $combo_list['type']; ?></td>
+                                                </tr><?php
+                                            }
+                                            ?>
+                                            </table>
+                                        </p>                                         
                                     <?php                                    
                                 ?>
                             </p>

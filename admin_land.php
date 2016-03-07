@@ -17,24 +17,28 @@
         $linkup = "";
         $page = "Participants";
         $view_whole = "";
+        $first_name = explode("_", $name_title['username']);
     } elseif ($name_title['type']=="payment_admin") {
         $link1 = "payments.php";
         $link2 = "onspot/index.php";
         $linkup = "";
         $page = "Payments";
         $view_whole = "";
+        $first_name = explode(" ", $name_title['username']);
     } elseif ($name_title['type']=="super_admin") {
         $link1 = "payments.php";
         $link2 = "onspot/index.php";
         $page = "Payments";
         $linkup = "<a href='admin_signup.php'>Make new Admin</a>";
         $view_whole = "";
+        $first_name = explode(" ", $name_title['username']);
     } elseif ($name_title['type']=="viewer_admin") {
         $link1 = "viewers.php";
         $link2 = "#";
         $page = "";
         $linkup = "";
         $view_whole = "style='display: none;'";
+        $first_name = explode(" ", $name_title['username']);
     }
 ?> 
 
@@ -88,7 +92,7 @@
                                 <a href="<?php echo $link2; ?>">On Spot Registration</a>
                             </li>
                             <li>
-                                <?php echo "<a href='logout_admin.php'>Logout, ".$current_user."</a>"; ?>
+                                <?php echo "<a href='logout_admin.php'>Logout, ".$first_name[0]."</a>"; ?>
                             </li>
                         </ul>
                     </nav>
