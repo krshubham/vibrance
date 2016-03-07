@@ -145,7 +145,8 @@ th {
                                         </p>   
                                     <?php                                    
                                 ?>                                
-                            </div>                              
+                            </div>   
+                            <p><button onclick="javascript:htmltopdf();">Export PDF</button></p>                           
                             <div id="htmlexportPDF">                                
                                 <h4>Unconfirmed List</h4>
                                 <?php                                    
@@ -254,7 +255,7 @@ th {
                                     <?php                                    
                                 ?>                                
                             </div>
-                            <button onclick="javascript:htmltopdf();">Export PDF</button>
+                            
                         </center>
                     </div>
                 </div>
