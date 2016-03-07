@@ -540,8 +540,8 @@ if (isset($_POST['submit'])) {
         <div class="field name-box">
             <input type="number" style="display: none;" placeholder="Team Size" name="parti" id="parti_number">
         </div>
-        <div class="field name-box">
-            <input type="radio" name="opt1" value="3" id="tevents">Three events</input><br>
+        <div class="field name-box" style="color: black;">
+            <input type="radio" name="opt1" value="3" id="tevents">Three events</input>
             <input type="radio" name="opt2" value="all">All events</input>
         </div>
         <div class="field email-box grid_4">
