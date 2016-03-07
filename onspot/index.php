@@ -585,7 +585,7 @@ if (isset($_POST['submit'])) {
             document.getElementsByTagName("INPUT")[6].style.display = "none";
         } else if (event=="battleofbands_team_1000_s") {
             document.getElementsByTagName("INPUT")[6].setAttribute("min", "2");
-            //document.getElementsByTagName("INPUT")[6].setAttribute("max", ""); 
+            document.getElementsByTagName("INPUT")[6].setAttribute("max", "50"); 
              
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
             document.getElementById("demo").innerHTML = "Static";
@@ -606,10 +606,10 @@ if (isset($_POST['submit'])) {
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
             document.getElementById("demo").innerHTML = "Static";
         } else if (event=="socialinnovators_team_150_s") {
-            document.getElementsByTagName("INPUT")[6].setAttribute("min", "2"); 
-             
+            document.getElementsByTagName("INPUT")[6].setAttribute("min", "1"); 
+            document.getElementsByTagName("INPUT")[6].setAttribute("max", "3");
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
-            document.getElementById("demo").innerHTML = "Static";
+            document.getElementById("demo").innerHTML = "Dynamic";
         } else if (event=="generalquiz_team_50_d") {
             document.getElementsByTagName("INPUT")[6].setAttribute("min", "2");
             document.getElementsByTagName("INPUT")[6].setAttribute("max", "3"); 
@@ -654,9 +654,9 @@ if (isset($_POST['submit'])) {
             document.getElementById("demo").innerHTML = "Individual Event";
             document.getElementsByTagName("INPUT")[6].style.display = "none";
         } else if (event=="scrabble_team_50_d") {
-            document.("INPUT")[6].setAttribute("min", "2");
+            document.getElementsByTagName("INPUT")[6].setAttribute("min", "2");
             document.getElementsByTagName("INPUT")[6].setAttribute("max", "2"); 
-             
+            
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
             document.getElementById("demo").innerHTML = "Static";
         } else if (event=="adzap_team_50_d") {
