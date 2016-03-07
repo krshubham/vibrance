@@ -224,7 +224,7 @@
                     <h2><em>Treasure Hunt</em>Team of 3</h2>
                     <br>
                     <br>
-                    <h4 style="text-align: left;font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Prasang Sharma &nbsp;&nbsp;&nbsp;8681070970<br><br>Divyang Duhan &nbsp;&nbsp;&nbsp;7837391899<br><br>Aviral Srivastava &nbsp;&nbsp;&nbsp;8004860407</h4>
+                    <h4 style="text-align: left;font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Prasang Sharma &nbsp;&nbsp;&nbsp;8681070970<br><br>Divyang Duhan &nbsp;&nbsp;&nbsp;7837391899<br><br>Aviral Srivastava &nbsp;&nbsp;&nbsp;8004860407<br><br>Modit Garg &nbsp;&nbsp;&nbsp;7837998263</h4>
                     <div class="row">
                         <div class="grid_6">
                             <ul class="indents-3">
