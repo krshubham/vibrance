@@ -540,7 +540,7 @@ if (isset($_POST['submit'])) {
         <div class="field name-box">
             <input type="number" style="display: none;" placeholder="Team Size" name="parti" id="parti_number">
         </div>
-        <div class="field name-box" style="color: black;">
+        <div class="field name-box">
             <input type="radio" name="opt1" value="3" id="tevents">Three events</input>
             <input type="radio" name="opt2" value="all">All events</input>
         </div>
@@ -795,7 +795,6 @@ if (isset($_POST['submit'])) {
 </section>
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src="js/index.js"></script>
-
 <script src="js/script.js"></script>
 <script type="text/javascript">
     if(document.getElementById('tevents').checked){
