@@ -146,7 +146,7 @@ th {
                                     <?php                                    
                                 ?>                                
                             </div>
-                            <div <?php echo $view_combo; ?> id="htmlexportPDF">                                
+                            <div <?php echo $view_combo; ?> >                                
                                 <h4>Combo confirmed List</h4>
                                 <?php                                    
                                     $query = "SELECT * FROM combo WHERE paid = 1 AND WHERE type = 'all' ";
@@ -219,7 +219,7 @@ th {
                                     <?php                                    
                                 ?>                                
                             </div>    
-                            <div <?php echo $view_combo; ?> id="htmlexportPDF">                                
+                            <div <?php echo $view_combo; ?> >                                
                                 <h4>Combo unconfirmed List</h4>
                                 <?php                                    
                                     $query = "SELECT * FROM combo WHERE paid = 0 AND WHERE type = 'all' ";
