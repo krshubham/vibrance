@@ -906,7 +906,7 @@ if (isset($_POST['submit'])) {
 </body>
 <style type="text/css">
     #parti_number{
-        width: 10%;
+        width: 20%;
     }
 </style>
 </html>
