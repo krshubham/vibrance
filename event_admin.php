@@ -22,6 +22,11 @@
         $event_name = "";
         $event_table = "";
     }
+    if ($last_name[4]=="s") {
+        $view_combo = "style='display: none;'";
+    } else {
+        $view_combo = "";
+    }
 ?>
 
 <!DOCTYPE html>
@@ -106,6 +111,7 @@ th {
                         <center>
                             <div id="htmlexportPDF">
                                 <h3><?php echo ucfirst($event_name); ?></h3>
+                                <h4>Confirmed List</h4>
                                 <?php
                                     
                                     $query = "SELECT * FROM {$event_table} WHERE paid = 1";
@@ -119,8 +125,9 @@ th {
                                                     <th>College</th>
                                                     <th>Reg. No.</th>
                                                     <th>Ph. No.</th>
+                                                    <th>Alternate No.</th>
                                                     <th>Participants</th> 
-                                                    <th>Fees</th>                                            
+                                                    <th>Combo</th>                                            
                                                 </tr><?php
                                             while ($list = mysqli_fetch_assoc($result)) { ?>
                                                 <tr>
@@ -128,8 +135,47 @@ th {
                                                     <td><?php echo $list['email']; ?></td>
                                                     <td><?php echo $list['college']; ?></td>
                                                     <td><?php echo $list['regno']; ?></td>
-                                                    <td><?php echo $list['phno']; ?></td>  
-                                                    <td><?php echo $list['parti']; ?></td>                                          <td class="count-me"><?php $fees = $list['parti']*$last_name[3]; echo $fees; ?></td>                                             
+                                                    <td><?php echo $list['phno']; ?></td>
+                                                    <td><?php echo $list['altphno']; ?></td>  
+                                                    <td><?php echo $list['parti']; ?></td>                                          
+                                                    <td><?php echo $list['combo']; ?></td>                                           
+                                                </tr><?php                                             
+                                            } ?>
+                                            </table> 
+                                        </p>   
+                                    <?php                                    
+                                ?>                                
+                            </div>
+                            <div id="htmlexportPDF">
+                                <h3><?php echo ucfirst($event_name); ?></h3>
+                                <h4>Confirmed List</h4>
+                                <?php
+                                    
+                                    $query = "SELECT * FROM {$event_table} WHERE paid = 0";
+                                    $result = mysqli_query($conn, $query);
+                                    confirm_query($result); ?>                                
+                                        <p>
+                                            <table id="exportPDF">
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <th>Email</th>
+                                                    <th>College</th>
+                                                    <th>Reg. No.</th>
+                                                    <th>Ph. No.</th>
+                                                    <th>Alternate No.</th>
+                                                    <th>Participants</th> 
+                                                    <th>Combo</th>                                            
+                                                </tr><?php
+                                            while ($list = mysqli_fetch_assoc($result)) { ?>
+                                                <tr>
+                                                    <td><?php echo $list['name']; ?></td>
+                                                    <td><?php echo $list['email']; ?></td>
+                                                    <td><?php echo $list['college']; ?></td>
+                                                    <td><?php echo $list['regno']; ?></td>
+                                                    <td><?php echo $list['phno']; ?></td>
+                                                    <td><?php echo $list['altphno']; ?></td>  
+                                                    <td><?php echo $list['parti']; ?></td>                                          
+                                                    <td><?php echo $list['combo']; ?></td>                                           
                                                 </tr><?php                                             
                                             } ?>
                                             </table> 
