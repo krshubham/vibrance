@@ -456,8 +456,8 @@ if (isset($_POST['submit'])) {
         </div>
         
         <div class="field">
-            <input type="radio" name="opt" id="tevents" style="color: black;">Three events</input>
-            <input type="radio" name="opt" style="color: black;" >All events</input>
+            <input type="radio" name="opt" id="tevents" style="color: black;">Three events
+            <input type="radio" name="opt" style="color: black;" >All events
         </div>
         <div class="grid_12" id="events" style="display: none;">
             <div class="field email-box grid_4">
@@ -707,6 +707,7 @@ if (isset($_POST['submit'])) {
                 </select>
             </div>
         </div>
+        <div id="allevents" style="display: none;"><b>You are registered for al the dynamic events.</b></div>
         <input class="button" type="submit" value="Submit" name="submit" />
     </form>
 </section>
@@ -715,6 +716,11 @@ if (isset($_POST['submit'])) {
 <script src="js/script.js"></script>
 <script type="text/javascript">
     $('#tevents').click(function() {
+        $('#events').slideDown();
+        $('#allevents').slideDown();
+    });  
+    $('#aevents').click(function() {
+        $('#allevents').slideDown();
         $('#events').slideDown();
     });    
 </script>
