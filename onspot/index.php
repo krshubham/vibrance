@@ -557,7 +557,8 @@ if (isset($_POST['submit'])) {
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
             document.getElementById("demo").innerHTML = "Dynamic";
         } else if (event=="dancingduo_team_100_s") {
-            document.getElementsByTagName("INPUT")[6].setAttribute("min", "2"); 
+            document.getElementsByTagName("INPUT")[6].setAttribute("min", "2");
+            document.getElementsByTagName("INPUT")[6].setAttribute("max", "2"); 
              
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
             document.getElementById("demo").innerHTML = "Static";
@@ -583,7 +584,8 @@ if (isset($_POST['submit'])) {
             document.getElementById("demo").innerHTML = "Individual Event";
             document.getElementsByTagName("INPUT")[6].style.display = "none";
         } else if (event=="battleofbands_team_1000_s") {
-            document.getElementsByTagName("INPUT")[6].setAttribute("min", "2"); 
+            document.getElementsByTagName("INPUT")[6].setAttribute("min", "2");
+            //document.getElementsByTagName("INPUT")[6].setAttribute("max", ""); 
              
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
             document.getElementById("demo").innerHTML = "Static";
@@ -594,13 +596,13 @@ if (isset($_POST['submit'])) {
             document.getElementById("demo").innerHTML = "Individual Event";
             document.getElementsByTagName("INPUT")[6].style.display = "none";
         } else if (event=="dota2_team_500_s") {
-            document.getElementsByTagName("INPUT")[6].setAttribute("min", "2"); 
-             
+            document.getElementsByTagName("INPUT")[6].setAttribute("min", "5"); 
+            document.getElementsByTagName("INPUT")[6].setAttribute("max", "5");
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
             document.getElementById("demo").innerHTML = "Static";
         } else if (event=="counterstrike_team_500_s") {
-            document.getElementsByTagName("INPUT")[6].setAttribute("min", "2"); 
-             
+            document.getElementsByTagName("INPUT")[6].setAttribute("min", "5"); 
+            document.getElementsByTagName("INPUT")[6].setAttribute("max", "5");
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
             document.getElementById("demo").innerHTML = "Static";
         } else if (event=="socialinnovators_team_150_s") {
@@ -609,18 +611,19 @@ if (isset($_POST['submit'])) {
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
             document.getElementById("demo").innerHTML = "Static";
         } else if (event=="generalquiz_team_50_d") {
-            document.getElementsByTagName("INPUT")[6].setAttribute("min", "2"); 
+            document.getElementsByTagName("INPUT")[6].setAttribute("min", "2");
+            document.getElementsByTagName("INPUT")[6].setAttribute("max", "3"); 
              
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
-            document.getElementById("demo").innerHTML = "Static";
+            document.getElementById("demo").innerHTML = "Dynamic";
         } else if (event=="entertainmentquiz_team_50_d") {
             document.getElementsByTagName("INPUT")[6].setAttribute("min", "2"); 
-             
+            document.getElementsByTagName("INPUT")[6].setAttribute("max", "3");
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
-            document.getElementById("demo").innerHTML = "Static";
+            document.getElementById("demo").innerHTML = "Dynamic";
         } else if (event=="karlpopperdebate_team_50_d") {
             document.getElementsByTagName("INPUT")[6].setAttribute("min", "2"); 
-             
+            document.getElementsByTagName("INPUT")[6].setAttribute("max", "2"); 
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
             document.getElementById("demo").innerHTML = "Static";
         } else if (event=="classicdebate_alone_50_d") {
@@ -639,7 +642,8 @@ if (isset($_POST['submit'])) {
             document.getElementById("demo").innerHTML = "Individual Event";
             document.getElementsByTagName("INPUT")[6].style.display = "none";
         } else if (event=="potpourri_team_50_d") {
-            document.getElementsByTagName("INPUT")[6].setAttribute("min", "2"); 
+            document.getElementsByTagName("INPUT")[6].setAttribute("min", "2");
+            document.getElementsByTagName("INPUT")[6].setAttribute("max", "2"); 
              
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
             document.getElementById("demo").innerHTML = "Static";
@@ -650,23 +654,24 @@ if (isset($_POST['submit'])) {
             document.getElementById("demo").innerHTML = "Individual Event";
             document.getElementsByTagName("INPUT")[6].style.display = "none";
         } else if (event=="scrabble_team_50_d") {
-            document.("INPUT")[6].setAttribute("min", "2"); 
+            document.("INPUT")[6].setAttribute("min", "2");
+            document.getElementsByTagName("INPUT")[6].setAttribute("max", "2"); 
              
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
             document.getElementById("demo").innerHTML = "Static";
         } else if (event=="adzap_team_50_d") {
             document.getElementsByTagName("INPUT")[6].setAttribute("min", "2"); 
-             
+            document.getElementsByTagName("INPUT")[6].setAttribute("max", "7");
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
-            document.getElementById("demo").innerHTML = "Static";
+            document.getElementById("demo").innerHTML = "Dynamic";
         } else if (event=="switch_team_50_d") {
             document.getElementsByTagName("INPUT")[6].setAttribute("min", "2"); 
-             
+            document.getElementsByTagName("INPUT")[6].setAttribute("max", "2");
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
             document.getElementById("demo").innerHTML = "Static";
         } else if (event=="daretodrama_team_50_d") {
             document.getElementsByTagName("INPUT")[6].setAttribute("min", "2"); 
-             
+            document.getElementsByTagName("INPUT")[6].setAttribute("max", "2");
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
             document.getElementById("demo").innerHTML = "Static";
         } else if (event=="beapicasso_alone_50_d") {
@@ -677,17 +682,17 @@ if (isset($_POST['submit'])) {
             document.getElementsByTagName("INPUT")[6].style.display = "none";
         } else if (event=="mehendi_team_50_d") {
             document.getElementsByTagName("INPUT")[6].setAttribute("min", "2"); 
-             
+            document.getElementsByTagName("INPUT")[6].setAttribute("max", "2"); 
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
             document.getElementById("demo").innerHTML = "Static";
         } else if (event=="paintwithoutbrush_team_50_d") {
             document.getElementsByTagName("INPUT")[6].setAttribute("min", "2"); 
-             
+            document.getElementsByTagName("INPUT")[6].setAttribute("max", "2");
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
             document.getElementById("demo").innerHTML = "Static";
         } else if (event=="gandhi_team_50_d") {
-            document.getElementsByTagName("INPUT")[6].setAttribute("min", "2"); 
-             
+            document.getElementsByTagName("INPUT")[6].setAttribute("min", "5"); 
+            document.getElementsByTagName("INPUT")[6].setAttribute("max", "5"); 
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
             document.getElementById("demo").innerHTML = "Static";
         } else if (event=="postermaking_alone_50_d") {
@@ -695,7 +700,7 @@ if (isset($_POST['submit'])) {
             document.getElementsByTagName("INPUT")[6].style.display = "none";
         } else if (event=="brain_team_50_d") {
             document.getElementsByTagName("INPUT")[6].setAttribute("min", "2"); 
-             
+            document.getElementsByTagName("INPUT")[6].setAttribute("max", "2"); 
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
             document.getElementById("demo").innerHTML = "Static";
         } else if (event=="virtualreality_alone_50_d") {
@@ -703,17 +708,17 @@ if (isset($_POST['submit'])) {
             document.getElementsByTagName("INPUT")[6].style.display = "none";
         } else if (event=="wastecraft_team_50_d") {
             document.getElementsByTagName("INPUT")[6].setAttribute("min", "2"); 
-             
+            document.getElementsByTagName("INPUT")[6].setAttribute("max", "2");
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
             document.getElementById("demo").innerHTML = "Static";
         } else if (event=="enviroquiz_team_50_d") {
-            document.getElementsByTagName("INPUT")[6].setAttribute("min", "2"); 
-             
+            document.getElementsByTagName("INPUT")[6].setAttribute("min", "2");
+            document.getElementsByTagName("INPUT")[6].setAttribute("max", "2");             
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
             document.getElementById("demo").innerHTML = "Static";
         } else if (event=="balloonsplash_team_50_d") {
-            document.getElementsByTagName("INPUT")[6].setAttribute("min", "2"); 
-             
+            document.getElementsByTagName("INPUT")[6].setAttribute("min", "5"); 
+            document.getElementsByTagName("INPUT")[6].setAttribute("max", "5");
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
             document.getElementById("demo").innerHTML = "Static";
         } else if (event=="blindfolddrawing_alone_50_d") {
@@ -721,7 +726,7 @@ if (isset($_POST['submit'])) {
             document.getElementsByTagName("INPUT")[6].style.display = "none";
         } else if (event=="dressupyourpartner_team_50_d") {
             document.getElementsByTagName("INPUT")[6].setAttribute("min", "2"); 
-             
+            document.getElementsByTagName("INPUT")[6].setAttribute("max", "2");             
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
             document.getElementById("demo").innerHTML = "Static";
         } else if (event=="irrelevance_alone_50_d") {
@@ -729,12 +734,12 @@ if (isset($_POST['submit'])) {
             document.getElementsByTagName("INPUT")[6].style.display = "none";
         } else if (event=="minutetowin_team_50_d") {
             document.getElementsByTagName("INPUT")[6].setAttribute("min", "2"); 
-             
+            document.getElementsByTagName("INPUT")[6].setAttribute("max", "2"); 
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
             document.getElementById("demo").innerHTML = "Static";
         } else if (event=="runforbucks_team_50_d") {
             document.getElementsByTagName("INPUT")[6].setAttribute("min", "2"); 
-             
+            document.getElementsByTagName("INPUT")[6].setAttribute("max", "2"); 
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
             document.getElementById("demo").innerHTML = "Static";
         } else if (event=="impracticaljokers_alone_50_d") {
@@ -742,57 +747,58 @@ if (isset($_POST['submit'])) {
             document.getElementsByTagName("INPUT")[6].style.display = "none";
         } else if (event=="moriarty_team_50_d") {
             document.getElementsByTagName("INPUT")[6].setAttribute("min", "2"); 
-             
+            document.getElementsByTagName("INPUT")[6].setAttribute("max", "4");
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
-            document.getElementById("demo").innerHTML = "Static";
+            document.getElementById("demo").innerHTML = "Dynamic";
         } else if (event=="fivefootball_team_50_d") {
-            document.getElementsByTagName("INPUT")[6].setAttribute("min", "2"); 
-             
+            document.getElementsByTagName("INPUT")[6].setAttribute("min", "8"); 
+            document.getElementsByTagName("INPUT")[6].setAttribute("max", "8"); 
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
             document.getElementById("demo").innerHTML = "Static";
         } else if (event=="buildtodestroy_team_50_d") {
             document.getElementsByTagName("INPUT")[6].setAttribute("min", "2"); 
-             
+            document.getElementsByTagName("INPUT")[6].setAttribute("max", "2");
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
             document.getElementById("demo").innerHTML = "Static";
         } else if (event=="tugofwar_team_50_d") {
-            document.getElementsByTagName("INPUT")[6].setAttribute("min", "2"); 
-             
+            document.getElementsByTagName("INPUT")[6].setAttribute("min", "5"); 
+            document.getElementsByTagName("INPUT")[6].setAttribute("max", "5");
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
             document.getElementById("demo").innerHTML = "Static";
         } else if (event=="vishwaroopam_team_50_d") {
-            document.getElementsByTagName("INPUT")[6].setAttribute("min", "2"); 
-             
+            document.getElementsByTagName("INPUT")[6].setAttribute("min", "3"); 
+            document.getElementsByTagName("INPUT")[6].setAttribute("max", "3");
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
             document.getElementById("demo").innerHTML = "Static";
         } else if (event=="veta_team_50_d") {
-            document.getElementsByTagName("INPUT")[6].setAttribute("min", "2"); 
+            document.getElementsByTagName("INPUT")[6].setAttribute("min", "2");
+            document.getElementsByTagName("INPUT")[6].setAttribute("max", "2");
              
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
             document.getElementById("demo").innerHTML = "Static";
         } else if (event=="chitram_team_50_d") {
-            document.getElementsByTagName("INPUT")[6].setAttribute("min", "2"); 
-             
+            document.getElementsByTagName("INPUT")[6].setAttribute("min", "3");
+            document.getElementsByTagName("INPUT")[6].setAttribute("max", "3");             
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
             document.getElementById("demo").innerHTML = "Static";
         } else if (event=="antaksharitelugu_team_50_d") {
-            document.getElementsByTagName("INPUT")[6].setAttribute("min", "2"); 
-             
+            document.getElementsByTagName("INPUT")[6].setAttribute("min", "3"); 
+            document.getElementsByTagName("INPUT")[6].setAttribute("max", "3");
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
             document.getElementById("demo").innerHTML = "Static";
         } else if (event=="dhammu_team_50_d") {
-            document.getElementsByTagName("INPUT")[6].setAttribute("min", "2"); 
-             
+            document.getElementsByTagName("INPUT")[6].setAttribute("min", "3"); 
+            document.getElementsByTagName("INPUT")[6].setAttribute("max", "3");
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
             document.getElementById("demo").innerHTML = "Static";
         } else if (event=="rangam_team_50_d") {
-            document.getElementsByTagName("INPUT")[6].setAttribute("min", "2"); 
-             
+            document.getElementsByTagName("INPUT")[6].setAttribute("min", "3"); 
+            document.getElementsByTagName("INPUT")[6].setAttribute("max", "3");
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
             document.getElementById("demo").innerHTML = "Static";
         } else if (event=="begborrowsteal_team_50_d") {
             document.getElementsByTagName("INPUT")[6].setAttribute("min", "2"); 
-             
+            document.getElementsByTagName("INPUT")[6].setAttribute("max", "2");
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
             document.getElementById("demo").innerHTML = "Static";
         } else if (event=="comicstrip_alone_50_d") {
@@ -811,13 +817,13 @@ if (isset($_POST['submit'])) {
             document.getElementById("demo").innerHTML = "Individual Event";
             document.getElementsByTagName("INPUT")[6].style.display = "none";
         } else if (event=="antaksharihindi_team_50_d") {
-            document.getElementsByTagName("INPUT")[6].setAttribute("min", "2"); 
-             
+            document.getElementsByTagName("INPUT")[6].setAttribute("min", "3"); 
+            document.getElementsByTagName("INPUT")[6].setAttribute("max", "3");
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
             document.getElementById("demo").innerHTML = "Static";
         } else if (event=="televisionwarping_team_50_d") {
-            document.getElementsByTagName("INPUT")[6].setAttribute("min", "2"); 
-             
+            document.getElementsByTagName("INPUT")[6].setAttribute("min", "4"); 
+            document.getElementsByTagName("INPUT")[6].setAttribute("max", "4");
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
             document.getElementById("demo").innerHTML = "Static";
         } else if (event=="tambola_alone_50_d") {
@@ -825,48 +831,48 @@ if (isset($_POST['submit'])) {
             document.getElementsByTagName("INPUT")[6].style.display = "none";
         } else if (event=="filmbuffchallenge_team_50_d") {
             document.getElementsByTagName("INPUT")[6].setAttribute("min", "2"); 
-             
+            document.getElementsByTagName("INPUT")[6].setAttribute("max", "2");
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
             document.getElementById("demo").innerHTML = "Static";
         } else if (event=="floattilluwin_team_50_d") {
             document.getElementsByTagName("INPUT")[6].setAttribute("min", "2"); 
-             
+            document.getElementsByTagName("INPUT")[6].setAttribute("max", "3");
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
-            document.getElementById("demo").innerHTML = "Static";
+            document.getElementById("demo").innerHTML = "Dynamic";
         } else if (event=="hellothamizha_team_50_d") {
             document.getElementsByTagName("INPUT")[6].setAttribute("min", "2"); 
-             
+            document.getElementsByTagName("INPUT")[6].setAttribute("max", "3");
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
-            document.getElementById("demo").innerHTML = "Static";
+            document.getElementById("demo").innerHTML = "Dynamic";
         } else if (event=="maathipesavum_alone_50_d") {
             document.getElementById("demo").innerHTML = "Individual Event";
             document.getElementsByTagName("INPUT")[6].style.display = "none";
         } else if (event=="merasalaaitan_team_50_d") {
             document.getElementsByTagName("INPUT")[6].setAttribute("min", "2"); 
-             
+            document.getElementsByTagName("INPUT")[6].setAttribute("max", "4");
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
-            document.getElementById("demo").innerHTML = "Static";
+            document.getElementById("demo").innerHTML = "Dynamic";
         } else if (event=="therikkavidalama_team_50_d") {
             document.getElementsByTagName("INPUT")[6].setAttribute("min", "2"); 
-             
+            document.getElementsByTagName("INPUT")[6].setAttribute("max", "3");
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
-            document.getElementById("demo").innerHTML = "Static";
+            document.getElementById("demo").innerHTML = "Dynamic";
         } else if (event=="nerdornewbie_team_50_d") {
             document.getElementsByTagName("INPUT")[6].setAttribute("min", "2"); 
-             
+            document.getElementsByTagName("INPUT")[6].setAttribute("max", "2");
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
             document.getElementById("demo").innerHTML = "Static";
         } else if (event=="treasurehunt_team_50_d") {
-            document.getElementsByTagName("INPUT")[6].setAttribute("min", "2"); 
-             
+            document.getElementsByTagName("INPUT")[6].setAttribute("min", "3"); 
+            document.getElementsByTagName("INPUT")[6].setAttribute("max", "3");
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
             document.getElementById("demo").innerHTML = "Static";
         } else if (event=="snakeandladder_alone_50_d") {
             document.getElementById("demo").innerHTML = "Individual Event";
             document.getElementsByTagName("INPUT")[6].style.display = "none";
         } else if (event=="aimandact_team_50_d") {
-            document.getElementsByTagName("INPUT")[6].setAttribute("min", "2"); 
-             
+            document.getElementsByTagName("INPUT")[6].setAttribute("min", "3"); 
+            document.getElementsByTagName("INPUT")[6].setAttribute("max", "3");
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
             document.getElementById("demo").innerHTML = "Static";
         } else if (event=="tamilworkshop_alone_50_d") {
