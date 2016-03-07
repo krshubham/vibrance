@@ -456,8 +456,8 @@ if (isset($_POST['submit'])) {
         </div>
         
         <div class="field">
-            <input type="radio" name="opt" id="tevents" style="color: black;">Three events
-            <input type="radio" name="opt" id="aevents" style="color: black;" >All events
+            <input type="radio" name="opt" id="tevents" style="color: black;"><font color="black">Three events</font>
+            <input type="radio" name="opt" id="aevents" style="color: black;" ><font color="black">All events</font>
         </div>
         <div class="grid_12" id="events" style="display: none;">
             <div class="field email-box grid_4">
@@ -707,7 +707,7 @@ if (isset($_POST['submit'])) {
                 </select>
             </div>
         </div>
-        <div id="allevents" style="display: none;"><b>You are registered for al the dynamic events.</b></div>
+        <div id="allevents" style="display: none;"><font color="black"><b>You are registered for al the dynamic events.</b></font></div>
         <input class="button" type="submit" value="Submit" name="submit" />
     </form>
 </section>
