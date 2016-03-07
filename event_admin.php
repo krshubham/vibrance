@@ -138,10 +138,7 @@ th {
                                                     <td><?php echo $list['phno']; ?></td>
                                                     <td><?php echo $list['altphno']; ?></td>  
                                                     <td><?php echo $list['parti']; ?></td>                                          
-                                                    <td>
-                                                        <?php $email_part = explode("@", $list['email']); ?>
-                                                        <a href="intimate.php?email1=<?php echo urlencode($email_part[0]); ?>&email2=<?php echo urlencode($email_part[1]); ?>&event=<?php echo urlencode($event_name); ?>&price=<?php echo urlencode($fees); ?>" onclick="return confirm('Send an intimation mail?');">Intimate</a>
-                                                    </td>
+                                                    <td><?php echo $list['combo']; ?></td>
                                                 </tr><?php                                             
                                             } ?>
                                             </table> 
@@ -165,7 +162,7 @@ th {
                                                     <th>Ph. No.</th>
                                                     <th>Alternate No.</th>
                                                     <th>Participants</th> 
-                                                    <th>Combo</th>                                            
+                                                    <th>Action</th>                                            
                                                 </tr><?php
                                             while ($list = mysqli_fetch_assoc($result)) { ?>
                                                 <tr>
@@ -176,7 +173,10 @@ th {
                                                     <td><?php echo $list['phno']; ?></td>
                                                     <td><?php echo $list['altphno']; ?></td>  
                                                     <td><?php echo $list['parti']; ?></td>                                          
-                                                    <td><?php echo $list['combo']; ?></td>                                           
+                                                    <td>
+                                                        <?php $email_part = explode("@", $list['email']); ?>
+                                                        <a href="intimate.php?email1=<?php echo urlencode($email_part[0]); ?>&email2=<?php echo urlencode($email_part[1]); ?>&event=<?php echo urlencode($event_name); ?>&price=<?php echo urlencode($fees); ?>" onclick="return confirm('Send an intimation mail?');">Intimate</a>
+                                                    </td>
                                                 </tr><?php                                             
                                             } ?>
                                             </table> 
