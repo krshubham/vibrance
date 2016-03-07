@@ -538,7 +538,7 @@ if (isset($_POST['submit'])) {
         </div>
         <div id="demo" class="field name-box" style="color: black;"></div>
         <div class="field name-box">
-            <input type="number" style="display: none;" placeholder="Team Size" name="parti">
+            <input type="number" style="display: none;" placeholder="Team Size" name="parti" id="parti_number">
         </div>
         <input class="button" type="submit" value="Submit" name="submit" />
     </form>
@@ -904,7 +904,11 @@ if (isset($_POST['submit'])) {
     new cbpScroller(document.getElementById('cbp-so-scroller'));
 </script>
 </body>
-
+<style type="text/css">
+    #parti_number{
+        width: 2%;
+    }
+</style>
 </html>
 <?php
 if (isset ($conn)){
