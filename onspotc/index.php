@@ -541,9 +541,10 @@ if (isset($_POST['submit'])) {
             <input type="number" style="display: none;" placeholder="Team Size" name="parti" id="parti_number">
         </div>
         <div class="field name-box">
-            <input type="radio" name="opt1" value="3" id="tevents">Three events</input>
-            <input type="radio" name="opt2" value="all">All events</input>
+            <input type="radio" name="opt" value="3" id="tevents">Three events</input>
+            <input type="radio" name="opt" value="all">All events</input>
         </div>
+        <div class="grid_12" id="events">
         <div class="field email-box grid_4">
             <select id="mySelect" onchange="myFunction()" name="event" required>
                 <option value="">Select Event</option>
@@ -789,6 +790,7 @@ if (isset($_POST['submit'])) {
                 <option value="aimandact_team_50_d">Aim and Act</option>
                 <option value="tamilworkshop_alone_50_d">Tamil Speaking Workshop</option>
             </select>
+        </div>
         </div>
         <input class="button" type="submit" value="Submit" name="submit" />
     </form>
@@ -798,7 +800,10 @@ if (isset($_POST['submit'])) {
 <script src="js/script.js"></script>
 <script type="text/javascript">
     if(document.getElementById('tevents').checked){
-
+        $("#events").fadeIn();
+    }
+    else{
+        $("#events").fadeOut()
     }
 </script>
 <script>
