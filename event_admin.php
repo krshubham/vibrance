@@ -16,7 +16,7 @@
         $view_whole = "";
         $last_name = explode("_", $current_user);
         $event_name = $last_name[1];
-        $event_table = $last_name[1]."_".$last_name[2]."_".$last_name[3];          
+        $event_table = $last_name[1]."_".$last_name[2]."_".$last_name[3]."_".$last_name[4];          
     } else {
         $view_whole = "style='display: none;'";
         $event_name = "";
