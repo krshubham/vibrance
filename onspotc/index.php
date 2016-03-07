@@ -717,11 +717,11 @@ if (isset($_POST['submit'])) {
 <script type="text/javascript">
     $('#tevents').click(function() {
         $('#events').slideDown();
-        $('#allevents').slideDown();
+        $('#allevents').slideUp();
     });  
     $('#aevents').click(function() {
         $('#allevents').slideDown();
-        $('#events').slideDown();
+        $('#events').slideUp();
     });    
 </script>
 <script>
