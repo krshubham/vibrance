@@ -349,7 +349,7 @@
                     <h2><em>Social Innovators</em>Team of 1-3</h2>
                     <br>
                     <br>
-                    <h4 style="text-align: left; font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Sukesh Kumar &nbsp;&nbsp;&nbsp;9962407126</h4>
+                    <h4 style="text-align: left; font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Sukesh Kumar &nbsp;&nbsp;&nbsp;9962407126<br><br>Surya kasyap &nbsp;&nbsp;&nbsp;9087779062</h4>
                     <div class="row">
                         <div class="grid_6">
                             <ul class="indents-3">

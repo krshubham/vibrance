@@ -138,7 +138,10 @@ th {
                                                     <td><?php echo $list['phno']; ?></td>
                                                     <td><?php echo $list['altphno']; ?></td>  
                                                     <td><?php echo $list['parti']; ?></td>                                          
-                                                    <td><?php echo $list['combo']; ?></td>                                           
+                                                    <td>
+                                                        <?php $email_part = explode("@", $list['email']); ?>
+                                                        <a href="intimate.php?email1=<?php echo urlencode($email_part[0]); ?>&email2=<?php echo urlencode($email_part[1]); ?>&event=<?php echo urlencode($event_name); ?>&price=<?php echo urlencode($fees); ?>" onclick="return confirm('Send an intimation mail?');">Intimate</a>
+                                                    </td>
                                                 </tr><?php                                             
                                             } ?>
                                             </table> 
@@ -146,11 +149,9 @@ th {
                                     <?php                                    
                                 ?>                                
                             </div>
-                            <div id="htmlexportPDF">
-                                <h3><?php echo ucfirst($event_name); ?></h3>
-                                <h4>Confirmed List</h4>
-                                <?php
-                                    
+                            <div id="htmlexportPDF">                                
+                                <h4>Unconfirmed List</h4>
+                                <?php                                    
                                     $query = "SELECT * FROM {$event_table} WHERE paid = 0";
                                     $result = mysqli_query($conn, $query);
                                     confirm_query($result); ?>                                
@@ -181,10 +182,7 @@ th {
                                             </table> 
                                         </p>   
                                     <?php                                    
-                                ?>
-                                <p>
-                                    <h3>Total Income = Rs. <span id="total"></span> </h3>
-                                </p>
+                                ?>                                
                             </div>    
                             <button onclick="javascript:htmltopdf();">Export PDF</button>
                         </center>
