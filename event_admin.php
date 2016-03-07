@@ -146,7 +146,7 @@ th {
                                     <?php                                    
                                 ?>                                
                             </div>   
-                            <p><button onclick="javascript:htmltopdf();">Export PDF</button></p>                           
+                            <p><button onclick="javascript:htmltopdf();">Export PDF</button></p><hr>                           
                             <div id="htmlexportPDF">                                
                                 <h4>Unconfirmed List</h4>
                                 <?php                                    
@@ -220,42 +220,6 @@ th {
                                     <?php                                    
                                 ?>                                
                             </div>
-                            <div <?php echo $view_combo; ?> id="htmlexportPDF">                                
-                                <h4>Combo unconfirmed List</h4>
-                                <?php                                    
-                                    $query = "SELECT * FROM combo WHERE paid = 0 AND WHERE type = 'all' ";
-                                    $result = mysqli_query($conn, $query);
-                                    confirm_query($result); ?>                                
-                                        <p>
-                                            <table id="exportPDF">
-                                                <tr>
-                                                    <th>Name</th>
-                                                    <th>Email</th>
-                                                    <th>College</th>
-                                                    <th>Reg. No.</th>
-                                                    <th>Ph. No.</th>
-                                                    <th>Alternate No.</th>
-                                                    <th>Participants</th> 
-                                                    <th>Type</th>                                            
-                                                </tr><?php
-                                            while ($list = mysqli_fetch_assoc($result)) { ?>
-                                                <tr>
-                                                    <td><?php echo $list['name']; ?></td>
-                                                    <td><?php echo $list['email']; ?></td>
-                                                    <td><?php echo $list['college']; ?></td>
-                                                    <td><?php echo $list['regno']; ?></td>
-                                                    <td><?php echo $list['phno']; ?></td>
-                                                    <td><?php echo $list['altphno']; ?></td>  
-                                                    <td><?php echo $list['parti']; ?></td>  
-                                                    <td><?php echo $list['type']; ?></td> 
-                                                </tr><?php                                             
-                                            } ?>
-                                            </table> 
-                                        </p>   
-                                    <?php                                    
-                                ?>                                
-                            </div>
-                            
                         </center>
                     </div>
                 </div>
