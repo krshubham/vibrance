@@ -540,7 +540,7 @@ if (isset($_POST['submit'])) {
         <div class="field name-box">
             <input type="number" style="display: none;" placeholder="Team Size" name="parti" id="parti_number">
         </div>
-        <div class="field name-box">
+        <div class="field">
             <input type="radio" name="opt" id="tevents" style="color: black;">Three events</input>
             <input type="radio" name="opt" style="color: black;" >All events</input>
         </div>
@@ -800,10 +800,10 @@ if (isset($_POST['submit'])) {
 <script src="js/script.js"></script>
 <script type="text/javascript">
     if(document.getElementById('tevents').checked){
-        $("#events").fadeIn();
+        $("#events").slideDown();
     }
     else{
-        $("#events").fadeOut()
+        $("#events").slideUp();
     }
 </script>
 <script>
