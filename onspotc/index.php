@@ -691,7 +691,7 @@ if (isset($_POST['submit'])) {
             </div>
         </div>
         <div id="allevents" style="display: none;"><font color="black"><b>You will be registered for al the dynamic events.</b></font></div><br>
-        <div><input class="button" type="submit" value="Submit" name="submit" /></div>
+        <p><div><input type="submit" class="button" value="Submit" name="submit" /></div></p>
     </form>
 </section>
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
