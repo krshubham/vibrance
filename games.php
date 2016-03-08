@@ -253,7 +253,7 @@
                     <h2><em>Fifa 15</em>Individual</h2>
                     <br>
                     <br>
-                    <h4 style="text-align: left;font-family: 'Tangerine', serif; font-size:300%;">Coordinators:<br><br>Aman Saha : &nbsp;&nbsp;&nbsp;9790714125<br><br>Aaditya Rana : &nbsp;&nbsp;8939591893</h4>
+                    <h4 style="text-align: left;font-family: 'Tangerine', serif; font-size:300%;">Coordinators:<br><br>Aman Saha : &nbsp;&nbsp;&nbsp;9790714125<br><br>Aaditya Singh Rana : &nbsp;&nbsp;8939591893</h4>
                     <div class="row">
                         <div class="grid_6">
                             <ul class="indents-3">
@@ -272,11 +272,11 @@
                         <div class="grid_6">
                             <p class="indents-3">Rules:
                                 <br>
-                                <li>This round is a team round where a two player team plays against Round 1: another team.</li>
-                                <li>The teams which win are automatically qualified for round 2.</li>
-                                <li>The teams which lose get a second chance to face other teams who lost in the first chance.</li>
-                                <li>Out of these the winning teams qualify for round 2.</li>
-                                <li>Round 2: This round is a singles event.</li>
+                                <li>This is a single player event </li>
+                                <li>The player which will win are qualified for round 2.</li>
+                                <li>The player which lose get a second chance to face other players who lost in the first chance.</li>
+                                <li>Out of these the winning player will qualify for round 2.</li>
+                                <li>Round 2: This round is a singles event and knockout stage.</li>
                                 <li>Round 3: QUATERFINAL KNOCKOUT SINGLES</li>
                                 <li>ROUND 4: SEMI FINAL FINAL</li>
                             </p>
