@@ -92,7 +92,7 @@ if (isset($_POST['submit'])) {
             $content .= "Event Name: ";
             $content .= "</td> ";
             $content .= "<td style='padding-right: 12px; color: #ffffff;'> ";
-            $content .= "<span>".ucfirst($_POST['event1']).", ".ucfirst($_POST['event2']).", ".ucfirst($_POST['event3'])" Pass</span> ";
+            $content .= "<span>".ucfirst($events)." Pass</span> ";
             $content .= "</td> ";
             $content .= "</tr> ";
             $content .= "<tr style='margin-top: 12px;'> ";
@@ -210,7 +210,7 @@ if (isset($_POST['submit'])) {
             $content .= "Event Name: ";
             $content .= "</td> ";
             $content .= "<td style='padding-right: 12px; color: #ffffff;'> ";
-            $content .= "<span>".ucfirst($events)." Pass</span> ";
+            $content .= "<span>".ucfirst($_POST['event1']).", ".ucfirst($_POST['event2']).", ".ucfirst($_POST['event3'])" Pass</span> ";
             $content .= "</td> ";
             $content .= "</tr> ";
             $content .= "<tr style='margin-top: 12px;'> ";
