@@ -14,7 +14,7 @@ $price = $_GET['price'];
 $type = $_GET['type'];
 if ($type=="three") {
 	$type = "Three Events Pass";
-} else {
+} else {  
 	$type = "All Events Pass";
 }
 $billno = "A".rand();
@@ -49,7 +49,7 @@ $content .= "<td style='padding-top: 5px;padding-bottom: 5px; color: #ffffff;'> 
 $content .= "Event Name: ";
 $content .= "</td> ";
 $content .= "<td style='padding-right: 12px; color: #ffffff;'> ";
-$content .= "<span>Pass</span> ";
+$content .= "<span>".$events." Pass</span> ";
 $content .= "</td> ";
 $content .= "</tr> ";
 $content .= "<tr style='margin-top: 12px;'> ";

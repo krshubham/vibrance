@@ -41,36 +41,63 @@ if (isset($_POST['submit'])) {
     $phno = $_POST['phno'];  
     $altphno = $_POST['altphno'];      
     $event = $_POST['event'];
-    $type = explode("_", $event);
-    if ($type[1]=="alone") {
-        $parti = 1;
+    $parti = 1;    
+    if ($_POST['opt']=="three") {
+       $events = $_POST['event1']."+".$_POST['event2']."+".$_POST['event3'];
+       $combo = "three";
     } else {
-        $parti = $_POST['parti'];
-    }
-    if ($parti==1) {
-        $event_type = "Individual";
-    } else {
-        $event_type = "Team";
-    }
+        $events = "all";
+    }   $combo = "all";
+   
     $billno = "A".rand();
-    if (($college != "VIT")&&($type[3] == "d")) {
-        $price = 100;
-    } else {
-        $price = $parti*$type[2];
+    if (($college != "VIT")&&($_POST['opt'] == "three")) {
+        $price = 250;
+    } elseif (($college == "VIT")&&($_POST['opt'] == "three")) {
+       $price = 100;
+    } elseif (($college != "VIT")&&($_POST['opt'] == "all")) {
+        $price = 500;
+    } elseif (($college == "VIT")&&($_POST['opt'] == "all")) {
+        $price = 250;
     }
-    $combo = "NO";
+    
 
-    $check_query = "SELECT * FROM {$event} WHERE email = '{$email}' ";
+    $check_query = "SELECT * FROM {$_POST['event1']} WHERE email = '{$email}' ";
     $check_result = mysqli_query($conn, $check_query);
     confirm_query($check_result);
     $check = mysqli_fetch_assoc($check_result);
-    if ($check['email']== $email) {
-        $check_view = "You have already registered for this event. ";
+    $check2_query = "SELECT * FROM {$_POST['event2']} WHERE email = '{$email}' ";
+    $check2_result = mysqli_query($conn, $check2_query);
+    confirm_query($check2_result);
+    $check2 = mysqli_fetch_assoc($check2_result);
+    $check3_query = "SELECT * FROM {$_POST['event3']} WHERE email = '{$email}' ";
+    $check3_result = mysqli_query($conn, $check3_query);
+    confirm_query($check3_result);
+    $check3 = mysqli_fetch_assoc($check3_result);
+    if (($check['email']== $email)||($check2['email']== $email)||($check3['email']== $email)) {
+        echo "You have already registered for one of these event. ";
     } else {
 
-        $query = "INSERT INTO {$event} (name, email, college, regno, phno, altphno, paid, parti, cnfby, combo, price)";
-        $query .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', '{$altphno}', 1, {$parti}, '{$current_user}', '{$combo}', {$price})";
-        $result = mysqli_query($conn, $query);  
+        if ($_POST['opt']=="three") {
+            $query1 = "INSERT INTO {$_POST['event1']} (name, email, college, regno, phno, altphno, parti, combo)";
+            $query1 .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', '{$altphno}', {$parti}, '{$combo}')";
+            $result1 = mysqli_query($conn, $query1);    
+
+            $query2 = "INSERT INTO {$_POST['event2']} (name, email, college, regno, phno, altphno, parti, combo)";
+            $query2.= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', '{$altphno}', {$parti}, '{$combo}')";
+            $result2 = mysqli_query($conn, $query2);    
+
+            $query3 = "INSERT INTO {$_POST['event3']} (name, email, college, regno, phno, altphno, parti, combo)";
+            $query3 .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', '{$altphno}', {$parti}, '{$combo}')";
+            $result3 = mysqli_query($conn, $query3);
+
+            $query = "INSERT INTO combo (name, email, college, regno, phno, altphno, parti, type, price, events)";
+            $query .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', '{$altphno}', {$parti}, '{$combo}', '{$price}', '{$events}')";
+            $result = mysqli_query($conn, $query);
+        } else {
+            $query = "INSERT INTO combo (name, email, college, regno, phno, altphno, parti, type, price, events)";
+            $query .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', '{$altphno}', {$parti}, '{$combo}', '{$price}', '{$events}')";
+            $result = mysqli_query($conn, $query);
+        }
 
         if ($result) {
 
@@ -100,7 +127,7 @@ if (isset($_POST['submit'])) {
             $content .= "Event Name: ";
             $content .= "</td> ";
             $content .= "<td style='padding-right: 12px; color: #ffffff;'> ";
-            $content .= "<span>".ucfirst($type[0])."</span> ";
+            $content .= "<span>".ucfirst($events)." Pass</span> ";
             $content .= "</td> ";
             $content .= "</tr> ";
             $content .= "<tr style='margin-top: 12px;'> ";
@@ -111,9 +138,7 @@ if (isset($_POST['submit'])) {
             $content .= "<td style='padding-top: 5px;padding-bottom: 5px; color: #ffffff;'>Number of Participant(s): </td> ";
             $content .= "<td style='padding-right: 12px; color: #ffffff;'> ".$parti."</td> ";
             $content .= "</tr> ";
-            $content .= "<tr style='margin-top: 12px;'> ";
-            $content .= "<td style='padding-top: 5px;padding-bottom: 5px; color: #ffffff;'>Event Type: </td> ";
-            $content .= "<td style='padding-right: 12px; color: #ffffff;'> ".$event_type."</td> ";
+            $content .= "<tr style='margin-top: 12px;'> ";            
             $content .= "</tr> ";
             $content .= "<tr style='margin-top: 12px;'> ";
             $content .= "<td style='padding-top: 5px;padding-bottom: 5px; color: #ffffff;'>Event Registration Fee: </td> ";
@@ -456,12 +481,12 @@ if (isset($_POST['submit'])) {
         </div>
         
         <div class="field">
-            <input type="radio" name="opt" id="tevents" style="color: black;"><font color="black">Three events</font>
-            <input type="radio" name="opt" id="aevents" style="color: black;" ><font color="black">All events</font>
+            <input type="radio" name="opt" value="three" id="tevents" style="color: black;"><font color="black">Three events</font>
+            <input type="radio" name="opt" value="all" id="aevents" style="color: black;" ><font color="black">All events</font>
         </div>
         <div class="grid_12" id="events" style="display: none;">
             <div class="field email-box grid_4">
-                <select id="mySelect" name="event" required>
+                <select id="mySelect" name="event1" required>
                     <option value="">Select Event</option>
                     <option value="adaptune_alone_100_s">Adaptune</option>
                     <option value="bollywoodbattle_team_100_s">Bollywood Battle</option>
@@ -543,7 +568,7 @@ if (isset($_POST['submit'])) {
                 </select>
             </div>
             <div class="field email-box grid_4">
-                <select id="mySelect" onchange="myFunction()" name="event" required>
+                <select id="mySelect" name="event2" required>
                     <option value="">Select Event</option>
                     <option value="adaptune_alone_100_s">Adaptune</option>
                     <option value="bollywoodbattle_team_100_s">Bollywood Battle</option>
@@ -625,7 +650,7 @@ if (isset($_POST['submit'])) {
                 </select>
             </div>
             <div class="field email-box grid_4">
-                <select id="mySelect" onchange="myFunction()" name="event" required>
+                <select id="mySelect" name="event3" required>
                     <option value="">Select Event</option>
                     <option value="adaptune_alone_100_s">Adaptune</option>
                     <option value="bollywoodbattle_team_100_s">Bollywood Battle</option>
@@ -707,7 +732,7 @@ if (isset($_POST['submit'])) {
                 </select>
             </div>
         </div>
-        <div id="allevents" style="display: none;"><font color="black"><b>You are registered for al the dynamic events.</b></font></div>
+        <div id="allevents" style="display: none;"><font color="black"><b>You will be registered for al the dynamic events.</b></font></div>
         <input class="button" type="submit" value="Submit" name="submit" />
     </form>
 </section>
