@@ -232,7 +232,8 @@
                         <div class="grid_6">
                             <ul class="indents-3">
                                 <li>Description of Event:
-                                    <p>Solve puzzles and clues to find the treasure buried at the end of the game.</p>
+                                    <p>A conventional treasure hunt event, with a twist. The event is going to happen on an android app, which will act as a VIRTUAL MAP. On the day of event, participants would be given the android app. They would get all the questions and clues on the app.<br> Teams use their collective brainpower to solve clues. Each clue leads to a question or a location within walking distance where players must find and use a vital piece of information to answer next question.
+                                    </p>
                                 </li>
                                 <li><br></li>
                                 <li>Registration fees: Rs. 50/- per head. [Internal]</li>
@@ -242,7 +243,11 @@
                         <div class="grid_6">
                             <p class="indents-3">Rules:
                                 <br>
-                                <li> Initially participants will be given a puzzle. They should solve which will lead them to a clue. Using the clue, they can proceed to second puzzle. This will continue till the participant solves the last puzzle and finds all the 10 objects. The team which finds all the objects within the given time will be the winner. Involvement of game will be throughout the campus.</li>
+                                <li>Each participating team must have at least one android phone (To run the treasure hunt application). </li>
+                                <li>Each team must comprise of 3 team members.</li>
+                                <li>If anything makes you think, "Is this cheating?", it probably is.  Don't do it.</li>
+                                <li>If anything makes you think, "Is this a really clever loophole?", it's probably cheating. Still you can do it to brag about :p </li>
+                                <li> If it is discovered that cheating has taken place, sanctions will be imposed or a team could be disqualified.</li>
                                 <br>
                             </p>
                         </div>
