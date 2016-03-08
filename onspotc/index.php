@@ -492,7 +492,7 @@ if (isset($_POST['submit'])) {
         </div>
         <div class="grid_12" id="events" style="display: none;">
             <div class="field email-box grid_4">
-                <select id="mySelect1" name="event1" required>
+                <select id="mySelect1" name="event1" >
                     <option value="">Select Event</option>                    
 
                     <option value="generalquiz_team_50_d">General Quiz</option>
@@ -560,7 +560,7 @@ if (isset($_POST['submit'])) {
                 </select>
             </div>
             <div class="field email-box grid_4">
-                <select id="mySelect2" name="event2" required>
+                <select id="mySelect2" name="event2" >
                     <option value="">Select Event</option>
                     
                     <option value="generalquiz_team_50_d">General Quiz</option>
@@ -628,7 +628,7 @@ if (isset($_POST['submit'])) {
                 </select>
             </div>
             <div class="field email-box grid_4">
-                <select id="mySelect3" name="event3" required>
+                <select id="mySelect3" name="event3" >
                     <option value="">Select Event</option>
                     
                     <option value="generalquiz_team_50_d">General Quiz</option>
