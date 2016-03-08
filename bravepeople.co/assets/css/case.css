@@ -1,0 +1,564 @@
+
+/** Header Section **/
+
+.header-section {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+.header-section .info {
+    margin: 0;
+    display: inline-block;
+    width:65%;
+    vertical-align: top;
+    text-align: left;
+    padding: 180px;
+    border-right: 1px solid #e5e5e5;
+
+}
+.header-section .requirements {
+    margin: 0;
+    display: inline-block;
+    width:35%;
+    vertical-align: top;
+    padding: 180px;
+}
+.header-section .requirements h1{
+    color: #464646;
+    font-size: 40px;
+    line-height: 62px;
+    text-align: left;
+    margin: 0 0 20px 0;
+}
+.header-section .requirements ul {
+    color: #bbb;
+    max-width: 990px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top:30px;
+    list-style: none;
+    text-align: left;
+}
+.header-section .requirements ul li{
+    color: #bbb;
+    font-family: 'proxima-nova', sans-serif;
+    text-align: left;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+    font-family: "proxima-nova", sans-serif;
+    text-transform: uppercase;
+    font-style:normal;
+    letter-spacing: 2px;
+}
+.header-section h1 {
+    color: #464646;
+    font-size: 60px;
+    line-height: 62px;
+    max-width: 990px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    margin-bottom: 20px;
+}
+.header-section h2 {
+    color: #bbb;
+    width: 80%;
+    max-width: 990px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+    font-family: "proxima-nova", sans-serif;
+    text-transform: uppercase;
+    font-style:normal;
+    letter-spacing: 2px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.header-section h3 {
+    color: #464646;
+    width: 80%;
+    max-width: 990px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 32px;
+    font-style: normal;
+    font-family: "proxima-nova", sans-serif;
+    text-transform: none;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+@media screen and (max-width: 2000px) {
+    .header-section .info {
+        width:65%;
+        padding: 120px;
+    }
+    .header-section .requirements {
+        width:35%;
+        padding: 120px;
+    }
+}
+@media screen and (max-width: 1680px) {
+    .header-section .info {
+        width:60%;
+        padding: 120px;
+    }
+    .header-section .requirements {
+        width:40%;
+        padding: 120px;
+    }
+}
+@media screen and (max-width: 1440px) {
+    .header-section h1 {
+        font-size: 50px;
+        line-height: 52px;
+    }
+    .header-section h2 {
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 2px;
+    }
+    .header-section h3 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .header-section .requirements ul li{
+        font-size: 14px;
+        line-height: 25px;
+        letter-spacing: 2px;
+    }
+    .header-section .requirements h1{
+        font-size: 32px;
+        line-height: 48px;
+    }
+    .header-section .info {
+        width:60%;
+        padding: 100px;
+    }
+    .header-section .requirements {
+        width:40%;
+        padding: 100px;
+    }
+    .under-nav.margin {
+        margin-top: 70px;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .header-section h1 {
+        font-size: 40px;
+        line-height: 42px;
+    }
+    .header-section h2 {
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 1px;
+    }
+    .header-section h3 {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .header-section .requirements ul li{
+        font-size: 12px;
+        line-height: 22px;
+        letter-spacing: 1px;
+    }
+    .header-section .requirements h1{
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .header-section .info {
+        width:60%;
+        padding: 80px;
+    }
+    .header-section .requirements {
+        width:40%;
+        padding: 80px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .header-section h1 {
+        font-size: 30px;
+        line-height: 32px;
+    }
+    .header-section .requirements h1{
+        font-size: 30px;
+        line-height: 32px;
+    }
+}
+@media screen and (max-width: 990px) {
+    .header-section .info {
+        width:100%;
+        padding: 80px;
+        border-right: 0px solid #e5e5e5;
+    }
+    .header-section .requirements {
+        width:100%;
+        padding: 80px;
+        border-top: 1px solid #e5e5e5;
+    }
+    .header-section .requirements ul li{
+        width: auto;
+        display: inline-block;
+        margin: 0 30px 20px 0;
+    }
+}
+@media screen and (max-width: 660px) {
+    .header-section .info {
+        padding: 50px;
+    }
+    .header-section .requirements {
+        padding: 50px;
+    }
+}
+
+
+/** Photo Section **/
+
+.photo-section {
+    margin: 0;
+    padding: 0;
+    text-align:center;
+    background-color: #282828;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.photo-section img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: block;
+}
+
+/** Text Section **/
+
+.text-section {
+    margin: 0;
+    padding: 100px 50px;
+    background-color: #ffffff;
+    text-align: center;
+}
+.imac-section {
+    margin: 0;
+    padding-top: 100px;
+    background-color: #fff;
+    text-align: center;
+}
+.imac-section .nick-loop {
+    background-image: url('../images/imac.png');
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    width:800px;
+    height:618px;
+    margin: auto;
+    left:0;
+    right:0;
+    top:70%;
+    z-index: -9999;
+}
+.imac-section #nick-vid {
+    width:720px;
+    margin:30px;
+    z-index: 999999;
+}
+.text-section h2 {
+    color: #464646;
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 40px;
+    font-style: normal;
+    font-family: "proxima-nova", sans-serif;
+    text-transform: none;
+    letter-spacing: 1px;
+    width: 100%;
+}
+@media screen and (max-width: 1440px) {
+    .text-section h2 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .text-section {
+        padding: 120px 50px;
+    }
+    .imac-section .nick-loop{
+        width:700px;
+        height:518px;
+    }
+    .imac-section #nick-vid{
+        width:600px;
+        margin:25px;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .text-section h2 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .text-section {
+        padding: 100px 50px;
+    }
+}
+@media screen and (max-width: 990px) {
+    .text-section {
+        padding: 80px 50px;
+    }
+    .header-section .requirements ul {
+        margin-top: 30px;
+    }
+    .header-section .requirements ul li{
+        line-height: 0px;
+        margin: 0 31px 20px 0;
+        display:block;
+    }
+    .imac-section {
+        margin: 0;
+        padding-top: 80px;
+    }
+    .imac-section .nick-loop{
+        width:400px;
+        height:318px;
+    }
+    .imac-section #nick-vid{
+        width:370px;
+        margin:17px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .imac-section {
+        margin: 0;
+        padding-top: 80px;
+    }
+    .imac-section .nick-loop{
+        width:300px;
+        height:218px;
+    }
+    .imac-section #nick-vid{
+        display: none;
+    }
+}
+
+
+
+/** Video Section **/
+
+.video-section {
+    width: 100%;
+    height: 1000px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.video-wrapper {
+    width: 100%;
+    position: absolute;
+    padding-top: 25px;
+    top: 50%;
+}
+.video-section iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width: 1920px) {
+    .video-section {
+        height: 800px;
+    }
+}
+@media screen and (max-width: 1440px) {
+    .video-section {
+        height: 650px;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .video-section {
+        height: 550px;
+    }
+}
+@media screen and (max-width: 990px) {
+    .video-section {
+        height: 400px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .video-section {
+        height: 300px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .video-section {
+        height: 200px;
+    }
+}
+
+
+/** Share Section **/
+
+.share-section {
+    width:100%;
+}
+.share-section a.network {
+    background-color: #232323;
+    color: #ffffff;
+    width: 33.33%;
+    font-family: "futura-pt", sans-serif;
+    font-weight:700;
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+    border-right: solid 1px #464646;
+    padding: 80px 0;
+    height:200px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    vertical-align: top;
+    display: inline-block;
+
+    -webkit-transition: background 0.9s cubic-bezier(0.18, 1, 0.21, 1),  color 0.9s cubic-bezier(0.18, 1, 0.21, 1);
+    -moz-transition: background 0.9s cubic-bezier(0.18, 1, 0.21, 1),  color 0.9s cubic-bezier(0.18, 1, 0.21, 1);
+    -ms-transition: background 0.9s cubic-bezier(0.18, 1, 0.21, 1),  color 0.9s cubic-bezier(0.18, 1, 0.21, 1);
+    -o-transition: background 0.9s cubic-bezier(0.18, 1, 0.21, 1),  color 0.9s cubic-bezier(0.18, 1, 0.21, 1);
+    transition: background 0.9s cubic-bezier(0.18, 1, 0.21, 1),  color 0.9s cubic-bezier(0.18, 1, 0.21, 1);
+}
+.share-section a.network:hover {
+    background-color: #464646;
+    color: #ffffff;
+}
+.share-section .network.twitter:hover {
+    background-color: #55acee;
+}
+.share-section .network.facebook:hover {
+    background-color: #3b5998;
+}
+.share-section .network.linkedin:hover {
+    background-color: #0077b5;
+}
+
+@media screen and (max-width: 1440px) {
+    .share-section a.network {
+        width: 33.33%;
+        padding: 60px 0;
+        height:auto;
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .share-section a.network {
+        width: 33.33%;
+        padding: 50px 0;
+        height:auto;
+    }
+}
+@media screen and (max-width: 990px) {
+    .share-section a.network {
+        width: 100%;
+        padding: 50px 0;
+        height:auto;
+        border-right: solid 0px #464646;
+        border-bottom: solid 1px #464646;
+    }
+}
+
+
+/** Visit Site Button **/
+
+.visit-link {
+    color: #acb1b1;
+    border-bottom: 1px solid #c2a668;
+    padding: 0 0 20px 0;
+    width: 145px;
+    margin: auto;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "futura-pt", sans-serif;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-align: center;
+    margin-top:80px;
+    z-index:99999;
+
+    -webkit-transition: 0.9s cubic-bezier(0.18, 1, 0.21, 1);
+    -moz-transition: 0.9s cubic-bezier(0.18, 1, 0.21, 1);
+    -ms-transition: 0.9s cubic-bezier(0.18, 1, 0.21, 1);
+    -o-transition: 0.9s cubic-bezier(0.18, 1, 0.21, 1);
+    transition: 0.9s cubic-bezier(0.18, 1, 0.21, 1);
+}
+.visit-link:hover {
+    border-bottom: 1px solid #c2a668;
+    width: 180px;
+
+}
+/** Next Case Study **/
+
+.next-case-section {
+    width:100%;
+    background-color: #333;
+    margin: 0;
+    padding: 120px 0;
+    height:400px;
+    cursor: pointer;
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+
+
+    -webkit-transition: background 0.9s cubic-bezier(0.18, 1, 0.21, 1),  color 0.9s cubic-bezier(0.18, 1, 0.21, 1);
+    -moz-transition: background 0.9s cubic-bezier(0.18, 1, 0.21, 1),  color 0.9s cubic-bezier(0.18, 1, 0.21, 1);
+    -ms-transition: background 0.9s cubic-bezier(0.18, 1, 0.21, 1),  color 0.9s cubic-bezier(0.18, 1, 0.21, 1);
+    -o-transition: background 0.9s cubic-bezier(0.18, 1, 0.21, 1),  color 0.9s cubic-bezier(0.18, 1, 0.21, 1);
+    transition: background 0.9s cubic-bezier(0.18, 1, 0.21, 1),  color 0.9s cubic-bezier(0.18, 1, 0.21, 1);
+}
+.next-case-section h1{
+    color: #ffffff;
+    font-family: "futura-pt", sans-serif;
+    font-weight:700;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+
+}
+.next-case-section h2{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    font-family: "garamond-premier-pro", serif;
+    color: #9f8f68;
+    text-transform: normal;
+    letter-spacing: 1px;
+    text-align: center;
+
+}
+.next-case-section:hover {
+    background: #dad9d0;
+    color: #ffffff;
+}
+@media screen and (max-width: 990px) {
+    .next-case-section {
+        height:300px;
+        padding: 90px 0;
+
+    }
+    .next-case-section h1{
+        font-size: 30px;
+
+    }
+}

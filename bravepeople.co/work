@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html lang="en-US" class="no-js ie ie6 lte7 lte8 lte9"><![endif]-->
+<!--[if IE 7 ]><tml lang="en-US" class="no-js ie ie7 lte7 lte8 lte9"><![endif]-->
+<!--[if IE 8 ]><html lang="en-US" class="no-js ie ie8 lte8 lte9"><![endif]-->
+<!--[if IE 9 ]><html lang="en-US" class="no-js ie ie9 lte9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en-US" class="no-js"><!--<![endif]-->
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>Brave People | Case Studies | Branding, Interactive & Production</title>
+
+    <link rel="shortcut icon" href="/assets/images/favicon.ico">
+
+    <!-- Google & Bing verification -->
+    <meta name="google-site-verification" content="rtq-VYLJWuxcxIgjSVXo6TEG2wVHPaPUXee2Ew0UiLM" />
+    <meta name="msvalidate.01" content="97CFA851A6A1AC9B76AE80F6AE020938">
+
+    <!-- SEO -->
+    <meta name="author" content="Brave People">
+
+    <meta name="description" content="View Brave People case studies of the branding, interactive design and production services we provide to our clients">
+    <meta name="keywords" content="brave people case studies, brave people clients, branding, social engagement, web design, web development, seo strategy, production" />
+
+    <link rel="canonical" href="http://bravepeople.co/work" />
+
+    <!-- Stylesheets -->
+    <link rel='stylesheet' href='/assets/css/style.css' type='text/css' media='screen'>
+    <link rel='stylesheet' href='/assets/css/grid.css' type='text/css' media='screen'>
+
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+    <!--[if IE]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <!-- Javascript -->
+
+
+    <!-- Typekit -->
+    <script type="text/javascript" src="//use.typekit.net/yws7gru.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+        <link href="/css/ie.css" rel="stylesheet">
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script src="/assets/js/modernizr.js"></script>
+
+
+</head>
+
+<body>
+
+
+<!-- Navigation Include -->
+
+    <div id="toTop">top</div>
+
+<div class="menu">
+
+	<div class="nav">
+		<div class="logo">
+			<a href="/">
+				<svg version="1.1" id="logo-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-1225 711 108.8 20" style="enable-background:new -1225 711 108.8 20;" xml:space="preserve">
+					<g>
+						<path class="none" d="M-1156.3,715.7c-0.2-0.2-0.5-0.3-0.9-0.4c-0.4-0.1-0.7-0.1-1-0.1c-0.3,0-0.7,0-1.2,0h-0.9v5h0.9
+							c0.5,0,0.9,0,1.1,0c0.3,0,0.6-0.1,1-0.1c0.4-0.1,0.7-0.2,0.9-0.4c0.2-0.2,0.4-0.4,0.5-0.7c0.2-0.3,0.2-0.7,0.2-1.2
+							c0-0.5-0.1-0.9-0.2-1.2C-1155.9,716.2-1156.1,715.9-1156.3,715.7z"/>
+						<path class="none" d="M-1200,715h-0.5v5h0.5c2.4,0,3.6-0.8,3.6-2.5C-1196.4,715.8-1197.6,715-1200,715z"/>
+						<path class="none" d="M-1217.2,718.5c0.5-0.3,0.8-0.8,0.8-1.5c0-0.4-0.1-0.8-0.3-1.1c-0.2-0.3-0.4-0.5-0.8-0.6
+							c-0.3-0.1-0.6-0.2-0.9-0.2s-0.6-0.1-1.1-0.1h-0.4v3.9h0.6C-1218.4,718.8-1217.7,718.7-1217.2,718.5z"/>
+						<path class="none" d="M-1215.4,723.6c-0.1-0.1-0.3-0.3-0.4-0.4c-0.1-0.1-0.3-0.2-0.5-0.3c-0.2-0.1-0.4-0.1-0.5-0.2
+							c-0.1,0-0.3-0.1-0.6-0.1c-0.3,0-0.5,0-0.6,0c-0.1,0-0.3,0-0.6,0s-0.5,0-0.6,0h-0.5v4.3h0.7c0.4,0,0.7,0,0.9,0c0.2,0,0.4,0,0.9-0.1
+							c0.4,0,0.7-0.1,0.9-0.2c0.2-0.1,0.4-0.2,0.7-0.4c0.3-0.2,0.5-0.4,0.6-0.6c0.1-0.3,0.2-0.6,0.2-0.9c0-0.3,0-0.5-0.1-0.7
+							C-1215.1,724-1215.2,723.8-1215.4,723.6z"/>
+						<path class="none" d="M-1137.4,715.7c-0.2-0.2-0.5-0.3-0.9-0.4c-0.4-0.1-0.7-0.1-1-0.1s-0.7,0-1.2,0h-0.9v5h0.9c0.5,0,0.9,0,1.1,0
+							c0.3,0,0.6-0.1,1-0.1c0.4-0.1,0.7-0.2,0.9-0.4c0.2-0.2,0.4-0.4,0.5-0.7c0.1-0.3,0.2-0.7,0.2-1.2c0-0.5-0.1-0.9-0.2-1.2
+							C-1137.1,716.2-1137.2,715.9-1137.4,715.7z"/>
+						<path class="gray" d="M-1213.8,720.3L-1213.8,720.3c1.5-0.8,2.2-2.2,2.2-4.1c0-3.5-2-5.2-5.9-5.2h-7.4v20h8c1,0,1.9-0.1,2.7-0.3
+							c0.8-0.2,1.6-0.5,2.3-0.9c0.7-0.4,1.3-1,1.7-1.7c0.4-0.7,0.6-1.6,0.6-2.6C-1209.8,722.4-1211.1,720.7-1213.8,720.3z M-1219.8,715
+							h0.4c0.4,0,0.8,0,1.1,0.1s0.6,0.1,0.9,0.2c0.3,0.1,0.6,0.3,0.8,0.6c0.2,0.3,0.3,0.6,0.3,1.1c0,0.8-0.3,1.3-0.8,1.5
+							c-0.5,0.3-1.2,0.4-2,0.4h-0.6V715z M-1215.2,725.8c-0.1,0.3-0.3,0.5-0.6,0.6c-0.3,0.2-0.5,0.3-0.7,0.4c-0.2,0.1-0.5,0.2-0.9,0.2
+							c-0.4,0-0.7,0.1-0.9,0.1c-0.1,0-0.4,0-0.9,0h-0.7v-4.3h0.5c0.1,0,0.2,0,0.6,0s0.6,0,0.6,0c0.1,0,0.3,0,0.6,0c0.3,0,0.5,0,0.6,0.1
+							c0.1,0,0.3,0.1,0.5,0.2c0.2,0.1,0.4,0.2,0.5,0.3c0.1,0.1,0.2,0.2,0.4,0.4c0.1,0.1,0.2,0.3,0.3,0.5c0.1,0.2,0.1,0.5,0.1,0.7
+							C-1215,725.2-1215.1,725.6-1215.2,725.8z"/>
+						<path class="gray" d="M-1192.2,720.9c0.8-1,1.2-2.3,1.2-3.7c0-2.1-0.6-3.6-1.9-4.6c-1.3-1-3-1.5-5-1.5h-7.8v20h5.2v-7.7h0.1l4.9,7.7
+							h6.5l-6.3-8.2C-1194,722.6-1192.9,721.9-1192.2,720.9z M-1200,720h-0.5v-5h0.5c2.4,0,3.6,0.8,3.6,2.5
+							C-1196.4,719.1-1197.6,720-1200,720z"/>
+						<polygon class="gray" points="-1178.5,723.1 -1183.3,711 -1189,711 -1180.6,731 -1176.6,731 -1168,711 -1173.7,711 	"/>
+						<path class="gray" d="M-1152.1,712.6c-1.3-1.1-3.1-1.6-5.3-1.6h-8v20h5.2v-6.6h2.9c4.7,0,7.1-2.3,7.1-6.8
+							C-1150.2,715.4-1150.8,713.7-1152.1,712.6z M-1155.8,718.9c-0.2,0.3-0.3,0.6-0.5,0.7c-0.2,0.2-0.5,0.3-0.9,0.4
+							c-0.4,0.1-0.7,0.1-1,0.1c-0.3,0-0.6,0-1.1,0h-0.9v-5h0.9c0.5,0,0.9,0,1.2,0c0.3,0,0.6,0.1,1,0.1c0.4,0.1,0.7,0.2,0.9,0.4
+							c0.2,0.2,0.4,0.4,0.5,0.8c0.1,0.3,0.2,0.7,0.2,1.2C-1155.6,718.2-1155.7,718.6-1155.8,718.9z"/>
+						<path class="gray" d="M-1133.3,712.6c-1.3-1.1-3.1-1.6-5.3-1.6h-8v20h5.2v-6.6h2.9c4.7,0,7.1-2.3,7.1-6.8
+							C-1131.3,715.4-1132,713.7-1133.3,712.6z M-1136.9,718.9c-0.2,0.3-0.3,0.6-0.5,0.7c-0.2,0.2-0.5,0.3-0.9,0.4
+							c-0.4,0.1-0.7,0.1-1,0.1c-0.3,0-0.6,0-1.1,0h-0.9v-5h0.9c0.5,0,0.9,0,1.2,0s0.6,0.1,1,0.1c0.4,0.1,0.7,0.2,0.9,0.4
+							c0.2,0.2,0.4,0.4,0.5,0.8c0.1,0.3,0.2,0.7,0.2,1.2C-1136.7,718.2-1136.8,718.6-1136.9,718.9z"/>
+						<polygon class="gray" points="-1122.5,726.6 -1122.5,711 -1127.7,711 -1127.7,731 -1116.2,731 -1116.2,726.6 	"/>
+					</g>
+				</svg>
+			</a>
+		</div>
+		<ul>
+			<li><a href="/">HOME</a></li>
+			<li><a href="/work">WORK</a></li>
+			<li><a href="/plan">PLAN</a></li>
+			<li><a href="/careers">CAREERS</a></li>
+		</ul>
+		<div class="login">
+			<a href="https://bravenudigital.basecamphq.com/" target="_blank"><img src="/assets/images/login2.svg"></a>
+		</div>
+	</div>
+</div>
+
+
+<!-- Overlay -->
+
+<div id="overlay"></div>
+
+
+<!-- BRANDS SECTION -->
+
+<section id="home-brands" class="fade-element under-nav">
+    <div class="content full">
+        <div class="brands-info">
+            <div class="vert-center">
+                <h5>A Few We&apos;ve Created For</h5>
+                <h3>BRAVE BRANDS</h3>
+                <p>
+                    After years of evolution in the digital space, Brave has grown to produce cutting-edge creative for start ups and Fortune 500 companies spanning industries including tech, e-commerce, hospitality, healthcare, B2B and the nonprofit sector.
+                </p>
+            </div>
+        </div>
+        <div class="brand-logos">
+            <div class="vert-center">
+                <div class="client-logo" style="background-image: url('/assets/images/panasonic-logo.png');"><img src="/assets/images/blank-logo.png"></div>
+                <div class="client-logo" style="background-image: url('/assets/images/iqor-logo.png');"><img src="/assets/images/blank-logo.png"></div>
+                <div class="client-logo" style="background-image: url('/assets/images/nick-logo.png');"><img src="/assets/images/blank-logo.png"></div>
+                <div class="client-logo" style="background-image: url('/assets/images/leximiller-logo.png');"><img src="/assets/images/blank-logo.png"></div>
+                <div class="client-logo" style="background-image: url('/assets/images/built-logo.png');"><img src="/assets/images/blank-logo.png"></div>
+                <div class="client-logo" style="background-image: url('/assets/images/amandauprichard-logo.png');"><img src="/assets/images/blank-logo.png"></div>
+                <div class="client-logo" style="background-image: url('/assets/images/watsi-logo.png');"><img src="/assets/images/blank-logo.png"></div>
+                <div class="client-logo" style="background-image: url('/assets/images/lennar-logo.png');"><img src="/assets/images/blank-logo.png"></div>
+                <div class="client-logo" style="background-image: url('/assets/images/chicfila-logo.png');"><img src="/assets/images/blank-logo.png"></div>
+                <div class="client-logo" style="background-image: url('/assets/images/ditto-logo.png');"><img src="/assets/images/blank-logo.png"></div>
+                <div class="client-logo" style="background-image: url('/assets/images/merchline-logo.png');"><img src="/assets/images/blank-logo.png"></div>
+                <div class="client-logo" style="background-image: url('/assets/images/humanity-logo.png');"><img src="/assets/images/blank-logo.png"></div>
+                <div class="client-logo" style="background-image: url('/assets/images/eye-heart-world-logo.png');"><img src="/assets/images/blank-logo.png"></div>
+                <div class="client-logo" style="background-image: url('/assets/images/clickable-logo.png');"><img src="/assets/images/blank-logo.png"></div>
+                <div class="client-logo" style="background-image: url('/assets/images/flexspace-logo.png');"><img src="/assets/images/blank-logo.png"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Work Container -->
+
+<div class="workcontainer">
+
+    <!-- Left Side -->
+
+    <div class="workcontainer-left">
+
+        <!-- iQor -->
+
+        <div class="item">
+            <figure class="cap-bot">
+                <a href="/iqor">
+                <img src="/assets/images/iqor_workthumb.jpg" alt="iQor"></a>
+                <figcaption>
+                    <div class="title description">
+                        <h3>
+                            <a href="/iqor">iQor</a>
+                        </h3>
+                        <p>Branding, Content Strategy, UI/UX, Development, Production</p>
+                        <div class="caption"><img src="/assets/images/workarrow.svg" alt="">
+                        </div>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Corvaso -->
+
+        <div class="item">
+            <figure class="cap-bot">
+                <a href="/corvaso">
+                    <img src="/assets/images/corvaso-workthumb.jpg" alt="Lexi Miller">
+                </a>
+                <figcaption>
+                    <div class="title description">
+                        <h3>
+                            <a href="/corvaso">Corvaso</a>
+                        </h3>
+                        <p>Branding, Content Strategy, UI/UX, Production</p>
+                        <div class="caption">
+                            <img src="/assets/images/workarrow.svg" alt="">
+                        </div>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Sunview -->
+
+        <div class="item">
+            <figure class="cap-bot">
+                <a href="/sunview-software">
+                    <img src="/assets/images/sunview_workthumb.jpg" alt="Sunview Software">
+                </a>
+                <figcaption>
+                    <div class="title description">
+                        <h3>
+                            <a href="/sunview-software">Sunview Software</a>
+                        </h3>
+                        <p>Branding, Content Strategy, UI/UX, Development, Production</p>
+                        <div class="caption">
+                            <img src="/assets/images/workarrow.svg" alt="">
+                        </div>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Lexi Miller -->
+
+        <div class="item">
+            <figure class="cap-bot">
+                <a href="/lexi-miller">
+                    <img src="/assets/images/lexi_workthumb.jpg" alt="Lexi Miller">
+                </a>
+                <figcaption>
+                    <div class="title description">
+                        <h3>
+                            <a href="/lexi-miller">Lexi Miller</a>
+                        </h3>
+                        <p>Branding, Content Strategy, UI/UX, E-Commerce Development, Production</p>
+                        <div class="caption">
+                            <img src="/assets/images/workarrow.svg" alt="">
+                        </div>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Modsquad -->
+
+        <div class="item">
+            <figure class="cap-bot">
+                <a href="/modsquad">
+                    <img src="/assets/images/modsquad_workthumb.jpg" alt="ModSquad">
+                </a>
+                <figcaption>
+                    <div class="title description">
+                        <h3>
+                            <a href="/modsquad">ModSquad</a>
+                        </h3>
+                        <p>Production</p>
+                        <div class="caption">
+                            <img src="/assets/images/workarrow.svg" alt="">
+                        </div>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Focal Point -->
+
+        <div class="item">
+            <figure class="cap-bot">
+                <a href="/focal-point">
+                    <img src="/assets/images/focalpoint_workthumb.jpg" alt="Focal Point Homes">
+                </a>
+                <figcaption>
+                    <div class="title description">
+                        <h3>
+                            <a href="/focal-point">Focal Point Homes</a>
+                        </h3>
+                        <p>Production</p>
+                        <div class="caption"><img src="/assets/images/workarrow.svg" alt="">
+                        </div>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+
+    </div>
+
+
+    <!-- Right Side -->
+
+    <div class="workcontainer-right">
+
+        <!-- Nickelodeon -->
+
+        <div class="item">
+            <figure class="cap-bot">
+                <a href="/nickelodeon">
+                    <img src="/assets/images/nickelodeon_workthumb.jpg" alt="Nickelodeon">
+                </a>
+                <figcaption>
+                    <div class="title description">
+                        <h3>
+                            <a href="/nickelodeon">Nickelodeon</a>
+                        </h3>
+                        <p>UI/UX, Illustration, App Development</p>
+                        <div class="caption"><img src="/assets/images/workarrow.svg" alt="">
+                        </div>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Eye Heart World -->
+
+        <div class="item">
+            <figure class="cap-bot">
+                <a href="/eye-heart-world">
+                <img src="/assets/images/ehw_workthumb.jpg" alt="Eye Heart World"></a>
+                <figcaption>
+                    <div class="title description">
+                        <h3>
+                            <a href="/eye-heart-world">Eye Heart World</a>
+                        </h3>
+                        <p>Branding, Content Strategy, UI/UX, E-Commerce, Production</p>
+                        <div class="caption">
+                            <img src="/assets/images/workarrow.svg" alt="">
+                        </div>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Ditto -->
+
+        <div class="item">
+            <figure class="cap-bot">
+                <a href="/ditto-residential">
+                    <img src="/assets/images/ditto_workthumb2.jpg" alt="Ditto Residential">
+                </a>
+                <figcaption>
+                    <div class="title description">
+                        <h3>
+                            <a href="/ditto-residential">Ditto DC</a>
+                        </h3>
+                        <p>Branding, Content Strategy, UI/UX, Development, Production</p>
+                        <div class="caption">
+                            <img src="/assets/images/workarrow.svg" alt="">
+                        </div>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Clearall -->
+
+        <div class="item">
+            <figure class="cap-bot">
+                <a href="/clearall">
+                    <img src="/assets/images/clearall_workthumb.jpg" alt="Clearall">
+                </a>
+                <figcaption>
+                    <div class="title description">
+                        <h3>
+                            <a href="/clearall">Clearall</a>
+                        </h3>
+                        <p>Production</p>
+                        <div class="caption">
+                            <img src="/assets/images/workarrow.svg" alt="">
+                        </div>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Built -->
+
+        <div class="item">
+            <figure class="cap-bot">
+                <a href="/built">
+                    <img src="/assets/images/built_workthumb.jpg" alt="Built">
+                </a>
+                <figcaption>
+                    <div class="title description">
+                        <h3>
+                            <a href="/built">Built</a>
+                        </h3>
+                        <p>Naming, Branding, UI/UX, Development, Production</p>
+                        <div class="caption">
+                            <img src="/assets/images/workarrow.svg" alt="">
+                        </div>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- Blank -->
+
+        <div class="item">
+            <figure class="cap-bot" style="background-color:#333;">
+                    <img src="/assets/images/work-transparency.png" alt="Built">
+
+            </figure>
+        </div>
+
+
+        <!-- Identities
+
+        <div class="item">
+            <figure class="cap-bot">
+                <a href="/identities">
+                    <img src="/assets/images/identities_workthumb.jpg" alt="Identities">
+                </a>
+                <figcaption>
+                    <div class="title description">
+                        <h3>
+                            <a href="/identities">Identities</a>
+                        </h3>
+                        <p>Discovery, Branding</p>
+                        <div class="caption">
+                            <img src="/assets/images/workarrow.svg" alt="">
+                        </div>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>-->
+
+    </div>
+
+</div>
+
+
+<!-- Footer Include -->
+
+    <div class="footer">
+
+    <div id="social">
+        <ul>
+            <li><h1><a href="https://www.facebook.com/wearebravepeople?fref=ts" target="_blank">FACEBOOK</a></h1></li>
+            <li><h1><a href="https://twitter.com/brvppl" target="_blank">TWITTER</a></h1></li>
+            <li><h1><a href="http://instagram.com/brvppl" target="_blank">INSTAGRAM</a></h1></li>
+            <li><h1><a href="http://dribbble.com/brvppl" target="_blank">DRIBBBLE</a></h1></li>
+            <li><h1><a href="http://google.com/+BravePeopleCo" target="_blank">Google+</a></h1></li>
+        </ul>
+    </div>
+
+    <div id="x"><img src="/assets/images/footer_x.png"/></div>
+
+    <div id="rooster">
+        <img src="/assets/images/rooster.svg"/>
+        <h1>MADE IN YBOR CITY, USA.</h1>
+    </div>
+
+    <div id="bottom">
+        <div class="hireus"><a href="/plan"><input type="submit" value="PLAN A PROJECT" class="button" /></a></div>
+        <div class="credits">
+            <div class="left-credit">&copy; 2016 ALL RIGHTS RESERVED.</div>
+
+            <div class="right-credit">2212 E 3RD AVE TAMPA FL 33605</div>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- Scripts Include -->
+
+    <!-- Site Scripts -->
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.stellar.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.animate-enhanced.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.superslides.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.ui.totop.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery-scrolltofixed-min.js"></script>
+    <script type="text/javascript" src="/assets/js/scripts.js"></script>
+
+
+    <!-- Analytics -->
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-42450476-1', 'bravepeople.co');
+      ga('send', 'pageview');
+    </script>
+
+    <script>
+      !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
+      arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
+      d.src='//d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
+      insertBefore(d,q)}(window,document,'script','_gs');
+
+      _gs('GSN-049292-A');
+    </script>
+
+
+<!-- Page Specific Scripts -->
+
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+            $().UItoTop({ easingType: 'easeOutQuart' });
+
+            // Sticky Nav Function
+
+            var stickyNav = function() {
+
+                var scrollTop = $(window).scrollTop();
+                var stickyNavTop = 1;
+
+                if (scrollTop >= stickyNavTop) {
+                    $('.menu').addClass('sticky');
+                    $('.under-nav').addClass('margin');
+                }
+                else {
+                    $('.menu').removeClass('sticky');
+                    $('.under-nav').removeClass('margin');
+                }
+
+            };
+
+            function fade() {
+                $('.fade-element').each(function() {
+
+                    var objectBottom = $(this).offset().top + 300;
+                    var windowBottom = $(window).scrollTop() + $(window).innerHeight();
+
+                    if (objectBottom < windowBottom) {
+                        $(this).addClass('fadein');
+                    }
+
+                    /* if (objectBottom > windowBottom) {
+                        $(this).removeClass('fadeleft');
+                    }*/
+                });
+            }
+
+            // Function Calls
+
+            setTimeout(stickyNav, 1000);
+            fade();
+
+            $(window).scroll(function() {
+               stickyNav();
+               fade();
+            });
+
+            $(window).resize(function() {
+                stickyNav();
+                fade();
+            });
+
+        });
+
+        function preload(arrayOfImages) {
+            $(arrayOfImages).each(function(){
+                $('<images/>')[0].src = this;
+            });
+        }
+
+        // Usage:
+
+        preload([
+        	'/assets/images/logonav.svg'
+        ]);
+
+    </script>
+
+
+</body>
+</html>

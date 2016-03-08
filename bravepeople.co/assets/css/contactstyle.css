@@ -1,0 +1,723 @@
+
+
+.general #contact-form ul li {
+width:45%; min-width:45%; display:inline; height:45px; max-height:45px; padding:0px; position:relative;
+}
+
+.general #contact-form ul li input {
+width:40%; min-width:40%; height:45px; max-height:45px; padding:0px; padding-left:15px; position:relative;
+}
+
+#contact-form ul li select {
+width:42%; min-width:42%; min-height:45px; max-height:45px; padding:0px; padding-left:15px; position:relative;
+}
+
+#contact-form ul li textarea {
+width:88%; min-width:88%;  padding:0px; padding-left:15px; padding-top:15px; height:120px; min-height:120px; position:relative;
+}
+
+#contact-form ul li.error span {
+  font-weight: bold;
+}
+
+
+#contact-form ul li input[type=text], #project-planner ul li textarea {
+  outline: 0;
+  box-sizing: content-box;
+  height:45px;
+}
+
+
+#contact-form ul li ul li label {
+  font-weight: normal;
+}
+#contact-form ul li ul li:first-child label {
+}
+
+
+#contact-form ul li ul li {
+  margin-top: 0;
+}
+
+
+#contact-form ul li input[type=text], #project-planner ul li textarea {
+  background: white url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAN1wAADdcBQiibeAAAAAd0SU1FB9wJCRQxKUbwz30AAAANSURBVAjXY/j06dN/AAmGA9YRinsqAAAAAElFTkSuQmCC) left top repeat-x;
+}
+#contact-form ul li input[type=text]:focus, #project-planner ul li textarea:focus {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAN1wAADdcBQiibeAAAAAd0SU1FB9wJCRQxH4lKWuQAAAANSURBVAjXY/j/f9d/AAlxA7iU/lWYAAAAAElFTkSuQmCC);
+}
+#contact-form ul li.error span {
+  background: #ff2a2a;
+  color: white;
+}
+#contact-form ul li.error span:before {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAABCSURBVAiZdYzBDcAgEMNCxwlDch2SecwH0QPUSPkklgugLbWGJKn32Hbgqx3YzEb+nsPUkqMtuzTBG7rggv0H5bwDQ4coY9OOIYEAAAAASUVORK5CYII=);
+}
+#contact-form ul li.error input[type=text], #project-planner ul li.error textarea {
+  border-color: #ff2a2a;
+  background:#ffc2c2;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAN1wAADdcBQiibeAAAAAd0SU1FB9wJCRQpIL0374AAAAANSURBVAjXY/h/9ep/AAkpA6nx+1etAAAAAElFTkSuQmCC);
+}
+
+
+#contact-form ul li.error input[type=text]:focus, #project-planner ul li.error textarea:focus {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAN1wAADdcBQiibeAAAAAd0SU1FB9wJCRQpIL0374AAAAANSURBVAjXY/h/9ep/AAkpA6nx+1etAAAAAElFTkSuQmCC);
+}
+#contact-form ul li.success input[type=text], #project-planner ul li.success textarea {
+  border-color: #87de87;
+  border-top-color: #2ca02c;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAN1wAADdcBQiibeAAAAAd0SU1FB9wJCRQwJCFagoEAAAANSURBVAjXY7j+5fp/AAjqA6K5jX8QAAAAAElFTkSuQmCC);
+}
+#contact-form ul li.success input[type=text]:focus, #project-planner ul li.success textarea:focus {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAN1wAADdcBQiibeAAAAAd0SU1FB9wJCRQwJCFagoEAAAANSURBVAjXY7j+5fp/AAjqA6K5jX8QAAAAAElFTkSuQmCC);
+}
+
+
+
+#contact-form ul li input[type=submit] {
+   	border: none;
+	height: 55px;
+	min-height:55px;
+	width: 30%;
+	background: #acb1b1;
+	border-radius: 11px;
+	letter-spacing:2px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 16px;
+	font-family: "futura-pt", sans-serif;
+	color: #ffffff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+#contact-form ul li input[type=submit]:hover {
+	height: 55px;
+	width: 30%;
+	border: none;
+	background: #9f8f68;
+	color:#ffffff;
+	cursor: pointer;
+}
+
+#contact-form ul li input[type=submit]:active {
+}
+#contact-form ul li input[type=submit].sending {
+   	border: none;
+	height: 55px;
+	width: 30%;
+	background: #e6e6e6;
+	border-radius: 11px;
+	letter-spacing:2px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 16px;
+	font-family: "futura-pt", sans-serif;
+	color: #ffffff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+#contact-form ul li input[type=submit].sent {
+  	background-color: #00aa00;
+   	border: none;
+	height: 55px;
+	width: 30%;
+	border-radius: 11px;
+	letter-spacing:2px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 16px;
+	font-family: "futura-pt", sans-serif;
+	color: #ffffff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+
+}
+#contact-form ul li input[type=submit].try-again {
+   	border: none;
+	height: 55px;
+	width: 30%;
+	background: #ff2a2a;
+	border-radius: 11px;
+	letter-spacing:2px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 16px;
+	font-family: "futura-pt", sans-serif;
+	color: #ffffff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+
+}
+
+
+
+#contact-form ul li.error span {
+  font-weight: bold;
+}
+
+
+#contact-form ul li input[type=text], #project-planner ul li textarea {
+  outline: 0;
+  box-sizing: content-box;
+  height:45px;
+}
+
+
+#contact-form ul li ul li label {
+  font-weight: normal;
+}
+#contact-form ul li ul li:first-child label {
+}
+
+
+#contact-form ul li ul li {
+  margin-top: 0;
+}
+
+
+
+
+@media screen and (max-width: 1680px) {
+
+
+.general #contact-form ul li {
+width:45%; min-width:45%; display:inline; height:45px; max-height:45px; padding:0px;
+}
+
+.general #contact-form ul li input {
+width:38%; min-width:38%; height:45px; max-height:45px; padding:0px; padding-left:15px;
+}
+
+#contact-form ul li select {
+width:42%; min-width:42%; min-height:45px; max-height:45px; padding:0px; padding-left:15px;
+}
+
+#contact-form ul li textarea {
+width:90%; min-width:90%;  padding:0px; padding-left:15px; padding-top:15px; height:120px; min-height:120px;
+}
+
+#contact-form ul li.error span {
+  font-weight: bold;
+}
+
+
+#contact-form ul li input[type=text], #project-planner ul li textarea {
+  outline: 0;
+  box-sizing: content-box;
+  height:45px;
+}
+
+
+#contact-form ul li ul li label {
+  font-weight: normal;
+}
+#contact-form ul li ul li:first-child label {
+}
+
+
+#contact-form ul li ul li {
+  margin-top: 0;
+}
+
+
+#contact-form ul li input[type=text], #project-planner ul li textarea {
+  background: white url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAN1wAADdcBQiibeAAAAAd0SU1FB9wJCRQxKUbwz30AAAANSURBVAjXY/j06dN/AAmGA9YRinsqAAAAAElFTkSuQmCC) left top repeat-x;
+}
+#contact-form ul li input[type=text]:focus, #project-planner ul li textarea:focus {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAN1wAADdcBQiibeAAAAAd0SU1FB9wJCRQxH4lKWuQAAAANSURBVAjXY/j/f9d/AAlxA7iU/lWYAAAAAElFTkSuQmCC);
+}
+#contact-form ul li.error span {
+  background: #ff2a2a;
+  color: white;
+}
+#contact-form ul li.error span:before {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAABCSURBVAiZdYzBDcAgEMNCxwlDch2SecwH0QPUSPkklgugLbWGJKn32Hbgqx3YzEb+nsPUkqMtuzTBG7rggv0H5bwDQ4coY9OOIYEAAAAASUVORK5CYII=);
+}
+#contact-form ul li.error input[type=text], #project-planner ul li.error textarea {
+  border-color: #ff2a2a;
+  background:#ffc2c2;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAN1wAADdcBQiibeAAAAAd0SU1FB9wJCRQpIL0374AAAAANSURBVAjXY/h/9ep/AAkpA6nx+1etAAAAAElFTkSuQmCC);
+}
+
+
+#contact-form ul li.error input[type=text]:focus, #project-planner ul li.error textarea:focus {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAN1wAADdcBQiibeAAAAAd0SU1FB9wJCRQpIL0374AAAAANSURBVAjXY/h/9ep/AAkpA6nx+1etAAAAAElFTkSuQmCC);
+}
+#contact-form ul li.success input[type=text], #project-planner ul li.success textarea {
+  border-color: #87de87;
+  border-top-color: #2ca02c;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAN1wAADdcBQiibeAAAAAd0SU1FB9wJCRQwJCFagoEAAAANSURBVAjXY7j+5fp/AAjqA6K5jX8QAAAAAElFTkSuQmCC);
+}
+#contact-form ul li.success input[type=text]:focus, #project-planner ul li.success textarea:focus {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAN1wAADdcBQiibeAAAAAd0SU1FB9wJCRQwJCFagoEAAAANSURBVAjXY7j+5fp/AAjqA6K5jX8QAAAAAElFTkSuQmCC);
+}
+
+#contact-form ul li input[type=submit] {
+   	border: none;
+	height: 55px;
+	width: 30%;
+	background: #acb1b1;
+	border-radius: 11px;
+	letter-spacing:2px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 16px;
+	font-family: "futura-pt", sans-serif;
+	color: #ffffff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+#contact-form ul li input[type=submit]:hover {
+	height: 55px;
+	width: 30%;
+	border: none;
+	background: #9f8f68;
+	color:#ffffff;
+	cursor: pointer;
+}
+
+#contact-form ul li input[type=submit]:active {
+}
+#contact-form ul li input[type=submit].sending {
+   	border: none;
+	height: 55px;
+	width: 30%;
+	background: #e6e6e6;
+	border-radius: 11px;
+	letter-spacing:2px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 16px;
+	font-family: "futura-pt", sans-serif;
+	color: #ffffff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+
+}
+#contact-form ul li input[type=submit].sent {
+  	background-color: #00aa00;
+   	border: none;
+	height: 55px;
+	width: 30%;
+	border-radius: 11px;
+	letter-spacing:2px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 16px;
+	font-family: "futura-pt", sans-serif;
+	color: #ffffff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+
+}
+#contact-form ul li input[type=submit].try-again {
+   	border: none;
+	height: 55px;
+	width: 30%;
+	background: #ff2a2a;
+	border-radius: 11px;
+	letter-spacing:2px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 16px;
+	font-family: "futura-pt", sans-serif;
+	color: #ffffff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+
+
+#contact-form ul li.error span {
+  font-weight: bold;
+}
+
+
+#contact-form ul li input[type=text], #project-planner ul li textarea {
+  outline: 0;
+  box-sizing: content-box;
+  height:45px;
+}
+
+
+#contact-form ul li ul li label {
+  font-weight: normal;
+}
+#contact-form ul li ul li:first-child label {
+}
+
+
+#contact-form ul li ul li {
+  margin-top: 0;
+}
+
+
+
+}
+
+
+@media screen and (max-width: 1440px) {
+
+
+.general #contact-form ul li {
+width:45%; min-width:45%; display:inline; height:45px; max-height:45px; padding:0px;
+}
+
+.general #contact-form ul li input {
+width:25%; min-width:25%; height:45px; max-height:45px; padding:0px; padding-left:15px;
+}
+
+#contact-form ul li select {
+width:30%; min-width:30%; min-height:45px; max-height:45px; padding:0px; padding-left:15px;
+}
+
+#contact-form ul li textarea {
+width:68%; min-width:68%;  padding:0px; padding-left:15px; padding-top:15px; height:120px; min-height:120px;
+}
+
+#contact-form ul li.error span {
+  font-weight: bold;
+}
+
+
+#contact-form ul li input[type=text], #project-planner ul li textarea {
+  outline: 0;
+  box-sizing: content-box;
+  height:45px;
+}
+
+
+#contact-form ul li ul li label {
+  font-weight: normal;
+}
+#contact-form ul li ul li:first-child label {
+}
+
+
+#contact-form ul li ul li {
+  margin-top: 0;
+}
+
+
+#contact-form ul li input[type=text], #project-planner ul li textarea {
+  background: white url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAN1wAADdcBQiibeAAAAAd0SU1FB9wJCRQxKUbwz30AAAANSURBVAjXY/j06dN/AAmGA9YRinsqAAAAAElFTkSuQmCC) left top repeat-x;
+}
+#contact-form ul li input[type=text]:focus, #project-planner ul li textarea:focus {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAN1wAADdcBQiibeAAAAAd0SU1FB9wJCRQxH4lKWuQAAAANSURBVAjXY/j/f9d/AAlxA7iU/lWYAAAAAElFTkSuQmCC);
+}
+#contact-form ul li.error span {
+  background: #ff2a2a;
+  color: white;
+}
+#contact-form ul li.error span:before {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAABCSURBVAiZdYzBDcAgEMNCxwlDch2SecwH0QPUSPkklgugLbWGJKn32Hbgqx3YzEb+nsPUkqMtuzTBG7rggv0H5bwDQ4coY9OOIYEAAAAASUVORK5CYII=);
+}
+#contact-form ul li.error input[type=text], #project-planner ul li.error textarea {
+  border-color: #ff2a2a;
+  background:#ffc2c2;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAN1wAADdcBQiibeAAAAAd0SU1FB9wJCRQpIL0374AAAAANSURBVAjXY/h/9ep/AAkpA6nx+1etAAAAAElFTkSuQmCC);
+}
+
+
+#contact-form ul li.error input[type=text]:focus, #project-planner ul li.error textarea:focus {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAN1wAADdcBQiibeAAAAAd0SU1FB9wJCRQpIL0374AAAAANSURBVAjXY/h/9ep/AAkpA6nx+1etAAAAAElFTkSuQmCC);
+}
+#contact-form ul li.success input[type=text], #project-planner ul li.success textarea {
+  border-color: #87de87;
+  border-top-color: #2ca02c;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAN1wAADdcBQiibeAAAAAd0SU1FB9wJCRQwJCFagoEAAAANSURBVAjXY7j+5fp/AAjqA6K5jX8QAAAAAElFTkSuQmCC);
+}
+#contact-form ul li.success input[type=text]:focus, #project-planner ul li.success textarea:focus {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAN1wAADdcBQiibeAAAAAd0SU1FB9wJCRQwJCFagoEAAAANSURBVAjXY7j+5fp/AAjqA6K5jX8QAAAAAElFTkSuQmCC);
+}
+
+#contact-form ul li input[type=submit] {
+   	border: none;
+	height: 55px;
+	width: 30%;
+	background: #acb1b1;
+	border-radius: 11px;
+	letter-spacing:2px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 16px;
+	font-family: "futura-pt", sans-serif;
+	color: #ffffff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+
+}
+
+#contact-form ul li input[type=submit]:hover {
+	height: 55px;
+	width: 30%;
+	border: none;
+	background: #9f8f68;
+	color:#ffffff;
+	cursor: pointer;
+}
+
+#contact-form ul li input[type=submit]:active {
+}
+#contact-form ul li input[type=submit].sending {
+   	border: none;
+	height: 55px;
+	width: 30%;
+	background: #e6e6e6;
+	border-radius: 11px;
+	letter-spacing:2px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 16px;
+	font-family: "futura-pt", sans-serif;
+	color: #ffffff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+
+}
+#contact-form ul li input[type=submit].sent {
+  	background-color: #00aa00;
+   	border: none;
+	height: 55px;
+	width: 30%;
+	border-radius: 11px;
+	letter-spacing:2px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 16px;
+	font-family: "futura-pt", sans-serif;
+	color: #ffffff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+
+}
+#contact-form ul li input[type=submit].try-again {
+   	border: none;
+	height: 55px;
+	width: 30%;
+	background: #ff2a2a;
+	border-radius: 11px;
+	letter-spacing:2px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 16px;
+	font-family: "futura-pt", sans-serif;
+	color: #ffffff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+
+}
+
+
+
+#contact-form ul li.error span {
+  font-weight: bold;
+}
+
+
+#contact-form ul li input[type=text], #project-planner ul li textarea {
+  outline: 0;
+  box-sizing: content-box;
+  height:45px;
+}
+
+
+#contact-form ul li ul li label {
+  font-weight: normal;
+}
+#contact-form ul li ul li:first-child label {
+}
+
+
+#contact-form ul li ul li {
+  margin-top: 0;
+}
+
+
+
+}
+
+
+@media screen and (max-width: 1280px) {
+
+
+.general #contact-form ul li {
+width:45%; min-width:45%; display:inline; height:45px; max-height:45px; padding:0px; position:absolute; margin-left:-999999px; overflow:hidden;
+}
+
+.general #contact-form ul li input {
+width:35%; min-width:35%; height:45px; max-height:45px; padding:0px; padding-left:15px;
+}
+
+#contact-form ul li select {
+width:40%; min-width:40%; min-height:45px; max-height:45px; padding:0px; padding-left:15px;
+}
+
+#contact-form ul li textarea {
+width:87%; min-width:87%;  padding:0px; padding-left:15px; padding-top:15px; height:120px; min-height:120px;
+}
+
+#contact-form ul li.error span {
+  font-weight: bold;
+}
+
+
+#contact-form ul li input[type=text], #project-planner ul li textarea {
+  outline: 0;
+  box-sizing: content-box;
+  height:45px;
+}
+
+
+#contact-form ul li ul li label {
+  font-weight: normal;
+}
+#contact-form ul li ul li:first-child label {
+}
+
+
+#contact-form ul li ul li {
+  margin-top: 0;
+}
+
+
+#contact-form ul li input[type=text], #project-planner ul li textarea {
+  background: white url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAN1wAADdcBQiibeAAAAAd0SU1FB9wJCRQxKUbwz30AAAANSURBVAjXY/j06dN/AAmGA9YRinsqAAAAAElFTkSuQmCC) left top repeat-x;
+}
+#contact-form ul li input[type=text]:focus, #project-planner ul li textarea:focus {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAN1wAADdcBQiibeAAAAAd0SU1FB9wJCRQxH4lKWuQAAAANSURBVAjXY/j/f9d/AAlxA7iU/lWYAAAAAElFTkSuQmCC);
+}
+#contact-form ul li.error span {
+  background: #ff2a2a;
+  color: white;
+}
+#contact-form ul li.error span:before {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAABCSURBVAiZdYzBDcAgEMNCxwlDch2SecwH0QPUSPkklgugLbWGJKn32Hbgqx3YzEb+nsPUkqMtuzTBG7rggv0H5bwDQ4coY9OOIYEAAAAASUVORK5CYII=);
+}
+#contact-form ul li.error input[type=text], #project-planner ul li.error textarea {
+  border-color: #ff2a2a;
+  background:#ffc2c2;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAN1wAADdcBQiibeAAAAAd0SU1FB9wJCRQpIL0374AAAAANSURBVAjXY/h/9ep/AAkpA6nx+1etAAAAAElFTkSuQmCC);
+}
+
+
+#contact-form ul li.error input[type=text]:focus, #project-planner ul li.error textarea:focus {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAN1wAADdcBQiibeAAAAAd0SU1FB9wJCRQpIL0374AAAAANSURBVAjXY/h/9ep/AAkpA6nx+1etAAAAAElFTkSuQmCC);
+}
+#contact-form ul li.success input[type=text], #project-planner ul li.success textarea {
+  border-color: #87de87;
+  border-top-color: #2ca02c;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAN1wAADdcBQiibeAAAAAd0SU1FB9wJCRQwJCFagoEAAAANSURBVAjXY7j+5fp/AAjqA6K5jX8QAAAAAElFTkSuQmCC);
+}
+#contact-form ul li.success input[type=text]:focus, #project-planner ul li.success textarea:focus {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAN1wAADdcBQiibeAAAAAd0SU1FB9wJCRQwJCFagoEAAAANSURBVAjXY7j+5fp/AAjqA6K5jX8QAAAAAElFTkSuQmCC);
+}
+
+#contact-form ul li input[type=submit] {
+   	border: none;
+	height: 55px;
+	width: 30%;
+	background: #acb1b1;
+	border-radius: 11px;
+	letter-spacing:2px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 16px;
+	font-family: "futura-pt", sans-serif;
+	color: #ffffff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+
+}
+
+#contact-form ul li input[type=submit]:hover {
+	height: 55px;
+	width: 30%;
+	border: none;
+	background: #9f8f68;
+	color:#ffffff;
+	cursor: pointer;
+}
+
+#contact-form ul li input[type=submit]:active {
+}
+#contact-form ul li input[type=submit].sending {
+   	border: none;
+	height: 55px;
+	width: 30%;
+	background: #e6e6e6;
+	border-radius: 11px;
+	letter-spacing:2px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 16px;
+	font-family: "futura-pt", sans-serif;
+	color: #ffffff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+
+}
+#contact-form ul li input[type=submit].sent {
+  	background-color: #00aa00;
+   	border: none;
+	height: 55px;
+	width: 30%;
+	border-radius: 11px;
+	letter-spacing:2px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 16px;
+	font-family: "futura-pt", sans-serif;
+	color: #ffffff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+
+}
+#contact-form ul li input[type=submit].try-again {
+   	border: none;
+	height: 55px;
+	width: 30%;
+	background: #ff2a2a;
+	border-radius: 11px;
+	letter-spacing:2px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 16px;
+	font-family: "futura-pt", sans-serif;
+	color: #ffffff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+
+
+}
+
+
+
+#contact-form ul li.error span {
+  font-weight: bold;
+}
+
+
+#contact-form ul li input[type=text], #project-planner ul li textarea {
+  outline: 0;
+  box-sizing: content-box;
+  height:45px;
+}
+
+
+#contact-form ul li ul li label {
+  font-weight: normal;
+}
+#contact-form ul li ul li:first-child label {
+}
+
+
+#contact-form ul li ul li {
+  margin-top: 0;
+}
+
+
+
+}
