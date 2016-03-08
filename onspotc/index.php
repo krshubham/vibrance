@@ -487,21 +487,7 @@ if (isset($_POST['submit'])) {
         <div class="grid_12" id="events" style="display: none;">
             <div class="field email-box grid_4">
                 <select id="mySelect" name="event1" required>
-                    <option value="">Select Event</option>
-                    <option value="adaptune_alone_100_s">Adaptune</option>
-                    <option value="bollywoodbattle_team_100_s">Bollywood Battle</option>
-                    <option value="dancingduo_team_100_s">Dancing Duo</option>
-                    <option value="choreonight_team_3500_s">Choreo Night</option>
-                    <option value="footloose_alone_100_s">Footloose</option>
-                    <option value="dumbcharades_team_50_s">Dumb Charades</option>
-                    <option value="soundhunt_team_50_s">Sound Hunt</option>
-                    <option value="supersinger_alone_100_s">Super Singer</option>
-                    <option value="battleofbands_team_1000_s">Battle of bands</option>
-                    <option value="artiste_alone_100_s">Artiste</option>
-                    <option value="fifa15_alone_150_s">FIFA 15</option>
-                    <option value="dota2_team_500_s">Dota 2</option>
-                    <option value="counterstrike_team_500_s">Counter Strike</option>
-                    <option value="socialinnovators_team_150_s">Social Innovators</option>
+                    <option value="">Select Event</option>                    
 
                     <option value="generalquiz_team_50_d">General Quiz</option>
                     <option value="entertainmentquiz_team_50_d">Entertainment Quiz</option>
@@ -570,21 +556,7 @@ if (isset($_POST['submit'])) {
             <div class="field email-box grid_4">
                 <select id="mySelect" name="event2" required>
                     <option value="">Select Event</option>
-                    <option value="adaptune_alone_100_s">Adaptune</option>
-                    <option value="bollywoodbattle_team_100_s">Bollywood Battle</option>
-                    <option value="dancingduo_team_100_s">Dancing Duo</option>
-                    <option value="choreonight_team_3500_s">Choreo Night</option>
-                    <option value="footloose_alone_100_s">Footloose</option>
-                    <option value="dumbcharades_team_50_s">Dumb Charades</option>
-                    <option value="soundhunt_team_50_s">Sound Hunt</option>
-                    <option value="supersinger_alone_100_s">Super Singer</option>
-                    <option value="battleofbands_team_1000_s">Battle of bands</option>
-                    <option value="artiste_alone_100_s">Artiste</option>
-                    <option value="fifa15_alone_150_s">FIFA 15</option>
-                    <option value="dota2_team_500_s">Dota 2</option>
-                    <option value="counterstrike_team_500_s">Counter Strike</option>
-                    <option value="socialinnovators_team_150_s">Social Innovators</option>
-
+                    
                     <option value="generalquiz_team_50_d">General Quiz</option>
                     <option value="entertainmentquiz_team_50_d">Entertainment Quiz</option>
                     <option value="karlpopperdebate_team_50_d">Karl Popper Debate</option>
@@ -652,21 +624,7 @@ if (isset($_POST['submit'])) {
             <div class="field email-box grid_4">
                 <select id="mySelect" name="event3" required>
                     <option value="">Select Event</option>
-                    <option value="adaptune_alone_100_s">Adaptune</option>
-                    <option value="bollywoodbattle_team_100_s">Bollywood Battle</option>
-                    <option value="dancingduo_team_100_s">Dancing Duo</option>
-                    <option value="choreonight_team_3500_s">Choreo Night</option>
-                    <option value="footloose_alone_100_s">Footloose</option>
-                    <option value="dumbcharades_team_50_s">Dumb Charades</option>
-                    <option value="soundhunt_team_50_s">Sound Hunt</option>
-                    <option value="supersinger_alone_100_s">Super Singer</option>
-                    <option value="battleofbands_team_1000_s">Battle of bands</option>
-                    <option value="artiste_alone_100_s">Artiste</option>
-                    <option value="fifa15_alone_150_s">FIFA 15</option>
-                    <option value="dota2_team_500_s">Dota 2</option>
-                    <option value="counterstrike_team_500_s">Counter Strike</option>
-                    <option value="socialinnovators_team_150_s">Social Innovators</option>
-
+                    
                     <option value="generalquiz_team_50_d">General Quiz</option>
                     <option value="entertainmentquiz_team_50_d">Entertainment Quiz</option>
                     <option value="karlpopperdebate_team_50_d">Karl Popper Debate</option>
@@ -732,7 +690,7 @@ if (isset($_POST['submit'])) {
                 </select>
             </div>
         </div>
-        <div id="allevents" style="display: none;"><font color="black"><b>You will be registered for al the dynamic events.</b></font></div>
+        <div id="allevents" style="display: none;"><font color="black"><b>You will be registered for al the dynamic events.</b></font></div><br>
         <input class="button" type="submit" value="Submit" name="submit" />
     </form>
 </section>
