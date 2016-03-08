@@ -62,53 +62,12 @@ if (isset($_POST['submit'])) {
         $price = 250;
     }
     
-
-    $check_query = "SELECT * FROM {$_POST['event1']} WHERE email = '{$email}' ";
-    $check_result = mysqli_query($conn, $check_query);
-    confirm_query($check_result);
-    $check = mysqli_fetch_assoc($check_result);
-    $check2_query = "SELECT * FROM {$_POST['event2']} WHERE email = '{$email}' ";
-    $check2_result = mysqli_query($conn, $check2_query);
-    confirm_query($check2_result);
-    $check2 = mysqli_fetch_assoc($check2_result);
-    $check3_query = "SELECT * FROM {$_POST['event3']} WHERE email = '{$email}' ";
-    $check3_result = mysqli_query($conn, $check3_query);
-    confirm_query($check3_result);
-    $check3 = mysqli_fetch_assoc($check3_result);
-
-    if ($combo == "all") {
+    if ($opt == "all") {
         $query = "INSERT INTO combo (name, email, college, regno, phno, altphno, paid, parti, cnfby, type, price, events)";
         $query .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', '{$altphno}', 1, {$parti}, '{$current_user}', 'all', '{$price}', '{$events}')";
         $result = mysqli_query($conn, $query);
-    }
 
-    if (($check['email']== $email)||($check2['email']== $email)||($check3['email']== $email)) {
-        echo "You have already registered for one of these event. ";
-    } else {
-
-        if ($opt=="three") {
-            $query1 = "INSERT INTO {$_POST['event1']} (name, email, college, regno, phno, altphno, paid, parti, cnfby, combo)";
-            $query1 .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', '{$altphno}', 1, {$parti}, '{$current_user}', 'three')";
-            $result1 = mysqli_query($conn, $query1);    
-
-            $query2 = "INSERT INTO {$_POST['event2']} (name, email, college, regno, phno, altphno, paid, parti, cnfby, combo)";
-            $query2.= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', '{$altphno}', 1, {$parti}, '{$current_user}', 'three')";
-            $result2 = mysqli_query($conn, $query2);    
-
-            $query3 = "INSERT INTO {$_POST['event3']} (name, email, college, regno, phno, altphno, paid, parti, cnfby, combo)";
-            $query3 .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', '{$altphno}', 1, {$parti}, '{$current_user}', 'three')";
-            $result3 = mysqli_query($conn, $query3);
-
-            $query = "INSERT INTO combo (name, email, college, regno, phno, altphno, paid, parti, cnfby, type, price, events)";
-            $query .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', '{$altphno}', 1, {$parti}, '{$current_user}', 'three', '{$price}', '{$events}')";
-            $result = mysqli_query($conn, $query);
-        }           
-        
-
-        if ($result) {
-
-
-                // registration bill html code starts
+        if ($result) {               
 
             $content = "<!DOCTYPE html> ";
             $content .= "<html> ";
@@ -185,14 +144,132 @@ if (isset($_POST['submit'])) {
              echo 'Message could not be sent.';
              echo 'Mailer Error: ' . $mail->ErrorInfo;
              exit;
-         }   
+            } 
+            $check_view = "You have succesfully registered for Vibrance16.";       
+        } else {
+            echo"Registration failed.";
+        }   
+    } else {
+        $check_query = "SELECT * FROM {$_POST['event1']} WHERE email = '{$email}' ";
+        $check_result = mysqli_query($conn, $check_query);
+        confirm_query($check_result);
+        $check = mysqli_fetch_assoc($check_result);
+        $check2_query = "SELECT * FROM {$_POST['event2']} WHERE email = '{$email}' ";
+        $check2_result = mysqli_query($conn, $check2_query);
+        confirm_query($check2_result);
+        $check2 = mysqli_fetch_assoc($check2_result);
+        $check3_query = "SELECT * FROM {$_POST['event3']} WHERE email = '{$email}' ";
+        $check3_result = mysqli_query($conn, $check3_query);
+        confirm_query($check3_result);
+        $check3 = mysqli_fetch_assoc($check3_result);    
 
-         $check_view = "You have succesfully registered for Vibrance16.";       
-     } else {
-        echo"Registration failed.";
-    }    
+        if (($check['email']== $email)||($check2['email']== $email)||($check3['email']== $email)) {
+        echo "You have already registered for one of these event. ";
+        } else {
+        
+            $query1 = "INSERT INTO {$_POST['event1']} (name, email, college, regno, phno, altphno, paid, parti, cnfby, combo)";
+            $query1 .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', '{$altphno}', 1, {$parti}, '{$current_user}', 'three')";
+            $result1 = mysqli_query($conn, $query1);    
+
+            $query2 = "INSERT INTO {$_POST['event2']} (name, email, college, regno, phno, altphno, paid, parti, cnfby, combo)";
+            $query2.= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', '{$altphno}', 1, {$parti}, '{$current_user}', 'three')";
+            $result2 = mysqli_query($conn, $query2);    
+
+            $query3 = "INSERT INTO {$_POST['event3']} (name, email, college, regno, phno, altphno, paid, parti, cnfby, combo)";
+            $query3 .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', '{$altphno}', 1, {$parti}, '{$current_user}', 'three')";
+            $result3 = mysqli_query($conn, $query3);
+
+            $query = "INSERT INTO combo (name, email, college, regno, phno, altphno, paid, parti, cnfby, type, price, events)";
+            $query .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', '{$altphno}', 1, {$parti}, '{$current_user}', 'three', '{$price}', '{$events}')";
+            $result = mysqli_query($conn, $query);
+        }          
+        
+
+        if ($result) {               
+
+            $content = "<!DOCTYPE html> ";
+            $content .= "<html> ";
+            $content .= "<head> ";
+            $content .= "<title>Bill</title> "; 
+            $content .= "</head> ";
+            $content .= "<body style='overflow: hidden;'> ";    
+            $content .= "<div style='background-color: #20202F; margin-right: 230px;'> ";
+            $content .= "<header> ";
+            $content .= "<img src='http://vitchennaivibrance.com/images/vib_banner_small.png' style='width: 180px;height: 60px;margin-right: 190px;'> ";
+            $content .= "<img src='http://vitchennaivibrance.com/images/vit_logo.png' style='width: 150px;height: 60px;'> ";
+            $content .= "</header> ";
+            $content .= "<h1 style='margin-left: 120px; font-size: 40px; font-weight: 200px; margin-top: -0.5px; margin-bottom: -50px; color: #E85657;' >Vibrance 2016</h1><br> ";
+            $content .= "<h3 style='margin-bottom: 0;margin-top: 0; margin-left: 10px; color: #E85657;'>Bill No: <span>".$billno."</span></h3><h3 style='margin-left: 160px;font-size: 18px;font-weight: 40px;margin-top: -2.5px;margin-bottom: 15px; color: #E85657;'>Electronic registration slip</h3> ";
+            $content .= "<br> ";
+            $content .= "<div style='font-size: 18px;margin-bottom: 12px;padding-bottom: 12px;margin-left: 12px;'> ";
+            $content .= "<div style='margin-top: -12px;display: block;margin-right: 10px;margin-left: 10px;margin-bottom: -1px;background-color: #2292A4;'> ";
+            $content .= "<form style='font-size: 18px;margin-bottom: 12px;padding-bottom: 12px;margin-left: 12px;'> ";
+            $content .= "<table style='border-collapse: collapse;margin-top: 2px;'> ";
+            $content .= "<tr style='margin-top: 12px;'> ";
+            $content .= "<td style='padding-top: 5px;padding-bottom: 5px; color: #ffffff;'> ";
+            $content .= "Event Name: ";
+            $content .= "</td> ";
+            $content .= "<td style='padding-right: 12px; color: #ffffff;'> ";
+            $content .= "<span>".ucfirst($events)." Pass</span> ";
+            $content .= "</td> ";
+            $content .= "</tr> ";
+            $content .= "<tr style='margin-top: 12px;'> ";
+            $content .= "<td style='padding-top: 5px;padding-bottom: 5px; color: #ffffff;'>Name of the Participant: </td> ";
+            $content .= "<td style='padding-right: 12px; color: #ffffff;'> ".ucfirst($name)."</td> ";
+            $content .= "</tr> ";
+            $content .= "<tr style='margin-top: 12px;'> ";
+            $content .= "<td style='padding-top: 5px;padding-bottom: 5px; color: #ffffff;'>Number of Participant(s): </td> ";
+            $content .= "<td style='padding-right: 12px; color: #ffffff;'> ".$parti."</td> ";
+            $content .= "</tr> ";
+            $content .= "<tr style='margin-top: 12px;'> ";            
+            $content .= "</tr> ";
+            $content .= "<tr style='margin-top: 12px;'> ";
+            $content .= "<td style='padding-top: 5px;padding-bottom: 5px; color: #ffffff;'>Event Registration Fee: </td> ";
+            $content .= "<td style='padding-right: 12px; color: #ffffff;'> ".$price."</td> ";
+            $content .= "</tr> ";
+            $content .= "</table> ";
+            $content .= "</div> ";
+            $content .= "</form> ";
+            $content .= "<div style='height: 10px;'></div> ";
+            $content .= "</div> ";
+            $content .= "</div> ";
+            $content .= "</body> ";
+            $content .= "</html>";
+
+                // registration bill html ends
+
+            require '../PHPMailer-master/PHPMailerAutoload.php';
+
+            $mail = new PHPMailer;
+
+            $mail->isSMTP();                                      
+            $mail->Host = 'smtp.gmail.com';                       
+            $mail->SMTPAuth = true;                               
+            $mail->Username = 'vibrancechennai@gmail.com';                   
+            $mail->Password = 'NayaWala';               
+            $mail->SMTPSecure = 'tls';                            
+            $mail->Port = 587;                                    
+            $mail->setFrom('vibrancechennai@gmail.com', 'Vibrance Registrations Team');
+            $mail->addAddress("$email");       
+            $mail->WordWrap = 50; 
+            $mail->isHTML(true);                                  
+
+            $mail->Subject = 'Vibrance event registration.';
+            $mail->Body    = $content;
+            $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+
+            if(!$mail->send()) {
+             echo 'Message could not be sent.';
+             echo 'Mailer Error: ' . $mail->ErrorInfo;
+             exit;
+            } 
+            $check_view = "You have succesfully registered for Vibrance16.";       
+        } else {
+            echo"Registration failed.";
+        }    
+    }        
 }
-}
+
 ?>
 
 <!DOCTYPE html>
