@@ -42,21 +42,22 @@ if (isset($_POST['submit'])) {
     $altphno = $_POST['altphno'];      
     $event = $_POST['event'];
     $parti = 1;    
-    if ($_POST['opt']=="three") {
+    $opt = $_POST['opt'];
+    if ($opt=="three") {
        $events = $_POST['event1']."+".$_POST['event2']."+".$_POST['event3'];
        $combo = "three";
-    } elseif ($_POST['opt']=="all") {
+    } elseif ($opt=="all") {
         $events = "all";
     }   $combo = "all";
    
     $billno = "A".rand();
-    if (($college != "VIT")&&($_POST['opt'] == "three")) {
+    if (($college != "VIT")&&($opt == "three")) {
         $price = 250;
-    } elseif (($college == "VIT")&&($_POST['opt'] == "three")) {
+    } elseif (($college == "VIT")&&($opt == "three")) {
        $price = 100;
-    } elseif (($college != "VIT")&&($_POST['opt'] == "all")) {
+    } elseif (($college != "VIT")&&($opt == "all")) {
         $price = 500;
-    } elseif (($college == "VIT")&&($_POST['opt'] == "all")) {
+    } elseif (($college == "VIT")&&($opt == "all")) {
         $price = 250;
     }
     
@@ -77,7 +78,7 @@ if (isset($_POST['submit'])) {
         echo "You have already registered for one of these event. ";
     } else {
 
-        if ($_POST['opt']=="three") {
+        if ($opt=="three") {
             $query1 = "INSERT INTO {$_POST['event1']} (name, email, college, regno, phno, altphno, paid, parti, cnfby, combo)";
             $query1 .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', '{$altphno}', 1, {$parti}, '{$current_user}', '{$combo}')";
             $result1 = mysqli_query($conn, $query1);    
