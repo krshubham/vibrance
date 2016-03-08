@@ -48,7 +48,8 @@ if (isset($_POST['submit'])) {
        $combo = "three";
     } elseif ($opt=="all") {
         $events = "all";
-    }   $combo = "all";
+        $combo = "all";
+    }   
    
     $billno = "A".rand();
     if (($college != "VIT")&&($opt == "three")) {
@@ -80,23 +81,23 @@ if (isset($_POST['submit'])) {
 
         if ($opt=="three") {
             $query1 = "INSERT INTO {$_POST['event1']} (name, email, college, regno, phno, altphno, paid, parti, cnfby, combo)";
-            $query1 .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', '{$altphno}', 1, {$parti}, '{$current_user}', '{$combo}')";
+            $query1 .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', '{$altphno}', 1, {$parti}, '{$current_user}', 'three')";
             $result1 = mysqli_query($conn, $query1);    
 
             $query2 = "INSERT INTO {$_POST['event2']} (name, email, college, regno, phno, altphno, paid, parti, cnfby, combo)";
-            $query2.= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', '{$altphno}', 1, {$parti}, '{$current_user}', '{$combo}')";
+            $query2.= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', '{$altphno}', 1, {$parti}, '{$current_user}', 'three')";
             $result2 = mysqli_query($conn, $query2);    
 
             $query3 = "INSERT INTO {$_POST['event3']} (name, email, college, regno, phno, altphno, paid, parti, cnfby, combo)";
-            $query3 .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', '{$altphno}', 1, {$parti}, '{$current_user}', '{$combo}')";
+            $query3 .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', '{$altphno}', 1, {$parti}, '{$current_user}', 'three')";
             $result3 = mysqli_query($conn, $query3);
 
             $query = "INSERT INTO combo (name, email, college, regno, phno, altphno, paid, parti, cnfby, type, price, events)";
-            $query .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', '{$altphno}', 1, {$parti}, '{$current_user}', '{$combo}', '{$price}', '{$events}')";
+            $query .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', '{$altphno}', 1, {$parti}, '{$current_user}', 'three', '{$price}', '{$events}')";
             $result = mysqli_query($conn, $query);
         } else {
-            $query = "INSERT INTO combo (name, email, college, regno, phno, altphno, parti, type, price, events)";
-            $query .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', '{$altphno}', {$parti}, '{$combo}', '{$price}', '{$events}')";
+            $query = "INSERT INTO combo (name, email, college, regno, phno, altphno, paid, parti, cnfby, type, price, events)";
+            $query .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', '{$altphno}', 1, {$parti}, '{$current_user}', 'all', '{$price}', '{$events}')";
             $result = mysqli_query($conn, $query);
         }
 
