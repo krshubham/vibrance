@@ -75,6 +75,13 @@ if (isset($_POST['submit'])) {
     $check3_result = mysqli_query($conn, $check3_query);
     confirm_query($check3_result);
     $check3 = mysqli_fetch_assoc($check3_result);
+
+    if ($opt == "all") {
+        $query = "INSERT INTO combo (name, email, college, regno, phno, altphno, paid, parti, cnfby, type, price, events)";
+        $query .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', '{$altphno}', 1, {$parti}, '{$current_user}', 'all', '{$price}', '{$events}')";
+        $result = mysqli_query($conn, $query);
+    }
+
     if (($check['email']== $email)||($check2['email']== $email)||($check3['email']== $email)) {
         echo "You have already registered for one of these event. ";
     } else {
@@ -95,11 +102,8 @@ if (isset($_POST['submit'])) {
             $query = "INSERT INTO combo (name, email, college, regno, phno, altphno, paid, parti, cnfby, type, price, events)";
             $query .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', '{$altphno}', 1, {$parti}, '{$current_user}', 'three', '{$price}', '{$events}')";
             $result = mysqli_query($conn, $query);
-        } else {
-            $query = "INSERT INTO combo (name, email, college, regno, phno, altphno, paid, parti, cnfby, type, price, events)";
-            $query .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', '{$altphno}', 1, {$parti}, '{$current_user}', 'all', '{$price}', '{$events}')";
-            $result = mysqli_query($conn, $query);
-        }
+        }           
+        
 
         if ($result) {
 
