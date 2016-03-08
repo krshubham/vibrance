@@ -43,12 +43,19 @@ if (isset($_POST['submit'])) {
     $event = $_POST['event'];
     $parti = 1;    
     $opt = $_POST['opt'];
+    
     if ($opt=="three") {
-       $events = $_POST['event1']."+".$_POST['event2']."+".$_POST['event3'];
-       $combo = "three";
+        $events = $_POST['event1']."+".$_POST['event2']."+".$_POST['event3'];
+        $combo = "three";
+        $event1 = $_POST['event1'];
+        $event2 = $_POST['event2'];
+        $event3 = $_POST['event3'];
     } elseif ($opt=="all") {
         $events = "all";
         $combo = "all";
+        $event1 = "";
+        $event2 = "";
+        $event3 = "";
     }   
    
     $billno = "A".rand();
@@ -210,7 +217,7 @@ if (isset($_POST['submit'])) {
             $content .= "Event Name: ";
             $content .= "</td> ";
             $content .= "<td style='padding-right: 12px; color: #ffffff;'> ";
-            $content .= "<span>".ucfirst($events)." Pass</span> ";
+            $content .= "<span>".ucfirst($event1).", ".ucfirst($event2).", ".ucfirst($event3)." Pass</span> ";
             $content .= "</td> ";
             $content .= "</tr> ";
             $content .= "<tr style='margin-top: 12px;'> ";
