@@ -492,7 +492,7 @@ if (isset($_POST['submit'])) {
         </div>
         <div class="grid_12" id="events" style="display: none;">
             <div class="field email-box grid_4">
-                <select id="mySelect" name="event1" required>
+                <select id="mySelect1" name="event1" required>
                     <option value="">Select Event</option>                    
 
                     <option value="generalquiz_team_50_d">General Quiz</option>
@@ -560,7 +560,7 @@ if (isset($_POST['submit'])) {
                 </select>
             </div>
             <div class="field email-box grid_4">
-                <select id="mySelect" name="event2" required>
+                <select id="mySelect2" name="event2" required>
                     <option value="">Select Event</option>
                     
                     <option value="generalquiz_team_50_d">General Quiz</option>
@@ -628,7 +628,7 @@ if (isset($_POST['submit'])) {
                 </select>
             </div>
             <div class="field email-box grid_4">
-                <select id="mySelect" name="event3" required>
+                <select id="mySelect3" name="event3" required>
                     <option value="">Select Event</option>
                     
                     <option value="generalquiz_team_50_d">General Quiz</option>
@@ -707,10 +707,16 @@ if (isset($_POST['submit'])) {
     $('#tevents').click(function() {
         $('#events').slideDown();
         $('#allevents').slideUp();
+        document.getElementById("mySelect1").setAttribute("required", "");
+        document.getElementById("mySelect2").setAttribute("required", "");
+        document.getElementById("mySelect3").setAttribute("required", "");
     });  
     $('#aevents').click(function() {
         $('#allevents').slideDown();
         $('#events').slideUp();
+        document.getElementById("mySelect1").removeAttribute("required");
+        document.getElementById("mySelect2").removeAttribute("required");
+        document.getElementById("mySelect3").removeAttribute("required");
     });    
 </script>
 <script>
