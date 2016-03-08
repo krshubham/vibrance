@@ -17,7 +17,8 @@ $current_user = $_SESSION["username"];
 $name_query = "SELECT * FROM admins WHERE username = '{$current_user}' LIMIT 1";
 $name_result = mysqli_query($conn, $name_query);
 confirm_query($name_result);
-$name_title = mysqli_fetch_assoc($name_result);    
+$name_title = mysqli_fetch_assoc($name_result);  
+$check_view = "";  
 ?>
 
 <?php
@@ -171,7 +172,7 @@ if (isset($_POST['submit'])) {
         $check3 = mysqli_fetch_assoc($check3_result);    
 
         if (($check['email']== $email)||($check2['email']== $email)||($check3['email']== $email)) {
-        echo "You have already registered for one of these event. ";
+        $check_view = "You have already registered for one of these events. ";
         } else {
         
             $query1 = "INSERT INTO {$_POST['event1']} (name, email, college, regno, phno, altphno, paid, parti, cnfby, combo)";
@@ -783,6 +784,7 @@ if (isset($_POST['submit'])) {
         <div id="allevents" style="display: none;"><font color="black"><b>You will be registered for al the dynamic events.</b></font></div><br>
         <p><div><input type="submit" class="button" value="Submit" name="submit" /></div></p>
     </form>
+    <p><?php echo $check_view; ?></p>
 </section>
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src="js/index.js"></script>
