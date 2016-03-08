@@ -86,6 +86,9 @@
                             <li>
                                 <a href="aboutus.html">About Us</a>
                             </li>
+                            <li>
+                                <a href="combo.php">Combo offers</a>
+                            </li>
                             <li class="active">
                                 <a href="#events">Events</a>
                                 <ul>

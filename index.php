@@ -145,6 +145,9 @@ if (isset($_SESSION["username"])) {
                             <a href="aboutus.html">About Us</a>
                         </li>
                         <li>
+                            <a href="combo.php">Combo offers</a>
+                        </li>
+                        <li>
                             <a href="#events">Events</a>
                             <ul id="sf-events-menu">
                                 <li>
