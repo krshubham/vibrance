@@ -76,7 +76,7 @@ if (isset($_POST['submit'])) {
     confirm_query($check3_result);
     $check3 = mysqli_fetch_assoc($check3_result);
 
-    if ($opt == "all") {
+    if ($combo == "all") {
         $query = "INSERT INTO combo (name, email, college, regno, phno, altphno, paid, parti, cnfby, type, price, events)";
         $query .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', '{$altphno}', 1, {$parti}, '{$current_user}', 'all', '{$price}', '{$events}')";
         $result = mysqli_query($conn, $query);
