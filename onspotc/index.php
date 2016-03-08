@@ -47,9 +47,9 @@ if (isset($_POST['submit'])) {
     if ($opt=="three") {
         $events = $_POST['event1']."+".$_POST['event2']."+".$_POST['event3'];
         $combo = "three";
-        $event1 = $_POST['event1'];
-        $event2 = $_POST['event2'];
-        $event3 = $_POST['event3'];
+        $event1 = explode("_", $_POST['event1']);
+        $event2 = explode("_", $_POST['event2']);
+        $event3 = explode("_", $_POST['event3']);
     } elseif ($opt=="all") {
         $events = "all";
         $combo = "all";
@@ -217,7 +217,7 @@ if (isset($_POST['submit'])) {
             $content .= "Event Name: ";
             $content .= "</td> ";
             $content .= "<td style='padding-right: 12px; color: #ffffff;'> ";
-            $content .= "<span>".ucfirst($event1).", ".ucfirst($event2).", ".ucfirst($event3)." Pass</span> ";
+            $content .= "<span>".ucfirst($event1[0]).", ".ucfirst($event2[0]).", ".ucfirst($event3[0])." Pass</span> ";
             $content .= "</td> ";
             $content .= "</tr> ";
             $content .= "<tr style='margin-top: 12px;'> ";
