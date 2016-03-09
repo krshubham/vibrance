@@ -6,6 +6,8 @@
 $id = $_GET["id"];
 $event = $_GET['event'];
 $current_user = $_SESSION['username'];
+date_default_timezone_set('Asia/Calcutta');
+$confdate = date("Y/m/d");
 $event_part = explode("_", $event);
 $parti = $_GET['parti'];
 if ($parti==1) {
@@ -102,7 +104,7 @@ if(!$mail->send()) {
    exit;
 } 
 
-$update_query = "UPDATE {$event} SET paid = 1, cnfby = '{$current_user}' WHERE id = {$id} LIMIT 1";
+$update_query = "UPDATE {$event} SET paid = 1, cnfby = '{$current_user}', confdate = '{$confdate}' WHERE id = {$id} LIMIT 1";
 $update_result = mysqli_query($conn, $update_query);
 
 if ($result && mysqli_affected_rows($conn) == 1) {

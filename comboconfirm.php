@@ -12,6 +12,8 @@ $second_event = explode("_", $events_part[1]);
 $third_event = explode("_", $events_part[2]);
 $price = $_GET['price'];
 $type = $_GET['type'];
+date_default_timezone_set('Asia/Calcutta');
+$confdate = date("Y/m/d");
 if ($type=="three") {
 	$type = "Three Events Pass";
 } else {  
@@ -106,19 +108,19 @@ if(!$mail->send()) {
 } 
 
 if ($type=="three") {
-	$update_query1 = "UPDATE {$events_part[0]} SET paid = 1, cnfby = '{$current_user}' WHERE id = {$id} LIMIT 1";
+	$update_query1 = "UPDATE {$events_part[0]} SET paid = 1, cnfby = '{$current_user}', confdate = '{$confdate}' WHERE id = {$id} LIMIT 1";
 	$update_result1 = mysqli_query($conn, $update_query1);
 
-	$update_query2 = "UPDATE {$events_part[1]} SET paid = 1, cnfby = '{$current_user}' WHERE id = {$id} LIMIT 1";
+	$update_query2 = "UPDATE {$events_part[1]} SET paid = 1, cnfby = '{$current_user}', confdate = '{$confdate}' WHERE id = {$id} LIMIT 1";
 	$update_result2 = mysqli_query($conn, $update_query2);
 
-	$update_query3 = "UPDATE {$events_part[2]} SET paid = 1, cnfby = '{$current_user}' WHERE id = {$id} LIMIT 1";
+	$update_query3 = "UPDATE {$events_part[2]} SET paid = 1, cnfby = '{$current_user}', confdate = '{$confdate}' WHERE id = {$id} LIMIT 1";
 	$update_result3 = mysqli_query($conn, $update_query3);
 
-	$update_query = "UPDATE combo SET paid = 1, cnfby = '{$current_user}' WHERE id = {$id} LIMIT 1";
+	$update_query = "UPDATE combo SET paid = 1, cnfby = '{$current_user}', confdate = '{$confdate}' WHERE id = {$id} LIMIT 1";
 	$update_result = mysqli_query($conn, $update_query);
 } else{
-	$update_query = "UPDATE combo SET paid = 1, cnfby = '{$current_user}' WHERE id = {$id} LIMIT 1";
+	$update_query = "UPDATE combo SET paid = 1, cnfby = '{$current_user}', confdate = '{$confdate}' WHERE id = {$id} LIMIT 1";
 	$update_result = mysqli_query($conn, $update_query);
 }
 

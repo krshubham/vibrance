@@ -34,6 +34,8 @@
 		}
 	}
 	$combo = "NO";
+	date_default_timezone_set('Asia/Calcutta');
+    $confdate = date("Y/m/d");
 	$check_query = "SELECT * FROM {$event} WHERE email = '{$current_user}' ";
 	$check_result = mysqli_query($conn, $check_query);
 	confirm_query($check_result);

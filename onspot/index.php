@@ -53,6 +53,8 @@ if (isset($_POST['submit'])) {
         $event_type = "Team";
     }
     $billno = "A".rand();
+    date_default_timezone_set('Asia/Calcutta');
+    $confdate = date("Y/m/d");
     if (($college != "VIT")&&($type[3] == "d")) {
         $price = $parti*100;
     } else {
@@ -77,8 +79,8 @@ if (isset($_POST['submit'])) {
         $check_view = "You have already registered for this event. ";
     } else {
 
-        $query = "INSERT INTO {$event} (name, email, college, regno, phno, altphno, paid, parti, cnfby, combo, price)";
-        $query .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', '{$altphno}', 1, {$parti}, '{$current_user}', '{$combo}', {$price})";
+        $query = "INSERT INTO {$event} (name, email, college, regno, phno, altphno, paid, parti, cnfby, combo, price, confdate)";
+        $query .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', '{$altphno}', 1, {$parti}, '{$current_user}', '{$combo}', {$price}, '{$confdate}')";
         $result = mysqli_query($conn, $query);  
 
         if ($result) {
@@ -160,16 +162,15 @@ if (isset($_POST['submit'])) {
             $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
             if(!$mail->send()) {
-             echo 'Message could not be sent.';
-             echo 'Mailer Error: ' . $mail->ErrorInfo;
-             exit;
-         }   
-
-         $check_view = "You have succesfully registered for Vibrance16.";       
-     } else {
-        echo"Registration failed.";
-    }    
-}
+               echo 'Message could not be sent.';
+               echo 'Mailer Error: ' . $mail->ErrorInfo;
+               exit;
+            } 
+            $check_view = "You have succesfully registered for Vibrance16.";       
+        } else {
+            echo"Registration failed.";
+        }    
+    }
 }
 ?>
 
@@ -568,7 +569,7 @@ if (isset($_POST['submit'])) {
         } else if (event=="dancingduo_team_100_s") {
             document.getElementsByTagName("INPUT")[6].setAttribute("min", "2");
             document.getElementsByTagName("INPUT")[6].setAttribute("max", "2"); 
-             
+
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
             document.getElementById("demo").innerHTML = "Static";
         } else if (event=="choreonight_team_3500_s") {
@@ -595,7 +596,7 @@ if (isset($_POST['submit'])) {
         } else if (event=="battleofbands_team_1000_s") {
             document.getElementsByTagName("INPUT")[6].setAttribute("min", "2");
             document.getElementsByTagName("INPUT")[6].setAttribute("max", "50"); 
-             
+
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
             document.getElementById("demo").innerHTML = "Static";
         } else if (event=="artiste_alone_100_s") {
@@ -618,7 +619,7 @@ if (isset($_POST['submit'])) {
         } else if (event=="generalquiz_team_50_d") {
             document.getElementsByTagName("INPUT")[6].setAttribute("min", "2");
             document.getElementsByTagName("INPUT")[6].setAttribute("max", "3"); 
-             
+
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
             document.getElementById("demo").innerHTML = "Dynamic";
         } else if (event=="entertainmentquiz_team_50_d") {
@@ -649,7 +650,7 @@ if (isset($_POST['submit'])) {
         } else if (event=="potpourri_team_50_d") {
             document.getElementsByTagName("INPUT")[6].setAttribute("min", "2");
             document.getElementsByTagName("INPUT")[6].setAttribute("max", "2"); 
-             
+
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
             document.getElementById("demo").innerHTML = "Static";
         } else if (event=="litquiz_alone_50_d") {
@@ -778,7 +779,7 @@ if (isset($_POST['submit'])) {
         } else if (event=="veta_team_50_d") {
             document.getElementsByTagName("INPUT")[6].setAttribute("min", "2");
             document.getElementsByTagName("INPUT")[6].setAttribute("max", "2");
-             
+
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
             document.getElementById("demo").innerHTML = "Static";
         } else if (event=="chitram_team_50_d") {

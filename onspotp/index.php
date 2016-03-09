@@ -2,7 +2,7 @@
 <?php require_once("../includes/db_connection.php"); ?>
 <?php require_once("../includes/functions.php"); ?>
 
-<?php
+<?php 
 function confirm_admin_logged_in_here() {
     if (!admin_logged_in()) {
         redirect_to("../admin/index.php");
@@ -50,6 +50,8 @@ if (isset($_POST['submit'])) {
     }
     $combo = "NO";
     $parti = 1;
+    date_default_timezone_set('Asia/Calcutta');
+    $confdate = date("Y/m/d");
 
     $check_query = "SELECT * FROM proshow WHERE email = '{$email}' ";
     $check_result = mysqli_query($conn, $check_query);
@@ -59,8 +61,8 @@ if (isset($_POST['submit'])) {
         $check_view = "You have already registered for this event. ";
     } else {
 
-        $query = "INSERT INTO proshow (name, email, college, regno, phno, altphno, paid, cnfby, day, price)";
-        $query .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', '{$altphno}', 1, '{$current_user}', '{$day}', {$price})";
+        $query = "INSERT INTO proshow (name, email, college, regno, phno, altphno, paid, cnfby, day, price, confdate)";
+        $query .= " VALUES ('{$name}', '{$email}', '{$college}', '{$regno}', '{$phno}', '{$altphno}', 1, '{$current_user}', '{$day}', {$price}, '{$confdate}')";
         $result = mysqli_query($conn, $query);  
 
         if ($result) {
