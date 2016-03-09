@@ -29,7 +29,7 @@ if (($name_title['type']=="payment_admin") | ($name_title['type']=="super_admin"
 ?>
 
 <?php
-if (isset($_POST['submit'])) {
+if (isset($_POST['submit'])) { 
     $name = $_POST['name'];
     $email = $_POST['email'];
     $college = $_POST['college'];
@@ -54,11 +54,20 @@ if (isset($_POST['submit'])) {
     }
     $billno = "A".rand();
     if (($college != "VIT")&&($type[3] == "d")) {
-        $price = 100;
+        $price = $parti*100;
     } else {
         $price = $parti*$type[2];
     }
     $combo = "NO";
+    if ($event=="socialinnovators_team_150_s") {
+        if ($parti==1) {
+            $price = 150;
+        } elseif ($parti==2) {
+            $price = 250;
+        } elseif ($parti==3) {
+            $price = 300;
+        }
+    }
 
     $check_query = "SELECT * FROM {$event} WHERE email = '{$email}' ";
     $check_result = mysqli_query($conn, $check_query);
@@ -596,15 +605,11 @@ if (isset($_POST['submit'])) {
             document.getElementById("demo").innerHTML = "Individual Event";
             document.getElementsByTagName("INPUT")[6].style.display = "none";
         } else if (event=="dota2_team_500_s") {
-            document.getElementsByTagName("INPUT")[6].setAttribute("min", "5"); 
-            document.getElementsByTagName("INPUT")[6].setAttribute("max", "5");
-            document.getElementsByTagName("INPUT")[6].style.display = "initial";
-            document.getElementById("demo").innerHTML = "Static";
+            document.getElementById("demo").innerHTML = "Team of 5";
+            document.getElementsByTagName("INPUT")[6].style.display = "none";
         } else if (event=="counterstrike_team_500_s") {
-            document.getElementsByTagName("INPUT")[6].setAttribute("min", "5"); 
-            document.getElementsByTagName("INPUT")[6].setAttribute("max", "5");
-            document.getElementsByTagName("INPUT")[6].style.display = "initial";
-            document.getElementById("demo").innerHTML = "Static";
+            document.getElementById("demo").innerHTML = "Team of 5";
+            document.getElementsByTagName("INPUT")[6].style.display = "none";
         } else if (event=="socialinnovators_team_150_s") {
             document.getElementsByTagName("INPUT")[6].setAttribute("min", "1"); 
             document.getElementsByTagName("INPUT")[6].setAttribute("max", "3");
