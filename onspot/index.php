@@ -47,7 +47,7 @@ if (isset($_POST['submit'])) {
     } else {
         $parti = $_POST['parti'];
     }
-    if ($parti==1) {
+    if ($type[1]=="alone") {
         $event_type = "Individual";
     } else {
         $event_type = "Team";
