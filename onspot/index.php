@@ -42,7 +42,7 @@ if (isset($_POST['submit'])) {
     $altphno = $_POST['altphno'];      
     $event = $_POST['event'];
     $type = explode("_", $event);
-    if ($type[1]=="alone") {
+    if (($type[1]=="alone")|($event == "counterstrike_team_500_s")|($event = "dota2_team_500_s")) {
         $parti = 1;
     } else {
         $parti = $_POST['parti'];
