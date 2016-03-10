@@ -110,7 +110,7 @@ th {
                                     $spend_result = mysqli_query($conn, $spend_query);
                                     confirm_query($spend_result); ?>
                                     <div id="htmlexportPDF">   
-                                    <p><h2><?php echo $confdate; ?></h2></p>                                 
+                                    <p><h3><?php echo $confdate; ?></h3></p>                                 
                                     <p>
                                         <table id="exportPDF">
                                             <tr>

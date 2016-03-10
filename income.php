@@ -123,14 +123,12 @@ $name_title = mysqli_fetch_assoc($name_result);
                                         <th>Event</th>                                                    
                                         <th>Income</th>           
                                     </tr><?php
-                                    while ($list = mysqli_fetch_assoc($result)) {
-                                    if ($price_total !=0) {?>
-                                        <tr>
-                                            <td><?php $event_name = explode("_", $list['event']); echo ucfirst($event_name[0]); ?></td>
+                                    while ($list = mysqli_fetch_assoc($result)) { ?>
+                                    <tr>
+                                        <td><?php $event_name = explode("_", $list['event']); echo ucfirst($event_name[0]); ?></td>
 
-                                            <td class="count-me"><?php echo $list['income']; ?></td>             
-                                        </tr><?php  
-                                    }                                           
+                                        <td class="count-me"><?php echo $list['income']; ?></td>             
+                                    </tr><?php                                             
                                 } ?>
                             </table> 
                         </p>   
