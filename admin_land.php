@@ -17,7 +17,7 @@
         $linkup = "";
         $page = "Participants";
         $view_whole = "";
-        $img1 = "partilist.jpg";
+        $img1 = "parti_list.jpg";
         $img2 = "onspot.jpg";
         $img3 = "";
         $first_name = explode("_", $name_title['username']);
