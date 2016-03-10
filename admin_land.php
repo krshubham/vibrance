@@ -17,6 +17,9 @@
         $linkup = "";
         $page = "Participants";
         $view_whole = "";
+        $img1 = "partilist.jpg";
+        $img2 = "onspot.jpg";
+        $img3 = "";
         $first_name = explode("_", $name_title['username']);
     } elseif ($name_title['type']=="payment_admin") {
         $link1 = "payments.php";
@@ -24,6 +27,9 @@
         $linkup = "";
         $page = "Payments";
         $view_whole = "";
+        $img1 = "payconf.jpg";
+        $img2 = "onspot.jpg";
+        $img3 = "";
         $first_name = explode(" ", $name_title['username']);
     } elseif ($name_title['type']=="super_admin") {
         $link1 = "payments.php";
@@ -31,12 +37,18 @@
         $page = "Payments";
         $linkup = "<a href='admin_signup.php'>Make new Admin</a>";
         $view_whole = "";
+        $img1 = "payconf.jpg";
+        $img2 = "onspot.jpg";
+        $img3 = "";
         $first_name = explode(" ", $name_title['username']);
     } elseif ($name_title['type']=="viewer_admin") {
         $link1 = "viewers.php";
         $link2 = "#";
-        $page = "";
+        $page = "Event wise ";
         $linkup = "";
+        $img1 = "date_report.jpg";
+        $img2 = "event_report.jpg";
+        $img3 = "";
         $view_whole = "style='display: none;'";
         $first_name = explode(" ", $name_title['username']);
     }
