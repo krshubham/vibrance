@@ -106,7 +106,7 @@ th {
                             <?php
                                 if (isset($_POST['submit'])) {
                                     $confdate = $_POST['date'];                                    
-                                    $combo_query = "SELECT SUM(price) AS total_combo_price FROM combo WHERE paid = 1 ";
+                                    $combo_query = "SELECT SUM(price) AS total_combo_price FROM combo WHERE paid = 1 AND confdate = '{$confdate}'";
                                     $combo_result = mysqli_query($conn, $combo_query);
                                     $combo_list = mysqli_fetch_assoc($combo_result);?>
                                     <div id="htmlexportPDF">   
@@ -137,16 +137,7 @@ th {
         </footer>
     </div>
     <script src="js/script.js"></script>  
-    <script language="javascript" type="text/javascript">
-    var tds = document.getElementById('exportPDF').getElementsByTagName('td');
-    var sum = 0;
-    for (var i = 0; i < tds.length; i++) {
-        if (tds[i].className == 'count-me') {
-            sum += isNaN(tds[i].innerHTML) ? 0 : parseInt(tds[i].innerHTML);
-        }
-    }
-    document.getElementById('total').innerHTML += sum;
-    </script>  
+    
     <script type='text/javascript'>
     function htmltopdf() {
         var pdf = new jsPDF('p', 'pt', 'letter');
