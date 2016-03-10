@@ -126,7 +126,7 @@ th {
                                             if ($price_total != 0) { ?>
                                                 <tr>
                                                     <td><?php echo $event_part[0]; ?></td>
-                                                    <td><?php echo $price_total; ?></td>                      
+                                                    <td class="count-me"><?php echo $price_total; ?></td>                      
                                                 </tr><?php
                                             }                                                                                        
                                         }
