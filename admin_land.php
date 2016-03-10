@@ -44,7 +44,7 @@
     } elseif ($name_title['type']=="viewer_admin") {
         $link1 = "viewers.php";
         $link2 = "#";
-        $page = "Event wise ";
+        $page = "Faculty";
         $linkup = "";
         $img1 = "date_report.jpg";
         $img2 = "event_report.jpg";
@@ -122,14 +122,14 @@
                         <div class="grid_6">
                             <div class="img">
                                 <a href="<?php echo $link1; ?>">
-                                    <div class="lazy-img" style="padding-bottom: 45.6140350877193%;"><img data-src="images/payconf.jpg" alt=""></div>
+                                    <div class="lazy-img" style="padding-bottom: 45.6140350877193%;"><img data-src="images/<?php echo $img1; ?>" alt=""></div>
                                 </a>
                             </div>
                         </div>
                         <div class="grid_6" <?php echo $view_whole; ?> >
                             <div class="img">
                                 <a href="<?php echo $link2; ?>">
-                                    <div class="lazy-img" style="padding-bottom: 45.6140350877193%;"><img data-src="images/onspot.jpg" alt=""></div>
+                                    <div class="lazy-img" style="padding-bottom: 45.6140350877193%;"><img data-src="images/<?php echo $img2; ?>" alt=""></div>
                                 </a>
                             </div>
                         </div>
