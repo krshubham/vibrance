@@ -109,7 +109,8 @@ th {
                                     $spend_query = "SELECT * FROM spend ";
                                     $spend_result = mysqli_query($conn, $spend_query);
                                     confirm_query($spend_result); ?>
-                                    <div id="htmlexportPDF">                                    
+                                    <div id="htmlexportPDF">   
+                                    <p><h2><?php echo $confdate; ?></h2></p>                                 
                                     <p>
                                         <table id="exportPDF">
                                             <tr>
