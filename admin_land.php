@@ -81,9 +81,7 @@
 
 <body>
     <div class="page">
-        <!--========================================================
-                              HEADER
-    =========================================================-->
+        
         <header>
             <div id="stuck_container" class="stuck_container">
                 <div class="container">
