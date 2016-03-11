@@ -268,8 +268,10 @@ pre.prettyprint {
   color: #999;
 }
 .team-img{
-width: 100%;
+width: 90%;
 height: 23em;
+padding-top: 1em;
+padding-left: -1em;
 }
 .team-name{
   font-weight: 800;
