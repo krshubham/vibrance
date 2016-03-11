@@ -30,22 +30,22 @@ if (($name_title['type']=="payment_admin") | ($name_title['type']=="super_admin"
 
 <?php
 if (isset($_POST['submit'])) { 
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $college = $_POST['college'];
+    $name = mysqli_real_escape_string($conn, htmlspecialchars($_POST['name']));
+    $email = mysqli_real_escape_string($conn, htmlspecialchars($_POST['email']));
+    $college = mysqli_real_escape_string($conn, htmlspecialchars($_POST['college']));
     if (isset($_POST['regno'])) {
-        $regno = $_POST['regno'];
+        $regno = mysqli_real_escape_string($conn, htmlspecialchars($_POST['regno']));
     } else {
         $regno = "";
     }
-    $phno = $_POST['phno'];  
-    $altphno = $_POST['altphno'];      
-    $event = $_POST['event'];
+    $phno = mysqli_real_escape_string($conn, htmlspecialchars($_POST['phno']));
+    $altphno = mysqli_real_escape_string($conn, htmlspecialchars($_POST['altphno']));
+    $event = mysqli_real_escape_string($conn, htmlspecialchars($_POST['event']));
     $type = explode("_", $event);
     if (($type[1]=="alone")|($event == "counterstrike_team_500_s")|($event == "dota2_team_500_s")) {
         $parti = 1;
     } else {
-        $parti = $_POST['parti'];
+        $parti = mysqli_real_escape_string($conn, htmlspecialchars($_POST['parti']));
     }
     if ($type[1]=="alone") {
         $event_type = "Individual";
