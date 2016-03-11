@@ -97,6 +97,8 @@ th {
                             <form action="combo_date.php" method="post">
                                 <select name="date">
                                     <option value="">Select a date</option>
+                                    <option value="2016/03/02">2nd March, 2016</option>
+                                    <option value="2016/03/03">3rd March, 2016</option>
                                     <option value="2016/03/08">8th March, 2016</option>
                                     <option value="2016/03/09">9th March, 2016</option>
                                     <option value="2016/03/10">10th March, 2016</option>
