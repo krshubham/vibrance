@@ -355,7 +355,7 @@
                             <p class="indents-3">Rules:
                                 <br>
                                 <li>Two rounds (prelims and finals).</li>
-                                <li>Members per team: 6 - 20.</li>
+                                <li>Members : 6 - 20. (On stage)</li>
                                 <li>Time limit: 8 minutes.</li>
                                 <li>Prelims will take place on 18th Morning.</li>
                                 <li>Selected teams will qualify for the finals.</li>
