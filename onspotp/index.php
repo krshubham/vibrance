@@ -30,17 +30,17 @@ if (($name_title['type']=="payment_admin") | ($name_title['type']=="super_admin"
 
 <?php
 if (isset($_POST['submit'])) {
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $college = $_POST['college'];
+    $name = mysqli_real_escape_string($conn, htmlspecialchars($_POST['name']));
+    $email = mysqli_real_escape_string($conn, htmlspecialchars($_POST['email']));
+    $college = mysqli_real_escape_string($conn, htmlspecialchars($_POST['college']));
     if (isset($_POST['regno'])) {
-        $regno = $_POST['regno'];
+        $regno = mysqli_real_escape_string($conn, htmlspecialchars($_POST['regno']));
     } else {
         $regno = "";
     }
-    $phno = $_POST['phno'];  
-    $altphno = $_POST['altphno'];      
-    $day = $_POST['day'];
+    $phno = mysqli_real_escape_string($conn, htmlspecialchars($_POST['phno']));
+    $altphno = mysqli_real_escape_string($conn, htmlspecialchars($_POST['altphno']));  
+    $day = mysqli_real_escape_string($conn, htmlspecialchars($_POST['day']));
     
     $billno = "A".rand();
     if ($day == "combo") {
