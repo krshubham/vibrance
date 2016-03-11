@@ -1,53 +1,13 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,900);
-* {
-  box-sizing: inherit;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -webkit-transition-duration: .6s;
-          transition-duration: .6s;
-  -webkit-transition-timing-function: ease;
-          transition-timing-function: ease;
-}
+
 
 body {
-  background: #E1332D;
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
 }
-
-.buttons {
-  display: table;
-  height: 100%;
-  width: 100%;
-}
-
 .content {
   text-align: center;
   height: 100%;
   width: 100%;
-}
-
-h1 {
-  color: #fff;
-  font-size: 1.25em;
-  font-weight: 900;
-  margin: 0 0 2em;
-}
-@media (min-width: 450px) {
-  h1 {
-    font-size: 1.75em;
-  }
-}
-@media (min-width: 760px) {
-  h1 {
-    font-size: 3.25em;
-  }
-}
-@media (min-width: 900px) {
-  h1 {
-    font-size: 5.25em;
-    margin: 0 0 1em;
-  }
 }
 
 
@@ -86,10 +46,6 @@ h1 {
 .btn:hover {
   text-decoration: none;
 }
-
-
-
-
 .btn-5 {
   border: 0 solid;
   box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
