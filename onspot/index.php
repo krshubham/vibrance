@@ -42,7 +42,7 @@ if (isset($_POST['submit'])) {
     $altphno = mysqli_real_escape_string($conn, htmlspecialchars($_POST['altphno']));
     $event = mysqli_real_escape_string($conn, htmlspecialchars($_POST['event']));
     $type = explode("_", $event);
-    if (($type[1]=="alone")|($event == "counterstrike_team_500_s")|($event == "dota2_team_500_s")) {
+    if (($type[1]=="alone")|($event == "counterstrike_team_500_s")|($event == "dota2_team_500_s")|($event == "battleofbands_team_1000_s")) {
         $parti = 1;
     } else {
         $parti = mysqli_real_escape_string($conn, htmlspecialchars($_POST['parti']));
@@ -594,10 +594,8 @@ if (isset($_POST['submit'])) {
             document.getElementById("demo").innerHTML = "Individual Event";
             document.getElementsByTagName("INPUT")[6].style.display = "none";
         } else if (event=="battleofbands_team_1000_s") {
-            document.getElementsByTagName("INPUT")[6].setAttribute("min", "2");
-            document.getElementsByTagName("INPUT")[6].setAttribute("max", "50"); 
-
-            document.getElementsByTagName("INPUT")[6].style.display = "initial";
+            document.getElementById("demo").innerHTML = "Team of any size.";
+            document.getElementsByTagName("INPUT")[6].style.display = "none";
             document.getElementById("demo").innerHTML = "Static";
         } else if (event=="artiste_alone_100_s") {
             document.getElementById("demo").innerHTML = "Individual Event";
