@@ -104,6 +104,7 @@ th {
                                     
                                     $query = "SELECT * FROM proshow WHERE paid = 1";
                                     $result = mysqli_query($conn, $query);
+                                    $entry = mysqli_num_rows($result);
                                     confirm_query($result); ?>                                
                                         <p>
                                             <table id="exportPDF">
@@ -134,7 +135,8 @@ th {
                                     <?php                                    
                                 ?> 
                                 <p>
-                                    <h3>Total income from events = Rs. <span id="total"></span> </h3>
+                                    <h3>Total income = Rs. <span id="total"></span> </h3>
+                                    <h3>Total number of entries = <?php echo $entry; ?> </h3>
                                 </p>                               
                             </div>   
                             <p><button onclick="javascript:htmltopdf();">Export PDF</button></p><hr>
