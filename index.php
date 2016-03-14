@@ -97,8 +97,6 @@ if (isset($_SESSION["username"])) {
             -o-transition: all 0.5s linear;
             transition: all 0.5s linear;
             -webkit-filter: drop-shadow(2px 2px 8px rgba(0, 231, 255, 0.8));
-            width: 50%;
-            height: 50%;
         }
     </style>
     <div class="page">
