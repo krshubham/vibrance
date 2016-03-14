@@ -15,7 +15,6 @@ body {
 }
 a {
   text-decoration: none;
-  color: inherit;
 }
 
 .container {
@@ -34,7 +33,7 @@ a {
   height: 66px;
   line-height: 66px;
   color: #fff;
-  background-color: #3f51b5;
+  background-color: #b3ecff;
   z-index: 9999;
 }
 
@@ -53,7 +52,7 @@ a {
   padding: 0 3em;
 }
 .menu a:hover {
-  color: #c5cae9;
+  color: #000;
 }
 
 /* RESPONSIVE */
@@ -113,7 +112,8 @@ a {
     left: 0;
     top: 0;
     bottom: 0;
-    background-color: #3849a2;
+    background-color: #b3ecff;
+    color: #000;
      overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     width: 300px;
@@ -125,6 +125,7 @@ a {
     text-decoration: none;
     display: block;
     height: 40px;
+    color: #000;
 
     text-align: center;
     line-height: 40px;
