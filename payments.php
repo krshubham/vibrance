@@ -221,30 +221,7 @@ th {
                                                 <td><?php echo $list['paid']; ?></td>
                                                 <td><?php echo $list['parti']; ?></td>
                                                 <td><?php echo $list['combo']; ?></td>
-                                                <td>
-                                                    <?php
-                                                       if (($list['college']!="VIT")&&($event_name[3]=="d")) {
-                                                            if ($list['combo']=="three") {
-                                                                $fee = 0;
-                                                                echo $fees;
-                                                            } else {
-                                                                $fees = $list['parti']*100;
-                                                                echo $fees;
-                                                            }
-                                                        } elseif (($list['college']=="VIT")&&($event_name[3]=="d")) {
-                                                            if ($list['combo']=="three") {
-                                                                $fee = 0;
-                                                                echo $fees;
-                                                            } else {
-                                                                $fees = $list['parti']*50;
-                                                                echo $fees;
-                                                            }
-                                                        } else {
-                                                            $fees = $list['parti']*$event_name[2];
-                                                            echo $fees; 
-                                                        }                                                        
-                                                    ?>
-                                                </td>
+                                                <td><?php echo $list['price']; ?></td>
                                                 <td>                                                   
                                                     <a href="payconfirm.php?id=<?php echo urlencode($list["id"]); ?>&event=<?php echo urlencode($event); ?>&parti=<?php echo urlencode($list['parti']); ?>" onclick="return confirm('Are you sure?');"><?php
                                                     if ($list['paid']==0) {
