@@ -1,7 +1,6 @@
 <?php require_once("includes/session.php"); ?>
 <?php require_once("includes/db_connection.php"); ?>
 <?php require_once("includes/functions.php"); ?>
-
 <?php confirm_admin_logged_in(); ?>
 
 <?php
@@ -18,13 +17,13 @@
     } else {
         $view_whole = "style='display: none;'";        
     }    
-?>  
+?>
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Admin Payments</title>
+    <title>Admin Events</title>
     <meta charset="utf-8">
     <meta name="format-detection" content="telephone=no" />
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -69,16 +68,22 @@ th {
                 <div class="container">
                     <div class="brand">
                         <h1 class="brand_name">
-                        <a href="./">Vibrance'16</a>
+                        <a href="#"><img src="images/vib_banner_small.png" style="width: 50%;height: 50%">w</a>
                     </h1>
                     </div>
                     <nav class="nav">
-                        <ul class="sf-menu">
+                        <ul class="sf-menu">                            
                             <li>
                                 <a href="admin_land.php">Admin Home</a>                                
-                            </li>                                                      
+                            </li>
+                            <li class="active">
+                                <a href="event_admin.php">Participants</a>
+                            </li>
                             <li>
-                                <?php echo "<a href='logout_admin.php'>Logout, ".$current_user."</a>"; ?>
+                                <a href="onspote/index.php">On Spot Registration</a>
+                            </li>
+                            <li>
+                                <?php echo "<a href='logout_admin.php'>Logout, ".$last_name[0]."</a>"; ?>
                             </li>
                         </ul>
                     </nav>
@@ -91,10 +96,10 @@ th {
         <main <?php echo $view_whole; ?> >
             <section class="well well__offset-3">
                 <div class="container">
-                    <h2><em>Payments</em>Section</h2>
+                    <h2><em>Proshows</em>Participants</h2>
                     <div class="row row__offset-2">
                         <center>
-                            <form action="pro_date.php" method="post">
+                            <form action="event_date.php" method="post">
                                 <select name="date">
                                     <option value="">Select a date</option>
                                     <option value="2016/03/02">2nd March, 2016</option>
@@ -107,31 +112,57 @@ th {
                                     <option value="2016/03/12">12th March, 2016</option>
                                     <option value="2016/03/13">13th March, 2016</option>
                                     <option value="2016/03/14">14th March, 2016</option>
+                                    <option value="2016/03/15">15th March, 2016</option>
                                 </select>
                                 <input type="submit" name="submit" value="Go">
                             </form>                            
                             <?php
                                 if (isset($_POST['submit'])) {
                                     $confdate = $_POST['date'];                                    
-                                    $combo_query = "SELECT SUM(price) AS total_combo_price FROM proshow WHERE paid = 1 AND confdate = '{$confdate}' ";
-                                    $combo_result = mysqli_query($conn, $combo_query);
-                                    $combo_list = mysqli_fetch_assoc($combo_result);?>
-                                    <div id="htmlexportPDF">   
-                                    <p><h3><?php echo $confdate; ?></h3></p>                                 
-                                    <p>
-                                        <table id="exportPDF">
-                                            <tr>                                                
-                                                <th>Income</th>                                                
-                                            </tr>
-                                            <tr>
-                                                <td><?php echo $combo_list['total_combo_price']; ?></td>
-                                            </tr>                                    
-                                        </table>    
-                                    </p> <?php
-                                }   
-                            ?>
-                            </div>
-                            <p><button onclick="javascript:htmltopdf();">Export PDF</button></p>                            
+                                    $spend_query = "SELECT * FROM spend ";
+                                    $spend_result = mysqli_query($conn, $spend_query);
+                                    confirm_query($spend_result); ?>
+                                    <div id="htmlexportPDF">                                
+                                        <?php
+                                            
+                                            $query = "SELECT * FROM proshow WHERE paid = 1 AND confdate = '{$confdate}' ";
+                                            $result = mysqli_query($conn, $query);
+                                            $entry = mysqli_num_rows($result);
+                                            confirm_query($result); ?>                                
+                                                <p>
+                                                    <table id="exportPDF">
+                                                        <tr>
+                                                            <th>Name</th>
+                                                            <th>Email</th>
+                                                            <th>College</th>
+                                                            <th>Reg. No.</th>
+                                                            <th>Ph. No.</th>
+                                                            <th>Alternate No.</th>                                                    
+                                                            <th>Type</th> 
+                                                            <th>Price</th>                                           
+                                                        </tr><?php
+                                                    while ($list = mysqli_fetch_assoc($result)) { ?>
+                                                        <tr>
+                                                            <td><?php echo $list['name']; ?></td>
+                                                            <td><?php echo $list['email']; ?></td>
+                                                            <td><?php echo $list['college']; ?></td>
+                                                            <td><?php echo $list['regno']; ?></td>
+                                                            <td><?php echo $list['phno']; ?></td>
+                                                            <td><?php echo $list['altphno']; ?></td>              
+                                                            <td><?php echo $list['day']; ?></td>
+                                                            <td class="count-me"><?php echo $list['price']; ?></td>
+                                                        </tr><?php                                             
+                                                    } ?>
+                                                    </table> 
+                                                </p>   
+                                            <?php                                    
+                                        ?> 
+                                        <p>
+                                            <h3>Total income = Rs. <span id="total"></span> </h3>
+                                            <h3>Total number of entries = <?php echo $entry; ?> </h3>
+                                        </p>                               
+                                    </div>   
+                            <p><button onclick="javascript:htmltopdf();">Export PDF</button></p><hr>
                         </center>
                     </div>
                 </div>
@@ -143,8 +174,17 @@ th {
         <footer>
         </footer>
     </div>
-    <script src="js/script.js"></script>  
-    
+    <script src="js/script.js"></script>
+    <script language="javascript" type="text/javascript">
+    var tds = document.getElementById('exportPDF').getElementsByTagName('td');
+    var sum = 0;
+    for (var i = 0; i < tds.length; i++) {
+        if (tds[i].className == 'count-me') {
+            sum += isNaN(tds[i].innerHTML) ? 0 : parseInt(tds[i].innerHTML);
+        }
+    }
+    document.getElementById('total').innerHTML += sum;
+    </script>
     <script type='text/javascript'>
     function htmltopdf() {
         var pdf = new jsPDF('p', 'pt', 'letter');
