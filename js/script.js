@@ -64,9 +64,13 @@ include('js/jquery.easing.1.3.js');
 
         $(document).ready(function () {
             $.srSmoothscroll({
-                step: 150,
-                speed: 800
-            });
+                // defaults
+                step: 55,
+                speed: 400,
+                ease: 'swing',
+                target: $('body'),
+                container: $(window)
+            })
         });
     }
 })(jQuery);
