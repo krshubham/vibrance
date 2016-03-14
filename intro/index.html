@@ -512,7 +512,7 @@ a:hover{
 </head>
 
 <body>
-    <div class="container" style="display: none;">
+    <div class="container">
         <div class="header">
             <div class="clr"></div>
         </div>
@@ -523,6 +523,7 @@ a:hover{
                 <video autoplay id="bgvid" loop poster="../images/vib_intro.jpg">
                   <source src="../intro.mp4" type="video/mp4">
                   </video>
+                  <div class="frames" style="display: none;">
                   <h2 class="frame-1" class="shadowfilter">After,  
                     Months of Glaring Enthusiasm</h2>
                     <h2 class="frame-2" class="shadowfilter">Weeks of Tiring Efforts</h2>
@@ -531,6 +532,7 @@ a:hover{
                     </h2>
                     <h2 class="frame-5" class="shadowfilter"><span>It's finally here </span> <span></span> <span>Experience the extravaganza.</span></h2>
                     <a class="sp-circle-link" href="../index.php">Now!</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -539,7 +541,7 @@ a:hover{
 
     <script type="text/javascript">
     $('#bgvid').on('canplaythrough', function(){
-            $('.container').fadeIn();
+            $('.frames').fadeIn();
         });
     </script>
     </html>
