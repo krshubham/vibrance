@@ -91,6 +91,13 @@ if (isset($_SESSION["username"])) {
         .slide-up-fade-in {
             padding-top: 0%;
         }
+        .parallax91:hover{
+            -webkit-filter: drop-shadow(2px 2px 2px rgba(255, 255, 255, 0.80));
+            -webkit-transition: all 0.5s linear;
+            -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+            -webkit-filter: drop-shadow(2px 2px 8px rgba(0, 231, 255, 0.8));
+        }
     </style>
     <div class="page">
         <a href="#0" id="fixed-back" style="display: none;"><img src="images/uparrow.png" title="Back to Top"></a>
