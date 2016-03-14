@@ -6,7 +6,6 @@
     <title>Vibrance'16 | Intro</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/glow.css">
-    <link href='https://fonts.googleapis.com/css?family=Yesteryear' rel='stylesheet' type='text/css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <style>
         /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
@@ -521,8 +520,7 @@ a:hover{
             <div class="sp-content">
                 <a href="../index.php"><button class="btn-skip">Skip</button></a>
                 <div class="sp-globe"></div>
-                <video autoplay id="bgvid" loop>
-                  <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+                <video autoplay id="bgvid" loop poster="../images/vib_intro.jpg">
                   <source src="../intro.mp4" type="video/mp4">
                   </video>
                   <h2 class="frame-1" class="shadowfilter">After,  
@@ -531,7 +529,7 @@ a:hover{
                     <h2 class="frame-3" class="shadowfilter">And</h2>
                     <h2 class="frame-4" style="font-size: 5em;" class="shadowfilter">Days of Extravagant preparations
                     </h2>
-                    <h2 class="frame-5" class="shadowfilter"><span>It's finally here </span> <span style="font-family: 'Yesteryear', cursive;">VIBRANCE 2K16</span> <span>Experience the extravaganza.</span></h2>
+                    <h2 class="frame-5" class="shadowfilter"><span>It's finally here </span> <span></span> <span>Experience the extravaganza.</span></h2>
                     <a class="sp-circle-link" href="../index.php">Now!</a>
                 </div>
             </div>
