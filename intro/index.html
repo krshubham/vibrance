@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/glow.css">
     <link href='https://fonts.googleapis.com/css?family=Yesteryear' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <style>
         /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
 
@@ -41,7 +42,7 @@
 
         .sp-container {
             position: fixed;
-            top: 0px;
+            top: -50px;
             left: 0px;
             width: 100%;
             height: 100%;
@@ -182,7 +183,7 @@
         .sp-globe {
             position: absolute;
             width: 282px;
-            height: 273px;
+            height: 290px;
             left: 50%;
             top: 50%;
             margin: -137px 0 0 -141px;
@@ -495,7 +496,7 @@ a:hover{
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" style="display: none;">
 
         <div class="header">
             <div class="clr"></div>
@@ -521,4 +522,9 @@ a:hover{
 
     </body>
 
+    <script type="text/javascript">
+    $('#bgvid').on('canplaythrough', function(){
+            $('.container').fadeIn();
+        });
+    </script>
     </html>
