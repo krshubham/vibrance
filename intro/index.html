@@ -3,8 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>CSS3 Text Animation Effect</title>
+    <title>Vibrance'16 | Intro</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/glow.css">
+    <link href='https://fonts.googleapis.com/css?family=Yesteryear' rel='stylesheet' type='text/css'>
     <style>
         /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
 
@@ -80,6 +82,12 @@
             -moz-animation-delay: 0s;
             -ms-animation-delay: 0s;
             animation-delay: 0s;
+            -webkit-filter: drop-shadow(2px 2px 2px rgba(255, 255, 255, 0.80));
+            -webkit-transition: all 0.5s linear;
+            -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+            -webkit-filter: drop-shadow(2px 2px 8px rgba(0, 231, 255, 0.8));
+
         }
 
         .sp-container h2.frame-2 {
@@ -87,6 +95,11 @@
             -moz-animation-delay: 3s;
             -ms-animation-delay: 3s;
             animation-delay: 3s;
+            -webkit-filter: drop-shadow(2px 2px 2px rgba(255, 255, 255, 0.80));
+            -webkit-transition: all 0.5s linear;
+            -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+            -webkit-filter: drop-shadow(2px 2px 8px rgba(0, 231, 255, 0.8));
         }
 
         .sp-container h2.frame-3 {
@@ -94,6 +107,11 @@
             -moz-animation-delay: 6s;
             -ms-animation-delay: 6s;
             animation-delay: 6s;
+            -webkit-filter: drop-shadow(2px 2px 2px rgba(255, 255, 255, 0.80));
+            -webkit-transition: all 0.5s linear;
+            -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+            -webkit-filter: drop-shadow(2px 2px 8px rgba(0, 231, 255, 0.8));
         }
 
         .sp-container h2.frame-4 {
@@ -102,6 +120,11 @@
             -moz-animation-delay: 9s;
             -ms-animation-delay: 9s;
             animation-delay: 9s;
+            -webkit-filter: drop-shadow(2px 2px 2px rgba(255, 255, 255, 0.80));
+            -webkit-transition: all 0.5s linear;
+            -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+            -webkit-filter: drop-shadow(2px 2px 8px rgba(0, 231, 255, 0.8));
         }
 
         .sp-container h2.frame-5 {
@@ -111,6 +134,11 @@
             animation: none;
             color: transparent;
             text-shadow: 0px 0px 1px #fff;
+            -webkit-filter: drop-shadow(2px 2px 2px rgba(255, 255, 255, 0.80));
+            -webkit-transition: all 0.5s linear;
+            -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+            -webkit-filter: drop-shadow(2px 2px 8px rgba(0, 231, 255, 0.8));
         }
 
         .sp-container h2.frame-5 span {
@@ -120,6 +148,11 @@
             animation: blurFadeIn 3s ease-in 12s backwards;
             color: transparent;
             text-shadow: 0px 0px 1px #fff;
+            -webkit-filter: drop-shadow(2px 2px 2px rgba(255, 255, 255, 0.80));
+            -webkit-transition: all 0.5s linear;
+            -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+            -webkit-filter: drop-shadow(2px 2px 8px rgba(0, 231, 255, 0.8));
         }
 
         .sp-container h2.frame-5 span:nth-child(2) {
@@ -127,6 +160,11 @@
             -moz-animation-delay: 13s;
             -ms-animation-delay: 13s;
             animation-delay: 13s;
+            -webkit-filter: drop-shadow(2px 2px 2px rgba(255, 255, 255, 0.80));
+            -webkit-transition: all 0.5s linear;
+            -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+            -webkit-filter: drop-shadow(2px 2px 8px rgba(0, 231, 255, 0.8));
         }
 
         .sp-container h2.frame-5 span:nth-child(3) {
@@ -134,6 +172,11 @@
             -moz-animation-delay: 14s;
             -ms-animation-delay: 14s;
             animation-delay: 14s;
+            -webkit-filter: drop-shadow(2px 2px 2px rgba(255, 255, 255, 0.80));
+            -webkit-transition: all 0.5s linear;
+            -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+            -webkit-filter: drop-shadow(2px 2px 8px rgba(0, 231, 255, 0.8));
         }
 
         .sp-globe {
@@ -182,6 +225,11 @@
             -o-transform: scale(1) rotate(0deg);
             -ms-transform: scale(1) rotate(0deg);
             transform: scale(1) rotate(0deg);
+            -webkit-filter: drop-shadow(2px 2px 2px rgba(255, 255, 255, 0.80));
+            -webkit-transition: all 0.5s linear;
+            -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+            -webkit-filter: drop-shadow(2px 2px 8px rgba(0, 231, 255, 0.8));
         }
 
         .sp-circle-link:hover {
@@ -389,7 +437,7 @@
         height: auto;
         z-index: -100;
         transform: translateX(-50%) translateY(-50%);
-        background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+        background: url('') no-repeat;
         background-size: cover;
         transition: 1s opacity;
         overflow: hidden;
@@ -400,41 +448,13 @@
         filter: blur(5px);
     }
     .stopfade { 
-       opacity: .5;
-   }
-
-   #polina { 
-      font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
-      font-weight:100; 
-      background: rgba(0,0,0,0.3);
-      color: white;
-      padding: 2rem;
-      width: 33%;
-      margin:2rem;
-      float: right;
-      font-size: 1.2rem;
-  }
-  h1 {
-      font-size: 3rem;
-      text-transform: uppercase;
-      margin-top: 0;
-      letter-spacing: .3rem;
-  }
-  #polina button { 
-      display: block;
-      width: 80%;
-      padding: .4rem;
-      border: none; 
-      margin: 1rem auto; 
-      font-size: 1.3rem;
-      background: rgba(255,255,255,0.23);
-      color: #fff;
-      border-radius: 3px; 
-      cursor: pointer;
-      transition: .3s background;
-  }
-  #polina button:hover { 
-   background: rgba(0,0,0,0.5);
+     opacity: .5;
+ }
+ h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-top: 0;
+  letter-spacing: .3rem;
 }
 
 a {
@@ -455,38 +475,50 @@ a:hover{
   html { background: url(../images/vib_intro.jpg) #000 no-repeat center center fixed; }
   #bgvid { display: none; }
 }
+.shadowfilter {
+    -webkit-filter: drop-shadow(2px 2px 2px rgba(255, 255, 255, 0.80));
+    -webkit-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    -webkit-filter: drop-shadow(2px 2px 8px rgba(0, 231, 255, 0.8));
+}
+@media screen and (max-width: 640px){
+    .shadowfilter {
+        -webkit-filter: drop-shadow(2px 2px 2px rgba(255, 255, 255, 0.80));
+        -webkit-transition: all 0.5s linear;
+        -o-transition: all 0.5s linear;
+        transition: all 0.5s linear;
+        -webkit-filter: drop-shadow(2px 2px 8px rgba(0, 231, 255, 0.8));
+    }
 </style>
 <script src="js/prefixfree.min.js"></script>
 </head>
 
 <body>
-  <!--   <audio autoplay>
-        <source src="song.mp3" type="audio/mpeg">
-        </audio> -->
-        <div class="container">
+    <div class="container">
 
-            <div class="header">
-                <div class="clr"></div>
-            </div>
-            <div class="sp-container">
-                <div class="sp-content">
-                    <div class="sp-globe"></div>
-                    <video autoplay id="bgvid" loop>
-                      <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
-                      <source src="../intro.mp4" type="video/mp4">
-                      </video>
-                      <h2 class="frame-1">After,  
-                        Months of Glaring Enthusiasm</h2>
-                        <h2 class="frame-2">Weeks of Tiring Efforts</h2>
-                        <h2 class="frame-3">And</h2>
-                        <h2 class="frame-4" style="font-size: 5em;">Days of Extravagant preparations
-                        </h2>
-                        <h2 class="frame-5"><span>It's finally here </span> <span>VIBRANCE 2K16</span> <span>Experience the extravaganza.</span></h2>
-                        <a class="sp-circle-link" href="../index.php">Now!</a>
-                    </div>
+        <div class="header">
+            <div class="clr"></div>
+        </div>
+        <div class="sp-container">
+            <div class="sp-content">
+                <div class="sp-globe"></div>
+                <video autoplay id="bgvid" loop>
+                  <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+                  <source src="../intro.mp4" type="video/mp4">
+                  </video>
+                  <h2 class="frame-1" class="shadowfilter">After,  
+                    Months of Glaring Enthusiasm</h2>
+                    <h2 class="frame-2" class="shadowfilter">Weeks of Tiring Efforts</h2>
+                    <h2 class="frame-3" class="shadowfilter">And</h2>
+                    <h2 class="frame-4" style="font-size: 5em;" class="shadowfilter">Days of Extravagant preparations
+                    </h2>
+                    <h2 class="frame-5" class="shadowfilter"><span>It's finally here </span> <span style="font-family: 'Yesteryear', cursive;">VIBRANCE 2K16</span> <span>Experience the extravaganza.</span></h2>
+                    <a class="sp-circle-link" href="../index.php">Now!</a>
                 </div>
             </div>
+        </div>
 
-        </body>
+    </body>
 
-        </html>
+    </html>
