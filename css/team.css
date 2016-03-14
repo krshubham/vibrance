@@ -188,11 +188,13 @@ body {
 
 .team-member, .team-member .team-img {
     position: relative;
+    box-shadow: 5px 5px 5px #56e8e7;
 }
 .team-member {
     overflow: hidden;
 }
 .team-member, .team-member .team-img {
+    box-shadow: 5px 5px 5px #56e8e7;
     position: relative;
 }
 
@@ -261,17 +263,18 @@ body {
     position: static;
     padding: 20px 0;
     display: inline-block;
-    letter-spacing: 2px;
+    color: #fff;
     width: 100%;
 }
 .team-title h5 {
     margin-bottom: 0px;
+    font-size: 1.5em;
     display: block;
     text-transform: uppercase;
 }
 .team-title span {
     font-size: 12px;
     text-transform: uppercase;
-    color: #a5a5a5;
+    color: #fff;
     letter-spacing: 1px;
 }
