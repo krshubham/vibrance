@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Vibrance'16 | Intro</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/glow.css">
+    <link rel="stylesheet" href="intro/css/reset.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <style>
         /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
@@ -498,6 +497,19 @@ a:hover{
         -webkit-filter: drop-shadow(2px 2px 8px rgba(0, 231, 255, 0.8));
     }
 }
+@media screen and (max-width: 640px){
+    .btn-skip{
+        font-size: 2em;
+        z-index: 999999;
+        position: absolute;
+        left: 2em;
+        top: 3em;
+        outline: none;
+        border-radius: 5px;
+        padding: 10px;
+        border: none;
+    }
+}
 .btn-skip{
     font-size: 2em;
     z-index: 999999;
@@ -506,7 +518,7 @@ a:hover{
     right: 1em;
     outline: none;
     border-radius: 5px;
-    padding: 5px;
+    padding: 10px;
     border: none;
 }
 .btn-skip:hover{
@@ -527,8 +539,8 @@ a:hover{
             <div class="sp-content">
                 <a href="../index.php"><button class="btn-skip">Skip</button></a>
                 <div class="sp-globe"></div>
-                <video autoplay id="bgvid" loop poster="../images/vib_intro.jpg">
-                  <source src="../intro.mp4" type="video/mp4">
+                <video autoplay id="bgvid" loop poster="images/vib_intro.jpg">
+                  <source src="intro.mp4" type="video/mp4">
                   </video>
                   <div class="frames" style="display: none;">
                   <h2 class="frame-1" class="shadowfilter">After,  
@@ -538,15 +550,13 @@ a:hover{
                     <h2 class="frame-4" style="font-size: 5em;" class="shadowfilter">Days of Extravagant preparations
                     </h2>
                     <h2 class="frame-5" class="shadowfilter"><span>It's finally here, </span><span style="font-size: 110px;">Vibrance'16</span>
-                    <span>Experience the extravaganza.</span></h2>
-                    <a class="sp-circle-link" href="../index.php">Now!</a>
+                    <span style="font-size: 0.7em;">Experience the extravaganza.</span></h2>
+                    <a class="sp-circle-link" href="index.php">Now!</a>
                     </div>
                 </div>
             </div>
         </div>
-
     </body>
-
     <script type="text/javascript">
     $('#bgvid').on('canplaythrough', function(){
             $('.frames').fadeIn();
