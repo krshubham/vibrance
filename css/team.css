@@ -15,6 +15,7 @@ body {
 }
 a {
   text-decoration: none;
+  color: #000;
 }
 
 .container {
@@ -49,7 +50,7 @@ a {
   font-size: 1.5em;
 }
 .menu a {
-  padding: 3em 1em;
+  padding: 3em 2em;
 }
 .menu a:hover {
   color: #000;
@@ -189,13 +190,13 @@ body {
 
 .team-member, .team-member .team-img {
     position: relative;
-    box-shadow: 5px 5px 5px #56e8e7;
+    box-shadow: 5px 5px 5px #fff;
 }
 .team-member {
     overflow: hidden;
 }
 .team-member, .team-member .team-img {
-    box-shadow: 5px 5px 5px #56e8e7;
+    box-shadow: 5px 5px 5px #fff;
     position: relative;
 }
 
