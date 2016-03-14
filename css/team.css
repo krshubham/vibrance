@@ -114,18 +114,24 @@ a {
     top: 0;
     bottom: 0;
     background-color: #3849a2;
-    /*    overflow-y: scroll;
-        -webkit-overflow-scrolling: touch;*/
-    width: 250px;
-    -webkit-transform: translateX(-250px);
-    transform: translateX(-250px);
+     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 300px;
+    -webkit-transform: translateX(-300px);
+    transform: translateX(-300px);
   }
   .menu a {
+    text-transform: none;
+    text-decoration: none;
     display: block;
     height: 40px;
     text-align: center;
     line-height: 40px;
     border-bottom: 1px solid #3f51b5;
+  }
+  .menu a:hover{
+    outline: none;
+    text-decoration: none;
   }
 
   .with--sidebar .site-pusher {
