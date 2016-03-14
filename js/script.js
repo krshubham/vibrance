@@ -65,7 +65,7 @@ include('js/jquery.easing.1.3.js');
         $(document).ready(function () {
             $.srSmoothscroll({
                 // defaults
-                step: 55,
+                step: 40,
                 speed: 400,
                 ease: 'swing',
                 target: $('body'),
