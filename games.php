@@ -129,7 +129,7 @@
                                 <a href="rules.html">Rules</a>
                             </li>
                             <li>
-                                <a href="#">Meet the Team</a>
+                                <a href="team.html">Meet the Team</a>
                             </li>
                              <li>
                                 <?php echo $view; ?>
