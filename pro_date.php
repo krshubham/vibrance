@@ -118,10 +118,7 @@ th {
                             </form>                            
                             <?php
                                 if (isset($_POST['submit'])) {
-                                    $confdate = $_POST['date'];                                    
-                                    $spend_query = "SELECT * FROM spend ";
-                                    $spend_result = mysqli_query($conn, $spend_query);
-                                    confirm_query($spend_result); ?>
+                                    $confdate = $_POST['date']; ?>
                                     <div id="htmlexportPDF">                                
                                         <?php
                                             
@@ -155,7 +152,8 @@ th {
                                                     } ?>
                                                     </table> 
                                                 </p>   
-                                            <?php                                    
+                                            <?php 
+                                }                                   
                                         ?> 
                                         <p>
                                             <h3>Total income = Rs. <span id="total"></span> </h3>
