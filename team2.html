@@ -4,7 +4,6 @@
 	 <title>Vibrance'16 | Team</title>
    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
    <link rel="icon" href="favicon.png" type="image/x-icon">
-  <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/team.css">
@@ -16,7 +15,7 @@
 </div>
 
 <div class="jumbotron">
-	<img src="images/vib_banner.png">
+	<img src="images/vib_banner.png" id="intro">
 	<h1><a data-target="team" id="meettheteam"> <i class="fa fa-arrow-circle-down"></i>Meet the Team!<i class="fa fa-arrow-circle-down"></i></a></h1>
 </div>
 <div class="container" id="team">
@@ -148,5 +147,8 @@ $(document).on('click','#meettheteam', function(event) {
         scrollTop: $(target).offset().top
     }, 2000);
 });
+if(screen.width<1024){
+	$('#intro').addClass('img-responsive');
+}
 </script>
 </html>
