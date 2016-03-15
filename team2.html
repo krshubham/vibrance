@@ -15,8 +15,7 @@
 </div>
 
 <div class="jumbotron">
-	<img src="images/vib_banner.png" id="intro">
-	<h1><a data-target="team" id="meettheteam"> <i class="fa fa-arrow-circle-down"></i>Meet the Team!<i class="fa fa-arrow-circle-down"></i></a></h1>
+	<h1>Meet the Team</h1>
 </div>
 <div class="container" id="team">
 	<div class="row">
@@ -140,16 +139,12 @@ function parallax(){
   var scrolled = $(window).scrollTop();
   $('.space').css('top',-(scrolled*0.25)+'px');
 }
-$(document).on('click','#meettheteam', function(event) {
+/*$(document).on('click','#meettheteam', function(event) {
     event.preventDefault();
     var target = "#" + this.getAttribute('data-target');
     $('html, body').animate({
         scrollTop: $(target).offset().top
     }, 2000);
-});
-if(screen.width<1024){
-	$('#intro').addClass('img-responsive');
-	$('.fa').hide();
-}
+});*/
 </script>
 </html>
