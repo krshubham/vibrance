@@ -16,40 +16,36 @@
         $link2 = "onspote/index.php";
         $linkup = "";
         $page = "Participants";
-        $view_whole = "";
+        $view_whole = "style='display: none;'";
         $img1 = "parti_list.jpg";
         $img2 = "onspot.jpg";
-        $img3 = "";
         $first_name = explode("_", $name_title['username']);
     } elseif ($name_title['type']=="payment_admin") {
         $link1 = "payments.php";
         $link2 = "onspot/index.php";
         $linkup = "";
         $page = "Payments";
-        $view_whole = "";
+        $view_whole = "style='display: none;'";
         $img1 = "payconf.jpg";
         $img2 = "onspot.jpg";
-        $img3 = "";
         $first_name = explode(" ", $name_title['username']);
     } elseif ($name_title['type']=="super_admin") {
         $link1 = "payments.php";
         $link2 = "onspot/index.php";
         $page = "Payments";
         $linkup = "<a href='admin_signup.php'>Make new Admin</a>";
-        $view_whole = "";
+        $view_whole = "style='display: none;'";
         $img1 = "payconf.jpg";
         $img2 = "onspot.jpg";
-        $img3 = "";
         $first_name = explode(" ", $name_title['username']);
     } elseif ($name_title['type']=="viewer_admin") {
-        $link1 = "viewers.php";
-        $link2 = "#";
+        $link1 = "event_date.php";
+        $link2 = "pro_date.php";
         $page = "Faculty";
         $linkup = "";
         $img1 = "date_report.jpg";
-        $img2 = "event_report.jpg";
-        $img3 = "";
-        $view_whole = "style='display: none;'";
+        $img2 = "date_proshow.jpg";
+        $view_whole = "";
         $first_name = explode(" ", $name_title['username']);
     }
 ?> 
@@ -124,7 +120,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="grid_6" <?php echo $view_whole; ?> >
+                        <div class="grid_6">
                             <div class="img">
                                 <a href="<?php echo $link2; ?>">
                                     <div class="lazy-img" style="padding-bottom: 45.6140350877193%;"><img data-src="images/<?php echo $img2; ?>" alt=""></div>
@@ -132,6 +128,22 @@
                             </div>
                         </div>
                         <center><?php echo $linkup; ?></center>
+                    </div>
+                    <div class="row row__offset-2" <?php echo $view_whole; ?> >
+                        <div class="grid_6">
+                            <div class="img">
+                                <a href="combo_date.php">
+                                    <div class="lazy-img" style="padding-bottom: 45.6140350877193%;"><img data-src="images/date_combo.jpg" alt=""></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="grid_6">
+                            <div class="img">
+                                <a href="viewpro.php">
+                                    <div class="lazy-img" style="padding-bottom: 45.6140350877193%;"><img data-src="images/total_proshow_income.jpg" alt=""></div>
+                                </a>
+                            </div>
+                        </div>                        
                     </div>
                 </div>
             </section>
