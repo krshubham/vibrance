@@ -1,8 +1,13 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
 
 body{
-  color: #fff;
-  font-family: 'Roboto', sans-serif;
+  color: #E85657;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
+}
+a:hover{
+  text-decoration: none;
+  outline: none;
 }
 .row h1{
   text-align: center;
@@ -16,9 +21,11 @@ small{
   font-size: 0.8em;
   margin-top: -0.5em;
 }
+.jumbotron h1{
+  font-size: 8em;
+}
 .jumbotron{
   text-align: center;
-  color: #fff;
   background-color: transparent;
 }
 .further{
@@ -62,10 +69,10 @@ body {
 
 /* Space */
 .space {
-  position: absolute;
+  
   width: 400vw;
   height: 400vh;
-  top: 50%;
+  
   left: 50%;
   margin-top: -200vh;
   margin-left: -200vw;

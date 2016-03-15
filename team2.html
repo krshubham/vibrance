@@ -5,6 +5,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
    <link rel="icon" href="favicon.png" type="image/x-icon">
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/team.css">
 </head>
@@ -15,9 +16,10 @@
 </div>
 
 <div class="jumbotron">
-	<h1>Meet the Team!</h1>
+	<img src="images/vib_banner.png">
+	<h1><a data-target="team" id="meettheteam"> <i class="fa fa-arrow-circle-down"></i>Meet the Team!<i class="fa fa-arrow-circle-down"></i></a></h1>
 </div>
-<div class="container">
+<div class="container" id="team">
 	<div class="row">
 		<h1>The Web Development Team</h1>
 		<div class="col-md-3">
@@ -126,6 +128,7 @@
 	</div>
 </div>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script type="text/javascript">
 	(function () {
 }.call(this));
@@ -136,7 +139,14 @@ $(window).scroll(function(e){
 
 function parallax(){
   var scrolled = $(window).scrollTop();
-  $('.background').css('top',-(scrolled*0.15)+'px');
+  $('.space').css('top',-(scrolled*0.25)+'px');
 }
+$(document).on('click','#meettheteam', function(event) {
+    event.preventDefault();
+    var target = "#" + this.getAttribute('data-target');
+    $('html, body').animate({
+        scrollTop: $(target).offset().top
+    }, 2000);
+});
 </script>
 </html>
