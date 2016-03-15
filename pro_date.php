@@ -99,7 +99,7 @@ th {
                     <h2><em>Proshows</em>Participants</h2>
                     <div class="row row__offset-2">
                         <center>
-                            <form action="event_date.php" method="post">
+                            <form action="pro_date.php" method="post">
                                 <select name="date">
                                     <option value="">Select a date</option>
                                     <option value="2016/03/02">2nd March, 2016</option>
