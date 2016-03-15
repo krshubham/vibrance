@@ -56,6 +56,7 @@
 <head>
     <title>Admin Payments</title>
     <meta charset="utf-8">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
     <meta name="format-detection" content="telephone=no" />
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/grid.css">

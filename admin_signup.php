@@ -53,6 +53,7 @@ if(isset($_POST['submit'])){
 <head><title>Vibrance Super Admin</title>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<link rel="icon" href="favicon.png" type="image/x-icon">
 </head>
 <body>
 <div id="header">

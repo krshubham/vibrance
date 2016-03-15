@@ -32,7 +32,7 @@ if (isset($_SESSION["username"])) {
     <meta charset="utf-8">
     <meta name="format-detection" content="telephone=no" />
     <meta name="theme-color" content=" #0000ff">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arvo">
