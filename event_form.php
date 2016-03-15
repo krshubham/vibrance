@@ -40,6 +40,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="icon" href="favicon.png" type="image/x-icon">
 	<title>Event Form</title>
 </head>
 

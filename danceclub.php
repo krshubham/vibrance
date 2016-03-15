@@ -31,7 +31,7 @@
     <meta charset="utf-8">
     <meta name="theme-color" content="#A81C23">
     <meta name="format-detection" content="telephone=no" />
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
