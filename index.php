@@ -25,6 +25,7 @@ if (isset($_SESSION["username"])) {
 <head>
     <title>Vibrance</title>
     <meta charset="utf-8">
+    <meta name="google-site-verification" content="G51vJpWZdYX_VrHB3uUivZDxWWnbo_vsr0F3dUZaSX4" />
     <meta name="format-detection" content="telephone=no" />
     <link rel="icon" href="favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/grid.css">
