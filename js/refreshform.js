@@ -14,7 +14,7 @@ $(document).ready(function() {
             alert(data);
         });
     });
-
+ 
     $("#dancingduo").click(function() {
         var event = $("#event_dancingduo").val();
         var parti = 2;
@@ -122,6 +122,14 @@ $(document).ready(function() {
     $("#karlpopperdebate").click(function() {
         var event = $("#event_karlpopperdebate").val();
         var parti = 3;
+        $.post("refreshform.php", { event1: event, parti1: parti }, function(data) {
+            alert(data);
+        });
+    });
+
+    $("#classicdebate").click(function() {
+        var event = $("#event_classicdebate").val();
+        var parti = 1;
         $.post("refreshform.php", { event1: event, parti1: parti }, function(data) {
             alert(data);
         });
