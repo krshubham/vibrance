@@ -13,7 +13,7 @@
 <?php
     if ($name_title['type']=="event_admin") {
         $link1 = "event_admin.php";
-        $link2 = "onspote/index.php";
+        $link2 = "#";
         $linkup = "";
         $page = "Participants";
         $view_whole = "style='display: none;'";

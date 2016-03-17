@@ -1,4 +1,0 @@
-Event admin should be able to show the number of students participating.
-User ID's and password generation.
-Send a mail regarding the payment in the registred event.
-adding a limit for no. of registrations. for event admin.
