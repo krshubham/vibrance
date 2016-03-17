@@ -42,7 +42,7 @@ if (isset($_POST['submit'])) {
     $altphno = mysqli_real_escape_string($conn, htmlspecialchars($_POST['altphno']));
     $event = mysqli_real_escape_string($conn, htmlspecialchars($_POST['event']));
     $type = explode("_", $event);
-    if (($type[1]=="alone")|($event == "counterstrike_team_500_s")|($event == "dota2_team_500_s")|($event == "battleofbands_team_1000_s")) {
+    if (($type[1]=="alone")|($event == "counterstrike_team_500_s")|($event == "dota2_team_500_s")|($event == "battleofbands_team_1000_s")|($event == "choreonight_team_3500_s")) {
         $parti = 1;
     } else {
         $parti = mysqli_real_escape_string($conn, htmlspecialchars($_POST['parti']));
@@ -573,9 +573,8 @@ if (isset($_POST['submit'])) {
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
             document.getElementById("demo").innerHTML = "Static";
         } else if (event=="choreonight_team_3500_s") {
-            document.getElementsByTagName("INPUT")[6].setAttribute("min", "1"); 
-            document.getElementsByTagName("INPUT")[6].setAttribute("max", "1");
-            document.getElementsByTagName("INPUT")[6].style.display = "initial";
+            document.getElementById("demo").innerHTML = "Team of not more than 20 size.";
+            document.getElementsByTagName("INPUT")[6].style.display = "none";
             document.getElementById("demo").innerHTML = "Static";
         } else if (event=="footloose_alone_100_s") {
             document.getElementById("demo").innerHTML = "Individual Event";
@@ -626,8 +625,8 @@ if (isset($_POST['submit'])) {
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
             document.getElementById("demo").innerHTML = "Dynamic";
         } else if (event=="karlpopperdebate_team_50_d") {
-            document.getElementsByTagName("INPUT")[6].setAttribute("min", "2"); 
-            document.getElementsByTagName("INPUT")[6].setAttribute("max", "2"); 
+            document.getElementsByTagName("INPUT")[6].setAttribute("min", "3"); 
+            document.getElementsByTagName("INPUT")[6].setAttribute("max", "3"); 
             document.getElementsByTagName("INPUT")[6].style.display = "initial";
             document.getElementById("demo").innerHTML = "Static";
         } else if (event=="classicdebate_alone_50_d") {

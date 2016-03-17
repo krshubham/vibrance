@@ -355,7 +355,7 @@
                                     <p>Karl Popper debate focuses on relevent and often deeply divisive propositions, emphasizing on development of critical thinking skills and tolerancefor differing view-points.Two teams participate in each debate. One team follows role of affirmative party while other team that of negative party. Debators work together in teams and must research both sides of the issue. Each team is given opportunity yo offer arguments and direct questions to opposing team. Distinguishing feature of this format of debate are cross-examination, where four out of six debators ask their opponents questions and preparing time when the debators can prepare before their speeches.<br>Bonafide to be produced for external participants.</p>
                                 </li>
                                 <li><br></li>
-                                <li>2 in each team.</li>
+                                <li>3 in each team.</li>
                                 <li><br></li>
                                 <li>Registration fees: Rs. 50/- per head. [Internal]</li>
                                 <li>Registration fees: Rs. 100/- per head. [External]</li>

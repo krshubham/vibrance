@@ -121,7 +121,7 @@ $(document).ready(function() {
 
     $("#karlpopperdebate").click(function() {
         var event = $("#event_karlpopperdebate").val();
-        var parti = 2;
+        var parti = 3;
         $.post("refreshform.php", { event1: event, parti1: parti }, function(data) {
             alert(data);
         });
