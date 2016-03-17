@@ -114,6 +114,9 @@ th {
                                     <option value="2016/03/14">14th March, 2016</option>
                                     <option value="2016/03/15">15th March, 2016</option>
                                     <option value="2016/03/16">16th March, 2016</option>
+                                    <option value="2016/03/17">17th March, 2016</option>
+                                    <option value="2016/03/18">18th March, 2016</option>
+                                    <option value="2016/03/19">19th March, 2016</option>
                                 </select>
                                 <input type="submit" name="submit" value="Go">
                             </form>                            
