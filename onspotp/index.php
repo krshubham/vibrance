@@ -447,10 +447,8 @@ if (isset($_POST['submit'])) {
         </div>
         <div class="field email-box">
             <select id="mySelect" name="day" required>
-                <option value="">Select Event</option>
-                <option value="Day1">Day 1</option>
-                <option value="Day2">Day 2</option>
                 <option value="combo">Combo</option>
+                
             </select> 
         </div>
         <div id="demo" class="field name-box" style="color: black;"></div>
