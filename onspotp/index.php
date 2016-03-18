@@ -44,7 +44,7 @@ if (isset($_POST['submit'])) {
     
     $billno = "A".rand();
     if ($day == "combo") {
-        $price = 700;
+        $price = 500;
     } else {
         $price = 450;
     }
