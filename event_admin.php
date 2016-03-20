@@ -147,14 +147,14 @@ th {
                                 ?>                                
                             </div>   
                             <p><button onclick="javascript:htmltopdf();">Export PDF</button></p><hr>                           
-                            <div id="htmlexportPDF">                                
+                            <div >                                
                                 <h4>Unconfirmed List</h4>
                                 <?php                                    
                                     $query = "SELECT * FROM {$event_table} WHERE paid = 0";
                                     $result = mysqli_query($conn, $query);
                                     confirm_query($result); ?>                                
                                         <p>
-                                            <table id="exportPDF">
+                                            <table >
                                                 <tr>
                                                     <th>Name</th>
                                                     <th>Email</th>
@@ -185,14 +185,14 @@ th {
                                     <?php                                    
                                 ?>                                
                             </div>    
-                            <div <?php echo $view_combo; ?> id="htmlexportPDF">                                
+                            <div <?php echo $view_combo; ?> >                                
                                 <h4>Combo confirmed List</h4>
                                 <?php                                    
                                     $query = "SELECT * FROM combo WHERE paid = 1 AND WHERE type = 'all' ";
                                     $result = mysqli_query($conn, $query);
                                     confirm_query($result); ?>                                
                                         <p>
-                                            <table id="exportPDF">
+                                            <table>
                                                 <tr>
                                                     <th>Name</th>
                                                     <th>Email</th>
