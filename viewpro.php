@@ -108,7 +108,6 @@ th {
                                     confirm_query($result); ?>                                                                    
                                         <p>
                                             <table id="exportPDF">
-                                            <p><img src="images/vib_banner_small.png"></p>
                                                 <tr>
                                                     <th>Name</th>
                                                     <th>Email</th>
