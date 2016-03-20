@@ -105,10 +105,10 @@ th {
                                     $query = "SELECT * FROM proshow WHERE paid = 1";
                                     $result = mysqli_query($conn, $query);
                                     $entry = mysqli_num_rows($result);
-                                    confirm_query($result); ?>   
-                                    <p><img src="images/vib_banner_small.png"></p>                             
+                                    confirm_query($result); ?>                                                                    
                                         <p>
                                             <table id="exportPDF">
+                                            <p><img src="images/vib_banner_small.png"></p>
                                                 <tr>
                                                     <th>Name</th>
                                                     <th>Email</th>
