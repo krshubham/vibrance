@@ -190,7 +190,7 @@ th {
                                 <?php                                    
                                     $query = "SELECT * FROM combo WHERE paid = 1 AND WHERE type = 'all' ";
                                     $result = mysqli_query($conn, $query);
-                                    confirm_query($result); ?>                                
+                                    ?>                                
                                         <p>
                                             <table>
                                                 <tr>
@@ -264,10 +264,9 @@ th {
                     'width': margins.width,
                     'elementHandlers': specialElementHandlers
                 },
-
-                function(dispose) {
-                    pdf.save('Download.pdf');
-                }, margins);
+            function(dispose) {
+                pdf.save('Download.pdf');
+            }, margins);
         }
     </script>
 </body>
