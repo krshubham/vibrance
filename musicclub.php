@@ -288,7 +288,7 @@ if (isset($_SESSION["username"])) {
                     <br>
                     <h4 style="text-align: left; font-family: 'Tangerine', serif; font-size:300%">Coordinators:<br><br>Sagorika Nandi &nbsp;&nbsp;&nbsp;8220189964<br><br>Parthivi Gupta &nbsp;&nbsp;&nbsp;9472921021</h4>
                     <div class="row">
-                        <div class="grid_6">
+                        <div class="grid_4">
                             <ul class="indents-3">
                                 <li>Description of Event:<p>Showcase your talent by mesmerising all, by hitting the correct notes in an awe inspiring melody.<br>Bonafide to be produced for external participants. </p>
                                 </li>
@@ -300,7 +300,7 @@ if (isset($_SESSION["username"])) {
                                 <li>Registration fees: Rs. 100/- per participant. [External]</li>
                             </ul>
                         </div>
-                        <div class="grid_6">
+                        <div class="grid_4">
                             <p class="indents-3">Rules:
                                 <br>
                                 <li>A maximum time limit of 3 minutes must be adhered to, which otherwise may lead to disqualification.</li>
@@ -310,6 +310,11 @@ if (isset($_SESSION["username"])) {
                                 <li>A second round may be held based on the number of registrations where the singers would be asked to sing a song belonging to any genre by the judges.</li>
                                 <br>
                             </p>                            
+                        </div>
+                        <div class="grid_4">
+                            <p>
+                            Varun Parandhaman is an Indian musician and songwriter based in Chennai, Tamil Nadu. He, along with fellow singer/songwriter Josh Vivian, co-founded Namma Ooru Boy Band (NOBB), the first ever Tamil Boy Band in Chennai with their single "Cosmopolitan" being a massive hit. He has sung back-up for reputed music directors in the industry today such as A. R. Rahman, D. Imman, Anirudh Ravichander, Pradeep Vijay, Sean Roldon, Siddharth Vipin etc and has collaborated and produced music for various artists based in Chennai. After his success with Cosmopolitan, he gained another milestone in Tamil film music with his work "Takku Takku" and many others.
+                            </p>
                         </div>
                     </div>
                     <form>
