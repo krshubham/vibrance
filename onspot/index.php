@@ -466,59 +466,84 @@ if (isset($_POST['submit'])) {
         </div>
         <div class="field email-box">
             <select id="mySelect" onchange="myFunction()" name="event" required>
+                <option value="">Select Event</option>
+                <option value="adaptune_alone_100_s">Adaptune</option>
+                <option value="bollywoodbattle_team_100_s">Bollywood Battle</option>
+                <option value="dancingduo_team_100_s">Dancing Duo</option>
+                <option value="choreonight_team_3500_s">Choreo Night</option>
+                <option value="footloose_alone_100_s">Footloose</option>
+                <option value="dumbcharades_team_50_s">Dumb Charades</option>
+                <option value="soundhunt_team_50_s">Sound Hunt</option>
+                <option value="supersinger_alone_100_s">Super Singer</option>
+                <option value="battleofbands_team_1000_s">Battle of bands</option>
+                <option value="artiste_alone_100_s">Artiste</option>
+                <option value="fifa15_alone_150_s">FIFA 15</option>
+                <option value="dota2_team_500_s">Dota 2</option>
+                <option value="counterstrike_team_500_s">Counter Strike</option>
+                <option value="socialinnovators_team_150_s">Social Innovators</option>
+
+                <option value="generalquiz_team_50_d">General Quiz</option>
                 <option value="entertainmentquiz_team_50_d">Entertainment Quiz</option>
-                    <option value="karlpopperdebate_team_50_d">Karl Popper Debate</option>
-                    
-                    <option value="splitpersonality_alone_50_d">Split Personality</option>
-                    <option value="centrestage_alone_50_d">Centre Stage</option>
-                    <option value="aircrash_alone_50_d">Air Crash</option>
-                    <option value="lapersona_alone_50_d">La Persona</option>
-                    
-                   
-                    <option value="scrabble_team_50_d">Dabble in Scrabble</option>
-                    
-                    
-                    <option value="daretodrama_team_50_d">Dare to Drama</option>
-                    
-                    
-                    
-                    <option value="gandhi_team_50_d">Gandhi: How far do you know him?</option>
-                    <option value="postermaking_alone_50_d">Poster Making</option>
-                    
-                   
-                    <option value="wastecraft_team_50_d">Wastecraft</option>
-                    
-                    
-                    <option value="blindfolddrawing_alone_50_d">Blind Fold Drawing</option>
-                    <option value="dressupyourpartner_team_50_d">Dress Up Your Partner</option>
-                    
-                    <option value="minutetowin_team_50_d">VIT's Minute to Win it</option>
-                    <option value="runforbucks_team_50_d">Run for Bucks</option>
-                    
-                    
-                    
-                    
-                    <option value="vishwaroopam_team_50_d">Vishwaroopam</option>
-                    <option value="veta_team_50_d">Veta</option>
-                    
-                    <option value="antaksharitelugu_team_50_d">Antakshari TELUGU</option>
-                    
-                    <option value="rangam_team_50_d">Rangam</option>
-                    <option value="begborrowsteal_team_50_d">Beg, Borrow, Steal</option>
-                    <option value="comicstrip_alone_50_d">Comic Strip</option>
-                    
-                    <option value="poetry_alone_50_d">Poetry</option>
-                    <option value="jam_alone_50_d">JAM</option>
-                    
-                    <option value="antaksharihindi_team_50_d">Antakshari HINDI</option>
-                    
-                    
-                    
-                    <option value="maathipesavum_alone_50_d">Maathi Pesavum</option>
-                    
-                    <option value="therikkavidalama_team_50_d">Therikka Vidalama</option>
-                    
-                    <option value="snakeandladder_alone_50_d">Snake and Ladder with Quiz</option>
+                <option value="karlpopperdebate_team_50_d">Karl Popper Debate</option>
+                <option value="classicdebate_alone_50_d">Classic Debate</option>
+                <option value="splitpersonality_alone_50_d">Split Personality</option>
+                <option value="centrestage_alone_50_d">Centre Stage</option>
+                <option value="aircrash_alone_50_d">Air Crash</option>
+                <option value="lapersona_alone_50_d">La Persona</option>
+                <option value="potpourri_team_50_d">Potpourri</option>
+                <option value="litquiz_alone_50_d">Lit Quiz</option>
+                <option value="turncourt_alone_50_d">Turn Court</option>
+                <option value="scrabble_team_50_d">Dabble in Scrabble</option>
+                <option value="adzap_team_50_d">Adzap</option>
+                <option value="switch_team_50_d">Switch</option>
+                <option value="daretodrama_team_50_d">Dare to Drama</option>
+                <option value="beapicasso_alone_50_d">Be a Picasso</option>
+                <option value="cupodoodle_alone_50_d">Cup O' Doodle</option>
+                <option value="mehendi_team_50_d">Mehendi</option>
+                <option value="paintwithoutbrush_team_50_d">Paint Without a Brush</option>
+                <option value="gandhi_team_50_d">Gandhi: How far do you know him?</option>
+                <option value="postermaking_alone_50_d">Poster Making</option>
+                <option value="brain_team_50_d">Brain 0.0</option>
+                <option value="virtualreality_alone_50_d">Virtual Reality</option>
+                <option value="wastecraft_team_50_d">Wastecraft</option>
+                <option value="enviroquiz_team_50_d">Enviro Quiz</option>
+                <option value="balloonsplash_team_50_d">Balloon Splash</option>
+                <option value="blindfolddrawing_alone_50_d">Blind Fold Drawing</option>
+                <option value="dressupyourpartner_team_50_d">Dress Up Your Partner</option>
+                <option value="irrelevance_alone_50_d">Irrelevance</option>
+                <option value="minutetowin_team_50_d">VIT's Minute to Win it</option>
+                <option value="runforbucks_team_50_d">Run for Bucks</option>
+                <option value="impracticaljokers_alone_50_d">Impractical Jokers</option>
+                <option value="moriarty_team_50_d">Moriarty</option>
+                <option value="fivefootball_team_50_d">5's Football</option>
+                <option value="buildtodestroy_team_50_d">Build to Destroy</option>
+                <option value="tugofwar_team_50_d">Tug of War</option>
+                <option value="vishwaroopam_team_50_d">Vishwaroopam</option>
+                <option value="veta_team_50_d">Veta</option>
+                <option value="chitram_team_50_d">Chitram</option>
+                <option value="antaksharitelugu_team_50_d">Antakshari TELUGU</option>
+                <option value="dhammu_team_50_d">Dhammu</option>
+                <option value="rangam_team_50_d">Rangam</option>
+                <option value="begborrowsteal_team_50_d">Beg, Borrow, Steal</option>
+                <option value="comicstrip_alone_50_d">Comic Strip</option>
+                <option value="creativewriting_alone_50_d">Creative Writing</option>
+                <option value="poetry_alone_50_d">Poetry</option>
+                <option value="jam_alone_50_d">JAM</option>
+                <option value="expressionexpress_alone_50_d">Expression Express</option>
+                <option value="antaksharihindi_team_50_d">Antakshari HINDI</option>
+                <option value="televisionwarping_team_50_d">Television Warping</option>
+                <option value="tambola_alone_50_d">Tambola</option>
+                <option value="filmbuffchallenge_team_50_d">Film Buff Challenge</option>
+                <option value="floattilluwin_team_50_d">Float till you Win</option>
+                <option value="hellothamizha_team_50_d">Hello Thamizha</option>
+                <option value="maathipesavum_alone_50_d">Maathi Pesavum</option>
+                <option value="merasalaaitan_team_50_d">Merasalaaitan</option>
+                <option value="therikkavidalama_team_50_d">Therikka Vidalama</option>
+                <option value="nerdornewbie_team_50_d">Nerd or Newbie</option>
+                <option value="treasurehunt_team_50_d">Treasure Hunt [App Based]</option>
+                <option value="snakeandladder_alone_50_d">Snake and Ladder with Quiz</option>
+                <option value="aimandact_team_50_d">Aim and Act</option>
+                <option value="tamilworkshop_alone_50_d">Tamil Speaking Workshop</option>
             </select>
         </div>
         <div id="demo" class="field name-box" style="color: black;"></div>
