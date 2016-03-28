@@ -122,7 +122,9 @@ th {
                                     $spend_result = mysqli_query($conn, $spend_query);
                                     confirm_query($spend_result); ?>
                                     <div id="htmlexportPDF">   
-                                    <p><h3><?php echo $confdate; ?></h3></p>                                 
+                                    <p><h3>Vibrance'16</h3></p>
+                                    <p><h3>Event Income date wise</h3></p>
+                                    <p><h3>Date: <?php echo $confdate; ?></h3></p>                                 
                                     <p>
                                         <table id="exportPDF">
                                             <tr>

@@ -122,7 +122,9 @@ th {
                                     $combo_result = mysqli_query($conn, $combo_query);
                                     $combo_list = mysqli_fetch_assoc($combo_result);?>
                                     <div id="htmlexportPDF">   
-                                    <p><h3><?php echo $confdate; ?></h3></p>                                 
+                                    <p><h3>Vibrance'16</h3></p>
+                                    <p><h3>Combo Income date wise</h3></p>
+                                    <p><h3>Date: <?php echo $confdate; ?></h3></p>                                 
                                     <p>
                                         <table id="exportPDF">
                                             <tr>                                                
