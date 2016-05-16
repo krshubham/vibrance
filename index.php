@@ -413,16 +413,18 @@ if (isset($_SESSION["username"])) {
             </main>
 
             <footer>
-                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                <!-- vib_test -->
-                <ins class="adsbygoogle"
-                style="display:block"
-                data-ad-client="ca-pub-3900805761322774"
-                data-ad-slot="1894569645"
-                data-ad-format="auto"></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
+            <div align="center">
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- vib_test -->
+                    <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-3900805761322774"
+                    data-ad-slot="1894569645"
+                    data-ad-format="auto"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
                 <div class="container-fluid" style="padding-bottom: 2%">
                     <ul class="socials">
                         <li>
