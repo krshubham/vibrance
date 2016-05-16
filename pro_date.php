@@ -130,7 +130,9 @@ th {
                                             $result = mysqli_query($conn, $query);
                                             $entry = mysqli_num_rows($result);
                                             confirm_query($result); ?>   
-                                                <p><h3><?php echo $confdate;  ?></h3></p>                             
+                                                <p><h3>Vibrance'16</h3></p>
+                                                <p><h3>Proshow Income date wise</h3></p>
+                                                <p><h3>Date: <?php echo $confdate; ?></h3></p>                             
                                                 <p>
                                                     <table id="exportPDF">
                                                         <tr>

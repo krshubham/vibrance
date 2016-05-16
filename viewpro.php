@@ -105,7 +105,9 @@ th {
                                     $query = "SELECT * FROM proshow WHERE paid = 1";
                                     $result = mysqli_query($conn, $query);
                                     $entry = mysqli_num_rows($result);
-                                    confirm_query($result); ?>                                                                    
+                                    confirm_query($result); ?>    
+                                        <p><h3>Vibrance'16</h3></p>
+                                        <p><h3>Proshow Total Income</h3></p>                                        
                                         <p>
                                             <table id="exportPDF">
                                                 <tr>
