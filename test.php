@@ -10,9 +10,9 @@ if (isset($_POST['submit'])) {
 	$result = mysqli_query($conn, $query);  
 }
 
-$check_query = "SELECT * FROM test ";
+$check_query = "SELECT * FROM test";
 $check_result = mysqli_query($conn, $check_query);
-confirm_query($check_result);
+//confirm_query($check_result);
 $check = mysqli_fetch_assoc($check_result);
 
 ?>
