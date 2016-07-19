@@ -3,10 +3,12 @@
 <?php require_once("includes/functions.php"); ?>
 
 <?php
-$inp = $_POST['inp'];
-$query = "INSERT INTO test (inp)";
-$query .= " VALUES ('{$inp}')";
-$result = mysqli_query($conn, $query);  
+if (isset($_POST['submit'])) {
+	$inp = $_POST['inp'];
+	$query = "INSERT INTO test (inp)";
+	$query .= " VALUES ('{$inp}')";
+	$result = mysqli_query($conn, $query);  
+}
 
 $check_query = "SELECT * FROM test ";
 $check_result = mysqli_query($conn, $check_query);
@@ -22,6 +24,7 @@ echo $check['inp'];
 <body>
 	<form method="post" action="test.php">
 		<input type="text" name="inp">
+		<input type="submit" name="submit" value="submit">
 	</form>
 </body>
 <script type="text/javascript"></script>
