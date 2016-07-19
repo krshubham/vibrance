@@ -14,7 +14,7 @@ $check_query = "SELECT * FROM test ";
 $check_result = mysqli_query($conn, $check_query);
 confirm_query($check_result);
 $check = mysqli_fetch_assoc($check_result);
-echo $check['inp'];
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -26,6 +26,7 @@ echo $check['inp'];
 		<input type="text" name="inp">
 		<input type="submit" name="submit" value="submit">
 	</form>
+	<?php echo $check['inp']; ?>
 </body>
 <script type="text/javascript"></script>
 </html>
