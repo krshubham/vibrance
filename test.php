@@ -9,10 +9,11 @@ if (isset($_POST['submit'])) {
 	$query .= " VALUES ('{$inp}')";
 	$result = mysqli_query($conn, $query);  
 }
-$name_query = "SELECT * FROM test";
-$name_result = mysqli_query($conn, $name_query);
-//confirm_query($name_result);
-$name_title = mysqli_fetch_assoc($name_result);    
+$query = "SELECT * FROM test ORDER BY id DESC";	
+$result = mysqli_query($conn, $query);
+confirm_query($query);
+$location = mysqli_fetch_assoc($result);
+echo $location['inp']; 
 
 ?>
 <!DOCTYPE html>
@@ -26,7 +27,7 @@ $name_title = mysqli_fetch_assoc($name_result);
 		<input type="submit" name="submit" value="submit">
 	</form>
 
-	<?php echo $name_title['inp']; echo "heyeye"; ?>
+	
 </body>
 <script type="text/javascript"></script>
 </html>
