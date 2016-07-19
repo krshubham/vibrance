@@ -30,7 +30,7 @@ if (($name_title['type']=="payment_admin") | ($name_title['type']=="super_admin"
 
 <?php
 if (isset($_POST['submit'])) { 
-    $name = $_POST['name'];
+    $name = mysqli_real_escape_string($conn, htmlspecialchars($_POST['name']));
     $email = mysqli_real_escape_string($conn, htmlspecialchars($_POST['email']));
     $college = mysqli_real_escape_string($conn, htmlspecialchars($_POST['college']));
     if (isset($_POST['regno'])) {
