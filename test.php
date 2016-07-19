@@ -11,7 +11,7 @@ if (isset($_POST['submit'])) {
 }
 $name_query = "SELECT * FROM test";
 $name_result = mysqli_query($conn, $name_query);
-confirm_query($name_result);
+//confirm_query($name_result);
 $name_title = mysqli_fetch_assoc($name_result);    
 
 ?>
@@ -25,7 +25,8 @@ $name_title = mysqli_fetch_assoc($name_result);
 		<input type="text" name="inp">
 		<input type="submit" name="submit" value="submit">
 	</form>
-	<?php echo $name_title['inp']; ?>
+
+	<?php echo $name_title['inp']; echo "heyeye"; ?>
 </body>
 <script type="text/javascript"></script>
 </html>
