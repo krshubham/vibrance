@@ -9,11 +9,10 @@ if (isset($_POST['submit'])) {
 	$query .= " VALUES ('{$inp}')";
 	$result = mysqli_query($conn, $query);  
 }
-
-$check_query = "SELECT * FROM test";
-$check_result = mysqli_query($conn, $check_query);
-//confirm_query($check_result);
-$check = mysqli_fetch_assoc($check_result);
+$name_query = "SELECT * FROM test";
+$name_result = mysqli_query($conn, $name_query);
+confirm_query($name_result);
+$name_title = mysqli_fetch_assoc($name_result);    
 
 ?>
 <!DOCTYPE html>
@@ -26,7 +25,7 @@ $check = mysqli_fetch_assoc($check_result);
 		<input type="text" name="inp">
 		<input type="submit" name="submit" value="submit">
 	</form>
-	<?php echo $check['inp']; ?>
+	<?php echo $name_title['inp']; ?>
 </body>
 <script type="text/javascript"></script>
 </html>
