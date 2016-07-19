@@ -29,3 +29,8 @@ $name_title = mysqli_fetch_assoc($name_result);
 </body>
 <script type="text/javascript"></script>
 </html>
+<?php
+if (isset ($conn)){
+  mysqli_close($conn);
+}
+?>
