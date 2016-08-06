@@ -12,10 +12,10 @@ Technologies used:
 
 + Javascript
 
-+Jquery
++ jQuery
 
-+Bootstrap/Puregrids
++ Bootstrap/ Puregrids
 
-+PHP/Mysqli
++ PHP/Mysqli
 
-+Ajax
++ Ajax
